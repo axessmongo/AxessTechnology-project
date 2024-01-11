@@ -1,3 +1,52 @@
-*{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+:root {
+    --axess-primary-color1: "red";
+    --axess-primary-bg-color1: "red";
+    --axess-primary-line-height1: "red";
+    --axess-primary-letter-spacing: "red";
+}
+
+.navbar {
+    .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        padding: 20px !important;
+    }
+}
+
+.upper-nav {
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    p {
+        color: black;
+        font-weight: 100;
+        letter-spacing: 10px;
+        font-size: 70px;
+        margin: 0px 20px;
+        font-family: 'Cormorant Garamond', serif;
+    }
 }
