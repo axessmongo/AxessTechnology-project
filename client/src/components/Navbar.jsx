@@ -6,20 +6,24 @@ import logo from '../assets/images/logo/logo.png'
 function Navbar() {
     return (
         <div>
-            <div className='d-flex justify-content-between align-items-center upper-nav border-bottom container-fluid'>
-                    <div>
-                        <button className='btn btn-success'>Employee Login</button>
-                    </div>
-                    <div className='d-flex justify-content-center'>
-                        <p>Axess</p>
-                        <img src= {logo} alt="" />
-                        <p>Tech</p>
-                    </div>
-                    <div>
-                        <button className='btn btn-success'>Corporate Login</button>
-                    </div>
+            <div className='d-flex justify-content-around align-items-center upper-nav border-bottom container-fluid'>
+                <div className='d-flex share'>
+                    <Link><i class="bi bi-instagram"></i></Link>
+                    <Link><i class="bi bi-whatsapp"></i></Link>
+                    <Link><i class="bi bi-twitter-x"></i></Link>
                 </div>
-            <div className="container-fluid my-3">
+                <div className='d-flex justify-content-center'>
+                    <p>Axess</p>
+                    <img src={logo} alt="" />
+                    <p>Tech</p>
+                </div>
+                <div>
+                    <Link to={'/login'} className='gold-btn px-4'>
+                        <span className='d-block'>Login</span>
+                    </Link>
+                </div>
+            </div>
+            <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg bg-body-tertiary p-0">
                     <div className="container-fluid">
                         {/* <Link to='/' className="navbar-brand">
@@ -37,7 +41,7 @@ function Navbar() {
                             <span className="navbar-toggler-icon" />
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden">
                                 <li className="nav-item">
                                     <Link to={'/'} className="nav-link active" aria-current="page" >
                                         Home
@@ -58,11 +62,11 @@ function Navbar() {
                                         Contact
                                     </Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <Link className="btn btn-outline-success" >
-                                        Login
+                                <li className="nav-item">
+                                    <Link className="nav-link" >
+                                        Collaborate with us
                                     </Link>
-                                </li> */}
+                                </li>
                             </ul>
                         </div>
                     </div>

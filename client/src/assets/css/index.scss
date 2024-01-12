@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
+    color: var(--axess-primary-color1);
+    letter-spacing: var(--axess-primary-letter-spacing);
 }
 
 a {
@@ -21,17 +25,109 @@ img {
 }
 
 :root {
-    --axess-primary-color1: "red";
-    --axess-primary-bg-color1: "red";
-    --axess-primary-line-height1: "red";
-    --axess-primary-letter-spacing: "red";
+    --axess-primary: #373737;
+    --axess-gold: #b98d2e;
+    --axess-gold-2: #ffe17c;
+    --axess-primary-line-height1: "1.2";
+    --axess-primary-letter-spacing: ".5px";
 }
 
+.primary-header {
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.primary-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.light-header {
+    left: 0;
+    position: absolute;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    z-index: 0;
+    user-select: none;
+    color: #006557;
+    margin-top: -70px;
+    text-transform: uppercase;
+    width: max-content;
+    opacity: .5;
+    text-shadow: 0 0 black;
+    z-index: -1;
+    width: 100%;
+}
+
+.gold-btn {
+    background: transparent;
+    border: 1px solid var(--axess-gold-2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--axess-gold-2);
+    margin: auto;
+
+    i {
+        padding-left: 0px;
+        width: 0px;
+        display: block;
+        opacity: 0;
+        transition: .3s ease;
+        margin-top: 3px;
+    }
+
+    &:hover {
+        box-shadow: var(--axess-gold) 0px 2px 8px 0px;
+    }
+
+    &:hover i {
+        opacity: 1;
+        width: auto;
+        padding-left: 8px;
+    }
+}
+
+
 .navbar {
+
+    .nav-item {
+        overflow: hidden;
+    }
+
     .nav-link {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
-        padding: 20px !important;
+        padding: 20px 40px !important;
+        position: relative;
+
+        &::before {
+            content: "";
+            top: 0;
+            left: -100%;
+            width: 80%;
+            height: 2px;
+            display: block;
+            position: absolute;
+            background: var(--axess-gold);
+            transition: .5s;
+        }
+
+        &:hover::before {
+            left: 10%;
+        }
+    }
+
+    .nav-link.active {
+        &::before {
+            left: 10%;
+        }
     }
 }
 
@@ -49,4 +145,47 @@ img {
         margin: 0px 20px;
         font-family: 'Cormorant Garamond', serif;
     }
+
+    a {
+        color: var(--axess-gold);
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .share {
+        a {
+            border: 1px solid var(--axess-gold);
+            padding: 6px;
+            border-radius: 50%;
+            font-size: 11px;
+            margin: 5px;
+        }
+        i{
+            width: 16px;
+            height: 15px;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.main-carousel {
+
+    .main-item {
+        height: 70vh;
+        background: rgb(5, 74, 64);
+        background: linear-gradient(77deg, rgba(5, 74, 64, 1) 0%, rgba(5, 37, 32, 1) 100%);
+        position: relative;
+        z-index: 5;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5%;
+    }
+
 }
