@@ -20,7 +20,7 @@ export default function Home() {
                                         In the realm of technology, software development stands as the driving force behind innovation and efficiency. It encompasses the art and science of crafting programs and applications that cater to diverse needs, from simplifying daily tasks to revolutionizing entire industries.
                                     </p>
                                     {/* <div className='border-top border-white mb-3'></div> */}
-                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i class="bi bi-arrow-right"></i></button>
+                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className = "bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function Home() {
                                         In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
                                     </p>
                                     {/* <div className='border-top border-white mb-3'></div> */}
-                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i class="bi bi-arrow-right"></i></button>
+                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className = "bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export default function Home() {
                                         Software testing plays a crucial role in ensuring the reliability and optimal performance of digital solutions. By systematically evaluating each component and functionality, testing not only identifies potential bugs and vulnerabilities but also guarantees that software meets the specified requirements.
                                     </p>
                                     {/* <div className='border-top border-white mb-3'></div> */}
-                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i class="bi bi-arrow-right"></i></button>
+                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className = "bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
