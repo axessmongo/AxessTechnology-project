@@ -2,21 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Home from '../pages/Home'
 import logo from '../assets/images/logo/logo.png'
+import About from './About'
 
 function Navbar() {
     return (
         <div>
             <div className='d-flex justify-content-around align-items-center upper-nav border-bottom container-fluid'>
                 <div className='d-flex share'>
-                    <Link><i class="bi bi-instagram"></i></Link>
-                    <Link><i class="bi bi-whatsapp"></i></Link>
-                    <Link><i class="bi bi-twitter-x"></i></Link>
+                    <Link><i className = "bi bi-instagram"></i></Link>
+                    <Link><i className = "bi bi-whatsapp"></i></Link>
+                    <Link><i className = "bi bi-twitter-x"></i></Link>
                 </div>
-                <div className='d-flex justify-content-center'>
+                <Link to='/' className='d-flex justify-content-center'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
                     <p>Tech</p>
-                </div>
+                </Link>
                 <div>
                     <Link to={'/login'} className='gold-btn px-4'>
                         <span className='d-block'>Login</span>
@@ -73,6 +74,7 @@ function Navbar() {
                 </nav>
             </div>
             <Home />
+            <About/>
         </div>
     )
 }
