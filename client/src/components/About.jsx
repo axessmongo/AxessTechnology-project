@@ -12,8 +12,8 @@ function About() {
                         <p className='primary-text'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum nobis aperiam illum placeat, eos minus enim voluptatum nisi unde voluptate quia suscipit omnis sequi! Libero totam numquam ipsum blanditiis!
                         </p>
-                        <Link to={'/login'} className='gold-btn px-4'>
-                            <span className='d-block'>Login</span>
+                        <Link to={'/login'} className='gold-btn px-4 gold-btn-1 d-inline-block'>
+                            <span className='d-block'>Learn More</span>
                         </Link>
                     </div>
                 </div>

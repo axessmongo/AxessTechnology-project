@@ -26,6 +26,7 @@ img {
 
 :root {
     --axess-primary: #373737;
+    --axess-secondary: #05463c;
     --axess-gold: #b98d2e;
     --axess-gold-2: #ffe17c;
     --axess-primary-line-height1: "1.2";
@@ -44,16 +45,20 @@ img {
     font-weight: 300;
 }
 
-.bg-axess-gold{
+.bg-axess-gold {
     background-color: var(--axess-gold-2);
 }
 
-.gold-text-1{
+.gold-text-1 {
     color: var(--axess-gold);
 }
 
-.gold-text-2{
+.gold-text-2 {
     color: var(--axess-gold-2);
+}
+
+.green-text-1{
+    color: var(--prim);
 }
 
 .light-header {
@@ -74,6 +79,7 @@ img {
     width: 100%;
 }
 
+
 .gold-btn {
     background: transparent;
     border: 1px solid var(--axess-gold-2);
@@ -85,6 +91,7 @@ img {
     align-items: center;
     color: var(--axess-gold-2);
     margin: auto;
+    text-decoration: none;
 
     i {
         padding-left: 0px;
@@ -104,6 +111,15 @@ img {
         width: auto;
         padding-left: 8px;
     }
+}
+
+
+.gold-btn-1 {
+    color: var(--axess-gold);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 
@@ -174,7 +190,8 @@ img {
             font-size: 11px;
             margin: 5px;
         }
-        i{
+
+        i {
             width: 16px;
             height: 15px;
             display: block;
