@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Services from './pages/Services';
 
 function Routing() {
     return (
@@ -10,9 +11,10 @@ function Routing() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Navbar />}>
-                        <Route index element = {Home}/>
+                        <Route index element={Home} />
                     </Route>
                     <Route path="/login" element={<Login />} />
+                    <Route path='/services' element={<Services />} />
                 </Routes>
             </BrowserRouter>
         </div>

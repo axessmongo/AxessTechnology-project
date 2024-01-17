@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 // import js from '../assets/images/main-carousel/dev/js.png'
 
 export default function Home() {
+    let nav = useNavigate()
+
+    useEffect(() => {
+        let body = document.querySelector('body');
+        if (window.location.pathname == '/services') {
+            body.style.overflow = 'hidden';
+            console.log(window.location.pathname);
+        }else{
+            body.style.overflow = 'auto';
+        }
+    }, [nav])
     return (
         <div>
             <div id="carouselExampleFade" className="carousel slide carousel-fade main-carousel">
