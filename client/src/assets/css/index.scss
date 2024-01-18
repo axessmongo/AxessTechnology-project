@@ -29,6 +29,7 @@ img {
     --axess-secondary: #05463c;
     --axess-gold: #b98d2e;
     --axess-gold-2: #ffe17c;
+    --axess-gold-3: #ffce05;
     --axess-primary-line-height1: "1.2";
     --axess-primary-letter-spacing: ".5px";
 }
@@ -53,6 +54,10 @@ img {
     background-color: var(--axess-gold-2);
 }
 
+.bg-axess-gold-3 {
+    background-color: var(--axess-gold-3);
+}
+
 .bg-green-1 {
     background-color: var(--axess-secondary);
 }
@@ -63,6 +68,10 @@ img {
 
 .gold-text-2 {
     color: var(--axess-gold-2);
+}
+
+.gold-text-2 {
+    color: var(--axess-gold-3);
 }
 
 .green-text-1 {
@@ -285,11 +294,11 @@ img {
     }
 
     .layer-two {
-        transform: translate(0%, 0%);
+        transform: translate(0%, -100%);
         animation: layer-two $layer-durations-1 0s backwards;
 
         img {
-            width: 60px;
+            width: 50px;
         }
 
         .primary-header {
@@ -310,6 +319,76 @@ img {
         .bg-green-1::-webkit-scrollbar-thumb {
             background: rgba(51, 196, 51, 0.507);
             border-radius: 10px;
+        }
+
+        .service-nav {
+            background: var(--axess-secondary);
+            color: white;
+            margin-bottom: 10px;
+            /* padding: 6% 8%; */
+            width: 100%;
+            border-radius: 15px 0 0 15px;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+            text-align: start;
+            height: 12%;
+            display: flex;
+            align-items: center;
+            padding-left: 6%;
+
+            &:hover {
+                transform: translate(5%, 0px);
+            }
+
+            span {
+                font-size: 1.2em;
+                letter-spacing: .5px;
+                font-weight: 400;
+                background-color: rgba(0, 0, 0, 0.09);
+                padding: 3% 5%;
+                border-radius: 7px;
+            }
+        }
+
+        .service-hover-nav {
+            background: var(--axess-gold-3);
+            width: 100%;
+            border-radius: 15px 0 0 15px;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+            text-align: start;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+            position: absolute;
+            top: 38%;
+            left: 60%;
+            z-index: 5;
+
+            &:hover {
+                transform: translate(5%, 0px);
+            }
+
+            span {
+                font-size: 1.2em;
+                letter-spacing: .5px;
+                font-weight: 500;
+                // background-color: rgba(0, 0, 0, 0.09);
+                // padding: 3% 5%;
+                border-radius: 7px;
+            }
+        }
+
+        .service-hover-nav.two{
+            top: 51%;
+        }
+
+        .services-right-side {
+            padding-left: 10%;
+            width: 100%;
         }
     }
 
