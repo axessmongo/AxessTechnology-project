@@ -1,0 +1,25 @@
+const mongoose = require('mongoose');
+const express = require('express');
+const cors = require('cors');
+require('dotenv').config()
+const PORT = process.env.PORT;
+const app = express();
+const route =require('./Router/route.js');
+
+app.use(cors());
+app.use(express.json());
+app.use(route)
+
+mongoose
+  .connect(process.env.mongoURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log('Server is listening on port ' + PORT);
+    });
+  })
+  .catch(error => {
+    console.error("Failed to connect to MongoDB:", error);
+  });
