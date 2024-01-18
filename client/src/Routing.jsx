@@ -14,7 +14,9 @@ function Routing() {
                         <Route index element={Home} />
                     </Route>
                     <Route path="/login" element={<Login />} />
-                    <Route path='/services' element={<Services />} />
+                    <Route path='/services' element={<Services />} >
+                        <Route index element={<Services />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </div>
