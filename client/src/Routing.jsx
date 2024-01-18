@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Login from './pages/Login';
+// import Login from './pages/Login';
+import Login2 from './pages/Login2';
 import Services from './pages/Services';
 
 function Routing() {
@@ -13,10 +14,9 @@ function Routing() {
                     <Route path="/" element={<Navbar />}>
                         <Route index element={Home} />
                     </Route>
-                    <Route path="/login" element={<Login />} />
-                    <Route path='/services' element={<Services />} >
-                        <Route index element={<Services />} />
-                    </Route>
+                    {/* <Route path="/login" element={<Login />} /> */}
+                    <Route path="/login" element={<Login2 />} />
+                    <Route path='/services' element={<Services />} />
                 </Routes>
             </BrowserRouter>
         </div>
