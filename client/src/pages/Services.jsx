@@ -59,15 +59,21 @@ function Services() {
                         </div>
                     </div>
                     <div className="col-md-5 vh-100 bg-axess-gold-2">
-                        <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column">
+                        <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column position-relative">
                             <button className="service-nav">
-                                Software Development
+                                <span>Software Development</span>
+                            </button>
+                            <button className='service-hover-nav'>
+                                <span>Technologies</span>
                             </button>
                             <button className="service-nav">
-                                Software Testing
+                                <span>Software Testing</span>
+                            </button>
+                            <button className='service-hover-nav two'>
+                                <span>Contact</span>
                             </button>
                             <button className="service-nav">
-                                AI
+                                <span>AI</span>
                             </button>
                         </div>
                     </div>
