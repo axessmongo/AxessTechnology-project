@@ -9,7 +9,7 @@ function Services() {
         setPopup(false);
         let layout = document.querySelector('.layer-one')
         if (layout) {
-            // layout.style.display = 'none'
+            layout.style.display = 'none'
         }
     }, 3000)
 
@@ -24,10 +24,11 @@ function Services() {
             body.style.overflow = 'auto';
         }
     }, [nav])
+    
+    let scrollContainer = document.getElementById('scroller');
 
     let scrollTop = (getID, e) => {
         let element = document.getElementById(getID);
-        let scrollContainer = document.getElementById('scroller');
         if (element && scrollContainer) {
             const goTop = element.offsetTop;
             scrollContainer.scrollTo({
@@ -38,9 +39,11 @@ function Services() {
             allServiceNavs.forEach(nav => {
                 nav.classList.remove('active');
             });
-            e.target.classList.add('active');
+            e.currentTarget.classList.add('active');
         }
     }
+
+    
 
     return (
         <div className='services'><div className="layer-one">
@@ -97,19 +100,19 @@ function Services() {
                     </div>
                     <div className="col-md-5 vh-100 bg-axess-gold-2">
                         <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column position-relative">
-                            <button className="service-nav" onClick={(e) => { scrollTop('softdev', e) }}>
+                            <button className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
                                 <span>Software Development</span>
                             </button>
                             <button className='service-hover-nav'>
                                 <span>Technologies</span>
                             </button>
-                            <button className="service-nav" onClick={(e) => { scrollTop('softtest', e) }}>
+                            <button className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
                                 <span>Software Testing</span>
                             </button>
                             <button className='service-hover-nav two'>
                                 <span>Contact</span>
                             </button>
-                            <button className="service-nav" onClick={(e) => { scrollTop('ai', e) }}>
+                            <button className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
                                 <span>AI</span>
                             </button>
                         </div>
