@@ -27,12 +27,12 @@ function Login2() {
         };
     }, []);
     return (
-        <div>
-            <img className='log' src={Log} alt="Log" />
+        <div className='Login'>
+            {/* <img className='log' src={Log} alt="Log" /> */}
             <div class="container" id="container" style={{ "width": "100vw", "height": "40vw" }}>
                 {/* <img src={Log} alt="" /> */}
                 <div class="form-container sign-up-container">
-                    <form action="#">
+                    <form>
                         <h1>Create Account</h1>
                         <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
