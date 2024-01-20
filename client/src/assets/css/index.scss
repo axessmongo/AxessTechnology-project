@@ -40,7 +40,7 @@ img {
     font-weight: 600;
 }
 
-.secondary-header{
+.secondary-header {
     font-size: 30px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -415,13 +415,13 @@ img {
             height: 100%;
             background-color: #f0f8ff21;
         }
-        
+
         .card-header {
             font-size: 20px;
             letter-spacing: .5px;
             margin-bottom: 10px;
         }
-        
+
         .order {
             position: absolute;
             right: 0;
@@ -442,18 +442,31 @@ img {
             letter-spacing: 1px;
             position: relative;
             overflow: hidden;
-        }
+            cursor: pointer;
+            z-index: 5;
 
-        .small-card::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            display: block;
-            background: #05463c;
-            top: -4px;
-            left: -8px;
-            border-radius: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                display: block;
+                background: #05463c;
+                top: -4px;
+                left: -8px;
+                border-radius: 50%;
+                transition: .3s;
+                z-index: -1;
+            }
+
+            &:hover::before {
+                width: 100% !important;
+                border-radius: 0 !important;
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
         }
 
     }
