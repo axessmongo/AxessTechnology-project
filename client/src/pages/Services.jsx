@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png';
 import service from '../assets/images/services/r.png';
-
+import bug from '../assets/images/services/bug.png';
+import AOS from 'aos';
 function Services() {
     const [popup, setPopup] = useState(true)
     setTimeout(() => {
         setPopup(false);
         let layout = document.querySelector('.layer-one')
         if (layout) {
-            layout.style.display = 'none'
+            layout.style.display = 'none';
+            AOS.refresh();
         }
     }, 3000)
 
@@ -32,7 +34,7 @@ function Services() {
         if (element && scrollContainer) {
             const goTop = element.offsetTop;
             scrollContainer.scrollTo({
-                top: goTop - 50,
+                top: goTop - 0,
                 behavior: 'smooth'
             });
             let allServiceNavs = document.querySelectorAll('.service-nav');
@@ -52,7 +54,7 @@ function Services() {
         let softdevTarget2 = document.querySelector('.service-nav[data-axess-target="softtest"]');
         let softdevTarget3 = document.querySelector('.service-nav[data-axess-target="ai"]');
 
-        if (scrollContainer.scrollTop >= softdevElement1.offsetTop - 50 && scrollContainer.scrollTop < softdevElement2.offsetTop) {
+        if (scrollContainer.scrollTop >= softdevElement1.offsetTop - 0 && scrollContainer.scrollTop < softdevElement2.offsetTop) {
             softdevTarget1.classList.add('active');
             softdevTarget2.classList.remove('active');
             softdevTarget3.classList.remove('active');
@@ -60,7 +62,7 @@ function Services() {
             softdevTarget1.classList.remove('active');
             softdevTarget2.classList.add('active');
             softdevTarget3.classList.remove('active');
-        } else if (scrollContainer.scrollTop - 50 >= softdevElement3.offsetTop) {
+        } else if (scrollContainer.scrollTop + 50 >= softdevElement3.offsetTop) {
             softdevTarget1.classList.remove('active');
             softdevTarget2.classList.remove('active');
             softdevTarget3.classList.add('active');
@@ -75,6 +77,7 @@ function Services() {
     if (scrollContainer) {
         scrollContainer.addEventListener('scroll', handleScroll);
     }
+
 
     return (
         <div className='services'><div className="layer-one">
@@ -102,15 +105,17 @@ function Services() {
                     <div className="col-md-8 vh-100 bg-green-1 overflow-auto" id='scroller'>
                         <div className="h-100 p-5">
                             <div className="d-flex flex-column justify-content-between h-100">
-                                <div className="d-flex justify-content-between align-items-center">
+                                <div className="d-flex justify-content-between align-items-center" data-aos='fade-down'>
                                     <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess</Link>
                                     <img src={logo} alt="logo" className='img-fluid' />
                                 </div>
 
-                                <h1 className='display-3 col-md-6 fw-bold text-white'>
+                                <h1 className='display-3 col-md-6 fw-bold text-white' data-aos='fade-up'>
                                     The <span className='gold-text-2'>Axess</span> Technology Approach
                                 </h1>
-                                <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nemo impedit facilis facere sed itaque pariatur assumenda accusantium beatae aliquid dignissimos vero sunt similique totam recusandae odio, error quam praesentium!</p>
+                                <div    >
+                                    <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nemo impedit facilis facere sed itaque pariatur assumenda accusantium beatae aliquid dignissimos vero sunt similique totam recusandae odio, error quam praesentium!</p>
+                                </div>
                             </div>
                         </div>
                         <div className="p-5 my-5 roller-container" id='softdev'>
@@ -129,7 +134,7 @@ function Services() {
                                         <img src={service} className='w-100' alt="service" />
                                     </div>
 
-                                    <div className="row gy-3 py-5 mt-5">
+                                    <div className="row gy-3 pt-5 mt-5">
                                         <h1 className='text-center primary-header gold-text-2 mb-3'>Web Development Services</h1>
                                         <div className="col-md-6">
                                             <div className="services-card">
@@ -177,19 +182,17 @@ function Services() {
                                             </div>
                                         </div>
                                     </div>
-
-                                    <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='bg-axess-gold-3'>
-                            <div className="my-5 p-5">
+                        <div className='bg-axess-gold-3 mb-5'>
+                            <div className="my-5 p-5 text-center">
                                 <h1 className='secondary-header text-dark'>
                                     We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
                                 </h1>
                                 <p className='primary-text fw-medium'>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
-                                <div className="col-xxl-8 col-xl-10 col-lg-10 mx-auto mt-5">
+                                <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-4">
                                             <div className="small-card">
@@ -238,12 +241,79 @@ function Services() {
                                         </div>
                                     </div>
                                 </div>
+                                <button className=' gold-btn green-btn'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                             </div>
                         </div>
 
-                        <div className="vh-100 p-5" id='softtest'>
-                            <div className="d-flex flex-column h-100">
-                                <h1 className='display-3 col-md-6 fw-bold text-white'>Testing</h1>
+
+                        <div className="p-5" id='softtest'>
+                            <div className="text-white">
+                                <div className=" position-relative z-3">
+                                    <h1 className='light-header'>
+                                        Reliability
+                                    </h1>
+                                    <h1 className='primary-header mb-4'>
+                                        Software Testing
+                                    </h1>
+                                    <div className="row align-items-center">
+                                        <div className="col-md-8">
+                                            <p className='primary-text mb-0'>
+                                                Software testing plays a crucial role in ensuring the reliability and optimal performance of digital solutions. By systematically evaluating each component and functionality, testing not only identifies potential bugs and vulnerabilities but also guarantees that software meets the specified requirements.
+                                            </p>
+                                        </div>
+                                        <div className='col-md-4'>
+                                            <img src={bug} className='w-100' alt="service" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className='px-3 text-white'>
+                            <h1 className='text-center primary-header gold-text-2 mb-5'>Software Testing Life Cycle</h1>
+                            <div className="row gx-2">
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">01.</p>
+                                        <p className="content mb-0">Requirement <br />Analysis</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card ">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">02.</p>
+                                        <p className="content mb-0">Test <br />Planing</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card ">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">03.</p>
+                                        <p className="content mb-0">Test Case <br />Development</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card ">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">04.</p>
+                                        <p className="content mb-0">Environment <br />Setup</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card ">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">05.</p>
+                                        <p className="content mb-0">Test <br />Exection</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-2 test-card-container">
+                                    <div className="test-card ">
+                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <p className="number ">06.</p>
+                                        <p className="content mb-0">Test Cycle<br />Closure</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="vh-100 p-5 roller-container" id='ai'>
@@ -254,19 +324,19 @@ function Services() {
                     </div>
                     <div className="col-md-4 vh-100 bg-axess-gold-2">
                         <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column position-relative">
-                            <button className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
+                            <button data-aos='fade-right' data-aos-duration="700" className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
                                 <span>Software Development</span>
                             </button>
-                            <button className='service-hover-nav'>
+                            <button data-aos='fade-right' className='service-hover-nav'>
                                 <span>Technologies</span>
                             </button>
-                            <button className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
+                            <button data-aos='fade-right' className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
                                 <span>Software Testing</span>
                             </button>
-                            <button className='service-hover-nav two'>
+                            <button data-aos='fade-right' className='service-hover-nav two'>
                                 <span>Contact</span>
                             </button>
-                            <button className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
+                            <button data-aos='fade-right' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
                                 <span>AI</span>
                             </button>
                         </div>

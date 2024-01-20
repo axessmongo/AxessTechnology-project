@@ -136,6 +136,14 @@ img {
     }
 }
 
+.green-btn {
+    border: 2px solid var(--axess-secondary);
+    color: var(--axess-secondary);
+
+    &:hover {
+        box-shadow: var(--axess-secondary) 0px 2px 8px 0px;
+    }
+}
 
 .gold-btn-1 {
     color: var(--axess-gold);
@@ -469,6 +477,97 @@ img {
             }
         }
 
+        .test-card-container {
+            .test-card {
+                background: #5959EB;
+                font-weight: 600;
+                text-align: center;
+                position: relative;
+                margin: 0;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .content {
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 13px;
+                    height: 13px;
+                    background: inherit;
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    transform: translate(-6.5px, -50%) rotate(45deg);
+                    z-index: 3;
+                }
+
+
+                .logo {
+                    position: absolute;
+                    top: 0;
+                    border: 5px solid var(--axess-secondary);
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    top: 0%;
+                    background: inherit;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+            }
+
+            &:last-child .test-card::after {
+                display: none !important;
+            }
+
+            &:not(:first-child) .test-card::before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: inherit;
+                position: absolute;
+                top: 50%;
+                right: 100%;
+                transform: translate(6.5px, -50%) rotate(45deg);
+                background: var(--axess-secondary);
+                z-index: 1;
+            }
+
+            &:nth-child(2) .test-card {
+                background-color: #bf3dc2;
+            }
+
+            &:nth-child(2) .test-card {
+                background-color: #bf3dc2;
+            }
+
+            &:nth-child(3) .test-card {
+                background-color: #fed730;
+                color: black;
+            }
+
+            &:nth-child(4) .test-card {
+                background-color: #43adcb;
+            }
+
+            &:nth-child(5) .test-card {
+                background-color: #bf6b18;
+            }
+
+            &:nth-child(6) .test-card {
+                background-color: #e93177;
+            }
+        }
     }
 
     // animatons
