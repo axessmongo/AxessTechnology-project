@@ -4,9 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
-import Login from './pages/Login';
-
-
+import Technologies from './pages/Technologies';
 
 function Routing() {
     return (
@@ -18,7 +16,7 @@ function Routing() {
                     </Route>
                     <Route path="/login" element={<Login />} />
                     <Route path='/services' element={<Services />} />
-                    <Route path='/register' element={<Register/>} />
+                    <Route path="/technologies" element={<Technologies/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

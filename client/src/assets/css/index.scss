@@ -63,7 +63,7 @@ img {
 .bg-axess-gold-3 {
     background-color: var(--axess-gold-3);
 }
-
+ 
 .bg-green-1 {
     background-color: var(--axess-secondary);
 }
@@ -460,7 +460,7 @@ img {
                 width: 20px;
                 height: 20px;
                 display: block;
-                background: #05463c;
+                background: var(--axess-gold-3);
                 top: -4px;
                 left: -8px;
                 border-radius: 50%;
@@ -474,6 +474,14 @@ img {
                 left: 0;
                 top: 0;
                 height: 100%;
+            }
+
+            &:hover {
+                box-shadow: var(--axess-gold) 0px 2px 8px 0px;
+            }
+
+            &:hover p {
+                color: var(--axess-secondary) !important;
             }
         }
 
@@ -588,8 +596,57 @@ img {
             height: 100%;
         }
 
-        .animatedimg{
+        .animatedimg {
             animation: animatedimg 10s 0s infinite;
+        }
+
+        .softdev,
+        .softtest,
+        .ai {
+            position: relative;
+            z-index: 5;
+        }
+
+        .softdev::before,
+        .softtest::before,
+        .ai::before {
+            content: "";
+            display: block;
+            position: absolute;
+            transition: .5s;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: -1;
+        }
+
+        .softdev.active::before,
+        .softtest.active::before,
+        .ai.active::before {
+            opacity: 1;
+        }
+
+        .softdev::before {
+            background: #001041;
+        }
+
+        .softtest::before {
+            background: #032933;
+        }
+
+        .ai::before {
+            background: #001b31;
+        }
+
+        .softtest.active {
+            .test-card::before {
+                background-color: #032933;
+            }
+
+            .test-card .logo {
+                border-color: #032933;
+            }
         }
     }
 
