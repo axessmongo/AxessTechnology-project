@@ -2,7 +2,8 @@
 @import "./index.scss";
 
 .technology-section{
-        background-color:  var(--axess-secondary);
+        color: white;
+        // background-color:  var(--axess-secondary);
         .tech-buttons{
             button{
                 padding:6px 10px ;
@@ -11,6 +12,10 @@
                 border: solid 2px var(--axess-secondary);
                 border-radius: 5px;
                 color: rgb(185, 141, 46);
+            }
+            button:hover{
+                border: solid 2px var(--axess-gold);
+                box-shadow: var(--axess-gold) 0px 2px 8px 0px;
             }
             .tech-btn{
                 background-color: var(--axess-gold-2);
@@ -33,8 +38,9 @@
                     height: 70px;
                 }              
                 .tech-item{
-                    background-color: var(--axess-gold-2);
-                    border-radius: 10px;
+                    // background-color: var(--axess-gold-2);
+                    // border-radius: 10px;
+                    // background-color: white;
                     filter: grayscale(0.9);
                     padding: 5px;
                 }
