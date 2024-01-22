@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png';
 import service from '../assets/images/services/r.png';
 import bug from '../assets/images/services/bug.png';
+import cycle from '../assets/images/services/cycle.png';
 import AOS from 'aos';
 function Services() {
     const [popup, setPopup] = useState(true)
@@ -107,7 +108,7 @@ function Services() {
                             <div className="d-flex flex-column justify-content-between h-100">
                                 <div className="d-flex justify-content-between align-items-center" data-aos='fade-down'>
                                     <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess</Link>
-                                    <img src={logo} alt="logo" className='img-fluid' />
+                                    <img src={logo} alt="logo" className='img-fluid logo' />
                                 </div>
 
                                 <h1 className='display-3 col-md-6 fw-bold text-white' data-aos='fade-up'>
@@ -135,7 +136,7 @@ function Services() {
                                     </div>
 
                                     <div className="row gy-3 pt-5 mt-5">
-                                        <h1 className='text-center primary-header gold-text-2 mb-3'>Web Development Services</h1>
+                                        <h1 className='text-center primary-header-2 mb-3'>Web Development Services</h1>
                                         <div className="col-md-6">
                                             <div className="services-card">
                                                 <h6 className='card-header'>Custom Web Development</h6>
@@ -246,8 +247,8 @@ function Services() {
                         </div>
 
 
-                        <div className="p-5" id='softtest'>
-                            <div className="text-white">
+                        <div className="p-5 text-white" id='softtest'>
+                            <div className="">
                                 <div className=" position-relative z-3">
                                     <h1 className='light-header'>
                                         Reliability
@@ -268,10 +269,9 @@ function Services() {
 
                                 </div>
                             </div>
-                        </div>
-                        <div className='px-3 text-white'>
-                            <h1 className='text-center primary-header gold-text-2 mb-5'>Software Testing Life Cycle</h1>
-                            <div className="row gx-2">
+
+                            <h1 className='text-center primary-header mb-5'>Software Testing Life Cycle</h1>
+                            <div className="row gx-2 justify-content-center">
                                 <div className="col-md-2 test-card-container">
                                     <div className="test-card">
                                         <div className="logo"><i className="bi bi-search"></i></div>
@@ -281,37 +281,82 @@ function Services() {
                                 </div>
                                 <div className="col-md-2 test-card-container">
                                     <div className="test-card ">
-                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <div className="logo"><i className="bi bi-card-checklist"></i></div>
                                         <p className="number ">02.</p>
                                         <p className="content mb-0">Test <br />Planing</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2 test-card-container">
                                     <div className="test-card ">
-                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <div className="logo"><i className="bi bi-code-slash"></i></div>
                                         <p className="number ">03.</p>
                                         <p className="content mb-0">Test Case <br />Development</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2 test-card-container">
                                     <div className="test-card ">
-                                        <div className="logo"><i className="bi bi-search"></i></div>
+                                        <div className="logo"><i className="bi bi-gear"></i></div>
                                         <p className="number ">04.</p>
-                                        <p className="content mb-0">Environment <br />Setup</p>
-                                    </div>
-                                </div>
-                                <div className="col-md-2 test-card-container">
-                                    <div className="test-card ">
-                                        <div className="logo"><i className="bi bi-search"></i></div>
-                                        <p className="number ">05.</p>
                                         <p className="content mb-0">Test <br />Exection</p>
                                     </div>
                                 </div>
                                 <div className="col-md-2 test-card-container">
                                     <div className="test-card ">
-                                        <div className="logo"><i className="bi bi-search"></i></div>
-                                        <p className="number ">06.</p>
-                                        <p className="content mb-0">Test Cycle<br />Closure</p>
+                                        <div className="logo"><i className="bi bi-check2-circle"></i></div>
+                                        <p className="number ">05.</p>
+                                        <p className="content mb-0">Test <br />Deployment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row gy-3 mt-4">
+                                <div className="col-md-6">
+                                    <div className="services-card">
+                                        <h6 className='card-header'>Requirement Analysis</h6>
+                                        <p className='primary-text mb-0'>In this stage, software testers work with stakeholders involved in the development process to identify and understand test requirements. The insights from this discussion, consolidated into the Requirement Traceability Matrix (RTM) document, will be the foundation to build the test strategy.
+
+</p>
+                                        <div className='order'>
+                                            <span>01</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="services-card">
+                                        <h6 className='card-header'>Test Planing </h6>
+                                        <p className='primary-text mb-0'>After thorough analysis, a test plan is created. Test planning involves aligning with relevant stakeholders on the test strategy.</p>
+                                        <div className='order'>
+                                            <span>02</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="services-card">
+                                        <h6 className='card-header'>Test Case Development </h6>
+                                        <p className='primary-text mb-0'>After defining the scenarios and functionalities to be tested, we'll write the test cases. For manual test cases, test management tools like Xray can be used to note down details of what was performed, the results, findings, and suggestions for developers to reproduce those bugs. For automated tests, intuitive UIs provided by tools like Katalon, Ranorex, or TestComplete are available. Open-source options like Selenium, Cypress, and Playwright are also popular for building custom frameworks. </p>
+                                        <div className='order'>
+                                            <span>03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <img src={cycle} className='cycle' alt="cycle.png" />
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="services-card">
+                                        <h6 className='card-header'>Test Exection </h6>
+                                        <p className='primary-text mb-0'>With clear objectives in mind, the QA team writes test cases, test scripts, and prepares necessary test data for execution.</p>
+                                        <div className='order'>
+                                            <span>04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="services-card">
+                                        <h6 className='card-header'>Test Deployment</h6>
+                                        <p className='primary-text mb-0'>This is the final phase of Software Testing. Software testers will gather to analyze what they found from the tests, evaluate the effectiveness, and document key takeaways for future reference.</p>
+                                        <div className='order'>
+                                            <span>05</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
