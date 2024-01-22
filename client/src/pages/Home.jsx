@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
-// import js from '../assets/images/main-carousel/dev/js.png'
 
 export default function Home() {
     let nav = useNavigate()
