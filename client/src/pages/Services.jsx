@@ -4,14 +4,20 @@ import logo from '../assets/images/logo/logo.png';
 import service from '../assets/images/services/r.png';
 import bug from '../assets/images/services/bug.png';
 import cycle from '../assets/images/services/cycle.png';
+import vmodel from '../assets/images/services/v-model.png';
+import pmodel from '../assets/images/services/p-model.png';
+import hmodel from '../assets/images/services/h-model.png';
+import ai from '../assets/images/services/ai.png';
 import AOS from 'aos';
 function Services() {
     const [popup, setPopup] = useState(true)
     setTimeout(() => {
         setPopup(false);
+        let body = document.querySelector('body');
         let layout = document.querySelector('.layer-one')
         if (layout) {
             layout.style.display = 'none';
+            body.style.overflow = '';
             AOS.refresh();
         }
     }, 3000)
@@ -21,6 +27,7 @@ function Services() {
     useEffect(() => {
         let body = document.querySelector('body');
         if (window.location.pathname == '/services') {
+            window.scrollTo(0, 0);
             body.style.overflow = 'hidden';
             console.log(window.location.pathname);
         } else {
@@ -28,13 +35,11 @@ function Services() {
         }
     }, [nav])
 
-    let scrollContainer = document.getElementById('scroller');
-
     let scrollTop = (getID, e) => {
         let element = document.getElementById(getID);
-        if (element && scrollContainer) {
+        if (element) {
             const goTop = element.offsetTop;
-            scrollContainer.scrollTo({
+            window.scrollTo({
                 top: goTop - 0,
                 behavior: 'smooth'
             });
@@ -45,25 +50,25 @@ function Services() {
             e.currentTarget.classList.add('active');
         }
     }
-
+    
     let handleScroll = () => {
         let softdevElement1 = document.getElementById('softdev');
         let softdevElement2 = document.getElementById('softtest');
         let softdevElement3 = document.getElementById('ai');
-
+    
         let softdevTarget1 = document.querySelector('.service-nav[data-axess-target="softdev"]');
         let softdevTarget2 = document.querySelector('.service-nav[data-axess-target="softtest"]');
         let softdevTarget3 = document.querySelector('.service-nav[data-axess-target="ai"]');
-
-        if (scrollContainer.scrollTop >= softdevElement1.offsetTop - 0 && scrollContainer.scrollTop < softdevElement2.offsetTop) {
+    
+        if (window.scrollY >= softdevElement1.offsetTop - 0 && window.scrollY < softdevElement2.offsetTop) {
             softdevTarget1.classList.add('active');
             softdevTarget2.classList.remove('active');
             softdevTarget3.classList.remove('active');
-        } else if (scrollContainer.scrollTop >= softdevElement2.offsetTop - 50 && scrollContainer.scrollTop < softdevElement3.offsetTop) {
+        } else if (window.scrollY >= softdevElement2.offsetTop - 50 && window.scrollY < softdevElement3.offsetTop) {
             softdevTarget1.classList.remove('active');
             softdevTarget2.classList.add('active');
             softdevTarget3.classList.remove('active');
-        } else if (scrollContainer.scrollTop + 50 >= softdevElement3.offsetTop) {
+        } else if (window.scrollY + 50 >= softdevElement3.offsetTop) {
             softdevTarget1.classList.remove('active');
             softdevTarget2.classList.remove('active');
             softdevTarget3.classList.add('active');
@@ -73,11 +78,9 @@ function Services() {
             });
         }
     };
-
-
-    if (scrollContainer) {
-        scrollContainer.addEventListener('scroll', handleScroll);
-    }
+    
+    window.addEventListener('scroll', handleScroll);
+    
 
 
     return (
@@ -101,20 +104,20 @@ function Services() {
                 </div>
             </div>
         </div>
-            <div className="layer-two max-vh-100">
+            <div className="layer-two min-vh-100">
                 <div className="row gx-0">
-                    <div className="col-md-8 vh-100 bg-green-1 overflow-auto" id='scroller'>
-                        <div className="h-100 p-5">
+                    <div className="col-md-8 bg-green-1" id='scroller'>
+                        <div className="vh-100 p-5">
                             <div className="d-flex flex-column justify-content-between h-100">
-                                <div className="d-flex justify-content-between align-items-center" data-aos='fade-down'>
+                                <div className="d-flex justify-content-between align-items-center" data-aos="fade-down">
                                     <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess</Link>
                                     <img src={logo} alt="logo" className='img-fluid logo' />
                                 </div>
 
-                                <h1 className='display-3 col-md-6 fw-bold text-white' data-aos='fade-up'>
+                                <h1 className='display-3 col-md-6 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
                                     The <span className='gold-text-2'>Axess</span> Technology Approach
                                 </h1>
-                                <div    >
+                                <div  data-aos="fade-up" data-aos-duration='700' data-aos-anchor-placement="bottom-bottom">
                                     <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nemo impedit facilis facere sed itaque pariatur assumenda accusantium beatae aliquid dignissimos vero sunt similique totam recusandae odio, error quam praesentium!</p>
                                 </div>
                             </div>
@@ -125,14 +128,14 @@ function Services() {
                                     <h1 className='light-header'>
                                         Innovation
                                     </h1>
-                                    <h1 className='primary-header mb-4'>
+                                    <h1 className='primary-header mb-4' data-aos='fade-up'>
                                         Software Development
                                     </h1>
                                     <p className='primary-text mb-3'>
                                         In the realm of technology, software development stands as the driving force behind innovation and efficiency. It encompasses the art and science of crafting programs and applications that cater to diverse needs, from simplifying daily tasks to revolutionizing entire industries.
                                     </p>
                                     <div className='col-md-8 mx-auto mb-3'>
-                                        <img src={service} className='w-100' alt="service" />
+                                        <img src={service} className='w-100 animatedimg' alt="service" />
                                     </div>
 
                                     <div className="row gy-3 pt-5 mt-5">
@@ -263,7 +266,7 @@ function Services() {
                                             </p>
                                         </div>
                                         <div className='col-md-4'>
-                                            <img src={bug} className='w-100' alt="service" />
+                                            <img src={bug} className='w-100 animatedimg' alt="service" />
                                         </div>
                                     </div>
 
@@ -308,13 +311,13 @@ function Services() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row gy-3 mt-4">
+                            <div className="row gy-3 my-5">
                                 <div className="col-md-6">
                                     <div className="services-card">
                                         <h6 className='card-header'>Requirement Analysis</h6>
                                         <p className='primary-text mb-0'>In this stage, software testers work with stakeholders involved in the development process to identify and understand test requirements. The insights from this discussion, consolidated into the Requirement Traceability Matrix (RTM) document, will be the foundation to build the test strategy.
 
-</p>
+                                        </p>
                                         <div className='order'>
                                             <span>01</span>
                                         </div>
@@ -360,28 +363,59 @@ function Services() {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="row gx-5 justify-content-evenly align-items-end">
+                                <div className="col-12 text-center">
+                                    <h1 className='primary-header'>Popular Software Testing Models</h1>
+                                </div>
+                                <div className="col-3">
+                                    <img src={vmodel} alt="vmodel" />
+                                </div>
+                                <div className="col-3">
+                                    <img src={pmodel} alt="pmodel" />
+                                </div>
+                                <div className="col-3">
+                                    <img src={hmodel} alt="hmodel" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="vh-100 p-5 roller-container" id='ai'>
-                            <div className="d-flex flex-column h-100">
-                                <h1 className='display-3 col-md-6 fw-bold text-white'>AI</h1>
+                        <div className="p-5 roller-container text-white min-vh-100" id='ai'>
+                            <div className=" position-relative z-3">
+                                <h1 className='light-header'>
+                                    intelligent
+                                </h1>
+                                <h1 className='primary-header mb-4'>
+                                    AI Development
+                                </h1>
+                                <div className="row align-items-center">
+                                    <div className="col-md-8">
+                                        <p className='primary-text mb-0'>
+                                            In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
+                                        </p>
+                                    </div>
+                                    <div className='col-md-4'>
+                                        <img src={ai} className='w-100 animatedimg' alt="service" />
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4 vh-100 bg-axess-gold-2">
+                    <div className="col-md-4 vh-100 bg-axess-gold-2 position-fixed end-0">
                         <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column position-relative">
-                            <button data-aos='fade-right' data-aos-duration="700" className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
+                            <button  data-aos='fade-left'  className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
                                 <span>Software Development</span>
                             </button>
-                            <button data-aos='fade-right' className='service-hover-nav'>
+                            <button className='service-hover-nav'>
                                 <span>Technologies</span>
                             </button>
-                            <button data-aos='fade-right' className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
+                            <button data-aos='fade-left'  className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
                                 <span>Software Testing</span>
                             </button>
-                            <button data-aos='fade-right' className='service-hover-nav two'>
+                            <button className='service-hover-nav two'>
                                 <span>Contact</span>
                             </button>
-                            <button data-aos='fade-right' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
+                            <button data-aos='fade-left' data-aos-duration='600' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
                                 <span>AI</span>
                             </button>
                         </div>
