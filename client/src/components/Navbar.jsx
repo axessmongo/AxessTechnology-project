@@ -59,6 +59,11 @@ function Navbar() {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link to= {"technologies"} className="nav-link" >
+                                        Technology
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link className="nav-link" >
                                         Contact
                                     </Link>
@@ -67,7 +72,7 @@ function Navbar() {
                                     <Link className="nav-link" >
                                         Collaborate with us
                                     </Link>
-                                </li>
+                                </li>                              
                             </ul>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Services from './pages/Services';
+import Technologies from './pages/Technologies';
 
 function Routing() {
     return (
@@ -15,6 +16,7 @@ function Routing() {
                     </Route>
                     <Route path="/login" element={<Login />} />
                     <Route path='/services' element={<Services />} />
+                    <Route path="/technologies" element={<Technologies/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
