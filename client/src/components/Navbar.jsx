@@ -64,6 +64,11 @@ function Navbar() {
                                     </Link>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
+                                    <Link to={"pricing"} className="nav-link" >
+                                        Pricing
+                                    </Link>
+                                </li>
+                                <li className="nav-item" data-aos='fade'>
                                     <Link className="nav-link" >
                                         Contact
                                     </Link>
