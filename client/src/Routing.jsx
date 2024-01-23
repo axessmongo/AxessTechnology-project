@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Technologies from './pages/Technologies';
 import Homenew from './pages/Homenew';
 import Card from './components/Card';
+import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
@@ -29,6 +30,7 @@ function Routing() {
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
+                    <Route path="/pricing" element={<Pricing />} />
                     <Route path='/footer' element={<Footer />} />
                 </Routes>
             </BrowserRouter>
