@@ -30,7 +30,7 @@ function Routing() {
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
-                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path="/Pricing" element={<Pricing />} />
                     <Route path='/footer' element={<Footer />} />
                 </Routes>
             </BrowserRouter>
