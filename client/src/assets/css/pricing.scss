@@ -216,7 +216,7 @@
       }
       
       .pricing-card:hover .pricing-card-header{
-        box-shadow: 0 0 0 26em #0fbcf9;
+        box-shadow: 0 0 0 26em #05463c;
       }
       
       .price{
@@ -226,7 +226,7 @@
         transition: .2s linear;
         
       }
-      
+
       .price sup, .price span{
         font-size: 22px;
         font-weight: 700;
@@ -245,7 +245,7 @@
       .order-btn{
         display: inline-block;
         margin-bottom: 40px;
-        margin-top: 60%;
+        margin-top: 30%;
         border: 2px solid #0fbcf9;
         color: #0fbcf9;
         padding: 18px 40px;
@@ -256,7 +256,7 @@
       }
       
       .order-btn:hover{
-        background-color: #0fbcf9;
+        background-color: #b98d2e;
         color: #fff;
       }
       

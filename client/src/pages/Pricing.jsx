@@ -4,6 +4,7 @@ import '../assets/css/Pricing.scss'
 function Pricing() {
 	return (
 		<section className='pricing'>
+			<h1 className='primary-header text-center'>Unlock Our New Features</h1>
 			<div className="container pricing-table">
 				<div className="pricing-card ">
 					<h3 className="pricing-card-header">Personal</h3>
@@ -13,6 +14,8 @@ function Pricing() {
 						<li><strong>Hosting - 1</strong> Year FREE</li>
 						<li><strong>Single 1 </strong> Page Website</li>
 						<li><strong>SSL</strong> Certificate</li>
+						<li><strong>WhatsApp </strong> Chat</li>
+						<li><strong>Social </strong> Media Integration</li>
 						<li><strong>Static </strong> Website</li>
 					</ul>
 					<a href="#" className="order-btn">Order Now</a>
