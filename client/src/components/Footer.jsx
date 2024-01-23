@@ -58,7 +58,7 @@ function Footer() {
             </div>
 
             <div className='bg-black text-white'>
-                <div className='container-fluid'>
+                <div className='container'>
                     <div className="text-capitalize mt-3">
                         <div className="row">
                             <div className="col-md-5">
@@ -89,7 +89,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row text-center text-capitalize mt-4">
                         <div className="col-1 col-md-2">
                             <p className='text-warning fw-bolder'>Company</p>

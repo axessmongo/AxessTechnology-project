@@ -381,7 +381,8 @@ img {
 
         .service-nav.active {
             transform: translate(10%, 0px);
-            span{
+
+            span {
                 animation: nav-pop 1s ease 0s 1;
             }
         }
@@ -756,15 +757,32 @@ img {
 }
 
 @media(max-width:992px) {
-    .primary-header{
+    .primary-header {
         font-size: 32px;
     }
-    .upper-nav{
-        p{
+
+    .upper-nav {
+        p {
             font-size: 30px;
         }
-        img{
+
+        img {
             width: 30px;
         }
+    }
+}
+
+.industries-card {
+    width: 100%;
+    background: #9595953b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 2px;
+
+    img {
+        width: 30px;
     }
 }

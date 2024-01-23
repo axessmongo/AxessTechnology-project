@@ -6,12 +6,12 @@ export default function Card() {
             <div className="bg-green-1">
                 <div className="container">
                     <div className="row align-items-center g-5">
-                        <div className="col-md-4 mt-4">
+                        <div className="col-md-4">
                             <img src="https://maticz.com/assets/images/home/solution_img.webp" alt="" />
 
                         </div>
                         <div className="col-md-8 text-white">
-                        <h1 className=' mt-3'> solutions</h1>
+                        <p className=' bg-img-2'> solutions</p>
                             <h2 className='text-white mt-5'>We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
                             </h2>
                             <p className=''>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
