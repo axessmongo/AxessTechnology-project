@@ -5,7 +5,7 @@ import Svg1 from '../components/Svg1';
 import pulse from '../assets/images/bubble.webp';
 import Card from '../components/Card';
 import Award from '../components/Award';
-
+import Footer from '../components/Footer';
 export default function Home() {
     let nav = useNavigate()
 
@@ -42,6 +42,7 @@ export default function Home() {
             </div>
             <Award/>
             <Card/>
+            <Footer/>
         </section>
     )
 }

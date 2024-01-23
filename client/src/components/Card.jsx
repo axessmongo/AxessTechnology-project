@@ -68,7 +68,6 @@ export default function Card() {
                     </div>
                 </div>
             </div>
-            <div className="vh-100"></div>
         </div>
     )
 }

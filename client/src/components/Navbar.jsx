@@ -48,11 +48,7 @@ function Navbar() {
                                         Home
                                     </Link>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
-                                    <Link className="nav-link" >
-                                        About
-                                    </Link>
-                                </li>
+                               
                                 <li className="nav-item" data-aos='fade'>
                                     <Link to={'services'} className="nav-link" >
                                         Services
@@ -61,6 +57,11 @@ function Navbar() {
                                 <li className="nav-item" data-aos='fade'>
                                     <Link to={"technologies"} className="nav-link" >
                                         Technology
+                                    </Link>
+                                </li>
+                                <li className="nav-item" data-aos='fade'>
+                                    <Link to={"pricing"} className="nav-link" >
+                                        Pricing
                                     </Link>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
