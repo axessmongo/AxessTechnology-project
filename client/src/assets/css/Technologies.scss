@@ -1,8 +1,23 @@
 
 @import "./index.scss";
 
+
+
+.tech-tools-section{
+    .tech-tools-header{
+        p{
+            padding:  25px 30px!important;
+            font-size: 25px;
+            font-weight: 500;
+            background-image: url("../images/headerbg.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            max-width:fit-content;
+        }
+    }
+}
 .technology-section{
-        color: white;
         // background-color:  var(--axess-secondary);
         .tech-buttons{
             button{
