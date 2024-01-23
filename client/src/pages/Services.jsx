@@ -125,7 +125,9 @@ function Services() {
                                     <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess</Link>
                                     <img src={logo} alt="logo" className='img-fluid logo' />
                                 </div>
-
+                                <div className="pattern d-none">
+                                    
+                                </div>
                                 <h1 className='display-3 col-md-6 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
                                     The <span className='gold-text-2'>Axess</span> Technology Approach
                                 </h1>
@@ -382,13 +384,13 @@ function Services() {
                                     <h1 className='primary-header' data-aos='fade-up' data-aos-duration='400'  data-aos-anchor-placement="bottom-bottom">Popular Software Testing Models</h1>
                                 </div>
                                 <div className="col-3">
-                                    <img src={vmodel} alt="vmodel"  data-aos='zoom-in' data-aos-duration='600'  data-aos-anchor-placement="bottom-bottom"/>
+                                    <img src={vmodel} alt="vmodel"  data-aos='fade-up' data-aos-duration='400'  data-aos-anchor-placement="bottom-center"/>
                                 </div>
                                 <div className="col-3">
-                                    <img src={pmodel} alt="pmodel"  data-aos='zoom-in' data-aos-duration='600'  data-aos-anchor-placement="bottom-bottom"/>
+                                    <img src={pmodel} alt="pmodel"  data-aos='fade-down' data-aos-duration='600'  data-aos-anchor-placement="bottom-center"/>
                                 </div>
                                 <div className="col-3">
-                                    <img src={hmodel} alt="hmodel"  data-aos='zoom-in' data-aos-duration='600'  data-aos-anchor-placement="bottom-bottom"/>
+                                    <img src={hmodel} alt="hmodel"  data-aos='flip-right' data-aos-duration='800'  data-aos-anchor-placement="bottom-center"/>
                                 </div>
                             </div>
                         </div>
