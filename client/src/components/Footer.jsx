@@ -57,8 +57,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='bg-black text-white'>
-                <div className='container'>
+            <div className='bg-black text-white footercontent'>
+                <div className='container-fluid'>
                     <div className="text-capitalize mt-3">
                         <div className="row">
                             <div className="col-md-6">
