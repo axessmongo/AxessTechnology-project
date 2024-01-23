@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.scss'
 import Svg1 from '../components/Svg1';
 import pulse from '../assets/images/bubble.webp';
+import Card from '../components/Card';
+import Award from '../components/Award';
 
 export default function Home() {
     let nav = useNavigate()
@@ -20,9 +22,9 @@ export default function Home() {
         <section>
             <div className="home">
                 <div className="hero-banner">
-                    <div className="px-xxl-5 mx-xxl-5 px-5">
+                    <div className="px-xxl-5 mx-xxl-5 px-5 text-center text-lg-start">
                         <div className="row position-relative z-2 vh-100 justify-content-between align-items-center text-white g-5">
-                            <div className="col-md-6">
+                            <div className="col-md-6 order-2 order-lg-1">
                                 <img src={pulse} className='pulse' alt="pulse" />
                                 <Svg1/>
                                 <div className="hero-banner-content">
@@ -31,13 +33,15 @@ export default function Home() {
                                     <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 order-lg-2">
                                 <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Award/>
+            <Card/>
         </section>
     )
 }

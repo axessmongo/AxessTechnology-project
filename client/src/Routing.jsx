@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import Technologies from './pages/Technologies';
+import Homenew from './pages/Homenew';
+import Card from './components/Card';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
@@ -18,6 +20,7 @@ function Routing() {
         <div>
             <BrowserRouter>
                 <Routes>
+                    {/* <Route path="/" element={<Navbar />}> */}
                     <Route path="/" element={<Navbar />}>
                         <Route path='' element={<Home/>} />
                     </Route>

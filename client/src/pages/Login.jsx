@@ -56,7 +56,7 @@ function Login() {
               />
               {error && <div className='error_msg'>{error}</div>}
               <button type="submit" className='green_btn'>
-                Sign In
+                sign In
               </button>
             </form>
           </div>
