@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
-import contactbg  from '../assets/images/contact-bg.jpg'
+import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss"
 
 
@@ -10,16 +10,16 @@ import "../assets/css/index.scss"
 function Footer() {
     return (
         <div>
-            <div className="container mt-4 conatctbg">
+            <div className="container mt-4 conatctbg contact">
                 <div class="card">
                     <div class="card-body position-relative">
                         <div className="row">
                             <div className="col-md-10">
-                                <p className='text-start mx-2 fs-5 bg-img-1'>contact us</p>
-                                <p style={{ fontSize: "15px" }}>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
+                                <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2'>contact us</p>
+                                <p>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                             </div>
-                            <div className="col-md-2 position-absolute" style={{ top: "-70px", right: "-45px" }}>
-                                <img src={frompng} className='' style={{height:"100px", width:"200px"}} alt="" />
+                            <div className="col-md-2 position-absolute footerbg">
+                                <img src={frompng}  alt="" />
                             </div>
                         </div>
                         <div className="container">
@@ -57,17 +57,17 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='bg-black text-white' style={{ paddingTop: "100px" }}>
+            <div className='bg-black text-white footercontent'>
                 <div className='container-fluid'>
                     <div className="text-capitalize mt-3">
                         <div className="row">
                             <div className="col-md-6">
                                 <div className='pt-3'>
-                                    <img src={footer} className='bg-black w-100 h-50' alt="" />
+                                    <img src={footer} className='bg-black w-75 h-75 mx-5' alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 text-center pt-4">
-                                <p className='text-warning fw-bolder'>Visit Us</p>
+                                <p className='gold-text-2 fw-bolder'>Visit Us</p>
                                 <p>Tidel Park, GF-04,
                                     No-4, Rajiv Gandhi Salai,
                                     Taramani,
@@ -93,7 +93,7 @@ function Footer() {
                 <div className="container-fluid">
                     <div className="row text-center text-capitalize mt-4">
                         <div className="col-1 col-md-2">
-                            <p className='text-warning fw-bolder'>Company</p>
+                            <p className='gold-text-2 fw-bolder'>Company</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
                                     <li><Link to="" className='text-decoration-none text-white' >About</Link></li>
@@ -107,7 +107,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="col col-md-2">
-                            <p className='text-warning fw-bolder'>Service</p>
+                            <p className='gold-text-2 fw-bolder'>Service</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
                                     <li><Link to="" className='text-decoration-none text-white'>Web</Link></li>
@@ -121,7 +121,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="col col-md-2">
-                            <p className='text-warning fw-bolder'>technology</p>
+                            <p className='gold-text-2 fw-bolder'>technology</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled text-white '>
                                     <li><Link to="" className='text-decoration-none text-white'>Web 3</Link></li>
@@ -135,7 +135,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="col col-md-2">
-                            <p className='text-warning fw-bolder'>product</p>
+                            <p className='gold-text-2 fw-bolder'>Collaborate with us</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
                                     <li><Link to="" className='text-decoration-none text-white'>Crypto Exchange</Link></li>
@@ -150,11 +150,11 @@ function Footer() {
                             </div>
                         </div>
                         <div className="col col-md-4">
-                            <p className='text-warning fw-bolder'>social media</p>
-                            <p className='fw-semibold'>Follow Us on Social Media.</p>
-                            <div className="d-flex justify-content-center mt-3">
+                            <p className='gold-text-2 fw-bolder'>social media</p>
+                            <p className='fw-semibold mt-3 mb-3'>Follow Us on Social Media.</p>
+                            <div className="d-flex justify-content-center mt-5 mb-4">
                                 <ul className="list-unstyled d-flex">
-                                    <li><Link><i class="bi bi-facebook mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i class="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
                                     <li><Link><i class="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
                                     <li><Link><i class="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
                                     <li><Link><i class="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
