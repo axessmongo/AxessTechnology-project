@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import '../assets/css/home.scss'
+import Svg1 from '../components/Svg1';
+import pulse from '../assets/images/bubble.webp';
 
 export default function Home() {
     let nav = useNavigate()
@@ -9,94 +12,30 @@ export default function Home() {
         if (window.location.pathname == '/services') {
             body.style.overflow = 'hidden';
             console.log(window.location.pathname);
-        }else{
+        } else {
             body.style.overflow = 'auto';
         }
     }, [nav])
     return (
         <section>
-            <div>
-                <div id="carouselExampleFade" className="carousel slide carousel-fade main-carousel">
-                    <div className="carousel-inner text-center">
-                        <div className="carousel-item active">
-                            <div className='main-item'>
-                                <div className="row justify-content-center align-items-center h-100 text-white">
-                                    <div className="col-10 col-lg-8">
-                                        <h1 className='light-header'>
-                                            Innovation
-                                        </h1>
-                                        <h1 className='primary-header mb-4'>
-                                            Software Development
-                                        </h1>
-                                        <p className='primary-text mb-3'>
-                                            In the realm of technology, software development stands as the driving force behind innovation and efficiency. It encompasses the art and science of crafting programs and applications that cater to diverse needs, from simplifying daily tasks to revolutionizing entire industries.
-                                        </p>
-                                        {/* <div className='border-top border-white mb-3'></div> */}
-                                        <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
-                                    </div>
+            <div className="home">
+                <div className="hero-banner">
+                    <div className="px-xxl-5 mx-xxl-5 px-5">
+                        <div className="row position-relative z-2 vh-100 justify-content-between align-items-center text-white g-5">
+                            <div className="col-md-6">
+                                <img src={pulse} className='pulse' alt="pulse" />
+                                <Svg1/>
+                                <div className="hero-banner-content">
+                                    <h1 className='primary-header mb-5' data-aos='fade-up' data-aos-duration='500'>Modernizing And Transforming Businesses Digitally To Move Forward</h1>
+                                    <p className='primary-text mb-5' data-aos='fade-up' data-aos-duration='600'>Embrace our visionary software development services to navigate the ever-changing business landscape. We help you stay ahead of industry trends to secure your market dominance and achieve unrivaled success.</p>
+                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
-                        </div>
-                        <div className="carousel-item">
-
-                            <div className='main-item'>
-                                <div className="row justify-content-center align-items-center h-100 text-white">
-                                    <div className="col-10 col-lg-8">
-                                        <h1 className='light-header'>
-                                            Intelligent
-                                        </h1>
-                                        <h1 className='primary-header mb-4'>
-                                            AI Development
-                                        </h1>
-                                        <p className='primary-text mb-3'>
-                                            In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
-                                        </p>
-                                        {/* <div className='border-top border-white mb-3'></div> */}
-                                        <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-
-                            <div className='main-item'>
-                                <div className="row justify-content-center align-items-center h-100 text-white">
-                                    <div className="col-10 col-lg-8">
-                                        <h1 className='light-header'>
-                                            Reliability
-                                        </h1>
-                                        <h1 className='primary-header mb-4'>
-
-                                            Software Testing
-                                        </h1>
-                                        <p className='primary-text mb-3'>
-                                            Software testing plays a crucial role in ensuring the reliability and optimal performance of digital solutions. By systematically evaluating each component and functionality, testing not only identifies potential bugs and vulnerabilities but also guarantees that software meets the specified requirements.
-                                        </p>
-                                        {/* <div className='border-top border-white mb-3'></div> */}
-                                        <button className=' gold-btn'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
-                                    </div>
-                                </div>
+                            <div className="col-md-6">
+                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>
-                    <button
-                        className="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev"
-                    >
-                        <span className="carousel-control-prev-icon" aria-hidden="true" />
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        className="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next"
-                    >
-                        <span className="carousel-control-next-icon" aria-hidden="true" />
-                        <span className="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </section>

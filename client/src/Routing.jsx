@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import Technologies from './pages/Technologies';
+import Homenew from './pages/Homenew';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
@@ -19,7 +20,7 @@ function Routing() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Navbar />}>
-                        <Route index element={Home} />
+                        <Route path='' element={<Home/>} />
                     </Route>
                     <Route path="/login" element={<Login />} />
                     <Route path="/" element={<Navigate replace to="/login" />} />
