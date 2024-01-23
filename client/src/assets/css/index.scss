@@ -743,3 +743,17 @@ img {
     }
 
 }
+
+@media(max-width:992px) {
+    .primary-header{
+        font-size: 32px;
+    }
+    .upper-nav{
+        p{
+            font-size: 30px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+}
