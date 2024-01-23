@@ -5,7 +5,7 @@ function Award() {
     return (
         <section className='container py-3'>
             <div>
-                <h3>Award-winning</h3>
+                <p className='bg-img-1'>Award-winning</p>
                 <h1>Software Development <br /> Company</h1>
             </div>
             <div className='row'>
@@ -17,11 +17,7 @@ function Award() {
                 <div className='col-md-8'>
                     <div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis
-                                reiciendis perspiciatis voluptatem vitae ducimus dolore. Accusantium nam
-                                fugiat totam ea vel quos officia neque, architecto perferendis nesciunt
-                                voluptatem vitae ducimus dolore. Accusantium nam fugiat totam ea vel quos officia neque,
-                                dolorem voluptatem!</p>
+                            <p className='secondary-text'>Axess is a leading software development company that specializes in providing a full range of enterprise solutions to satisfy the particular needs of your company. We are more than just a team of skilled developers and designers; we are visionary creators who believe in transforming possibilities into realities.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aspernatur autem
                                 perferendis rerum distinctio, blanditiis laboriosam optio deserunt itaque voluptatem
                                 ut iure error esse voluptas, maxime quis consectetur odit

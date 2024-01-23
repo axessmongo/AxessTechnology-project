@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.scss'
 import Svg1 from '../components/Svg1';
 import pulse from '../assets/images/bubble.webp';
+import Card from '../components/Card';
+import Award from '../components/Award';
 
 export default function Home() {
     let nav = useNavigate()
@@ -38,6 +40,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Award/>
+            <Card/>
         </section>
     )
 }

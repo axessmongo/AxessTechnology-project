@@ -52,6 +52,13 @@ img {
     font-weight: 300;
 }
 
+.secondary-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
 .bg-axess-gold-1 {
     background-color: var(--axess-gold);
 }
@@ -455,6 +462,10 @@ img {
             overflow: hidden;
             cursor: pointer;
             z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
 
 
             &::before {

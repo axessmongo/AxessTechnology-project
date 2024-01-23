@@ -74,7 +74,7 @@ const Technologies = () => {
                         <div className="col-md-9 col-lg-7">
                         <div>
                             <div className='tech-tools-header '>
-                                <p>Technologies</p>
+                                <p className='bg-img-1'>Technologies</p>
                             </div>
                             <div className='text-white'>
                                 <h2>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
