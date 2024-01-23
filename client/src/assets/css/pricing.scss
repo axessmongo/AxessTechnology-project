@@ -204,7 +204,7 @@
       }
       
       .pricing-card-header{
-        background-color: #0fbcf9;
+        background-color: #b98d2e;
         display: inline-block;
         color: #fff;
         padding: 12px 30px;
@@ -216,7 +216,7 @@
       }
       
       .pricing-card:hover .pricing-card-header{
-        box-shadow: 0 0 0 26em #05463c;
+        box-shadow: 0 0 0 37em #05463c;
       }
       
       .price{
@@ -224,7 +224,6 @@
         color: #0fbcf9;
         margin: 40px 0;
         transition: .2s linear;
-        
       }
 
       .price sup, .price span{
@@ -245,7 +244,7 @@
       .order-btn{
         display: inline-block;
         margin-bottom: 40px;
-        margin-top: 30%;
+        margin-top: 25%;
         border: 2px solid #0fbcf9;
         color: #0fbcf9;
         padding: 18px 40px;
