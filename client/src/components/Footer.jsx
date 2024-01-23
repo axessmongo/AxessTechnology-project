@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
+import "../assets/css/index.scss"
 
 
 
