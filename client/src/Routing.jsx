@@ -5,7 +5,8 @@ import Home from './pages/Home';
 // import Login from './pages/Login';
 import Login2 from './pages/Login2';
 import Services from './pages/Services';
-import Technology from './pages/Technology';
+import Pricing from './pages/Pricing';
+
 
 function Routing() {
     return (
@@ -18,7 +19,7 @@ function Routing() {
                     {/* <Route path="/login" element={<Login />} /> */}
                     <Route path="/login" element={<Login2 />} />
                     <Route path='/services' element={<Services />} />
-                    <Route path='/technology' element={<Technology />} />
+                    <Route path='/pricing' element={<Pricing />} />
                 </Routes>
             </BrowserRouter>
         </div>
