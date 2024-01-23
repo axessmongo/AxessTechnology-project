@@ -6,13 +6,15 @@ import Register from './pages/Register';
 import Services from './pages/Services';
 import Technologies from './pages/Technologies';
 import Homenew from './pages/Homenew';
+import Card from './components/Card';
 
 function Routing() {
     return (
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Navbar />}>
+                    {/* <Route path="/" element={<Navbar />}> */}
+                    <Route path="/" element={<Card />}>
                         <Route path='' element={<Home/>} />
                     </Route>
                     {/* <Route path="/login" element={<Login />} /> */}
