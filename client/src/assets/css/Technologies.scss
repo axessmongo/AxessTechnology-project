@@ -17,12 +17,14 @@
   background-image: url("../images/headerbg1.webp");
 }
 .tech-tools-section {
-  .tech-tools ul li::marker {
-    // content: ".";
-    // color: yellow;
-    // font-size: 15px;
-    // font-weight: 800;
-    // // box-shadow: ;
+  .tech-tools{
+        background-color: black;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+  }
+  .tech-tools ul{
+     list-style: none;
   }
 }
 .technology-section {
