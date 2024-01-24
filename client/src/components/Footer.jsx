@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
-import contact  from '../assets/images/contact.jpg'
+// import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss"
 
 
@@ -169,7 +169,7 @@ function Footer() {
                     </div>
                     <hr />
                     <div className='text-center'>
-                        <p>Copyright © All rights reserved 2024. Axess Technology.</p>
+                        <p className='mb-0'>Copyright © All rights reserved 2024. Axess Technology.</p>
                     </div>
                 </div>
             </div>
