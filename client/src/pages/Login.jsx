@@ -34,7 +34,7 @@ function Login() {
   return (
     <div>
       <Navbar/>
-    <div className='login'>
+    <div className='login bg-axess-gold-3'>
       <div className='login_container'>
         <div className='login_form_container'>
           <div className='left'>
