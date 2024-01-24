@@ -45,6 +45,7 @@ export default function Home() {
             <Card/>
             <Industries/>
             <Footer/>
+            
         </section>
     )
 }
