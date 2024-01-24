@@ -24,7 +24,6 @@ function Routing() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route path="/" element={<Navbar />}> */}
                     <Route path="/" element={<Home />}/>              
                     <Route path="/login" element={<Login />} />
                     {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
