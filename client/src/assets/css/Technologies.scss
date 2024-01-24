@@ -17,22 +17,36 @@
   background-image: url("../images/headerbg1.webp");
 }
 .tech-tools-section {
+  .techtoolsimg{
+    img{
+      max-width: 400px;
+    }
+  }
   .tech-tools{
         background-color: black;
         border-radius: 10px;
         padding: 5px;
         margin-top: 10px;
+        transition: all 0.4s;
+
+        &:hover{
+          box-shadow: 1px 1px 1px 1px var(--axess-gold);
+        }
   }
   .tech-tools ul{
-     list-style: none;
-  }
+    //  list-style: none;
+     color:#cec2c2;
+     
+    }
+    ::marker{
+      color: var(--axess-gold);
+     }
 }
 .technology-section {
-  // background-color:  var(--axess-secondary);
   .tech-buttons {
     button {
       padding: 6px 10px;
-      margin: 2px;
+      margin: 5px;
       border: none;
       border: solid 2px var(--axess-secondary);
       border-radius: 5px;
@@ -42,6 +56,7 @@
     button:hover {
       border: solid 2px var(--axess-gold);
       box-shadow: var(--axess-gold) 0px 2px 8px 0px;
+      color: var(--axess-secondary);
     }
 
     .tech-btn {
@@ -85,4 +100,10 @@
 .conatctbg{
  position: relative;
  top: 100px;
+}
+
+.footercontent i {
+  font-size: 20px;
+  padding: 20px !important;
+  margin: 0 10px;
 }

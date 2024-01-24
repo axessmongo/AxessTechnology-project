@@ -7,6 +7,7 @@ import Card from '../components/Card';
 import Award from '../components/Award';
 import Footer from '../components/Footer';
 import Industries from '../components/Industries';
+import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 export default function Home() {
     let nav = useNavigate()
@@ -46,6 +47,7 @@ export default function Home() {
             </div>
             <Award/>
             <Card/>
+            <Techsection/>
             <Industries/>
             <Footer/>
         </section>
