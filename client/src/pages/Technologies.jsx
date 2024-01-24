@@ -54,6 +54,7 @@ import terraform from "../assets/images/Technologies/terraform.webp"
 import ts from "../assets/images/Technologies/ts.webp"
 import wordpress from "../assets/images/Technologies/wordpress.webp"
 import xamarin from "../assets/images/Technologies/xamarin.webp"
+import Banner from '../components/Banner'
 // each tech import ends---------->
 
 const Technologies = () => {
@@ -61,6 +62,7 @@ const Technologies = () => {
 
     return (
         <div className='technology-page'>
+            <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz'/>
             <div className='tech-tools-section bg-green-1 py-5 '>
                 <div className='container'>
                     <div className="row">
