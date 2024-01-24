@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from "react";
 import axios from "axios";
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 import "../assets/css/Login.scss";
 
@@ -30,6 +32,8 @@ function Login() {
     }
   };
   return (
+    <div>
+      <Navbar/>
     <div className='login'>
       <div className='login_container'>
         <div className='login_form_container'>
@@ -70,6 +74,8 @@ function Login() {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   )
 }
