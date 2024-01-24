@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
-import contact  from '../assets/images/contact.jpg'
+// import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss"
 
 
@@ -10,7 +10,7 @@ import "../assets/css/index.scss"
 function Footer() {
     return (
         <div>
-            <div className="container mt-4 conatctbg contact">
+            <div className="container mt-4 conatctbg">
                 <div class="card">
                     <div class="card-body position-relative">
                         <div className="row">
@@ -169,7 +169,7 @@ function Footer() {
                     </div>
                     <hr />
                     <div className='text-center'>
-                        <p>Copyright © All rights reserved 2024. Axess Technology.</p>
+                        <p className='mb-0'>Copyright © All rights reserved 2024. Axess Technology.</p>
                     </div>
                 </div>
             </div>
