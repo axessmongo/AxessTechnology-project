@@ -183,12 +183,14 @@
 
 
 .pricing {
+  
     .pricing-table{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         width: min(1600px, 100%);
         margin: auto;
+        font-family: "Jost", sans-serif;
       }
       
       .pricing-card{
@@ -201,6 +203,7 @@
         overflow: hidden;
         color: #2d2d2d;
         transition: .3s linear;
+        text-align: start;
       }
       
       .pricing-card-header{
@@ -213,6 +216,7 @@
         text-transform: uppercase;
         font-weight: 600;
         transition: .4s linear;
+        text-align: center !important;
       }
       
       .pricing-card:hover .pricing-card-header{
@@ -245,13 +249,14 @@
         display: inline-block;
         margin-bottom: 40px;
         margin-top: 25%;
-        border: 2px solid #0fbcf9;
-        color: #0fbcf9;
-        padding: 18px 40px;
+        border: 2px solid #b98d2e;
+        color: #05463c;
+        padding: 12px 35px;
         border-radius: 8px;
         text-transform: uppercase;
         font-weight: 500;
         transition: .3s linear;
+        text-decoration: none;
       }
       
       .order-btn:hover{
