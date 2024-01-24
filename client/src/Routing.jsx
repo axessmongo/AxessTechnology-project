@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
 import Footer from './components/Footer';
+import Demo from './components/Demo';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -29,6 +30,9 @@ function Routing() {
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="pricing" element={<Pricing />} />
+                    <Route path="demo" element={<Demo />} />
+
+
                 </Routes>
             </BrowserRouter>
         </div>
