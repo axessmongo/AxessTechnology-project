@@ -1,6 +1,7 @@
 import React from 'react'
 import "../assets/css/index.scss"
 import "../assets/css/contact.scss"
+import Banner from '../components/Banner'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -9,24 +10,25 @@ function Contact() {
     return (
         <div>
             <Navbar/>
+            <Banner h1={'Talk to a Human'} h2={'we check our emails everyday and  reply even if we are at dinner.you not going to hit a rediculously long phone menu when you call us '} />
             <div className="container">
                 <div class="card mt-4 ">
                     <div class="card-body ">
                         <p className='text-center text-capitalize bg-img-1'>request for quote</p>
                         <p className='text-center text-capitalize fw-semibold primary-text'>discuss your project with us.we are waiting to serve your better</p>
                     </div>
-                    <div className="row container">
+                    <div className="row container text-capitalize">
                         <div className="col-md-6 mb-4">
                             <input type="text" name="fname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Firstname' />
                         </div>
                         <div className="col-md-6 mb-4">
-                            <input type="text" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='lastname' />
+                            <input type="text" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Lastname' />
                         </div>
                         <div className="col-md-6 mb-4">
                             <input type="text" name="email" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
                         </div>
                         <div className="col-md-6 mb-4">
-                            <input type="text" name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='phone' />
+                            <input type="text" name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone' />
                         </div>
                         <div className="col-12 mb-4">
                             <input type="password" name="password" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Password' />
