@@ -7,6 +7,8 @@ import Card from '../components/Card';
 import Award from '../components/Award';
 import Footer from '../components/Footer';
 import Industries from '../components/Industries';
+import Techsection from '../components/Techsection';
+import Navbar from '../components/Navbar';
 export default function Home() {
     let nav = useNavigate()
 
@@ -21,7 +23,9 @@ export default function Home() {
     }, [nav])
     return (
         <section>
+            <Navbar/>
             <div className="home">
+
                 <div className="hero-banner">
                     <div className="px-xxl-5 mx-xxl-5 px-5 text-center text-lg-start">
                         <div className="row position-relative z-2 min-vh-100 justify-content-between align-items-center text-white g-5">
@@ -35,7 +39,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-md-6 order-lg-2">
-                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>
@@ -43,6 +47,7 @@ export default function Home() {
             </div>
             <Award/>
             <Card/>
+            <Techsection/>
             <Industries/>
             <Footer/>
         </section>
