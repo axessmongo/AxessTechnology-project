@@ -408,7 +408,7 @@ const Technologies = () => {
                                         <div className=' tech-tools'>
                                             <h6 className='text-center py-3'>Mobile</h6>
                                             <ul className="">
-                                                <li>Android/ Kotlin</li>
+                                                <li>Android</li>
                                                 <li>iOS/ Swift</li>
                                                 <li>React Native</li>
                                                 <li>Flutter</li>
