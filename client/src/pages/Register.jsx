@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "../assets/css/reg.scss";
+import "../assets/css/index.scss";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
@@ -52,8 +53,8 @@ function Register() {
 						<div className='left'>
 							<h1>Welcome Back</h1>
 							<Link to="/login">
-								<button type="button" className='white_btn'>
-									sign in
+								<button type="button" className='green_btn'>
+									Sign in
 								</button>
 							</Link>
 						</div>
@@ -89,7 +90,7 @@ function Register() {
 								/>
 								<input
 									type="number"
-									placeholder="phone-Number"
+									placeholder="Phone-Number"
 									name="phone"
 									onChange={handleChange}
 									value={data.phone}
