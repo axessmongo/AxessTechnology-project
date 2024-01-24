@@ -7,18 +7,18 @@ import About from './About'
 function Navbar() {
     return (
         <div>
-            <div className='d-flex justify-content-around align-items-center upper-nav border-bottom container-fluid'  data-aos='fade-down' data-aos-duration='500'>
-                <div className='d-flex share'>
+            <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap'  data-aos='fade-down' data-aos-duration='500'>
+                <div className='d-flex share order-2 order-lg-1 '>
                     <Link><i className="bi bi-instagram"></i></Link>
                     <Link><i className="bi bi-whatsapp"></i></Link>
                     <Link><i className="bi bi-twitter-x"></i></Link>
                 </div>
-                <Link to='/' className='d-flex justify-content-center'>
+                <Link to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
                     <p>Tech</p>
                 </Link>
-                <div>
+                <div className=' order-3 order-lg-3'>
                     <Link to={'/login'} className='gold-btn px-4'>
                         <span className='d-block'>Login</span>
                     </Link>
@@ -48,11 +48,7 @@ function Navbar() {
                                         Home
                                     </Link>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
-                                    <Link className="nav-link" >
-                                        About
-                                    </Link>
-                                </li>
+                               
                                 <li className="nav-item" data-aos='fade'>
                                     <Link to={'services'} className="nav-link" >
                                         Services
@@ -61,6 +57,11 @@ function Navbar() {
                                 <li className="nav-item" data-aos='fade'>
                                     <Link to={"technologies"} className="nav-link" >
                                         Technology
+                                    </Link>
+                                </li>
+                                <li className="nav-item" data-aos='fade'>
+                                    <Link to={"pricing"} className="nav-link" >
+                                        Pricing
                                     </Link>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>

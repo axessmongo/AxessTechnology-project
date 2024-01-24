@@ -7,11 +7,12 @@ import Services from './pages/Services';
 import Technologies from './pages/Technologies';
 import Homenew from './pages/Homenew';
 import Card from './components/Card';
+import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
 import Footer from './components/Footer';
-import Demo from './components/Demo';
+import Categories from './components/Categories';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -21,7 +22,7 @@ function Routing() {
             <BrowserRouter>
                 <Routes>
                     {/* <Route path="/" element={<Navbar />}> */}
-                    <Route path="/demo" element={<Demo />}>
+                    <Route path="/" element={<Categories />}>
                         <Route path='' element={<Home/>} />
                     </Route>
                     <Route path="/login" element={<Login />} />
@@ -30,6 +31,7 @@ function Routing() {
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
+                    <Route path="/Pricing" element={<Pricing />} />
                     <Route path='/footer' element={<Footer />} />
                 </Routes>
             </BrowserRouter>
