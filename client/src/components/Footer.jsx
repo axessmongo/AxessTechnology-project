@@ -19,7 +19,7 @@ function Footer() {
                                 <p style={{ fontSize: "15px" }}>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                             </div>
                             <div className="col-md-2 position-absolute" style={{ top: "-70px", right: "-45px" }}>
-                                <img src={frompng} className='' style={{height:"100px", width:"200px"}} alt="" />
+                                <img src={frompng} className='h-00 w-100' alt="" />
                             </div>
                         </div>
                         <div className="container">
