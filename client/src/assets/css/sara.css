@@ -48,3 +48,37 @@
 }
 
 
+.bg1 {
+
+    min-height: 680px;
+    border-radius: 50px;
+    background: #c4d9ff;
+    padding-top: 50px;
+    position: relative;
+
+}
+.bg1::before {
+    content: "";
+    background: url('https://www.alwin.io/assets/images/home/tech_stack_before.webp');
+    width: 217px;
+    height: 315px;
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+}
+.bg1::after {
+    content: "";
+    background: url('https://www.alwin.io/assets/images/home/tech_stack_before.webp');
+    width: 217px;
+    height: 315px;
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+}
+text1{
+    font-size:45px ;
+    font-weight:700 ;
+}
+.bg1 h1{
+    margin-bottom: 25px;
+}

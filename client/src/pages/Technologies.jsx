@@ -63,12 +63,12 @@ const Technologies = () => {
 
     return (
         <div className='technology-page'>
-            <Navbar/>
-            <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz'/>
+            <Navbar />
+            <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz' />
             <div className='technology-section py-5'>
                 <div className='container technology' >
-                    <div className='primary-header text-center tech-title py-4'>
-                        Tech Tools
+                    <div className='primary-header text-center d-flex justify-content-center tech-title py-4'>
+                        <p className='bg-img-1'>Tech Tools</p>
                     </div>
                     <div className='tech-container'>
                         <div className='text-center tech-buttons'>
@@ -350,93 +350,89 @@ const Technologies = () => {
             </div>
             <div className='tech-tools-section bg-green-1 py-5 '>
                 <div className='container'>
-                    <div className="row">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-12">
+                            <div className='tech-tools-header d-flex justify-content-center'>
+                                <p className='bg-img-1'>Technologies</p>
+                            </div>
+                        </div>
                         <div className="d-none d-lg-block col-lg-5">
                             <div className="row align-items-center justify-content-center">
-                                <div>
-                                    <img src={techtools1} style={{ "width": "100%", "height": "100%" }}></img>
+                                <div className='techtoolsimg'>
+                                    <img src={techtools1} ></img>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-9 col-lg-7">
                             <div>
-                                <div className='tech-tools-header '>
-                                    <p className='bg-img-1'>Technologies</p>
-                                </div>
+
                                 <div className='text-white'>
-                                    <h2>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
-                                    <p>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
+                                    <h2 className='text-center text-lg-start'>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
+                                    <p  className='text-center text-lg-start'>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
                                 </div>
                                 <div className='row align-items-center justify-content-center text-white tech-tools-container'>
                                     <div className='col-6 col-md-4 col-lg-3 '>
                                         <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <h6 className='text-center py-3'>FrontEnd</h6>
                                             <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
+                                                <li>HTML/ CSS</li>
+                                                <li>Angular Js</li>
+                                                <li>React Js</li>
+                                                <li>Vue Js</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className='col-6 col-md-4 col-lg-3'>
                                         <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <h6 className='text-center py-3'>BackEnd</h6>
                                             <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
+                                                <li>C/ C++</li>
+                                                <li>Django</li>
+                                                <li>PHP</li>
+                                                <li>Node Js</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className='col-6 col-md-4 col-lg-3'>
                                         <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <h6 className='text-center py-3'>BackEnd</h6>
                                             <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
+                                                <li>.Net</li>
+                                                <li>Java</li>
+                                                <li>Python</li>
+                                                <li>Golang</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className='col-6 col-md-4 col-lg-3'>
                                         <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <h6 className='text-center py-3'>Mobile</h6>
                                             <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
+                                                <li>Android</li>
+                                                <li>iOS/ Swift</li>
+                                                <li>React Native</li>
+                                                <li>Flutter</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className='col-6 col-md-4 col-lg-3'>
                                         <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <h6 className='text-center py-3'>DevOps</h6>
                                             <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
+                                                <li>Azure</li>
+                                                <li>AWS</li>
+                                                <li>Google cloud</li>
+                                                <li>Lambda</li>
                                             </ul>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
 
 
