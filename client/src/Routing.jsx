@@ -11,6 +11,7 @@ import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function Routing() {
@@ -29,6 +30,7 @@ function Routing() {
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="pricing" element={<Pricing />} />
+                    <Route path='/contact' element={<Contact />} />
                 </Routes>
             </BrowserRouter>
         </div>

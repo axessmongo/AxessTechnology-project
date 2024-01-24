@@ -154,10 +154,10 @@ function Footer() {
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                            <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span>: +91 93845 87998</p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span>: +91 93845 87998</p>
                             </div>
                             <div className="col-md-6">
-                            <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Job</span>: +91 93614 23585</p>
+                                <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Job</span>: +91 93614 23585</p>
                             </div>
                         </div>
                     </div>
