@@ -32,17 +32,9 @@ function Routing() {
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
-<<<<<<< HEAD
-                    <Route path="pricing" element={<Pricing />} />
+                    <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
-=======
-                    <Route path="/Pricing" element={<Pricing />} />
-                    <Route path='/footer' element={<Footer />} />
                     <Route path='/categoriesin' element={<CategoriesIn />} />
-                    <Route path="demo" element={<Demo />} />
-
-
->>>>>>> 3d9d35ade4ed1b8ee9a0a86f8b1cb9e9f02c98d2
                 </Routes>
             </BrowserRouter>
         </div>
