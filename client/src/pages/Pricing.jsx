@@ -79,11 +79,11 @@ function Pricing() {
 						</ul>
 						<a href="#" className="order-btn">Order Now</a>
 					</div>
-					{/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
 				</div>
+				<div className='Pay'>
+						<h5>ACCEPTED PAYMENT METHODS</h5>
+						
+					</div>
 			</section >
 			<Footer />
 		</>
