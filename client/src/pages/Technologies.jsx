@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import "../assets/css/Technologies.scss"
+import Footer from '../components/Footer'
 import techtools1 from "../assets/images/Technologies/techtools1.webp"
 // each tech image import----->
 import android from "../assets/images/Technologies/android.webp"
@@ -54,103 +55,16 @@ import terraform from "../assets/images/Technologies/terraform.webp"
 import ts from "../assets/images/Technologies/ts.webp"
 import wordpress from "../assets/images/Technologies/wordpress.webp"
 import xamarin from "../assets/images/Technologies/xamarin.webp"
-import Banner from '../components/Banner'
 // each tech import ends---------->
-
+import Banner from '../components/Banner'
+import Navbar from '../components/Navbar'
 const Technologies = () => {
     const [TechActive, setTechActive] = useState(0);
 
     return (
         <div className='technology-page'>
+            <Navbar/>
             <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz'/>
-            <div className='tech-tools-section bg-green-1 py-5 '>
-                <div className='container'>
-                    <div className="row">
-                        <div className="d-none d-lg-block col-lg-5">
-                            <div className="row align-items-center justify-content-center">
-                                <div>
-                                    <img src={techtools1} style={{ "width": "100%", "height": "100%" }}></img>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-9 col-lg-7">
-                            <div>
-                                <div className='tech-tools-header '>
-                                    <p className='bg-img-1'>Technologies</p>
-                                </div>
-                                <div className='text-white'>
-                                    <h2>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
-                                    <p>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
-                                </div>
-                                <div className='row align-items-center justify-content-center text-white tech-tools-container'>
-                                    <div className='col-6 col-md-4 col-lg-3 '>
-                                        <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
-                                            <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className='col-6 col-md-4 col-lg-3'>
-                                        <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
-                                            <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className='col-6 col-md-4 col-lg-3'>
-                                        <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
-                                            <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className='col-6 col-md-4 col-lg-3'>
-                                        <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
-                                            <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className='col-6 col-md-4 col-lg-3'>
-                                        <div className=' tech-tools'>
-                                            <h4 className='text-center py-3'>Frontend</h4>
-                                            <ul className="">
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                                <li>HTML/CSS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className='technology-section py-5'>
                 <div className='container technology' >
                     <div className='primary-header text-center tech-title py-4'>
@@ -434,6 +348,95 @@ const Technologies = () => {
 
                 </div>
             </div>
+            <div className='tech-tools-section bg-green-1 py-5 '>
+                <div className='container'>
+                    <div className="row">
+                        <div className="d-none d-lg-block col-lg-5">
+                            <div className="row align-items-center justify-content-center">
+                                <div>
+                                    <img src={techtools1} style={{ "width": "100%", "height": "100%" }}></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-9 col-lg-7">
+                            <div>
+                                <div className='tech-tools-header '>
+                                    <p className='bg-img-1'>Technologies</p>
+                                </div>
+                                <div className='text-white'>
+                                    <h2>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
+                                    <p>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
+                                </div>
+                                <div className='row align-items-center justify-content-center text-white tech-tools-container'>
+                                    <div className='col-6 col-md-4 col-lg-3 '>
+                                        <div className=' tech-tools'>
+                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <ul className="">
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className='col-6 col-md-4 col-lg-3'>
+                                        <div className=' tech-tools'>
+                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <ul className="">
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className='col-6 col-md-4 col-lg-3'>
+                                        <div className=' tech-tools'>
+                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <ul className="">
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className='col-6 col-md-4 col-lg-3'>
+                                        <div className=' tech-tools'>
+                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <ul className="">
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className='col-6 col-md-4 col-lg-3'>
+                                        <div className=' tech-tools'>
+                                            <h4 className='text-center py-3'>Frontend</h4>
+                                            <ul className="">
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                                <li>HTML/CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Footer/>
         </div>
 
 

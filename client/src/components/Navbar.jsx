@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import {NavLink, Link, Outlet } from 'react-router-dom'
 import Home from '../pages/Home'
 import logo from '../assets/images/logo/logo.png'
 import About from './About'
@@ -13,15 +13,15 @@ function Navbar() {
                     <Link><i className="bi bi-whatsapp"></i></Link>
                     <Link><i className="bi bi-twitter-x"></i></Link>
                 </div>
-                <Link to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
+                <NavLink to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
                     <p>Tech</p>
-                </Link>
+                </NavLink>
                 <div className=' order-3 order-lg-3'>
-                    <Link to={'/login'} className='gold-btn px-4'>
+                    <NavLink to={'/login'} className='gold-btn px-4'>
                         <span className='d-block'>Login</span>
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
             <div>
@@ -44,42 +44,41 @@ function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden">
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link to={'/'} className="nav-link active" aria-current="page" >
+                                    <NavLink to={'/'} activeClassName="active" className="nav-link" aria-current="page" >
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link to={'services'} className="nav-link" >
+                                    <NavLink to={'/services'} activeClassName="active" className="nav-link" >
                                         Services
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link to={"technologies"} className="nav-link" >
+                                    <NavLink to={"/technologies"}  activeClassName="active" className="nav-link" >
                                         Technology
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link to={"pricing"} className="nav-link" >
+                                    <NavLink to={"/pricing"} activeClassName="active"  className="nav-link" >
                                         Pricing
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link className="nav-link" >
+                                    <NavLink to={"/contact"} activeClassName="active"  className="nav-link" >
                                         Contact
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item" data-aos='fade'>
-                                    <Link className="nav-link" >
+                                    <NavLink to={"/collaborate"} activeClassName="active" className="nav-link" >
                                         Collaborate with us
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-            <Outlet />
         </div>
     )
 }
