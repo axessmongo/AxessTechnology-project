@@ -860,10 +860,6 @@ img {
       display: block;
       height: 100%;
     }
-
-    .animatedimg {
-      animation: animatedimg 10s 0s infinite;
-    }
   }
 }
 
@@ -995,4 +991,8 @@ img {
   width: 500px;
   left: 967px;
   top: -79px;
+}
+
+.animatedimg {
+  animation: animatedimg 10s 0s infinite;
 }

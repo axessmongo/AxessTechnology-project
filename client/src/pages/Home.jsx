@@ -35,7 +35,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-md-6 order-lg-2">
-                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>
