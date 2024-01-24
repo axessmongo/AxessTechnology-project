@@ -34,7 +34,7 @@ export default function CategoriesIn() {
                     </div>
                     <div className="row  mt-5 text-content ">
                         <div className="nav-div rounded-4 ">
-                            <ul class="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist" >
+                            <ul class="nav nav-pills mb-3 text-center justofy-content-center" id="pills-tab" role="tablist" >
                                 <li class="nav-item col-md-2" role="presentation">
                                     <div className=" ">
                                         <div
@@ -52,40 +52,7 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item col-md-2" role="presentation">
-                                    <div className=" ">
-                                        <div
-                                            class="nav-link active"
-                                            id="pills-home-tab"
-                                            data-bs-toggle="pill"
-                                            data-bs-target="#pills-home"
-                                            type="div"
-                                            role="tab"
-                                            aria-controls="pills-home"
-                                            aria-selected="true"
-                                            className='content'
-                                        >
-                                            <h4>Ecommerce</h4>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item col-md-2" role="presentation">
-                                    <div className=" ">
-                                        <div
-                                            class="nav-link active"
-                                            id="pills-home-tab"
-                                            data-bs-toggle="pill"
-                                            data-bs-target="#pills-home"
-                                            type="div"
-                                            role="tab"
-                                            aria-controls="pills-home"
-                                            aria-selected="true"
-                                            className='content'
-                                        >
-                                            <h4>Ecommerce</h4>
-                                        </div>
-                                    </div>
-                                </li>
+                                
                                 <li class="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
