@@ -122,7 +122,7 @@ function Services() {
                         <div className="vh-100 p-5">
                             <div className="d-flex flex-column justify-content-between h-100">
                                 <div className="d-flex justify-content-between align-items-center" data-aos="fade-down">
-                                    <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess</Link>
+                                    <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess Technology</Link>
                                     <img src={logo} alt="logo" className='img-fluid logo' />
                                 </div>
                                 <div className="pattern d-none">
@@ -430,7 +430,7 @@ function Services() {
                             <button className='service-hover-nav two' data-aos='fade'>
                                 <span>Contact</span>
                             </button>
-                            <button data-aos='fade-left' data-aos-duration='600' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
+                            <button data-aos='fade-left' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
                                 <span>AI</span>
                             </button>
                         </div>

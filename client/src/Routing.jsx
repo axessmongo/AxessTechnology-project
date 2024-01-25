@@ -24,7 +24,7 @@ function Routing() {
             <BrowserRouter>
                 <Routes>
                     {/* <Route path="/" element={<Navbar />}> */}
-                    <Route path="/" element={<Categories />}/>              
+                    <Route path="/" element={<Home />}/>              
                     <Route path="/login" element={<Login />} />
                     {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
                     {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}

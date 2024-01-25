@@ -11,8 +11,8 @@ function Footer() {
     return (
         <div>
             <div className="container mt-4 conatctbg">
-                <div class="card">
-                    <div class="card-body position-relative">
+                <div className="card">
+                    <div className="card-body position-relative">
                         <div className="row">
                             <div className="col-md-10">
                                 <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2'>contact us</p>
@@ -145,10 +145,10 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center'>Social media</p>
                                 <p className='fw-semibold mt-3 mb-5 text-center'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li><Link><i class="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
                                 </ul>
                             </div>
                         </div>

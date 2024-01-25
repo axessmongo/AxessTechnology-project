@@ -34,11 +34,11 @@ export default function CategoriesIn() {
                     </div>
                     <div className="row  mt-5 text-content ">
                         <div className="nav-div rounded-4 ">
-                            <ul class="nav nav-pills mb-3 text-center justofy-content-center" id="pills-tab" role="tablist" >
-                                <li class="nav-item col-md-2" role="presentation">
+                            <ul className="nav nav-pills mb-3 text-center justofy-content-center" id="pills-tab" role="tablist" >
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className=" ">
                                         <div
-                                            class="nav-link active"
+                                            className="nav-link active"
                                             id="pills-home-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-home"
@@ -53,10 +53,10 @@ export default function CategoriesIn() {
                                     </div>
                                 </li>
                                 
-                                <li class="nav-item col-md-2" role="presentation">
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            class="nav-link"
+                                            className="nav-link"
                                             id="pills-profile-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-profile"
@@ -74,10 +74,10 @@ export default function CategoriesIn() {
                                     </div>
                                 </li>
                                 
-                                <li class="nav-item col-md-2" role="presentation">
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            class="nav-link"
+                                            className="nav-link"
                                             id="pills-bussiness-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-bussiness"
@@ -92,10 +92,10 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item col-md-2" role="presentation">
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            class="nav-link"
+                                            className="nav-link"
                                             id="pills-insurance-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-insurance"
@@ -110,10 +110,10 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item col-md-2" role="presentation">
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            class="nav-link"
+                                            className="nav-link"
                                             id="pills-hospital-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-hospital"
@@ -128,10 +128,10 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item col-md-2" role="presentation">
+                                <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            class="nav-link"
+                                            className="nav-link"
                                             id="pills-school-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-school"
@@ -150,9 +150,9 @@ export default function CategoriesIn() {
                         </div>
                     </div>
                     
-                    <div class="tab-content" id="pills-tabContent">
+                    <div className="tab-content" id="pills-tabContent">
                         <div
-                            class="tab-pane fade show"
+                            className="tab-pane fade show"
                             id="pills-home"
                             role="tabpanel"
                             aria-labelledby="pills-home-tab"
@@ -228,7 +228,7 @@ export default function CategoriesIn() {
 
                         </div>
                         <div
-                            class="tab-pane fade"
+                            className="tab-pane fade"
                             id="pills-profile"
                             role="tabpanel"
                             aria-labelledby="pills-profile-tab"
@@ -239,7 +239,7 @@ export default function CategoriesIn() {
                             </section>
                         </div>
                         <div
-                            class="tab-pane fade"
+                            className="tab-pane fade"
                             id="pills-bussiness"
                             role="tabpanel"
                             aria-labelledby="pills-bussiness-tab"
@@ -319,7 +319,7 @@ export default function CategoriesIn() {
                             </div>
                         </div>
                         <div
-                            class="tab-pane fade"
+                            className="tab-pane fade"
                             id="pills-insurance"
                             role="tabpanel"
                             aria-labelledby="pills-insurance-tab"
@@ -396,7 +396,7 @@ export default function CategoriesIn() {
                             </div>
                         </div>
                         <div
-                            class="tab-pane fade"
+                            className="tab-pane fade"
                             id="pills-hospital"
                             role="tabpanel"
                             aria-labelledby="pills-hospital-tab"
@@ -473,7 +473,7 @@ export default function CategoriesIn() {
                             </div>
                         </div>
                         <div
-                            class="tab-pane fade"
+                            className="tab-pane fade"
                             id="pills-school"
                             role="d"
                             aria-labelledby="pills-school-tab"
