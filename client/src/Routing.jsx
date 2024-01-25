@@ -28,8 +28,8 @@ function Routing() {
                     <Route path="/" element={<Home />}/>              
                     <Route path="/login" element={<Login />} />
                     <Route path='/software' element={<SoftwareDev/>}/>
-                    {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
-                    {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}
+                    {/* <Route path="/login" element={<Navigate replace to="/login" />} /> */}
+                    <Route path="/users/:id/verify/:token" element={<EmailVerify />} />
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
