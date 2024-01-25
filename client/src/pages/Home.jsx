@@ -51,7 +51,7 @@ export default function Home() {
             <Card/>
             <Techsection/>
             <Industries/>
-            <Categories/>
+            {/* <Categories/> */}
             <Carousel/>
             <Footer/>
         </section>

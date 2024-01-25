@@ -33,7 +33,7 @@ function Routing() {
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/categoriesin' element={<CategoriesIn />} />
+                    <Route path='/categories' element={<CategoriesIn />} />
                 </Routes>
             </BrowserRouter>
         </div>
