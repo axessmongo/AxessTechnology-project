@@ -180,7 +180,7 @@ function Development() {
           </div>
         </div>
       </section>
-
+<div className="bg-green-1 text-light">
       <section className="container py-3">
         <div className="text-center">
           <h1>Our Process</h1>
@@ -269,8 +269,10 @@ function Development() {
             </div>
           </div>
         </div>
-        <Technologies />
+
       </section>
+      </div>
+      <Technologies />
       <section className="pricing mt-5">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
