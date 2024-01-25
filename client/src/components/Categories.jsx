@@ -24,7 +24,7 @@ function Categories() {
                         <div className='row play'>
 
                             <div className='col-md-2' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card1} className=' rounded-4 img1 ' alt="" />
@@ -35,7 +35,7 @@ function Categories() {
 
 
                             <div className='col-md-2' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card2} className='rounded-4 img1' alt="" />
@@ -49,7 +49,7 @@ function Categories() {
                             </div>
 
                             <div className='col-md-2 ' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card3} className='rounded-4 img1' alt="" />
@@ -63,7 +63,7 @@ function Categories() {
                             </div>
 
                             <div className='col-md-2' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card4} className=' rounded-4 img1' alt="" />
@@ -77,7 +77,7 @@ function Categories() {
                                 </Link>
                             </div>
                             <div className='col-md-2' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card5} className=' rounded-4 img1' alt="" />
@@ -91,7 +91,7 @@ function Categories() {
                                 </Link>
                             </div>
                             <div className='col-md-2' data-aos="zoom-in" data-aos-duration="600">
-                                <Link to="/categoriesin" className='text-decoration-none'>
+                                <Link to="/categories" className='text-decoration-none'>
                                     <div className='card custom-card2 px-2 py-2 rounded-4'>
                                         <div className=''>
                                             <img src={card6} className=' rounded-4 img1' alt="" />
