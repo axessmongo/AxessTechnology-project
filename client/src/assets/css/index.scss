@@ -1090,3 +1090,70 @@ img {
     }
   }
 }
+
+.testimonal {
+  .testimonals {
+    max-width: 1000px;
+    padding: 0px 15px 50px;
+    margin: 0 auto 80px auto;
+  }
+
+  .single-item {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 50px 15px;
+
+  }
+
+  .profile {
+    margin-bottom: 40px;
+    /* text-align: start; */
+
+  }
+
+  .img-area {
+    margin: 0 15px 15px 65px;
+  }
+
+  .img-area img {
+    height: 200px;
+    width: 200px;
+    border-radius: 60%;
+    border: 7px solid var(--axess-gold-3);
+    overflow: hidden;
+  }
+
+  .content1 {
+    font-size: 20px;
+
+  }
+
+
+  .content1 p {
+    text-align: justify;
+  }
+
+  .content1 p span {
+    font-size: 46px;
+    margin-right: 16px;
+    color: var(--axess-gold-3);
+  }
+
+  .socials i {
+    margin-right: 25px;
+
+  }
+
+  .bio h4 {
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: var(--axess-gold-3);
+
+  }
+
+}
