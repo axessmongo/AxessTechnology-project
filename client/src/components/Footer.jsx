@@ -50,7 +50,7 @@ function Footer() {
                                     <p>Email : salesxxxx@.com</p>
                                 </div>
                                 <div className="col-md-4">
-                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                                    <button className='gold-btn m-0 green-btn' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>

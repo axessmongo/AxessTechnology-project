@@ -390,9 +390,9 @@ img {
       &.active {
         transform: translate(10%, 0px);
 
-        span {
-          animation: nav-pop 1s ease 0s 1;
-        }
+        // span {
+        //   animation: nav-pop 1s ease 0s 1;
+        // }
       }
       }
 
@@ -849,6 +849,7 @@ img {
 
       .softdev::before {
         background: #001041;
+        background: #03485b;
       }
 
       .softtest::before {
@@ -857,6 +858,11 @@ img {
 
       .ai::before {
         background: #001b31;
+        background: #03485b;
+      }
+
+      .service-nav.active:nth-child(3), .service-nav.active:nth-child(1), .service-nav.active:nth-child(5){
+        background: #03485b;
       }
 
       .softtest.active {

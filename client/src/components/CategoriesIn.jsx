@@ -27,7 +27,7 @@ export default function CategoriesIn() {
 
             </section> */}
 
-            <div className="">
+            <div className="cat">
                 <div className="overflow-hidden" id="resume">
                     <div className="text-md-center text-center mt-5">
                         <h1> Categories</h1>
@@ -38,7 +38,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className=" ">
                                         <div
-                                            className="nav-link active"
+                                            className="nav-link active content"
                                             id="pills-home-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-home"
@@ -46,7 +46,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-home"
                                             aria-selected="true"
-                                            className='content'
                                         >
                                             <h4>Ecommerce</h4>
                                         </div>
@@ -56,7 +55,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            className="nav-link"
+                                            className="nav-link content"
                                             id="pills-profile-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-profile"
@@ -64,7 +63,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-profile"
                                             aria-selected="true"
-                                            className='content'
 
 
 
@@ -77,7 +75,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            className="nav-link"
+                                            className="nav-link content"
                                             id="pills-bussiness-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-bussiness"
@@ -85,7 +83,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-bussiness"
                                             aria-selected="true"
-                                            className='content'
 
                                         >
                                             <h4>Bussiness</h4>
@@ -95,7 +92,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            className="nav-link"
+                                            className="nav-link content"
                                             id="pills-insurance-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-insurance"
@@ -103,7 +100,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-insurance"
                                             aria-selected="true"
-                                            className='content'
 
                                         >
                                             <h4>Insurance</h4>
@@ -113,7 +109,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            className="nav-link"
+                                            className="nav-link content"
                                             id="pills-hospital-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-hospital"
@@ -121,7 +117,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-hospital"
                                             aria-selected="true"
-                                            className='content'
 
                                         >
                                             <h4>Hospital</h4>
@@ -131,7 +126,7 @@ export default function CategoriesIn() {
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
-                                            className="nav-link"
+                                            className="nav-link content"
                                             id="pills-school-tab"
                                             data-bs-toggle="pill"
                                             data-bs-target="#pills-school"
@@ -139,7 +134,6 @@ export default function CategoriesIn() {
                                             role="tab"
                                             aria-controls="pills-school"
                                             aria-selected="true"
-                                            className='content'
 
                                         >
                                             <h4>School</h4>
