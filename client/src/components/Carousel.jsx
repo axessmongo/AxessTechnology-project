@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import project1 from '../assets/images/screenshots/Cake screenshot.png'
-import project2 from '../assets/images/screenshots/cattering screenshot.png'
-import project3 from '../assets/images/screenshots/photo-screenshot.png'
-import project4 from '../assets/images/screenshots/watch screenshot.png'
-import project5 from '../assets/images/screenshots/kvr screenshot.png'
-import project6 from '../assets/images/screenshots/md screenshot.png'
+import project1 from '../assets/images/demo/catering.png'
+import project2 from '../assets/images/demo/gift.png'
+import project3 from '../assets/images/demo/photography.png'
+import project4 from '../assets/images/demo/porfolio2.png'
+import project5 from '../assets/images/demo/porfolio1.png'
+import project6 from '../assets/images/demo/watch.png'
 import { Link } from "react-router-dom";
 
 export default function Carousel() {

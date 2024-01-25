@@ -1,7 +1,7 @@
 import React from 'react'
 import Reactlogo from '../assets/images/demo/react-logo.png'
 import vitelogo from '../assets/images/demo/vite-logo.png'
-import watchdemo from '../assets/images/demo/watch screenshot.png'
+import watchdemo from '../assets/images/demo/watch.png'
 import photodemo from '../assets/images/demo/photography.png'
 import cateringdemo from '../assets/images/demo/catering.png'
 import gitfdemo from '../assets/images/demo/gift.png'
