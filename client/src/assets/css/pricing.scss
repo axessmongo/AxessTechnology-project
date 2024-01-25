@@ -183,97 +183,116 @@
 
 
 .pricing {
-  
-    .pricing-table{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: min(1600px, 100%);
-        margin: auto;
-        font-family: "Jost", sans-serif;
-      }
-      
-      .pricing-card{
-        flex: 1;
-        max-width: 360px;
-        background-color: #fff;
-        margin: 20px 10px;
-        text-align: center;
-        cursor: pointer;
-        overflow: hidden;
-        color: #2d2d2d;
-        transition: .3s linear;
-        text-align: start;
-      }
-      
-      .pricing-card-header{
-        background-color: #b98d2e;
-        display: inline-block;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 0 0 20px 20px;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 600;
-        transition: .4s linear;
-        text-align: center !important;
-      }
-      
-      .pricing-card:hover .pricing-card-header{
-        box-shadow: 0 0 0 37em #05463c;
-      }
-      
-      .price{
-        font-size: 40px;
-        color: #0fbcf9;
-        margin: 40px 0;
-        transition: .2s linear;
-      }
 
-      .price sup, .price span{
-        font-size: 22px;
-        font-weight: 700;
-      }
-      
-      .pricing-card:hover ,.pricing-card:hover .price{
-        color: #fff;
-      }
-      
-      .pricing-card li{
-        font-size: 16px;
-        padding: 10px 0;
-        text-transform: uppercase;
-      }
-      
-      .order-btn{
-        display: inline-block;
-        margin-bottom: 40px;
-        margin-top: 25%;
-        border: 2px solid #b98d2e;
-        color: #05463c;
-        padding: 12px 35px;
-        border-radius: 8px;
-        text-transform: uppercase;
-        font-weight: 500;
-        transition: .3s linear;
-        text-decoration: none;
-      }
-      
-      .order-btn:hover{
-        background-color: #b98d2e;
-        color: #fff;
-      }
+  .pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+    font-family: "Jost", sans-serif;
+  }
 
-      .img-sizes{
-        display: inline;
-        width: 3.5%;
-        height: 7%;
-        margin-right: 5px;
-      }
-      
-      @media screen and (max-width:1100px){
-        .pricing-card{
-          flex: 50%;
-        }
+  .pricing-card {
+    flex: 1;
+    max-width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+    text-align: start;
+    border-radius: 0 0 50px 0;
+
+
+    .shadow {
+      padding-bottom: 10px;
+      border-radius: 0 0 30px 0;
+
+      transition: .8s linear;
     }
+
+  }
+
+  .pricing-card-header {
+    background-color: #b98d2e;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+    text-align: center !important;
+  }
+
+  .pricing-card:hover .shadow {
+    background-color: #05463c;
+
+
+  }
+
+  .pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 37em #05463c;
+
+  }
+
+  .price {
+    font-size: 40px;
+    color: #0fbcf9;
+    margin: 40px 0;
+    transition: .2s linear;
+  }
+
+  .price sup,
+  .price span {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .pricing-card:hover,
+  .pricing-card:hover .price {
+    color: #fff;
+  }
+
+  .pricing-card li {
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+
+  .order-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 25%;
+    border: 2px solid #b98d2e;
+    color: #05463c;
+    padding: 12px 35px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+    text-decoration: none;
+  }
+
+  .order-btn:hover {
+    background-color: #b98d2e;
+    color: #fff;
+  }
+
+  .img-sizes {
+    display: inline;
+    width: 4.5%;
+    height: 80% !important;
+    margin-right: 5px;
+  }
+
+  @media screen and (max-width:1100px) {
+    .pricing-card {
+      flex: 50%;
+    }
+  }
 }

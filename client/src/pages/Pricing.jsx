@@ -19,19 +19,21 @@ function Pricing() {
 				<h1 className='primary-header text-center'>Unlock Our New Features</h1>
 				<div className="container pricing-table">
 					<div className="pricing-card ">
-						<h3 className="pricing-card-header">Basic</h3>
-						<div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
-						<ul>
-							<li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
-							<li><strong>Hosting - 1</strong> Year FREE</li>
-							<li><strong>Single 1 </strong> Page Website</li>
-							<li><strong>SSL</strong> Certificate</li>
-							<li><strong>WhatsApp </strong> Chat</li>
-							<li><strong>Social </strong> Media Integration</li>
-							<li><strong>Static </strong> Website</li>
-							<li><strong>Premade  </strong> Website</li>
-							<li><strong>3 Month FREE </strong> Tech Support</li>
-						</ul>
+						<div className='shadow'>
+							<h3 className="pricing-card-header">Basic</h3>
+							<div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
+							<ul>
+								<li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+								<li><strong>Hosting - 1</strong> Year FREE</li>
+								<li><strong>Single 1 </strong> Page Website</li>
+								<li><strong>SSL</strong> Certificate</li>
+								<li><strong>WhatsApp </strong> Chat</li>
+								<li><strong>Social </strong> Media Integration</li>
+								<li><strong>Static </strong> Website</li>
+								<li><strong>Premade  </strong> Website</li>
+								<li><strong>3 Month FREE </strong> Tech Support</li>
+							</ul>
+						</div>
 						<a href="#" className="order-btn">Order Now</a>
 					</div>
 
@@ -85,13 +87,14 @@ function Pricing() {
 						</ul>
 						<a href="#" className="order-btn">Order Now</a>
 					</div>
-				</div>
-				<div className='Pay'>
+					<div className='Pay'>
 						<h5>ACCEPTED PAYMENT METHODS</h5>
 						<img src={visa} className='img-sizes' alt="visa" />
 						<img src={master} className='img-sizes' alt="master" />
 						<img src={american} className='img-sizes' alt="american" />
 					</div>
+				</div>
+
 			</section >
 			<Footer />
 		</>
