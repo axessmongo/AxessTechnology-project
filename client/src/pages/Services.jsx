@@ -440,8 +440,8 @@ function Services() {
                             </div>
                         </div>
 
-                        <div className="p-5 roller-container text-white min-vh-100 digi" id='digi'>
-                            <div className=" position-relative z-3">
+                        <div className="roller-container text-white min-vh-100 digi" id='digi'>
+                            <div className=" position-relative z-3 p-5">
                                 <h1 className='light-header'>
                                     Socializing
                                 </h1>
@@ -479,8 +479,8 @@ function Services() {
                             <Link to='/' className='service-hover-nav' data-aos='fade'>
                                 <span>Home</span>
                             </Link>
-                            <Link className='service-hover-nav two' data-aos='fade'>
-                                <span>Our Products</span>
+                            <Link to='/categories' className='service-hover-nav two' data-aos='fade'>
+                                <span>Our Works</span>
                             </Link>
                             <Link to='/contact' className='service-hover-nav three' data-aos='fade'>
                                 <span>Contact</span>

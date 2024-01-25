@@ -52,7 +52,7 @@ export default function Home() {
             <Techsection/>
             <Industries/>
             {/* <Categories/> */}
-            {/* <Carousel/> */}
+            <Carousel/>
             <Footer/>
         </section>
     )
