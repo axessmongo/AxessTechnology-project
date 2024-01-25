@@ -10,7 +10,7 @@ import portfolio2 from '../assets/images/demo/porfolio2.png'
 
 
 export default function CategoriesIn() {
-    const [activeTab, setActiveTab] = useState('pills-ecommerce')
+
     return (
         <div>
             {/* <section >
@@ -57,7 +57,7 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
@@ -77,7 +77,7 @@ export default function CategoriesIn() {
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li className="nav-item col-md-2" role="presentation">
                                     <div className="  ">
                                         <div
@@ -149,7 +149,7 @@ export default function CategoriesIn() {
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div className="tab-content" id="pills-tabContent">
                         <div
                             className="tab-pane fade show"
