@@ -279,7 +279,7 @@ function Services() {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></button>
+                                    <Link to={"/development"}><button className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></button></Link>
                                 </div>
                             </div>
                         </div>
@@ -479,7 +479,7 @@ function Services() {
                             <Link to='/' className='service-hover-nav' data-aos='fade'>
                                 <span>Home</span>
                             </Link>
-                            <Link to='/categories' className='service-hover-nav two' data-aos='fade'>
+                            <Link to='/ourworks' className='service-hover-nav two' data-aos='fade'>
                                 <span>Our Works</span>
                             </Link>
                             <Link to='/contact' className='service-hover-nav three' data-aos='fade'>

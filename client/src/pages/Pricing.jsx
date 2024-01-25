@@ -87,7 +87,12 @@ function Pricing() {
 						</ul>
 						<a href="#" className="order-btn">Order Now</a>
 					</div>
-					 
+					<div className='Pay'>
+						<h5>ACCEPTED PAYMENT METHODS</h5>
+						<img src={visa} className='img-sizes' alt="visa" />
+						<img src={master} className='img-sizes' alt="master" />
+						<img src={american} className='img-sizes' alt="american" />
+					</div>
 				</div>
 
 			</section >

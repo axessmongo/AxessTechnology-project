@@ -36,7 +36,7 @@ function Navbar() {
                 <NavLink to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
-                    <p>Tech</p>
+                    <p>Technology</p>
                 </NavLink>
                 <div className=' order-3 order-lg-3'>
                     <NavLink to={'/login'} className='gold-btn px-4'>
@@ -75,13 +75,13 @@ function Navbar() {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/technologies"} activeClassName="active" className="nav-link" >
-                                        Technology
+                                    <NavLink to={"/ourworks"} activeClassName="active" className="nav-link" >
+                                    Our works
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/pricing"} activeClassName="active" className="nav-link" >
-                                        Pricing
+                                    <NavLink to={"/about"} activeClassName="active" className="nav-link" >
+                                    About
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
