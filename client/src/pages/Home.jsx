@@ -9,6 +9,8 @@ import Footer from '../components/Footer';
 import Industries from '../components/Industries';
 import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
+import Carousel from '../components/Carousel';
+import Categories from '../components/Categories';
 export default function Home() {
     let nav = useNavigate()
 
@@ -38,8 +40,8 @@ export default function Home() {
                                     <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
-                            <div className="col-md-6 order-lg-2">
-                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp" data-aos='flip-right' data-aos-duration='800' className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                            <div className="col-md-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
+                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp"className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>
@@ -49,6 +51,8 @@ export default function Home() {
             <Card/>
             <Techsection/>
             <Industries/>
+            <Categories/>
+            <Carousel/>
             <Footer/>
             
         </section>

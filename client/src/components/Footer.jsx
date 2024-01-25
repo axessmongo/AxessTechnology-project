@@ -11,11 +11,11 @@ function Footer() {
     return (
         <div>   
             <div className="container mt-4 conatctbg">
-                <div class="card">
-                    <div class="card-body position-relative">
+                <div className="card">
+                    <div className="card-body position-relative">
                         <div className="row">
                             <div className="col-md-10">
-                                <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2'>contact us</p>
+                                <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2'>Contact us</p>
                                 <p>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                             </div>
                             <div className="col-md-2 position-absolute footerbg">
@@ -34,23 +34,23 @@ function Footer() {
                                     <input type="email" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="number" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='phone-Number' />
+                                    <input type="number" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone-Number' />
                                 </div>
                                 <div className="col-md-12 mb-4">
-                                    <input type="text" name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='description' />
+                                    <input type="text" name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Description' />
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-4">
-                                    <p>telegram Us : @axesstechnology.in</p>
+                                    <p>Telegram Us : @axesstechnology.in</p>
                                     <p>WhatsApp : +91 93845 87998</p>
                                 </div>
                                 <div className="col-md-4">
-                                    <p>phone : 8825781xxxx</p>
+                                    <p>Phone : 8825781xxxx</p>
                                     <p>Email : salesxxxx@.com</p>
                                 </div>
                                 <div className="col-md-4">
-                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>submit</span> <i className="bi bi-arrow-right"></i></button>
+                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -145,19 +145,19 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center'>Social media</p>
                                 <p className='fw-semibold mt-3 mb-5 text-center'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li><Link><i class="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i class="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li><Link><i className="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                            <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span>: +91 93845 87998</p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span>: +91 93845 87998</p>
                             </div>
                             <div className="col-md-6">
-                            <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Job</span>: +91 93614 23585</p>
+                                <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Job</span>: +91 93614 23585</p>
                             </div>
                         </div>
                     </div>
