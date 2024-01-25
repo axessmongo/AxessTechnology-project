@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
+import About from './About';
 import Technologies from './pages/Technologies';
 import Homenew from './pages/Homenew';
 import Card from './components/Card';
@@ -37,6 +38,7 @@ function Routing() {
                     {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
+                    <Route path='/about' element={<About />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
