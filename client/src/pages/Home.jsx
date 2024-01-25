@@ -11,6 +11,7 @@ import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
+import Development from '../components/Development';
 export default function Home() {
     let nav = useNavigate()
 
@@ -47,6 +48,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            
             <Award/>
             <Card/>
             <Techsection/>

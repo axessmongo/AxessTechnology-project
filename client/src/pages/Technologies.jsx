@@ -63,8 +63,8 @@ const Technologies = () => {
 
     return (
         <div className='technology-page'>
-            <Navbar />
-            <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz' />
+            {/* <Navbar /> */}
+            {/* <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz' /> */}
             <div className='technology-section py-5'>
                 <div className='container technology' >
                     <div className='primary-header text-center d-flex justify-content-center tech-title py-4'>
@@ -432,7 +432,7 @@ const Technologies = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
 
 

@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import Categories from './components/Categories';
 import CategoriesIn  from './components/CategoriesIn'
 import Demo from './components/Demo';
+import Development from './components/Development';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -24,7 +25,8 @@ function Routing() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}/>              
+                    <Route path="/" element={<Home />}/>  
+
                     <Route path="/login" element={<Login />} />
                     {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
                     {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}
@@ -34,6 +36,8 @@ function Routing() {
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/categoriesin' element={<CategoriesIn />} />
+                    <Route path='/dev' element={<Development />} />
+
                 </Routes>
             </BrowserRouter>
         </div>
