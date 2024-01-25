@@ -16,12 +16,12 @@ function Register() {
 		email: "",
 		phone: "",
 		password: "",
-
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
 
 	const handleChange = ({ currentTarget: input }) => {
+		console.log("handle change",currentTarget, input )
 		setData({ ...data, [input.name]: input.value });
 	};
 
@@ -30,6 +30,7 @@ function Register() {
 		try {
 			const url = "http://localhost:4000/api/users";
 			const { data: res } = await axios.post(url, data);
+			console.log(data,res)
 			navigate("/login");
 			console.log(res.message);
 		} catch (error) {
