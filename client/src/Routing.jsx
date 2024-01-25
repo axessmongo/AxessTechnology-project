@@ -11,6 +11,7 @@ import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import {  Navigate } from "react-router-dom";
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Categories from './components/Categories';
 import CategoriesIn  from './components/CategoriesIn'
@@ -23,7 +24,6 @@ function Routing() {
         <div>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route path="/" element={<Navbar />}> */}
                     <Route path="/" element={<Home />}/>              
                     <Route path="/login" element={<Login />} />
                     {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
@@ -31,12 +31,9 @@ function Routing() {
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path="/technologies" element={<Technologies />} />
-                    <Route path="/Pricing" element={<Pricing />} />
-                    <Route path='/footer' element={<Footer />} />
+                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path='/contact' element={<Contact />} />
                     <Route path='/categoriesin' element={<CategoriesIn />} />
-                    <Route path="demo" element={<Demo />} />
-
-
                 </Routes>
             </BrowserRouter>
         </div>
