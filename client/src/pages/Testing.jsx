@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from "./Navbar";
-import Banner from "./Banner";
-import Technologies from "../pages/Technologies";
+import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
+import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise.jpg";
 import Process from "../assets/images/Our-Process.jpg";
 import Why from "../assets/images/Why-Choose.jpg";
@@ -16,12 +16,12 @@ import frompng from "../assets/images/fromlogo.jpg";
 import "../assets/css/index.scss";
 
 
-function Ai() {
+function Testing() {
   return (
     <div className="software">
     <Navbar />
     <Banner
-      h1="AI Development"
+      h1="Software Testing"
       h2="Revolutionize Your Operations: Transform with Software Tailored to Your Needs."
       h3="Utilize the power of technology with our custom software development services.
       "
@@ -660,4 +660,4 @@ function Ai() {
   )
 }
 
-export default Ai
+export default Testing

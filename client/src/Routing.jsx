@@ -17,12 +17,12 @@ import Footer from './components/Footer';
 import Categories from './components/Categories';
 import CategoriesIn from './components/CategoriesIn'
 import Demo from './components/Demo';
-import Development from './components/Development';
+import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
 import ScrollTop from './assets/images/ScrollTop';
 import Loader from './components/Loader';
-import Testing from './components/Testing';
-import Ai from './components/Ai';
+import Testing from './pages/Testing';
+import Ai from './pages/Ai';
 
 function Routing() {
     const user = localStorage.getItem("token");

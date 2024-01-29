@@ -11,7 +11,7 @@ import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
-import Development from '../components/Development';
+import Development from './Development';
 export default function Home() {
     let nav = useNavigate()
 
