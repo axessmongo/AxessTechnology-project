@@ -26,7 +26,7 @@ function Contact() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:4000/api/contact', contact)
+        axios.post('http://localhost:5000/api/contact', contact)
             .then((res) => {
                 console.log(res.data.data);
             })

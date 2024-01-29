@@ -1,52 +1,53 @@
 import React from 'react'
 import axios from 'axios'
 import { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/css/reg.scss";
 import "../assets/css/index.scss";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Register() {
 
-	const [data, setData] = useState({
+	const [formData, setFormData] = useState({
 		fname: "",
 		lname: "",
 		email: "",
 		phone: "",
 		password: "",
-	}); 
-	const [error, setError] = useState("");
-	const navigate = useNavigate();
+	  });
 
-	const handleChange = ({ currentTarget: input }) => {
-		
-		setData({ ...data, [input.name]: input.value });
-	}; 
+	// const [error, setError] = useState("");
+	// const navigate = useNavigate();
 
-	const handleSubmit = async (e) => {
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	  };
+
+	  const handleSubmit = async (e) => {
 		e.preventDefault();
+	
 		try {
-			const url = "http://localhost:5000/api/register";
-			// console.log(data,res)
-			const { data: res } = await axios.post(url, data);
-			console.log(data,res)
-			navigate("/login");
-			console.log(res.message);
+		  const response = await axios.post(
+			"http://localhost:5000/api/register",
+			formData
+		  );
+		  if (response.status === 201) {
+			toast.success("Registration successful. Verification email sent.");
+		  } else if (response.status === 200) {
+			toast.error("User already exists.");
+		  } else {
+			console.log("Unexpected response:", response);
+		  }
 		} catch (error) {
-			console.log("error",error)
-			if (
-				error.response &&
-				error.response.status >= 400 &&
-				error.response.status <= 500
-			) {
-				setError(error.response.data.message);
-			}
+		  console.error("Error during registration:", error.message);
+		  toast.error("Internal Server Error");
 		}
-	};
-
-
+	  };
+	
 	return (
 		<div>
 			<Navbar/>
@@ -69,7 +70,7 @@ function Register() {
 									placeholder="First Name"
 									name="fname"
 									onChange={handleChange}
-									value={data.fname}
+									value={formData.fname}
 									required
 									className='input'
 								/>
@@ -78,7 +79,7 @@ function Register() {
 									placeholder="Last Name"
 									name="lname"
 									onChange={handleChange}
-									value={data.lname}
+									value={formData.lname}
 									required
 									className='input'
 								/>
@@ -87,7 +88,7 @@ function Register() {
 									placeholder="Email"
 									name="email"
 									onChange={handleChange}
-									value={data.email}
+									value={formData.email}
 									required
 									className='input'
 								/>
@@ -96,7 +97,7 @@ function Register() {
 									placeholder="Phone-Number"
 									name="phone"
 									onChange={handleChange}
-									value={data.phone}
+									value={formData.phone}
 									required
 									className='input'
 								/>
@@ -105,15 +106,15 @@ function Register() {
 									placeholder="Password"
 									name="password"
 									onChange={handleChange}
-									value={data.password}
+									value={formData.password}
 									required
 									className='input'
 								/>
-								{error && <div className='error_msg'>{error}</div>}
 								<button type="submit" className='green_btn'>
 									Register
 								</button>
 							</form>
+							<ToastContainer />
 						</div>
 					</div>
 				</div>
