@@ -10,24 +10,26 @@ import Card from './components/Card';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
-import {  Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Categories from './components/Categories';
-import CategoriesIn  from './components/CategoriesIn'
+import CategoriesIn from './components/CategoriesIn'
 import Demo from './components/Demo';
 import SoftwareDev from './components/SoftwareDev';
 
 function Routing() {
     const user = localStorage.getItem("token");
     return (
-        
+
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}/>              
+                    <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path='/software' element={<SoftwareDev/>}/>
+                    <Route path='/software' element={<SoftwareDev />} />
+
+
                     {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
                     {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}
                     <Route path="/register" element={<Register />} />
