@@ -307,36 +307,36 @@ function Services() {
                                     </div>
 
                                     <h1 className='text-center primary-header mb-5' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Software Testing Life Cycle</h1>
-                                    <div className="row gx-2 justify-content-center" data-aos='fade-right' data-aos-duration='400' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-sine">
+                                    <div className="row gx-2 justify-content-center">
                                         <div className="col-md-2 test-card-container">
-                                            <div className="test-card">
+                                            <div className="test-card" data-aos='fade-right' data-aos-duration='800' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                                                 <div className="logo"><i className="bi bi-search"></i></div>
                                                 <p className="number ">01.</p>
                                                 <p className="content mb-0">Requirement <br />Analysis</p>
                                             </div>
                                         </div>
-                                        <div className="col-md-2 test-card-container">
+                                        <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='700' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-card-checklist"></i></div>
                                                 <p className="number ">02.</p>
                                                 <p className="content mb-0">Test <br />Planing</p>
                                             </div>
                                         </div>
-                                        <div className="col-md-2 test-card-container">
+                                        <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-code-slash"></i></div>
                                                 <p className="number ">03.</p>
                                                 <p className="content mb-0">Test Case <br />Development</p>
                                             </div>
                                         </div>
-                                        <div className="col-md-2 test-card-container">
+                                        <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='500' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-gear"></i></div>
                                                 <p className="number ">04.</p>
                                                 <p className="content mb-0">Test <br />Exection</p>
                                             </div>
                                         </div>
-                                        <div className="col-md-2 test-card-container">
+                                        <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='400' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-check2-circle"></i></div>
                                                 <p className="number ">05.</p>
