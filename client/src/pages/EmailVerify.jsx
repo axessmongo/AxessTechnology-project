@@ -8,12 +8,12 @@ import { Fragment } from "react";
 const EmailVerify = () => {
 	const [validUrl, setValidUrl] = useState(true);
 	const param = useParams();
-
+console.log("param",param._id,param.token)
 	useEffect(() => {
 		const verifyEmailUrl = async () => {
 			try {
-				const url = `http://localhost:4000/api/users/${param._id}/verify/${param.token}`;
-				const { data } = await axios.get(url);
+				const url = `http://localhost:4000/api/users/${param.id}/verify/${param.token}`;
+				const { data } = await axios.get(url,{_id:param.id,token:param.token});
 				console.log(data);
 				setValidUrl(true);
 			} catch (error) {
@@ -27,11 +27,11 @@ const EmailVerify = () => {
 	return (
 		<Fragment>
 			{validUrl ? (
-				<div className={styles.container}>
+				<div >
 					<img src={success} alt="success_img" className='styles.success_img' />
 					<h1>Email verified successfully</h1>
 					<Link to="/login">
-						<button className={styles.green_btn}>Login</button>
+						<button >Login</button>
 					</Link>
 				</div>
 			) : (

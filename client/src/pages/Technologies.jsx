@@ -43,6 +43,7 @@ import python from "../assets/images/Technologies/python.webp"
 import rails from "../assets/images/Technologies/rails.webp"
 import react from "../assets/images/Technologies/react.webp"
 import ruby from "../assets/images/Technologies/ruby.webp"
+import redis from "../assets/images/Technologies/redis.svg"
 import saas from "../assets/images/Technologies/saas.webp"
 import salesforce from "../assets/images/Technologies/salesforce.webp"
 import selenium from "../assets/images/Technologies/selenium.webp"
@@ -63,8 +64,8 @@ const Technologies = () => {
 
     return (
         <div className='technology-page'>
-            <Navbar />
-            <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz' />
+            {/* <Navbar /> */}
+            {/* <Banner h1='Talk To Us' h2='Empower Your Business with Our Fine Tuned Digital Solutions' h3='Take the first step in creating a better tomorrow by joining hands with Maticz' /> */}
             <div className='technology-section py-5'>
                 <div className='container technology' >
                     <div className='primary-header text-center d-flex justify-content-center tech-title py-4'>
@@ -156,7 +157,7 @@ const Technologies = () => {
                                         <img src={expressjs}></img>
                                     </div>
                                 </div>
-                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 5 ? "" : "tech-hide"}`}>
+                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 1 ? "" : "tech-hide"}`}>
                                     <div className='d-flex align-items-center justify-content-center tech-item h-100'>
                                         <img src={flutter}></img>
                                     </div>
@@ -166,7 +167,7 @@ const Technologies = () => {
                                         <img src={gcloud}></img>
                                     </div>
                                 </div>
-                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 2 ? "" : "tech-hide"}`}>
+                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 4 ? "" : "tech-hide"}`}>
                                     <div className='d-flex align-items-center justify-content-center tech-item h-100'>
                                         <img src={graphql}></img>
                                     </div>
@@ -201,7 +202,7 @@ const Technologies = () => {
                                         <img src={kafka}></img>
                                     </div>
                                 </div>
-                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 2 ? "" : "tech-hide"}`}>
+                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 1 ? "" : "tech-hide"}`}>
                                     <div className='d-flex align-items-center justify-content-center tech-item h-100'>
                                         <img src={kotlin}></img>
                                     </div>
@@ -279,6 +280,11 @@ const Technologies = () => {
                                 <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 1 ? "" : "tech-hide"}`}>
                                     <div className='d-flex align-items-center justify-content-center tech-item h-100'>
                                         <img src={ruby}></img>
+                                    </div>
+                                </div>
+                                <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 4 ? "" : "tech-hide"}`}>
+                                    <div className='d-flex align-items-center justify-content-center tech-item h-100'>
+                                        <img src={redis}></img>
                                     </div>
                                 </div>
                                 <div className={`col-4 col-md-3 col-lg-2 mt-5 ${TechActive === 0 || TechActive === 3 ? "" : "tech-hide"}`}>
@@ -432,7 +438,7 @@ const Technologies = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
 
 
