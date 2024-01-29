@@ -17,7 +17,7 @@ import "../assets/css/index.scss";
 
 function Development() {
   return (
-    <div className="software-development">
+    <div className="software">
       <Navbar />
       <Banner
         h1="Software Development"
@@ -58,14 +58,14 @@ function Development() {
                 <li>
                   <div className="d-flex align-items-center">
                     <span className="li-border">1</span>
-                    <span className="fw-bold">Programming Languages:</span>
+                    <span className="fw-bold p-2">Programming Languages:</span>
                     Python, Java, JavaScript, C++, C#, and more.
                   </div>
                 </li>
                 <li>
                   <div className="d-flex align-items-center mt-1">
                     <span className="li-border">2</span>
-                    <span className="fw-bold">
+                    <span className="fw-bold p-2">
                       Web Development Frameworks:
                     </span>{" "}
                     React, Angular, Vue.js, Django, Flask, and others.
@@ -75,19 +75,20 @@ function Development() {
                 <li>
                   <div className="d-flex align-items-center mt-1">
                     <span className="li-border">3</span>
-                    <span className="fw-bold">
-                      Web Development Frameworks:
+                    <span className="fw-bold p-2">
+                    Mobile Development Frameworks: 
                     </span>{" "}
-                    React, Angular, Vue.js, Django, Flask, and others.
+                    Flutter, React Native, Kotlin, and Swift.
                   </div>
                 </li>
                 <li>
                   <div className="d-flex align-items-center mt-1">
                     <span className="li-border">4</span>
-                    <span className="fw-bold">
-                      Web Development Frameworks:
+                    <span className="fw-bold p-2">
+                    Cloud Platforms:
                     </span>{" "}
-                    React, Angular, Vue.js, Django, Flask, and others.
+                    AWS, Azure, Google Cloud Platform, and others.
+
                   </div>
                 </li>
               </ul>
@@ -272,6 +273,59 @@ function Development() {
 
       </section>
       </div>
+      <section>
+        <div className="container">
+          <h3 className="text-center mt-5">Our Expertise</h3>
+          <p className="text-center">
+            We are a team of experienced and passionate software developers who
+            specialize in crafting cutting-edge solutions tailored to your
+            specific needs. We have a deep understanding of various technologies
+            and frameworks, including
+          </p>
+          <div className="expertise">
+            <div className="expertise-section">
+              <h2>Programming Languages</h2>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>And more...</li>
+              </ul>
+            </div>
+            <div className="expertise-section">
+              <h2>Web Development Frameworks</h2>
+              <ul>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue.js</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>And others...</li>
+              </ul>
+            </div>
+            <div className="expertise-section">
+              <h2>Mobile Development Frameworks</h2>
+              <ul>
+                <li>Flutter</li>
+                <li>React Native</li>
+                <li>Kotlin</li>
+                <li>Swift</li>
+              </ul>
+            </div>
+            <div className="expertise-section">
+              <h2>Cloud Platforms</h2>
+              <ul>
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>Google Cloud Platform</li>
+                <li>And others...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <Technologies />
       <section className="pricing mt-5">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
@@ -600,59 +654,7 @@ function Development() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container">
-          <h3 className="text-center mt-5">Our Expertise</h3>
-          <p className="text-center">
-            We are a team of experienced and passionate software developers who
-            specialize in crafting cutting-edge solutions tailored to your
-            specific needs. We have a deep understanding of various technologies
-            and frameworks, including
-          </p>
-          <div className="expertise">
-            <div className="expertise-section">
-              <h2>Programming Languages</h2>
-              <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>And more...</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Web Development Frameworks</h2>
-              <ul>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vue.js</li>
-                <li>Django</li>
-                <li>Flask</li>
-                <li>And others...</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Mobile Development Frameworks</h2>
-              <ul>
-                <li>Flutter</li>
-                <li>React Native</li>
-                <li>Kotlin</li>
-                <li>Swift</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Cloud Platforms</h2>
-              <ul>
-                <li>AWS</li>
-                <li>Azure</li>
-                <li>Google Cloud Platform</li>
-                <li>And others...</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <Footer />
     </div>
   );
