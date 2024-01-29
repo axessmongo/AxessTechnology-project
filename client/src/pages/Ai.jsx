@@ -326,7 +326,7 @@ function Ai() {
         </div>
       </div>
     </section>
-    <Technologies />
+    <Techsection />
     <section className="pricing mt-5">
       <h1 className="primary-header text-center">Unlock Our New Features</h1>
       <div className="container pricing-table">

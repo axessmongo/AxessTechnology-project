@@ -14,6 +14,7 @@ import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss";
+import Techsection from "../components/Techsection";
 
 function Development() {
   return (
@@ -326,7 +327,7 @@ function Development() {
           </div>
         </div>
       </section>
-      <Technologies />
+      <Techsection />
       <section className="pricing mt-5">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
