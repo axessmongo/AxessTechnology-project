@@ -53,8 +53,6 @@ function Routing() {
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/ai' element={<Ai />} />
-
-
                 </Routes>
             </BrowserRouter>
         </div>
