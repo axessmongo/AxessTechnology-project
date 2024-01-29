@@ -8,7 +8,7 @@ import Why from "../assets/images/Why-Choose.jpg";
 import bubble from "../assets/images/bubble.webp";
 import success from "../assets/images/success.png";
 import Footer from "../components/Footer";
-import "../assets/css/Pricing.scss";
+import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";

@@ -171,7 +171,7 @@ img {
     position: relative;
 
     &::before {
-      content: "";
+      // content: "";
       top: 0;
       left: -100%;
       width: 80%;
@@ -188,6 +188,16 @@ img {
   }
 
   .nav-link.active {
+    // padding: 25px 30px !important;
+    // font-size: 25px;
+    font-weight: 500;
+    background-image: url("../images/headerbg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: fit-content;
+    color: black;
+
     &::before {
       left: 10%;
     }
@@ -285,7 +295,7 @@ img {
     .popup-letters {
       overflow: hidden;
 
-      span {  
+      span {
         color: var(--axess-secondary);
         font-weight: 600;
         letter-spacing: 0.05em;
@@ -508,6 +518,26 @@ img {
 
     .test-card-container {
       width: 155px;
+
+      &:nth-child(1) {
+        z-index: 5;
+      }
+
+      &:nth-child(2) {
+        z-index: 4;
+      }
+
+      &:nth-child(3) {
+        z-index: 3;
+      }
+
+      &:nth-child(4) {
+        z-index: 2;
+      }
+
+      &:nth-child(5) {
+        z-index: 1;
+      }
 
       .test-card {
         background: white;
@@ -829,7 +859,8 @@ img {
 
     .softdev,
     .softtest,
-    .ai, .digi{
+    .ai,
+    .digi {
       position: relative;
       z-index: 5;
     }
@@ -861,7 +892,8 @@ img {
       background: #03485b;
     }
 
-    .softtest::before, .digi.active::before {
+    .softtest::before,
+    .digi.active::before {
       background: #032933;
     }
 
@@ -896,13 +928,13 @@ img {
   .gold-btn {
 
     @keyframes blink {
-    
+
       0%,
       100% {
         background-color: var(--axess-gold-3);
         color: black;
       }
-    
+
       50% {
         background: transparent;
         color: inherit;
@@ -1135,35 +1167,6 @@ img {
   right: -42px;
 }
 
-
-@media(max-width:992px) {
-  .primary-header {
-    font-size: 32px;
-  }
-
-  .upper-nav {
-    p {
-      font-size: 30px;
-    }
-
-    img {
-      width: 30px;
-    }
-  }
-
-  .technstack_wrapper {
-
-    &::before,
-    &::after {
-      display: none;
-    }
-
-    .icon-container {
-      animation: none !important;
-    }
-  }
-}
-
 .small-card {
   width: 100%;
   background: #0f6c5eb3;
@@ -1248,17 +1251,17 @@ img {
   margin-bottom: 25px;
 }
 
-.cat{
-  .nav-pills{
-    .nav-link{
+.cat {
+  .nav-pills {
+    .nav-link {
       cursor: pointer;
 
-      p{
+      p {
         color: black;
         font-weight: 500;
       }
 
-      &.active{
+      &.active {
         background: var(--axess-gold-3);
         color: black;
         box-shadow: var(--axess-gold) 0px 2px 8px 0px;
@@ -1267,11 +1270,50 @@ img {
   }
 }
 
-.proiect-card{
+.proiect-card {
   padding: 5%;
   cursor: pointer;
-   img{
+
+  img {
     border-radius: 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   }
+  }
+}
+
+
+
+@media(max-width:992px) {
+  .primary-header {
+    font-size: 32px;
+  }
+
+  .upper-nav {
+    p {
+      font-size: 30px;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .technstack_wrapper {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .icon-container {
+      animation: none !important;
+    }
+  }
+
+  #navbarSupportedContent{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: white;
+  }
 }
