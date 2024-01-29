@@ -1,43 +1,55 @@
-import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
-import axios from "axios";
-import success from "../assets/images/success.png";
-import "../assets/css/verfiy.scss";
-import { Fragment } from "react";
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import success from '../assets/images/success.png';
+import axios from 'axios';
 
 const EmailVerify = () => {
-	const [validUrl, setValidUrl] = useState(true);
-	const param = useParams();
-console.log("param",param._id,param.token)
+	const [verificationStatus, setVerificationStatus] = useState(null);
+	const [loading, setLoading] = useState(true);
+	const { id, token } = useParams();
+
 	useEffect(() => {
 		const verifyEmailUrl = async () => {
 			try {
-				const url = `http://localhost:4000/api/users/${param.id}/verify/${param.token}`;
-				const { data } = await axios.get(url,{_id:param.id,token:param.token});
+				const url = `http://localhost:5000/${id}/verify/${token}`;
+				const { data } = await axios.get(url);
 				console.log(data);
-				setValidUrl(true);
+				setVerificationStatus('success');
 			} catch (error) {
-				console.log(error);
-				setValidUrl(false);
+				console.error(error.response?.data || error.message);
+				setVerificationStatus('error');
+			} finally {
+				setLoading(false); // Set loading to false once the request is completed
 			}
 		};
+
 		verifyEmailUrl();
-	}, [param]);
+	}, [id, token]);
 
 	return (
-		<Fragment>
-			{validUrl ? (
-				<div >
-					<img src={success} alt="success_img" className='styles.success_img' />
-					<h1>Email verified successfully</h1>
-					<Link to="/login">
-						<button >Login</button>
-					</Link>
+		<div>
+			{loading ? (
+				<div>Loading...</div>
+			) : verificationStatus === 'success' ? (
+				<div className='container'>
+					<h1 className='text-center fw-semibold'>Email verified successfully</h1>
+					<div className="text-center text-capitalize d-flex justify-content-center align-items-center">
+						<img src={success} className='img-fluid h-25 w-25' alt="" />
+					</div>
+					<div className='d-flex justify-content-center mt-4'>
+						<Link to="/">
+							<button className='btn btn-success text-center '>Welcome to homepage</button>
+						</Link>
+					</div>
+
 				</div>
 			) : (
-				<h1>404 Not Found</h1>
+				<div>
+					<h1>Verification Failed</h1>
+					<p>Invalid Link or Email Already Verified</p>
+				</div>
 			)}
-		</Fragment>
+		</div>
 	);
 };
 

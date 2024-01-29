@@ -63,7 +63,7 @@ function Contact() {
                                 <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address' />
                             </div>
                         </div>
- {/* <div className=' container mb-3 mt-3'>
+                        {/* <div className=' container mb-3 mt-3'>
                         <p className='bg-img-1 d-flex text-center'>select service</p>
                         <div className="row">
                             <div className="col-md-4 checkbox-label">
