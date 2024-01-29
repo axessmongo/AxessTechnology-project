@@ -64,33 +64,33 @@ function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden" data-aos='fade-up'>
                                 <li className="nav-item">
-                                    <NavLink to={'/'} activeClassName="active" className="nav-link" aria-current="page" >
+                                    <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
                                         Home
                                     </NavLink>
                                 </li>
 
                                 <li className="nav-item">
-                                    <NavLink to={'/services'} activeClassName="active" className="nav-link" >
+                                    <NavLink to={'/services'} activeclassname="active" className="nav-link" >
                                         Services
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/ourworks"} activeClassName="active" className="nav-link" >
+                                    <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
                                     Our works
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/about"} activeClassName="active" className="nav-link" >
+                                    <NavLink to={"/about"} activeclassname="active" className="nav-link" >
                                     About
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/contact"} activeClassName="active" className="nav-link" >
+                                    <NavLink to={"/contact"} activeclassname="active" className="nav-link" >
                                         Contact
                                     </NavLink>
                                 </li>
                                 {/* <li className="nav-item">
-                                    <NavLink to={"/collaborate"} activeClassName="active" className="nav-link" >
+                                    <NavLink to={"/collaborate"} activeclassname="active" className="nav-link" >
                                         Collaborate with us
                                     </NavLink>
                                 </li> */}
