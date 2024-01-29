@@ -28,7 +28,7 @@ function Register() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:4000/api/users";
+			const url = "http://localhost:5000/api/register";
 			// console.log(data,res)
 			const { data: res } = await axios.post(url, data);
 			console.log(data,res)

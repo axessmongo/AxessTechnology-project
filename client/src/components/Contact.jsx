@@ -13,6 +13,7 @@ function Contact() {
         email: "",
         phone: "",
         address: "",
+        sevice:""
     });
 
     const handleChange = (event) => {
@@ -63,71 +64,62 @@ function Contact() {
                                 <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address' />
                             </div>
                         </div>
- {/* <div className=' container mb-3 mt-3'>
-                        <p className='bg-img-1 d-flex text-center'>select service</p>
+                         <div className=' container mb-3 mt-3'>
+                        <p className='bg-img-1 d-flex text-center'>Select service</p>
                         <div className="row">
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_1" type="checkbox" />
+                                    <input id="checkbox_animated_1" value={contact.sevice} type="radio" name='service-option' />
                                     <label htmlFor="checkbox_animated_1">
                                         <span className="check"></span>
                                         <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
+                                        <p className='secondary-text'>Software Development</p>
                                     </label>
                                 </div>
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_2" type="checkbox" />
+                                    <input id="checkbox_animated_2" value={contact.sevice} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_2">
                                         <span className="check"></span>
                                         <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
+                                        <p className='secondary-text'>Software Testing</p>
                                     </label>
                                 </div>
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_3" type="checkbox" />
+                                    <input id="checkbox_animated_3" value={contact.sevice} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_3">
                                         <span className="check"></span>
                                         <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
+                                        <p className='secondary-text'>Website Development</p>
                                     </label>
                                 </div>
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_4" type="checkbox" />
+                                    <input id="checkbox_animated_4" value={contact.sevice} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_4">
                                         <span className="check"></span>
                                         <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
+                                        <p className='secondary-text'>Digital Marketing</p>
                                     </label>
                                 </div>
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_5" type="checkbox" />
+                                    <input id="checkbox_animated_5" value={contact.sevice} type="radio"  name='service-option'/>
                                     <label htmlFor="checkbox_animated_5">
                                         <span className="check"></span>
                                         <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
+                                        <p className='secondary-text'>Others</p>
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-md-4  checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_6" type="checkbox" />
-                                    <label htmlFor="checkbox_animated_6">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Crypto Exchange Development</p>
-                                    </label>
-                                </div>
-                            </div>
+                           
                         </div>
-                    </div> */}
+                    </div>
                         <div className="mt-3 text-center mb-3">
                             <button className='gold-btn'>Submit</button>
                         </div>
