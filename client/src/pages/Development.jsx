@@ -26,36 +26,86 @@ function Development() {
         h3="Utilize the power of technology with our custom software development services.
         "
       />
-      <section className="container ">
-        <div className="text-center">
-          <p className="fs-5 mt-4">
-            In today's digital age, having robust and innovative software is no
-            longer a luxury, it's a necessity for businesses to thrive. At Axess
-            Technology, we understand the power of software and its ability to
-            transform your operations, streamline processes, and unlock new
-            opportunities for growth.
-          </p>
+      {/* <section className="container ">
+        <div className="row mt-3 align-items-center justify-content-center ">
+          <div className="col-lg-10 rounded-5 col-md-3 pbg">
+            <div className="text-center">
+              <p className="fs-5 mt-4">
+                In today's digital age, having robust and innovative software is
+                no longer a luxury, it's a necessity for businesses to thrive.
+                At Axess Technology, we understand the power of software and its
+                ability to transform your operations, streamline processes, and
+                unlock new opportunities for growth.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="row align-items-center mt-5">
           <div
-            className="col-md-4"
+            className="col-md-4 mt-5"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
             <div>
-              <img src={Software} className="rounded-start-circle " alt="" />
+              <img src={Software} className=" img-fluid " alt="" />
             </div>
           </div>
           <div className="col-md-8" data-aos="fade" data-aos-duration="1000">
-            <div className="pbg p-4">
+            <div className=" p-1">
               <h1 className="bg-img-1">Our Expertise:</h1>
-              <p>
+              <p className="pbg align-items-center justify-content-center rounded-5 p-4 ">
                 We are a team of experienced and passionate software developers
                 who specialize in crafting cutting-edge solutions tailored to
                 your specific needs. We have a deep understanding of various
                 technologies and frameworks, including:
               </p>
-              <ul>
+            </div>
+            <div className="row justify-content-around px-4">
+              <div className="col-md-3 boxshadow  text-center ">
+                <div className="my-4">
+                  <span className="fw-bold p-2">Programming Languages:</span>
+                  <p> Python </p>
+                  <p> Java </p>
+                  <p> JavaScript </p>
+                  <p> C++ </p>
+                  <p> C# </p>
+                </div>
+              </div>
+              <div className="col-md-3 boxshadow text-center">
+                <div className="my-4">
+                  <span className="fw-bold p-2">
+                    Web Development Frameworks:
+                  </span>
+                  <p>React</p>
+                  <p> Angular</p>
+                  <p>Vue.js</p>
+                  <p>Django</p>
+                  <p>Flask</p>
+                </div>
+              </div>
+              <div className="col-md-3 boxshadow text-center">
+                <div className="my-4">
+                  <span className="fw-bold p-2">
+                    Mobile Development Frameworks:
+                  </span>
+                  <p>Flutter</p>
+                  <p> React Native</p>
+                  <p>Kotlin</p>
+                  <p>and Swift</p>
+                </div>
+              </div>
+              <div className="col-md-3 boxshadow text-center">
+                <div className="my-4">
+                  <span className="fw-bold p-2">Cloud Platforms:</span>
+                  <p>AWS</p>
+                  <p>Azure</p>
+                  <p> Google Cloud Platform</p>
+                  <p>and others</p>
+                </div>
+              </div>
+            </div>
+
+          <ul>
                 <li>
                   <div className="d-flex align-items-center">
                     <span className="li-border">1</span>
@@ -92,38 +142,48 @@ function Development() {
 
                   </div>
                 </li>
-              </ul>
-            </div>
+              </ul> 
           </div>
+
           <div className="col-md-8" data-aos="fade" data-aos-duration="1000">
-            <div className="pbg p-4">
+            <div className=" p-4">
               <h1 className="bg-img-1">Our Process:</h1>
-              <p>
+              <p className=" align-items-center justify-content-center rounded-5 p-4">
                 We believe in a collaborative and agile approach to software
                 development. Our process involves:
               </p>
               <div className="d-flex">
-                <span className="li-border"></span>
                 <ul>
                   <li>
-                    <span className="fw-bold">Discovery & Planning:</span> We
-                    work closely with you to understand your business goals,
-                    challenges, and target audience.
+                    <span className="fw-bold">Discovery & Planning:</span>
+                    <p>
+                      {" "}
+                      We work closely with you to understand your business
+                      goals, challenges, and target audience.
+                    </p>
                   </li>
                   <li>
-                    <span className="fw-bold">Design & Prototyping: </span> We
-                    create prototypes and mockups to visualize your software and
-                    ensure it aligns with your needs.
+                    <span className="fw-bold">Design & Prototyping: </span>
+                    <p className=" align-items-center justify-content-center rounded-5 p-4">
+                      {" "}
+                      We create prototypes and mockups to visualize your
+                      software and ensure it aligns with your needs.
+                    </p>
                   </li>
                   <li>
-                    <span className="fw-bold">Development & Testing:</span>We
-                    write clean, efficient, and well-tested code using
-                    industry-standard best practices.
+                    <span className="fw-bold">Development & Testing:</span>
+                    <p className=" align-items-center justify-content-center rounded-5 p-4">
+                      We write clean, efficient, and well-tested code using
+                      industry-standard best practices.
+                    </p>
                   </li>
                   <li>
-                    <span className="fw-bold">Deployment & Maintenance:</span>We
-                    seamlessly deploy your software and provide ongoing support
-                    and maintenance.
+                    <span className="fw-bold">Deployment & Maintenance:</span>
+                    <p className=" align-items-center justify-content-center rounded-5 p-4">
+                      {" "}
+                      We seamlessly deploy your software and provide ongoing
+                      support and maintenance.
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -148,7 +208,7 @@ function Development() {
             data-aos="fade"
             data-aos-duration="1000"
           >
-            <div className="pbg p-4">
+            <div className=" p-4">
               <h1 className="bg-img-1">Why Choose Us:</h1>
 
               <ul>
@@ -181,152 +241,127 @@ function Development() {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="pbg1 container-fluid">
+        <h1 className="text-center bg-img-1">Our Expertise</h1>
+        <div className="row mt-3 align-items-center justify-content-center ">
+          <div className="col-lg-10 rounded-5 col-md-3 pbg">
+            <div className="text-center">
+              <p className="fs-5 mt-4">
+                In today's digital age, having robust and innovative software is
+                no longer a luxury, it's a necessity for businesses to thrive.
+                At Axess Technology, we understand the power of software and its
+                ability to transform your operations, streamline processes, and
+                unlock new opportunities for growth.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="justify-content-center d-flex">
+          <img src={Process} className=" img-fluid w-50" alt="" />
+        </div> */}
+        <div className="row justify-content-around my-5 ">
+          <div className="col-md-3 boxshadow   text-center ">
+            <div className="my-4">
+              <span className="fw-bold">Programming Languages:</span>
+              <p> Python </p>
+              <p> Java </p>
+              <p> JavaScript </p>
+              <p> C++ </p>
+              <p> C# </p>
+            </div>
+          </div>
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">Web Development Frameworks:</span>
+              <p>React</p>
+              <p> Angular</p>
+              <p>Vue.js</p>
+              <p>Django</p>
+              <p>Flask</p>
+            </div>
+          </div>
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">
+                Mobile Development Frameworks:
+              </span>
+              <p>Flutter</p>
+              <p> React Native</p>
+              <p>Kotlin</p>
+              <p>and Swift</p>
+            </div>
+          </div>
+          </div>
+          <div className="row my-5 justify-content-center">
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">Cloud Platforms:</span>
+              <p>AWS</p>
+              <p>Azure</p>
+              <p> Google Cloud Platform</p>
+              <p>and others</p>
+            </div>
+          </div>
+          </div>
+        
       </section>
-<div className="bg-green-1 text-light">
-      <section className="container py-3">
-        <div className="text-center">
-          <h1>Our Process</h1>
-          <p>
-            We believe in a collaborative and agile approach to software
-            development. Our process involves:{" "}
-          </p>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5 text-end d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Discovery & Planning</h3>
-                <p>
-                  We work closely with you to understand your business goals,
-                  challenges, and target audience.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={bubble} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5"></div>
-          </div>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5"></div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={success} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5 d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Design & Prototyping</h3>
-                <p>
-                  We create prototypes and mockups to visualize your software
-                  and ensure it aligns with your needs.
-                </p>
-              </div>
+      <section className="container-fluid">
+        <h1 className="text-center bg-img-1">Our Process</h1>
+        <div className="row mt-3 align-items-center justify-content-center ">
+          <div className="col-lg-10 rounded-5 col-md-3 pbg">
+            <div className="text-center">
+              <p className="fs-5 mt-4">
+              We believe in a collaborative and agile approach to software development. Our process involves:
+              </p>
             </div>
           </div>
         </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5 text-end d-flex justify-content-center align-align-items-center">
-              <div>
-                <h3>Development & Testing</h3>
-                <p>
-                  We write clean, efficient, and well-tested code using
-                  industry-standard best practices.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={bubble} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5"></div>
-          </div>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5"></div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={success} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5 d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Deployment & Maintenance</h3>
-                <p>
-                  We seamlessly deploy your software and provide ongoing support
-                  and maintenance.
-                </p>
-              </div>
+        {/* <div className="justify-content-center d-flex">
+          <img src={Process} className=" img-fluid w-50" alt="" />
+        </div> */}
+        <div className="row justify-content-around my-5 ">
+          <div className="col-md-3 boxshadow   text-center ">
+            <div className="my-4">
+             
             </div>
           </div>
-        </div>
-
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">Web Development Frameworks:</span>
+              <p>React</p>
+              <p> Angular</p>
+              <p>Vue.js</p>
+              <p>Django</p>
+              <p>Flask</p>
+            </div>
+          </div>
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">
+                Mobile Development Frameworks:
+              </span>
+              <p>Flutter</p>
+              <p> React Native</p>
+              <p>Kotlin</p>
+              <p>and Swift</p>
+            </div>
+          </div>
+          </div>
+          <div className="row my-5 justify-content-center">
+          <div className="col-md-3 boxshadow  text-center">
+            <div className="my-4">
+              <span className="fw-bold ">Cloud Platforms:</span>
+              <p>AWS</p>
+              <p>Azure</p>
+              <p> Google Cloud Platform</p>
+              <p>and others</p>
+            </div>
+          </div>
+          </div>
+        
       </section>
-      </div>
-      <section>
-        <div className="container">
-          <h3 className="text-center mt-5">Our Expertise</h3>
-          <p className="text-center">
-            We are a team of experienced and passionate software developers who
-            specialize in crafting cutting-edge solutions tailored to your
-            specific needs. We have a deep understanding of various technologies
-            and frameworks, including
-          </p>
-          <div className="expertise">
-            <div className="expertise-section">
-              <h2>Programming Languages</h2>
-              <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>And more...</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Web Development Frameworks</h2>
-              <ul>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vue.js</li>
-                <li>Django</li>
-                <li>Flask</li>
-                <li>And others...</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Mobile Development Frameworks</h2>
-              <ul>
-                <li>Flutter</li>
-                <li>React Native</li>
-                <li>Kotlin</li>
-                <li>Swift</li>
-              </ul>
-            </div>
-            <div className="expertise-section">
-              <h2>Cloud Platforms</h2>
-              <ul>
-                <li>AWS</li>
-                <li>Azure</li>
-                <li>Google Cloud Platform</li>
-                <li>And others...</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <Techsection />
       <section className="pricing mt-5">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
@@ -655,7 +690,7 @@ function Development() {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

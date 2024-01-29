@@ -9,7 +9,7 @@ import "../assets/css/index.scss"
 
 function Footer() {
     return (
-        <div>   
+        <div>
             <div className="container mt-4 conatctbg">
                 <div className="card">
                     <div className="card-body position-relative">
