@@ -3,10 +3,23 @@ import { NavLink, Link, Outlet } from 'react-router-dom'
 import Home from '../pages/Home'
 import logo from '../assets/images/logo/logo.png'
 import About from './About'
+import '../assets/css/hamburgers/hamburgers.scss'
 
 function Navbar() {
 
     const [fixed, setFixed] = useState(false);
+    const [nav, setNav] = useState(false);
+
+    document.addEventListener('click', function (event) {
+        var navbar = document.getElementById('navbarSupportedContent');
+        var isClickInsideNavbar = navbar.contains(event.target);
+      
+        if (!isClickInsideNavbar) {
+          // Clicked outside the navbar, close it
+          navbar.classList.remove('show'); // Assuming 'show' is the class that makes the navbar visible
+        //   setNav(false);
+        }
+      });
 
     useEffect(() => {
         function handleScroll() {
@@ -33,7 +46,7 @@ function Navbar() {
                     <Link><i className="bi bi-whatsapp"></i></Link>
                     <Link><i className="bi bi-twitter-x"></i></Link>
                 </div>
-                <NavLink to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
+                <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
                     <p>Technology</p>
@@ -47,22 +60,25 @@ function Navbar() {
             <div>
                 <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed == 'fixed-1' ? 'fixed-1' : ''} ${fixed == 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
                     <div className="container-fluid">
-                        {/* <Link to='/' className="navbar-brand">
-                            Navbar
-                        </Link> */}
-                        <button
-                            className="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span className="navbar-toggler-icon" />
-                        </button>
+                        <div className="d-lg-none d-flex justify-content-between w-100 py-2 align-items-end">
+                            <Link to='/' className="navbar-brand col-1">
+                                <img src={logo} alt="" />
+                            </Link>
+                            <button
+                                className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation" onClick={() => setNav(!nav)}>
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden" data-aos='fade-up'>
+                            <ul className="navbar-nav align-items-center mx-auto mb-2 mb-lg-0  overflow-hidden" data-aos='fade-up'>
                                 <li className="nav-item">
                                     <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
                                         Home
