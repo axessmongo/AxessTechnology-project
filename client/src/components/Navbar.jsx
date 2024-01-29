@@ -92,12 +92,12 @@ function Navbar() {
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
-                                        Our works
+                                    Our works
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to={"/about"} activeclassname="active" className="nav-link" >
-                                        About
+                                    About
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
