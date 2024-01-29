@@ -11,7 +11,7 @@ import Footer from './Footer'
 
 
 export default function CategoriesIn() {
-    const [activeTab, setActiveTab] = useState('pills-ecommerce')
+
     return (
         <div>
             <Navbar />
