@@ -31,7 +31,7 @@ function Routing() {
 
         <div>
             <BrowserRouter>
-                <Loader />
+                {/* <Loader /> */}
                 <ScrollTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
