@@ -7,7 +7,7 @@ import visa from '../assets/images/pricing/visa.png'
 import cash from '../assets/images/pricing/cash.png'
 import secure from '../assets/images/pricing/secure.png'
 import Footer from '../components/Footer'
-import '../assets/css/Pricing.scss'
+import '../assets/css/pricing.scss'
 
 
 function Pricing() {

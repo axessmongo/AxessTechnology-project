@@ -25,20 +25,24 @@ import Testing from './pages/Testing';
 import Ai from './pages/Ai';
 
 function Routing() {
+
+
     const user = localStorage.getItem("token");
 
     return (
 
         <div>
             <BrowserRouter>
-                <Loader />
+                {/* <Loader /> */}
                 <ScrollTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    {user && <Route path="/" element={<Home />} />}
+                    <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/" element={<Navigate replace to="/login" />} />
+                    <Route path="/users/:id/verify/:token" element={<EmailVerify />} />
                     <Route path='/software' element={<SoftwareDev />} />
-                    {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
-                    {/* <Route path="/users/:id/verify/:token" element={<EmailVerify />} /> */}
                     <Route path="/register" element={<Register />} />
                     <Route path='/services' element={<Services />} />
                     <Route path='/about' element={<About />} />
