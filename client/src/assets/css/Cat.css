@@ -11,12 +11,7 @@
 
 .content::before {
     border-top: #b98d2e;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 .card.custom-card2 {
@@ -50,6 +45,12 @@
 .play {
     animation: moveRow 55s infinite linear;
 }
+
+.nav-pills .nav-link.active {
+    color: yellow;
+}
+
+
 
 @keyframes moveRow {
     0% {

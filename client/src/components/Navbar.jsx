@@ -1,13 +1,33 @@
-import React from 'react'
-import {NavLink, Link, Outlet } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { NavLink, Link, Outlet } from 'react-router-dom'
 import Home from '../pages/Home'
 import logo from '../assets/images/logo/logo.png'
 import About from './About'
 
 function Navbar() {
+
+    const [fixed, setFixed] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY > 100 && window.scrollY < 800) {
+                setFixed('fixed-1');
+            } else if (window.scrollY > 800) {
+                setFixed('fixed-2');
+            } else {
+                setFixed(false);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <div>
-            <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap'  data-aos='fade-down' data-aos-duration='500'>
+            <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
                 <div className='d-flex share order-2 order-lg-1 '>
                     <Link><i className="bi bi-instagram"></i></Link>
                     <Link><i className="bi bi-whatsapp"></i></Link>
@@ -16,7 +36,7 @@ function Navbar() {
                 <NavLink to='/' className='d-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
                     <img src={logo} alt="" />
-                    <p>Tech</p>
+                    <p>Technology</p>
                 </NavLink>
                 <div className=' order-3 order-lg-3'>
                     <NavLink to={'/login'} className='gold-btn px-4'>
@@ -25,7 +45,7 @@ function Navbar() {
                 </div>
             </div>
             <div>
-                <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3">
+                <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed == 'fixed-1' ? 'fixed-1' : ''} ${fixed == 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
                     <div className="container-fluid">
                         {/* <Link to='/' className="navbar-brand">
                             Navbar
@@ -42,38 +62,38 @@ function Navbar() {
                             <span className="navbar-toggler-icon" />
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden">
-                                <li className="nav-item" data-aos='fade'>
+                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0  overflow-hidden" data-aos='fade-up'>
+                                <li className="nav-item">
                                     <NavLink to={'/'} activeClassName="active" className="nav-link" aria-current="page" >
                                         Home
                                     </NavLink>
                                 </li>
-                               
-                                <li className="nav-item" data-aos='fade'>
+
+                                <li className="nav-item">
                                     <NavLink to={'/services'} activeClassName="active" className="nav-link" >
                                         Services
                                     </NavLink>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
-                                    <NavLink to={"/technologies"}  activeClassName="active" className="nav-link" >
-                                        Technology
+                                <li className="nav-item">
+                                    <NavLink to={"/ourworks"} activeClassName="active" className="nav-link" >
+                                    Our works
                                     </NavLink>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
-                                    <NavLink to={"/pricing"} activeClassName="active"  className="nav-link" >
-                                        Pricing
+                                <li className="nav-item">
+                                    <NavLink to={"/about"} activeClassName="active" className="nav-link" >
+                                    About
                                     </NavLink>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
-                                    <NavLink to={"/contact"} activeClassName="active"  className="nav-link" >
+                                <li className="nav-item">
+                                    <NavLink to={"/contact"} activeClassName="active" className="nav-link" >
                                         Contact
                                     </NavLink>
                                 </li>
-                                <li className="nav-item" data-aos='fade'>
+                                {/* <li className="nav-item">
                                     <NavLink to={"/collaborate"} activeClassName="active" className="nav-link" >
                                         Collaborate with us
                                     </NavLink>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
