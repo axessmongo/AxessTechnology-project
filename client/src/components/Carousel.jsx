@@ -26,22 +26,22 @@ export default function Carousel() {
     <div className="container my-5 py-5">
       <h1 className="bg-img-1 mx-auto">Our works</h1>
       <Slider {...settings}>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project1} alt="project1" />
         </Link>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project2} alt="project1" />
         </Link>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project3} alt="project1" />
         </Link>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project4} alt="project1" />
         </Link>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project5} alt="project1" />
         </Link>
-        <Link to = {'/categories'} className="proiect-card">
+        <Link to = {'/ourworks'} className="proiect-card">
           <img src={project6} alt="project1" />
         </Link>
       </Slider>

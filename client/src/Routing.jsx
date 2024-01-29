@@ -17,10 +17,12 @@ import Footer from './components/Footer';
 import Categories from './components/Categories';
 import CategoriesIn from './components/CategoriesIn'
 import Demo from './components/Demo';
-import Development from './components/Development';
+import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
 import ScrollTop from './assets/images/ScrollTop';
 import Loader from './components/Loader';
+import Testing from './pages/Testing';
+import Ai from './pages/Ai';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -45,6 +47,10 @@ function Routing() {
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/ourworks' element={<CategoriesIn />} />
                     <Route path='/development' element={<Development />} />
+                    <Route path='/testing' element={<Testing />} />
+                    <Route path='/ai' element={<Ai />} />
+
+
                 </Routes>
             </BrowserRouter>
         </div>
