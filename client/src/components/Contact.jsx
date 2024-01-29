@@ -43,7 +43,7 @@ function Contact() {
                 <div className="card mt-4">
                     <form onSubmit={handleSubmit}>
                         <div className="card-body">
-                            <p className='text-center text-capitalize bg-img-1'>request for quote</p>
+                            <p className='text-center text-capitalize bg-img-1'>Request for quote</p>
                             <p className='text-center text-capitalize fw-semibold primary-text'>discuss your project with us. We are waiting to serve you better.</p>
                         </div>
 
