@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
+import AOS from 'aos';
 
 export default function Loader() {
   let navigate = useNavigate(); // Renamed from `path` to `navigate` for clarity
@@ -9,12 +10,14 @@ export default function Loader() {
     setLoad(true)
     setTimeout(() => {
       setLoad(false); // Inverted from `setLoad(!load)`
-    }, 2000);
+      AOS.refresh();
+    }, 1000);
   }, [navigate]); // Changed from [path] to []
 
   return (
-    <div className={`loading ${load ? '' : 'd-none'}`}>
-      <div className='loader'></div>
-    </div>
+    null
+    // <div className={`loading ${load ? '' : 'd-none'}`}>
+    //   <div className='loader'></div>
+    // </div>
   );
 }
