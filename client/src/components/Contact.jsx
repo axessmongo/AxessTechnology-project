@@ -13,7 +13,7 @@ function Contact() {
         email: "",
         phone: "",
         address: "",
-        sevice:""
+        service:""
     });
 
     const handleChange = (event) => {
@@ -69,7 +69,7 @@ function Contact() {
                         <div className="row">
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_1" value={contact.sevice} type="radio" name='service-option' />
+                                    <input id="checkbox_animated_1" value={contact.service} type="radio" name='service-option' />
                                     <label htmlFor="checkbox_animated_1">
                                         <span className="check"></span>
                                         <span className="box"></span>
@@ -79,7 +79,7 @@ function Contact() {
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_2" value={contact.sevice} type="radio"  name='service-option' />
+                                    <input id="checkbox_animated_2" value={contact.service} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_2">
                                         <span className="check"></span>
                                         <span className="box"></span>
@@ -89,7 +89,7 @@ function Contact() {
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_3" value={contact.sevice} type="radio"  name='service-option' />
+                                    <input id="checkbox_animated_3" value={contact.service} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_3">
                                         <span className="check"></span>
                                         <span className="box"></span>
@@ -99,7 +99,7 @@ function Contact() {
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_4" value={contact.sevice} type="radio"  name='service-option' />
+                                    <input id="checkbox_animated_4" value={contact.service} type="radio"  name='service-option' />
                                     <label htmlFor="checkbox_animated_4">
                                         <span className="check"></span>
                                         <span className="box"></span>
@@ -109,7 +109,7 @@ function Contact() {
                             </div>
                             <div className="col-md-4 checkbox-label">
                                 <div className="checkbox-animated">
-                                    <input id="checkbox_animated_5" value={contact.sevice} type="radio"  name='service-option'/>
+                                    <input id="checkbox_animated_5" value={contact.service} type="radio"  name='service-option'/>
                                     <label htmlFor="checkbox_animated_5">
                                         <span className="check"></span>
                                         <span className="box"></span>
