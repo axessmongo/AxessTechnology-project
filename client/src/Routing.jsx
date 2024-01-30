@@ -26,14 +26,14 @@ import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/forgotpassword';
-import DigitalMarketing from './pages/DigitalMarketing';
+import DigitalMarketing from './pages/DigitalMarketing' ;  
 
 function Routing() {
 
 
     const user = localStorage.getItem("token");
     return (
-
+// hgjh
         <div>
             <BrowserRouter>
                 {/* <Loader /> */}
@@ -49,7 +49,7 @@ function Routing() {
                     <Route path="/PasswordReset/:id/:token" element={<PasswordReset />} />
                     <Route path='/software' element={<SoftwareDev />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path='/services' element={<Services />} />
+                    <Route path='/services ' element={<Services />} />
                     <Route path='/about' element={<About />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
