@@ -10,7 +10,8 @@ import hmodel from '../assets/images/services/h-model.png';
 import ai from '../assets/images/services/ai.png';
 import digi from '../assets/images/services/digi.png';
 import AOS from 'aos';
-function Services() { 
+function Services() {
+    const [nav, setNav] = useState(false)
     const [popup, setPopup] = useState(true)
     setTimeout(() => {
         setPopup(false);
@@ -23,7 +24,7 @@ function Services() {
         }
     }, 3000)
 
-    let nav = useNavigate()
+    let navigation = useNavigate()
 
     useEffect(() => {
         let body = document.querySelector('body');
@@ -34,9 +35,10 @@ function Services() {
         } else {
             body.style.overflow = 'auto';
         }
-    }, [nav])
+    }, [navigation])
 
     let scrollTop = (getID, e) => {
+        setNav(false)
         let element = document.getElementById(getID);
         if (element) {
             const goTop = element.offsetTop;
@@ -138,13 +140,29 @@ function Services() {
             </div>
         </div>
             <div className="layer-two min-vh-100">
+                <div className="fixed-nav d-block d-md-none">
+                    <button
+                        className={`shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
+                        type="button" onClick={() => setNav(!nav)}>
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>{/*  */}
+                </div>
                 <div className="row gx-0">
-                    <div className="col-md-8 bg-green-1" id='scroller'>
-                        <div className="vh-100 p-5">
+                    <div className={`col-md-8 bg-green-1`} id='scroller'>
+                        <div className="vh-100 py-3 px-4 p-md-5">
                             <div className="d-flex flex-column justify-content-between h-100">
                                 <div className="d-flex justify-content-between align-items-center" data-aos="fade-down">
-                                    <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white'>Axess Technology</Link>
+                                    <Link to={'/'} className='display-6 fw-medium text-decoration-none text-white d-none d-md-block'>Axess Technology</Link>
                                     <img src={logo} alt="logo" className='img-fluid logo' />
+                                    <button
+                                        className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'} d-block d-md-none`}
+                                        type="button" onClick={() => setNav(!nav)}>
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
                                 </div>
                                 <div className="pattern d-none">
 
@@ -170,21 +188,21 @@ function Services() {
                                         Software Development
                                     </h1>
                                     <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                    Craft Software That Captivates: From Pixel to Profit
-                                      </h4>
+                                        Craft Software That Captivates: From Pixel to Profit
+                                    </h4>
                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
-                                    We don't just code, we build digital dreams. Unleash the power of custom software with our expert developers and innovative approach.
-                                        </p>
+                                        We don't just code, we build digital dreams. Unleash the power of custom software with our expert developers and innovative approach.
+                                    </p>
                                     <div className='col-md-8 mx-auto mb-3' data-aos='zoom-in' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         <img src={service} className='w-100 animatedimg' alt="service" />
                                     </div>
                                     <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Become a Software Symphony Conductor:</h4>
                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
-                                    Instead of juggling multiple agencies for design, development, and deployment, harmonize your project with our all-encompassing approach. We're your one-stop shop, conducting every stage from conception to launch, ensuring your software sings in perfect pitch.
-                                     </p>
-                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
-                                     This collaborative and streamlined process means seamless communication, reduced friction, and a beautiful symphony of software at the end. So, ditch the cacophony of fragmented services and let us orchestrate your digital masterpiece.
-                                     </p>
+                                        Instead of juggling multiple agencies for design, development, and deployment, harmonize your project with our all-encompassing approach. We're your one-stop shop, conducting every stage from conception to launch, ensuring your software sings in perfect pitch.
+                                    </p>
+                                    <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
+                                        This collaborative and streamlined process means seamless communication, reduced friction, and a beautiful symphony of software at the end. So, ditch the cacophony of fragmented services and let us orchestrate your digital masterpiece.
+                                    </p>
 
                                     {/* <div className="row gy-3 pt-5 mt-5">
                                         <h1 className='text-center primary-header-2 mb-3' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Web Development Services</h1>
@@ -238,7 +256,7 @@ function Services() {
                             </div>
 
                             <div className=' mb-5'>
-                                <div className="my-5 p-5 text-center text-white">
+                                <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
                                     <h1 className='secondary-header' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
                                     </h1>
@@ -417,13 +435,13 @@ function Services() {
                                         <div className="col-12 text-center">
                                             <h1 className='primary-header' data-aos='fade-up' data-aos-duration='400' data-aos-anchor-placement="bottom-bottom">Popular Software Testing Models</h1>
                                         </div>
-                                        <div className="col-3">
+                                        <div className="col-10 col-sm-6 col-lg-3">
                                             <img src={vmodel} alt="vmodel" data-aos='fade-up' data-aos-duration='400' data-aos-anchor-placement="bottom-bottom" />
                                         </div>
-                                        <div className="col-3">
+                                        <div className="col-10 col-sm-6 col-lg-3">
                                             <img src={pmodel} alt="pmodel" data-aos='fade-down' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" />
                                         </div>
-                                        <div className="col-3">
+                                        <div className="col-10 col-sm-6 col-lg-3">
                                             <img src={hmodel} alt="hmodel" data-aos='flip-right' data-aos-duration='800' data-aos-anchor-placement="bottom-bottom" />
                                         </div>
                                     </div>
@@ -445,7 +463,7 @@ function Services() {
                                 <div className="row align-items-center">
                                     <div className="col-md-8">
                                         <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                         hdj bbsjb hjbhjb</h4>
+                                            hdj bbsjb hjbhjb</h4>
                                         <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                             In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
                                         </p>
@@ -468,12 +486,12 @@ function Services() {
                                 </h1>
                                 <div className="row align-items-center">
                                     <div className="col-md-8">
-                                    <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                    Ignite Your Brand and Dominate the Digital Landscape
-</h4>
+                                        <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                            Ignite Your Brand and Dominate the Digital Landscape
+                                        </h4>
                                         <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                        In today's digital age, a captivating online presence is no longer a luxury, it's a necessity. At Axess Technology, we believe in the power of digital marketing to fuel brand awareness, ignite engagement, and propel conversions. Our team of expert strategists, content creators, and data-driven wizards weave the magic that takes your brand from the shadows to the spotlight.
-                                           </p>
+                                            In today's digital age, a captivating online presence is no longer a luxury, it's a necessity. At Axess Technology, we believe in the power of digital marketing to fuel brand awareness, ignite engagement, and propel conversions. Our team of expert strategists, content creators, and data-driven wizards weave the magic that takes your brand from the shadows to the spotlight.
+                                        </p>
                                     </div>
                                     <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         <img src={digi} className='w-100 animatedimg' alt="service" />
@@ -483,7 +501,18 @@ function Services() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4 vh-100 bg-axess-gold-2 position-fixed end-0">
+                    <div className={`col-md-4 vh-100 bg-axess-gold-2 position-fixed end-0 second-nav ${nav && 'is-active'}`}>
+                        {/* <div className='d-md-none d-flex justify-content-between align-items-center bg-white px-2'>
+                            <Link to={'/'} className='text-decoration-none'>
+                                <img src={logo} alt="logo" className='img-fluid logo p-2' /></Link>
+                            <button
+                                className={`shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'} d-block d-md-none mt-2`}
+                                type="button" onClick={() => setNav(!nav)}>
+                                <span class="hamburger-box text-danger">
+                                    <span class="hamburger-inner text-danger"></span>
+                                </span>
+                            </button>
+                        </div> */}
                         <div className="services-right-side d-flex h-100 justify-content-center align-items-end flex-column position-relative">
                             <button data-aos='fade-left' className="service-nav" data-axess-target="softdev" onClick={(e) => { scrollTop('softdev', e) }}>
                                 <span>Software Development</span>
