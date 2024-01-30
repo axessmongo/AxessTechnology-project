@@ -32,7 +32,6 @@ function Routing() {
 
 
     const user = localStorage.getItem("token");
-
     return (
 
         <div>
@@ -61,9 +60,6 @@ function Routing() {
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
-
-
-
                 </Routes>
             </BrowserRouter>
         </div>

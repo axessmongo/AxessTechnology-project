@@ -73,12 +73,15 @@ function Login() {
                   required
                   className='input'
                 />
-                <Link to="/forgotpassword" className='fogotpassword' id='forget'>
-                  <p className='text-end text-black text-decoration-none'>Forgot Password ?</p>
-                </Link>
+               
                 <button type='submit' className='green_btn' disabled={loading}>
                   {loading ? 'Signing In...' : 'Sign In'}
                 </button>
+                <div className=''>
+                <Link to="/forgotpassword" className='fogotpassword text-decoration-none gold-text-1 text-start' id='forget'>
+                  Forgot Password ?
+                </Link>
+                </div>                
                 <ToastContainer />
               </form>
             </div>
