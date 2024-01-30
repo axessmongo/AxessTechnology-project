@@ -56,7 +56,7 @@ const verifyEmail = async (req, res) => {
   const id = req.params.id;
 
   try {
-    const user = await userModel.findById(id);
+    const user = await userModel.findById({_id:id});
 
     if (!user) return res.status(400).json({ message: "Invalid user ID" });
 

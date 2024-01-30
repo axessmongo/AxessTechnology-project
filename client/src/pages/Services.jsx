@@ -153,7 +153,7 @@ function Services() {
                                     The <span className='gold-text-2'>Axess</span> Technology Approach
                                 </h1>
                                 <div data-aos="fade-up" data-aos-duration='700' data-aos-anchor-placement="bottom-bottom">
-                                    <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nemo impedit facilis facere sed itaque pariatur assumenda accusantium beatae aliquid dignissimos vero sunt similique totam recusandae odio, error quam praesentium!</p>
+                                    <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Unshackle your digital potential. Code flawlessly, drive clicks strategically, convert with unwavering certainty. We're your partners in digital mastery.</p>
                                 </div>
                             </div>
                         </div>
