@@ -131,7 +131,7 @@ function Contact() {
 
                 <div className="container mt-5">
                     <h3 className='bg-img-1 mx-auto'> Frequently Asked Questions </h3>
-                    <p className='secondary-text mx-auto m-5 '> General Questions:</p>
+                    <h4 className=' mx-auto m-5 '> General Questions:</h4>
                     <div className="accordion" id="accordionPanelsStayOpenExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -189,7 +189,7 @@ function Contact() {
                 </div>
                 <div className="container mt-5">
 
-                    <p className='secondary-text mx-auto m-5 bg-img-1 '> Software Development:</p>
+                    <h4 className=' mx-auto m-5'> Software Development:</h4>
                     <div className="accordion" id="accordionPanelsStayOpenExample1">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -233,18 +233,11 @@ function Contact() {
                             </div>
 
                         </div>
-
-
-
-
-
-
-
                     </div>
                 </div>
                 <div className="container mt-5">
 
-                    <p className='secondary-text mx-auto m-5'> Software Testing:</p>
+                    <h4 className='mx-auto m-5'> Software Testing:</h4>
                     <div className="accordion" id="accordionPanelsStayOpenExample2">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -288,18 +281,11 @@ function Contact() {
                             </div>
 
                         </div>
-
-
-
-
-
-
-
-                    </div>
+                        </div>
                 </div>
                 <div className="container mt-5">
 
-                    <p className='secondary-text mx-auto m-5'> Website Development:</p>
+                    <h4 className=' mx-auto m-5'> Website Development:</h4>
                     <div className="accordion" id="accordionPanelsStayOpenExample3">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -346,20 +332,11 @@ function Contact() {
                             </div>
 
                         </div>
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
                 <div className="container mt-5">
 
-                    <p className='secondary-text mx-auto m-5'>Digital Marketing:</p>
+                    <h4 className=' mx-auto m-5'>Digital Marketing:</h4>
                     <div className="accordion" id="accordionPanelsStayOpenExample3">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -400,6 +377,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
