@@ -1,132 +1,107 @@
 import React from 'react';
 import '../src/assets/css/About.scss'
-import vision from '../src/assets/images/about/vision.png'
-import mission from '../src/assets/images/about/mission.png'
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import AboutImage from '../src/assets/images/About2.jpg';
+// import AboutImage from '../src/assets/images/About2.jpg';
+import success from '../src/assets/images/about/success.svg'
 import Footer from './components/Footer';
 
 function About() {
     return (
         <div>
             <Navbar />
-            <Banner h1={'About Us'} h2={'Revolutionize Your Operations: Transform with Software Tailored to Your Needs.'} h3={'Hello World'} />
+            <Banner h1={'About Us'} h2={'Axess Technology: Weaving Digital Successes for 8 Years'} h3={'Hello World'} />
             <div className='container'>
                 <h1 className='text-center mb-3'>About Us</h1>
                 <div className="row mt-5">
+                    <div className="col-md-6 mt-5">
+                        <h1 className='mt-5 text-center'>Heading</h1>
+                        <p className='mt-3'>Founded by a passionate entrepreneur, Mr. Venkteshan, Axess Technology has been igniting digital dreams for the past eight years. We're not just tech wizards; we're your collaborators, crafting custom solutions that propel your brand forward.</p>
+                        <p className='mt-3'>From the pixel-perfect world of website development to the rigorous realm of software testing, we cover all bases. Our experienced software developers weave lines of code into powerful applications, and our sharp-eyed testers ensure every click is glitch-free. We don't stop there; our digital marketing maestros orchestrate campaigns that drive engagement and conversions, turning clicks into loyal customers.</p>
+                        <p className='mt-3'>At Axess, your success is our compass. We believe in building long-term partnerships, walking hand-in-hand with our clients, understanding their aspirations, and tailoring solutions that fit their unique needs. We're not just a service provider; we're your digital co-pilot, navigating the ever-evolving landscape with expertise and unwavering dedication.</p>
+                    </div>
                     <div className="col-md-6">
-                        <h1>Heading</h1>
-                        <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore saepe non qui, repellendus quod sequi asperiores neque aliquam necessitatibus, amet reiciendis delectus beatae voluptatem excepturi ratione ducimus sapiente odit debitis! Provident laboriosam non consequatur facere debitis unde cum exercitationem quia beatae voluptate odio, omnis distinctio dolores suscipit ab. Asperiores ipsam illo provident laudantium. Doloremque natus facere ab voluptatem labore non similique rerum corporis error distinctio eum, incidunt deleniti cumque illo, perferendis tempore asperiores amet quia excepturi nam dolorum sint esse enim aperiam. Necessitatibus doloremque atque quam officiis autem soluta accusantium nisi doloribus consequuntur praesentium ex ducimus, delectus, quisquam a architecto suscipit nulla sequi pariatur voluptates, tenetur voluptatem. Facere harum, dolores magni ipsa eaque minus sint ducimus tenetur laborum voluptatibus sequi voluptatem iste distinctio, quasi sed libero adipisci nemo laboriosam, eos debitis. Animi expedita reprehenderit odio fugit asperiores, illo dignissimos temporibus sit earum excepturi dolores magni omnis libero dolorem consequuntur dolor assumenda ad possimus mollitia corrupti molestias. Saepe natus nam suscipit rem id odit veritatis provident fuga laborum ipsa minima non aspernatur placeat expedita consequatur beatae voluptatibus, quas praesentium. Totam quisquam magni in aliquam? Enim sed incidunt dolores amet, obcaecati facilis non possimus illo soluta ipsa deserunt, commodi adipisci! Numquam, vel?</p>
-                    </div>
-                    {/* <div className="col-md-6">
-                        <div id="carouselExampleFade" className="carousel slide carousel-fade">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src={AboutImage} className="d-block w-100" alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    hsdjhbc
-                                </div>
-                                <div className="carousel-item">
-                                    gshsd
-                                </div>
+                        <div className='aboutusimg'>
+                            <div class="blur-img">
+                                <img src={'https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png'} alt="Venkatesanj" />
                             </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div> */}
-                    <div className='col-md-6 dot '>
-                        <div className="row dots text-center">
-                            <div className="col-lg-6 aboutcase">
-                                <div className="cards1">
-                                    <h1 className='text-center py-3'>Perfect Event</h1>
-                                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                <div className="cards1 mt-2">
-                                    <h1 className='text-center py-3'>Every Detail Matter</h1>
-                                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                            <div className='col-md-6 aboutcase'>
-                                <div className="cards1 mt-4">
-                                    <h1 className='text-center py-3'>Flawless Execution</h1>
-                                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                                <div className="cards1 mt-2">
-                                    <h1 className='text-center py-3'>Remembered Always</h1>
-                                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-
+                            <div class="rounded-img">
+                                <img src={'https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png'} alt="Venkatesanj" />
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className='aboutcards mt-5'>
-                    <div className="aboutcardbody">
-                        <div class="about-card-title-container py-4">
-                            <img className='aboutimg' src={vision} alt="vision" />
-                            <h5 className="about-card-title primary-header">Our Vision</h5>
-                        </div>
-                        <p className="about-card-text">
-                            Our vision is to offer effectual crypto and blockchain solutions. We frame our vision to assist global entrepreneurs in launching their profitable businesses by assisting them with our development services. We assist everyone with the best development services to enrich their business by bringing them together under a successful path of blockchain journey. We are still in the building process to establish the strength by focusing on creating a new Silicon Valley and rapidly in progress to emerge as a glorious blockchain hub.
-                        </p>
-                    </div>
-                    <div className="aboutcardbody">
-                        <div class="about-card-title-container py-4">
-                            <img className='aboutimg' src={mission} alt="mission" />
-                            <h5 className="about-card-title primary-header">Our Mission</h5>
-                        </div>
-                        <p className="about-card-text">
-                            Our mission is to provide the best blockchain development services all over the world as per our vision to step forward to create several significant impacts in the blockchain territory. Our main potency is that we go ahead of the industry to meet the latest trends and advancements. We have energetic teams to work on each project with much involvement, more advanced, and as so creative. We extend our support to versatile entrepreneurs and startups in the market
-                        </p>
-                    </div>
-                </div>
-                <div className='aboutworks mt-5'>
-                    <h1 className='text-center mt-3'>How It Works</h1>
-                    <h4 className='text-center mt-3'>Find out everything you need to know about creating a business process model.</h4>
-                    <div className='mt-4'>
-                        <div className='row'>
-                            <div className='col-md-6'>
-                                <div>
-                                    <img src={AboutImage} alt="AboutImage" />
-                                </div>
-                            </div>
-                            <div className='col-md-6 text-center'>
-                                <div>
-                                    <h2>Our Paths</h2>
-                                    <p>Curabitur nec orci orci. Ut fringilla nisl quis consectetur ultrices. Morbi mattis nisl vitae fringilla volutpat. Ut molestie metus vitae imperdiet. Maecenas ornare ut lectus ac volutpat. Vestibulum erat massa finibus.</p>
-                                    <ul style={{ listStyle: 'none' }}>
-                                        <li>Aenean eu leo quam ornare</li>
-                                        <li>Aenean eu leo quam ornare</li>
-                                        <li>Aenean eu leo quam ornare</li>
-                                        <li>Aenean eu leo quam ornare</li>
-                                        <li>Aenean eu leo quam ornare</li>
-                                        <li>Aenean eu leo quam ornare</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='aboutCompany mt-4'>
-                    <h1 className='text-center'>Company Progress</h1>
-                    <div className='row'>
-                        <div className='col-md-3'>Hello</div>
-                        <div className='col-md-3'>Hello</div>
-                        <div className='col-md-3'>Hello</div>
-                        <div className='col-md-3'>Hello</div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* <div className='aboutme'>
+           <div className='container mt-5'>
+                <div >
+                    <h3 className=''>Let's talk about your digital aspirations. Whether you're a budding startup or a seasoned enterprise, Axess has the tools and vision to help you soar.</h3>
+                    <div className="row dots text-center mt-5">
+                        <div className="col-lg-4 aboutcase">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="cards1 ">
+                                        <p className='text-center'>Software Development: We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</p>
+                                    </div>
+                                </div>
+                                <div className=" col-lg-6">
+                                    <div className="cards1">
+                                        <p className='text-center'>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</p>
+                                    </div>
+                                </div>
+                                <div className=" col-lg-6 ">
+                                    <div className="cards1">
+                                        <p className='text-center'>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</p>
+                                    </div>
+                                </div>
+                                <div className=" col-lg-6">
+                                    <div className="cards1">
+                                        <p className='text-center'>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className='mt-5'>
+                                <img src={success} alt="success" className="about-img" style={{ width: '300px', height: '300px' }} />
+                            </div>
+                           
+                        </div>
+                        <div className="col-lg-4 mt-5">
+                                <div className="cards1">
+                                    <p className='text-center mt-5 py-5 fs-5'><q>Eight years of experience, countless success stories, and a burning passion for digital excellence - that's Axess Technology.</q></p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+           </div> */}
+            <div className='container-fluid mt-5'>
+                <div >
+                    <h5 className='secondary-header'>Let's talk about your digital aspirations. Whether you're a budding startup or a seasoned enterprise, Axess has the tools and vision to help you soar.</h5>
+                </div>
+                <div className='row mt-5'>
+                    <div className='col-md-6'>
+                        <div>
+                            <img src={success} alt="success" />
+                        </div>
+                    </div>
+                    <div className='col-md-6'>
+                        <div>
+                            <h6 className='secondary-header'>Here's a glimpse into our magic:</h6>
+                        </div>
+                        <div className='aboutpoints'>
+                            <ul>
+                                <li>Software Development: We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
+                                <li>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
+                                <li>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
+                                <li>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </div>
     );
 }
