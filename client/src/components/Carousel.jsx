@@ -18,30 +18,44 @@ export default function Carousel() {
     cssEase: 'linear',
     slidesToShow: 3,
     slidesToScroll: 1,
-    pauseOnHover:false,
+    pauseOnHover: false,
     centerPadding: "20px",
-    swipeToSlide: false,
+    swipeToSlide: false, 
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
   return (
     <div className="container my-5 py-5">
       <h1 className="bg-img-1 mx-auto">Our works</h1>
       <Slider {...settings}>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project1} alt="project1" />
         </Link>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project2} alt="project1" />
         </Link>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project3} alt="project1" />
         </Link>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project4} alt="project1" />
         </Link>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project5} alt="project1" />
         </Link>
-        <Link to = {'/ourworks'} className="proiect-card">
+        <Link to={'/ourworks'} className="proiect-card">
           <img src={project6} alt="project1" />
         </Link>
       </Slider>
