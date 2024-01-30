@@ -384,8 +384,86 @@ function Development() {
           </div>
         </div>
       </section>
-      <section>
-        <div></div>
+      <section className="container mt-5">
+        <div className="justify-content-center d-flex">
+          <h1 className="text-center bg-img-1">Imagine</h1>
+        </div>
+        <div className="row justify-content-evenly">
+
+        <div className="col-lg-5  col-md-12 align-items-center d-flex">
+            <div
+              className="my-3"
+              data-aos="fade-down-left"
+              data-aos-duration="1000"
+            >
+              <img src={Process} className="img-fluid" alt="" />
+            </div>
+          </div>
+          <div
+            className="col-lg-6  col-md-12  align-items-center d-flex"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-back"
+          >
+            <div className="boxshadow ">
+              <div className=" p-5">
+                <ul>
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="400"
+                    data-aos-easing="ease-in-back"
+                  >
+                    <p>
+                    But we don't stop at delivering a beautiful website. We believe in a holistic approach, seamlessly integrating your website with your digital marketing strategies to maximize your online impact.
+
+                    </p>
+                  </li>
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-back"
+                  >
+                    <p>
+                    Ready to create a website that works as hard as you do? Let Axess Technology be your web development partner.
+
+                    </p>
+                  </li>
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-back"
+                  >
+                    <p>
+                    Contact us today for a free consultation and let's build your online masterpiece!
+
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+      </section>
+      <section className="bg-green-1 py-5 mt-5">
+        <p className="bg-img-1 mx-auto ">Call to Action</p>
+        <h3 className="secondary-header mx-auto text-center text-white mb-2">
+          {" "}
+          Get a free website audit: Identify areas for improvement and unlock your website's full potential.
+        </h3>
+        <p className="col-md-8 primary-text mx-auto text-center text-white mb-4">
+        Browse our portfolio: See examples of the stunning websites we've created for our clients.
+
+        </p>
+        <button
+          className="gold-btn mx-auto "
+          data-aos="zoom-out"
+          data-aos-duration="600"
+        >
+          <span className="d-block">Connect with us</span>{" "}
+          <i className="bi bi-arrow-right"></i>
+        </button>
       </section>
 
       <Techsection />
