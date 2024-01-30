@@ -174,11 +174,11 @@ function Contact() {
                             </div>
                             <div className="accordion-item">
                                 <h2 className="accordion-header">
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                                         Do you offer free consultations?
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
+                                <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse">
                                     <div className="accordion-body">
                                         Absolutely! We're happy to discuss your project and answer any questions you may have during a free consultation.                                    </div>
                                 </div>
