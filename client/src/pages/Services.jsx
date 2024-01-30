@@ -55,12 +55,12 @@ function Services() {
     let handleScroll = () => {
         let softdevElement1 = document.getElementById('softdev');
         let softdevElement2 = document.getElementById('softtest');
-        let softdevElement3 = document.getElementById('ai');
+        let softdevElement3 = document.getElementById('webdev');
         let softdevElement4 = document.getElementById('digi');
 
         let softdevTarget1 = document.querySelector('.service-nav[data-axess-target="softdev"]');
         let softdevTarget2 = document.querySelector('.service-nav[data-axess-target="softtest"]');
-        let softdevTarget3 = document.querySelector('.service-nav[data-axess-target="ai"]');
+        let softdevTarget3 = document.querySelector('.service-nav[data-axess-target="webdev"]');
         let softdevTarget4 = document.querySelector('.service-nav[data-axess-target="digi"]');
 
         if (window.scrollY >= softdevElement1.offsetTop - 0 && window.scrollY < softdevElement2.offsetTop) {
@@ -149,11 +149,14 @@ function Services() {
                                 <div className="pattern d-none">
 
                                 </div>
-                                <h1 className='display-3 col-md-6 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
-                                    The <span className='gold-text-2'>Axess</span> Technology Approach
-                                </h1>
+                                {/* <h1 className='display-3 col-md-10 fw-bold text-white' data-aos="fade-up" data-aos-duration='700'>
+                                    The <span className='gold-text-2'>Axess</span> Technology Services
+                                </h1> */}
                                 <div data-aos="fade-up" data-aos-duration='700' data-aos-anchor-placement="bottom-bottom">
-                                    <p className='primary-text text-white m-0 col-xxl-6 col-lg-10'>Unshackle your digital potential. Code flawlessly, drive clicks strategically, convert with unwavering certainty. We're your partners in digital mastery.</p>
+                                    <h2 className=' text-white m-0 col-xxl-8 col-lg-10'>Code with <span className='gold-text-2'>Confidence</span>,<br></br> Click with <span className='gold-text-2'>Precision</span>,<br></br> Convert with <span className='gold-text-2'>Conviction</span>: Partner with Us for <span className='gold-text-2'>Digital Mastery</span></h2>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration='700' data-aos-anchor-placement="bottom-bottom">
+                                    <p className='primary-text text-white m-0 col-xxl-8 col-lg-10'>Unshackle your digital potential. Code flawlessly, drive clicks strategically, convert with unwavering certainty. We're your partners in digital mastery.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,14 +169,24 @@ function Services() {
                                     <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600'>
                                         Software Development
                                     </h1>
+                                    <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                    Craft Software That Captivates: From Pixel to Profit
+                                      </h4>
                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
-                                        In the realm of technology, software development stands as the driving force behind innovation and efficiency. It encompasses the art and science of crafting programs and applications that cater to diverse needs, from simplifying daily tasks to revolutionizing entire industries.
-                                    </p>
+                                    We don't just code, we build digital dreams. Unleash the power of custom software with our expert developers and innovative approach.
+                                        </p>
                                     <div className='col-md-8 mx-auto mb-3' data-aos='zoom-in' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         <img src={service} className='w-100 animatedimg' alt="service" />
                                     </div>
+                                    <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Become a Software Symphony Conductor:</h4>
+                                    <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
+                                    Instead of juggling multiple agencies for design, development, and deployment, harmonize your project with our all-encompassing approach. We're your one-stop shop, conducting every stage from conception to launch, ensuring your software sings in perfect pitch.
+                                     </p>
+                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
+                                     This collaborative and streamlined process means seamless communication, reduced friction, and a beautiful symphony of software at the end. So, ditch the cacophony of fragmented services and let us orchestrate your digital masterpiece.
+                                     </p>
 
-                                    <div className="row gy-3 pt-5 mt-5">
+                                    {/* <div className="row gy-3 pt-5 mt-5">
                                         <h1 className='text-center primary-header-2 mb-3' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Web Development Services</h1>
                                         <div className="col-md-6">
                                             <div className="services-card" data-aos='fade-left' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
@@ -220,7 +233,7 @@ function Services() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
 
@@ -297,9 +310,12 @@ function Services() {
                                     </h1>
                                     <div className="row align-items-center">
                                         <div className="col-md-8">
+                                            <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                                Shield Your Software: Bulletproof Testing for a Flawless User Experience
+
+                                            </h4>
                                             <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                Software testing plays a crucial role in ensuring the reliability and optimal performance of digital solutions. By systematically evaluating each component and functionality, testing not only identifies potential bugs and vulnerabilities but also guarantees that software meets the specified requirements.
-                                            </p>
+                                                Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release.  </p>
                                         </div>
                                         <div className='col-md-4'>
                                             <img src={bug} className='w-100 animatedimg' alt="service" data-aos='zoom-in' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" />
@@ -418,16 +434,18 @@ function Services() {
 
 
 
-                        <div className="p-5 roller-container text-white min-vh-100 ai" id='ai'>
+                        <div className="p-5 roller-container text-white min-vh-100 webdev" id='webdev'>
                             <div className=" position-relative z-3">
                                 <h1 className='light-header'>
                                     intelligent
                                 </h1>
                                 <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                    AI Development
+                                    Web Development
                                 </h1>
                                 <div className="row align-items-center">
                                     <div className="col-md-8">
+                                        <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                         hdj bbsjb hjbhjb</h4>
                                         <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                             In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
                                         </p>
@@ -450,9 +468,12 @@ function Services() {
                                 </h1>
                                 <div className="row align-items-center">
                                     <div className="col-md-8">
+                                    <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                    Ignite Your Brand and Dominate the Digital Landscape
+</h4>
                                         <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                            In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
-                                        </p>
+                                        In today's digital age, a captivating online presence is no longer a luxury, it's a necessity. At Axess Technology, we believe in the power of digital marketing to fuel brand awareness, ignite engagement, and propel conversions. Our team of expert strategists, content creators, and data-driven wizards weave the magic that takes your brand from the shadows to the spotlight.
+                                           </p>
                                     </div>
                                     <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         <img src={digi} className='w-100 animatedimg' alt="service" />
@@ -470,8 +491,8 @@ function Services() {
                             <button data-aos='fade-left' className="service-nav" data-axess-target="softtest" onClick={(e) => { scrollTop('softtest', e) }}>
                                 <span>Software Testing</span>
                             </button>
-                            <button data-aos='fade-left' className="service-nav" data-axess-target="ai" onClick={(e) => { scrollTop('ai', e) }}>
-                                <span>AI</span>
+                            <button data-aos='fade-left' className="service-nav" data-axess-target="webdev" onClick={(e) => { scrollTop('webdev', e) }}>
+                                <span>Web Development</span>
                             </button>
                             <button data-aos='fade-left' className="service-nav" data-axess-target="digi" onClick={(e) => { scrollTop('digi', e) }}>
                                 <span>Digital Marketing</span>
