@@ -21,7 +21,7 @@ function About() {
                         <p className='mt-3'>At Axess, your success is our compass. We believe in building long-term partnerships, walking hand-in-hand with our clients, understanding their aspirations, and tailoring solutions that fit their unique needs. We're not just a service provider; we're your digital co-pilot, navigating the ever-evolving landscape with expertise and unwavering dedication.</p>
                     </div>
                     <div className="col-md-6">
-                        <div className='aboutusimg'>
+                        <div className='aboutusimg '>
                             <div class="blur-img">
                                 <img src={'https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png'} alt="Venkatesanj" />
                             </div>
