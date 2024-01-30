@@ -23,12 +23,10 @@ import ScrollTop from './assets/images/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
 import Ai from './pages/Ai';
-<<<<<<< HEAD
 import Forgotpassword from './pages/Forgotpassword';
 import PasswordReset from './pages/PasswordReset';
-=======
 import Webdev from './pages/Webdev';
->>>>>>> db048f036c45cacb5193ece1726de8ee64615fa6
+import DigitalMarketing from './components/DigitalMarketing';
 
 function Routing() {
 
@@ -62,6 +60,7 @@ function Routing() {
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
+                    <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
 
 
 
