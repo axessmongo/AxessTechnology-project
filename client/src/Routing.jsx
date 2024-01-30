@@ -23,9 +23,10 @@ import ScrollTop from './assets/images/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
 import Ai from './pages/Ai';
-import Forgotpassword from './pages/Forgotpassword';
-import PasswordReset from './pages/PasswordReset';
 import Webdev from './pages/Webdev';
+import PasswordReset from './pages/PasswordReset';
+import ForgotPassword from './pages/forgotpassword';
+import DigitalMarketing from './pages/DigitalMarketing';
 
 function Routing() {
 
@@ -44,7 +45,7 @@ function Routing() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/" element={<Navigate replace to="/login" />} />
                     <Route path="/users/:id/verify/:token" element={<EmailVerify />} />
-                    <Route path='/forgotpassword' element={<Forgotpassword />} />
+                    <Route path='/forgotpassword' element={<ForgotPassword />} />
                     <Route path="/PasswordReset/:id/:token" element={<PasswordReset />} />
                     <Route path='/software' element={<SoftwareDev />} />
                     <Route path="/register" element={<Register />} />
@@ -58,6 +59,7 @@ function Routing() {
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
+                    <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

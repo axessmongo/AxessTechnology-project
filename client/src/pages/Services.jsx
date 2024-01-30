@@ -481,9 +481,9 @@ function Services() {
                                         <img src={digi} className='w-100 animatedimg' alt="service" />
                                     </div>
                                 </div>
-                                <Link to={"/webdevelopment"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                              
-                               </div>
+                                <Link to={"/digitalmarketing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-4 vh-100 bg-axess-gold-2 position-fixed end-0">
