@@ -155,8 +155,6 @@ function Testing() {
           data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? Contact us today for a free consultation!.
         </p>
         <button className='gold-btn mx-auto ' data-aos='zoom-out' data-aos-duration='300'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
-
-
       </section>
 
       <Techsection />
@@ -211,8 +209,8 @@ function Testing() {
                     <div className=' tech-tools'>
                       <h6 className='text-center py-3'>FrameWork</h6>
                       <ul className="">
-                        <li>cucumber</li>
-                        <li>behare</li>
+                        <li>Cucumber</li>
+                        <li>Behave</li>
                         <li>Pytest</li>
                         <li>TestNG</li>
                       </ul>
@@ -224,8 +222,8 @@ function Testing() {
                       <ul className="">
                         <li>SQL</li>
                         <li>PLSQL</li>
-                        <li>MangoDB</li>
-                        <li>Resis</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
                       </ul>
                     </div>
                   </div>
