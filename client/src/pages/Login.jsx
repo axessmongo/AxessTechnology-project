@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/Navbar';
@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 import '../assets/css/Login.scss';
 
 function Login() {
+  const Navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -28,6 +30,7 @@ function Login() {
 
       if (response.status === 200) {
         toast.success('Logged in successfully');
+        Navigate('/')
       } else if (response.status === 401) {
         toast.error('Invalid Email or Password');
       } else if (response.status === 400) {
