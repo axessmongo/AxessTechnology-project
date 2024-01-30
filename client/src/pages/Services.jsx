@@ -119,7 +119,7 @@ function Services() {
     return (
         <div className='services'><div className="layer-one">
             <div className="row">
-                <div className="col-md-7 vh-100 bg-axess-gold-3 one">
+                <div className="col-md-7 vh-100 bg-axess-gold-3 one d-none">
                     <div className="d-flex vh-100 justify-content-center align-items-center">
                         {/* <img src={gif} alt="gif" style={{width:`300px`}}/> */}
                     </div>
