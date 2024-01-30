@@ -1,37 +1,27 @@
 .software {
-  .li-border {
-    background-color: #ffce05;
-    color: #000;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  li {
-    list-style: none;
-  }
+
+  // li {
+  //   list-style: none;
+  // }
   .pbg {
     background-color: #ffce05;
   }
-  .pbg1 {
-    background-color: #05463c;
-  }
+  // .pbg1 {
+  //   background-color: #05463c;
+  //   color: white;
+  // }
   .boxshadow {
-   border: 6px solid #ffce05;
+  //  border: 6px solid #ffce05;
     border-radius: 20px;
-    background: #ffffff;
-  }
-  .boxshadow:hover {
-    background-color: #ffce05;
-    color: white;
-    border-radius: 20px;
-   border: 6px solid #090909;
+    background: #0000000e;
+    padding: 0;
+    height: 290px;
 
-    span {
-      color: #05463c;
-      font-size: 20px;
-    }
   }
+  // .bgcolor{
+  //   background-color: rgba(252, 255, 104, 0.326);
+  // }
+
 
   .expertise {
     display: flex;

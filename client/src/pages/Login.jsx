@@ -50,11 +50,11 @@ function Login() {
     <div>
       <Navbar />
       <div className='login bg-axess-gold-3'>
-        <div className='login_container'>
-          <div className='login_form_container'>
-            <div className='left'>
+        <div className='login_container p-5'>
+          <div className='login_form_container row justify-content-center '>
+            <div className='col-md-6 left'>
               <form className='form_container' onSubmit={handleSubmit}>
-                <h1>Login to Your Account</h1>
+                <h1 className='text-center'>Login to Your Account</h1>
                 <input
                   type='email'
                   placeholder='Email'
@@ -82,13 +82,16 @@ function Login() {
                 <ToastContainer />
               </form>
             </div>
-            <div className='right'>
-              <h1>New Here ?</h1>
-              <Link to='/register'>
-                <button type='button' className='green_btn'>
-                  Sign up
-                </button>
-              </Link>
+            <div className='col-md-6 right'>
+              <div>
+                <h1>New Here ?</h1>
+                <Link to='/register'>
+                  <button type='button' className='green_btn'>
+                    Sign up
+                  </button>
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>

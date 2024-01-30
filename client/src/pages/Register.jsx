@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/reg.scss";
+import "../assets/css/register.scss";
 import "../assets/css/index.scss";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -18,51 +18,53 @@ function Register() {
 		email: "",
 		phone: "",
 		password: "",
-	  });
+	});
 
 	// const [error, setError] = useState("");
 	// const navigate = useNavigate();
 
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
-	  };
+	};
 
-	  const handleSubmit = async (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-	
+
 		try {
-		  const response = await axios.post(
-			"http://localhost:5000/api/register",
-			formData
-		  );
-		  if (response.status === 201) {
-			toast.success("Registration successful. Verification email sent.");
-		  } else if (response.status === 200) {
-			toast.error("User already exists.");
-		  } else {
-			console.log("Unexpected response:", response);
-		  }
+			const response = await axios.post(
+				"http://localhost:5000/api/register",
+				formData
+			);
+			if (response.status === 201) {
+				toast.success("Registration successful. Verification email sent.");
+			} else if (response.status === 200) {
+				toast.error("User already exists.");
+			} else {
+				console.log("Unexpected response:", response);
+			}
 		} catch (error) {
-		  console.error("Error during registration:", error.message);
-		  toast.error("Internal Server Error");
+			console.error("Error during registration:", error.message);
+			toast.error("Internal Server Error");
 		}
-	  };
-	
+	};
+
 	return (
 		<div>
-			<Navbar/>
+			<Navbar />
 			<div className='reg'>
 				<div className='signup_container'>
-					<div className='signup_form_container'>
-						<div className='left'>
-							<h1>Welcome Back</h1>
-							<Link to="/login">
-								<button type="button" className='green_btn'>
-									Sign in
-								</button>
-							</Link>
+					<div className='signup_form_container  row justify-content-center'>
+						<div className='left col-md-6'>
+							<div>
+								<h1 className='text-center'>Welcome Back</h1>
+								<Link to="/login">
+									<button type="button" className='green_btn'>
+										Sign in
+									</button>
+								</Link>
+							</div>
 						</div>
-						<div className='right'>
+						<div className='col-md-6 right'>
 							<form className='form_container' onSubmit={handleSubmit}>
 								<h1>Create Account</h1>
 								<input
@@ -119,7 +121,7 @@ function Register() {
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</div>
 	)
 }
