@@ -1,9 +1,38 @@
 .aboutcase .cards1 {
-    border: 1px solid green;
-    height: 40vh;
     background: burlywood;
     border-radius: 5px;
+    
+
 }
+
+
+.blur-img img {
+    filter: blur(2px);
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
+    object-fit: cover;
+}
+
+.rounded-img img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background: #c5c5c5;
+    position: absolute;
+    top: 160%;
+    left: 48%;
+    object-position: 25px -50px;
+    object-fit: cover;
+    padding: 0 0;
+}
+
+// .aboutme {
+//     background: rgb(158, 156, 156);
+
+// }
+
 
 .aboutcards {
     display: flex;

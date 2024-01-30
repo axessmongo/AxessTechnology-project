@@ -13,7 +13,7 @@ function Contact() {
         email: "",
         phone: "",
         address: "",
-        service:""
+        service: ""
     });
 
     const handleChange = (event) => {
@@ -64,67 +64,133 @@ function Contact() {
                                 <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address' />
                             </div>
                         </div>
-                         <div className=' container mb-3 mt-3'>
-                        <p className='bg-img-1 d-flex text-center'>Select service</p>
-                        <div className="row">
-                            <div className="col-md-4 checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_1" value={contact.service} type="radio" name='service-option' />
-                                    <label htmlFor="checkbox_animated_1">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Software Development</p>
-                                    </label>
+                        <div className=' container mb-3 mt-3'>
+                            <p className='bg-img-1 d-flex text-center'>Select service</p>
+                            <div className="row">
+                                <div className="col-md-4 checkbox-label">
+                                    <div className="checkbox-animated">
+                                        <input id="checkbox_animated_1" value={contact.service} type="radio" name='service-option' />
+                                        <label htmlFor="checkbox_animated_1">
+                                            <span className="check"></span>
+                                            <span className="box"></span>
+                                            <p className='secondary-text'>Software Development</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_2" value={contact.service} type="radio"  name='service-option' />
-                                    <label htmlFor="checkbox_animated_2">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Software Testing</p>
-                                    </label>
+                                <div className="col-md-4 checkbox-label">
+                                    <div className="checkbox-animated">
+                                        <input id="checkbox_animated_2" value={contact.service} type="radio" name='service-option' />
+                                        <label htmlFor="checkbox_animated_2">
+                                            <span className="check"></span>
+                                            <span className="box"></span>
+                                            <p className='secondary-text'>Software Testing</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_3" value={contact.service} type="radio"  name='service-option' />
-                                    <label htmlFor="checkbox_animated_3">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Website Development</p>
-                                    </label>
+                                <div className="col-md-4 checkbox-label">
+                                    <div className="checkbox-animated">
+                                        <input id="checkbox_animated_3" value={contact.service} type="radio" name='service-option' />
+                                        <label htmlFor="checkbox_animated_3">
+                                            <span className="check"></span>
+                                            <span className="box"></span>
+                                            <p className='secondary-text'>Website Development</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_4" value={contact.service} type="radio"  name='service-option' />
-                                    <label htmlFor="checkbox_animated_4">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Digital Marketing</p>
-                                    </label>
+                                <div className="col-md-4 checkbox-label">
+                                    <div className="checkbox-animated">
+                                        <input id="checkbox_animated_4" value={contact.service} type="radio" name='service-option' />
+                                        <label htmlFor="checkbox_animated_4">
+                                            <span className="check"></span>
+                                            <span className="box"></span>
+                                            <p className='secondary-text'>Digital Marketing</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 checkbox-label">
-                                <div className="checkbox-animated">
-                                    <input id="checkbox_animated_5" value={contact.service} type="radio"  name='service-option'/>
-                                    <label htmlFor="checkbox_animated_5">
-                                        <span className="check"></span>
-                                        <span className="box"></span>
-                                        <p className='secondary-text'>Others</p>
-                                    </label>
+                                <div className="col-md-4 checkbox-label">
+                                    <div className="checkbox-animated">
+                                        <input id="checkbox_animated_5" value={contact.service} type="radio" name='service-option' />
+                                        <label htmlFor="checkbox_animated_5">
+                                            <span className="check"></span>
+                                            <span className="box"></span>
+                                            <p className='secondary-text'>Others</p>
+                                        </label>
+                                    </div>
                                 </div>
+
                             </div>
-                           
                         </div>
-                    </div>
                         <div className="mt-3 text-center mb-3">
                             <button className='gold-btn'>Submit</button>
                         </div>
                     </form>
                 </div>
+            </div>
+
+            <div className='faq'>
+                <div className="container">
+
+                    <div className="container mt-5">
+                        <h3 className='bg-img-1 mx-auto'> Frequently Asked Questions </h3>
+                        <p className='secondary-text mx-auto m-5'> General Questions:</p>
+                        <div className="accordion" id="accordionPanelsStayOpenExample">
+                            <div className="accordion-item">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        What are Axess Technology's core services?
+
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
+                                    <div className="accordion-body">
+                                        We are a one-stop shop for all your digital needs, offering software development, software testing, website development, and digital marketing services.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        What sets Axess Technology apart from other digital agencies?
+
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse">
+                                    <div className="accordion-body">
+                                        We combine extensive experience with a passionate and innovative approach. We don't just deliver services; we build long-term partnerships, tailoring solutions to your unique needs and ensuring your success.                                    </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        What is your pricing structure?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
+                                    <div className="accordion-body">
+                                        Our pricing varies depending on the specific project requirements and scope. We offer transparent quotes and flexible payment options to fit your budget.
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Do you offer free consultations?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
+                                    <div className="accordion-body">
+                                        Absolutely! We're happy to discuss your project and answer any questions you may have during a free consultation.                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+               
+                <Footer />
             </div>
             <Footer />
         </div>
