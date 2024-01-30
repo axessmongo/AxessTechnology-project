@@ -26,7 +26,7 @@ const resetPassword = async (req, res) => {
       }).save();
     }
 
-    const resetUrl = `${process.env.BASE_URL}password-reset/${user._id}/${token.token}/`;
+    const resetUrl = `${process.env.BASE_URL}PasswordReset/${user._id}/${token.token}/`;
 
     // Send the password reset email
     await sendEmail(user.email, "Password Reset", resetUrl);
@@ -69,42 +69,48 @@ const verifyPassword = async (req, res) => {
 //  set new password:
 
 const setNewPassword = async (req, res) => {
-    try {
-        const userId = req.params.id;
-        const { password } = req.body;
+  try {
+    const userId = req.params.id;
+    const { password } = req.body;
 
-        const user = await userModel.findOne({ _id: userId });
-        if (!user) {
-            return res.status(400).json({ message: "Invalid user or link" });
-        }
-
-        const token = await tokenModel.findOne({
-            userId: user._id,
-            token: req.params.token,
-        });
-
-        if (!token) {
-            return res.status(400).json({ message: "Invalid or expired token" });
-        }
-
-        if (!user.verified) {
-            user.verified = true;
-        }
-
-        const salt = await bcrypt.genSalt(Number(process.env.SALT));
-        const hashPassword = await bcrypt.hash(password, salt);
-
-        user.password = hashPassword;
-        await user.save();
-        await token.remove();
-
-        res.status(200).json({ message: "Password reset successful" });
-
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: "Internal server error", error: error.message });
+    const user = await userModel.findOne({ _id: userId });
+    if (!user) {
+      return res.status(400).json({ message: "User not found. Invalid user or link." });
     }
+
+    const token = await tokenModel.findOne({
+      userId: user._id,
+      token: req.params.token,
+    });
+
+    if (!token) {
+      return res.status(400).json({ message: "Invalid or expired token." });
+    }
+
+    if (!user.verified) {
+      user.verified = true;
+    }
+
+    const salt = await bcrypt.genSalt(Number(process.env.SALT));
+    const hashPassword = await bcrypt.hash(password, salt);
+
+    user.password = hashPassword;
+    await user.save();
+
+    // Check if token exists before removing it
+    if (token) {
+      await token.save();
+    } else {
+      console.error("Token not found while trying to remove.");
+    }
+
+    res.status(200).json({ message: "Password reset successful" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal server error", error: error.message });
+  }
 };
+
 
 
 

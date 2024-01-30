@@ -445,8 +445,9 @@ function Services() {
                                             <img src={hmodel} alt="hmodel" data-aos='flip-right' data-aos-duration='800' data-aos-anchor-placement="bottom-bottom" />
                                         </div>
                                     </div>
-                                    <button className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></button>
-                                </div>
+                                    <Link to={"/testing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                             
+                                   </div>
                             </div>
                         </div>
 
@@ -472,8 +473,9 @@ function Services() {
                                         <img src={ai} className='w-100 animatedimg' alt="service" />
                                     </div>
                                 </div>
-                                <button className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></button>
-                            </div>
+                                <Link to={"/webdevelopment"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                             
+                                </div>
                         </div>
 
                         <div className="roller-container text-white min-vh-100 digi" id='digi'>
@@ -497,7 +499,8 @@ function Services() {
                                         <img src={digi} className='w-100 animatedimg' alt="service" />
                                     </div>
                                 </div>
-                                <button className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></button>
+                             
+                                <Link to={"/digitalmarketing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
