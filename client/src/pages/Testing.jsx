@@ -22,8 +22,8 @@ function Testing() {
         <Navbar />
         <Banner
           h1="Software Testing"
-          h2="Shield Your Software: Bulletproof Testing for a Flawless User Experience."
-          h3="Utilize the power of technology with our custom software development services."
+          h2="Shield Your Software: Bulletproof Testing for a Flawless User Experience"
+          h3="Bugs be gone! Our comprehensive software testing services identify and eradicate defects before they impact your users. Deliver confidence and quality with every release."
         />
       </div>
 
@@ -125,26 +125,38 @@ function Testing() {
               </div>
               <div className='pt-5'>
                 <div data-aos="fade-up"
-                     data-aos-duration="1000"
-                     data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{color:' #ffce05'}}>✅ Reduced costs: </span> Early bug detection saves time and resources compared to fixing issues post-launch.</p>
+                  data-aos-duration="1000"
+                  data-aos-anchor-placement="bottom-bottom">
+                  <p> <span style={{ color: ' #ffce05' }}>✅ Reduced costs: </span> Early bug detection saves time and resources compared to fixing issues post-launch.</p>
                 </div>
 
                 <div data-aos="fade-up"
-                     data-aos-duration="1400"
-                     data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{color:' #ffce05'}}> ✅ Enhanced user satisfaction: </span> Happy users mean better brand reputation and increased loyalty.</p>
+                  data-aos-duration="1400"
+                  data-aos-anchor-placement="bottom-bottom">
+                  <p> <span style={{ color: ' #ffce05' }}> ✅ Enhanced user satisfaction: </span> Happy users mean better brand reputation and increased loyalty.</p>
                 </div>
 
                 <div data-aos="fade-up"
-                     data-aos-duration="1800"
-                     data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{color:' #ffce05'}}> ✅ Competitive edge: </span> Delivering a polished, bug-free product sets you apart in the market.</p>
+                  data-aos-duration="1800"
+                  data-aos-anchor-placement="bottom-bottom">
+                  <p> <span style={{ color: ' #ffce05' }}> ✅ Competitive edge: </span> Delivering a polished, bug-free product sets you apart in the market.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className='bg-green-1 pb-5'>
+        <p className='bg-img-1 mx-auto'>Call to Action</p>
+        <p className='secondary-header mx-auto text-center text-white mb-2'
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? Contact us today for a free consultation!.
+        </p>
+        <button className='gold-btn mx-auto ' data-aos='zoom-out' data-aos-duration='300'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+
+
       </section>
 
       <Techsection />
@@ -407,9 +419,7 @@ function Testing() {
           <div>
             <div
               className="elementor-widget-container"
-
-              style={{ margin: "2rem" }}
-            >
+              style={{ margin: "2rem" }}>
               <div
                 className="section-title text-center aos-init aos-animate"
                 data-aos="fade-up"
@@ -417,7 +427,7 @@ function Testing() {
                 data-aos-delay="100"
                 data-aos-once="true"
               >
-                <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>Testimonial</h3>
+                <h3 className='bg-img-1 mx-auto'>Testimonial</h3>
 
                 <span
                   className="subtitle sub-title text-light heading5"
@@ -440,8 +450,8 @@ function Testing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3' >
-                              <h4 className='heading9 fw-bold fs-5'>John Smith</h4>
-                              <p className='heading5'>Lead Developer</p>
+                              <h4 className='heading9 fw-bold fs-5'>The Delighted</h4>
+                              <p className='heading5'>Developer</p>
                             </div>
                           </div>
                         </div>
@@ -450,7 +460,7 @@ function Testing() {
                             <div className="card-description " >
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">John Smith</h3>
+                                  <h3 className="title heading9">The Delighted Developer</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -541,15 +551,15 @@ function Testing() {
                         </div>
                       </div>
                     </div>
-                    {/* <div className="carousel-item" data-bs-interval="3000">
+                    <div className="carousel-item" data-bs-interval="3000">
                       <div className="row p-3">
                         <div className="col-md-4 mb-5">
                           <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
                             <div>
-                              <img src='' alt="" className='w-50' />
+                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Jane Doe</h4>
+                              <h4 className='heading9 fw-bold fs-5'>The Satisfied</h4>
                               <p className='heading5'>CEO</p>
                             </div>
                           </div>
@@ -559,7 +569,7 @@ function Testing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">Jane Doe</h3>
+                                  <h3 className="title heading9">The Satisfied CEO</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -644,22 +654,22 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success.{" "}</p>
+                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success." - Jane Doe, CEO.{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div> */}
+                    </div>
                     <div className="carousel-item" data-bs-interval="3000">
                       <div className="row p-3">
                         <div className="col-md-4 mb-5">
                           <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
                             <div>
-                            <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Sarah White</h4>
-                              <p className='heading5'>Web Developer</p>
+                              <h4 className='heading9 fw-bold fs-5'>The Happy</h4>
+                              <p className='heading5'>User</p>
                             </div>
                           </div>
                         </div>
@@ -668,7 +678,7 @@ function Testing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9"> Sarah White</h3>
+                                  <h3 className="title heading9">The Happy User</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -764,10 +774,10 @@ function Testing() {
                         <div className="col-md-4 mb-5">
                           <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
                             <div>
-                            <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Mark Jones</h4>
+                              <h4 className='heading9 fw-bold fs-5'>The Relieved</h4>
                               <p className='heading5'>Project Manager</p>
                             </div>
                           </div>
@@ -777,7 +787,7 @@ function Testing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9"> Mark Jones</h3>
+                                  <h3 className="title heading9">The Relieved Project Manager</h3>
                                   <span className="date"> </span>
                                 </div>
 
