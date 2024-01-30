@@ -9,7 +9,7 @@ import '../assets/css/Login.scss';
 
 function Login() {
   const Navigate = useNavigate();
-  
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -73,9 +73,9 @@ function Login() {
                   required
                   className='input'
                 />
-                <div className='text-decoration-none text-start'>
-                <Link to={{}}>forget password</Link>
-                </div>
+                <Link to="/forgotpassword" className='fogotpassword' id='forget'>
+                  <p className='text-end text-black text-decoration-none'>Forgot Password ?</p>
+                </Link>
                 <button type='submit' className='green_btn' disabled={loading}>
                   {loading ? 'Signing In...' : 'Sign In'}
                 </button>
