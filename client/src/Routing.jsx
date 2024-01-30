@@ -26,6 +26,7 @@ import Ai from './pages/Ai';
 import Forgotpassword from './pages/Forgotpassword';
 import PasswordReset from './pages/PasswordReset';
 import Webdev from './pages/Webdev';
+import DigitalMarketing from './components/DigitalMarketing';
 
 function Routing() {
 
@@ -59,6 +60,7 @@ function Routing() {
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
+                    <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
 
 
 

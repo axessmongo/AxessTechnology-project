@@ -333,8 +333,8 @@ function Development() {
           <div className="row">
             <div className="col-md-7">
               <div className="my-4">
-                <div className="row justify-content-evenly">
-                  <div className="col-md-4 mt-3  boxshadow">
+                <div className="row justify-content-center ">
+                  <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
                     <p className="p-3">
                       Custom Website Design: We collaborate with you to
                       understand your brand, target audience, and objectives,
@@ -342,7 +342,7 @@ function Development() {
                       resonates with your users.
                     </p>
                   </div>
-                  <div className="col-md-4 mt-3 boxshadow">
+                  <div className="col-md-4 mx-2  mt-3 small-card boxshadow">
                     <p className="p-3">
                       Responsive Web Development: We ensure your website looks
                       flawless and functions perfectly on all devices, from
@@ -351,7 +351,7 @@ function Development() {
                   </div>
                 </div>
                 <div className="row justify-content-around   ">
-                  <div className="col-md-4 mt-3 boxshadow">
+                  <div className="col-md-4 mt-3 small-card boxshadow">
                     <p className="p-3">
                       Content Management Systems (CMS): We implement
                       user-friendly CMS platforms that give you complete control
@@ -359,14 +359,14 @@ function Development() {
                       knowledge.
                     </p>
                   </div>
-                  <div className="col-md-3 mt-3  boxshadow">
+                  <div className="col-md-3 mt-3 small-card  boxshadow">
                     <p className="p-3">
                       E-commerce Development: We build secure, scalable online
                       stores that make online shopping a breeze for your
                       customers, and a joy for you to manage.
                     </p>
                   </div>
-                  <div className="col-md-4  mt-3  boxshadow">
+                  <div className="col-md-4  mt-3 small-card boxshadow">
                     <p className="p-3">
                       Website Maintenance and Security: We offer ongoing
                       maintenance and security solutions to keep your website
@@ -385,9 +385,7 @@ function Development() {
         </div>
       </section>
       <section>
-        <div>
-            
-        </div>
+        <div></div>
       </section>
 
       <Techsection />
