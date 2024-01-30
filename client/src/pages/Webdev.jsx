@@ -1,334 +1,63 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Technologies from "./Technologies";
-import Software from "../assets/images/Our-Expertise.jpg";
-import Process from "../assets/images/Our-Process.jpg";
-import Why from "../assets/images/Why-Choose.jpg";
-import bubble from "../assets/images/bubble.webp";
-import success from "../assets/images/success.png";
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
-import footer from "../assets/images/footer.svg";
-import frompng from "../assets/images/fromlogo.jpg";
-// import contact  from '../assets/images/contact.jpg' 
+
 import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
-import whychooseimg from "../assets/images/whychoose-img.png";
 
-function Development() {
+function Webdev() {
   return (
-    <div className="software">
+    <div className="webdev">
       <Navbar />
       <Banner
-        h1="Software Development"
-        h2="Revolutionize Your Operations: Transform with Software Tailored to Your Needs."
-        h3="Utilize the power of technology with our custom software development services.
-        "
+        h1=" Web Development"
+        h2="Crafting Websites that Captivate and Convert
+            "
+        h3="
+            "
       />
-
-      <section className="container">
-        <div className="row mt-3 align-items-center justify-content-center ">
-          <div
-            className="col-lg-10 rounded-5 col-md-3 "
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <div className="text-center">
-              <p className="fs-5 mt-4">
-                In today's digital age, having robust and innovative software is
-                no longer a luxury, it's a necessity for businesses to thrive.
-                At Axess Technology, we understand the power of software and its
-                ability to transform your operations, streamline processes, and
-                unlock new opportunities for growth.
+      <section>
+        <div className="container mt-5">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Breakfast/Eggs</p>
+              <h2 class="card-title">Délicieux Bénédicte</h2>
+              <p class="card-body">
+                Eggs Benedict with hollandaise sauce, crispy bacon and an
+                assortment of garden herbs.
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="bgcolor">
-        <div className=" container py-4">
-          <div className="justify-content-center d-flex">
-            <h1 className="text-center bg-img-1 ">Our Expertise</h1>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <div
-                className="pbg1  p-3 mt-3 rounded-3 "
-                data-aos="fade-left"
-                data-aos-duration="2000"
-              >
-                <p className="text-center p-2">
-                  We are a team of experienced and passionate software
-                  developers who specialize in crafting cutting-edge solutions
-                  tailored to your specific needs. We have a deep understanding
-                  of various technologies and frameworks, including:
-                </p>
-              </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80" />
             </div>
-          </div>
-          <div className="row  mt-3">
-            <div className="col-lg-5 col-md-12 align-items-center d-flex  ">
-              <div className="" data-aos="zoom-in" data-aos-duration="1000">
-                <img src={Software} className=" img-fluid w-100 p-2" alt="" />
-              </div>
-            </div>
-            <div className="col-lg-7  col-md-12 align-items-center d-flex">
-              <div className="row ">
-                <div
-                  className="col-lg-3  col-md-6 mb-3  "
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className=" card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">Programming Languages:</p>
-                      <p> Python </p>
-                      <p> Java </p>
-                      <p> JavaScript </p>
-                      <p> C++ </p>
-                      <p> C# </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 mb-3 "
-                  data-aos="fade-up"
-                  data-aos-duration="700"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className="card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">
-                        Web Development Frameworks:
-                      </p>
-                      <p>React</p>
-                      <p> Angular</p>
-                      <p>Vue.js</p>
-                      <p>Django</p>
-                      <p>Flask</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 mb-3 "
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className="card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">
-                        Mobile Development Frameworks:
-                      </p>
-                      <p>Flutter</p>
-                      <p> React Native</p>
-                      <p>Kotlin</p>
-                      <p>and Swift</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 col-md-6 mb-3"
-                  data-aos="fade-up"
-                  data-aos-duration="900"
-                  data-aos-easing="ease-in-back"
-                >
-                  <div className=" card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">Cloud Platforms:</p>
-                      <p>AWS</p>
-                      <p>Azure</p>
-                      <p> Google Cloud Platform</p>
-                      <p>and others</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="bg-green-1 text-light mt-5">
-        <div className="container">
-          <div className=" pt-3">
-            <h1 className="bg-img-1 mx-auto mt-3">Why Choose Us</h1>
-          </div>
-
-          <div>
-            <div className="row d-flex justify-content-evenly pt-4">
-              <div
-                className="col-md-3"
-                data-aos="zoom-out-right"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Experienced Team</h4>
-                  <p>
-                    Our team has a proven track record of delivering successful
-                    software projects for clients across diverse industries.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="col-md-3"
-                data-aos="zoom-out-left"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Custom Solutions</h4>
-                  <p>
-                    We don't offer one-size- fits-all solutions. We build
-                    software that is uniquely tailored to your specific
-                    requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="row justify-content-evenly">
-              <div
-                className="col-md-3 d-flex justify-content-center align-items-center"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Agile Methodology</h4>
-                  <p>
-                    We embrace agile development practices to ensure
-                    flexibility, quick iterations, and continuous improvement.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="col-md-4"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1500"
-              >
-                <div>
-                  <img src={whychooseimg} className="img-fluid" alt="" />
-                </div>
-              </div>
-              <div
-                className="col-md-3 d-flex justify-content-center align-items-center"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Transparent Communication</h4>
-                  <p>
-                    We keep you informed throughout the development process and
-                    value your feedback.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="row d-flex justify-content-evenly pb-4">
-              <div
-                className="col-md-3"
-                data-aos="zoom-in-right"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Data-Driven Approach</h4>
-                  <p>
-                    We leverage data and analytics to optimize your software and
-                    measure its impact on your business.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="col-md-3"
-                data-aos="zoom-in-left"
-                data-aos-duration="1000"
-              >
-                <div className="small-card mt-3">
-                  <h4>Experienced Team</h4>
-                  <p>
-                    Our team has a proven track record of delivering successful
-                    software projects for clients across diverse industries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="container mt-5">
-        <div className="justify-content-center d-flex">
-          <h1 className="text-center bg-img-1">Our Process</h1>
-        </div>
-        <div className="row justify-content-evenly">
-          <div
-            className="col-lg-6  col-md-12"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-back"
-
-          >
-            <div
-              className="pbg1  "
-              data-aos="fade-right"
-              data-aos-duration="1000"
-             
-
-            >
-              <p className="text-center p-2">
-                We believe in a collaborative and agile approach to software
-                development. Our process involves:
+            <div class="card-text">
+              <p class="card-meal-type">Lunch/Meat</p>
+              <h2 class="card-title">Du bœuf Burger</h2>
+              <p class="card-body">
+                A beef burger with wholewheat patty, juicy lettuce and a side of
+                gluten free fries
               </p>
             </div>
-            <div className="boxshadow ">
-              <div className=" p-4">
-                <ul >
-             
-                  <li data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-back" >
-                    <p>
-                      <span className="fw-bold">Discovery & Planning:</span> We
-                      work closely with you to understand your business goals,
-                      challenges, and target audience.
-                    </p>
-                  </li>
-                  <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-back">
-                    <p>
-                      <span className="fw-bold">Design & Prototyping:</span> We
-                      create prototypes and mockups to visualize your software
-                      and ensure it aligns with your needs.
-                    </p>
-                  </li>
-                  <li data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-in-back">
-                    <p>
-                      <span className="fw-bold">Development & Testing:</span> We
-                      write clean, efficient, and well-tested code using
-                      industry-standard best practices.
-                    </p>
-                  </li>
-                  <li data-aos="fade-right" data-aos-duration="700"  data-aos-easing="ease-in-back">
-                    <p>
-                      <span className="fw-bold">Deployment & Maintenance:</span>{" "}
-                      We seamlessly deploy your software and provide ongoing
-                      support and maintenance.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-          <div className="col-lg-5  col-md-12 align-items-center d-flex">
-            <div
-              className="my-3"
-              data-aos="fade-down-left"
-              data-aos-duration="1000"
-            >
-              <img src={Process} className="img-fluid" alt="" />
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Soups/Meat</p>
+              <h2 class="card-title">Soupe à l’oignon</h2>
+              <p class="card-body">
+                The traditional French soup made with onions and beef with a
+                dollop of garlic and saffaron mayonise.
+              </p>
             </div>
           </div>
         </div>
@@ -494,9 +223,9 @@ function Development() {
             </a>
           </div>
           {/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
+                            <h3>ACCEPTED PAYMENT METHODS</h3>
+    
+                        </div> */}
         </div>
       </section>
       <section className="testimonal">
@@ -668,4 +397,4 @@ function Development() {
   );
 }
 
-export default Development;
+export default Webdev;
