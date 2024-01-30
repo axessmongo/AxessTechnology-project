@@ -10,7 +10,7 @@ import hmodel from '../assets/images/services/h-model.png';
 import ai from '../assets/images/services/ai.png';
 import digi from '../assets/images/services/digi.png';
 import AOS from 'aos';
-function Services() {
+function Services() { 
     const [popup, setPopup] = useState(true)
     setTimeout(() => {
         setPopup(false);
