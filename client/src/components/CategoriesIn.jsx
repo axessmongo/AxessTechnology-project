@@ -12,7 +12,7 @@ import portfolio1 from '../assets/images/demo/porfolio1.png'
 import portfolio2 from '../assets/images/demo/porfolio2.png'
 
 
-export default function CategoriesIn() {git a
+export default function CategoriesIn() {
 
     return (
         <div>
