@@ -8,6 +8,7 @@ import './assets/css/Cat.scss'
 import './assets/css/testimonal.scss'
 import './assets/css/loader.scss'
 import './assets/css/index.scss';
+import './assets/css/testing.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
