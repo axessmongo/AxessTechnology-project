@@ -73,6 +73,9 @@ function Login() {
                   required
                   className='input'
                 />
+                <div className='text-decoration-none text-start'>
+                <Link to={{}}>forget password</Link>
+                </div>
                 <button type='submit' className='green_btn' disabled={loading}>
                   {loading ? 'Signing In...' : 'Sign In'}
                 </button>
