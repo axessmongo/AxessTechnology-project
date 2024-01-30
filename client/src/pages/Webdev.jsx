@@ -1,332 +1,68 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Technologies from "./Technologies";
-import Software from "../assets/images/Our-Expertise.jpg";
-import Process from "../assets/images/Our-Process.jpg";
-import Why from "../assets/images/Why-Choose.jpg";
-import bubble from "../assets/images/bubble.webp";
-import success from "../assets/images/success.png";
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
-import footer from "../assets/images/footer.svg";
-import frompng from "../assets/images/fromlogo.jpg";
-// import contact  from '../assets/images/contact.jpg'
+
 import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 
-function Development() {
+function Webdev() {
   return (
-    <div className="software">
+    <div className="webdev">
       <Navbar />
       <Banner
-        h1="Software Development"
-        h2="Revolutionize Your Operations: Transform with Software Tailored to Your Needs."
-        h3="Utilize the power of technology with our custom software development services.
-        "
+        h1=" Web Development"
+        h2="Crafting Websites that Captivate and Convert
+            "
+        h3="
+            "
       />
-      <section className="container ">
-        <div className="text-center">
-          <p className="fs-5 mt-4">
-            In today's digital age, having robust and innovative software is no
-            longer a luxury, it's a necessity for businesses to thrive. At Axess
-            Technology, we understand the power of software and its ability to
-            transform your operations, streamline processes, and unlock new
-            opportunities for growth.
-          </p>
-        </div>
-        <div className="row align-items-center mt-5">
-          <div
-            className="col-md-4"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <div>
-              <img src={Software} className="rounded-start-circle " alt="" />
-            </div>
-          </div>
-          <div className="col-md-8" data-aos="fade" data-aos-duration="1000">
-            <div className="pbg p-4">
-              <h1 className="bg-img-1">Our Expertise:</h1>
-              <p>
-                We are a team of experienced and passionate software developers
-                who specialize in crafting cutting-edge solutions tailored to
-                your specific needs. We have a deep understanding of various
-                technologies and frameworks, including:
-              </p>
-              <ul>
-                <li>
-                  <div className="d-flex align-items-center">
-                    <span className="li-border">1</span>
-                    <span className="fw-bold p-2">Programming Languages:</span>
-                    Python, Java, JavaScript, C++, C#, and more.
-                  </div>
-                </li>
-                <li>
-                  <div className="d-flex align-items-center mt-1">
-                    <span className="li-border">2</span>
-                    <span className="fw-bold p-2">
-                      Web Development Frameworks:
-                    </span>{" "}
-                    React, Angular, Vue.js, Django, Flask, and others.
-                  </div>
-                </li>
-
-                <li>
-                  <div className="d-flex align-items-center mt-1">
-                    <span className="li-border">3</span>
-                    <span className="fw-bold p-2">
-                    Mobile Development Frameworks: 
-                    </span>{" "}
-                    Flutter, React Native, Kotlin, and Swift.
-                  </div>
-                </li>
-                <li>
-                  <div className="d-flex align-items-center mt-1">
-                    <span className="li-border">4</span>
-                    <span className="fw-bold p-2">
-                    Cloud Platforms:
-                    </span>{" "}
-                    AWS, Azure, Google Cloud Platform, and others.
-
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-8" data-aos="fade" data-aos-duration="1000">
-            <div className="pbg p-4">
-              <h1 className="bg-img-1">Our Process:</h1>
-              <p>
-                We believe in a collaborative and agile approach to software
-                development. Our process involves:
-              </p>
-              <div className="d-flex">
-                <span className="li-border"></span>
-                <ul>
-                  <li>
-                    <span className="fw-bold">Discovery & Planning:</span> We
-                    work closely with you to understand your business goals,
-                    challenges, and target audience.
-                  </li>
-                  <li>
-                    <span className="fw-bold">Design & Prototyping: </span> We
-                    create prototypes and mockups to visualize your software and
-                    ensure it aligns with your needs.
-                  </li>
-                  <li>
-                    <span className="fw-bold">Development & Testing:</span>We
-                    write clean, efficient, and well-tested code using
-                    industry-standard best practices.
-                  </li>
-                  <li>
-                    <span className="fw-bold">Deployment & Maintenance:</span>We
-                    seamlessly deploy your software and provide ongoing support
-                    and maintenance.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-md-4"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <img src={Process} className="rounded-end-circle" alt="" />
-          </div>
-          <div
-            className="col-md-4"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <img src={Why} className="rounded-start-circle" alt="" />
-          </div>
-          <div
-            className="col-md-8 rounded-4 "
-            data-aos="fade"
-            data-aos-duration="1000"
-          >
-            <div className="pbg p-4">
-              <h1 className="bg-img-1">Why Choose Us:</h1>
-
-              <ul>
-                <li>
-                  <span className="fw-bold">Experienced Team:</span> Our team
-                  has a proven track record of delivering successful software
-                  projects for clients across diverse industries.
-                </li>
-                <li>
-                  <span className="fw-bold">Custom Solutions: </span> We don't
-                  offer one-size-fits-all solutions. We build software that is
-                  uniquely tailored to your specific requirements.
-                </li>
-                <li>
-                  <span className="fw-bold">Agile Methodology:</span>We embrace
-                  agile development practices to ensure flexibility, quick
-                  iterations, and continuous improvement.
-                </li>
-                <li>
-                  <span className="fw-bold">Transparent Communication:</span>We
-                  keep you informed throughout the development process and value
-                  your feedback.
-                </li>
-                <li>
-                  <span className="fw-bold">Data-Driven Approach:</span>We
-                  leverage data and analytics to optimize your software and
-                  measure its impact on your business.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-<div className="bg-green-1 text-light">
-      <section className="container py-3">
-        <div className="text-center">
-          <h1>Our Process</h1>
-          <p>
-            We believe in a collaborative and agile approach to software
-            development. Our process involves:{" "}
-          </p>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5 text-end d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Discovery & Planning</h3>
-                <p>
-                  We work closely with you to understand your business goals,
-                  challenges, and target audience.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={bubble} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5"></div>
-          </div>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5"></div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={success} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5 d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Design & Prototyping</h3>
-                <p>
-                  We create prototypes and mockups to visualize your software
-                  and ensure it aligns with your needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5 text-end d-flex justify-content-center align-align-items-center">
-              <div>
-                <h3>Development & Testing</h3>
-                <p>
-                  We write clean, efficient, and well-tested code using
-                  industry-standard best practices.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={bubble} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5"></div>
-          </div>
-        </div>
-
-        <div>
-          <div className="row py-2">
-            <div className="col-md-5"></div>
-            <div className="col-md-2">
-              <div className="">
-                <img src={success} alt="" className="img-fluid w-75" />
-              </div>
-            </div>
-            <div className="col-md-5 d-flex justify-content-center align-items-center">
-              <div>
-                <h3>Deployment & Maintenance</h3>
-                <p>
-                  We seamlessly deploy your software and provide ongoing support
-                  and maintenance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      </div>
       <section>
-        <div className="container">
-          <h3 className="text-center mt-5">Our Expertise</h3>
-          <p className="text-center">
-            We are a team of experienced and passionate software developers who
-            specialize in crafting cutting-edge solutions tailored to your
-            specific needs. We have a deep understanding of various technologies
-            and frameworks, including
-          </p>
-          <div className="expertise">
-            <div className="expertise-section">
-              <h2>Programming Languages</h2>
-              <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>And more...</li>
-              </ul>
+        <div className="container mt-5">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" />
             </div>
-            <div className="expertise-section">
-              <h2>Web Development Frameworks</h2>
-              <ul>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vue.js</li>
-                <li>Django</li>
-                <li>Flask</li>
-                <li>And others...</li>
-              </ul>
+            <div class="card-text">
+              <p class="card-meal-type">Breakfast/Eggs</p>
+              <h2 class="card-title">Délicieux Bénédicte</h2>
+              <p class="card-body">
+                Eggs Benedict with hollandaise sauce, crispy bacon and an
+                assortment of garden herbs.
+              </p>
             </div>
-            <div className="expertise-section">
-              <h2>Mobile Development Frameworks</h2>
-              <ul>
-                <li>Flutter</li>
-                <li>React Native</li>
-                <li>Kotlin</li>
-                <li>Swift</li>
-              </ul>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1769&q=80" />
             </div>
-            <div className="expertise-section">
-              <h2>Cloud Platforms</h2>
-              <ul>
-                <li>AWS</li>
-                <li>Azure</li>
-                <li>Google Cloud Platform</li>
-                <li>And others...</li>
-              </ul>
+            <div class="card-text">
+              <p class="card-meal-type">Lunch/Meat</p>
+              <h2 class="card-title">Du bœuf Burger</h2>
+              <p class="card-body">
+                A beef burger with wholewheat patty, juicy lettuce and a side of
+                gluten free fries
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" />
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Soups/Meat</p>
+              <h2 class="card-title">Soupe à l’oignon</h2>
+              <p class="card-body">
+                The traditional French soup made with onions and beef with a
+                dollop of garlic and saffaron mayonise.
+              </p>
             </div>
           </div>
         </div>
       </section>
+
       <Techsection />
       <section className="pricing mt-5">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
@@ -487,9 +223,9 @@ function Development() {
             </a>
           </div>
           {/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
+                            <h3>ACCEPTED PAYMENT METHODS</h3>
+    
+                        </div> */}
         </div>
       </section>
       <section className="testimonal">
@@ -655,10 +391,10 @@ function Development() {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );
 }
 
-export default Development;
+export default Webdev;

@@ -23,6 +23,7 @@ import ScrollTop from './assets/images/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
 import Ai from './pages/Ai';
+import Webdev from './pages/Webdev';
 
 function Routing() {
 
@@ -53,6 +54,8 @@ function Routing() {
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/ai' element={<Ai />} />
+                    <Route path='/webdevelopment' element={<Webdev />} />
+
 
 
                 </Routes>
