@@ -79,7 +79,8 @@ function Development() {
                 <div
                   className="col-lg-3  col-md-6 mb-3  "
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  data-aos-duration="600"
+                  data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
                     <div className="my-4">
@@ -95,7 +96,8 @@ function Development() {
                 <div
                   className="col-lg-3 col-md-6 mb-3 "
                   data-aos="fade-up"
-                  data-aos-duration="1800"
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
                     <div className="my-4">
@@ -113,7 +115,8 @@ function Development() {
                 <div
                   className="col-lg-3 col-md-6 mb-3 "
                   data-aos="fade-up"
-                  data-aos-duration="2200"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
                     <div className="my-4">
@@ -130,7 +133,8 @@ function Development() {
                 <div
                   className="col-lg-3 col-md-6 mb-3"
                   data-aos="fade-up"
-                  data-aos-duration="2600"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
                     <div className="my-4">
@@ -267,11 +271,15 @@ function Development() {
             className="col-lg-6  col-md-12"
             data-aos="zoom-in"
             data-aos-duration="1000"
+            data-aos-easing="ease-in-back"
+
           >
             <div
-              className="pbg1  my-3 "
+              className="pbg1  "
               data-aos="fade-right"
               data-aos-duration="1000"
+             
+
             >
               <p className="text-center p-2">
                 We believe in a collaborative and agile approach to software
@@ -281,28 +289,29 @@ function Development() {
             <div className="boxshadow ">
               <div className=" p-4">
                 <ul >
-                  <li data-aos="fade-right" data-aos-duration="1400">
+             
+                  <li data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-back" >
                     <p>
                       <span className="fw-bold">Discovery & Planning:</span> We
                       work closely with you to understand your business goals,
                       challenges, and target audience.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="1800">
+                  <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-back">
                     <p>
                       <span className="fw-bold">Design & Prototyping:</span> We
                       create prototypes and mockups to visualize your software
                       and ensure it aligns with your needs.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="2200">
+                  <li data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-in-back">
                     <p>
                       <span className="fw-bold">Development & Testing:</span> We
                       write clean, efficient, and well-tested code using
                       industry-standard best practices.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="2600">
+                  <li data-aos="fade-right" data-aos-duration="700"  data-aos-easing="ease-in-back">
                     <p>
                       <span className="fw-bold">Deployment & Maintenance:</span>{" "}
                       We seamlessly deploy your software and provide ongoing
