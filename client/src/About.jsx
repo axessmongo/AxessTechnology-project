@@ -82,20 +82,20 @@ function About() {
                 </div>
                 <div className='row mt-5'>
                     <div className='col-md-6'>
-                        <div>
+                        <div className='aboutsuccess'>
                             <img src={success} alt="success" />
                         </div>
                     </div>
                     <div className='col-md-6'>
-                        <div>
+                        <div className='mt-5'>
                             <h6 className='secondary-header'>Here's a glimpse into our magic:</h6>
                         </div>
-                        <div className='aboutpoints'>
+                        <div className='aboutpoints mt-3'>
                             <ul>
                                 <li>Software Development: We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
-                                <li>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
-                                <li>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
-                                <li>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
+                                <li className='mt-4'>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
+                                <li className='mt-4'>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
+                                <li className='mt-4'>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
                             </ul>
                         </div>
                     </div>
