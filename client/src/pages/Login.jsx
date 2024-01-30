@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/Navbar';
@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 import '../assets/css/Login.scss';
 
 function Login() {
+  const Navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -28,6 +30,7 @@ function Login() {
 
       if (response.status === 200) {
         toast.success('Logged in successfully');
+        Navigate('/')
       } else if (response.status === 401) {
         toast.error('Invalid Email or Password');
       } else if (response.status === 400) {
@@ -47,11 +50,11 @@ function Login() {
     <div>
       <Navbar />
       <div className='login bg-axess-gold-3'>
-        <div className='login_container'>
-          <div className='login_form_container'>
-            <div className='left'>
+        <div className='login_container p-5'>
+          <div className='login_form_container row justify-content-center '>
+            <div className='col-md-6 left'>
               <form className='form_container' onSubmit={handleSubmit}>
-                <h1>Login to Your Account</h1>
+                <h1 className='text-center'>Login to Your Account</h1>
                 <input
                   type='email'
                   placeholder='Email'
@@ -70,19 +73,25 @@ function Login() {
                   required
                   className='input'
                 />
+                <Link to="/forgotpassword" className='fogotpassword' id='forget'>
+                  <p className='text-end text-black text-decoration-none'>Forgot Password ?</p>
+                </Link>
                 <button type='submit' className='green_btn' disabled={loading}>
                   {loading ? 'Signing In...' : 'Sign In'}
                 </button>
                 <ToastContainer />
               </form>
             </div>
-            <div className='right'>
-              <h1>New Here ?</h1>
-              <Link to='/register'>
-                <button type='button' className='green_btn'>
-                  Sign up
-                </button>
-              </Link>
+            <div className='col-md-6 right'>
+              <div>
+                <h1>New Here ?</h1>
+                <Link to='/register'>
+                  <button type='button' className='green_btn'>
+                    Sign up
+                  </button>
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>

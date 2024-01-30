@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import Slider from "react-slick";
+import AOS from 'aos';
 import project1 from '../assets/images/demo/catering.png'
 import project2 from '../assets/images/demo/gift.png'
 import project3 from '../assets/images/demo/photography.png'
@@ -35,11 +36,15 @@ export default function Carousel() {
         }
       }
     ]
-  };
+  }
+
+  useEffect(()=>{
+    AOS.refresh();
+  })
   return (
     <div className="container my-5 py-5">
-      <h1 className="bg-img-1 mx-auto">Our works</h1>
-      <Slider {...settings}>
+      <h1 className="bg-img-1 mx-auto" data-aos='fade-up'>Our works</h1>
+      <Slider {...settings} data-aos = 'fade'>
         <Link to={'/ourworks'} className="proiect-card">
           <img src={project1} alt="project1" />
         </Link>
