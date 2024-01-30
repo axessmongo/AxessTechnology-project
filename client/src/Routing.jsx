@@ -25,7 +25,7 @@ import Testing from './pages/Testing';
 import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
-import ForgotPassword from './pages/forgotpassword';
+import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing';
 
 function Routing() {
