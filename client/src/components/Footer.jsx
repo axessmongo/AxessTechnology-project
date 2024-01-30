@@ -22,19 +22,19 @@ function Footer() {
                                 <img src={frompng} alt="" />
                             </div>
                         </div>
-                        <div className="container">
+                        <div className="">
                             <div className="row">
                                 <div className="col-md-6 mb-4">
                                     <input type="text" name="fname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Firstname' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="text" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Lastname' />
+                                    <input type="text" name="lastname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Lastname' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="email" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
+                                    <input type="email" name="email" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="number" name="lname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone-Number' />
+                                    <input type="number" name="ph_no" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone-Number' />
                                 </div>
                                 <div className="col-md-12 mb-4">
                                     <input type="text" name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Description' />
@@ -59,18 +59,18 @@ function Footer() {
             </div>
             <div className='bg-black text-white footercontent'>
                 <div className='container'>
-                    <div className="text-capitalize mt-3">
-                        <div className="row">
+                    <div className="text-capitalize mt-5">
+                        <div className="row align-items-center">
                             <div className="col-md-6">
-                                <div className='pt-3'>
-                                    <img src={footer} className='bg-black w-75 h-75 mx-5' alt="" />
+                                <div className='col-10 mx-auto'>
+                                    <img src={footer} className='' alt="" />
                                 </div>
                             </div>
                             <div className="col-md-6 text-center pt-4">
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
-                                <p className='primary-text text-white'>Tidel Park, GF-04,
+                                <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
-                                    Taramani,
+                                    Taramani,<br />
                                     Chennai - 600113.</p>
                             </div>
 
@@ -78,72 +78,36 @@ function Footer() {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="row text-center text-capitalize mt-4">
-                        <div className="col-md-3">
-                            <p className='gold-text-2 fw-bolder'>Company</p>
+                    <div className="row text-center text-capitalize py-5 my-5">
+                        <div className="col-md-4">
+                            <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >About</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Portfolio</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Insights</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Terms & Conditions</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Privacy Policy</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Careers</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Sitemap</Link></li>
+                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
+                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
+                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
+                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
+                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3">
-                            <p className='gold-text-2 fw-bolder'>Service</p>
+                        <div className="col-md-4">
+                            <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>mobile App</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>IT services</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Blockchain</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Metaverse</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Game</Link></li>
+                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web development</Link></li>
+                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software development</Link></li>
+                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
+                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
+                                    <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3">
-                            <p className='gold-text-2 fw-bolder'>technology</p>
-                            <div className='d-flex justify-content-center'>
-                                <ul className='list-unstyled text-white '>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web 3</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>NFT</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>M2E</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>DeFi</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>DAO</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>IDO</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>AI</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <p className='gold-text-2 fw-bolder'>Collaborate with us</p>
-                            <div className='d-flex justify-content-center'>
-                                <ul className='list-unstyled '>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Crypto Exchange</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Crypto Wallet</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>NFT Marketplace</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Binance like Exchange</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Pancakeswap like DEX</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Opensea like Marketplace
-                                    </Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-white'>Launchpad</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+
+                        <div className="col-md-4">
                             <div>
-                                <p className='gold-text-2 fw-bolder text-center'>Social media</p>
-                                <p className='fw-semibold mt-3 mb-5 text-center'>Follow Us on Social Media.</p>
+                                <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
+                                <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
                                     <li><Link><i className="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
                                     <li><Link><i className="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
@@ -152,19 +116,23 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="row">
                         <div className="row">
                             <div className="col-md-6">
-                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span>: +91 93845 87998</p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 87998</span></p>
                             </div>
                             <div className="col-md-6">
-                                <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Job</span>: +91 93614 23585</p>
+                                <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.</p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.</p>
                 </div>
             </div>
         </div>
