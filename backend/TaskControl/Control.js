@@ -70,6 +70,7 @@ const verifyEmail = async (req, res) => {
     await userModel.updateOne({ _id: user._id }, { verified: true });
 
     await tokenModel.deleteOne({ _id: token._id });
+    // await tokenModel.remove({ _id: token._id });
 
     res.status(200).json({ message: "Email verified successfully" });
   } catch (error) {
