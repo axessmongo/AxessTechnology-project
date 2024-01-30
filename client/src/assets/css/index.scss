@@ -859,7 +859,7 @@ img {
 
     .softdev,
     .softtest,
-    .ai,
+    .webdev,
     .digi {
       position: relative;
       z-index: 5;
@@ -867,7 +867,7 @@ img {
 
     .softdev::before,
     .softtest::before,
-    .ai::before,
+    .webdev::before,
     .digi::before {
       content: "";
       display: block;
@@ -882,7 +882,7 @@ img {
 
     .softdev.active::before,
     .softtest.active::before,
-    .ai.active::before,
+    .webdev.active::before,
     .digi.active::before {
       opacity: 1;
     }
@@ -897,7 +897,7 @@ img {
       background: #032933;
     }
 
-    .ai::before {
+    .webdev::before {
       background: #001b31;
       background: #03485b;
     }

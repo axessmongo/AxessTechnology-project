@@ -121,7 +121,7 @@ function Services() {
     return (
         <div className='services'><div className="layer-one">
             <div className="row">
-                <div className="col-md-7 vh-100 bg-axess-gold-3 one d-none">
+                <div className="col-md-7 vh-100 bg-axess-gold-3 one d-none d-md-block">
                     <div className="d-flex vh-100 justify-content-center align-items-center">
                         {/* <img src={gif} alt="gif" style={{width:`300px`}}/> */}
                     </div>
@@ -446,8 +446,8 @@ function Services() {
                                         </div>
                                     </div>
                                     <Link to={"/testing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
-                             
-                                   </div>
+
+                                </div>
                             </div>
                         </div>
 
@@ -464,9 +464,9 @@ function Services() {
                                 <div className="row align-items-center">
                                     <div className="col-md-8">
                                         <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                            hdj bbsjb hjbhjb</h4>
+                                            Crafting Websites that Captivate and Convert</h4>
                                         <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                            In the rapidly evolving landscape of technology, AI development stands at the forefront, pioneering intelligent solutions that emulate human cognitive functions. From machine learning algorithms to neural networks, AI endeavors to create systems capable of learning, reasoning, and adapting autonomously.
+                                            In today's digital world, your website is the first impression you make on potential customers. It's your virtual storefront, your digital ambassador, and the key to unlocking online success. At Axess Technology, we don't just build websites; we craft online experiences that captivate visitors, fuel engagement, and seamlessly convert them into loyal customers.
                                         </p>
                                     </div>
                                     <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
@@ -474,8 +474,8 @@ function Services() {
                                     </div>
                                 </div>
                                 <Link to={"/webdevelopment"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
-                             
-                                </div>
+
+                            </div>
                         </div>
 
                         <div className="roller-container text-white min-vh-100 digi" id='digi'>
@@ -499,7 +499,7 @@ function Services() {
                                         <img src={digi} className='w-100 animatedimg' alt="service" />
                                     </div>
                                 </div>
-                             
+
                                 <Link to={"/digitalmarketing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                             </div>
                         </div>
