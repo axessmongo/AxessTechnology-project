@@ -15,8 +15,8 @@ function Footer() {
                     <div className="card-body position-relative">
                         <div className="row">
                             <div className="col-md-10">
-                                <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2'>Contact us</p>
-                                <p>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
+                                <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2' data-aos ='zoom-out'>Contact us</p>
+                                <p data-aos ='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                             </div>
                             <div className="col-md-2 position-absolute footerbg">
                                 <img src={frompng} alt="" />
@@ -25,32 +25,32 @@ function Footer() {
                         <div className="">
                             <div className="row">
                                 <div className="col-md-6 mb-4">
-                                    <input type="text" name="fname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Firstname' />
+                                    <input data-aos ='zoom-out' type="text" name="fname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Firstname' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="text" name="lastname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Lastname' />
+                                    <input data-aos ='zoom-out' type="text" name="lastname" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Lastname' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="email" name="email" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
+                                    <input data-aos ='zoom-out' type="email" name="email" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='E-mail' />
                                 </div>
                                 <div className="col-md-6 mb-4">
-                                    <input type="number" name="ph_no" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone-Number' />
+                                    <input data-aos ='zoom-out' type="number" name="ph_no" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Phone-Number' />
                                 </div>
                                 <div className="col-md-12 mb-4">
-                                    <input type="text" name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Description' />
+                                    <input data-aos ='zoom-out' type="text" name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' placeholder='Description' />
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-4">
+                                <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Telegram Us : @axesstechnology.in</p>
                                     <p>WhatsApp : +91 93845 87998</p>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Phone : 8825781xxxx</p>
                                     <p>Email : salesxxxx@.com</p>
                                 </div>
-                                <div className="col-md-4">
-                                    <button className='gold-btn m-0 green-btn' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                                <div className="col-md-4" data-aos ='zoom-out'>
+                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -63,10 +63,10 @@ function Footer() {
                         <div className="row align-items-center">
                             <div className="col-md-6">
                                 <div className='col-10 mx-auto'>
-                                    <img src={footer} className='' alt="" />
+                                    <img src={footer} className='' data-aos = 'zoom-out' data-aos-duration='700' alt="" />
                                 </div>
                             </div>
-                            <div className="col-md-6 text-center pt-4">
+                            <div className="col-md-6 text-center pt-4" data-aos ='fade-up' data-aos-duration='700'>
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
                                 <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
@@ -78,8 +78,8 @@ function Footer() {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="row text-center text-capitalize py-5 my-5">
-                        <div className="col-md-4">
+                    <div className="row text-center text-capitalize mt-0 py-md-5 my-md-5 g-4 g-md-0">
+                        <div className="col-6 col-md-4" data-aos = 'fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
@@ -91,7 +91,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-6 col-md-4" data-aos = 'fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
@@ -104,7 +104,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-md-4" data-aos = 'fade-up' data-aos-duration='700'>
                             <div>
                                 <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
@@ -120,12 +120,12 @@ function Footer() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="row">
-                            <div className="col-md-6">
+                        <div className="row text-center text-md-start">
+                            <div className="col-md-6" data-aos = 'zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
                                 <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 87998</span></p>
                             </div>
-                            <div className="col-md-6">
-                                <p className='fw-semibold fs-6 text-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
+                            <div className="col-md-6" data-aos = 'zoom-in-left' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
+                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
                             </div>
                         </div>
                     </div>
