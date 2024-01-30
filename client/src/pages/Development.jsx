@@ -12,7 +12,7 @@ import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
-// import contact  from '../assets/images/contact.jpg' 
+// import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
@@ -71,19 +71,19 @@ function Development() {
           <div className="row  mt-3">
             <div className="col-lg-5 col-md-12 align-items-center d-flex  ">
               <div className="" data-aos="zoom-in" data-aos-duration="1000">
-                <img src={Software} className=" img-fluid w-100 p-2" alt="" />
+                <img src={Software} className=" img-fluid w-100" alt="" />
               </div>
             </div>
             <div className="col-lg-7  col-md-12 align-items-center d-flex">
-              <div className="row ">
+              <div className="row justify-content-around ">
                 <div
-                  className="col-lg-3  col-md-6 mb-3  "
+                  className="col-lg-3  col-md-6 mb-3"
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
-                    <div className="my-4">
+                    <div className="py-4">
                       <p className="fw-bold">Programming Languages:</p>
                       <p> Python </p>
                       <p> Java </p>
@@ -100,10 +100,8 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">
-                        Web Development Frameworks:
-                      </p>
+                    <div className="py-4">
+                      <p className="fw-bold">Web Development Frameworks:</p>
                       <p>React</p>
                       <p> Angular</p>
                       <p>Vue.js</p>
@@ -119,10 +117,8 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
-                    <div className="my-4">
-                      <p className="fw-bold">
-                        Mobile Development Frameworks:
-                      </p>
+                    <div className="py-4">
+                      <p className="fw-bold">Mobile Development Frameworks:</p>
                       <p>Flutter</p>
                       <p> React Native</p>
                       <p>Kotlin</p>
@@ -137,7 +133,7 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
-                    <div className="my-4">
+                    <div className="py-4">
                       <p className="fw-bold">Cloud Platforms:</p>
                       <p>AWS</p>
                       <p>Azure</p>
@@ -272,14 +268,11 @@ function Development() {
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
-
           >
             <div
               className="pbg1  "
               data-aos="fade-right"
               data-aos-duration="1000"
-             
-
             >
               <p className="text-center p-2">
                 We believe in a collaborative and agile approach to software
@@ -288,30 +281,45 @@ function Development() {
             </div>
             <div className="boxshadow ">
               <div className=" p-4">
-                <ul >
-             
-                  <li data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-back" >
+                <ul>
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="400"
+                    data-aos-easing="ease-in-back"
+                  >
                     <p>
                       <span className="fw-bold">Discovery & Planning:</span> We
                       work closely with you to understand your business goals,
                       challenges, and target audience.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-back">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-back"
+                  >
                     <p>
                       <span className="fw-bold">Design & Prototyping:</span> We
                       create prototypes and mockups to visualize your software
                       and ensure it aligns with your needs.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="600"  data-aos-easing="ease-in-back">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-back"
+                  >
                     <p>
                       <span className="fw-bold">Development & Testing:</span> We
                       write clean, efficient, and well-tested code using
                       industry-standard best practices.
                     </p>
                   </li>
-                  <li data-aos="fade-right" data-aos-duration="700"  data-aos-easing="ease-in-back">
+                  <li
+                    data-aos="fade-right"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-back"
+                  >
                     <p>
                       <span className="fw-bold">Deployment & Maintenance:</span>{" "}
                       We seamlessly deploy your software and provide ongoing

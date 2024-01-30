@@ -184,13 +184,20 @@
 
   .green_btn {
     background-color: #b98d2e;
+    border:2px solid #b98d2e;
     color: white;
     margin: 10px;
+    &:hover{
+        // background-color:var(--axess-gold-3);
+        border:2px solid var(--axess-gold-3)
+    }
   }
 
   #forget {
-    display: flex;
     margin-top: 12px;
-    padding-right: 220px;
+
+    &:hover{
+        color: #9e2828;
+    }
   }
 }
