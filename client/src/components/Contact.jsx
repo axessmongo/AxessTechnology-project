@@ -99,19 +99,34 @@ function Contact() {
         try {
             const response = await axios.post('http://localhost:5000/api/contact', contact);
 
-            if (response.status === 200) {
+            console.log("res",response)
+            if (response.status === 201) {
                 toast.success('our team will connect with you');
+                alert('success our team connect with you ')
+                setContact({
+                    fname: "",
+                    lname: "",
+                    email: "",
+                    phone: "",
+                    address: "",
+                    serviceOption: ""
+            
+                })
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
+                alert('incoorect mail')
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
+                alert('mail sended succesfully')
             } else {
                 console.log('Unexpected response:', response);
+                alert('unexpected response')
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
+            alert('unexpected error')
         }
 
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
@@ -122,7 +137,7 @@ function Contact() {
                 email: !contact.email ? 'Email is required.' : '',
                 phone: !contact.phone ? 'Phone is required.' : '',
                 address: !contact.address ? 'Address is required.' : '',
-                serviceOption: !contact.serviceOption ? 'serviceoption is required' :''
+                serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
         }
@@ -132,7 +147,7 @@ function Contact() {
             email: '',
             phone: '',
             address: '',
-            serviceOption:'',
+            serviceOption: '',
         });
 
 
