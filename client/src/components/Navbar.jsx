@@ -128,7 +128,7 @@ function Navbar() {
                 
                 <li className="nav-item position-relative">
                   <Link className="nav-link" >
-                    pricing
+                    Pricing
                   </Link>
                   <div className="drop pricing">
                     <div className='nav-item'>
