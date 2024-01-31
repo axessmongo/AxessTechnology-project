@@ -281,7 +281,7 @@ function Contact() {
                             </div>
 
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div className="container mt-5">
 
@@ -377,7 +377,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
