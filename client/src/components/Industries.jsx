@@ -9,7 +9,7 @@ export default function Industries() {
                         <div className="col-md-4">
                             <p className='bg-img-2' data-aos = 'fade-up'>Industries</p>
                             <h1 className='secondary-header' data-aos='fade-up'>Transforming Industries to Become Smarter and Safer</h1>
-                            <p className='secondary-text' data-aos='fade-up' data-aos-duration='600'>At Maticz, We Tackle Some of the World's Biggest Challenges by Building Great Digital Products.</p>
+                            <p className='secondary-text' data-aos='fade-up' data-aos-duration='600'>At Axess, We Tackle Some of the World's Biggest Challenges by Building Great Digital Products.</p>
                         </div>
                         <div className="col-md-8 text-white">
                             <div className="row gy-3">
