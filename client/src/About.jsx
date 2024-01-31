@@ -4,20 +4,22 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 // import AboutImage from '../src/assets/images/About2.jpg';
 import success from '../src/assets/images/about/success.svg'
+// import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from './components/Footer';
+import { Link } from 'react-router-dom';
 
 function About() {
     return (
         <div>
             <Navbar />
-            <Banner h1={'About Us'} h2={'Axess Technology: Weaving Digital Successes for 8 Years'} h3={'Hello World'} />
+            <Banner h1={'About Us'} h2={'Axess Technology: Weaving Digital Successes for 8 Years'} />
             <div className=''>
                 <div className="row mt-5 justify-content-end">
                     <div className="col-md-8 mt-5">
-                       <div className="p-5 mx-5">
-                       <h1 className='mt-5 text-center bg-img-1 mx-auto'>Our CEO</h1>
-                        <p className='mt-3 ceo-content'>Founded by a passionate entrepreneur, Mr. Venkteshan, Axess Technology has been igniting digital dreams for the past eight years. We're not just tech wizards; we're your collaborators, crafting custom solutions that propel your brand forward.From the pixel-perfect world of website development to the rigorous realm of software testing, we cover all bases. Our experienced software developers weave lines of code into powerful applications, and our sharp-eyed testers ensure every click is glitch-free. We don't stop there; our digital marketing maestros orchestrate campaigns that drive engagement and conversions, turning clicks into loyal customers.At Axess, your success is our compass. We believe in building long-term partnerships, walking hand-in-hand with our clients, understanding their aspirations, and tailoring solutions that fit their unique needs. We're not just a service provider; we're your digital co-pilot, navigating the ever-evolving landscape with expertise and unwavering dedication.</p>
-                       </div>
+                        <div className="p-5 mx-5">
+                            <h1 className='mt-5 text-center bg-img-1 mx-auto'>Our CEO</h1>
+                            <p className='mt-3 ceo-content'>Founded by a passionate entrepreneur, Mr. Venkteshan, Axess Technology has been igniting digital dreams for the past eight years. We're not just tech wizards; we're your collaborators, crafting custom solutions that propel your brand forward. From the pixel-perfect world of website development to the rigorous realm of software testing, we cover all bases. Our experienced software developers weave lines of code into powerful applications, and our sharp-eyed testers ensure every click is glitch-free. We don't stop there; our digital marketing maestros orchestrate campaigns that drive engagement and conversions, turning clicks into loyal customers. At Axess, your success is our compass. We believe in building long-term partnerships, walking hand-in-hand with our clients, understanding their aspirations, and tailoring solutions that fit their unique needs. We're not just a service provider; we're your digital co-pilot, navigating the ever-evolving landscape with expertise and unwavering dedication.</p>
+                        </div>
                     </div>
                     <div className="col-md-4">
                         <div className='aboutusimg position-relative'>
@@ -79,27 +81,45 @@ function About() {
                 <div >
                     <h5 className='secondary-header text-center py-5'>Let's talk about your digital aspirations. Whether you're a budding startup or a seasoned enterprise, Axess has the tools and vision to help you soar.</h5>
                 </div>
-                <div className='row mt-5'>
+                <div className='row mt-3'>
                     <div className='col-md-6'>
                         <div className='aboutsuccess'>
                             <img src={success} alt="success" />
                         </div>
                     </div>
                     <div className='col-md-6'>
-                        <div className='mt-5'>
+                        <div className='mt-3'>
                             <h6 className='secondary-header'>Here's a glimpse into our magic:</h6>
                         </div>
                         <div className='aboutpoints mt-3'>
                             <ul>
-                                <li>Software Development: We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
-                                <li className='mt-4'>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
-                                <li className='mt-4'>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
-                                <li className='mt-4'>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
+                                <li><strong>Software Development:</strong> We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
+                                <li className='mt-4 '><strong>Software Testing:</strong> We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
+                                <li className='mt-4'><strong>Website Development:</strong> We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
+                                <li className='mt-4'><strong>Digital Marketing:</strong> We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <section className='bg-green-1 py-5 mt-5'>
+                <div>
+                    <h3 className='secondary-header mx-auto text-center text-white mb-2' ><q>Eight years of experience, countless success stories, and a burning passion for digital excellence - that's Axess Technology.</q></h3>
+                    <p className='col-md-8 fs-5 mx-auto text-center text-white mt-4'>Ready to weave your digital success story? Let's connect! </p>
+                    <button className='gold-btn mx-auto mt-4' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+                    <p className='col-md-8 fs-5 mx-auto text-center text-white mt-4'>Schedule a free consultation to discuss your unique needs. </p>
+                </div>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <p className='fs-5 mx-auto text-white mt-4'>Follow us on social media for digital insights and inspiration.</p>
+                    </div>
+                    <div className='col-md-6 mt-4'>
+                        <Link><i className="bi bi-instagram"></i></Link>
+                        <Link><i className="bi bi-whatsapp"></i></Link>
+                        <Link><i className="bi bi-facebook"></i></Link>
+                    </div>
+                </div>
+            </section>
             <Footer />
         </div>
     );

@@ -22,7 +22,7 @@ function Services() {
             body.style.overflow = '';
             AOS.refresh();
         }
-    }, 3000)
+    }, 2000)
 
     let navigation = useNavigate()
 
