@@ -6,6 +6,7 @@ import Footer from './Footer';
 import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 
+
 function Contact() {
     const [contact, setContact] = useState({
         fname: "",
@@ -135,14 +136,15 @@ function Contact() {
                     <div className="accordion" id="accordionPanelsStayOpenExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                    What are Axess Technology's core services?
+                                <button className="accordion-button collapsed  " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
+                                Q1: What are Axess Technology's core services?
 
                                 </button>
+                                
                             </h2>
                             <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
                                 <div className="accordion-body">
-                                    We are a one-stop shop for all your digital needs, offering software development, software testing, website development, and digital marketing services.
+                                  We are a one-stop shop for all your digital needs, offering software development, software testing, website development, and digital marketing services.
                                 </div>
                             </div>
                         </div>
@@ -150,7 +152,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    What sets Axess Technology apart from other digital agencies?
+                                 Q2: What sets Axess Technology apart from other digital agencies?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse">
