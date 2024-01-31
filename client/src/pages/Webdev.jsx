@@ -23,10 +23,9 @@ function Development() {
     <div className="webdev">
       <Navbar />
       <Banner
-        h1="Axess Web Development"
-        h2=" Crafting Websites that Captivate and Convert        "
-        h3="
-        "
+        h1="Web Development"
+        h2=" Crafting Websites that Captivate and Convert"
+        h3=""
       />
 
       <section className="container">
@@ -447,7 +446,7 @@ function Development() {
        
       </section>
       <section className="bg-green-1 py-5 mt-5">
-        <p className="bg-img-1 mx-auto ">Call to Action</p>
+       
         <h3 className="secondary-header mx-auto text-center text-white mb-2">
           {" "}
           Get a free website audit: Identify areas for improvement and unlock your website's full potential.
@@ -458,8 +457,7 @@ function Development() {
         </p>
         <button
           className="gold-btn mx-auto "
-          data-aos="zoom-out"
-          data-aos-duration="600"
+         
         >
           <span className="d-block">Connect with us</span>{" "}
           <i className="bi bi-arrow-right"></i>
@@ -467,7 +465,7 @@ function Development() {
       </section>
 
       <Techsection />
-      <section className="pricing mt-5">
+      <section className="pricing mt-5" id="pricing-section">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">

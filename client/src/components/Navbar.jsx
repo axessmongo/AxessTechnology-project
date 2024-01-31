@@ -35,8 +35,8 @@ function Navbar() {
     document.addEventListener('click', handleOutsideClick);
 
     return () => {
-    document.removeEventListener('click', handleOutsideClick);
-    window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleOutsideClick);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -48,87 +48,116 @@ function Navbar() {
     <div>
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
-                <div className='d-flex share order-2 order-lg-1 '>
-                    <Link className='abouticon'><i className="bi bi-instagram"></i></Link>
-                    <Link className='abouticon'><i className="bi bi-whatsapp"></i></Link>
-                    <Link className='abouticon'><i className="bi bi-twitter-x"></i></Link>
-                </div>
-                <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
-                    <p>Axess</p>
-                    <img src={logo} alt="" />
-                    <p>Technology</p>
-                </NavLink>
-                <div className=' order-3 order-lg-3'>
-                    <NavLink to={'/login'} className='gold-btn px-4'>
-                        <span className='d-block'>Login</span>
-                    </NavLink>
-                </div>
-            </div>
+        <div className='d-flex share order-2 order-lg-1 '>
+          <Link><i className="bi bi-instagram"></i></Link>
+          <Link><i className="bi bi-whatsapp"></i></Link>
+          <Link><i className="bi bi-twitter-x"></i></Link>
+        </div>
+        <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
+          <p>Axess</p>
+          <img src={logo} alt="" />
+          <p>Technology</p>
+        </NavLink>
+        <div className=' order-3 order-lg-3'>
+          <NavLink to={'/login'} className='gold-btn px-4'>
+            <span className='d-block'>Login</span>
+          </NavLink>
+        </div>
+      </div>
 
       {/* Main Navigation */}
       <div>
-        <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-
-        
-        
-        
-        
-        
-        
-        z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
+        <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
           <div className="container-fluid">
-                        <div className="d-lg-none d-flex justify-content-between w-100 py-2 align-items-end">
-                            <Link to='/' className="navbar-brand col-1">
-                                <img src={logo} alt="" />
-                            </Link>
-                            <button
-                                className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation" onClick={() => setNav(!nav)}>
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav align-items-center mx-auto mb-2 mb-lg-0  overflow-hidden" data-aos='fade-up'>
-                                <li className="nav-item">
-                                    <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
-                                        Home
-                                    </NavLink>
-                                </li>
-
-                                <li className="nav-item">
-                                    <NavLink to={'/services'} activeclassname="active" className="nav-link" >
-                                        Services
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
-                                        Our works
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink to={"/about"} activeclassname="active" className="nav-link" >
-                                        About
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink to={"/contact"} activeclassname="active" className="nav-link" >
-                                        Contact
-                                    </NavLink>
-                                </li>
-                                {/* <li className="nav-item">
+            <div className="d-lg-none d-flex justify-content-between w-100 py-2 align-items-end">
+              <Link to='/' className="navbar-brand col-1">
+                <img src={logo} alt="" />
+              </Link>
+              <button
+                className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation" onClick={() => setNav(!nav)}>
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav align-items-center mx-auto mb-2 mb-lg-0" data-aos='fade-up'>
+                <li className="nav-item">
+                  <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item position-relative">
+                  <Link  className="nav-link" >
+                    Services
+                  </Link>
+                  <div className="drop">
+                    <div className='nav-item'>
+                      <NavLink to={'/services'} activeclassname="active" className="nav-link" aria-current="page" >All Services</NavLink>
+                    </div>
+                    <div className='nav-item'>
+                      <NavLink to={'/development'} activeclassname="active" className="nav-link" aria-current="page" >Software Development</NavLink>
+                    </div>
+                    <div className='nav-item'>
+                      <NavLink to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" >Software Testing</NavLink>
+                    </div>
+                    <div className='nav-item'>
+                      <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" >Web Development</NavLink>
+                    </div>
+                    <div className='nav-item'>
+                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" >Digital Marketing</NavLink>
+                    </div>
+                  </div>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
+                    Our works
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={"/about"} activeclassname="active" className="nav-link" >
+                    About
+                  </NavLink>
+                </li>
+                
+                <li className="nav-item position-relative">
+                  <Link className="nav-link" >
+                    pricing
+                  </Link>
+                  <div className="drop pricing">
+                    <div className='nav-item'>
+                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" >Software Development Pricing</Link>
+                    </div>
+                    <div className='nav-item'>
+                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" >Software Testing Pricing</Link>
+                    </div>
+                    <div className='nav-item'>
+                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" >Web Development Pricing</Link>
+                    </div>
+                    <div className='nav-item'>
+                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" >Digital Marketing Pricing</Link>
+                    </div>
+                  </div>
+                </li>
+                <li className="nav-item">
+                  <NavLink to={"/contact"} activeclassname="active" className="nav-link" >
+                    Contact
+                  </NavLink>
+                </li>
+                {/* <li className="nav-item">
                                     <NavLink to={"/collaborate"} activeclassname="active" className="nav-link" >
                                         Collaborate with us
                                     </NavLink>
                                 </li> */}
-                            </ul>
-                        </div>
-                    </div>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </div>

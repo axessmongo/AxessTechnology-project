@@ -148,13 +148,13 @@ function Testing() {
       </section>
 
       <section className='bg-green-1 pb-5'>
-        <p className='bg-img-1 mx-auto'>Call to Action</p>
-        <p className='secondary-header mx-auto text-center text-white mb-2'
+        
+        <h5 className=' mx-auto text-center text-white mb-2'
           data-aos="fade-up"
-          data-aos-duration="1000"
+          
           data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? Contact us today for a free consultation!.
-        </p>
-        <button className='gold-btn mx-auto ' data-aos='zoom-out' data-aos-duration='300'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+        </h5>
+        <button className='gold-btn mx-auto '><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
       </section>
 
       <Techsection />
@@ -246,7 +246,7 @@ function Testing() {
       </div>
 
       {/* Price section */}
-      <section className="pricing mt-5">
+      <section className="pricing mt-5" id="pricing-section">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">

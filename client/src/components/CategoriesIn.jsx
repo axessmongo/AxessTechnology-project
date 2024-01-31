@@ -10,6 +10,18 @@ import Banner from './Banner'
 import Footer from './Footer'
 import portfolio1 from '../assets/images/demo/porfolio1.png'
 import portfolio2 from '../assets/images/demo/porfolio2.png'
+import categoriesimg1 from '../assets/images/categories-img1.webp'
+import categoriesimg2 from '../assets/images/categories-img2.webp'
+import categoriesimg3 from '../assets/images/categories-img3.webp'
+import categoriesimg4 from '../assets/images/categories-img4.webp'
+import categoriesimg5 from '../assets/images/categories-img5.webp'
+import categoriesimg6 from '../assets/images/categories-img6.webp'
+
+
+
+
+
+
 
 
 export default function CategoriesIn() {
@@ -387,7 +399,7 @@ export default function CategoriesIn() {
                                                 {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
                             <img src={watchdemo} alt="" className='img-fluid' />
                         </div> */}
-                                                <img src="https://maticz.com/assets/images/home/launchpad_img.webp" alt="" className='img-fluid' />
+                                                <img src={categoriesimg1} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
                                                 <div className='py-3'>
@@ -437,7 +449,7 @@ export default function CategoriesIn() {
                                             </div>
                                             <div className='col-md-6'>
                                                 <div>
-                                                    <img src="https://maticz.com/assets/images/home/tokenomics_img.webp" alt="" className='img-fluid' />
+                                                    <img src={categoriesimg2} alt="" className='img-fluid' />
                                                 </div>
                                             </div>
                                         </div>
@@ -464,7 +476,7 @@ export default function CategoriesIn() {
                                                 {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
                             <img src={watchdemo} alt="" className='img-fluid' />
                         </div> */}
-                                                <img src="https://maticz.com/assets/images/home/launchpad_img.webp" alt="" className='img-fluid' />
+                                                <img src={categoriesimg3} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
                                                 <div className='py-3'>
@@ -514,7 +526,7 @@ export default function CategoriesIn() {
                                             </div>
                                             <div className='col-md-6'>
                                                 <div>
-                                                    <img src="https://maticz.com/assets/images/home/tokenomics_img.webp" alt="" className='img-fluid' />
+                                                    <img src={categoriesimg4} alt="" className='img-fluid' />
                                                 </div>
                                             </div>
                                         </div>
@@ -541,7 +553,7 @@ export default function CategoriesIn() {
                                                 {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
                             <img src={watchdemo} alt="" className='img-fluid' />
                         </div> */}
-                                                <img src="https://maticz.com/assets/images/home/launchpad_img.webp" alt="" className='img-fluid' />
+                                                <img src={categoriesimg5} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
                                                 <div className='py-3'>
@@ -591,7 +603,7 @@ export default function CategoriesIn() {
                                             </div>
                                             <div className='col-md-6'>
                                                 <div>
-                                                    <img src="https://maticz.com/assets/images/home/tokenomics_img.webp" alt="" className='img-fluid' />
+                                                    <img src={categoriesimg6} alt="" className='img-fluid' />
                                                 </div>
                                             </div>
                                         </div>

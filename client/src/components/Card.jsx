@@ -1,4 +1,5 @@
 import React from 'react'
+import cardimg from '../assets/images/card img.webp'
 
 export default function Card() {
     return (
@@ -7,7 +8,7 @@ export default function Card() {
                 <div className="container">
                     <div className="row align-items-center g-5">
                         <div className="col-md-4">
-                            <img src="https://maticz.com/assets/images/home/solution_img.webp" data-aos='flip-left' data-aos-duration='600' alt="" />
+                            <img src={cardimg} data-aos='flip-left' data-aos-duration='600' alt="" />
 
                         </div>
                         <div className="col-md-8 text-white">

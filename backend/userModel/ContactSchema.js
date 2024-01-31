@@ -14,7 +14,10 @@ const contactSchema = new Schema({
     },
     address:{
         type : 'string',
-    }
+    },
+    serviceOption: {
+        type:"string",
+    },
 })
 
 
