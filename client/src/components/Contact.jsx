@@ -97,10 +97,25 @@ function Contact() {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
+       
+        console.log("error", errors,errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+
+        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
+            setErrors({
+                fname: !contact.fname ? 'fname is required.' : '',
+                lname: !contact.lname ? 'lname is required.' : '',
+                email: !contact.email ? 'Email is required.' : '',
+                phone: !contact.phone ? 'Phone is required.' : '',
+                address: !contact.address ? 'Address is required.' : '',
+                // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
+            });
+            return;
+        }
         try {
             const response = await axios.post('http://localhost:5000/api/contact', contact);
 
-            console.log("res",response)
+            console.log("res", response)
             if (response.status === 201) {
                 toast.success('our team will connect with you');
                 alert('success our team connect with you ')
@@ -111,8 +126,16 @@ function Contact() {
                     phone: "",
                     address: "",
                     serviceOption: ""
-            
+
                 })
+                setErrors({
+                    fname: '',
+                    lname: '',
+                    email: '',
+                    phone: '',
+                    address: '',
+                    // serviceOption: '',
+                });
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
@@ -129,34 +152,8 @@ function Contact() {
             toast.error('Unexpected error');
             alert('unexpected error')
         }
-
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
-            setErrors({
-                fname: !contact.fname ? 'fname is required.' : '',
-                lname: !contact.lname ? 'lname is required.' : '',
-                email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'Phone is required.' : '',
-                address: !contact.address ? 'Address is required.' : '',
-                serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
-            });
-            return;
-        }
-        setErrors({
-            fname: '',
-            lname: '',
-            email: '',
-            phone: '',
-            address: '',
-            serviceOption: '',
-        });
-
-
+        
     }
-
-
-
-
     return (
         <div>
             <Navbar />
@@ -270,14 +267,14 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed  " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
-                                Q1: What are Axess Technology's core services?
+                                    Q1: What are Axess Technology's core services?
 
                                 </button>
-                                
+
                             </h2>
                             <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
                                 <div className="accordion-body">
-                                  We are a one-stop shop for all your digital needs, offering software development, software testing, website development, and digital marketing services.
+                                    We are a one-stop shop for all your digital needs, offering software development, software testing, website development, and digital marketing services.
                                 </div>
                             </div>
                         </div>
@@ -285,7 +282,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                 Q2: What sets Axess Technology apart from other digital agencies?
+                                    Q2: What sets Axess Technology apart from other digital agencies?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse">
@@ -298,7 +295,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                 Q3: What is your pricing structure?
+                                    Q3: What is your pricing structure?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse">
@@ -311,7 +308,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                                  Q4:  Do you offer free consultations?
+                                    Q4:  Do you offer free consultations?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse">
@@ -328,8 +325,8 @@ function Contact() {
                     <div className="accordion" id="accordionPanelsStayOpenExample1">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q1:  What types of software do you develop?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q1:  What types of software do you develop?
 
                                 </button>
                             </h2>
@@ -341,8 +338,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                 Q2:   What technologies do you use?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q2:   What technologies do you use?
 
 
                                 </button>
@@ -355,8 +352,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                 Q3:   Do you offer ongoing maintenance and support for software?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q3:   Do you offer ongoing maintenance and support for software?
 
 
                                 </button>
@@ -376,8 +373,8 @@ function Contact() {
                     <div className="accordion" id="accordionPanelsStayOpenExample2">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q1:  What types of software testing do you offer?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q1:  What types of software testing do you offer?
 
 
                                 </button>
@@ -389,8 +386,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q2:  How can your testing services benefit my business?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q2:  How can your testing services benefit my business?
 
 
 
@@ -403,8 +400,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q3:  Do you offer automated testing solutions?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q3:  Do you offer automated testing solutions?
 
 
                                 </button>
@@ -424,8 +421,8 @@ function Contact() {
                     <div className="accordion" id="accordionPanelsStayOpenExample3">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                 Q1:   Do you design and develop custom websites?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q1:   Do you design and develop custom websites?
 
 
                                 </button>
@@ -438,8 +435,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q2:  What platforms do you use for website development?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q2:  What platforms do you use for website development?
 
 
 
@@ -453,8 +450,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q3:  Do you offer website maintenance and security services?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q3:  Do you offer website maintenance and security services?
 
 
 
@@ -475,8 +472,8 @@ function Contact() {
                     <div className="accordion" id="accordionPanelsStayOpenExample3">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                 Q1:   What digital marketing services do you offer?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q1:   What digital marketing services do you offer?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFourteen" className="accordion-collapse collapse ">
@@ -486,8 +483,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q2:  How can your digital marketing services help me reach my target audience?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q2:  How can your digital marketing services help me reach my target audience?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFifteen" className="accordion-collapse collapse ">
@@ -497,8 +494,8 @@ function Contact() {
                         </div>
                         <div className="accordion-item">
                             <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Q3:  Do you track and report on the results of your campaigns?
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Q3:  Do you track and report on the results of your campaigns?
 
                                 </button>
                             </h2>
