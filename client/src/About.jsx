@@ -4,7 +4,9 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 // import AboutImage from '../src/assets/images/About2.jpg';
 import success from '../src/assets/images/about/success.svg'
+// import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from './components/Footer';
+import { Link } from 'react-router-dom';
 
 function About() {
     return (
@@ -79,7 +81,7 @@ function About() {
                 <div >
                     <h5 className='secondary-header text-center py-5'>Let's talk about your digital aspirations. Whether you're a budding startup or a seasoned enterprise, Axess has the tools and vision to help you soar.</h5>
                 </div>
-                <div className='row mt-5'>
+                <div className='row mt-3'>
                     <div className='col-md-6'>
                         <div className='aboutsuccess'>
                             <img src={success} alt="success" />
@@ -91,15 +93,33 @@ function About() {
                         </div>
                         <div className='aboutpoints mt-3'>
                             <ul>
-                                <li>Software Development: We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
-                                <li className='mt-4 '>Software Testing: We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
-                                <li className='mt-4'>Website Development: We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
-                                <li className='mt-4'>Digital Marketing: We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
+                                <li><strong>Software Development:</strong> We craft bespoke applications that empower your business processes, enhance efficiency, and streamline operations.</li>
+                                <li className='mt-4 '><strong>Software Testing:</strong> We leave no stone unturned, ensuring your software is bug-free, reliable, and delivers a seamless user experience.</li>
+                                <li className='mt-4'><strong>Website Development:</strong> We create stunning, user-friendly websites that are the perfect digital canvas for your brand story.</li>
+                                <li className='mt-4'><strong>Digital Marketing:</strong> We orchestrate data-driven campaigns that ignite engagement, drive conversions, and build lasting customer relationships.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <section className='bg-green-1 py-5 mt-5'>
+                <div>
+                    <h3 className='secondary-header mx-auto text-center text-white mb-2' ><q>Eight years of experience, countless success stories, and a burning passion for digital excellence - that's Axess Technology.</q></h3>
+                    <p className='col-md-8 fs-5 mx-auto text-center text-white mt-4'>Ready to weave your digital success story? Let's connect! </p>
+                    <button className='gold-btn mx-auto mt-4' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+                    <p className='col-md-8 fs-5 mx-auto text-center text-white mt-4'>Schedule a free consultation to discuss your unique needs. </p>
+                </div>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <p className='fs-5 mx-auto text-white mt-4'>Follow us on social media for digital insights and inspiration.</p>
+                    </div>
+                    <div className='col-md-6 mt-4'>
+                        <Link><i className="bi bi-instagram"></i></Link>
+                        <Link><i className="bi bi-whatsapp"></i></Link>
+                        <Link><i className="bi bi-facebook"></i></Link>
+                    </div>
+                </div>
+            </section>
             <Footer />
         </div>
     );

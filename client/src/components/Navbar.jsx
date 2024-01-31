@@ -49,9 +49,9 @@ function Navbar() {
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
                 <div className='d-flex share order-2 order-lg-1 '>
-                    <Link><i className="bi bi-instagram"></i></Link>
-                    <Link><i className="bi bi-whatsapp"></i></Link>
-                    <Link><i className="bi bi-twitter-x"></i></Link>
+                    <Link className='abouticon'><i className="bi bi-instagram"></i></Link>
+                    <Link className='abouticon'><i className="bi bi-whatsapp"></i></Link>
+                    <Link className='abouticon'><i className="bi bi-twitter-x"></i></Link>
                 </div>
                 <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
                     <p>Axess</p>
