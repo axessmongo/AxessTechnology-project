@@ -15,7 +15,7 @@ function Pricing() {
 		<>
 			<Navbar />
 			<Banner h1={'Pricing Plans'} h2={'Get started with 900+ free, customizable templates, a smart drag and drop editor, tools to boost your online presence and more.'} h3={'Grab Our New Offers'} />
-			<section className='pricing mt-5'>
+			<section className='pricing mt-5' id="pricing-section">
 				<h1 className='primary-header text-center'>Unlock Our New Features</h1>
 				<div className="container pricing-table">
 					<div className="pricing-card ">
