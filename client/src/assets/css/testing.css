@@ -1,4 +1,4 @@
-.client.inner {
+/* .client.inner {
     display: flex;
     justify-content: center;
     margin: 0 25px;
@@ -104,7 +104,7 @@
 
 .rating i {
     color: #FFAB1A;
-}
+} */
 
 .test-order{
     position: relative;
