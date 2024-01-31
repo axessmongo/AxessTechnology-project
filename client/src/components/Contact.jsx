@@ -5,35 +5,141 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
+import { toast, ToastContainer } from 'react-toastify';
+
 
 function Contact() {
+    const [errors, setErrors] = useState({
+        fname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        address: "",
+        serviceOption: "",
+
+
+    });
     const [contact, setContact] = useState({
         fname: "",
         lname: "",
         email: "",
         phone: "",
         address: "",
-        service: ""
+        serviceOption: ""
+
     });
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setContact((prevContact) => ({
-            ...prevContact,
+    const handleChange = (e) => {
+        let { name, value } = e.target;
+        if (name === 'phone') {
+            value = value.replace(/\D/g, '').slice(0, 10);
+        }
+        if (name === 'fname') {
+            value = value.replace(/[^a-zA-Z\s]/g, '');
+        }
+        if (name === 'lname') {
+            value = value.replace(/[^a-zA-Z\s]/g, '');
+        }
+        setContact({
+            ...contact,
             [name]: value,
-        }));
+        });
+        validateField(name, value);
     };
+    console.log(contact)
+    const validateField = (name, value) => {
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        axios.post('http://localhost:5000/api/contact', contact)
-            .then((res) => {
-                console.log(res.data.data);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        switch (name) {
+            case 'fname':
+                setErrors({
+                    ...errors,
+                    fname: value.length === 0 ? 'FName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                });
+                break;
+
+
+            case 'lname':
+                setErrors({
+                    ...errors,
+                    lname: value.length === 0 ? 'LName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                });
+                break;
+            case 'email':
+                setErrors({
+                    ...errors,
+                    email:
+                        value.length === 0 ? 'Email is required' :
+                            !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(value)
+                                ? 'Invalid email'
+                                : '',
+                });
+                break;
+
+            case 'phone':
+                setErrors({
+                    ...errors,
+                    phone:
+                        value.length === 0
+                            ? 'Phone is required'
+                            : value.length !== 10 || !/^[6-9]\d+$/.test(value) ? 'Invalid phone' : '',
+                });
+                break;
+            case 'serviceOption':
+                setErrors({
+                    ...errors,
+                    serviceOption: value.length === 0 ? 'serviceOption is required' : /[1]/.test(value) ? 'Invalid serviceOption' : '',
+                });
+                break;
+            default:
+                break;
+        }
     };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:5000/api/contact', contact);
+
+            if (response.status === 200) {
+                toast.success('our team will connect with you');
+
+            } else if (response.status === 401) {
+                toast.error('Email or Password incorrect');
+            } else if (response.status === 400) {
+                toast.info('An email has been sent to your account. Please verify.');
+            } else {
+                console.log('Unexpected response:', response);
+            }
+        } catch (error) {
+            console.error('Error during login:', error.message);
+            toast.error('Unexpected error');
+        }
+
+        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
+            setErrors({
+                fname: !contact.fname ? 'fname is required.' : '',
+                lname: !contact.lname ? 'lname is required.' : '',
+                email: !contact.email ? 'Email is required.' : '',
+                phone: !contact.phone ? 'Phone is required.' : '',
+                address: !contact.address ? 'Address is required.' : '',
+                serviceOption: !contact.serviceOption ? 'serviceoption is required' :''
+            });
+            return;
+        }
+        setErrors({
+            fname: '',
+            lname: '',
+            email: '',
+            phone: '',
+            address: '',
+            serviceOption:'',
+        });
+
+
+    }
+
+
+
 
     return (
         <div>
@@ -49,19 +155,29 @@ function Contact() {
 
                         <div className="row container text-capitalize">
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Firstname' />
+                                <input type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Firstname * ' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.fname}</div>
+
                             </div>
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Lastname' />
+                                <input type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Lastname *' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.lname}</div>
+
                             </div>
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='E-mail' />
+                                <input type="text" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='E-mail *' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
+
                             </div>
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone' />
+                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
+
                             </div>
                             <div className="col-12 mb-4">
-                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address' />
+                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address *' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.address}</div>
+
                             </div>
                         </div>
                         <div className=' container mb-3 mt-3'>
@@ -69,7 +185,7 @@ function Contact() {
                             <div className="row">
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_1" value={contact.service} type="radio" name='service-option' />
+                                        <input id="checkbox_animated_1" onChange={handleChange} value={"Software Development"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_1">
                                             <span className="check"></span>
                                             <span className="box"></span>
@@ -79,7 +195,7 @@ function Contact() {
                                 </div>
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_2" value={contact.service} type="radio" name='service-option' />
+                                        <input id="checkbox_animated_2" onChange={handleChange} value={"Software Testing"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_2">
                                             <span className="check"></span>
                                             <span className="box"></span>
@@ -89,7 +205,7 @@ function Contact() {
                                 </div>
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_3" value={contact.service} type="radio" name='service-option' />
+                                        <input id="checkbox_animated_3" onChange={handleChange} value={"Website Development"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_3">
                                             <span className="check"></span>
                                             <span className="box"></span>
@@ -99,7 +215,7 @@ function Contact() {
                                 </div>
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_4" value={contact.service} type="radio" name='service-option' />
+                                        <input id="checkbox_animated_4" onChange={handleChange} value={"Digital Marketing"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_4">
                                             <span className="check"></span>
                                             <span className="box"></span>
@@ -109,11 +225,13 @@ function Contact() {
                                 </div>
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_5" value={contact.service} type="radio" name='service-option' />
+                                        <input id="checkbox_animated_5" onChange={handleChange} value={"Others"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_5">
                                             <span className="check"></span>
                                             <span className="box"></span>
                                             <p className='secondary-text'>Others</p>
+                                            <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.others}</div>
+
                                         </label>
                                     </div>
                                 </div>
@@ -381,5 +499,6 @@ function Contact() {
         </div>
     );
 }
+
 
 export default Contact;
