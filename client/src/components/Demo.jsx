@@ -7,6 +7,9 @@ import cateringdemo from '../assets/images/demo/catering.png'
 import gitfdemo from '../assets/images/demo/gift.png'
 import portfolio1 from '../assets/images/demo/porfolio1.png'
 import portfolio2 from '../assets/images/demo/porfolio2.png'
+import Categories from './Categories'
+import categoriesimg1 from '../assets/images/categories-img1.webp'
+import categoriesimg2 from '../assets/images/categories-img2.webp'
 
 
 function Demo() {
@@ -24,7 +27,7 @@ function Demo() {
                         {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
                             <img src={watchdemo} alt="" className='img-fluid' />
                         </div> */}
-                        <img src="https://maticz.com/assets/images/home/launchpad_img.webp" alt="" className='img-fluid' />
+                        <img src={categoriesimg1} alt="" className='img-fluid' />
                     </div>
                     <div className='col-md-6'>
                         <div className='py-3'>
@@ -74,7 +77,7 @@ function Demo() {
                 </div>
                 <div className='col-md-6'>
                     <div>
-                        <img src="https://maticz.com/assets/images/home/tokenomics_img.webp" alt="" className='img-fluid' />
+                        <img src={categoriesimg2} alt="" className='img-fluid' />
                     </div>
                 </div>
             </div>
