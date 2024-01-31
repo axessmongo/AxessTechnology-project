@@ -1,13 +1,14 @@
 const contactSchema = require("../userModel/ContactSchema.js");
 
 const Contactpostmethod = async (req, res, next) => {
-  const { fname, lname, email, address } = req.body;
+  const { fname, lname, email, address, serviceOption} = req.body;
   try {
     const contact = await contactSchema.create({
       fname,
       email,
       lname,
       address,
+      serviceOption
     });
 
     res.status(201).json({
