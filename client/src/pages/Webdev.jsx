@@ -465,7 +465,7 @@ function Development() {
       </section>
 
       <Techsection />
-      <section className="pricing mt-5">
+      <section className="pricing mt-5" id="pricing-section">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
