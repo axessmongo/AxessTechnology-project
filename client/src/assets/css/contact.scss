@@ -112,17 +112,6 @@
     .accordion-content {
       padding: 10px;
     }
-
-    .accordion-button{
-      background-color: #05463c;
-      color: #f9f9f9;
-    }
-
-    .accordion-button:not(.collapsed){
-      background-color: #05463c;
-      color: #f9f9f9;
-      box-shadow: none;
-    }
   
   }
   @mixin checkbox-animated-inline {
@@ -136,6 +125,4 @@
   .checkbox-animated-inline {
     @include checkbox-animated-inline;
   }
-  .faq .accordion-button:focus{
-    border: var(--axess-gold-3);
-  }
+  

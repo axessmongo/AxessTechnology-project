@@ -70,7 +70,7 @@ function Development() {
           </div>
           <div className="row  mt-3">
             <div className="col-lg-5 col-md-12 align-items-center d-flex  ">
-              <div className="" data-aos="zoom-in" data-aos-duration="400">
+              <div className="" data-aos="zoom-in">
                 <img src={Software} className=" img-fluid w-100" alt="" />
               </div>
             </div>
@@ -280,7 +280,7 @@ function Development() {
             >
              
             
-            <div className="boxshadow ">
+            <div className="boxshadow " data-aos="fade-right" data-aos-duration="600" >
               <div className=" p-4">
                 <ul>
                   <li
@@ -336,7 +336,7 @@ function Development() {
             <div
               className=""
               data-aos="fade-down-left"
-              data-aos-duration="800"
+              data-aos-duration="600"
             >
               <img src={Process} className="img-fluid" alt="" />
             </div>

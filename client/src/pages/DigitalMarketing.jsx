@@ -675,7 +675,7 @@ export default function DigitalMarketing() {
 
 
                 <section className='bg-green-1 py-5'>
-                    <p className='bg-img-1 mx-auto '>Call to Action</p>
+                   
                     <h3 className='secondary-header mx-auto text-center text-white mb-2' > Request a custom quote for your digital marketing needs</h3>
                     <p className='col-md-8 primary-text mx-auto text-center text-white mb-4'>Ready to ignite your digital presence and watch your brand reach new heights? Let Axess Technology be your guide.
                         Contact us today for a free consultation and let's start mapping out your digital dominance strategy! </p>
