@@ -53,13 +53,13 @@ function Development() {
             <h1 className="text-center bg-img-1 ">Our Expertise</h1>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-8">
+            <div className="col-md-10">
               <div
                 className="pbg1  p-3 mt-3 rounded-3 "
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               >
-                <p className="text-center p-2">
+                <p className="text-center fs-5 p-2">
                   We are a team of experienced and passionate software
                   developers who specialize in crafting cutting-edge solutions
                   tailored to your specific needs. We have a deep understanding
@@ -70,7 +70,7 @@ function Development() {
           </div>
           <div className="row  mt-3">
             <div className="col-lg-5 col-md-12 align-items-center d-flex  ">
-              <div className="" data-aos="zoom-in" data-aos-duration="1000">
+              <div className="" data-aos="zoom-in" data-aos-duration="400">
                 <img src={Software} className=" img-fluid w-100" alt="" />
               </div>
             </div>
@@ -263,6 +263,10 @@ function Development() {
           <h1 className="text-center bg-img-1">Our Process</h1>
         </div>
         <div className="row justify-content-evenly">
+        <p className="text-center p-2">
+                We believe in a collaborative and agile approach to software
+                development. Our process involves:
+              </p>
           <div
             className="col-lg-6  col-md-12"
             data-aos="zoom-in"
@@ -274,11 +278,8 @@ function Development() {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <p className="text-center p-2">
-                We believe in a collaborative and agile approach to software
-                development. Our process involves:
-              </p>
-            </div>
+             
+            
             <div className="boxshadow ">
               <div className=" p-4">
                 <ul>
@@ -295,7 +296,7 @@ function Development() {
                   </li>
                   <li
                     data-aos="fade-right"
-                    data-aos-duration="500"
+                    data-aos-duration="400"
                     data-aos-easing="ease-in-back"
                   >
                     <p>
@@ -306,7 +307,7 @@ function Development() {
                   </li>
                   <li
                     data-aos="fade-right"
-                    data-aos-duration="600"
+                    data-aos-duration="700"
                     data-aos-easing="ease-in-back"
                   >
                     <p>
@@ -329,12 +330,13 @@ function Development() {
                 </ul>
               </div>
             </div>
+            </div>
           </div>
           <div className="col-lg-5  col-md-12 align-items-center d-flex">
             <div
-              className="my-3"
+              className=""
               data-aos="fade-down-left"
-              data-aos-duration="1000"
+              data-aos-duration="800"
             >
               <img src={Process} className="img-fluid" alt="" />
             </div>

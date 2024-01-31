@@ -23,7 +23,7 @@ function Development() {
     <div className="webdev">
       <Navbar />
       <Banner
-        h1="Axess Web Development"
+        h1="Web Development"
         h2=" Crafting Websites that Captivate and Convert        "
         h3="
         "
