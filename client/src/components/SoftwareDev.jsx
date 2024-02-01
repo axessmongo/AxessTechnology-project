@@ -1,6 +1,8 @@
 import React from 'react'
 import bubble from '../assets/images/bubble.webp'
 import success from '../assets/images/success.png'
+import kvrprofile from '../assets/images/kvr profile.png'
+
 import Banner from './Banner'
 export default function SoftwareDev() {
     return (
@@ -102,7 +104,7 @@ export default function SoftwareDev() {
                                             <div className="col-md-5">
                                                 <div className="profile">
                                                     <div className="img-area">
-                                                        <img src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png" alt="" />
+                                                        <img src={kvrprofile} alt="" />
                                                     </div>
                                                     <div className="bio">
                                                         <h2> Dave Wood</h2>
@@ -135,7 +137,7 @@ export default function SoftwareDev() {
                                             <div className="col-md-5">
                                                 <div className="profile">
                                                     <div className="img-area">
-                                                        <img src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png" alt="" />
+                                                        <img src={kvrprofile}alt="" />
                                                     </div>
                                                     <div className="bio">
                                                         <h2> martin</h2>
@@ -167,7 +169,7 @@ export default function SoftwareDev() {
                                             <div className="col-md-5">
                                                 <div className="profile">
                                                     <div className="img-area">
-                                                        <img src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png" alt="" />
+                                                        <img src={kvrprofile} alt="" />
                                                     </div>
                                                     <div className="bio">
                                                         <h2> sara</h2>

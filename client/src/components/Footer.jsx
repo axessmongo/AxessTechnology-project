@@ -43,11 +43,12 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Telegram Us : @axesstechnology.in</p>
-                                    <p>WhatsApp : +91 93845 xxxxx</p>
+                                    <p>WhatsApp : +91 7358104213  </p>
+                                    <p>Social: Instagram: axess_technology</p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Phone : 8825781xxxx</p>
-                                    <p>Email : salesxxxx@.com</p>
+                                    <p>Phone : +91 90425 77261</p>
+                                    <p>Email : info@axesstechnology.in</p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
@@ -83,11 +84,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
+                                    <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
+                                    <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
+                                    <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
+                                    <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
+                                    <li><Link to="/contact" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,11 +96,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li>
+                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white'>Web development</Link></li>
+                                    <li><Link to="/development" className='primary-text text-decoration-none text-white'>software development</Link></li>
+                                    <li><Link to="/testing" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
+                                    <li><Link to="digitalmarketing" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
+                                    {/* <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li> */}
                                 </ul>
                             </div>
                         </div>
@@ -122,10 +123,10 @@ function Footer() {
                     <div className="row">
                         <div className="row text-center text-md-start">
                             <div className="col-md-6" data-aos = 'zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 87998</span></p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 xxxxx</span></p>
                             </div>
                             <div className="col-md-6" data-aos = 'zoom-in-left' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
+                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 xxxxx</span></p>
                             </div>
                         </div>
                     </div>

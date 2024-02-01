@@ -14,6 +14,8 @@ import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss";
+import kvrprofile from '../assets/images/kvr profile.png'
+
 
 
 function Ai() {
@@ -510,7 +512,7 @@ function Ai() {
                       <div className="profile">
                         <div className="img-area">
                           <img
-                            src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                            src={kvrprofile}
                             alt=""
                           />
                         </div>
@@ -551,7 +553,7 @@ function Ai() {
                       <div className="profile">
                         <div className="img-area">
                           <img
-                            src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                           src={kvrprofile}
                             alt=""
                           />
                         </div>
@@ -591,7 +593,7 @@ function Ai() {
                       <div className="profile">
                         <div className="img-area">
                           <img
-                            src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                            src={kvrprofile}
                             alt=""
                           />
                         </div>

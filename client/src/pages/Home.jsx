@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Development from './Development';
+import bannerimg from '../assets/images/banner_img_home.webp'
 export default function Home() {
     let nav = useNavigate()
 
@@ -36,13 +37,13 @@ export default function Home() {
                                 <img src={pulse} className='pulse' alt="pulse" />
                                 <Svg1/>
                                 <div className="hero-banner-content">
-                                    <h1 className='primary-header mb-5' data-aos='fade-up' data-aos-duration='500'>Modernizing And Transforming Businesses Digitally To Move Forward</h1>
-                                    <p className='primary-text mb-5' data-aos='fade-up' data-aos-duration='600'>Embrace our visionary software development services to navigate the ever-changing business landscape. We help you stay ahead of industry trends to secure your market dominance and achieve unrivaled success.</p>
+                                    <h1 className='mb-5' data-aos='fade-up' data-aos-duration='500'>Forget fragmented services. Axess builds your digital ecosystem - seamless, powerful, designed to win.</h1>
+                                    <p className='primary-text mb-5' data-aos='fade-up' data-aos-duration='600'>Software crafted to empower. Websites that captivate and convert. Marketing that ignites engagement. Testing that ensures flawless experiences.</p>
                                     <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                             <div className="col-md-10 mx-auto col-lg-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
-                                <img src="https://maticz.com/assets/images/home/banner_img_home.webp"className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                                <img src={bannerimg}className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
                             </div>
                         </div>
                     </div>

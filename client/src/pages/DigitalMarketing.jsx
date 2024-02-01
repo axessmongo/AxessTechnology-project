@@ -36,11 +36,11 @@ export default function DigitalMarketing() {
                     Digital Marketing Toolbox
                   </h6>
 
-                  <p className="text-center m-4 fs-4">
+                  <p className="text-center primary-text m-4 fs-4">
                     {" "}
                     Poven Efffective Tatics
                   </p>
-                  <p className="secondary-text mx-auto text-center m-5">
+                  <p className="primary-text mx-auto text-center m-5">
                     In today's digital age, a captivating online presence is no
                     longer a luxury, it's a necessity. At Axess Technology, we
                     believe in the power of digital marketing to fuel brand
@@ -54,7 +54,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>A dazzling website</h2>
-                          <p>
+                          <p className="primary-text">
                             That showcases your brand story and engages your
                             audience like never before..
                           </p>
@@ -65,7 +65,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>SEO strategies</h2>
-                          <p>
+                          <p className="primary-text">
                             that propel your website to the top of search engine
                             results, putting you directly in front of your ideal
                             customers.
@@ -77,7 +77,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Targeted social media</h2>
-                          <p>
+                          <p className="primary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -88,7 +88,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Email Marketing</h2>
-                          <p>
+                          <p className="primary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -99,7 +99,7 @@ export default function DigitalMarketing() {
                   <p
                     data-aos="fade-up"
                     data-aos-duration="600"
-                    className="secondary-text mx-auto text-center m-5 "
+                    className="primary-text mx-auto text-center m-5 "
                   >
                     That's the Axess Digital Marketing difference. We don't just
                     tick boxes; we craft data-driven strategies that deliver
@@ -146,7 +146,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Web Design and Development</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We create stunning, user-friendly websites that are
                         optimized for conversions and search engines.
                       </p>
@@ -159,7 +159,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Content Marketing</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We craft compelling blog posts, articles, and social
                         media content that resonates with your target audience
                         and positions you as a thought leader.
@@ -173,7 +173,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Social Media Marketing</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We manage your social media channels with engaging
                         content, strategic advertising, and community building
                         strategies.
@@ -187,7 +187,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Search Engine Optimization</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We leverage the power of SEO to ensure your website
                         ranks high in search results, putting you front and
                         center for potential customers.
@@ -201,7 +201,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Paid Advertising</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         {" "}
                         We design and execute targeted pay-per-click (PPC)
                         campaigns to drive high-quality traffic to your website
@@ -216,7 +216,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Email Marketing</h6>
                      <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         {" "}
                         We create personalized email campaigns that nurture
                         leads, boost engagement, and drive conversions.
@@ -226,7 +226,7 @@ export default function DigitalMarketing() {
                 </div>
               </div>
             </div>
-            <p className="secondary-text mx-auto text-center m-5">
+            <p className="primary-text mx-auto text-center m-5">
               But we don't stop there. We believe in constant optimization and
               data-driven decision-making. We track your campaign performance in
               real-time, analyze the results, and continuously refine our
@@ -234,6 +234,172 @@ export default function DigitalMarketing() {
             </p>
           </section>
         </div>
+
+         {/* Price section */}
+      <section className="pricing mt-5" id="pricing-section">
+        <h1 className="primary-header text-center">Unlock Our New Features</h1>
+        <div className="container pricing-table">
+          <div className="pricing-card ">
+            <h3 className="pricing-card-header">Basic</h3>
+            <div className="price text-center">
+              <sup>$</sup>15<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>Single 1 </strong> Page Website
+              </li>
+              <li>
+                <strong>SSL</strong> Certificate
+              </li>
+              <li>
+                <strong>WhatsApp </strong> Chat
+              </li>
+              <li>
+                <strong>Social </strong> Media Integration
+              </li>
+              <li>
+                <strong>Static </strong> Website
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+            <a href="#" className="order-btn">
+              Order Now
+            </a>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Pro</h3>
+            <div className="price text-center">
+              <sup>$</sup>30<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+            <a href="#" className="order-btn">
+              Order Now
+            </a>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Premium</h3>
+            <div className="price text-center">
+              <sup>$</sup>50<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+            <a href="#" className="order-btn">
+              Order Now
+            </a>
+          </div>
+
+          <div className="pricing-card">
+            <h3 className="pricing-card-header">Elite</h3>
+            <div className="price text-center">
+              <sup>$</sup>80<span>/MO</span>
+            </div>
+            <ul>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
+            </ul>
+            <a href="#" className="order-btn">
+              Order Now
+            </a>
+          </div>
+          {/* <div className='Pay'>
+						<h3>ACCEPTED PAYMENT METHODS</h3>
+
+					</div> */}
+        </div>
+      </section>
 
         <div>
         <section className='nav-banner testimonal' id="testimonial">
@@ -271,8 +437,8 @@ export default function DigitalMarketing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3' >
-                              <h4 className='heading9 fw-bold fs-5'>The Delighted</h4>
-                              <p className='heading5'>Developer</p>
+                              <h4 className='heading9 fw-bold fs-5'>Rajeev Malhotra</h4>
+                              <p className='heading5'>CEO</p>
                             </div>
                           </div>
                         </div>
@@ -281,7 +447,7 @@ export default function DigitalMarketing() {
                             <div className="card-description " >
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Delighted Developer</h3>
+                                  <h3 className="title heading9">Technomind Solutions</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -366,7 +532,7 @@ export default function DigitalMarketing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">I used to dread deployment day, fearing hidden bugs waiting to ambush my users. But since partnering with [Your Company Name], my worries have vanished! Their thorough testing ensures my software launches flawlessly, leaving me free to focus on innovation. Thanks to them, I finally have the peace of mind to code with confidence.{" "}</p>
+                              <p className="description heading5">Search engine heroics! Thanks to Axess' SEO expertise, our website now ranks at the top for relevant keywords. Organic traffic has skyrocketed, and leads from our website have tripled. They truly understand the magic of search engines!{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -380,8 +546,8 @@ export default function DigitalMarketing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Satisfied</h4>
-                              <p className='heading5'>CEO</p>
+                              <h4 className='heading9 fw-bold fs-5'>Anjali Desai</h4>
+                              <p className='heading5'>Owner</p>
                             </div>
                           </div>
                         </div>
@@ -390,7 +556,7 @@ export default function DigitalMarketing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Satisfied CEO</h3>
+                                  <h3 className="title heading9">Organic Beauty Essentials</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -475,7 +641,7 @@ export default function DigitalMarketing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success." - Jane Doe, CEO.{" "}</p>
+                              <p className="description heading5">Email marketing magic! Our email open rates used to be dismal. Axess' personalized email campaigns transformed that. Now, our subscribers are engaged, clicking through with enthusiasm. We've even seen a significant increase in repeat purchases thanks to targeted email nurture sequences{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -489,8 +655,8 @@ export default function DigitalMarketing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Happy</h4>
-                              <p className='heading5'>User</p>
+                              <h4 className='heading9 fw-bold fs-5'> Vikram Singh</h4>
+                              <p className='heading5'>Head of Growth</p>
                             </div>
                           </div>
                         </div>
@@ -499,7 +665,7 @@ export default function DigitalMarketing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Happy User</h3>
+                                  <h3 className="title heading9"> EdTech Startup</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -584,7 +750,7 @@ export default function DigitalMarketing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">As a user, I'm tired of buggy software that crashes and frustrates. But ever since my favorite app started using [Your Company Name] for testing, it's been a smooth ride! No more unexpected glitches or confusing interfaces. Everything works seamlessly and intuitively, making my life easier and more enjoyable. Thank you for prioritizing user experience and setting the bar high for software quality!{" "}</p>
+                              <p className="description heading5">Data-driven decisions, real results! Axess doesn't just throw darts in the dark. They strategically analyze data to make informed decisions about our online marketing campaigns. This data-driven approach has led to a 20% increase in our conversion rate and a 15% reduction in our advertising costs. They're true marketing wizards!{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -598,8 +764,8 @@ export default function DigitalMarketing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Relieved</h4>
-                              <p className='heading5'>Project Manager</p>
+                              <h4 className='heading9 fw-bold fs-5'>Meenakshi Rao</h4>
+                              <p className='heading5'>Marketing Director</p>
                             </div>
                           </div>
                         </div>
@@ -608,7 +774,7 @@ export default function DigitalMarketing() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Relieved Project Manager</h3>
+                                  <h3 className="title heading9">Healthcare Company</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -693,7 +859,7 @@ export default function DigitalMarketing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Managing a large software project can be a pressure cooker. But with [Your Company Name] by my side, I can finally sleep soundly at night. Their expertise and dedication helped us meet every deadline while delivering a defect-free product. Their clear communication and proactive approach kept the project on track and everyone informed. They're the dream team for anyone looking to avoid development headaches and ensure a successful launch!{" "}</p>
+                              <p className="description heading5">Holistic approach, exceptional results! Axess doesn't just focus on one aspect of digital marketing. They take a holistic approach, integrating different strategies seamlessly. This has resulted in a cohesive online presence that attracts, engages, and converts our target audience effectively. We're incredibly happy with their comprehensive approach!{" "}</p>
                             </div>
                           </div>
                         </div>
