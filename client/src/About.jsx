@@ -19,7 +19,7 @@ function About() {
       <div className="">
         <div className="row mt-5 justify-content-end">
           <div className="col-md-8 mt-5">
-            <div className="p-5 mx-5">
+            <div className="p-5 mx-5" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
               <p className="mt-3 ceo-content">
                 Founded by a passionate entrepreneur, Mr. Venkteshan, Axess
@@ -43,7 +43,7 @@ function About() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="aboutusimg position-relative">
+            <div className="aboutusimg position-relative"  data-aos="fade-left" data-aos-duration="1000">
               <div class="blur-img">
                 <img
                   src={
@@ -110,19 +110,19 @@ function About() {
            </div> */}
       <div className="container mt-5">
         <div>
-          <h5 className="secondary-header text-center py-5">
+          <h5 className="secondary-header text-center py-5" data-aos="fade-up" data-aos-duration="1000">
             Let's talk about your digital aspirations. Whether you're a budding
             startup or a seasoned enterprise, Axess has the tools and vision to
             help you soar.
           </h5>
         </div>
         <div className="row mt-3">
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-right" data-aos-duration="1000">
             <div className="aboutsuccess">
               <img src={success} alt="success" />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-left" data-aos-duration="1000">
             <div className="mt-3">
               <h6 className="secondary-header">
                 Here's a glimpse into our magic:
@@ -156,7 +156,7 @@ function About() {
         </div>
       </div>
       <section className="bg-green-1 py-5 mt-5">
-        <div>
+        <div  data-aos="fade-up" data-aos-duration="1000">
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
               Eight years of experience, countless success stories, and a
@@ -178,21 +178,21 @@ function About() {
             Schedule a free consultation to discuss your unique needs.{" "}
           </p>
         </div>
-        <div className="row">
+        <div className="row mt-5 bg-white"  data-aos="fade-up" data-aos-duration="1000">
           <div className="col-md-6 text-center">
-            <p className="fs-5 mx-auto text-white mt-4">
+            <p className="fs-5 mx-auto text-black mt-4">
               Follow us on social media for digital insights and inspiration.
             </p>
           </div>
           <div className="col-md-6 mt-4 justify-content-center linkhight d-flex">
             <Link>
-              <i className="bi bi-facebook text-primary  m-3"></i>
+              <i className="bi bi-facebook text-primary fs-4  m-4"></i>
             </Link>
             <Link>
-              <i className="bi bi-instagram text-danger m-3"></i>
+              <i className="bi bi-instagram text-danger fs-4 m-4"></i>
             </Link>
             <Link>
-              <i className="bi bi-whatsapp text-success m-3"></i>
+              <i className="bi bi-whatsapp text-success fs-4 m-4"></i>
             </Link>
           </div>
         </div>
