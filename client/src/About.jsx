@@ -179,20 +179,20 @@ function About() {
           </p>
         </div>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
             <p className="fs-5 mx-auto text-white mt-4">
               Follow us on social media for digital insights and inspiration.
             </p>
           </div>
-          <div className="col-md-6 mt-4 justify-content-end d-flex">
+          <div className="col-md-6 mt-4 justify-content-center linkhight d-flex">
             <Link>
-              <i className="bi bi-facebook m-3"></i>
+              <i className="bi bi-facebook text-primary  m-3"></i>
             </Link>
             <Link>
-              <i className="bi bi-instagram  m-3"></i>
+              <i className="bi bi-instagram text-danger m-3"></i>
             </Link>
             <Link>
-              <i className="bi bi-whatsapp m-3"></i>
+              <i className="bi bi-whatsapp text-success m-3"></i>
             </Link>
           </div>
         </div>
