@@ -28,6 +28,8 @@ import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 
+
+
 function Routing() {
 
 
@@ -60,6 +62,7 @@ function Routing() {
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
+                   
                 </Routes>
             </BrowserRouter>
         </div>

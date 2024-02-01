@@ -1,3 +1,16 @@
+import React from 'react'
+import fintech from '../assets/images/fintech.webp'
+import healthcare from '../assets/images/healthcare.webp'
+import education from '../assets/images/Education.webp'
+import insurance from '../assets/images/life-insurance.webp'
+import restaurant from '../assets/images/restaurant.webp'
+import shopping from '../assets/images/shopping.webp'
+import manufacture from '../assets/images/manufacture.webp'
+import supplychain from '../assets/images/supply-chain.webp'
+import logistics from '../assets/images/logistics.webp'
+import entertaining from '../assets/images/entertaining.webp'
+import realestate from '../assets/images/real-estate.webp'
+import socialmedia from '../assets/images/social-media.webp'
 
 
 export default function Industries() {
@@ -15,73 +28,73 @@ export default function Industries() {
                             <div className="row gy-3">
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out'>
-                                        <img src="https://maticz.com/assets/images/home/fintech.webp" className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" />
+                                        <img src={fintech} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" />
                                         <p className='secondary-text mb-0'>Fintech</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/healthcare.webp" className='mb-2' alt="https://maticz.com/assets/images/home/healthcare.webp" />
+                                        <img src={healthcare} className='mb-2' alt="https://maticz.com/assets/images/home/healthcare.webp" />
                                         <p className='secondary-text mb-0'>HealthCare</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/graduation-cap.webp" className='mb-2' alt="https://maticz.com/assets/images/home/graduation-cap.webp" />
+                                        <img src={education} className='mb-2' alt="https://maticz.com/assets/images/home/graduation-cap.webp" />
                                         <p className='secondary-text mb-0'>Education</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/life-insurance.webp" className='mb-2' alt="https://maticz.com/assets/images/home/life-insurance.webp" />
+                                        <img src={insurance} className='mb-2' alt="https://maticz.com/assets/images/home/life-insurance.webp" />
                                         <p className='secondary-text mb-0'>Insurance</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/restaurant.webp" className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" />
+                                        <img src={restaurant} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" />
                                         <p className='secondary-text mb-0'>Resturant</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/shopping.webp" className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" />
+                                        <img src={shopping} className='mb-2' alt="https://maticz.com/assets/images/home/shopping.webp" />
                                         <p className='secondary-text mb-0'>Shopping</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/manufacture.webp" className='mb-2' alt="https://maticz.com/assets/images/home/manufacture.webp" />
+                                        <img src={manufacture} className='mb-2' alt="https://maticz.com/assets/images/home/manufacture.webp" />
                                         <p className='secondary-text mb-0'>Manufacturing</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/supply-chain.webp" className='mb-2' alt="https://maticz.com/assets/images/home/supply-chain.webp" />
+                                        <img src={supplychain} className='mb-2' alt="https://maticz.com/assets/images/home/supply-chain.webp" />
                                         <p className='secondary-text mb-0'>Supply Chain</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/logistics.webp" className='mb-2' alt="https://maticz.com/assets/images/home/logistics.webp" />
+                                        <img src={logistics} className='mb-2' alt="https://maticz.com/assets/images/home/logistics.webp" />
                                         <p className='secondary-text mb-0'>Logistics</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/entertaining.webp" className='mb-2' alt="https://maticz.com/assets/images/home/entertaining.webp" />
+                                        <img src={entertaining} className='mb-2' alt="https://maticz.com/assets/images/home/entertaining.webp" />
                                         <p className='secondary-text mb-0'>Entertainment</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/real-estate.webp" className='mb-2' alt="https://maticz.com/assets/images/home/real-estate.webp" />
+                                        <img src={realestate} className='mb-2' alt="https://maticz.com/assets/images/home/real-estate.webp" />
                                         <p className='secondary-text mb-0'>Real Estate</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
-                                        <img src="https://maticz.com/assets/images/home/social-media.webp" className='mb-2' alt="https://maticz.com/assets/images/home/social-media.webp" />
+                                        <img src={socialmedia} className='mb-2' alt="https://maticz.com/assets/images/home/social-media.webp" />
                                         <p className='secondary-text mb-0'>Socaial Networking</p>
                                     </div>
                                 </div>
