@@ -16,6 +16,7 @@ import categoriesimg3 from '../assets/images/categories-img3.webp'
 import categoriesimg4 from '../assets/images/categories-img4.webp'
 import categoriesimg5 from '../assets/images/categories-img5.webp'
 import categoriesimg6 from '../assets/images/categories-img6.webp'
+import { Link } from 'react-router-dom'
 
 
 
@@ -182,8 +183,12 @@ export default function CategoriesIn() {
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                     <div className='pt-2'>
-                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
                                                     </div>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -209,8 +214,12 @@ export default function CategoriesIn() {
                                                     <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-
-                                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
 
                                                 </div>
                                             </div>
@@ -258,7 +267,10 @@ export default function CategoriesIn() {
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                     <div className='pt-2'>
-                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -286,8 +298,12 @@ export default function CategoriesIn() {
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
 
-                                                    <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -316,9 +332,6 @@ export default function CategoriesIn() {
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                {/* <div>
-                            <img src="https://maticz.com/assets/images/home/nft_img.webp" alt="" className='img-fluid' />
-                        </div> */}
 
                                                 <div className=' p-1' style={{ backgroundColor: ' #05463c' }}>
                                                     <img src={photodemo} alt="" className='img-fluid' />
@@ -337,7 +350,10 @@ export default function CategoriesIn() {
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                         <div className='pt-2'>
-                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                            <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -364,9 +380,12 @@ export default function CategoriesIn() {
                                                         <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-
-                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -396,9 +415,6 @@ export default function CategoriesIn() {
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
-                            <img src={watchdemo} alt="" className='img-fluid' />
-                        </div> */}
                                                 <img src={categoriesimg1} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
@@ -414,6 +430,9 @@ export default function CategoriesIn() {
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                         <div className='pt-2'>
                                                             <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -441,8 +460,11 @@ export default function CategoriesIn() {
                                                         <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                        <div className='pt-2 text-end'>
+                                                        <div className='pt-2'>
                                                             <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -473,9 +495,6 @@ export default function CategoriesIn() {
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
-                            <img src={watchdemo} alt="" className='img-fluid' />
-                        </div> */}
                                                 <img src={categoriesimg3} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
@@ -491,6 +510,9 @@ export default function CategoriesIn() {
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                         <div className='pt-2'>
                                                             <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -518,8 +540,11 @@ export default function CategoriesIn() {
                                                         <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                        <div className='pt-2 text-end'>
+                                                        <div className='pt-2'>
                                                             <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -550,9 +575,6 @@ export default function CategoriesIn() {
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                {/* <div className=' p-1' style={{backgroundColor:' #05463c'}}>
-                            <img src={watchdemo} alt="" className='img-fluid' />
-                        </div> */}
                                                 <img src={categoriesimg5} alt="" className='img-fluid' />
                                             </div>
                                             <div className='col-md-6'>
@@ -568,6 +590,9 @@ export default function CategoriesIn() {
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
                                                         <div className='pt-2'>
                                                             <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -595,9 +620,12 @@ export default function CategoriesIn() {
                                                         <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                        <div className='pt-2 text-end'>
-                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-                                                        </div>
+                                                            <div className='pt-2'>
+                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
+                                                    <div className='pt-2'>
+                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
