@@ -16,8 +16,14 @@
     background: #0000000e;
     padding: 0;
     height: 320px;
-
   }
+  .boxshadow1 {
+    //  border: 6px solid #ffce05;
+      border-radius: 20px;
+      background: #0000000e;
+      padding: 0;
+      // height: 320px;
+    }
   // .bgcolor{
   //   background-color: rgba(252, 255, 104, 0.326);
   // }
@@ -63,3 +69,9 @@
     border-bottom: none;
   }
   }
+
+  // @media (max-width:450px){
+  //   .boxshadow{
+  //     height: fit-content;
+  //   }
+  // }

@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
-import Software from "../assets/images/Our-Expertise.jpg";
-import Process from "../assets/images/Our-Process.jpg";
+import Software from "../assets/images/Our-Expertise1.jpg";
+import Process from "../assets/images/Our-Process1.jpg";
 
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
@@ -70,15 +70,15 @@ function Development() {
             </div>
           </div>
           <div className="row  mt-3">
-            <div className="col-lg-5 col-md-12 align-items-center d-flex  ">
+            <div className="col-md-5 col-sm-12 align-items-center d-flex  ">
               <div className="" data-aos="zoom-in">
                 <img src={Software} className=" img-fluid w-100" alt="" />
               </div>
             </div>
-            <div className="col-lg-7  col-md-12 align-items-center d-flex">
+            <div className="col-md-7  col-sm-12 align-items-center d-flex">
               <div className="row justify-content-around ">
                 <div
-                  className="col-lg-3  col-md-6 mb-3"
+                  className="col-md-3  col-sm-6 mb-3"
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-easing="ease-in-back"
@@ -95,7 +95,7 @@ function Development() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 mb-3 "
+                  className="col-md-3 col-sm-6 mb-3 "
                   data-aos="fade-up"
                   data-aos-duration="700"
                   data-aos-easing="ease-in-back"
@@ -112,7 +112,7 @@ function Development() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 mb-3 "
+                  className="col-md-3 col-sm-6 mb-3 "
                   data-aos="fade-up"
                   data-aos-duration="800"
                   data-aos-easing="ease-in-back"
@@ -128,7 +128,7 @@ function Development() {
                   </div>
                 </div>
                 <div
-                  className="col-lg-3 col-md-6 mb-3"
+                  className="col-md-3 col-sm-6 mb-3"
                   data-aos="fade-up"
                   data-aos-duration="900"
                   data-aos-easing="ease-in-back"
@@ -269,7 +269,7 @@ function Development() {
             development. Our process involves:
           </p>
           <div
-            className="col-lg-6  col-md-12"
+            className="col-lg-6  col-md-12 align-items-center d-flex"
             data-aos="fade"
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
@@ -280,7 +280,7 @@ function Development() {
               data-aos-duration="1000"
             >
               <div
-                className="boxshadow "
+                className="boxshadow1  mt-4 "
                 data-aos="fade-right"
                 data-aos-duration="600"
               >
@@ -337,9 +337,9 @@ function Development() {
               </div>
             </div>
           </div>
-          <div className="col-lg-5  col-md-12 align-items-center d-flex">
+          <div className="col-md-5  col-sm-12 align-items-center d-flex mt-4">
             <div className="" data-aos="fade-left" data-aos-duration="600">
-              <img src={Process} className="img-fluid" alt="" />
+              <img src={Process} className="img-fluid w-100" alt="" />
             </div>
           </div>
         </div>
