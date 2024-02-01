@@ -19,6 +19,7 @@ import whychooseimg from "../assets/images/whychoose-img.png";
 import webdev from "../assets/images/web-dev2.png";
 import kvrprofile from '../assets/images/kvr profile.png'
 import imagine1 from '../assets/images/imagine1.png'
+import Carousel from "../components/Carousel";
 
 
 function Development() {
