@@ -201,7 +201,7 @@ function Testing() {
                         <li>Selenium</li>
                         <li>PlayWright</li>
                         <li>Cypress</li>
-                        <li>API</li>
+                        <li>RestAPI</li>
                       </ul>
                     </div>
                   </div>
