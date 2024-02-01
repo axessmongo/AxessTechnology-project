@@ -1,4 +1,12 @@
 import React from 'react'
+import techstack from '../assets/images/tech_stack_1.webp'
+import techstack2 from '../assets/images/tech_stack_2.webp'
+import techstack3 from '../assets/images/tech_stack_3.webp'
+import techstack4 from '../assets/images/tech_stack_4.webp'
+import techstack5 from '../assets/images/tech_stack_5.webp'
+import techstack6 from '../assets/images/tech_stack_6.webp'
+import techstack7 from '../assets/images/tech_stack_7.webp'
+import techstack8 from '../assets/images/tech_stack_8.webp'
 
 export default function Techsection() {
     return (
@@ -10,49 +18,49 @@ export default function Techsection() {
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='100'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_10.webp" alt="" />
+                            <img src={techstack} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='200'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_05.webp" alt="" />
+                            <img src={techstack2} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='300'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_02.webp" alt="" />
+                    <img src={techstack3} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='400'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_09.webp" alt="" />
+                            <img src={techstack4} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='500'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_12.webp" alt="" />
+                            <img src={techstack5} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='600'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_03.webp" alt="" />
+                            <img src={techstack6} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='700'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_04.webp" alt="" />
+                            <img src={techstack7} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='800'
                             data-aos-easing="ease-in-back">
-                            <img src="https://www.alwin.io/assets/images/home/tech_stack_08.webp" alt="" />
+                            <img src={techstack8} alt="" />
                         </div>
                     </div>
                 </div>

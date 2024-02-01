@@ -252,10 +252,11 @@ function Services() {
                                             </div>
                                         </div>
                                     </div> */}
+                                      <Link to={"/development"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                                 </div>
                             </div>
 
-                            <div className=' mb-5'>
+                            {/* <div className=' mb-5'>
                                 <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
                                     <h1 className='secondary-header' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
@@ -310,9 +311,10 @@ function Services() {
                                             </div>
                                         </div>
                                     </div>
-                                    <Link to={"/development"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                                  
                                 </div>
-                            </div>
+                            </div> */}
+                            
                         </div>
 
 
@@ -353,7 +355,7 @@ function Services() {
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-card-checklist"></i></div>
                                                 <p className="number ">02.</p>
-                                                <p className="content mb-0">Test <br />Planing</p>
+                                                <p className="content mb-0">Test <br />Planning</p>
                                             </div>
                                         </div>
                                         <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
@@ -367,7 +369,7 @@ function Services() {
                                             <div className="test-card ">
                                                 <div className="logo"><i className="bi bi-gear"></i></div>
                                                 <p className="number ">04.</p>
-                                                <p className="content mb-0">Test <br />Exection</p>
+                                                <p className="content mb-0">Test <br />Execution</p>
                                             </div>
                                         </div>
                                         <div className="col-md-2 test-card-container" data-aos='fade-right' data-aos-duration='400' data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-back">
@@ -392,7 +394,7 @@ function Services() {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="services-card" data-aos='fade-right' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                <h6 className='card-header'>Test Planing </h6>
+                                                <h6 className='card-header'>Test Planning </h6>
                                                 <p className='primary-text mb-0'>After thorough analysis, a test plan is created. Test planning involves aligning with relevant stakeholders on the test strategy.</p>
                                                 <div className='order'>
                                                     <span>02</span>
@@ -413,7 +415,7 @@ function Services() {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="services-card" data-aos='fade-left' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                <h6 className='card-header'>Test Exection </h6>
+                                                <h6 className='card-header'>Test Execution </h6>
                                                 <p className='primary-text mb-0'>With clear objectives in mind, the QA team writes test cases, test scripts, and prepares necessary test data for execution.</p>
                                                 <div className='order'>
                                                     <span>04</span>
