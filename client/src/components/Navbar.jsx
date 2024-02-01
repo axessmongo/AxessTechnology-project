@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { NavLink, Link, Outlet, useNavigate } from 'react-router-dom';
 import Home from '../pages/Home';
 import logo from '../assets/images/logo/logo.png';
 import About from './About';
 import '../assets/css/hamburgers/hamburgers.scss';
+import { userContext } from '../store/Store';
 
 function Navbar() {
   const [fixed, setFixed] = useState(false);
   const [nav, setNav] = useState(false);
+  const [value, setValue]= useContext(userContext);
+
+
   let navigation = useNavigate();
 
   const handleOutsideClick = (event) => {
@@ -43,6 +47,9 @@ function Navbar() {
   useEffect(() => {
     setNav(false);
   }, [navigation]);
+
+
+
 
   return (
     <div>
@@ -132,16 +139,16 @@ function Navbar() {
                   </Link>
                   <div className="drop pricing">
                     <div className='nav-item'>
-                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" >Software Development Pricing</Link>
+                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Software Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" >Software Testing Pricing</Link>
+                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Software Testing Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" >Web Development Pricing</Link>
+                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Web Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" >Digital Marketing Pricing</Link>
+                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Digital Marketing Pricing</Link>
                     </div>
                   </div>
                 </li>

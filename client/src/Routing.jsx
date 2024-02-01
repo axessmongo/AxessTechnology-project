@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -19,18 +19,16 @@ import CategoriesIn from './components/CategoriesIn'
 import Demo from './components/Demo';
 import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
-import ScrollTop from './assets/images/ScrollTop';
+import ScrollTop from './components/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
 import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
-import DigitalMarketing from './pages/DigitalMarketing' ;  
+import DigitalMarketing from './pages/DigitalMarketing' ; 
 
 function Routing() {
-
-
     const user = localStorage.getItem("token");
     return (
 // hgjh
