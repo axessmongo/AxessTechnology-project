@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise.jpg";
-import Process from "../assets/images/Our-Process.jpg";
+import Process from "../assets/images/imagine.png";
 import Why from "../assets/images/Why-Choose.jpg";
 import bubble from "../assets/images/bubble.webp";
 import success from "../assets/images/success.png";
@@ -16,8 +16,9 @@ import frompng from "../assets/images/fromlogo.jpg";
 import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
-import webdev from "../assets/images/web-dev1.png";
+import webdev from "../assets/images/web-dev2.png";
 import kvrprofile from '../assets/images/kvr profile.png'
+import imagine1 from '../assets/images/imagine1.png'
 
 
 function Development() {
@@ -310,13 +311,13 @@ function Development() {
               </div>
             </div>
           </div>
-          <div className="col-lg-5  col-md-12 align-items-center d-flex">
+          <div className="col-lg-5  col-md-12 align-items-center justify-content-center d-flex">
             <div
               className="my-3"
               data-aos="fade-down-left"
               data-aos-duration="1000"
             >
-              <img src={Process} className="img-fluid" alt="" />
+              <img src={Process} className="img-fluid " alt="" />
             </div>
           </div>
         </div>
@@ -377,27 +378,25 @@ function Development() {
                 </div>
               </div>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 justify-content-center align-items-center d-flex">
               <h1 className="text-light">
-                <img src={webdev} alt="" />
+                <img src={webdev} alt="" data-aos="flip-left" />
               </h1>
             </div>
           </div>
         </div>
       </section>
       <section className="container mt-5">
-        <div className="justify-content-center d-flex">
-          <h1 className="text-center bg-img-1">Imagine</h1>
-        </div>
+        
         <div className="row justify-content-evenly">
 
         <div className="col-lg-5  col-md-12 align-items-center d-flex">
             <div
               className="my-3"
-              data-aos="fade-down-left"
-              data-aos-duration="1000"
+              data-aos="flip-right"
+              data-aos-duration="600"
             >
-              <img src={Process} className="img-fluid" alt="" />
+              <img src={imagine1} className="img-fluid" alt="" />
             </div>
           </div>
           <div
