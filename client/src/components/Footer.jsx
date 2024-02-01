@@ -43,11 +43,12 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Telegram Us : @axesstechnology.in</p>
-                                    <p>WhatsApp : +91 93845 xxxxx</p>
+                                    <p>WhatsApp : +91 7358104213  </p>
+                                    <p>Social: Instagram: axess_technology</p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Phone : 8825781xxxx</p>
-                                    <p>Email : salesxxxx@.com</p>
+                                    <p>Phone : +91 90425 77261</p>
+                                    <p>Email : info@axesstechnology.in</p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
