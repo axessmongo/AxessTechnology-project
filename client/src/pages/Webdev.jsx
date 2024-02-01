@@ -17,6 +17,8 @@ import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import webdev from "../assets/images/web-dev1.png";
+import kvrprofile from '../assets/images/kvr profile.png'
+
 
 function Development() {
   return (
@@ -648,7 +650,7 @@ function Development() {
                         <div className="profile">
                           <div className="img-area">
                             <img
-                              src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                              src={kvrprofile}
                               alt=""
                             />
                           </div>
@@ -689,7 +691,7 @@ function Development() {
                         <div className="profile">
                           <div className="img-area">
                             <img
-                              src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                              src={kvrprofile}
                               alt=""
                             />
                           </div>
@@ -729,7 +731,7 @@ function Development() {
                         <div className="profile">
                           <div className="img-area">
                             <img
-                              src="https://kvramanan.com/static/media/profile1.5b0d4a80fcae1181e41b.png"
+                              src={kvrprofile}
                               alt=""
                             />
                           </div>
