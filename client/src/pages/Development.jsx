@@ -37,7 +37,7 @@ function Development() {
             data-aos-duration="1000"
           >
             <div className="text-center">
-              <p className="fs-5 mt-4">
+              <p className="primary-text mt-4">
                 In today's digital age, having robust and innovative software is
                 no longer a luxury, it's a necessity for businesses to thrive.
                 At Axess Technology, we understand the power of software and its
@@ -60,7 +60,7 @@ function Development() {
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <p className="text-center fs-5 p-2">
+                <p className="text-center primary-text  p-2">
                   We are a team of experienced and passionate software
                   developers who specialize in crafting cutting-edge solutions
                   tailored to your specific needs. We have a deep understanding
@@ -84,9 +84,9 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
-                    <div className="py-4">
+                    <div className="py-4 primary-text">
                       <p className="fw-bold">Programming Languages:</p>
-                      <p> Python </p>
+                      <p > Python </p>
                       <p> Java </p>
                       <p> JavaScript </p>
                       <p> C++ </p>
@@ -101,7 +101,7 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
-                    <div className="py-4">
+                    <div className="py-4 primary-text">
                       <p className="fw-bold">Web Development Frameworks:</p>
                       <p>React</p>
                       <p> Angular</p>
@@ -118,7 +118,7 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className="card boxshadow small-card text-center">
-                    <div className="py-4">
+                    <div className="py-4 primary-text">
                       <p className="fw-bold">Mobile Development Frameworks:</p>
                       <p>Flutter</p>
                       <p> React Native</p>
@@ -134,7 +134,7 @@ function Development() {
                   data-aos-easing="ease-in-back"
                 >
                   <div className=" card boxshadow small-card text-center">
-                    <div className="py-4">
+                    <div className="py-4 primary-text">
                       <p className="fw-bold">Cloud Platforms:</p>
                       <p>AWS</p>
                       <p>Azure</p>
@@ -163,7 +163,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Experienced Team</h4>
-                  <p>
+                  <p className="primary-text">
                     Our team has a proven track record of delivering successful
                     software projects for clients across diverse industries.
                   </p>
@@ -176,7 +176,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Custom Solutions</h4>
-                  <p>
+                  <p className="primary-text">
                     We don't offer one-size- fits-all solutions. We build
                     software that is uniquely tailored to your specific
                     requirements.
@@ -195,7 +195,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Agile Methodology</h4>
-                  <p>
+                  <p className="primary-text">
                     We embrace agile development practices to ensure
                     flexibility, quick iterations, and continuous improvement.
                   </p>
@@ -218,7 +218,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Transparent Communication</h4>
-                  <p>
+                  <p className="primary-text">
                     We keep you informed throughout the development process and
                     value your feedback.
                   </p>
@@ -236,7 +236,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Data-Driven Approach</h4>
-                  <p>
+                  <p className="primary-text">
                     We leverage data and analytics to optimize your software and
                     measure its impact on your business.
                   </p>
@@ -249,7 +249,7 @@ function Development() {
               >
                 <div className="small-card mt-3">
                   <h4>Experienced Team</h4>
-                  <p>
+                  <p className="primary-text">
                     Our team has a proven track record of delivering successful
                     software projects for clients across diverse industries.
                   </p>
@@ -264,7 +264,7 @@ function Development() {
           <h1 className="text-center bg-img-1">Our Process</h1>
         </div>
         <div className="row justify-content-evenly">
-          <p className="text-center p-2">
+          <p className="text-center primary-text p-2">
             We believe in a collaborative and agile approach to software
             development. Our process involves:
           </p>
@@ -291,7 +291,7 @@ function Development() {
                       data-aos-duration="400"
                       data-aos-easing="ease-in-back"
                     >
-                      <p>
+                      <p className="primary-text">
                         <span className="fw-bold">Discovery & Planning:</span>{" "}
                         We work closely with you to understand your business
                         goals, challenges, and target audience.
@@ -302,7 +302,7 @@ function Development() {
                       data-aos-duration="400"
                       data-aos-easing="ease-in-back"
                     >
-                      <p>
+                      <p className="primary-text">
                         <span className="fw-bold">Design & Prototyping:</span>{" "}
                         We create prototypes and mockups to visualize your
                         software and ensure it aligns with your needs.
@@ -313,7 +313,7 @@ function Development() {
                       data-aos-duration="500"
                       data-aos-easing="ease-in-back"
                     >
-                      <p>
+                      <p className="primary-text">
                         <span className="fw-bold">Development & Testing:</span>{" "}
                         We write clean, efficient, and well-tested code using
                         industry-standard best practices.
@@ -324,7 +324,7 @@ function Development() {
                       data-aos-duration="500"
                       data-aos-easing="ease-in-back"
                     >
-                      <p>
+                      <p className="primary-text">
                         <span className="fw-bold">
                           Deployment & Maintenance:
                         </span>{" "}

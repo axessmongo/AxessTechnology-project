@@ -36,11 +36,11 @@ export default function DigitalMarketing() {
                     Digital Marketing Toolbox
                   </h6>
 
-                  <p className="text-center m-4 fs-4">
+                  <p className="text-center primary-text m-4 fs-4">
                     {" "}
                     Poven Efffective Tatics
                   </p>
-                  <p className="secondary-text mx-auto text-center m-5">
+                  <p className="primary-text mx-auto text-center m-5">
                     In today's digital age, a captivating online presence is no
                     longer a luxury, it's a necessity. At Axess Technology, we
                     believe in the power of digital marketing to fuel brand
@@ -54,7 +54,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>A dazzling website</h2>
-                          <p>
+                          <p className="primary-text">
                             That showcases your brand story and engages your
                             audience like never before..
                           </p>
@@ -65,7 +65,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>SEO strategies</h2>
-                          <p>
+                          <p className="primary-text">
                             that propel your website to the top of search engine
                             results, putting you directly in front of your ideal
                             customers.
@@ -77,7 +77,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Targeted social media</h2>
-                          <p>
+                          <p className="primary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -88,7 +88,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Email Marketing</h2>
-                          <p>
+                          <p className="primary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -99,7 +99,7 @@ export default function DigitalMarketing() {
                   <p
                     data-aos="fade-up"
                     data-aos-duration="600"
-                    className="secondary-text mx-auto text-center m-5 "
+                    className="primary-text mx-auto text-center m-5 "
                   >
                     That's the Axess Digital Marketing difference. We don't just
                     tick boxes; we craft data-driven strategies that deliver
@@ -146,7 +146,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Web Design and Development</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We create stunning, user-friendly websites that are
                         optimized for conversions and search engines.
                       </p>
@@ -159,7 +159,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Content Marketing</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We craft compelling blog posts, articles, and social
                         media content that resonates with your target audience
                         and positions you as a thought leader.
@@ -173,7 +173,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Social Media Marketing</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We manage your social media channels with engaging
                         content, strategic advertising, and community building
                         strategies.
@@ -187,7 +187,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Search Engine Optimization</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         We leverage the power of SEO to ensure your website
                         ranks high in search results, putting you front and
                         center for potential customers.
@@ -201,7 +201,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Paid Advertising</h6>
                     <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         {" "}
                         We design and execute targeted pay-per-click (PPC)
                         campaigns to drive high-quality traffic to your website
@@ -216,7 +216,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Email Marketing</h6>
                      <div class="hover_content">
-                      <p>
+                      <p className="primary-text">
                         {" "}
                         We create personalized email campaigns that nurture
                         leads, boost engagement, and drive conversions.
@@ -226,7 +226,7 @@ export default function DigitalMarketing() {
                 </div>
               </div>
             </div>
-            <p className="secondary-text mx-auto text-center m-5">
+            <p className="primary-text mx-auto text-center m-5">
               But we don't stop there. We believe in constant optimization and
               data-driven decision-making. We track your campaign performance in
               real-time, analyze the results, and continuously refine our

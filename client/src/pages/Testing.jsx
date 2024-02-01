@@ -32,7 +32,7 @@ function Testing() {
         <div className='container'>
           <div className='text-center pt-3'>
             <h1 className='bg-img-1 mx-auto'>Bug Squashing</h1>
-            <p>We go beyond basic functionality checks. Our testing dives deep, encompassing:</p>
+            <p className='primary-text'>We go beyond basic functionality checks. Our testing dives deep, encompassing:</p>
           </div>
           <div className='row pb-3'>
             <div className='col-md-7 py-1'>
@@ -47,7 +47,7 @@ function Testing() {
                       <div className='test-head'>
                         <h3>Performance</h3>
                       </div>
-                      <p className='pt-3'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
+                      <p className='pt-3 primary-text'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
                     </div>
                   </div>
                   <div className='col-md-5 pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
@@ -58,7 +58,7 @@ function Testing() {
                       <div className='test-head'>
                         <h3>Security</h3>
                       </div>
-                      <p className='pt-3'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
+                      <p className='pt-3 primary-text'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
                     </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ function Testing() {
                       <div className='test-head'>
                         <h3>Usability</h3>
                       </div>
-                      <p className='pt-3'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
+                      <p className='pt-3 primary-text'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
                     </div>
                   </div>
                   <div className='col-md-5 pt-3' data-aos="zoom-in-left" data-aos-duration="1000">
@@ -85,7 +85,7 @@ function Testing() {
                       <div className='test-head'>
                         <h3>Compatibility</h3>
                       </div>
-                      <p className='pt-3'>We test across browsers, devices, and operating systems for seamless performance on any platform.</p>
+                      <p className='pt-3 primary-text'>We test across browsers, devices, and operating systems for seamless performance on any platform.</p>
                     </div>
                   </div>
                 </div>
@@ -121,25 +121,25 @@ function Testing() {
             <div className='col-md-7'>
               <div className='text-center'>
                 <h1 className='bg-img-1 mx-auto'>Multi-Layered</h1>
-                <p>With our multi-layered approach, you get:</p>
+                <p className='primary-text'>With our multi-layered approach, you get:</p>
               </div>
               <div className='pt-5'>
                 <div data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{ color: ' #ffce05' }}>✅ Reduced costs: </span> Early bug detection saves time and resources compared to fixing issues post-launch.</p>
+                  <p className='primary-text'> <span className='fw-bold' style={{ color: ' #ffce05' }}>✅ Reduced costs: </span> Early bug detection saves time and resources compared to fixing issues post-launch.</p>
                 </div>
 
                 <div data-aos="fade-up"
                   data-aos-duration="1400"
                   data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{ color: ' #ffce05' }}> ✅ Enhanced user satisfaction: </span> Happy users mean better brand reputation and increased loyalty.</p>
+                  <p className='primary-text'> <span  className='fw-bold' style={{ color: ' #ffce05' }}> ✅ Enhanced user satisfaction: </span> Happy users mean better brand reputation and increased loyalty.</p>
                 </div>
 
                 <div data-aos="fade-up"
                   data-aos-duration="1800"
                   data-aos-anchor-placement="bottom-bottom">
-                  <p> <span style={{ color: ' #ffce05' }}> ✅ Competitive edge: </span> Delivering a polished, bug-free product sets you apart in the market.</p>
+                  <p className='primary-text'> <span  className='fw-bold' style={{ color: ' #ffce05' }}> ✅ Competitive edge: </span> Delivering a polished, bug-free product sets you apart in the market.</p>
                 </div>
               </div>
             </div>
@@ -180,7 +180,7 @@ function Testing() {
 
                 <div className='text-white'>
                   <h2 className='text-center text-lg-start'>Huge Spectrum of Next-Gen Technologies Under One Roof</h2>
-                  <p className='text-center text-lg-start'>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
+                  <p className='text-center  text-lg-start'>Leverage our in-depth technical expertise to bring your stunning ideas to Life.</p>
                 </div>
                 <div className='row align-items-center justify-content-center text-white tech-tools-container'>
                   <div className='col-6 col-md-4 col-lg-3 '>

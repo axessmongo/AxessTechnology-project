@@ -41,7 +41,7 @@ function Development() {
             data-aos-duration="1000"
           >
             <div className="text-center">
-              <p className="fs-5 mt-4">
+              <p className="primary-text mt-4">
                 In today's digital world, your website is the first impression
                 you make on potential customers. It's your virtual storefront,
                 your digital ambassador, and the key to unlocking online
@@ -73,7 +73,7 @@ function Development() {
                     data-aos-duration="400"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                       A beautifully designed website that reflects your brand's
                       unique personality and vision.
                     </p>
@@ -83,7 +83,7 @@ function Development() {
                     data-aos-duration="500"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                       A website that's so intuitive and engaging, users get lost
                       in the experience, forgetting they're even browsing.
                     </p>
@@ -93,7 +93,7 @@ function Development() {
                     data-aos-duration="600"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                       A website that seamlessly guides visitors through the
                       sales funnel, turning casual clicks into conversions with
                       effortless ease.
@@ -114,7 +114,7 @@ function Development() {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-8">
+          <div className="col-md-8 primary-text">
             That's the Axess web development magic. We combine creative vision
             with technical expertise to design and build websites that are not
             just visually stunning, but strategically crafted to achieve your
@@ -130,16 +130,16 @@ function Development() {
               <div className="my-4">
                 <div className="row justify-content-center ">
                   <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
-                    <p className="p-3">
-                      Custom Website Design: We collaborate with you to
+                    <p className="p-3 primary-text">
+                      <span className="fw-bold">Custom Website Design:</span> We collaborate with you to
                       understand your brand, target audience, and objectives,
                       then translate that into a captivating website design that
                       resonates with your users.
                     </p>
                   </div>
                   <div className="col-md-4 mx-2  mt-3 small-card boxshadow">
-                    <p className="p-3">
-                      Responsive Web Development: We ensure your website looks
+                    <p className="p-3 primary-text">
+                     <span className="fw-bold" > Responsive Web Development:</span> We ensure your website looks
                       flawless and functions perfectly on all devices, from
                       desktops to tablets to smartphones.
                     </p>
@@ -147,23 +147,23 @@ function Development() {
                 </div>
                 <div className="row justify-content-around   ">
                   <div className="col-md-4 mt-3 small-card boxshadow">
-                    <p className="p-3">
-                      Content Management Systems (CMS): We implement
+                    <p className="p-3 primary-text">
+                     <span className="fw-bold"> Content Management Systems (CMS):</span> We implement
                       user-friendly CMS platforms that give you complete control
                       over your website content, even without technical
                       knowledge.
                     </p>
                   </div>
                   <div className="col-md-3 mt-3 small-card  boxshadow">
-                    <p className="p-3">
-                      E-commerce Development: We build secure, scalable online
+                    <p className="p-3 primary-text">
+                      <span className="fw-bold">E-commerce Development:</span> We build secure, scalable online
                       stores that make online shopping a breeze for your
                       customers, and a joy for you to manage.
                     </p>
                   </div>
                   <div className="col-md-4  mt-3 small-card boxshadow">
-                    <p className="p-3">
-                      Website Maintenance and Security: We offer ongoing
+                    <p className="p-3 primary-text">
+                      <span className="fw-bold">Website Maintenance and Security:</span> We offer ongoing
                       maintenance and security solutions to keep your website
                       up-to-date, protected, and performing at its best.
                     </p>
@@ -202,7 +202,7 @@ function Development() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
           >
-            <div className="boxshadow ">
+            <div className="">
               <div className=" p-5">
                 <ul>
                   <li
@@ -210,7 +210,7 @@ function Development() {
                     data-aos-duration="400"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                     But we don't stop at delivering a beautiful website. We believe in a holistic approach, seamlessly integrating your website with your digital marketing strategies to maximize your online impact.
 
                     </p>
@@ -220,7 +220,7 @@ function Development() {
                     data-aos-duration="500"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                     Ready to create a website that works as hard as you do? Let Axess Technology be your web development partner.
 
                     </p>
@@ -230,7 +230,7 @@ function Development() {
                     data-aos-duration="600"
                     data-aos-easing="ease-in-back"
                   >
-                    <p>
+                    <p className="primary-text">
                     Contact us today for a free consultation and let's build your online masterpiece!
 
                     </p>
@@ -245,7 +245,7 @@ function Development() {
       </section>
       </div>
 
-      <section className="bg-green-1 pb-5">
+      <section className="bg-green-1 pb-5 mt-1">
        
         <h3 className="secondary-header mx-auto text-center text-white pt-5">
           {" "}
