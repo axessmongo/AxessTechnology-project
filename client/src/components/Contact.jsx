@@ -6,8 +6,6 @@ import Footer from './Footer';
 import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 import { toast, ToastContainer } from 'react-toastify';
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 
 
 
@@ -31,17 +29,8 @@ function Contact() {
         serviceOption: ""
 
     });
-const handlePhoneNumber = (value)=>{
-    let name = "phone"
-    setContact({
-        ...contact,
-        [name]: value,
-    });
-    validateField(name, value);
-}
 
     const handleChange = (e) => {
-        console.log("e", e)
         let { name, value } = e.target;
         if (name === 'phone') {
             value = value.replace(/\D/g, '').slice(0, 10);
@@ -108,8 +97,8 @@ const handlePhoneNumber = (value)=>{
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+       
+        console.log("error", errors,errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
@@ -163,7 +152,7 @@ const handlePhoneNumber = (value)=>{
             toast.error('Unexpected error');
             alert('unexpected error')
         }
-
+        
     }
     return (
         <div>
@@ -194,14 +183,7 @@ const handlePhoneNumber = (value)=>{
 
                             </div>
                             <div className="col-md-6 mb-4">
-                                <PhoneInput
-                                    className="number"
-                                    country={"in"}
-                                    name="phone"
-                                    value={contact.phone}
-                                    onChange={handlePhoneNumber}
-                                />
-                                {/* <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' /> */}
+                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
 
                             </div>
