@@ -448,8 +448,8 @@ function Testing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3' >
-                              <h4 className='heading9 fw-bold fs-5'>The Delighted</h4>
-                              <p className='heading5'>Developer</p>
+                              <h4 className='heading9 fw-bold fs-5'>John Smith</h4>
+                              <p className='heading5'>Lead Developer</p>
                             </div>
                           </div>
                         </div>
@@ -557,7 +557,7 @@ function Testing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Satisfied</h4>
+                              <h4 className='heading9 fw-bold fs-5'> Jane Doe</h4>
                               <p className='heading5'>CEO</p>
                             </div>
                           </div>
@@ -652,7 +652,7 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success." - Jane Doe, CEO.{" "}</p>
+                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success."{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -666,7 +666,7 @@ function Testing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Happy</h4>
+                              <h4 className='heading9 fw-bold fs-5'>Sarah White</h4>
                               <p className='heading5'>User</p>
                             </div>
                           </div>
@@ -775,7 +775,7 @@ function Testing() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Relieved</h4>
+                              <h4 className='heading9 fw-bold fs-5'>Mark Jones</h4>
                               <p className='heading5'>Project Manager</p>
                             </div>
                           </div>

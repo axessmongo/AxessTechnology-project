@@ -182,13 +182,17 @@ export default function CategoriesIn() {
                                                     <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                    <div className='pt-2'>
-                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
-                                                    <div className='pt-2'>
-                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
-
+                                                </div>
+                                            </div>
+                                            <div className='d-flex justify-content-evenly'>
+                                                <div className='pt-2 demo-bts'>
+                                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                </div>
+                                                <div className='pt-2 '>
+                                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button>
+                                                </div>
+                                                <div className='pt-2'>
+                                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>BuyNow</span> <i className="bi bi-arrow-right"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,13 +218,17 @@ export default function CategoriesIn() {
                                                     <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                         Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                         repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                    <div className='pt-2'>
-                                                        <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
-                                                    <div className='pt-2'>
-                                                        <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
-
+                                                </div>
+                                            </div>
+                                            <div className='d-flex justify-content-evenly'>
+                                                <div className='pt-2'>
+                                                    <button className='gold-btn m-0'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                </div>
+                                                <div className='pt-2'>
+                                                    <button className='gold-btn m-0'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button>
+                                                </div>
+                                                <div className='pt-2'>
+                                                    <button className='gold-btn m-0'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -620,12 +628,12 @@ export default function CategoriesIn() {
                                                         <p className='pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, pariatur esse.
                                                             Consectetur earum architecto impedit eveniet porro harum rerum id ab ratione
                                                             repudiandae eum error, nostrum sed, dignissimos, aliquam quia?</p>
-                                                            <div className='pt-2'>
-                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
-                                                    <div className='pt-2'>
-                                                        <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
-                                                    </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
+                                                        <div className='pt-2'>
+                                                            <button className='gold-btn m-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Buy Now</span> <i className="bi bi-arrow-right"></i></button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

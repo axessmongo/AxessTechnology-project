@@ -468,8 +468,8 @@ function Development() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3' >
-                              <h4 className='heading9 fw-bold fs-5'>The Delighted</h4>
-                              <p className='heading5'>Developer</p>
+                              <h4 className='heading9 fw-bold fs-5'> Priya Desai</h4>
+                              <p className='heading5'>Owner</p>
                             </div>
                           </div>
                         </div>
@@ -478,7 +478,8 @@ function Development() {
                             <div className="card-description " >
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Delighted Developer</h3>
+                                  <p>Modern and Engaging</p>
+                                  <h3 className="title heading9">The Craftful Boutique</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -563,7 +564,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">I used to dread deployment day, fearing hidden bugs waiting to ambush my users. But since partnering with [Your Company Name], my worries have vanished! Their thorough testing ensures my software launches flawlessly, leaving me free to focus on innovation. Thanks to them, I finally have the peace of mind to code with confidence.{" "}</p>
+                              <p className="description heading5">"My old website was outdated and didn't reflect our brand's personality. Axess completely transformed it! The design is modern, engaging, and truly captures our essence. Plus, it's user-friendly and mobile-responsive, which has boosted our online traffic and conversions significantly. Thank you, Axess!"{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -577,8 +578,8 @@ function Development() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Satisfied</h4>
-                              <p className='heading5'>CEO</p>
+                              <h4 className='heading9 fw-bold fs-5'>Rahul Sharma</h4>
+                              <p className='heading5'>Head of Marketing</p>
                             </div>
                           </div>
                         </div>
@@ -587,7 +588,8 @@ function Development() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Satisfied CEO</h3>
+                                  <p>Increased Leads and Sales</p>
+                                  <h3 className="title heading9">Ecom Solutions</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -672,7 +674,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success." - Jane Doe, CEO.{" "}</p>
+                              <p className="description heading5">"We needed a website that not only looked good but also generated leads and sales. Axess delivered! Their SEO expertise and conversion-focused design have increased our website traffic by 30% and leads by 25%. They even helped us set up automated marketing workflows, streamlining our sales process. We're thrilled with the results!"{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -686,8 +688,8 @@ function Development() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Happy</h4>
-                              <p className='heading5'>User</p>
+                              <h4 className='heading9 fw-bold fs-5'>Vijay Patel</h4>
+                              <p className='heading5'>Owner</p>
                             </div>
                           </div>
                         </div>
@@ -696,7 +698,8 @@ function Development() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Happy User</h3>
+                                  <p>Accessible and Easy to Manage</p>
+                                  <h3 className="title heading9">Green Groceries</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -781,7 +784,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">As a user, I'm tired of buggy software that crashes and frustrates. But ever since my favorite app started using [Your Company Name] for testing, it's been a smooth ride! No more unexpected glitches or confusing interfaces. Everything works seamlessly and intuitively, making my life easier and more enjoyable. Thank you for prioritizing user experience and setting the bar high for software quality!{" "}</p>
+                              <p className="description heading5">"As a small business owner, I needed a website that was easy to manage and update myself. Axess delivered a user-friendly CMS that allows me to make changes and add content effortlessly. They also ensured the website is accessible to everyone, which is important to our values. We're grateful for their expertise and commitment to inclusivity."{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -795,8 +798,8 @@ function Development() {
                               <img src={Profiledub} alt="" className='w-50 mx-auto' />
                             </div>
                             <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>The Relieved</h4>
-                              <p className='heading5'>Project Manager</p>
+                              <h4 className='heading9 fw-bold fs-5'>Manju Iyer</h4>
+                              <p className='heading5'>Founder</p>
                             </div>
                           </div>
                         </div>
@@ -805,7 +808,8 @@ function Development() {
                             <div className="card-description ">
                               <div className="title-area">
                                 <div className="title-info">
-                                  <h3 className="title heading9">The Relieved Project Manager</h3>
+                                  <p>Personalized and Collaborative</p>
+                                  <h3 className="title heading9">Mindful Yoga Studio</h3>
                                   <span className="date"> </span>
                                 </div>
 
@@ -890,7 +894,7 @@ function Development() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Managing a large software project can be a pressure cooker. But with [Your Company Name] by my side, I can finally sleep soundly at night. Their expertise and dedication helped us meet every deadline while delivering a defect-free product. Their clear communication and proactive approach kept the project on track and everyone informed. They're the dream team for anyone looking to avoid development headaches and ensure a successful launch!{" "}</p>
+                              <p className="description heading5">"Working with Axess was a breeze. They listened carefully to our needs and preferences, even incorporating personal touches that made the website feel truly unique to our brand. They were also patient and collaborative throughout the process, addressing our questions and concerns promptly. We highly recommend them!"{" "}</p>
                             </div>
                           </div>
                         </div>
