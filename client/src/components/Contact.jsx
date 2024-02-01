@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Banner from '../components/Banner';
 import Navbar from './Navbar';
@@ -10,6 +10,15 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 function Contact() {
+    const [receiveMsg, setReciveMsg] = useState('none')
+    const MSG = {
+        success: "success",
+        mailSended: "Mail sended successfully",
+        unexpectedError: "unexpected Error",
+        unexpectedResponse: "unexpectedResponse",
+        incorrectMail: "incorrect Mail"
+
+    }
     const [errors, setErrors] = useState({
         fname: "",
         lname: "",
@@ -19,6 +28,7 @@ function Contact() {
         serviceOption: "",
 
 
+
     });
     const [contact, setContact] = useState({
         fname: "",
@@ -26,7 +36,8 @@ function Contact() {
         email: "",
         phone: "",
         address: "",
-        serviceOption: ""
+        serviceOption: "",
+
 
     });
 
@@ -54,7 +65,7 @@ function Contact() {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'FName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'Firstname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
                 });
                 break;
 
@@ -62,7 +73,7 @@ function Contact() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'LName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'Lastname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
                 });
                 break;
             case 'email':
@@ -97,16 +108,16 @@ function Contact() {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-       
-        console.log("error", errors,errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+
+        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
             setErrors({
-                fname: !contact.fname ? 'fname is required.' : '',
-                lname: !contact.lname ? 'lname is required.' : '',
+                fname: !contact.fname ? 'firstname is required.' : '',
+                lname: !contact.lname ? 'lastname is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'Phone is required.' : '',
+                phone: !contact.phone ? 'phone no is required.' : '',
                 address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
@@ -118,7 +129,8 @@ function Contact() {
             console.log("res", response)
             if (response.status === 201) {
                 toast.success('our team will connect with you');
-                alert('success our team connect with you ')
+                setReciveMsg(MSG.success)
+                alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
@@ -133,27 +145,41 @@ function Contact() {
                     lname: '',
                     email: '',
                     phone: '',
-                    address: '',
+                    address: ''
+
                     // serviceOption: '',
                 });
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
-                alert('incoorect mail')
+                setReciveMsg(MSG.incorrectMail)
+                alertcontent.click();
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
-                alert('mail sended succesfully')
+                setReciveMsg(MSG.mailSended)
+                alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
-                alert('unexpected response')
+                setReciveMsg(MSG.unexpectedResponse)
+                alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
-            alert('unexpected error')
+            setReciveMsg(MSG.unexpectedError)
+            alertcontent.click();
         }
-        
+
     }
+
+    var alertcontent = document.getElementById('alert');
+    if (alertcontent) {
+        console.log('true');
+
+    } else {
+        console.log('false')
+    }
+
     return (
         <div>
             <Navbar />
@@ -182,6 +208,13 @@ function Contact() {
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
 
                             </div>
+                            {/* <div className="col-md-6 mb-4">
+                                <input type="text" name="countrycode" value={contact.countryCode} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />
+                                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.countryCode}</div>
+
+                            </div> */}
+
+
                             <div className="col-md-6 mb-4">
                                 <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
@@ -251,8 +284,8 @@ function Contact() {
 
                             </div>
                         </div>
-                        <div className="mt-3 text-center mb-3">
-                            <button className='gold-btn'>Submit</button>
+                        <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
+                            <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
                     </form>
                 </div>
@@ -510,6 +543,47 @@ function Contact() {
                 </div>
             </div>
             <Footer />
+            <>
+                {/* Button trigger modal */}
+                <button
+                    type="button"
+                    className="btn btn-primary d-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    id='alert'
+                >
+                    Launch static backdrop modal
+                </button>
+                {/* Modal */}
+                <div
+                    className='modal fade'
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabIndex={-1}
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
+                                    Modal title
+                                </h1> */}
+                                <button
+                                    type="button"
+                                    className="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                />
+                            </div>
+                            <div className="modal-body">
+                                <p className='text-center'>{receiveMsg}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
         </div>
     );
 }
