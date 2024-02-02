@@ -346,840 +346,757 @@ function Development() {
       </section>
 
       <section className="bg-green-1 text-light">
-      <div className='pt-5 mt-5'>
-                                <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
-                                    <h1 className='secondary-header' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                        We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
-                                    </h1>
-                                    <p data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" className='primary-text fw-medium'>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
-                                    <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
-                                        <div className="row g-4">
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>ERP</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>CRM</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>HR Software</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>Enterprise Applications</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>Data Analytics</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>IT Service Management</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>Ecommerce</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>Supply Chain</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-lg-4">
-                                                <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                                    <p className='text-white mb-0'>Web Portals</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div className='pt-5 mt-5'>
+          <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
+            <h1 className='secondary-header' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+              We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
+            </h1>
+            <p data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" className='primary-text fw-medium'>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
+            <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
+              <div className="row g-4">
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>ERP</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>CRM</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>HR Software</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>Enterprise Applications</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>Data Analytics</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>IT Service Management</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>Ecommerce</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>Supply Chain</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                    <p className='text-white mb-0'>Web Portals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Techsection />
-      <section className="pricing mt-5" id="pricing-section">
-        <h1 className="primary-header text-center">Unlock Our New Features</h1>
+      <section className='pricing mt-5' id="pricing-section">
+        <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
-            <h3 className="pricing-card-header">Basic</h3>
-            <div className="price text-center">
-              <sup>$</sup>15<span>/MO</span>
+            <div className='shadow'>
+              <h3 className="pricing-card-header">Basic</h3>
+              <div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
+              <ul>
+                <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+                <li><strong>Hosting - 1</strong> Year FREE</li>
+                <li><strong>Single 1 </strong> Page Website</li>
+                <li><strong>SSL</strong> Certificate</li>
+                <li><strong>WhatsApp </strong> Chat</li>
+                <li><strong>Social </strong> Media Integration</li>
+                <li><strong>Static </strong> Website</li>
+                <li><strong>Premade  </strong> Website</li>
+                <li><strong>3 Month FREE </strong> Tech Support</li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>Single 1 </strong> Page Website
-              </li>
-              <li>
-                <strong>SSL</strong> Certificate
-              </li>
-              <li>
-                <strong>WhatsApp </strong> Chat
-              </li>
-              <li>
-                <strong>Social </strong> Media Integration
-              </li>
-              <li>
-                <strong>Static </strong> Website
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
-            </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Pro</h3>
-            <div className="price text-center">
-              <sup>$</sup>30<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>30<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Premium</h3>
-            <div className="price text-center">
-              <sup>$</sup>50<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>50<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Elite</h3>
-            <div className="price text-center">
-              <sup>$</sup>80<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>80<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
-          {/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
         </div>
-      </section>
+        <div className="justify-content-center d-flex">
+          <a href="#" className="order-btn">Order Now</a>
+        </div>
+      </section >
+      {/* <section className='pricing mt-5' id="pricing-section">
+        <div className="pricing-table">
+          <a href="#" className="order-btn">Order Now</a>
+          <a href="#" className="order-btn">Order Now</a>
+          <a href="#" className="order-btn">Order Now</a>
+          <a href="#" className="order-btn">Order Now</a>
+        </div>
+      </section> */}
       <div>
-           {/* Testimonal section */}
-      <div>
-        <section className='nav-banner testimonal' id="testimonial">
-          <div>
-            <div
-              className="elementor-widget-container"
-              style={{ margin: "2rem" }}>
+        {/* Testimonal section */}
+        <div  >
+          <section className='nav-banner testimonal' id="testimonial">
+            <div>
               <div
-                className="section-title text-center aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="100"
-                data-aos-once="true"
-              >
-                <h3 className='bg-img-1 mx-auto'>Testimonial</h3>
-
-                <span
-                  className="subtitle sub-title text-light heading5"
-                  style={{ fontFamily: '"Montserrat", sans-serif' }} data-aos="fade-right" data-aos-duration="800"
+                className="elementor-widget-container"
+                style={{ margin: "2rem" }}>
+                <div
+                  className="section-title text-center aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay="100"
+                  data-aos-once="true"
                 >
-                  What happy clients say about us ?
-                </span>
+                  <h3 className='bg-img-1 mx-auto'>Testimonial</h3>
+
+                  <span
+                    className="subtitle sub-title text-light heading5"
+                    style={{ fontFamily: '"Montserrat", sans-serif' }} data-aos="fade-right" data-aos-duration="800"
+                  >
+                    What happy clients say about us ?
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="">
-              <div className="carousel ">
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-                  <div className="carousel-inner container">
-                    <div className="carousel-item active" data-bs-interval="3000">
-                      <div className="row p-3">
-                        <div className="col-md-4 mb-5">
+              <div className="">
+                <div className="carousel ">
+                  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                    <div className="carousel-inner container">
+                      <div className="carousel-item active" data-bs-interval="3000">
+                        <div className="row p-3">
+                          <div className="col-md-4 mb-5">
 
-                          <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
-                            <div>
-                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
-                            </div>
-                            <div className='text-light py-3 my-3' >
-                              <h4 className='heading9 fw-bold fs-5'>Sarah Jones</h4>
-                              <p className='heading5'>CEO</p>
+                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                              <div>
+                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              </div>
+                              <div className='text-light py-3 my-3' >
+                                <h4 className='heading9 fw-bold fs-5'>Sarah Jones</h4>
+                                <p className='heading5'>CEO</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
-                          <div className="user">
-                            <div className="card-description " >
-                              <div className="title-area">
-                                <div className="title-info">
-                                  <h3 className="title heading9">Sarah Jones, CEO</h3>
-                                  <span className="date"> </span>
+                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                            <div className="user">
+                              <div className="card-description " >
+                                <div className="title-area">
+                                  <div className="title-info">
+                                    <h3 className="title heading9">Sarah Jones, CEO</h3>
+                                    <span className="date"> </span>
+                                  </div>
+
+                                  <div className="rating">
+                                    <ul className="p-0 mx-auto my-0">
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                                <div className="rating">
-                                  <ul className="p-0 mx-auto my-0">
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <div className="my-3 border"></div>
+                                <div className="seperator"></div>
+                                <p className="description heading5">From scrappy startup to industry leader, Axess helped us scale with custom software that empowers our team and delights our customers. They truly understood our vision and translated it into a seamless, efficient solution.{" "}</p>
                               </div>
-                              <div className="my-3 border"></div>
-                              <div className="seperator"></div>
-                              <p className="description heading5">From scrappy startup to industry leader, Axess helped us scale with custom software that empowers our team and delights our customers. They truly understood our vision and translated it into a seamless, efficient solution.{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                      <div className="row p-3">
-                        <div className="col-md-4 mb-5">
-                          <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
-                            <div>
-                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
-                            </div>
-                            <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Mark Davis</h4>
-                              <p className='heading5'>CIO</p>
+                      <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row p-3">
+                          <div className="col-md-4 mb-5">
+                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                              <div>
+                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              </div>
+                              <div className='text-light py-3 my-3'>
+                                <h4 className='heading9 fw-bold fs-5'>Mark Davis</h4>
+                                <p className='heading5'>CIO</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
-                          <div className="user">
-                            <div className="card-description ">
-                              <div className="title-area">
-                                <div className="title-info">
-                                  <h3 className="title heading9">Mark Davis, CIO</h3>
-                                  <span className="date"> </span>
+                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                            <div className="user">
+                              <div className="card-description ">
+                                <div className="title-area">
+                                  <div className="title-info">
+                                    <h3 className="title heading9">Mark Davis, CIO</h3>
+                                    <span className="date"> </span>
+                                  </div>
+
+                                  <div className="rating">
+                                    <ul className="p-0 mx-auto my-0">
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                                <div className="rating">
-                                  <ul className="p-0 mx-auto my-0">
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <div className="my-3 border"></div>
+                                <div className="seperator"></div>
+                                <p className="description heading5">Axess went above and beyond to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable.{" "}</p>
                               </div>
-                              <div className="my-3 border"></div>
-                              <div className="seperator"></div>
-                              <p className="description heading5">Axess went above and beyond to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable.{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                      <div className="row p-3">
-                        <div className="col-md-4 mb-5">
-                          <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
-                            <div>
-                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
-                            </div>
-                            <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Emily Chen</h4>
-                              <p className='heading5'>COO</p>
+                      <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row p-3">
+                          <div className="col-md-4 mb-5">
+                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                              <div>
+                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              </div>
+                              <div className='text-light py-3 my-3'>
+                                <h4 className='heading9 fw-bold fs-5'>Emily Chen</h4>
+                                <p className='heading5'>COO</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
-                          <div className="user">
-                            <div className="card-description ">
-                              <div className="title-area">
-                                <div className="title-info">
-                                  <h3 className="title heading9">Emily Chen, COO</h3>
-                                  <span className="date"> </span>
+                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                            <div className="user">
+                              <div className="card-description ">
+                                <div className="title-area">
+                                  <div className="title-info">
+                                    <h3 className="title heading9">Emily Chen, COO</h3>
+                                    <span className="date"> </span>
+                                  </div>
+
+                                  <div className="rating">
+                                    <ul className="p-0 mx-auto my-0">
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                                <div className="rating">
-                                  <ul className="p-0 mx-auto my-0">
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <div className="my-3 border"></div>
+                                <div className="seperator"></div>
+                                <p className="description heading5">We were struggling with outdated software that hindered our growth. Axess modernized our entire system, boosting productivity and streamlining operations. The ROI has been incredible!{" "}</p>
                               </div>
-                              <div className="my-3 border"></div>
-                              <div className="seperator"></div>
-                              <p className="description heading5">We were struggling with outdated software that hindered our growth. Axess modernized our entire system, boosting productivity and streamlining operations. The ROI has been incredible!{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                      <div className="row p-3">
-                        <div className="col-md-4 mb-5">
-                          <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
-                            <div>
-                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
-                            </div>
-                            <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Rani Singh</h4>
-                              <p className='heading5'>CEO</p>
+                      <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row p-3">
+                          <div className="col-md-4 mb-5">
+                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                              <div>
+                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              </div>
+                              <div className='text-light py-3 my-3'>
+                                <h4 className='heading9 fw-bold fs-5'>Rani Singh</h4>
+                                <p className='heading5'>CEO</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
-                          <div className="user">
-                            <div className="card-description ">
-                              <div className="title-area">
-                                <div className="title-info">
-                                  <h3 className="title heading9">Rani Singh, CEO</h3>
-                                  <span className="date"> </span>
+                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                            <div className="user">
+                              <div className="card-description ">
+                                <div className="title-area">
+                                  <div className="title-info">
+                                    <h3 className="title heading9">Rani Singh, CEO</h3>
+                                    <span className="date"> </span>
+                                  </div>
+
+                                  <div className="rating">
+                                    <ul className="p-0 mx-auto my-0">
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                                <div className="rating">
-                                  <ul className="p-0 mx-auto my-0">
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <div className="my-3 border"></div>
+                                <div className="seperator"></div>
+                                <p className="description heading5">"From bootstrapped startup to industry leader, Axess propelled us forward with custom software that empowers our team and delights our customers. Their team truly understood our vision and translated it into a seamless, efficient solution. They were the wind beneath our wings!"{" "}</p>
                               </div>
-                              <div className="my-3 border"></div>
-                              <div className="seperator"></div>
-                              <p className="description heading5">"From bootstrapped startup to industry leader, Axess propelled us forward with custom software that empowers our team and delights our customers. Their team truly understood our vision and translated it into a seamless, efficient solution. They were the wind beneath our wings!"{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                      <div className="row p-3">
-                        <div className="col-md-4 mb-5">
-                          <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
-                            <div>
-                              <img src={Profiledub} alt="" className='w-50 mx-auto' />
-                            </div>
-                            <div className='text-light py-3 my-3'>
-                              <h4 className='heading9 fw-bold fs-5'>Akhilesh Kumar</h4>
-                              <p className='heading5'>CIO</p>
+                      <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row p-3">
+                          <div className="col-md-4 mb-5">
+                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                              <div>
+                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                              </div>
+                              <div className='text-light py-3 my-3'>
+                                <h4 className='heading9 fw-bold fs-5'>Akhilesh Kumar</h4>
+                                <p className='heading5'>CIO</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
-                          <div className="user">
-                            <div className="card-description ">
-                              <div className="title-area">
-                                <div className="title-info">
-                                  <h3 className="title heading9">Akhilesh Kumar, CIO</h3>
-                                  <span className="date"> </span>
+                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                            <div className="user">
+                              <div className="card-description ">
+                                <div className="title-area">
+                                  <div className="title-info">
+                                    <h3 className="title heading9">Akhilesh Kumar, CIO</h3>
+                                    <span className="date"> </span>
+                                  </div>
+
+                                  <div className="rating">
+                                    <ul className="p-0 mx-auto my-0">
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+
+                                      <li className="has-rating list-inline-item">
+                                        <i className="star-icon">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            className="bi bi-star-fill"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                          </svg>
+                                        </i>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                                <div className="rating">
-                                  <ul className="p-0 mx-auto my-0">
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-
-                                    <li className="has-rating list-inline-item">
-                                      <i className="star-icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          fill="currentColor"
-                                          className="bi bi-star-fill"
-                                          viewBox="0 0 16 16"
-                                        >
-                                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                        </svg>
-                                      </i>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <div className="my-3 border"></div>
+                                <div className="seperator"></div>
+                                <p className="description heading5">"Axess went the extra mile to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable. They were like the missing piece to our digital puzzle!"{" "}</p>
                               </div>
-                              <div className="my-3 border"></div>
-                              <div className="seperator"></div>
-                              <p className="description heading5">"Axess went the extra mile to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable. They were like the missing piece to our digital puzzle!"{" "}</p>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
 
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        className="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        className="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span className="visually-hidden">Next</span>
+                    </button>
                   </div>
 
-                  <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
                 </div>
-
               </div>
             </div>
-          </div>
 
-        </section>
-      </div>
+          </section>
+        </div>
       </div>
 
       <Footer />
