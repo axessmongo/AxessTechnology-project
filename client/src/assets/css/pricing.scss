@@ -197,6 +197,7 @@
     flex: 1;
     position: relative;
     // max-width: 360px;
+    z-index: 4;
     background-color: #fff;
     margin: 20px 10px;
     text-align: center;
@@ -227,7 +228,7 @@
     font-weight: 600;
     transition: .4s linear;
     text-align: center !important;
-    z-index: 4;
+   
   }
 
   .pricing-card:hover .shadow {
@@ -245,15 +246,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 0;
     width: 100%;
     z-index: -2;
-    border-top-right-radius: 50px;
-    background-color: red;
+    border-bottom-right-radius: 100px;
+    background-color: #05463c;
+    transition: .4s linear;
   }
   .pricing-card:hover::after{
     height: 100%;
-    background-color: #05463c
+    // width: 100%;
   }
   .price {
     font-size: 40px;
