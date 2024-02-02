@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise1.jpg";
-import Process from "../assets/images/Our-process1.jpg";
+import Process from "../assets/images/Our-Process1.jpg";
 
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
