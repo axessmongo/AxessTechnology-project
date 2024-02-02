@@ -19,10 +19,10 @@ app.get("/", (req, res) => {
 });
 
 
-const mongoURL = 'mongodb+srv://axessmongo:admin@cluster0.ozjlhdj.mongodb.net/test?retryWrites=true&w=majority';
+// const mongoURL = 'mongodb+srv://axessmongo:admin@cluster0.ozjlhdj.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose
-  .connect(mongoURL, {
+  .connect(process.env.mongoURL, {
   })
   .then(() => {
     console.log('Connected to MongoDB');
