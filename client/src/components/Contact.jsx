@@ -118,7 +118,7 @@ function Contact() {
                 lname: !contact.lname ? 'lastname is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
                 phone: !contact.phone ? 'phone no is required.' : '',
-                address: !contact.address ? 'Address is required.' : '',
+                // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
