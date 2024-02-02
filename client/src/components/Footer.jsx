@@ -197,9 +197,8 @@ function Footer() {
                                 </div>
                             <div className="row">
                                 <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Telegram Us : @axesstechnology.in</p>
                                     <p>WhatsApp : +91 7358104213  </p>
-                                    <p>Social: Instagram: axess_technology</p>
+                                    <p>Instagram: axess_technology</p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Phone : +91 90425 77261</p>
