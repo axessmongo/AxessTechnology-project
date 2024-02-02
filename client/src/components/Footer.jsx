@@ -240,11 +240,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
+                                    <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
+                                    <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
+                                    <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
+                                    <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
+                                    <li><Link to="/contact" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -252,11 +252,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li>
+                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white'>Web development</Link></li>
+                                    <li><Link to="/development" className='primary-text text-decoration-none text-white'>software development</Link></li>
+                                    <li><Link to="/testing" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
+                                    <li><Link to="/digitalmarketing" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
+                                    {/* <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li> */}
                                 </ul>
                             </div>
                         </div>
