@@ -59,7 +59,7 @@ export default function Industries() {
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                                         <img src={restaurant} className='mb-2' alt="https://maticz.com/assets/images/home/fintech.webp" />
-                                        <p className='secondary-text mb-0'>Resturant</p>
+                                        <p className='secondary-text mb-0'>Restaurant</p>
                                     </div>
                                 </div>
                                 <div className="col-6 col-md-5 col-lg-3">
@@ -101,7 +101,7 @@ export default function Industries() {
                                 <div className="col-6 col-md-5 col-lg-3">
                                     <div className="industries-card" data-aos='zoom-out' data-aos-duration='500'>
                                         <img src={socialmedia} className='mb-2' alt="https://maticz.com/assets/images/home/social-media.webp" />
-                                        <p className='secondary-text mb-0'>Socaial Networking</p>
+                                        <p className='secondary-text mb-0'>Social Networking</p>
                                     </div>
                                 </div>
                             </div>

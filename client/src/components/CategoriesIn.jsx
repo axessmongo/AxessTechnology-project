@@ -189,10 +189,10 @@ export default function CategoriesIn() {
                                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
                                                 </div>
                                                 <div className='pt-2 '>
-                                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button>
+                                                   <Link to={"/webdevelopment"} className='text-decoration-none'><button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button></Link> 
                                                 </div>
                                                 <div className='pt-2'>
-                                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>BuyNow</span> <i className="bi bi-arrow-right"></i></button>
+                                                <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-0 green-btn'><span className='d-block'>BuyNow</span> <i className="bi bi-arrow-right"></i></button></Link>
                                                 </div>
                                             </div>
                                         </div>
