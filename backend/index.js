@@ -13,16 +13,23 @@ app.use(cors());
 app.use(route)
 
 
+app.get("/", (req, res) => {
+  console.log('Request received at root path');
+  res.send('Welcome to Node.js'); // Send a response to the client
+});
+
+
+const mongoURL = 'mongodb+srv://axessmongo:admin@cluster0.ozjlhdj.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose
-  .connect( process.env.mongoURL, {
+  .connect(mongoURL, {
   })
   .then(() => {
-    console.log("Connected to MongoDB");
+    console.log('Connected to MongoDB');
     app.listen(PORT, () => {
-      console.log("Server is listening on port " + PORT);
+      console.log('Server is listening on port ' + PORT);
     });
   })
-  .catch(error => {
-    console.error("Error connecting to MongoDB:", error);
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
   });

@@ -195,7 +195,9 @@
 
   .pricing-card {
     flex: 1;
-    max-width: 360px;
+    position: relative;
+    // max-width: 360px;
+    z-index: 4;
     background-color: #fff;
     margin: 20px 10px;
     text-align: center;
@@ -205,12 +207,11 @@
     transition: .3s linear;
     text-align: start;
     border-radius: 0 0 50px 0;
-
+    transition: all .4s ease;
 
     .shadow {
       padding-bottom: 10px;
       border-radius: 0 0 30px 0;
-
       transition: .8s linear;
     }
 
@@ -227,19 +228,25 @@
     font-weight: 600;
     transition: .4s linear;
     text-align: center !important;
+   
   }
 
-  .pricing-card:hover .shadow {
+  .pricing-card::after{
+    content: "ghgj";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: -2;
+    border-bottom-right-radius: 100px;
     background-color: #05463c;
-
-
+    transition: .4s linear;
   }
-
-  .pricing-card:hover .pricing-card-header {
-    box-shadow: 0 0 0 37em #05463c;
-
+  .pricing-card:hover::after{
+    height: 100%;
+    // width: 100%;
   }
-
   .price {
     font-size: 40px;
     color: #0fbcf9;
@@ -265,9 +272,9 @@
   }
 
   .order-btn {
-    display: inline-block;
+    // display: inline-block;
     margin-bottom: 40px;
-    margin-top: 25%;
+    // margin-top: 25%;
     border: 2px solid #b98d2e;
     color: #05463c;
     padding: 12px 35px;
