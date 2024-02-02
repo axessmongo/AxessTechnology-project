@@ -161,7 +161,7 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-10">
                                     <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2' data-aos='zoom-out'>Contact us</p>
-                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
+                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Axess, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                                 </div>
                                 <div className="col-md-2 position-absolute footerbg">
                                     <img src={frompng} alt="" />
