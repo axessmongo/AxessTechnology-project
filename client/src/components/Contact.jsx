@@ -109,10 +109,10 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone )
 
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
+        if (errors.fname || errors.lname || errors.email || errors.phone )return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
                 fname: !contact.fname ? 'firstname is required.' : '',
                 lname: !contact.lname ? 'lastname is required.' : '',
@@ -124,9 +124,7 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', contact);
-
-            console.log("res", response)
+            const response = await axios.post('http://localhost:4000/api/contact', contact);
             if (response.status === 201) {
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
@@ -287,6 +285,7 @@ function Contact() {
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
+                        <ToastContainer/>
                     </form>
                 </div>
             </div>
