@@ -331,10 +331,10 @@ img {
   .layer-one {
     animation: height $layer-durations-1 0s 1 forwards;
 
-    .one {
-      // transform: translate(0%, 100%);
-      // animation: layer-one-one $layer-durations-1 0s 1 forwards;
-    }
+    // .one {
+    //   transform: translate(0%, 100%);
+    //   animation: layer-one-one $layer-durations-1 0s 1 forwards;
+    // }
 
     .popup-letters {
       overflow: hidden;
