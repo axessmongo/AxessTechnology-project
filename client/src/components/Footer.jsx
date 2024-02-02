@@ -120,7 +120,7 @@ function Footer() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', contact);
+            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
