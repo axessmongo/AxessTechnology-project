@@ -202,7 +202,8 @@ function Footer() {
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Phone : +91 90425 77261</p>
-                                    <p>Email : info@axesstechnology.in</p>
+                                    <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                    
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
@@ -279,10 +280,10 @@ function Footer() {
                     <div className="row">
                         <div className="row text-center text-md-start">
                             <div className="col-md-6" data-aos='zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 87998</span></p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 xxxxx</span></p>
                             </div>
                             <div className="col-md-6" data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
+                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 xxxxx</span></p>
                             </div>
                         </div>
                     </div>
