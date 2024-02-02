@@ -7,8 +7,15 @@ import "../assets/css/index.scss"
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
-
 function Footer() {
+    const [receiveMsg, setReciveMsg] = useState('none')
+    let MSG = {
+        success: "success",
+        mailSended: "Mail sended successfully",
+        unexpectedError: "unexpected Error",
+        unexpectedResponse: "unexpectedResponse",
+        incorrectMail: "incorrect Mail"
+    }
     const [errors, setErrors] = useState({
         fname: "",
         lname: "",
@@ -102,10 +109,10 @@ function Footer() {
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.description) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.description.trim()) {
             setErrors({
-                fname: !contact.fname ? 'firstname is required.' : '',
-                lname: !contact.lname ? 'lastname is required.' : '',
+                fname: !contact.fname ? 'Firstname is required.' : '',
+                lname: !contact.lname ? 'Lastname is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'phone no is required.' : '',
+                phone: !contact.phone ? 'Phone No is required.' : '',
                 // description: !contact.description ? 'description is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
@@ -136,21 +143,35 @@ function Footer() {
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
-                alert('mail or password is incorrect')
+                setReciveMsg(MSG.incorrectMail)
+                alertcontent.click();
+                
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
-                alert('mail sended')
+                setReciveMsg(MSG.mailSended)
+                alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
-                alert('unexpected response')
+                setReciveMsg(MSG.unexpectedResponse)
+                alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
-            alert('unexpected error')
+            setReciveMsg(MSG.unexpectedError)
+            alertcontent.click();
         }
 
     }
+
+    var alertcontent = document.getElementById('alert');
+    if (alertcontent) {
+        console.log('true');
+
+    } else {
+        console.log('false')
+    }
+
 
     return (
         <div>
@@ -208,10 +229,10 @@ function Footer() {
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </form>
             </div>
@@ -293,6 +314,47 @@ function Footer() {
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link to={"/privacypolicy"}>Privacy Policy </Link></p>
                 </div>
             </div>
+            <>
+                {/* Button trigger modal */}
+                <button
+                    type="button"
+                    className="btn btn-primary d-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    id='alert'
+                >
+                    Launch static backdrop modal
+                </button>
+                {/* Modal */}
+                <div
+                    className='modal fade'
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabIndex={-1}
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
+                                    Modal title
+                                </h1> */}
+                                <button
+                                    type="button"
+                                    className="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                />
+                            </div>
+                            <div className="modal-body">
+                                <p className='text-center'>{receiveMsg}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
         </div>
     )
 }
