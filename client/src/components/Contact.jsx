@@ -3,7 +3,6 @@ import axios from 'axios';
 import Banner from '../components/Banner';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 import { toast, ToastContainer } from 'react-toastify';
 
@@ -124,7 +123,7 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', contact);
+            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
