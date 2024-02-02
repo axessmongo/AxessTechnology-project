@@ -237,7 +237,7 @@ function Development() {
                 <div className="small-card mt-3">
                   <h4>Agile Methodology</h4>
                   <p className="primary-text">
-                  We embrace agile development practices to ensure
+                    We embrace agile development practices to ensure
                     flexibility, quick iterations, and continuous improvement.
                   </p>
                 </div>
@@ -479,14 +479,6 @@ function Development() {
           <a href="#" className="order-btn">Order Now</a>
         </div>
       </section >
-      {/* <section className='pricing mt-5' id="pricing-section">
-        <div className="pricing-table">
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-        </div>
-      </section> */}
       <div>
         {/* Testimonal section */}
         <div  >
