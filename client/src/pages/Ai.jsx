@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise.jpg";
-import Process from "../assets/images/Our-Process.jpg";
+import Process from "../assets/images/Our-Process1.jpg";
 import Why from "../assets/images/Why-Choose.jpg";
 import bubble from "../assets/images/bubble.webp";
 import success from "../assets/images/success.png";
