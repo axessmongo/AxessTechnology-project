@@ -240,7 +240,7 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
+                                    {/* <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li> */}
                                     <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
                                     <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
                                     <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
