@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const AxessTechnology = require("../TaskControl/Control.js")
-const HomepageContact =require("../TaskControl/HomepageContact.js")
+const HomepageContact =require("../TaskControl/HomepageControl.js")
 const AxessRestPassword =require("../TaskControl/Reset-password.js")
 
 //homepage contact form:

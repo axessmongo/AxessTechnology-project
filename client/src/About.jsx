@@ -43,7 +43,7 @@ function About() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="aboutusimg position-relative"  data-aos="fade-left" data-aos-duration="1000">
+            <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
               <div class="blur-img">
                 <img
                   src={
@@ -156,7 +156,7 @@ function About() {
         </div>
       </div>
       <section className="bg-green-1 py-5 mt-5">
-        <div  data-aos="fade-up" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
               Eight years of experience, countless success stories, and a
@@ -178,7 +178,7 @@ function About() {
             Schedule a free consultation to discuss your unique needs.{" "}
           </p>
         </div>
-        <div className="row mt-5 bg-white"  data-aos="fade-up" data-aos-duration="1000">
+        <div className="row mt-5 bg-white" data-aos="fade-up" data-aos-duration="1000">
           <div className="col-md-6 text-center">
             <p className="fs-5 mx-auto text-black mt-4">
               Follow us on social media for digital insights and inspiration.
