@@ -1,6 +1,6 @@
 const userModel = require("../userModel/UserSchema");
 const tokenModel = require("../userModel/tokenSchema");
-const sendEmail = require("../utils/sendEmail");
+const sendEmail = require("../utils/sendMailer.js");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 
