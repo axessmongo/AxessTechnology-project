@@ -22,7 +22,7 @@ export default function Links() {
 
   return (
     <div className= {`links-container row align-items-center text-white ${hover}`}>
-      <div className="col-md-3">
+      <div className="col-3">
         <a href='/' className="d-flex justify-content-center text-decoration-none text-white" 
         onMouseEnter={(color) => setcolorfunctoin('whatsappcolor')}
         onMouseLeave={()=> setHover('')}>
@@ -31,10 +31,10 @@ export default function Links() {
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5'>+91 832327 32112</p>
+          <p className='mb-0 ms-5 d-none d-lg-block'>83232 32112</p>
         </a>
       </div>
-      <div className="col-md-3">
+      <div className="col-3">
         <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
         onMouseEnter={(color) => setcolorfunctoin('facebookcolor')}
         onMouseLeave={()=> setHover('')}>
@@ -43,10 +43,10 @@ export default function Links() {
               <i className="bi bi-facebook"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5'>@Axess</p>
+          <p className='mb-0 ms-5 d-none d-lg-block'>@Axess</p>
         </a>
       </div>
-      <div className="col-md-3">
+      <div className="col-3">
         <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
         onMouseEnter={(color) => setcolorfunctoin('instagramcolor')}
         onMouseLeave={()=> setHover('')}>
@@ -55,10 +55,10 @@ export default function Links() {
               <i className="bi bi-instagram"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5'>axess_technology</p>
+          <p className='mb-0 ms-5 d-none d-lg-block'>axess_technology</p>
         </a>
       </div>
-      <div className="col-md-3">
+      <div className="col-3">
         <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
         onMouseEnter={(color) => setcolorfunctoin('linkedincolor')}
         onMouseLeave={()=> setHover('')}>
@@ -67,7 +67,7 @@ export default function Links() {
               <i className="bi bi-linkedin"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5'>axess_official</p>
+          <p className='mb-0 ms-5 d-none d-lg-block'>axess_official</p>
         </a>
       </div>
     </div>

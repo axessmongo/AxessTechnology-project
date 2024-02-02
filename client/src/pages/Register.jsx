@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/register.scss";
-import "../assets/css/index.scss";
+// import "../assets/css/index.scss";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { ToastContainer, toast } from 'react-toastify';
