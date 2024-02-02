@@ -4,6 +4,7 @@ import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
 // import contact  from '../assets/images/contact.jpg'
 import "../assets/css/index.scss"
+import "../assets/css/footer.scss"
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
@@ -224,7 +225,7 @@ function Footer() {
                                     <img src={footer} className='' data-aos='zoom-out' data-aos-duration='700' alt="" />
                                 </div>
                             </div>
-                            <div className="col-md-6 text-center pt-4" data-aos='fade-up' data-aos-duration='700'>
+                            <div className="col-md-6 text-center pt-4 " data-aos='fade-up' data-aos-duration='700'>
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
                                 <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
@@ -240,23 +241,23 @@ function Footer() {
                         <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
-                                <ul className='list-unstyled '>
+                                <ul className='list-unstyled'>
                                     {/* <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li> */}
-                                    <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
-                                    <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
-                                    <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
-                                    <li><Link to="/contact" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
+                                    <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>About</Link></li>
+                                    <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Services</Link></li>
+                                    <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Our Works</Link></li>
+                                    <li><Link to="/contact" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
-                                <ul className='list-unstyled '>
-                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white'>Web development</Link></li>
-                                    <li><Link to="/development" className='primary-text text-decoration-none text-white'>software development</Link></li>
-                                    <li><Link to="/testing" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
-                                    <li><Link to="/digitalmarketing" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
+                                <ul className='list-unstyled'>
+                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white footerhover'>Web development</Link></li>
+                                    <li><Link to="/development" className='primary-text text-decoration-none text-white footerhover'>software development</Link></li>
+                                    <li><Link to="/testing" className='primary-text text-decoration-none text-white footerhover'>software Testing</Link></li>
+                                    <li><Link to="/digitalmarketing" className='primary-text text-decoration-none text-white footerhover'>Digital Marketing</Link></li>
                                     {/* <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li> */}
                                 </ul>
                             </div>
@@ -290,7 +291,7 @@ function Footer() {
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link to={"/privacypolicy"}>Privacy Policy </Link></p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
         </div>

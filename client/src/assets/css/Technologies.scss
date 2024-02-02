@@ -108,3 +108,9 @@
   margin: 0 10px;
   display: block;
 }
+
+.footerhover {
+  &:hover {
+      color: #f7851d;
+  }
+}
