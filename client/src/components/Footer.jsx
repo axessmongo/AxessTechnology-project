@@ -154,7 +154,7 @@ function Footer() {
 
     return (
         <div>
-            <div className="container mt-4 conatctbg">
+            <div className="container mt-4 contactbg">
                 <form onSubmit={handleSubmit}>
                     <div className="card">
                         <div className="card-body position-relative">
