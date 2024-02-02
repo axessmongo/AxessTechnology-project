@@ -175,14 +175,14 @@ function Footer() {
 
     return (
         <div>
-            <div className="container mt-4 conatctbg">
+            <div className="container mt-4 contactbg">
                 <form onSubmit={handleSubmit}>
                     <div className="card">
                         <div className="card-body position-relative">
                             <div className="row">
                                 <div className="col-md-10">
                                     <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2' data-aos='zoom-out'>Contact us</p>
-                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Maticz, We respect your privacy and Never share your details with anyone. Let's build together.</p>
+                                    <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Axess, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                                 </div>
                                 <div className="col-md-2 position-absolute footerbg">
                                     <img src={frompng} alt="" />
@@ -216,18 +216,18 @@ function Footer() {
 
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>Telegram Us : @axesstechnology.in</p>
-                                        <p>WhatsApp : +91 7358104213  </p>
-                                        <p>Social: Instagram: axess_technology</p>
-                                    </div>
-                                    <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>Phone : +91 90425 77261</p>
-                                        <p>Email : info@axesstechnology.in</p>
-                                    </div>
-                                    <div className="col-md-4" data-aos='zoom-out'>
-                                        <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                            <div className="row">
+                                <div className="col-md-4" data-aos ='zoom-out'>
+                                    <p>WhatsApp : +91 7358104213  </p>
+                                    <p>Instagram: axess_technology</p>
+                                </div>
+                                <div className="col-md-4" data-aos ='zoom-out'>
+                                    <p>Phone : +91 90425 77261</p>
+                                    <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                    
+                                </div>
+                                <div className="col-md-4" data-aos ='zoom-out'>
+                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
 
                                     </div>
                                 </div>
@@ -262,11 +262,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
-                                    <li><Link to="" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
+                                    {/* <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li> */}
+                                    <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>About</Link></li>
+                                    <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Services</Link></li>
+                                    <li><Link to="/ourworks" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Our Works</Link></li>
+                                    <li><Link to="/contact" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white'>Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -274,11 +274,11 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled '>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Web development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software development</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
-                                    <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li>
+                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white'>Web development</Link></li>
+                                    <li><Link to="/development" className='primary-text text-decoration-none text-white'>software development</Link></li>
+                                    <li><Link to="/testing" className='primary-text text-decoration-none text-white'>software Testing</Link></li>
+                                    <li><Link to="/digitalmarketing" className='primary-text text-decoration-none text-white'>Digital Marketing</Link></li>
+                                    {/* <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li> */}
                                 </ul>
                             </div>
                         </div>
@@ -301,17 +301,17 @@ function Footer() {
                     <div className="row">
                         <div className="row text-center text-md-start">
                             <div className="col-md-6" data-aos='zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 87998</span></p>
+                                <p className='fw-semibold fs-6'> <span className='gold-text-2'>Business Enquiry</span> <span className='primary-text'>: +91 93845 xxxxx</span></p>
                             </div>
                             <div className="col-md-6" data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
-                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 23585</span></p>
+                                <p className='fw-semibold fs-6 text-md-end'><span className='gold-text-2'>For Jobs</span><span className="primary-text"> : +91 93614 xxxxx</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.</p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link to={"/privacypolicy"}>Privacy Policy </Link></p>
                 </div>
             </div>
             <>

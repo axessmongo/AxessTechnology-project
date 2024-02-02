@@ -26,7 +26,8 @@ import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
-import DigitalMarketing from './pages/DigitalMarketing' ; 
+import DigitalMarketing from './pages/DigitalMarketing' ;  
+import Policy from './pages/Policy';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -58,7 +59,8 @@ function Routing() {
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
-                    
+                    <Route path='/privacypolicy' element ={<Policy/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>
