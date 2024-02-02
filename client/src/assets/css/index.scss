@@ -186,23 +186,27 @@ img {
         background-color: white;
       }
 
-      &.pricing{
-        .nav-link{
+      &.pricing {
+        .nav-link {
           padding: 10px;
           margin: 0 0 10px;
         }
-        .nav-item{
-          &:first-child{
-            .nav-link{
+
+        .nav-item {
+          &:first-child {
+            .nav-link {
               margin: 10px 0;
             }
           }
         }
       }
     }
-    &:hover .drop, &:focus .drop , &:active .drop
-    // , &:focus-within .drop
-    {
+
+    &:hover .drop,
+    &:focus .drop,
+    &:active .drop // , &:focus-within .drop
+
+      {
       transform: translate(-50%, 0%);
       max-height: max-content;
     }
@@ -1328,6 +1332,19 @@ img {
 
 
 @media(max-width:992px) {
+  .navbar  {
+    .nav-link {
+      background: transparent;
+      text-align: center;
+    }
+    .nav-item{
+      .drop {
+        position: relative;
+        z-index: 12;
+      }
+    }
+  }
+
   .primary-header {
     font-size: 32px;
   }

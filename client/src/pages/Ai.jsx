@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss";
+// import "../assets/css/index.scss";
 import kvrprofile from '../assets/images/kvr profile.png'
 
 

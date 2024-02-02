@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss";
+// import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import webdev from "../assets/images/web-dev2.png";

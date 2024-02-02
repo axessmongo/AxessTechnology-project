@@ -3,7 +3,6 @@ import axios from 'axios';
 import Banner from '../components/Banner';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 import { toast, ToastContainer } from 'react-toastify';
 

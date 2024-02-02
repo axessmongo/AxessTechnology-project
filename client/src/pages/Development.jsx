@@ -10,7 +10,6 @@ import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
 
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import Profiledub from '../assets/images/testing/dub-img.png'
