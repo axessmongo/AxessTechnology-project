@@ -312,7 +312,7 @@ function Footer() {
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
             <>

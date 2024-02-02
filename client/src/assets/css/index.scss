@@ -1106,6 +1106,10 @@ img {
 
 .footercontent {
   padding-top: 100px;
+
+  .last-child{
+    padding-bottom: 70px !important;
+  }
 }
 
 .footerbg {
@@ -1141,7 +1145,7 @@ img {
     margin: auto;
     animation: floating 8s 0s infinite;
     position: relative;
-    transition: .1s;
+    // transition: .1s;
 
     img {
       height: 100%;
