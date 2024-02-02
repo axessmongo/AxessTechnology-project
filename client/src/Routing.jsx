@@ -26,12 +26,8 @@ import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
-<<<<<<< HEAD
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 import Policy from './pages/Policy';
-=======
-import DigitalMarketing from './pages/DigitalMarketing' ; 
->>>>>>> 706ac63e48080f5f9c664b2264fea5a2744f65ca
 
 function Routing() {
     const user = localStorage.getItem("token");
