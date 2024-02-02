@@ -13,9 +13,10 @@ app.use(cors());
 app.use(route)
 
 
-app.get("/",(req, res) => {
-  console.log('welcome to nodejs')
-})
+app.get("/", (req, res) => {
+  console.log('Request received at root path');
+  res.send('Welcome to Node.js'); // Send a response to the client
+});
 
 
 const mongoURL = 'mongodb+srv://axessmongo:admin@cluster0.ozjlhdj.mongodb.net/test?retryWrites=true&w=majority';
