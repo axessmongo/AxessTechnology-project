@@ -6,6 +6,8 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 const app = express();
 const route = require("./Router/route.js");
+// return process.dlopen(module, path.toNamespacedPath(filename));
+
 
 app.use(cors());
 app.use(bodyParser.json());
