@@ -27,6 +27,7 @@ import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
+import Policy from './pages/Policy';
 
 function Routing() {
 
@@ -60,6 +61,8 @@ function Routing() {
                     <Route path='/ai' element={<Ai />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
+                    <Route path='/privacypolicy' element ={<Policy/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>
