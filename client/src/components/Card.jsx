@@ -5,6 +5,10 @@ export default function Card() {
     return (
         <div>
             <div className="bg-green-1">
+                <div className='d-flex justify-content-center'>
+                <p className=' bg-img-2' data-aos='fade-up' data-aos-duration ='600'> Solutions</p>
+
+                </div>
                 <div className="container">
                     <div className="row align-items-center g-5">
                         <div className="col-md-4">
@@ -12,7 +16,6 @@ export default function Card() {
 
                         </div>
                         <div className="col-md-8 text-white">
-                            <p className=' bg-img-2' data-aos='fade-up' data-aos-duration ='600'> Solutions</p>
                             <h2 className='text-white mt-5 mb-3' data-aos='fade-up' data-aos-duration ='600'>We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
                             </h2>
                             <p className='secondary-text' data-aos='fade-up' data-aos-duration ='600'>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
