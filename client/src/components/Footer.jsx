@@ -105,31 +105,26 @@ function Footer() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
-        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.description)
-
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.description) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.description.trim()) {
+        if (errors.fname || errors.lname || errors.email || errors.phone) return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'Firstname is required.' : '',
-                lname: !contact.lname ? 'Lastname is required.' : '',
+                fname: !contact.fname ? 'firstname is required.' : '',
+                lname: !contact.lname ? 'lastname is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'Phone No is required.' : '',
-                // description: !contact.description ? 'description is required.' : '',
+                phone: !contact.phone ? 'phone no is required.' : '',
+                // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
-
             });
-
             return;
-
         }
         try {
             const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
-
-                toast.success('our team will connect you');
+                toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
                 // alertcontent.click();
                 setContact({
@@ -137,22 +132,24 @@ function Footer() {
                     lname: "",
                     email: "",
                     phone: "",
-                    description: "",
+                    address: "",
+                    serviceOption: ""
 
                 })
                 setErrors({
                     fname: '',
                     lname: '',
                     email: '',
-                    phone: "",
-                    description: "",
+                    phone: '',
+                    address: ''
+
+                    // serviceOption: '',
                 });
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
                 // alertcontent.click();
-
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
@@ -170,7 +167,6 @@ function Footer() {
         }
 
     }
-
     // var alertcontent = document.getElementById('alert');
     // if (alertcontent) {
     //     console.log('true');
