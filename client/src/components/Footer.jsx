@@ -9,7 +9,7 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
 function Footer() {
-    const [receiveMsg, setReciveMsg] = useState('none')
+    const [receiveMsg, setReciveMsg] = useState()
     let MSG = {
         success: "success",
         mailSended: "Mail sended successfully",
@@ -105,7 +105,8 @@ function Footer() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.description)
+
+        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.description)
 
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.description) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.description.trim()) {
@@ -116,16 +117,21 @@ function Footer() {
                 phone: !contact.phone ? 'Phone No is required.' : '',
                 // description: !contact.description ? 'description is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
+
             });
+
             return;
+
         }
         try {
             const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
+
                 toast.success('our team will connect with you');
-                alert('success our team connect with you ')
+                setReciveMsg(MSG.success)
+                alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
@@ -146,7 +152,7 @@ function Footer() {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
                 alertcontent.click();
-                
+
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
@@ -166,12 +172,12 @@ function Footer() {
     }
 
     var alertcontent = document.getElementById('alert');
-    if (alertcontent) {
-        console.log('true');
+    // if (alertcontent) {
+    //     console.log('true');
 
-    } else {
-        console.log('false')
-    }
+    // } else {
+    //     console.log('false')
+    // }
 
 
     return (
@@ -337,8 +343,8 @@ function Footer() {
                     aria-hidden="true"
                 >
                     <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
+                        <div className="">
+                            <div className="">
                                 {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
                                     Modal title
                                 </h1> */}
