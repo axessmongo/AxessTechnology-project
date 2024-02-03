@@ -11,11 +11,11 @@ import { toast, ToastContainer } from 'react-toastify';
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState()
     let MSG = {
-        success: "success",
+        success: "Success",
         mailSended: "Mail sended successfully",
-        unexpectedError: "unexpected Error",
-        unexpectedResponse: "unexpectedResponse",
-        incorrectMail: "incorrect Mail"
+        unexpectedError: "Unexpected Error",
+        unexpectedResponse: "Unexpected Response",
+        incorrectMail: "Incorrect Mail"
     }
     const [errors, setErrors] = useState({
         fname: "",
@@ -61,7 +61,7 @@ function Footer() {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'FName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'FirstName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid firstname, only letters allowed' : '',
                 });
                 break;
 
@@ -69,7 +69,7 @@ function Footer() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'LName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'LastName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lastname' : '',
                 });
                 break;
             case 'email':
@@ -251,10 +251,11 @@ function Footer() {
                             </div>
                             <div className="col-md-6 text-center pt-4 " data-aos='fade-up' data-aos-duration='700'>
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
-                                <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
+                                <Link to={'#'} className='text-decoration-none'><p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
                                     Taramani,<br />
                                     Chennai - 600113.</p>
+                                </Link>
                             </div>
 
                         </div>
@@ -292,8 +293,8 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'}><i className="bi bi-facebook  bg-img-1"></i></Link></li>
-                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='}><i className="bi bi-instagram bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>
