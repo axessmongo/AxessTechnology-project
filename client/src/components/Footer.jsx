@@ -131,7 +131,7 @@ function Footer() {
 
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
-                alertcontent.click();
+                // alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
