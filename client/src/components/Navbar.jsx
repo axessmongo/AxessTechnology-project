@@ -60,7 +60,7 @@ function Navbar() {
           <Link><i className="bi bi-whatsapp"></i></Link>
           <Link><i className="bi bi-twitter-x"></i></Link>
         </div>
-        <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4 order-1 order-lg-2'>
+        <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
           <p>Axess</p>
           <img src={logo} alt="" />
           <p>Technology</p>
