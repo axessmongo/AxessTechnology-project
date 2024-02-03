@@ -9,7 +9,7 @@ function ForgotPassword() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const url = `http://54.161.23.121/api/resetPassword`;
+            const url = `http://54.161.23.121:5000/api/resetPassword`;
             const response = await axios.post(url, { email });
             setMsg(response.data.message);
         } catch (error) {

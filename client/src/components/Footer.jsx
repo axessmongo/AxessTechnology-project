@@ -182,7 +182,7 @@ function Footer() {
                         <div className="card-body position-relative">
                             <div className="row">
                                 <div className="col-md-10">
-                                    <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2' data-aos='zoom-out'>Contact us</p>
+                                    <p className='text-start mx-2 fs-5 bg-img-1' data-aos='zoom-out'>Contact us</p>
                                     <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Axess, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                                 </div>
                                 <div className="col-md-2 position-absolute footerbg">
@@ -220,11 +220,11 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>WhatsApp : +91 7358104213  </p>
-                                    <p>Instagram: axess_technology</p>
+                                    <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
                                     <p>Phone : +91 90425 77261</p>
-                                    <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                    <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     
                                 </div>
                                 <div className="col-md-4" data-aos ='zoom-out'>
@@ -289,10 +289,10 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li><Link><i className="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'}><i className="bi bi-facebook  bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='}><i className="bi bi-instagram bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
