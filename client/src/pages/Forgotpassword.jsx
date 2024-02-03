@@ -12,9 +12,8 @@ function ForgotPassword() {
         try {
           const url = 'http://54.161.23.121:5000/api/resetPassword';
           const response = await axios.post(url, { email });
-    
-          // Assuming the server sends a success message in the response
-          if (response.status === 200 && response.data.success) {
+
+          if (response.status === 200 && response.data.data.success) {
             toast.success('Password reset email sent successfully.');
           } else {
             toast.error('Failed to send password reset email. Please try again.');
@@ -25,12 +24,9 @@ function ForgotPassword() {
             error.response.status >= 400 &&
             error.response.status <= 500
           ) {
-            // Handle specific error scenarios if needed
           }
-    
-          // Handle other errors
           toast.error('Internal Server Error. Please try again later.');
-        }
+        }s
       };
 
     return (
