@@ -26,7 +26,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', formData);
+      const response = await axios.post('http://54.161.23.121/api/login', formData);
 
       if (response.status === 200) {
         toast.success('Logged in successfully');
