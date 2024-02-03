@@ -146,7 +146,7 @@ function Footer() {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
                 alertcontent.click();
-                
+
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
@@ -217,18 +217,18 @@ function Footer() {
 
                                     </div>
                                 </div>
-                            <div className="row">
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>WhatsApp : +91 7358104213  </p>
-                                    <p>Instagram: axess_technology</p>
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Phone : +91 90425 77261</p>
-                                    <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
-                                    
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                                <div className="row">
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>WhatsApp : +91 7358104213  </p>
+                                        <p>Instagram: axess_technology</p>
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>Phone : +91 90425 77261</p>
+                                        <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
 
                                     </div>
                                 </div>
