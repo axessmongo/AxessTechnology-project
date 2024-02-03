@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from '../components/Footer';
 import Techsection from '../components/Techsection';
-import techtools1 from "../assets/images/Technologies/techtools1.webp"
+import techtools1 from "../assets/images/Technologies/testing_tool.gif"
 import testimg from '../assets/images/testing/testing-img-3.jpg'
 import performicon from '../assets/images/testing/performance.png'
 import compatibility from '../assets/images/testing/compatibility.png'
