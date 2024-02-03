@@ -10,7 +10,7 @@ function Policy() {
         <Banner
           h1="Privacy Policy"
           h2="Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions."
-          h3="Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy constitute your agreement with us (“Agreement”"
+          h3="Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy constitute your agreement with us (“Agreement”)"
         />
 <div className=" bg-green-1 ">
         <div className="container mt-5">

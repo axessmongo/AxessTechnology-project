@@ -156,7 +156,7 @@ function About() {
         </div>
       </div>
       <section className="bg-green-1 py-5 mt-5">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div className="container" data-aos="fade-up" data-aos-duration="1000">
           <h3 className="secondary-header mx-auto text-center text-white mb-2">
             <q>
               Eight years of experience, countless success stories, and a
@@ -166,40 +166,13 @@ function About() {
           <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
             Ready to weave your digital success story? Let's connect!{" "}
           </p>
-          <button
-            className="gold-btn mx-auto mt-4"
-            data-aos="zoom-out"
-            data-aos-duration="600"
-          >
-            <span className="d-block">Connect with us</span>{" "}
-            <i className="bi bi-arrow-right"></i>
-          </button>
-          <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
-            Schedule a free consultation to discuss your unique needs.{" "}
-          </p>
+
         </div>
-        {/* <div className="row mt-5 bg-white" data-aos="fade-up" data-aos-duration="1000">
-          <div className="col-md-6 text-center">
-            <p className="fs-5 mx-auto text-black mt-4">
-              Follow us on social media for digital insights and inspiration.
-            </p>
-          </div>
-          <div className="col-md-6 mt-4 justify-content-center linkhight d-flex">
-            <Link>
-              <i className="bi bi-facebook text-primary fs-4 m-4"></i>
-            </Link>
-            <Link>
-              <i className="bi bi-instagram text-danger fs-4 m-4"></i>
-            </Link>
-            <Link>
-              <i className="bi bi-whatsapp text-success fs-4 m-4"></i>
-            </Link>
-          </div>
-        </div> */}
-        <div className="row bg-light py-3" data-aos="fade-up" data-aos-duration="800">
+
+        <div className="row  py-3" data-aos="fade-up" data-aos-duration="800">
           <div className="col-md-6 pt-2 d-flex justify-content-center align-items-center">
             <div className="text-center">
-              <p className="secondary-text"> Follow us on social media for digital insights and inspiration.</p>
+              <p className="secondary-text text-white"> Follow us on social media for digital insights and inspiration.</p>
             </div>
           </div>
           <div className="col-md-6 py-2">
@@ -218,6 +191,21 @@ function About() {
           </div>
 
         </div>
+        <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
+          Schedule a free consultation to discuss your unique needs.{" "}
+        </p>
+        <Link to={"/contact"} className="text-decoration-none">
+          <button
+            className="gold-btn mx-auto mt-4"
+            data-aos="zoom-out"
+            data-aos-duration="600"
+          >
+            <span className="d-block">Connect with us</span>{" "}
+            <i className="bi bi-arrow-right"></i>
+          </button>
+        </Link>
+
+
       </section>
       <Footer />
     </div>
