@@ -9,7 +9,7 @@ import { userContext } from '../store/Store';
 function Navbar() {
   const [fixed, setFixed] = useState(false);
   const [nav, setNav] = useState(false);
-  const [value, setValue]= useContext(userContext);
+  const [value, setValue] = useContext(userContext);
 
 
   let navigation = useNavigate();
@@ -76,10 +76,11 @@ function Navbar() {
       <div>
         <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
           <div className="container-fluid">
-            <div className="d-lg-none d-flex justify-content-between w-100 py-2 align-items-end">
+            <div className="d-lg-none d-flex justify-content-between  w-100 py-2 align-items-end">
               <Link to='/' className="navbar-brand col-1">
                 <img src={logo} alt="" />
               </Link>
+              <p>Axess Technology</p>             
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"
@@ -101,7 +102,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item position-relative">
-                  <Link  className="nav-link" >
+                  <Link className="nav-link" >
                     Services
                   </Link>
                   <div className="drop">
@@ -132,23 +133,23 @@ function Navbar() {
                     About
                   </NavLink>
                 </li>
-                
+
                 <li className="nav-item position-relative">
                   <Link className="nav-link" >
                     Pricing
                   </Link>
                   <div className="drop pricing">
                     <div className='nav-item'>
-                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Software Development Pricing</Link>
+                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Software Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Software Testing Pricing</Link>
+                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Software Testing Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Web Development Pricing</Link>
+                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Web Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" onClick={()=> setValue(true)}>Digital Marketing Pricing</Link>
+                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Digital Marketing Pricing</Link>
                     </div>
                   </div>
                 </li>
