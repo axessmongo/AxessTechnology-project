@@ -26,7 +26,7 @@ function ForgotPassword() {
           ) {
           }
           toast.error('Internal Server Error. Please try again later.');
-        }s
+        }
       };
 
     return (
