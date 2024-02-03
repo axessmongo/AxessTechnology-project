@@ -11,11 +11,11 @@ import { toast, ToastContainer } from 'react-toastify';
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState()
     let MSG = {
-        success: "success",
+        success: "Success",
         mailSended: "Mail sended successfully",
-        unexpectedError: "unexpected Error",
-        unexpectedResponse: "unexpectedResponse",
-        incorrectMail: "incorrect Mail"
+        unexpectedError: "Unexpected Error",
+        unexpectedResponse: "Unexpected Response",
+        incorrectMail: "Incorrect Mail"
     }
     const [errors, setErrors] = useState({
         fname: "",
@@ -129,7 +129,7 @@ function Footer() {
             console.log("res", response)
             if (response.status === 201) {
 
-                toast.success('our team will connect with you');
+                toast.success('our team will connect you');
                 setReciveMsg(MSG.success)
                 alertcontent.click();
                 setContact({

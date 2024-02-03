@@ -12,11 +12,11 @@ import { toast, ToastContainer } from 'react-toastify';
 function Contact() {
     const [receiveMsg, setReciveMsg] = useState('')
     const MSG = {
-        success: "success",
+        success: "Success",
         mailSended: "Mail sended successfully",
-        unexpectedError: "unexpected Error",
-        unexpectedResponse: "unexpectedResponse",
-        incorrectMail: "incorrect Mail"
+        unexpectedError: "Unexpected Error",
+        unexpectedResponse: "Unexpected Response",
+        incorrectMail: "Incorrect Mail"
 
     }
     const [errors, setErrors] = useState({
@@ -26,9 +26,6 @@ function Contact() {
         phone: "",
         address: "",
         serviceOption: "",
-
-
-
     });
     const [contact, setContact] = useState({
         fname: "",
@@ -37,8 +34,6 @@ function Contact() {
         phone: "",
         address: "",
         serviceOption: "",
-
-
     });
 
     const handleChange = (e) => {
