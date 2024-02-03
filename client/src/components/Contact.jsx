@@ -60,7 +60,7 @@ function Contact() {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'Firstname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'Firstname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid firstname, only letters allowed' : '',
                 });
                 break;
 
@@ -68,7 +68,7 @@ function Contact() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'Lastname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'Lastname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lastname' : '',
                 });
                 break;
             case 'email':
