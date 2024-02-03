@@ -16,10 +16,10 @@ function About() {
         h1={"About Us"}
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
       />
-      <div className="">
-        <div className="row mt-5 justify-content-end">
+      <div className="container">
+        <div className=" pt-3 row mt-5 justify-content-end">
           <div className="col-md-8 mt-5">
-            <div className="p-5 mx-2" data-aos="fade-right" data-aos-duration="1000">
+            <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
               <p className="mt-3 ceo-content">
                 Founded by a passionate entrepreneur, Mr. Venkteshan, Axess
@@ -169,41 +169,42 @@ function About() {
 
         </div>
 
-        <div className="row  py-3" data-aos="fade-up" data-aos-duration="800">
-          <div className="col-md-6 pt-2 d-flex justify-content-center align-items-center">
+        <div className="row  py-3" data-aos="fade-up" data-aos-duration="600">
+          <div className="col-md-6 pt-2 d-flex justify-content-center ">
             <div className="text-center">
               <p className="secondary-text text-white"> Follow us on social media for digital insights and inspiration.</p>
+              <div className=" d-flex justify-content-center align-items-center">
+                <Link>
+                  <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
+                </Link>
+                <Link>
+                  <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
+                </Link>
+                <Link>
+                  <i className="bi bi-whatsapp text-success fs-4 mx-3"></i>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="col-md-6 py-2">
-            <div className=" d-flex justify-content-center align-items-center">
-              <Link>
-                <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
-              </Link>
-              <Link>
-                <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
-              </Link>
-              <Link>
-                <i className="bi bi-whatsapp text-success fs-4 mx-3"></i>
-              </Link>
-            </div>
+          <div className="col-md-6 py-2 text-center">
+            <p className="secondary-text text-white">
+              Schedule a free consultation to discuss your unique needs.{" "}
+            </p>
+            <Link to={"/contact"} className="text-decoration-none">
+              <button
+                className="gold-btn mx-auto"
+                data-aos="zoom-out"
+                data-aos-duration="300"
+              >
+                <span className="d-block">Connect with us</span>{" "}
+                <i className="bi bi-arrow-right"></i>
+              </button>
+            </Link>
 
           </div>
 
         </div>
-        <p className="col-md-8 fs-5 mx-auto text-center text-white mt-4">
-          Schedule a free consultation to discuss your unique needs.{" "}
-        </p>
-        <Link to={"/contact"} className="text-decoration-none">
-          <button
-            className="gold-btn mx-auto mt-4"
-            data-aos="zoom-out"
-            data-aos-duration="600"
-          >
-            <span className="d-block">Connect with us</span>{" "}
-            <i className="bi bi-arrow-right"></i>
-          </button>
-        </Link>
+
 
 
       </section>
