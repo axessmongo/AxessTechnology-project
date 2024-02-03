@@ -81,7 +81,7 @@ export default function CategoriesIn() {
                                             <div
                                                 className="nav-link content"
                                                 id="pills-bussiness-tab"
-                                                data-bs-toggle="pill"
+                                                da ta-bs-toggle="pill"
                                                 data-bs-target="#pills-bussiness"
                                                 type="div"
                                                 role="tab"
@@ -97,7 +97,7 @@ export default function CategoriesIn() {
                                         <div className="  ">
                                             <div
                                                 className="nav-link content"
-                                                id="pills-insurance-tab"
+                                                id="pills-insurance-tab"  
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#pills-insurance"
                                                 type="div"

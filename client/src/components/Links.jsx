@@ -31,7 +31,7 @@ export default function Links() {
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block'>83232 32112</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>83232 32112</p>
         </a>
       </div>
       <div className="col-3">
@@ -43,7 +43,7 @@ export default function Links() {
               <i className="bi bi-facebook"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block'>@Axess</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>@Axess</p>
         </a>
       </div>
       <div className="col-3">
@@ -55,7 +55,7 @@ export default function Links() {
               <i className="bi bi-instagram"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block'>axess_technology</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess_technology</p>
         </a>
       </div>
       <div className="col-3">
@@ -67,7 +67,7 @@ export default function Links() {
               <i className="bi bi-linkedin"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block'>axess_official</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess_official</p>
         </a>
       </div>
     </div>

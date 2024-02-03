@@ -70,26 +70,26 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
         &.whatsapp {
             background: $whatsappcolor;
-            box-shadow: $whatsappcolor 0px 22px 70px 4px;
-            animation: whatsapp-shadow 1s 0s infinite;
+            // box-shadow: $whatsappcolor 0px 22px 70px 4px;
+            animation: whatsapp-shadow 2s 0s infinite;
         }
 
         &.facebook {
             background: $facebookcolor;
-            box-shadow: $facebookcolor 0px 22px 70px 4px;
-            animation: facebook-shadow 1s 0s infinite;
+            // box-shadow: $facebookcolor 0px 22px 70px 4px;
+            animation: facebook-shadow 2s 0s infinite;
         }
 
         &.instagram {
             background: $instagramcolor;
-            box-shadow: $instagramcolor 0px 22px 70px 4px;
-            animation: instagram-shadow 1s 0s infinite;
+            // box-shadow: $instagramcolor 0px 22px 70px 4px;
+            animation: instagram-shadow 2s 0s infinite;
         }
 
         &.linkedin {
             background: $linkedincolor;
-            box-shadow: $linkedincolor 0px 22px 70px 4px;
-            animation: linkedin-shadow 1s 0s infinite;
+            // box-shadow: $linkedincolor 0px 22px 70px 4px;
+            animation: linkedin-shadow 2s 0s infinite;
         }
 
         i {
