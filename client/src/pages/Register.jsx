@@ -32,7 +32,7 @@ function Register() {
 
 		try {
 			const response = await axios.post(
-				"http://localhost:5000/api/register",
+				"http://54.161.23.121/api/register",
 				formData
 			);
 			if (response.status === 201) {

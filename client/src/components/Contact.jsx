@@ -286,6 +286,7 @@ function Contact() {
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
+                        <ToastContainer />
                     </form>
                 </div>
             </div>
