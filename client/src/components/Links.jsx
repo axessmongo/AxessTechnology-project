@@ -35,7 +35,7 @@ export default function Links() {
         </a>
       </div>
       <div className="col-3">
-        <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
+        <a href='https://www.facebook.com/axesstechnology?mibextid=ZbWKwL' className="d-flex justify-content-center text-decoration-none text-white"
         onMouseEnter={(color) => setcolorfunctoin('facebookcolor')}
         onMouseLeave={()=> setHover('')}>
           <div className="position-relative">
@@ -47,7 +47,7 @@ export default function Links() {
         </a>
       </div>
       <div className="col-3">
-        <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
+        <a href='https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==' className="d-flex justify-content-center text-decoration-none text-white"
         onMouseEnter={(color) => setcolorfunctoin('instagramcolor')}
         onMouseLeave={()=> setHover('')}>
           <div className="position-relative">

@@ -223,18 +223,18 @@ function Footer() {
 
                                     </div>
                                 </div>
-                            <div className="row">
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>WhatsApp : +91 7358104213  </p>
-                                    <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Phone : +91 90425 77261</p>
-                                    <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
-                                    
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                                <div className="row">
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>WhatsApp : +91 7358104213  </p>
+                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==" target='_blank'>axess_technology</a></p>
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>Phone : +91 90425 77261</p>
+                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in" target='_blank'>info@axesstechnology.in</a></p>
+
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
 
                                     </div>
                                 </div>
@@ -254,10 +254,11 @@ function Footer() {
                             </div>
                             <div className="col-md-6 text-center pt-4 " data-aos='fade-up' data-aos-duration='700'>
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
-                                <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
+                                <Link to={'#'} className='text-decoration-none'><p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
                                     Taramani,<br />
                                     Chennai - 600113.</p>
+                                </Link>
                             </div>
 
                         </div>
@@ -295,8 +296,8 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'}><i className="bi bi-facebook  bg-img-1"></i></Link></li>
-                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='}><i className="bi bi-instagram bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>
