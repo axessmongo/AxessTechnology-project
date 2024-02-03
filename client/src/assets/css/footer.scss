@@ -1,15 +1,13 @@
-// $hover-color: #f7851d;
-
-// ul.list-unstyled {
-//   li {
-//     &:hover {
-//       color: $hover-color;
-//     }
-//   }
-// }
-
-
 .footerhover:hover{
-    color: #ffce05 !important;
-    
+    color: #ffce05 !important;    
 }
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+    &.zoom-effect:hover {
+        transform: scale(1.2); /* Adjust the scale factor as needed */
+      }
+  }
+  
+  
+  

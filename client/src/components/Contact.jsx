@@ -111,8 +111,8 @@ function Contact() {
 
         // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
+        if (errors.fname || errors.lname || errors.email || errors.phone )return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
                 fname: !contact.fname ? 'firstname is required.' : '',
                 lname: !contact.lname ? 'lastname is required.' : '',
