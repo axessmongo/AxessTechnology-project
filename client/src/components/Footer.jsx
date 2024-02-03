@@ -44,7 +44,7 @@ function Footer() {
         if (name === 'phone') {
 
             value = value.replace(/\D/g, '').slice(0, 10);
-            console.log("phone", value)
+            // console.log("phone", value)
         }
 
 
@@ -151,27 +151,27 @@ function Footer() {
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
-                alertcontent.click();
+                // alertcontent.click();
 
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
-                alertcontent.click();
+                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
                 setReciveMsg(MSG.unexpectedResponse)
-                alertcontent.click();
+                // alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
             setReciveMsg(MSG.unexpectedError)
-            alertcontent.click();
+            // alertcontent.click();
         }
 
     }
 
-    var alertcontent = document.getElementById('alert');
+    // var alertcontent = document.getElementById('alert');
     // if (alertcontent) {
     //     console.log('true');
 
@@ -226,11 +226,11 @@ function Footer() {
                                 <div className="row">
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>WhatsApp : +91 7358104213  </p>
-                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==" target='_blank'>axess_technology</a></p>
+                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
                                     </div>
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>Phone : +91 90425 77261</p>
-                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in" target='_blank'>info@axesstechnology.in</a></p>
+                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
 
                                     </div>
                                     <div className="col-md-4" data-aos='zoom-out'>
@@ -241,6 +241,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
+                    <ToastContainer />
                 </form>
             </div>
             <div className='bg-black text-white footercontent'>
@@ -322,47 +323,7 @@ function Footer() {
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
-            <>
-                {/* Button trigger modal */}
-                <button
-                    type="button"
-                    className="btn btn-primary d-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    id='alert'
-                >
-                    Launch static backdrop modal
-                </button>
-                {/* Modal */}
-                <div
-                    className='modal fade'
-                    id="staticBackdrop"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabIndex={-1}
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="">
-                            <div className="">
-                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                                    Modal title
-                                </h1> */}
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                />
-                            </div>
-                            <div className="modal-body">
-                                <p className='text-center'>{receiveMsg}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+
         </div>
     )
 }
