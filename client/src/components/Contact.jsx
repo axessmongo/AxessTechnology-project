@@ -216,7 +216,7 @@ function Contact() {
 
                             </div>
                             <div className="col-12 mb-4">
-                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address *' />
+                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address ' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.address}</div>
 
                             </div>
