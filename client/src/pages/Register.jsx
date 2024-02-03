@@ -29,24 +29,25 @@ function Register() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-
+	
 		try {
-			const response = await axios.post(
-				"http://54.161.23.121:5000/api/register",
-				formData
-			);
-			if (response.status === 201) {
-				toast.success("Registration successful. Verification email sent.");
-			} else if (response.status === 200) {
-				toast.error("User already exists.");
-			} else {
-				console.log("Unexpected response:", response);
-			}
+		  const response = await axios.post(
+			'http://54.161.23.121:5000/api/register',
+			formData
+		  );
+	
+		  if (response.status === 201) {
+			alert('Registration successful. Verification email sent.');
+		  } else if (response.status === 200) {
+			alert('User already exists.');
+		  } else {
+			console.log('Unexpected response:', response);
+		  }
 		} catch (error) {
-			console.error("Error during registration:", error.message);
-			toast.error("Internal Server Error");
+		  console.error('Error during registration:', error.message);
+		  alert('Internal Server Error');
 		}
-	};
+	  };
 
 	return (
 		<div>
