@@ -76,11 +76,11 @@ function Navbar() {
       <div>
         <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
           <div className="container-fluid">
-            <div className="d-lg-none d-flex justify-content-between  w-100 py-2 align-items-end">
+            <div className="d-lg-none d-flex justify-content-between align-items-center w-100 py-2 align-items-end upper-nav">
               <Link to='/' className="navbar-brand col-1">
                 <img src={logo} alt="" />
               </Link>
-              <p>Axess Technology</p>             
+              <p className="secondary-text m-0 text-center">Axess Technology</p>             
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"

@@ -1304,7 +1304,7 @@ img {
   margin-bottom: 25px;
 }
 
-.cat {
+.cat { 
   .nav-pills {
     .nav-link {
       cursor: pointer;
@@ -1356,13 +1356,17 @@ img {
   .upper-nav {
     p {
       font-size: 30px;
+      letter-spacing: 5px;
     }
 
     img {
       width: 30px;
     }
+   
   }
-
+  .fixed-2 .upper-nav p{
+    display: none;
+  }
   .technstack_wrapper {
 
     &::before,
