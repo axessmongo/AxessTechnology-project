@@ -3,14 +3,13 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise1.jpg";
-import Process from "../assets/images/Our-Process1.jpg";
+import Process from "../assets/images/Process.jpg"
 
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
 import { Link } from "react-router-dom";
 
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import Profiledub from '../assets/images/testing/dub-img.png'
@@ -237,7 +236,7 @@ function Development() {
                 <div className="small-card mt-3">
                   <h4>Agile Methodology</h4>
                   <p className="primary-text">
-                  We embrace agile development practices to ensure
+                    We embrace agile development practices to ensure
                     flexibility, quick iterations, and continuous improvement.
                   </p>
                 </div>
@@ -479,14 +478,6 @@ function Development() {
           <a href="#" className="order-btn">Order Now</a>
         </div>
       </section >
-      {/* <section className='pricing mt-5' id="pricing-section">
-        <div className="pricing-table">
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-          <a href="#" className="order-btn">Order Now</a>
-        </div>
-      </section> */}
       <div>
         {/* Testimonal section */}
         <div  >

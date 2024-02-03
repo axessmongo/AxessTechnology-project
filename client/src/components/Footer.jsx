@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss"
+// import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
@@ -120,7 +120,7 @@ function Footer() {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', contact);
+            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
@@ -312,7 +312,7 @@ function Footer() {
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
             <>
