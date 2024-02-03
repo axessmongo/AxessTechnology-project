@@ -61,7 +61,7 @@ function Footer() {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'FName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'FirstName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid firstname, only letters allowed' : '',
                 });
                 break;
 
@@ -69,7 +69,7 @@ function Footer() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'LName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'LastName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lastname' : '',
                 });
                 break;
             case 'email':
