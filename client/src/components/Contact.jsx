@@ -3,13 +3,14 @@ import axios from 'axios';
 import Banner from '../components/Banner';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 import { toast, ToastContainer } from 'react-toastify';
 
 
 
 function Contact() {
-    const [receiveMsg, setReciveMsg] = useState('none')
+    const [receiveMsg, setReciveMsg] = useState('')
     const MSG = {
         success: "success",
         mailSended: "Mail sended successfully",
@@ -57,7 +58,7 @@ function Contact() {
         });
         validateField(name, value);
     };
-    console.log(contact)
+    // console.log(contact)
     const validateField = (name, value) => {
 
         switch (name) {
@@ -108,7 +109,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
         if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
@@ -129,7 +130,7 @@ function Contact() {
             if (response.status === 201) {
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
-                alertcontent.click();
+                // alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
@@ -152,32 +153,32 @@ function Contact() {
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
-                alertcontent.click();
+                // alertcontent.click();
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
-                alertcontent.click();
+                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
                 setReciveMsg(MSG.unexpectedResponse)
-                alertcontent.click();
+                // alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
             setReciveMsg(MSG.unexpectedError)
-            alertcontent.click();
+            // alertcontent.click();
         }
 
     }
 
-    var alertcontent = document.getElementById('alert');
-    if (alertcontent) {
-        console.log('true');
+    // var alertcontent = document.getElementById('alert');
+    // if (alertcontent) {
+    //     console.log('true');
 
-    } else {
-        console.log('false')
-    }
+    // } else {
+    //     console.log('false')
+    // }
 
     return (
         <div>
@@ -517,47 +518,7 @@ function Contact() {
                 </div>
             </div>
             <Footer />
-            <>
-                {/* Button trigger modal */}
-                <button
-                    type="button"
-                    className="btn btn-primary d-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    id='alert'
-                >
-                    Launch static backdrop modal
-                </button>
-                {/* Modal */}
-                <div
-                    className='modal fade'
-                    id="staticBackdrop"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabIndex={-1}
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                                    Modal title
-                                </h1> */}
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                />
-                            </div>
-                            <div className="modal-body">
-                                <p className='text-center'>{receiveMsg}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+          
         </div>
     );
 }
