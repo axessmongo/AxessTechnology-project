@@ -13,7 +13,8 @@ export default function Techsection() {
         <div className='container'>
             <div className="technstack_wrapper text-center">
                 <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600'>A Glimpse of Our Technology <br className='d-none d-lg-block' /> Prowess!</h1>
-                <p className='secondary-text mb-5 col-lg-10 mx-auto' data-aos='fade-right' data-aos-duration='600'>Our proficiency in the realm of technology stacks is unparalleled. We are well-versed in the latest advancements and techniques that allow us to deliver top-quality solutions to our clients. Our experience in this field is vast, and we constantly update our knowledge to stay ahead of the curve.</p>
+                <p className='secondary-text mb-5 col-lg-10 mx-auto' data-aos='fade-right' data-aos-duration='600'>Forget deciphering tech speak and navigating the ever-evolving landscape. At Axess, we speak plain English and deliver powerful results. Our team of passionate tech whizzes are masters of their craft, constantly honing their skills to stay ahead of the curve.
+                    What does that mean for you? Solutions that work, seamlessly. Whether it's crafting cutting-edge software, ensuring pixel-perfect websites, or igniting your brand online, we leverage the latest advancements and techniques to empower your business growth.</p>
                 <div className="row g-5">
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='100'
@@ -30,7 +31,7 @@ export default function Techsection() {
                     <div className="col-6 col-md-3 icon-holder">
                         <div className="icon-container" data-aos='fade' data-aos-duration='300'
                             data-aos-easing="ease-in-back">
-                    <img src={techstack3} alt="" />
+                            <img src={techstack3} alt="" />
                         </div>
                     </div>
                     <div className="col-6 col-md-3 icon-holder">

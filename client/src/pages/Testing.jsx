@@ -39,24 +39,28 @@ function Testing() {
 
               <div>
                 <div className='row'>
-                  <div className='col-md-5 pt-3' data-aos="zoom-out-right" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-out-right" data-aos-duration="1000">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={performicon} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4 '>
+                        <img src={performicon} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center  '>
                         <h3>Performance</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
                     </div>
                   </div>
-                  <div className='col-md-5 pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={security} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4'>
+                        <img src={security} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center'>
                         <h3>Security</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
                     </div>
@@ -66,24 +70,28 @@ function Testing() {
 
               <div>
                 <div className='row pt-2'>
-                  <div className='col-md-5 pt-3' data-aos="zoom-in-right" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-in-right" data-aos-duration="900">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={usability} alt="" className='w-25' />
+                     <div className="row">
+                     <div className='test-order col-4'>
+                        <img src={usability} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center '>
                         <h3>Usability</h3>
                       </div>
+                     </div>
                       <p className='pt-3 secondary-text'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
                     </div>
                   </div>
-                  <div className='col-md-5 pt-3' data-aos="zoom-in-left" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-in-left" data-aos-duration="900">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={compatibility} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4'>
+                        <img src={compatibility} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center'>
                         <h3>Compatibility</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'>We test across browsers, devices, and operating systems for seamless performance on a any platform.</p>
                     </div>
