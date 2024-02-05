@@ -18,7 +18,7 @@ function Dashboard() {
     },
     {
       id: 3,
-      name: 'Project C',
+      name: 'Project C',  
       description: 'Sed do eiusmod tempor incididunt',
       completionDate: '2024-02-28',
       remarks: 'Completed'
