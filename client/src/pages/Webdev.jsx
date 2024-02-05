@@ -66,7 +66,7 @@ function Development() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
           >
-            <div className="boxshadow ">
+            <div className="boxshadow p-4">
               <div>
                 <ul>
                   <li
@@ -130,41 +130,46 @@ function Development() {
             <div className="col-md-7">
               <div className="my-4">
                 <div className="row justify-content-center px-3 ">
-                  <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
+                  <div className="col-md-4 mt-3 mx-2 small-card text-light boxshadow ">
+                  <p className="fw-bold pt-1">Custom Website Design:</p>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">Custom Website Design:</span> We collaborate with you to
+                       We collaborate with you to
                       understand your brand, target audience, and objectives,
                       then translate that into a captivating website design that
                       resonates with your users.
                     </p>
                   </div>
-                  <div className="col-md-4 mx-2  mt-3 small-card boxshadow">
+                  <div className="col-md-4 mx-2  mt-3 small-card text-light  boxshadow">
+                  <p className="fw-bold  pt-1" > Responsive Web Development:</p>
                     <p className="p-3 secondary-text">
-                     <span className="fw-bold" > Responsive Web Development:</span> We ensure your website looks
+                     We ensure your website looks
                       flawless and functions perfectly on all devices, from
                       desktops to tablets to smartphones.
                     </p>
                   </div>
                 </div>
                 <div className="row justify-content-around px-3">
-                  <div className="col-md-4 mt-3 small-card boxshadow">
+                  <div className="col-md-4 mt-3 small-card text-light boxshadow">
+                  <p className="fw-bold  pt-1"> Content Management Systems (CMS):</p>
                     <p className="p-3 secondary-text">
-                     <span className="fw-bold"> Content Management Systems (CMS):</span> We implement
+                      We implement
                       user-friendly CMS platforms that give you complete control
                       over your website content, even without technical
                       knowledge.
                     </p>
                   </div>
-                  <div className="col-md-3 mt-3 small-card  boxshadow">
+                  <div className="col-md-3 mt-3 small-card text-light boxshadow">
+                  <p className="fw-bold pt-1">E-commerce Development:</p>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">E-commerce Development:</span> We build secure, scalable online
+                      We build secure, scalable online
                       stores that make online shopping a breeze for your
                       customers, and a joy for you to manage.
                     </p>
                   </div>
-                  <div className="col-md-4  mt-3 small-card boxshadow">
+                  <div className="col-md-4  mt-3 small-card text-light boxshadow">
+                  <p className="fw-bold pt-1">Website Maintenance and Security:</p>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">Website Maintenance and Security:</span> We offer ongoing
+                       We offer ongoing
                       maintenance and security solutions to keep your website
                       up-to-date, protected, and performing at its best.
                     </p>
