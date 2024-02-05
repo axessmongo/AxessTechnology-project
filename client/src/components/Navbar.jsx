@@ -56,9 +56,9 @@ function Navbar() {
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         <div className='d-flex share order-2 order-lg-1 '>
-          <Link><i className="bi bi-instagram"></i></Link>
-          <Link><i className="bi bi-whatsapp"></i></Link>
-          <Link><i className="bi bi-twitter-x"></i></Link>
+          <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook text-primary"></i></Link>
+          <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram text-danger"></i></Link>
+          <Link><i className="bi bi-whatsapp text-success"></i></Link>
         </div>
         <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
           <p>Axess</p>
@@ -80,7 +80,7 @@ function Navbar() {
               <Link to='/' className="navbar-brand col-1">
                 <img src={logo} alt="" />
               </Link>
-              <p className="secondary-text m-0 text-center">Axess Technology</p>             
+              <p className="secondary-text m-0 text-center">Axess Technology</p>
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"
