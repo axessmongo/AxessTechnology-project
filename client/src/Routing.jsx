@@ -61,7 +61,7 @@ function Routing() {
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                     <Route path='/privacypolicy' element ={<Policy/>}/>
 
-                </Routes>  
+                </Routes>
             </BrowserRouter>
         </div>
     )
