@@ -61,8 +61,8 @@ function About() {
       </div>
 
       <div className="container">
-        <div className=" pt-3 row mt-5 justify-content-end">
-          <div className="col-md-8 mt-5">
+        <div className=" pt-3 row justify-content-end">
+          <div className="col-md-8">
             <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
               <p className="mt-3 ceo-content">
@@ -88,7 +88,7 @@ function About() {
           </div>
           <div className="col-md-4">
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
-              <div class="blur-img">
+              <div class="blur-img aboutMdimg">
                 <img
                   src={
                     "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
