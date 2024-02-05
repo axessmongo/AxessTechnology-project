@@ -67,7 +67,7 @@ function Development() {
             data-aos-easing="ease-in-back"
           >
             <div className="boxshadow ">
-              <div className=" p-5">
+              <div>
                 <ul>
                   <li
                     data-aos="fade-right"
@@ -204,7 +204,7 @@ function Development() {
             data-aos-easing="ease-in-back"
           >
             <div className="">
-              <div className=" p-5">
+              <div>
                 <ul>
                   <li
                     data-aos="fade-right"
