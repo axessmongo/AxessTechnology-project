@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise1.jpg";
-import Process from "../assets/images/Process.jpg"
+import Process from "../assets/images/Process.jpg";
 
 import Footer from "../components/Footer";
 import "../assets/css/pricing.scss";
@@ -12,10 +12,7 @@ import { Link } from "react-router-dom";
 // import contact  from '../assets/images/contact.jpg'
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
-import Profiledub from '../assets/images/testing/dub-img.png'
-
-
-
+import Profiledub from "../assets/images/testing/dub-img.png";
 
 function Development() {
   return (
@@ -31,7 +28,7 @@ function Development() {
       <section className="container">
         <div className="row mt-3 align-items-center justify-content-center ">
           <div
-            className="col-lg-10 rounded-5 col-md-3 "
+            className="col-lg-10 rounded-5  "
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -53,13 +50,13 @@ function Development() {
             <h1 className="text-center bg-img-1">Our Expertise</h1>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-10">
+            <div className="col-lg-10">
               <div
-                className="pbg1  p-3 mt-3 rounded-3 "
+                className=" mt-3 rounded-3 "
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <p className="text-center secondary-text  p-2">
+                <p className="text-center secondary-text ">
                   We are a team of experienced and passionate software
                   developers who specialize in crafting cutting-edge solutions
                   tailored to your specific needs. We have a deep understanding
@@ -69,15 +66,15 @@ function Development() {
             </div>
           </div>
           <div className="row  mt-3">
-            <div className="col-md-5 col-sm-12 align-items-center d-flex  ">
+            <div className="col-lg-5 col-sm-12 align-items-center d-flex  ">
               <div className="" data-aos="zoom-in">
                 <img src={Software} className=" img-fluid w-100" alt="" />
               </div>
             </div>
-            <div className="col-md-7  col-sm-12 align-items-center d-flex">
+            <div className="col-lg-7  col-sm-12 align-items-center d-flex">
               <div className="row justify-content-around ">
                 <div
-                  className="col-md-3  col-sm-6 mb-3"
+                  className="col-lg-3 col-md-6 col-sm-6  mb-3"
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-easing="ease-in-back"
@@ -85,7 +82,7 @@ function Development() {
                   <div className=" card boxshadow small-card text-center">
                     <div className="py-4 secondary-text">
                       <p className="fw-bold">Programming Languages:</p>
-                      <p > Python </p>
+                      <p> Python </p>
                       <p> Java </p>
                       <p> JavaScript </p>
                       <p> C++ </p>
@@ -94,7 +91,7 @@ function Development() {
                   </div>
                 </div>
                 <div
-                  className="col-md-3 col-sm-6 mb-3 "
+                  className="col-lg-3 col-md-6 col-sm-6  mb-3 "
                   data-aos="fade-up"
                   data-aos-duration="700"
                   data-aos-easing="ease-in-back"
@@ -111,7 +108,7 @@ function Development() {
                   </div>
                 </div>
                 <div
-                  className="col-md-3 col-sm-6 mb-3 "
+                  className="col-lg-3 col-md-6 col-sm-6  mb-3 "
                   data-aos="fade-up"
                   data-aos-duration="800"
                   data-aos-easing="ease-in-back"
@@ -122,12 +119,12 @@ function Development() {
                       <p>Flutter</p>
                       <p> React Native</p>
                       <p>Kotlin</p>
-                      <p>and Swift</p>
+                      <p>Swift</p>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="col-md-3 col-sm-6 mb-3"
+                  className="col-lg-3 col-md-6 col-sm-6   mb-3"
                   data-aos="fade-up"
                   data-aos-duration="900"
                   data-aos-easing="ease-in-back"
@@ -156,7 +153,7 @@ function Development() {
           <div>
             <div className="row d-flex justify-content-evenly pt-4">
               <div
-                className="col-md-3"
+                className="col-md-3 "
                 data-aos="zoom-out-right"
                 data-aos-duration="1000"
               >
@@ -201,7 +198,7 @@ function Development() {
                 </div>
               </div>
               <div
-                className="col-md-4"
+                className="col-md-4 col-sm-6 col-9"
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1500"
@@ -345,57 +342,116 @@ function Development() {
       </section>
 
       <section className="bg-green-1 text-light">
-        <div className='pt-5 mt-5'>
+        <div className="pt-5 mt-5">
           <div className="mt-0 pt-0 my-5 p-5 text-center text-white">
-            <h1 className='secondary-header' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-              We’re More than Just Developers. We Solve Real-world Problems By Creating Better Digital Solutions.
+            <h1
+              className="secondary-header"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+            >
+              We’re More than Just Developers. We Solve Real-world Problems By
+              Creating Better Digital Solutions.
             </h1>
-            <p data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" className='primary-text fw-medium'>As a full-stack software development agency, We make some extraordinary things that engage your users.</p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-anchor-placement="bottom-bottom"
+              className="primary-text fw-medium"
+            >
+              As a full-stack software development agency, We make some
+              extraordinary things that engage your users.
+            </p>
             <div className="col-xxl-9 col-xl-10 col-lg-12 mx-auto mt-5 mb-5">
               <div className="row g-4">
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>ERP</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">ERP</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>CRM</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">CRM</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>HR Software</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">HR Software</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>Enterprise Applications</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Enterprise Applications</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>Data Analytics</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Data Analytics</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>IT Service Management</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">IT Service Management</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>Ecommerce</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Ecommerce</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>Supply Chain</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Supply Chain</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
-                  <div className="small-card" data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                    <p className='text-white mb-0'>Web Portals</p>
+                  <div
+                    className="small-card"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <p className="text-white mb-0">Web Portals</p>
                   </div>
                 </div>
               </div>
@@ -405,87 +461,170 @@ function Development() {
       </section>
 
       <Techsection />
-      <section className='pricing mt-5' id="pricing-section">
-        <h1 className='primary-header text-center'>Unlock Our New Features</h1>
+      <section className="pricing mt-5" id="pricing-section">
+        <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
-            <div className='shadow'>
+            <div className="shadow">
               <h3 className="pricing-card-header">Basic</h3>
-              <div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
+              <div className="price text-center">
+                <sup>$</sup>15<span>/MO</span>
+              </div>
               <ul>
-                <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
-                <li><strong>Hosting - 1</strong> Year FREE</li>
-                <li><strong>Single 1 </strong> Page Website</li>
-                <li><strong>SSL</strong> Certificate</li>
-                <li><strong>WhatsApp </strong> Chat</li>
-                <li><strong>Social </strong> Media Integration</li>
-                <li><strong>Static </strong> Website</li>
-                <li><strong>Premade  </strong> Website</li>
-                <li><strong>3 Month FREE </strong> Tech Support</li>
+                <li>
+                  <strong>Domain</strong>- Additional Charges (Rs.800)
+                </li>
+                <li>
+                  <strong>Hosting - 1</strong> Year FREE
+                </li>
+                <li>
+                  <strong>Single 1 </strong> Page Website
+                </li>
+                <li>
+                  <strong>SSL</strong> Certificate
+                </li>
+                <li>
+                  <strong>WhatsApp </strong> Chat
+                </li>
+                <li>
+                  <strong>Social </strong> Media Integration
+                </li>
+                <li>
+                  <strong>Static </strong> Website
+                </li>
+                <li>
+                  <strong>Premade </strong> Website
+                </li>
+                <li>
+                  <strong>3 Month FREE </strong> Tech Support
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Pro</h3>
-            <div className="price text-center"><sup>$</sup>30<span>/MO</span></div>
+            <div className="price text-center">
+              <sup>$</sup>30<span>/MO</span>
+            </div>
             <ul>
-              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
-              <li><strong>Hosting - 1</strong> Year FREE</li>
-              <li><strong>4 to 6</strong> Pages</li>
-              <li><strong>WhatsApp</strong> Chat</li>
-              <li><strong>SSL </strong> Certificate</li>
-              <li><strong>Full Source </strong> Code</li>
-              <li><strong>5 Email – 5GB </strong> Quota Each</li>
-              <li><strong>Premade  </strong> Website</li>
-              <li><strong>3 Month FREE </strong> Tech Support</li>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
             </ul>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Premium</h3>
-            <div className="price text-center"><sup>$</sup>50<span>/MO</span></div>
+            <div className="price text-center">
+              <sup>$</sup>50<span>/MO</span>
+            </div>
             <ul>
-              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
-              <li><strong>Hosting - 1</strong> Year FREE</li>
-              <li><strong>4 to 6</strong> Pages</li>
-              <li><strong>WhatsApp</strong> Chat</li>
-              <li><strong>SSL </strong> Certificate</li>
-              <li><strong>Full Source </strong> Code</li>
-              <li><strong>5 Email – 5GB </strong> Quota Each</li>
-              <li><strong>Premade  </strong> Website</li>
-              <li><strong>3 Month FREE </strong> Tech Support</li>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
             </ul>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Elite</h3>
-            <div className="price text-center"><sup>$</sup>80<span>/MO</span></div>
+            <div className="price text-center">
+              <sup>$</sup>80<span>/MO</span>
+            </div>
             <ul>
-              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
-              <li><strong>Hosting - 1</strong> Year FREE</li>
-              <li><strong>4 to 6</strong> Pages</li>
-              <li><strong>WhatsApp</strong> Chat</li>
-              <li><strong>SSL </strong> Certificate</li>
-              <li><strong>Full Source </strong> Code</li>
-              <li><strong>5 Email – 5GB </strong> Quota Each</li>
-              <li><strong>Premade  </strong> Website</li>
-              <li><strong>3 Month FREE </strong> Tech Support</li>
+              <li>
+                <strong>Domain</strong>- Additional Charges (Rs.800)
+              </li>
+              <li>
+                <strong>Hosting - 1</strong> Year FREE
+              </li>
+              <li>
+                <strong>4 to 6</strong> Pages
+              </li>
+              <li>
+                <strong>WhatsApp</strong> Chat
+              </li>
+              <li>
+                <strong>SSL </strong> Certificate
+              </li>
+              <li>
+                <strong>Full Source </strong> Code
+              </li>
+              <li>
+                <strong>5 Email – 5GB </strong> Quota Each
+              </li>
+              <li>
+                <strong>Premade </strong> Website
+              </li>
+              <li>
+                <strong>3 Month FREE </strong> Tech Support
+              </li>
             </ul>
           </div>
         </div>
         <div className="justify-content-center d-flex">
-          <a href="#" className="order-btn">Order Now</a>
+          <a href="#" className="order-btn">
+            Order Now
+          </a>
         </div>
-      </section >
+      </section>
       <div>
         {/* Testimonal section */}
-        <div  >
-          <section className='nav-banner testimonal' id="testimonial">
+        <div>
+          <section className="nav-banner testimonal" id="testimonial">
             <div>
               <div
                 className="elementor-widget-container"
-                style={{ margin: "2rem" }}>
+                style={{ margin: "2rem" }}
+              >
                 <div
                   className="section-title text-center aos-init aos-animate"
                   data-aos="fade-up"
@@ -493,11 +632,13 @@ function Development() {
                   data-aos-delay="100"
                   data-aos-once="true"
                 >
-                  <h3 className='bg-img-1 mx-auto'>Testimonial</h3>
+                  <h3 className="bg-img-1 mx-auto">Testimonial</h3>
 
                   <span
                     className="subtitle sub-title text-light heading5"
-                    style={{ fontFamily: '"Montserrat", sans-serif' }} data-aos="fade-right" data-aos-duration="800"
+                    style={{ fontFamily: '"Montserrat", sans-serif' }}
+                    data-aos="fade-right"
+                    data-aos-duration="800"
                   >
                     What happy clients say about us ?
                   </span>
@@ -505,28 +646,50 @@ function Development() {
               </div>
               <div className="">
                 <div className="carousel ">
-                  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                  <div
+                    id="carouselExampleIndicators"
+                    className="carousel slide"
+                    data-bs-ride="true"
+                  >
                     <div className="carousel-inner container">
-                      <div className="carousel-item active" data-bs-interval="3000">
+                      <div
+                        className="carousel-item active"
+                        data-bs-interval="3000"
+                      >
                         <div className="row p-3">
                           <div className="col-md-4 mb-5">
-
-                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                            <div
+                              className="text-center pt-3 mt-3"
+                              data-aos="zoom-in"
+                              data-aos-duration="600"
+                            >
                               <div>
-                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                                <img
+                                  src={Profiledub}
+                                  alt=""
+                                  className="w-50 mx-auto"
+                                />
                               </div>
-                              <div className='text-light py-3 my-3' >
-                                <h4 className='heading9 fw-bold fs-5'>Sarah Jones</h4>
-                                <p className='heading5'>CEO</p>
+                              <div className="text-light py-3 my-3">
+                                <h4 className="heading9 fw-bold fs-5">
+                                  Sarah Jones
+                                </h4>
+                                <p className="heading5">CEO</p>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                          <div
+                            className="col-md-8"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                          >
                             <div className="user">
-                              <div className="card-description " >
+                              <div className="card-description ">
                                 <div className="title-area">
                                   <div className="title-info">
-                                    <h3 className="title heading9">Sarah Jones, CEO</h3>
+                                    <h3 className="title heading9">
+                                      Sarah Jones, CEO
+                                    </h3>
                                     <span className="date"> </span>
                                   </div>
 
@@ -611,7 +774,14 @@ function Development() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">From scrappy startup to industry leader, Axess helped us scale with custom software that empowers our team and delights our customers. They truly understood our vision and translated it into a seamless, efficient solution.{" "}</p>
+                                <p className="description heading5">
+                                  From scrappy startup to industry leader, Axess
+                                  helped us scale with custom software that
+                                  empowers our team and delights our customers.
+                                  They truly understood our vision and
+                                  translated it into a seamless, efficient
+                                  solution.{" "}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -620,22 +790,38 @@ function Development() {
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
                           <div className="col-md-4 mb-5">
-                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                            <div
+                              className="text-center pt-3 mt-3"
+                              data-aos="zoom-in"
+                              data-aos-duration="600"
+                            >
                               <div>
-                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                                <img
+                                  src={Profiledub}
+                                  alt=""
+                                  className="w-50 mx-auto"
+                                />
                               </div>
-                              <div className='text-light py-3 my-3'>
-                                <h4 className='heading9 fw-bold fs-5'>Mark Davis</h4>
-                                <p className='heading5'>CIO</p>
+                              <div className="text-light py-3 my-3">
+                                <h4 className="heading9 fw-bold fs-5">
+                                  Mark Davis
+                                </h4>
+                                <p className="heading5">CIO</p>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                          <div
+                            className="col-md-8"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                          >
                             <div className="user">
                               <div className="card-description ">
                                 <div className="title-area">
                                   <div className="title-info">
-                                    <h3 className="title heading9">Mark Davis, CIO</h3>
+                                    <h3 className="title heading9">
+                                      Mark Davis, CIO
+                                    </h3>
                                     <span className="date"> </span>
                                   </div>
 
@@ -720,7 +906,13 @@ function Development() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">Axess went above and beyond to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable.{" "}</p>
+                                <p className="description heading5">
+                                  Axess went above and beyond to develop a
+                                  complex enterprise software solution that met
+                                  all our regulatory requirements and security
+                                  needs. Their collaborative approach and
+                                  technical expertise were invaluable.{" "}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -729,22 +921,38 @@ function Development() {
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
                           <div className="col-md-4 mb-5">
-                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                            <div
+                              className="text-center pt-3 mt-3"
+                              data-aos="zoom-in"
+                              data-aos-duration="600"
+                            >
                               <div>
-                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                                <img
+                                  src={Profiledub}
+                                  alt=""
+                                  className="w-50 mx-auto"
+                                />
                               </div>
-                              <div className='text-light py-3 my-3'>
-                                <h4 className='heading9 fw-bold fs-5'>Emily Chen</h4>
-                                <p className='heading5'>COO</p>
+                              <div className="text-light py-3 my-3">
+                                <h4 className="heading9 fw-bold fs-5">
+                                  Emily Chen
+                                </h4>
+                                <p className="heading5">COO</p>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                          <div
+                            className="col-md-8"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                          >
                             <div className="user">
                               <div className="card-description ">
                                 <div className="title-area">
                                   <div className="title-info">
-                                    <h3 className="title heading9">Emily Chen, COO</h3>
+                                    <h3 className="title heading9">
+                                      Emily Chen, COO
+                                    </h3>
                                     <span className="date"> </span>
                                   </div>
 
@@ -829,7 +1037,13 @@ function Development() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">We were struggling with outdated software that hindered our growth. Axess modernized our entire system, boosting productivity and streamlining operations. The ROI has been incredible!{" "}</p>
+                                <p className="description heading5">
+                                  We were struggling with outdated software that
+                                  hindered our growth. Axess modernized our
+                                  entire system, boosting productivity and
+                                  streamlining operations. The ROI has been
+                                  incredible!{" "}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -838,22 +1052,38 @@ function Development() {
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
                           <div className="col-md-4 mb-5">
-                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                            <div
+                              className="text-center pt-3 mt-3"
+                              data-aos="zoom-in"
+                              data-aos-duration="600"
+                            >
                               <div>
-                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                                <img
+                                  src={Profiledub}
+                                  alt=""
+                                  className="w-50 mx-auto"
+                                />
                               </div>
-                              <div className='text-light py-3 my-3'>
-                                <h4 className='heading9 fw-bold fs-5'>Rani Singh</h4>
-                                <p className='heading5'>CEO</p>
+                              <div className="text-light py-3 my-3">
+                                <h4 className="heading9 fw-bold fs-5">
+                                  Rani Singh
+                                </h4>
+                                <p className="heading5">CEO</p>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                          <div
+                            className="col-md-8"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                          >
                             <div className="user">
                               <div className="card-description ">
                                 <div className="title-area">
                                   <div className="title-info">
-                                    <h3 className="title heading9">Rani Singh, CEO</h3>
+                                    <h3 className="title heading9">
+                                      Rani Singh, CEO
+                                    </h3>
                                     <span className="date"> </span>
                                   </div>
 
@@ -938,7 +1168,15 @@ function Development() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">"From bootstrapped startup to industry leader, Axess propelled us forward with custom software that empowers our team and delights our customers. Their team truly understood our vision and translated it into a seamless, efficient solution. They were the wind beneath our wings!"{" "}</p>
+                                <p className="description heading5">
+                                  "From bootstrapped startup to industry leader,
+                                  Axess propelled us forward with custom
+                                  software that empowers our team and delights
+                                  our customers. Their team truly understood our
+                                  vision and translated it into a seamless,
+                                  efficient solution. They were the wind beneath
+                                  our wings!"{" "}
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -947,22 +1185,38 @@ function Development() {
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
                           <div className="col-md-4 mb-5">
-                            <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                            <div
+                              className="text-center pt-3 mt-3"
+                              data-aos="zoom-in"
+                              data-aos-duration="600"
+                            >
                               <div>
-                                <img src={Profiledub} alt="" className='w-50 mx-auto' />
+                                <img
+                                  src={Profiledub}
+                                  alt=""
+                                  className="w-50 mx-auto"
+                                />
                               </div>
-                              <div className='text-light py-3 my-3'>
-                                <h4 className='heading9 fw-bold fs-5'>Akhilesh Kumar</h4>
-                                <p className='heading5'>CIO</p>
+                              <div className="text-light py-3 my-3">
+                                <h4 className="heading9 fw-bold fs-5">
+                                  Akhilesh Kumar
+                                </h4>
+                                <p className="heading5">CIO</p>
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                          <div
+                            className="col-md-8"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                          >
                             <div className="user">
                               <div className="card-description ">
                                 <div className="title-area">
                                   <div className="title-info">
-                                    <h3 className="title heading9">Akhilesh Kumar, CIO</h3>
+                                    <h3 className="title heading9">
+                                      Akhilesh Kumar, CIO
+                                    </h3>
                                     <span className="date"> </span>
                                   </div>
 
@@ -1047,13 +1301,19 @@ function Development() {
                                 </div>
                                 <div className="my-3 border"></div>
                                 <div className="seperator"></div>
-                                <p className="description heading5">"Axess went the extra mile to develop a complex enterprise software solution that met all our regulatory requirements and security needs. Their collaborative approach and technical expertise were invaluable. They were like the missing piece to our digital puzzle!"{" "}</p>
+                                <p className="description heading5">
+                                  "Axess went the extra mile to develop a
+                                  complex enterprise software solution that met
+                                  all our regulatory requirements and security
+                                  needs. Their collaborative approach and
+                                  technical expertise were invaluable. They were
+                                  like the missing piece to our digital puzzle!"{" "}
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-
                     </div>
 
                     <button
@@ -1081,11 +1341,9 @@ function Development() {
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
-
                 </div>
               </div>
             </div>
-
           </section>
         </div>
       </div>
