@@ -36,11 +36,11 @@ export default function DigitalMarketing() {
                     Digital Marketing Toolbox
                   </h6>
 
-                  <p className="text-center primary-text m-4 fs-4">
+                  <p className="text-center secondary-text m-4 fs-4">
                     {" "}
                     Poven Efffective Tatics
                   </p>
-                  <p className="primary-text mx-auto text-center m-5">
+                  <p className="secondary-text mx-auto text-center m-5">
                     In today's digital age, a captivating online presence is no
                     longer a luxury, it's a necessity. At Axess Technology, we
                     believe in the power of digital marketing to fuel brand
@@ -54,7 +54,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>A dazzling website</h2>
-                          <p className="primary-text">
+                          <p className="secondary-text">
                             That showcases your brand story and engages your
                             audience like never before..
                           </p>
@@ -64,8 +64,8 @@ export default function DigitalMarketing() {
                     <div className="col-md-3">
                       <div class="card-effect">
                         <div class="card-content-effect">
-                          <h2>SEO strategies</h2>
-                          <p className="primary-text">
+                          <h1>SEO strategies</h1>
+                          <p className="secondary-text">
                             that propel your website to the top of search engine
                             results, putting you directly in front of your ideal
                             customers.
@@ -77,7 +77,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Targeted social media</h2>
-                          <p className="primary-text">
+                          <p className="secondary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -88,7 +88,7 @@ export default function DigitalMarketing() {
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Email Marketing</h2>
-                          <p className="primary-text">
+                          <p className="secondary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
                           </p>
@@ -99,7 +99,7 @@ export default function DigitalMarketing() {
                   <p
                     data-aos="fade-up"
                     data-aos-duration="600"
-                    className="primary-text mx-auto text-center m-5 "
+                    className="secondary-text mx-auto text-center m-5 "
                   >
                     That's the Axess Digital Marketing difference. We don't just
                     tick boxes; we craft data-driven strategies that deliver
@@ -146,7 +146,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Web Design and Development</h6>
                     <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         We create stunning, user-friendly websites that are
                         optimized for conversions and search engines.
                       </p>
@@ -159,7 +159,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Content Marketing</h6>
                     <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         We craft compelling blog posts, articles, and social
                         media content that resonates with your target audience
                         and positions you as a thought leader.
@@ -173,7 +173,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Social Media Marketing</h6>
                     <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         We manage your social media channels with engaging
                         content, strategic advertising, and community building
                         strategies.
@@ -187,7 +187,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Search Engine Optimization</h6>
                     <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         We leverage the power of SEO to ensure your website
                         ranks high in search results, putting you front and
                         center for potential customers.
@@ -201,7 +201,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Paid Advertising</h6>
                     <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         {" "}
                         We design and execute targeted pay-per-click (PPC)
                         campaigns to drive high-quality traffic to your website
@@ -216,7 +216,7 @@ export default function DigitalMarketing() {
                   <div class="content">
                     <h6>Email Marketing</h6>
                      <div class="hover_content">
-                      <p className="primary-text">
+                      <p className="secondary-text">
                         {" "}
                         We create personalized email campaigns that nurture
                         leads, boost engagement, and drive conversions.
@@ -226,7 +226,7 @@ export default function DigitalMarketing() {
                 </div>
               </div>
             </div>
-            <p className="primary-text mx-auto text-center m-5">
+            <p className="secondary-text mx-auto text-center m-5">
               But we don't stop there. We believe in constant optimization and
               data-driven decision-making. We track your campaign performance in
               real-time, analyze the results, and continuously refine our
@@ -236,170 +236,79 @@ export default function DigitalMarketing() {
         </div>
 
          {/* Price section */}
-      <section className="pricing mt-5" id="pricing-section">
-        <h1 className="primary-header text-center">Unlock Our New Features</h1>
+         <section className='pricing mt-5' id="pricing-section">
+        <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
-            <h3 className="pricing-card-header">Basic</h3>
-            <div className="price text-center">
-              <sup>$</sup>15<span>/MO</span>
+            <div className='shadow'>
+              <h3 className="pricing-card-header">Basic</h3>
+              <div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
+              <ul>
+                <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+                <li><strong>Hosting - 1</strong> Year FREE</li>
+                <li><strong>Single 1 </strong> Page Website</li>
+                <li><strong>SSL</strong> Certificate</li>
+                <li><strong>WhatsApp </strong> Chat</li>
+                <li><strong>Social </strong> Media Integration</li>
+                <li><strong>Static </strong> Website</li>
+                <li><strong>Premade  </strong> Website</li>
+                <li><strong>3 Month FREE </strong> Tech Support</li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>Single 1 </strong> Page Website
-              </li>
-              <li>
-                <strong>SSL</strong> Certificate
-              </li>
-              <li>
-                <strong>WhatsApp </strong> Chat
-              </li>
-              <li>
-                <strong>Social </strong> Media Integration
-              </li>
-              <li>
-                <strong>Static </strong> Website
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
-            </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Pro</h3>
-            <div className="price text-center">
-              <sup>$</sup>30<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>30<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Premium</h3>
-            <div className="price text-center">
-              <sup>$</sup>50<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>50<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Elite</h3>
-            <div className="price text-center">
-              <sup>$</sup>80<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>80<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
-          {/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
         </div>
-      </section>
+        <div className="justify-content-center d-flex">
+          <a href="#" className="order-btn">Order Now</a>
+        </div>
+      </section >
 
         <div>
         <section className='nav-banner testimonal' id="testimonial">

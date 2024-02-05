@@ -1,15 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Routing from './Routing';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Store from './store/Store';
+import Links from './components/Links';
 function App() {
 
   useEffect(() => {
     AOS.init();
   }, [])
+
+  
   return (
     <div>
-      <Routing />
+      <Store>
+        <Routing />
+        <Links/>
+      </Store>
     </div>
   )
 }

@@ -97,7 +97,7 @@
 }
 
 
-.conatctbg{
+.contactbg{
  position: relative;
  top: 100px;
 }
@@ -107,4 +107,10 @@
   padding: 15px !important;
   margin: 0 10px;
   display: block;
+}
+
+.footerhover {
+  &:hover {
+      color: #f7851d;
+  }
 }

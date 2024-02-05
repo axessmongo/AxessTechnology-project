@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Technologies from "./Technologies";
 import Software from "../assets/images/Our-Expertise.jpg";
 import Process from "../assets/images/imagine.png";
+
 import Why from "../assets/images/Why-Choose.jpg";
 import bubble from "../assets/images/bubble.webp";
 import success from "../assets/images/success.png";
@@ -13,7 +14,7 @@ import { Link } from "react-router-dom";
 import footer from "../assets/images/footer.svg";
 import frompng from "../assets/images/fromlogo.jpg";
 // import contact  from '../assets/images/contact.jpg'
-import "../assets/css/index.scss";
+// import "../assets/css/index.scss";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import webdev from "../assets/images/web-dev2.png";
@@ -41,7 +42,7 @@ function Development() {
             data-aos-duration="1000"
           >
             <div className="text-center">
-              <p className="primary-text mt-4">
+              <p className="secondary-text mt-4">
                 In today's digital world, your website is the first impression
                 you make on potential customers. It's your virtual storefront,
                 your digital ambassador, and the key to unlocking online
@@ -73,7 +74,7 @@ function Development() {
                     data-aos-duration="400"
                     data-aos-easing="ease-in-back"
                   >
-                    <p className="primary-text">
+                    <p className="secondary-text">
                       A beautifully designed website that reflects your brand's
                       unique personality and vision.
                     </p>
@@ -83,7 +84,7 @@ function Development() {
                     data-aos-duration="500"
                     data-aos-easing="ease-in-back"
                   >
-                    <p className="primary-text">
+                    <p className="secondary-text">
                       A website that's so intuitive and engaging, users get lost
                       in the experience, forgetting they're even browsing.
                     </p>
@@ -93,7 +94,7 @@ function Development() {
                     data-aos-duration="600"
                     data-aos-easing="ease-in-back"
                   >
-                    <p className="primary-text">
+                    <p className="secondary-text">
                       A website that seamlessly guides visitors through the
                       sales funnel, turning casual clicks into conversions with
                       effortless ease.
@@ -114,7 +115,7 @@ function Development() {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-8 primary-text">
+          <div className="col-md-8 secondary-text">
             That's the Axess web development magic. We combine creative vision
             with technical expertise to design and build websites that are not
             just visually stunning, but strategically crafted to achieve your
@@ -130,7 +131,7 @@ function Development() {
               <div className="my-4">
                 <div className="row justify-content-center ">
                   <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
-                    <p className="p-3 primary-text">
+                    <p className="p-3 secondary-text">
                       <span className="fw-bold">Custom Website Design:</span> We collaborate with you to
                       understand your brand, target audience, and objectives,
                       then translate that into a captivating website design that
@@ -138,7 +139,7 @@ function Development() {
                     </p>
                   </div>
                   <div className="col-md-4 mx-2  mt-3 small-card boxshadow">
-                    <p className="p-3 primary-text">
+                    <p className="p-3 secondary-text">
                      <span className="fw-bold" > Responsive Web Development:</span> We ensure your website looks
                       flawless and functions perfectly on all devices, from
                       desktops to tablets to smartphones.
@@ -147,7 +148,7 @@ function Development() {
                 </div>
                 <div className="row justify-content-around   ">
                   <div className="col-md-4 mt-3 small-card boxshadow">
-                    <p className="p-3 primary-text">
+                    <p className="p-3 secondary-text">
                      <span className="fw-bold"> Content Management Systems (CMS):</span> We implement
                       user-friendly CMS platforms that give you complete control
                       over your website content, even without technical
@@ -155,14 +156,14 @@ function Development() {
                     </p>
                   </div>
                   <div className="col-md-3 mt-3 small-card  boxshadow">
-                    <p className="p-3 primary-text">
+                    <p className="p-3 secondary-text">
                       <span className="fw-bold">E-commerce Development:</span> We build secure, scalable online
                       stores that make online shopping a breeze for your
                       customers, and a joy for you to manage.
                     </p>
                   </div>
                   <div className="col-md-4  mt-3 small-card boxshadow">
-                    <p className="p-3 primary-text">
+                    <p className="p-3 secondary-text">
                       <span className="fw-bold">Website Maintenance and Security:</span> We offer ongoing
                       maintenance and security solutions to keep your website
                       up-to-date, protected, and performing at its best.
@@ -266,170 +267,79 @@ function Development() {
 
       <Techsection />
       
-      <section className="pricing mt-5" id="pricing-section">
-        <h1 className="primary-header text-center">Unlock Our New Features</h1>
+      <section className='pricing mt-5' id="pricing-section">
+        <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
-            <h3 className="pricing-card-header">Basic</h3>
-            <div className="price text-center">
-              <sup>$</sup>15<span>/MO</span>
+            <div className='shadow'>
+              <h3 className="pricing-card-header">Basic</h3>
+              <div className="price text-center"><sup>$</sup>15<span>/MO</span></div>
+              <ul>
+                <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+                <li><strong>Hosting - 1</strong> Year FREE</li>
+                <li><strong>Single 1 </strong> Page Website</li>
+                <li><strong>SSL</strong> Certificate</li>
+                <li><strong>WhatsApp </strong> Chat</li>
+                <li><strong>Social </strong> Media Integration</li>
+                <li><strong>Static </strong> Website</li>
+                <li><strong>Premade  </strong> Website</li>
+                <li><strong>3 Month FREE </strong> Tech Support</li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>Single 1 </strong> Page Website
-              </li>
-              <li>
-                <strong>SSL</strong> Certificate
-              </li>
-              <li>
-                <strong>WhatsApp </strong> Chat
-              </li>
-              <li>
-                <strong>Social </strong> Media Integration
-              </li>
-              <li>
-                <strong>Static </strong> Website
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
-            </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Pro</h3>
-            <div className="price text-center">
-              <sup>$</sup>30<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>30<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Premium</h3>
-            <div className="price text-center">
-              <sup>$</sup>50<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>50<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
 
           <div className="pricing-card">
             <h3 className="pricing-card-header">Elite</h3>
-            <div className="price text-center">
-              <sup>$</sup>80<span>/MO</span>
-            </div>
+            <div className="price text-center"><sup>$</sup>80<span>/MO</span></div>
             <ul>
-              <li>
-                <strong>Domain</strong>- Additional Charges (Rs.800)
-              </li>
-              <li>
-                <strong>Hosting - 1</strong> Year FREE
-              </li>
-              <li>
-                <strong>4 to 6</strong> Pages
-              </li>
-              <li>
-                <strong>WhatsApp</strong> Chat
-              </li>
-              <li>
-                <strong>SSL </strong> Certificate
-              </li>
-              <li>
-                <strong>Full Source </strong> Code
-              </li>
-              <li>
-                <strong>5 Email – 5GB </strong> Quota Each
-              </li>
-              <li>
-                <strong>Premade </strong> Website
-              </li>
-              <li>
-                <strong>3 Month FREE </strong> Tech Support
-              </li>
+              <li><strong>Domain</strong>- Additional Charges (Rs.800)</li>
+              <li><strong>Hosting - 1</strong> Year FREE</li>
+              <li><strong>4 to 6</strong> Pages</li>
+              <li><strong>WhatsApp</strong> Chat</li>
+              <li><strong>SSL </strong> Certificate</li>
+              <li><strong>Full Source </strong> Code</li>
+              <li><strong>5 Email – 5GB </strong> Quota Each</li>
+              <li><strong>Premade  </strong> Website</li>
+              <li><strong>3 Month FREE </strong> Tech Support</li>
             </ul>
-            <a href="#" className="order-btn">
-              Order Now
-            </a>
           </div>
-          {/* <div className='Pay'>
-						<h3>ACCEPTED PAYMENT METHODS</h3>
-
-					</div> */}
         </div>
-      </section>
+        <div className="justify-content-center d-flex">
+          <a href="#" className="order-btn">Order Now</a>
+        </div>
+      </section >
 
      {/* Testimonal section */}
       <div>
