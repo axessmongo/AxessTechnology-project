@@ -221,11 +221,11 @@ function Footer() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>WhatsApp : +91 7358104213  </p>
-                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
+                                        <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 73581 04213 </Link></p>
+                                        <p>Instagram: <a className='text-decoration-none meta' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
                                     </div>
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>Phone : +91 90425 77261</p>
+                                        <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p>
                                         <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
 
                                     </div>
@@ -263,7 +263,7 @@ function Footer() {
                 </div>
                 <div className="container">
                     <div className="row text-center text-capitalize mt-0 py-md-5 my-md-5 g-4 g-md-0">
-                        <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-5 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
@@ -275,13 +275,13 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-7 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
-                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white footerhover'>Web development</Link></li>
                                     <li><Link to="/development" className='primary-text text-decoration-none text-white footerhover'>software development</Link></li>
                                     <li><Link to="/testing" className='primary-text text-decoration-none text-white footerhover'>software Testing</Link></li>
+                                    <li><Link to="/webdevelopment" className='primary-text text-decoration-none text-white footerhover'>Web development</Link></li>
                                     <li><Link to="/digitalmarketing" className='primary-text text-decoration-none text-white footerhover'>Digital Marketing</Link></li>
                                     {/* <li><Link to="" className='primary-text text-decoration-none text-white'>UI Desigining</Link></li> */}
                                 </ul>
@@ -290,7 +290,7 @@ function Footer() {
 
                         <div className="col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <div>
-                                <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
+                                <p className='gold-text-2 fw-bolder text-center mb-3'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
                                     <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
@@ -316,7 +316,8 @@ function Footer() {
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>
+                        Copyright © All rights reserved 2024.<span className='d-block d-md-inline'>Axess Technology.</span> <Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
 

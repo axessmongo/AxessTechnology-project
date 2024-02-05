@@ -12,7 +12,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Development from './Development';
-import bannerimg from '../assets/images/banner_img_home.webp'
+import bannerimg from '../assets/images/banner_img_home.png'
 export default function Home() {
     let nav = useNavigate()
 

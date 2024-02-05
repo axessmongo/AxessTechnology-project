@@ -1,12 +1,12 @@
 import React from 'react'
-import Awardimg from '../assets/images/Award-img.webp'
+import Awardimg from '../assets/images/Award-img1.png'
 
 function Award() {
     return (
         <section className='container py-3 mb-5'>
             <div>
                 <p className='bg-img-1 mx-auto mx-lg-0' data-aos='fade-up'>Award-winning</p>
-                <h1 data-aos='fade-up'>Software Development <br /> Company</h1>
+                <h1 data-aos='fade-up'>Software Development Company</h1>
             </div>
             <div className='row g-5'>
                 <div className='col-md-4'>
