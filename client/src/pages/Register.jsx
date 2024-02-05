@@ -29,24 +29,25 @@ function Register() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-
+	
 		try {
 			const response = await axios.post(
-				"http://54.161.23.121/api/register",
-				formData
+			  'http://54.161.23.121:5000/api/register',
+			  formData
 			);
+	  
 			if (response.status === 201) {
-				toast.success("Registration successful. Verification email sent.");
+			  toast.success('Registration successful. Verification email sent.');
 			} else if (response.status === 200) {
-				toast.error("User already exists.");
+			  toast.error('User already exists.');
 			} else {
-				console.log("Unexpected response:", response);
+			  console.log('Unexpected response:', response);
 			}
-		} catch (error) {
-			console.error("Error during registration:", error.message);
-			toast.error("Internal Server Error");
-		}
-	};
+		  } catch (error) {
+			console.error('Error during registration:', error.message);
+			toast.error('Internal Server Error');
+		  }
+	  };
 
 	return (
 		<div>
@@ -115,8 +116,8 @@ function Register() {
 								<button type="submit" className='green_btn'>
 									Register
 								</button>
+								<ToastContainer />
 							</form>
-							<ToastContainer />
 						</div>
 					</div>
 				</div>

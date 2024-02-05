@@ -81,7 +81,7 @@ export default function CategoriesIn() {
                                             <div
                                                 className="nav-link content"
                                                 id="pills-bussiness-tab"
-                                                data-bs-toggle="pill"
+                                                da ta-bs-toggle="pill"
                                                 data-bs-target="#pills-bussiness"
                                                 type="div"
                                                 role="tab"
@@ -97,7 +97,7 @@ export default function CategoriesIn() {
                                         <div className="  ">
                                             <div
                                                 className="nav-link content"
-                                                id="pills-insurance-tab"
+                                                id="pills-insurance-tab"  
                                                 data-bs-toggle="pill"
                                                 data-bs-target="#pills-insurance"
                                                 type="div"
@@ -164,14 +164,14 @@ export default function CategoriesIn() {
                                         <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
 
                                             <div className=' p-1' style={{ backgroundColor: ' #05463c' }}>
                                                 <img src={gitfdemo} alt="" className='img-fluid' />
                                             </div>
 
                                         </div>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='py-3'>
                                                 <h3>E-Commerce</h3>
                                                 <div className='py-3'>
@@ -207,7 +207,7 @@ export default function CategoriesIn() {
                                         <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='py-3'>
                                                 <h3>E-Commerce</h3>
                                                 <div className='py-3'>
@@ -232,7 +232,7 @@ export default function CategoriesIn() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='p-1' style={{ backgroundColor: 'gray' }}>
                                                 <img src={watchdemo} alt="" className='img-fluid' />
                                             </div>
@@ -256,14 +256,14 @@ export default function CategoriesIn() {
                                         <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
 
                                             <div className=' p-1' style={{ backgroundColor: ' #05463c' }}>
                                                 <img src={portfolio2} alt="" className='img-fluid' />
                                             </div>
 
                                         </div>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='py-3'>
                                                 <h3>Portfolio</h3>
                                                 <div className='py-3'>
@@ -294,7 +294,7 @@ export default function CategoriesIn() {
                                         <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                     </div>
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='py-3'>
                                                 <h3>Portfolio</h3>
                                                 <div className='py-3'>
@@ -315,7 +315,7 @@ export default function CategoriesIn() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 mt-3'>
                                             <div className='p-1' style={{ backgroundColor: 'gray' }}>
                                                 <img src={portfolio1} alt="" className='img-fluid' />
                                             </div>
@@ -339,14 +339,14 @@ export default function CategoriesIn() {
                                             <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                         </div>
                                         <div className='row'>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
 
                                                 <div className=' p-1' style={{ backgroundColor: ' #05463c' }}>
                                                     <img src={photodemo} alt="" className='img-fluid' />
                                                 </div>
 
                                             </div>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='py-3'>
                                                     <h3>Business</h3>
                                                     <div className='py-3'>
@@ -377,7 +377,7 @@ export default function CategoriesIn() {
                                             <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                         </div>
                                         <div className='row'>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='py-3'>
                                                     <h3>Business</h3>
                                                     <div className='py-3'>
@@ -397,7 +397,7 @@ export default function CategoriesIn() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='p-1' style={{ backgroundColor: 'gray' }}>
                                                     <img src={cateringdemo} alt="" className='img-fluid' />
                                                 </div>
@@ -422,10 +422,10 @@ export default function CategoriesIn() {
                                             <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                         </div>
                                         <div className='row'>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <img src={categoriesimg1} alt="" className='img-fluid' />
                                             </div>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='py-3'>
                                                     <h3>E-Commerce</h3>
                                                     <div className='py-3'>
@@ -457,7 +457,7 @@ export default function CategoriesIn() {
                                             <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                         </div>
                                         <div className='row'>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='py-3'>
                                                     <h3>E-Commerce</h3>
                                                     <div className='py-3'>
@@ -477,7 +477,7 @@ export default function CategoriesIn() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div>
                                                     <img src={categoriesimg2} alt="" className='img-fluid' />
                                                 </div>
@@ -502,10 +502,10 @@ export default function CategoriesIn() {
                                             <p>Explore Our Award-winning Products Used by Millions Around the World.</p>
                                         </div>
                                         <div className='row'>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <img src={categoriesimg3} alt="" className='img-fluid' />
                                             </div>
-                                            <div className='col-md-6'>
+                                            <div className='col-md-6 mt-3'>
                                                 <div className='py-3'>
                                                     <h3>E-Commerce</h3>
                                                     <div className='py-3'>

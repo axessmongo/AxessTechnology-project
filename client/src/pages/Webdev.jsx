@@ -129,7 +129,7 @@ function Development() {
           <div className="row">
             <div className="col-md-7">
               <div className="my-4">
-                <div className="row justify-content-center ">
+                <div className="row justify-content-center px-3 ">
                   <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
                     <p className="p-3 secondary-text">
                       <span className="fw-bold">Custom Website Design:</span> We collaborate with you to
@@ -146,7 +146,7 @@ function Development() {
                     </p>
                   </div>
                 </div>
-                <div className="row justify-content-around   ">
+                <div className="row justify-content-around px-3">
                   <div className="col-md-4 mt-3 small-card boxshadow">
                     <p className="p-3 secondary-text">
                      <span className="fw-bold"> Content Management Systems (CMS):</span> We implement

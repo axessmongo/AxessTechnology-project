@@ -1,5 +1,5 @@
 import React from 'react'
-import Awardimg from '../assets/images/Award-img.webp'
+import Awardimg from '../assets/images/Award-img1.png'
 
 function Award() {
     return (

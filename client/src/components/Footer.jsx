@@ -9,13 +9,13 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
 function Footer() {
-    const [receiveMsg, setReciveMsg] = useState('none')
+    const [receiveMsg, setReciveMsg] = useState()
     let MSG = {
-        success: "success",
+        success: "Success",
         mailSended: "Mail sended successfully",
-        unexpectedError: "unexpected Error",
-        unexpectedResponse: "unexpectedResponse",
-        incorrectMail: "incorrect Mail"
+        unexpectedError: "Unexpected Error",
+        unexpectedResponse: "Unexpected Response",
+        incorrectMail: "Incorrect Mail"
     }
     const [errors, setErrors] = useState({
         fname: "",
@@ -44,7 +44,7 @@ function Footer() {
         if (name === 'phone') {
 
             value = value.replace(/\D/g, '').slice(0, 10);
-            console.log("phone", value)
+            // console.log("phone", value)
         }
 
 
@@ -61,7 +61,7 @@ function Footer() {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'FName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'FirstName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid firstname, only letters allowed' : '',
                 });
                 break;
 
@@ -69,7 +69,7 @@ function Footer() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'LName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'LastName is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lastname' : '',
                 });
                 break;
             case 'email':
@@ -105,16 +105,16 @@ function Footer() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.description)
+        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.description) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.description.trim()) {
+        if (errors.fname || errors.lname || errors.email || errors.phone) return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'Firstname is required.' : '',
-                lname: !contact.lname ? 'Lastname is required.' : '',
+                fname: !contact.fname ? 'firstname is required.' : '',
+                lname: !contact.lname ? 'lastname is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'Phone No is required.' : '',
-                // description: !contact.description ? 'description is required.' : '',
+                phone: !contact.phone ? 'phone no is required.' : '',
+                // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
@@ -125,53 +125,55 @@ function Footer() {
             console.log("res", response)
             if (response.status === 201) {
                 toast.success('our team will connect with you');
-                alert('success our team connect with you ')
+                setReciveMsg(MSG.success)
+                // alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
                     email: "",
                     phone: "",
-                    description: "",
+                    address: "",
+                    serviceOption: ""
 
                 })
                 setErrors({
                     fname: '',
                     lname: '',
                     email: '',
-                    phone: "",
-                    description: "",
+                    phone: '',
+                    address: ''
+
+                    // serviceOption: '',
                 });
 
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
-                alertcontent.click();
-                
+                // alertcontent.click();
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
-                alertcontent.click();
+                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
                 setReciveMsg(MSG.unexpectedResponse)
-                alertcontent.click();
+                // alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
             setReciveMsg(MSG.unexpectedError)
-            alertcontent.click();
+            // alertcontent.click();
         }
 
     }
+    // var alertcontent = document.getElementById('alert');
+    // if (alertcontent) {
+    //     console.log('true');
 
-    var alertcontent = document.getElementById('alert');
-    if (alertcontent) {
-        console.log('true');
-
-    } else {
-        console.log('false')
-    }
+    // } else {
+    //     console.log('false')
+    // }
 
 
     return (
@@ -182,7 +184,7 @@ function Footer() {
                         <div className="card-body position-relative">
                             <div className="row">
                                 <div className="col-md-10">
-                                    <p className='text-start mx-2 fs-5 bg-img-1 gold-text-2' data-aos='zoom-out'>Contact us</p>
+                                    <p className='text-start mx-2 fs-5 bg-img-1' data-aos='zoom-out'>Contact us</p>
                                     <p data-aos='zoom-out'>We’re excited to hear about your project. Schedule a call today and Connect with our experts. At Axess, We respect your privacy and Never share your details with anyone. Let's build together.</p>
                                 </div>
                                 <div className="col-md-2 position-absolute footerbg">
@@ -217,24 +219,25 @@ function Footer() {
 
                                     </div>
                                 </div>
-                            <div className="row">
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>WhatsApp : +91 7358104213  </p>
-                                    <p>Instagram: axess_technology</p>
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <p>Phone : +91 90425 77261</p>
-                                    <p>Email : <a href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
-                                    
-                                </div>
-                                <div className="col-md-4" data-aos ='zoom-out'>
-                                    <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+                                <div className="row">
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>WhatsApp : +91 7358104213  </p>
+                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <p>Phone : +91 90425 77261</p>
+                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+
+                                    </div>
+                                    <div className="col-md-4" data-aos='zoom-out'>
+                                        <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <ToastContainer />
                 </form>
             </div>
             <div className='bg-black text-white footercontent'>
@@ -248,10 +251,11 @@ function Footer() {
                             </div>
                             <div className="col-md-6 text-center pt-4 " data-aos='fade-up' data-aos-duration='700'>
                                 <p className='gold-text-2 fw-bolder'>Visit Us</p>
-                                <p className='primary-text text-white'>Tidel Park,<br /> GF-04,
+                                <Link to={'#'} className='text-decoration-none'><p className='primary-text text-white'>Tidel Park,<br /> GF-04,
                                     No-4, Rajiv Gandhi Salai,
                                     Taramani,<br />
                                     Chennai - 600113.</p>
+                                </Link>
                             </div>
 
                         </div>
@@ -289,10 +293,10 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li><Link><i className="bi bi-facebook mx-2 mb-3 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-instagram mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-whatsapp mx-2 mb-1 bg-img-1"></i></Link></li>
-                                    <li><Link><i className="bi bi-linkedin mx-2 mb-1 bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -315,47 +319,7 @@ function Footer() {
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
-            <>
-                {/* Button trigger modal */}
-                <button
-                    type="button"
-                    className="btn btn-primary d-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    id='alert'
-                >
-                    Launch static backdrop modal
-                </button>
-                {/* Modal */}
-                <div
-                    className='modal fade'
-                    id="staticBackdrop"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabIndex={-1}
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                                    Modal title
-                                </h1> */}
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                />
-                            </div>
-                            <div className="modal-body">
-                                <p className='text-center'>{receiveMsg}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+
         </div>
     )
 }

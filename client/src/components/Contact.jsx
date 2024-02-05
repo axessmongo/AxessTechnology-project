@@ -3,19 +3,20 @@ import axios from 'axios';
 import Banner from '../components/Banner';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
 import { toast, ToastContainer } from 'react-toastify';
 
 
 
 function Contact() {
-    const [receiveMsg, setReciveMsg] = useState('none')
+    const [receiveMsg, setReciveMsg] = useState('')
     const MSG = {
-        success: "success",
+        success: "Success",
         mailSended: "Mail sended successfully",
-        unexpectedError: "unexpected Error",
-        unexpectedResponse: "unexpectedResponse",
-        incorrectMail: "incorrect Mail"
+        unexpectedError: "Unexpected Error",
+        unexpectedResponse: "Unexpected Response",
+        incorrectMail: "Incorrect Mail"
 
     }
     const [errors, setErrors] = useState({
@@ -25,9 +26,6 @@ function Contact() {
         phone: "",
         address: "",
         serviceOption: "",
-
-
-
     });
     const [contact, setContact] = useState({
         fname: "",
@@ -36,8 +34,6 @@ function Contact() {
         phone: "",
         address: "",
         serviceOption: "",
-
-
     });
 
     const handleChange = (e) => {
@@ -57,14 +53,14 @@ function Contact() {
         });
         validateField(name, value);
     };
-    console.log(contact)
+    // console.log(contact)
     const validateField = (name, value) => {
 
         switch (name) {
             case 'fname':
                 setErrors({
                     ...errors,
-                    fname: value.length === 0 ? 'Firstname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid fname, only letters allowed' : '',
+                    fname: value.length === 0 ? 'Firstname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid firstname, only letters allowed' : '',
                 });
                 break;
 
@@ -72,7 +68,7 @@ function Contact() {
             case 'lname':
                 setErrors({
                     ...errors,
-                    lname: value.length === 0 ? 'Lastname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lname' : '',
+                    lname: value.length === 0 ? 'Lastname is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid lastname' : '',
                 });
                 break;
             case 'email':
@@ -108,10 +104,10 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
+        // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
-        if (errors.fname || errors.lname || errors.email || errors.phone || errors.address) return
-        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim() || !contact.address.trim()) {
+        if (errors.fname || errors.lname || errors.email || errors.phone )return
+        if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
                 fname: !contact.fname ? 'firstname is required.' : '',
                 lname: !contact.lname ? 'lastname is required.' : '',
@@ -129,7 +125,7 @@ function Contact() {
             if (response.status === 201) {
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
-                alertcontent.click();
+                // alertcontent.click();
                 setContact({
                     fname: "",
                     lname: "",
@@ -152,32 +148,32 @@ function Contact() {
             } else if (response.status === 401) {
                 toast.error('Email or Password incorrect');
                 setReciveMsg(MSG.incorrectMail)
-                alertcontent.click();
+                // alertcontent.click();
             } else if (response.status === 400) {
                 toast.info('An email has been sent to your account. Please verify.');
                 setReciveMsg(MSG.mailSended)
-                alertcontent.click();
+                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
                 setReciveMsg(MSG.unexpectedResponse)
-                alertcontent.click();
+                // alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             toast.error('Unexpected error');
             setReciveMsg(MSG.unexpectedError)
-            alertcontent.click();
+            // alertcontent.click();
         }
 
     }
 
-    var alertcontent = document.getElementById('alert');
-    if (alertcontent) {
-        console.log('true');
+    // var alertcontent = document.getElementById('alert');
+    // if (alertcontent) {
+    //     console.log('true');
 
-    } else {
-        console.log('false')
-    }
+    // } else {
+    //     console.log('false')
+    // }
 
     return (
         <div>
@@ -220,7 +216,7 @@ function Contact() {
 
                             </div>
                             <div className="col-12 mb-4">
-                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address *' />
+                                <input type="text" name="address" value={contact.address} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Address ' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.address}</div>
 
                             </div>
@@ -359,7 +355,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
-                                    What types of software do you develop?
+                                    Q1:   What types of software do you develop?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFive" className="accordion-collapse collapse show">
@@ -371,7 +367,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
-                                    What technologies do you use?
+                                   Q2: What technologies do you use?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseSix" className="accordion-collapse collapse ">
@@ -383,7 +379,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
-                                    Do you offer ongoing maintenance and support for software?
+                                    Q3: Do you offer ongoing maintenance and support for software?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseSeven" className="accordion-collapse collapse ">
@@ -400,7 +396,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="true" aria-controls="panelsStayOpen-collapseNine">
-                                    What types of software testing do you offer?
+                                    Q1: What types of software testing do you offer?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseNine" className="accordion-collapse collapse show">
@@ -411,7 +407,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true" aria-controls="panelsStayOpen-collapseEight">
-                                    How can your testing services benefit my business?
+                                    Q2: How can your testing services benefit my business?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseEight" className="accordion-collapse collapse ">
@@ -422,7 +418,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="true" aria-controls="panelsStayOpen-collapseTen">
-                                    Do you offer automated testing solutions?
+                                   Q3: Do you offer automated testing solutions?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTen" className="accordion-collapse collapse ">
@@ -441,7 +437,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="true" aria-controls="panelsStayOpen-collapseEleven">
-                                    Do you design and develop custom websites?
+                                   Q1: Do you design and develop custom websites?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseEleven" className="accordion-collapse collapse show">
@@ -453,7 +449,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTweleve" aria-expanded="true" aria-controls="panelsStayOpen-collapseTweleve">
-                                    What platforms do you use for website development?
+                                   Q2: What platforms do you use for website development?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTweleve" className="accordion-collapse collapse ">
@@ -465,7 +461,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThirteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseThirteen">
-                                    Do you offer website maintenance and security services?
+                                    Q3: Do you offer website maintenance and security services?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThirteen" className="accordion-collapse collapse ">
@@ -482,7 +478,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseFourteen">
-                                    What digital marketing services do you offer?
+                                 Q1:  What digital marketing services do you offer?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFourteen" className="accordion-collapse collapse show">
@@ -493,7 +489,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseFifteen">
-                                    How can your digital marketing services help me reach my target audience?
+                                   Q2: How can your digital marketing services help me reach my target audience?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFifteen" className="accordion-collapse collapse">
@@ -504,7 +500,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseSixteen">
-                                    Do you track and report on the results of your campaigns?
+                                  Q3:  Do you track and report on the results of your campaigns?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseSixteen" className="accordion-collapse collapse ">
@@ -517,47 +513,7 @@ function Contact() {
                 </div>
             </div>
             <Footer />
-            <>
-                {/* Button trigger modal */}
-                <button
-                    type="button"
-                    className="btn btn-primary d-none"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    id='alert'
-                >
-                    Launch static backdrop modal
-                </button>
-                {/* Modal */}
-                <div
-                    className='modal fade'
-                    id="staticBackdrop"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabIndex={-1}
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                {/* <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                                    Modal title
-                                </h1> */}
-                                <button
-                                    type="button"
-                                    className="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                />
-                            </div>
-                            <div className="modal-body">
-                                <p className='text-center'>{receiveMsg}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </>
+          
         </div>
     );
 }

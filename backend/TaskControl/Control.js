@@ -10,8 +10,8 @@ const Register = async (req, res) => {
     const existingUser = await userModel.findOne({ email });
 
     if (existingUser) {
-      return res.status(200).json({
-        status: 200,
+      return res.status(301).json({
+        status: 301,
         message: "User already exists",
       });
     }
@@ -38,12 +38,11 @@ const Register = async (req, res) => {
 
     const url = `${process.env.BASE_URL}users/${user._id}/verify/${newToken.token}`;
     await sendEmail(user.email, "Verify Email", url);
-
     res
       .status(201)
       .json({ message: "An Email sent to your account. Please verify." });
   } catch (error) {
-    console.error(error);
+    console.error("Error while sending email:", error);
     res.status(500).json({
       message: "Internal Server Error",
     });
@@ -56,7 +55,7 @@ const verifyEmail = async (req, res) => {
   const id = req.params.id;
 
   try {
-    const user = await userModel.findById({_id:id});
+    const user = await userModel.findById(id);
 
     if (!user) return res.status(400).json({ message: "Invalid user ID" });
 
@@ -65,12 +64,12 @@ const verifyEmail = async (req, res) => {
       token: req.params.token,
     });
 
-    if (!token) return res.status(400).json({ message: "Invalid or expired token" });
+    if (!token)
+      return res.status(400).json({ message: "Invalid or expired token" });
 
     await userModel.updateOne({ _id: user._id }, { verified: true });
 
     await tokenModel.deleteOne({ _id: token._id });
-    // await tokenModel.remove({ _id: token._id });
 
     res.status(200).json({ message: "Email verified successfully" });
   } catch (error) {
@@ -78,7 +77,6 @@ const verifyEmail = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
-
 
 //Login with jwt token authorization:
 
@@ -104,7 +102,9 @@ const loginpost = async (req, res) => {
         await sendEmail(user.email, "Verify Email", url);
       }
 
-      return res.status(400).send({ message: "An Email sent to your account. Please verify." });
+      return res
+        .status(400)
+        .send({ message: "An Email sent to your account. Please verify." });
     }
 
     // Proceed with login if the user is verified
@@ -114,13 +114,13 @@ const loginpost = async (req, res) => {
     }
 
     const authToken = user.generateAuthToken();
-    res.status(200).send({ data: authToken, message: "Logged in successfully" });
+    res
+      .status(200)
+      .send({ data: authToken, message: "Logged in successfully" });
   } catch (error) {
     console.error(error);
     res.status(500).send({ message: "Internal Server Error" });
   }
 };
-
-
 
 module.exports = { Register, verifyEmail, loginpost };

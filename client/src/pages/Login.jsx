@@ -24,13 +24,14 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
     try {
-      const response = await axios.post('http://54.161.23.121/api/login', formData);
-
+      const response = await axios.post('http://54.161.23.121:5000/api/login', formData);
+  
       if (response.status === 200) {
         toast.success('Logged in successfully');
-        Navigate('/')
+        // Use the appropriate navigation function based on your project (e.g., Navigate('/', { replace: true }))
+        Navigate('/');
       } else if (response.status === 401) {
         toast.error('Invalid Email or Password');
       } else if (response.status === 400) {

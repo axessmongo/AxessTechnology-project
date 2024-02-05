@@ -15,11 +15,9 @@ app.use(route)
 
 app.get("/", (req, res) => {
   console.log('Request received at root path');
-  res.send('Welcome to Node.js'); // Send a response to the client
+  res.send('Welcome to Node.js');
 });
 
-
-// const mongoURL = 'mongodb+srv://axessmongo:admin@cluster0.ozjlhdj.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose
   .connect(process.env.mongoURL, {
