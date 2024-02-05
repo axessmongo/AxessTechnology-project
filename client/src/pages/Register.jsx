@@ -37,6 +37,7 @@ function Register() {
 			);
 	  
 			if (response.status === 201) {
+				console.log("reg",response)
 			  toast.success('Registration successful. Verification email sent.');
 			} else if (response.status === 200) {
 			  toast.error('User already exists.');
