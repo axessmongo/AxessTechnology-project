@@ -265,7 +265,7 @@ function Development() {
           className="gold-btn mx-auto"
          
         >
-          <span className="d-block">Connect with us</span>{" "}
+          <span className="d-block">See Examples</span>{" "}
           <i className="bi bi-arrow-right"></i>
         </button>
       </section>
