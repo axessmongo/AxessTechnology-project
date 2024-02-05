@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.png';
 import service from '../assets/images/services/r.png';
-import bug from '../assets/images/services/bug.png';
+import bug from '../assets/images/services/bug.gif';
 import cycle from '../assets/images/services/cycle.png';
 import vmodel from '../assets/images/services/v-model.png';
 import pmodel from '../assets/images/services/p-model.png';
 import hmodel from '../assets/images/services/h-model.png';
-import ai from '../assets/images/services/ai.png';
+import ai from '../assets/images/services/robot.gif';
 import digi from '../assets/images/services/digi.png';
-import AOS from 'aos';
+import AOS from 'aos';  
 function Services() {
     const [nav, setNav] = useState(false)
     const [popup, setPopup] = useState(true)
