@@ -131,7 +131,7 @@ function Development() {
               <div className="my-4">
                 <div className="row justify-content-center px-3 ">
                   <div className="col-md-4 mt-3 mx-2 small-card text-light boxshadow ">
-                  <p className="fw-bold pt-1">Custom Website Design:</p>
+                  <span className="fw-bold p-2">Custom Website Design:</span>
                     <p className="p-3 secondary-text">
                        We collaborate with you to
                       understand your brand, target audience, and objectives,
@@ -140,7 +140,7 @@ function Development() {
                     </p>
                   </div>
                   <div className="col-md-4 mx-2  mt-3 small-card text-light  boxshadow">
-                  <p className="fw-bold  pt-1" > Responsive Web Development:</p>
+                  <span className="fw-bold  p-2" > Responsive Web Development:</span>
                     <p className="p-3 secondary-text">
                      We ensure your website looks
                       flawless and functions perfectly on all devices, from
@@ -150,7 +150,7 @@ function Development() {
                 </div>
                 <div className="row justify-content-around px-3">
                   <div className="col-md-4 mt-3 small-card text-light boxshadow">
-                  <p className="fw-bold  pt-1"> Content Management Systems (CMS):</p>
+                  <span className="fw-bold  p-2"> Content Management Systems (CMS):</span>
                     <p className="p-3 secondary-text">
                       We implement
                       user-friendly CMS platforms that give you complete control
@@ -159,7 +159,7 @@ function Development() {
                     </p>
                   </div>
                   <div className="col-md-3 mt-3 small-card text-light boxshadow">
-                  <p className="fw-bold pt-1">E-commerce Development:</p>
+                  <span className="fw-bold p-2">E-commerce Development:</span>
                     <p className="p-3 secondary-text">
                       We build secure, scalable online
                       stores that make online shopping a breeze for your
@@ -167,7 +167,7 @@ function Development() {
                     </p>
                   </div>
                   <div className="col-md-4  mt-3 small-card text-light boxshadow">
-                  <p className="fw-bold pt-1">Website Maintenance and Security:</p>
+                  <span className="fw-bold p-2">Website Maintenance and Security:</span>
                     <p className="p-3 secondary-text">
                        We offer ongoing
                       maintenance and security solutions to keep your website
