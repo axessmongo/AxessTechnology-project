@@ -56,7 +56,7 @@ function Navbar() {
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         <div className='d-flex share order-2 order-lg-1 '>
-          <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook"></i></Link>
+          <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} className='bg-primary' target='_blank'><FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "#74C0FC",}} /></Link>
           <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram"></i></Link>
           <Link><i className="bi bi-whatsapp"></i></Link>
         </div>
