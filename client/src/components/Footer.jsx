@@ -221,11 +221,11 @@ function Footer() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none'> +91 73581 04213 </Link></p>
-                                        <p>Instagram: <a className='text-decoration-none' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
+                                        <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 73581 04213 </Link></p>
+                                        <p>Instagram: <a className='text-decoration-none meta' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
                                     </div>
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none'> +91 90425 77261</Link></p>
+                                        <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p>
                                         <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
 
                                     </div>
@@ -290,7 +290,7 @@ function Footer() {
 
                         <div className="col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <div>
-                                <p className='gold-text-2 fw-bolder text-center mb-1'>Social media</p>
+                                <p className='gold-text-2 fw-bolder text-center mb-3'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
                                     <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
