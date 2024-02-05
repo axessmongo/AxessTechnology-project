@@ -316,9 +316,6 @@ function Services() {
                             </div> */}
                             
                         </div>
-
-
-
                         <div className="p-5 text-white softtest mb-5" id='softtest'>
                             <div className="">
                                 <div className=" position-relative z-3">
@@ -452,9 +449,6 @@ function Services() {
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div className="p-5 roller-container text-white min-vh-100 webdev" id='webdev'>
                             <div className=" position-relative z-3">
                                 <h1 className='light-header'>
@@ -480,9 +474,8 @@ function Services() {
 
                             </div>
                         </div>
-
                         <div className="roller-container text-white min-vh-100 digi" id='digi'>
-                            <div className=" position-relative z-3 p-5">
+                            <div className="position-relative z-3 p-5">
                                 <h1 className='light-header'>
                                     Socializing
                                 </h1>

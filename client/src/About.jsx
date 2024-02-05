@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 // import AboutImage from '../src/assets/images/About2.jpg';
 import success from "../src/assets/images/about/success.svg";
+import whyus from "../src/assets/images/about/whyus.jpg"
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
@@ -16,9 +17,52 @@ function About() {
         h1={"About Us"}
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
       />
+
+      <div className="container-fluid bg-black">
+        <div className="row justify-content-around">
+          <div className="col-md-5">
+            <div className="">
+              <img src={whyus} alt="whyus" />
+            </div>
+          </div>
+          <div className="col-md-1 text-center mt-5 text-white">
+            <div className=" mt-5">
+              <p className="primary-header">W</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">h</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">y</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">U</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">S</p>
+            </div>
+            {/* <div>
+              <p className="primary-header mb-1">e</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">s</p>
+            </div>
+            <div>
+              <p className="primary-header mb-1">s</p>
+            </div> */}
+
+          </div>
+          <div className="col-md-4 mt-5">
+            <div className="row text-white text-center">
+                <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container">
-        <div className=" pt-3 row mt-5 justify-content-end">
-          <div className="col-md-8 mt-5">
+        <div className=" pt-3 row justify-content-end">
+          <div className="col-md-8">
             <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
               <p className="mt-3 ceo-content">
@@ -44,7 +88,7 @@ function About() {
           </div>
           <div className="col-md-4">
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
-              <div class="blur-img">
+              <div class="blur-img aboutMdimg">
                 <img
                   src={
                     "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
