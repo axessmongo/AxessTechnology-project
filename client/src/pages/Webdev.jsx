@@ -66,7 +66,7 @@ function Development() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-back"
           >
-            <div className="boxshadow ">
+            <div className="boxshadow p-4">
               <div>
                 <ul>
                   <li
@@ -130,41 +130,46 @@ function Development() {
             <div className="col-md-7">
               <div className="my-4">
                 <div className="row justify-content-center px-3 ">
-                  <div className="col-md-4 mt-3 mx-2 small-card  boxshadow">
+                  <div className="col-md-4 mt-3 mx-2 small-card text-light boxshadow ">
+                    <span className="fw-bold p-2">Custom Website Design:</span>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">Custom Website Design:</span> We collaborate with you to
+                      We collaborate with you to
                       understand your brand, target audience, and objectives,
                       then translate that into a captivating website design that
                       resonates with your users.
                     </p>
                   </div>
-                  <div className="col-md-4 mx-2  mt-3 small-card boxshadow">
+                  <div className="col-md-4 mx-2  mt-3 small-card text-light  boxshadow">
+                    <span className="fw-bold  p-2" > Responsive Web Development:</span>
                     <p className="p-3 secondary-text">
-                     <span className="fw-bold" > Responsive Web Development:</span> We ensure your website looks
+                      We ensure your website looks
                       flawless and functions perfectly on all devices, from
                       desktops to tablets to smartphones.
                     </p>
                   </div>
                 </div>
                 <div className="row justify-content-around px-3">
-                  <div className="col-md-4 mt-3 small-card boxshadow">
+                  <div className="col-md-4 mt-3 small-card text-light boxshadow">
+                    <span className="fw-bold  p-2"> Content Management Systems (CMS):</span>
                     <p className="p-3 secondary-text">
-                     <span className="fw-bold"> Content Management Systems (CMS):</span> We implement
+                      We implement
                       user-friendly CMS platforms that give you complete control
                       over your website content, even without technical
                       knowledge.
                     </p>
                   </div>
-                  <div className="col-md-3 mt-3 small-card  boxshadow">
+                  <div className="col-md-3 mt-3 small-card text-light boxshadow">
+                    <span className="fw-bold p-2">E-commerce Development:</span>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">E-commerce Development:</span> We build secure, scalable online
+                      We build secure, scalable online
                       stores that make online shopping a breeze for your
                       customers, and a joy for you to manage.
                     </p>
                   </div>
-                  <div className="col-md-4  mt-3 small-card boxshadow">
+                  <div className="col-md-4  mt-3 small-card text-light boxshadow">
+                    <span className="fw-bold p-2">Website Maintenance and Security:</span>
                     <p className="p-3 secondary-text">
-                      <span className="fw-bold">Website Maintenance and Security:</span> We offer ongoing
+                      We offer ongoing
                       maintenance and security solutions to keep your website
                       up-to-date, protected, and performing at its best.
                     </p>
@@ -181,92 +186,95 @@ function Development() {
         </div>
       </section>
 
-      <Carousel/>
+      <Carousel />
 
-   <div className="bg-green-1 text-light">
-      <section className="container mt-5">
-        
-        <div className="row justify-content-evenly">
+      <div className="bg-green-1 text-light">
+        <section className="container mt-5">
 
-        <div className="col-lg-5  col-md-12 align-items-center d-flex">
-            <div
-              className="my-3"
-              data-aos="flip-right"
-              data-aos-duration="600"
-            >
-              <img src={imagine1} className="img-fluid" alt="" />
-            </div>
-          </div>
-          <div
-            className="col-lg-6  col-md-12  align-items-center d-flex"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-back"
-          >
-            <div className="">
-              <div>
-                <ul>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-duration="400"
-                    data-aos-easing="ease-in-back"
-                  >
-                    <p className="primary-text">
-                    But we don't stop at delivering a beautiful website. We believe in a holistic approach, seamlessly integrating your website with your digital marketing strategies to maximize your online impact.
+          <div className="row justify-content-evenly">
 
-                    </p>
-                  </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-duration="500"
-                    data-aos-easing="ease-in-back"
-                  >
-                    <p className="primary-text">
-                    Ready to create a website that works as hard as you do? Let Axess Technology be your web development partner.
-
-                    </p>
-                  </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-duration="600"
-                    data-aos-easing="ease-in-back"
-                  >
-                    <p className="primary-text">
-                    Contact us today for a free consultation and let's build your online masterpiece!
-
-                    </p>
-                  </li>
-                </ul>
+            <div className="col-lg-5  col-md-12 align-items-center d-flex">
+              <div
+                className="my-3"
+                data-aos="flip-right"
+                data-aos-duration="600"
+              >
+                <img src={imagine1} className="img-fluid" alt="" />
               </div>
             </div>
+            <div
+              className="col-lg-6  col-md-12  align-items-center d-flex"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-back"
+            >
+              <div className="">
+                <div>
+                  <ul>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="400"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="primary-text">
+                        But we don't stop at delivering a beautiful website. We believe in a holistic approach, seamlessly integrating your website with your digital marketing strategies to maximize your online impact.
+
+                      </p>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="primary-text">
+                        Ready to create a website that works as hard as you do? Let Axess Technology be your web development partner.
+
+                      </p>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="600"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="primary-text">
+                        Contact us today for a free consultation and let's build your online masterpiece!
+
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
-          
-        </div>
-       
-      </section>
+
+        </section>
       </div>
 
       <section className="bg-green-1 pb-5 mt-1">
-       
+
         <h3 className="secondary-header mx-auto text-center text-white pt-5">
           {" "}
           Get a free website audit: Identify areas for improvement and unlock your website's full potential.
         </h3>
         <p className="col-md-8 primary-text mx-auto text-center text-white py-3">
-        Browse our portfolio: See examples of the stunning websites we've created for our clients.
+          Browse our portfolio: See examples of the stunning websites we've created for our clients.
 
         </p>
-        <button
-          className="gold-btn mx-auto"
-         
-        >
-          <span className="d-block">Connect with us</span>{" "}
-          <i className="bi bi-arrow-right"></i>
-        </button>
+
+        <Link className="text-decoration-none" to={"/ourworks"}>
+          <button
+            className="gold-btn mx-auto"
+
+
+          >
+            <span className="d-block">See Examples</span>{" "}
+            <i className="bi bi-arrow-right"></i>
+          </button></Link>
       </section>
 
       <Techsection />
-      
+
       <section className='pricing mt-5' id="pricing-section">
         <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
@@ -341,7 +349,7 @@ function Development() {
         </div>
       </section >
 
-     {/* Testimonal section */}
+      {/* Testimonal section */}
       <div>
         <section className='nav-banner testimonal' id="testimonial">
           <div>
