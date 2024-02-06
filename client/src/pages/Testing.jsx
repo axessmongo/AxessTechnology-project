@@ -35,28 +35,32 @@ function Testing() {
             <p className='secondary-text'>We go beyond basic functionality checks. Our testing dives deep, encompassing:</p>
           </div>
           <div className='row pb-3'>
-            <div className='col-md-7 py-1'>
+            <div className='col-md-7 py-1 mt-3'>
 
               <div>
                 <div className='row'>
-                  <div className='col-md-5 pt-3' data-aos="zoom-out-right" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-out-right" data-aos-duration="1000">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={performicon} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4 '>
+                        <img src={performicon} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center  '>
                         <h3>Performance</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
                     </div>
                   </div>
-                  <div className='col-md-5 pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={security} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4'>
+                        <img src={security} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center'>
                         <h3>Security</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
                     </div>
@@ -66,24 +70,28 @@ function Testing() {
 
               <div>
                 <div className='row pt-2'>
-                  <div className='col-md-5 pt-3' data-aos="zoom-in-right" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-in-right" data-aos-duration="900">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={usability} alt="" className='w-25' />
+                     <div className="row">
+                     <div className='test-order col-4'>
+                        <img src={usability} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center '>
                         <h3>Usability</h3>
                       </div>
+                     </div>
                       <p className='pt-3 secondary-text'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
                     </div>
                   </div>
-                  <div className='col-md-5 pt-3' data-aos="zoom-in-left" data-aos-duration="1000">
+                  <div className='col-md-6  pt-3' data-aos="zoom-in-left" data-aos-duration="900">
                     <div className='small-card bug-card'>
-                      <div className='test-order'>
-                        <img src={compatibility} alt="" className='w-25' />
+                      <div className="row">
+                      <div className='test-order col-4'>
+                        <img src={compatibility} alt="" className='w-75' />
                       </div>
-                      <div className='test-head'>
+                      <div className='test-head col-9 text-center'>
                         <h3>Compatibility</h3>
+                      </div>
                       </div>
                       <p className='pt-3 secondary-text'>We test across browsers, devices, and operating systems for seamless performance on a any platform.</p>
                     </div>
@@ -93,7 +101,7 @@ function Testing() {
 
             </div>
 
-            <div className='col-md-5 d-flex justify-content-center align-items-center'>
+            <div className='col-md-5 mt-3 d-flex justify-content-center align-items-center'>
 
               <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
@@ -109,7 +117,10 @@ function Testing() {
       {/* Multi-layered section */}
       <section className='bg-green-1 text-light'>
         <div className='container pt-5 mt-3'>
-
+        <div className='text-center'>
+                <h1 className='bg-img-1 mx-auto'>Multi-Layered</h1>
+                <p className='secondary-text'>With our multi-layered approach, you get:</p>
+              </div>
           <div className='row'>
             <div className='col-md-5'>
               <div data-aos="flip-left"
@@ -119,10 +130,7 @@ function Testing() {
               </div>
             </div>
             <div className='col-md-7'>
-              <div className='text-center'>
-                <h1 className='bg-img-1 mx-auto'>Multi-Layered</h1>
-                <p className='secondary-text'>With our multi-layered approach, you get:</p>
-              </div>
+              
               <div className='pt-5'>
                 <div data-aos="fade-up"
                   data-aos-duration="1000"

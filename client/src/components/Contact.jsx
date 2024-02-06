@@ -123,7 +123,7 @@ function Contact() {
 
             console.log("res", response)
             if (response.status === 201) {
-                toast.success('our team will connect with you');
+                toast.success('our team will connect you');
                 setReciveMsg(MSG.success)
                 // alertcontent.click();
                 setContact({
