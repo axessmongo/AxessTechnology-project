@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Technologies from "./Technologies";
+import Technologies from "../components/Technologies";
 import Software from "../assets/images/Our-Expertise.jpg";
 import Process from "../assets/images/imagine.png";
 
@@ -238,7 +238,6 @@ function Development() {
                     >
                       <p className="primary-text">
                         Contact us today for a free consultation and let's build your online masterpiece!
-
                       </p>
                     </li>
                   </ul>

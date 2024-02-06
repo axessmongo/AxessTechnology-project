@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import "../assets/css/Technologies.scss"
-import Footer from '../components/Footer'
+import Footer from './Footer'
 import techtools1 from "../assets/images/Technologies/techtools1.webp"
 // each tech image import----->
 import android from "../assets/images/Technologies/android.webp"
@@ -57,8 +57,8 @@ import ts from "../assets/images/Technologies/ts.webp"
 import wordpress from "../assets/images/Technologies/wordpress.webp"
 import xamarin from "../assets/images/Technologies/xamarin.webp"
 // each tech import ends---------->
-import Banner from '../components/Banner'
-import Navbar from '../components/Navbar'
+import Banner from './Banner'
+import Navbar from './Navbar'
 const Technologies = () => {
     const [TechActive, setTechActive] = useState(0);
 
