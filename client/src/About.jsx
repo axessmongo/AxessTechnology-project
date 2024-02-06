@@ -54,7 +54,7 @@ function About() {
           </div>
           <div className="col-md-4 mt-5">
             <div className="row text-white text-center">
-                <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
+              <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
             </div>
           </div>
         </div>
