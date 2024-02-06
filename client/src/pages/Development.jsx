@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Technologies from "./Technologies";
+import Technologies from "../components/Technologies";
 import Software from "../assets/images/Our-Expertise1.jpg";
 import Process from "../assets/images/Process.jpg";
 
