@@ -1,3 +1,10 @@
+
+.whyus-container{
+    height: 100vh;
+    img{
+        height: 500px;
+    }
+}
 .aboutcase .cards1 {
     background: burlywood;
     border-radius: 5px;
@@ -10,8 +17,6 @@
     height: auto;
 }
 
-
-
 .blur-img img {
     filter: blur(2px);
     width: 100%;
@@ -20,7 +25,6 @@
     background: #efefef;
     object-fit: cover;
 }
-
 
 .rounded-img img {
     border-radius: 50%;
@@ -51,7 +55,6 @@
     // text-align: center;
 }
 
-
 .aboutcards {
     display: flex;
     justify-content: center;
@@ -76,6 +79,4 @@
             align-items: center;
         }
     }
-
-
 }

@@ -10,7 +10,6 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 function Contact() {
-    const [receiveMsg, setReciveMsg] = useState('')
     const MSG = {
         success: "Success",
         mailSended: "Mail sended successfully",
@@ -145,14 +144,6 @@ function Contact() {
                     // serviceOption: '',
                 });
 
-            } else if (response.status === 401) {
-                toast.error('Email or Password incorrect');
-                setReciveMsg(MSG.incorrectMail)
-                // alertcontent.click();
-            } else if (response.status === 400) {
-                toast.info('An email has been sent to your account. Please verify.');
-                setReciveMsg(MSG.mailSended)
-                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
                 setReciveMsg(MSG.unexpectedResponse)
@@ -164,16 +155,7 @@ function Contact() {
             setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
         }
-
     }
-
-    // var alertcontent = document.getElementById('alert');
-    // if (alertcontent) {
-    //     console.log('true');
-
-    // } else {
-    //     console.log('false')
-    // }
 
     return (
         <div>
