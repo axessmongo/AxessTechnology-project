@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 // import AboutImage from '../src/assets/images/About2.jpg';
 import success from "../src/assets/images/about/success.svg";
-import whyus from "../src/assets/images/about/whyus.jpg"
+import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
@@ -18,15 +18,15 @@ function About() {
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
       />
 
-      <div className="container-fluid bg-black">
-        <div className="row justify-content-around">
+      <div className="container-fluid bg-green-1">
+        <div className="row justify-content-around whyus-container">
           <div className="col-md-5">
             <div className="">
-              <img src={whyus} alt="whyus" />
+              <img src={whyus2} alt="whyus2" />
             </div>
           </div>
-          <div className="col-md-1 text-center mt-5 text-white">
-            <div className=" mt-5">
+          <div className="col-md-1 text-center text-white">
+            <div className="">
               <p className="primary-header">W</p>
             </div>
             <div>
@@ -52,10 +52,13 @@ function About() {
             </div> */}
 
           </div>
-          <div className="col-md-4 mt-5">
-            <div className="row text-white text-center">
+          <div className="col-md-4">
+            <div className="row justify-content-center align-items-center text-white text-center">
+              <div className="col-md-11">
               <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
-            </div>
+           
+              </div>
+              </div>
           </div>
         </div>
       </div>
