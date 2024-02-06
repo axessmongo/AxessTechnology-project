@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { NavLink, Link, Outlet, useNavigate } from 'react-router-dom';
 import Home from '../pages/Home';
 import logo from '../assets/images/logo/logo.png';
-import About from './About';
 import '../assets/css/hamburgers/hamburgers.scss';
 import { userContext } from '../store/Store';
 
