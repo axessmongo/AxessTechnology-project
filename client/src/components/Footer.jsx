@@ -263,7 +263,7 @@ function Footer() {
                 </div>
                 <div className="container">
                     <div className="row text-center text-capitalize mt-0 py-md-5 my-md-5 g-4 g-md-0">
-                        <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-5 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
@@ -275,7 +275,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-6 col-md-4" data-aos='fade-up' data-aos-duration='700'>
+                        <div className="col-7 col-md-4" data-aos='fade-up' data-aos-duration='700'>
                             <p className='gold-text-2 fw-bolder'>Our Services</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
@@ -316,7 +316,8 @@ function Footer() {
                 </div>
                 <hr className='m-0' />
                 <div className='text-center'>
-                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>Copyright © All rights reserved 2024. Axess Technology.<Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
+                    <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>
+                        Copyright © All rights reserved 2024.<span className='d-block d-md-inline'>Axess Technology.</span> <Link className='footerhover text-decoration-none' to={"/privacypolicy"}> Privacy Policy </Link></p>
                 </div>
             </div>
 
