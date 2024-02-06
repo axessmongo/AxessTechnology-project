@@ -125,7 +125,7 @@ export default function DigitalMarketing() {
             free consultation and let's start mapping out your digital dominance
             strategy!{" "}
           </p>
-          <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn green-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
+          <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
         </section>
 
         <div>
@@ -300,7 +300,7 @@ export default function DigitalMarketing() {
           </div>
         </div>
         <div className="justify-content-center d-flex">
-          <a href="#" className="order-btn">Order Now</a>
+          <a href="/contact" className="order-btn">Order Now</a>
         </div>
       </section >
 

@@ -218,10 +218,10 @@ function About() {
             <div className="text-center">
               <p className="secondary-text text-white"> Follow us on social media for digital insights and inspiration.</p>
               <div className=" d-flex justify-content-center align-items-center">
-                <Link>
+                <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target="_blank">
                   <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
                 </Link>
-                <Link>
+                <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target="_blank">
                   <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
                 </Link>
                 <Link>

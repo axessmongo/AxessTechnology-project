@@ -611,7 +611,7 @@ function Development() {
           </div>
         </div>
         <div className="justify-content-center d-flex">
-          <a href="#" className="order-btn">
+          <a href="/contact" className="order-btn">
             Order Now
           </a>
         </div>
