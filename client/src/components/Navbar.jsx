@@ -137,7 +137,7 @@ function Navbar() {
                   <Link className="nav-link" >
                     Pricing
                   </Link>
-                  <div className="drop pricing">
+                  <div className="drop pricing">  
                     <div className='nav-item'>
                       <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Software Development Pricing</Link>
                     </div>

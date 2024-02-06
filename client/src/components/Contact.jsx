@@ -108,10 +108,10 @@ function Contact() {
         if (errors.fname || errors.lname || errors.email || errors.phone )return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'firstname is required.' : '',
-                lname: !contact.lname ? 'lastname is required.' : '',
+                fname: !contact.fname ? 'FirstName is required.' : '',
+                lname: !contact.lname ? 'LastName is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'phone no is required.' : '',
+                phone: !contact.phone ? 'Phone.No is required.' : '',
                 // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
@@ -122,7 +122,7 @@ function Contact() {
 
             console.log("res", response)
             if (response.status === 201) {
-                toast.success('our team will connect you');
+                toast.success('Our team will connect you');
                 setReciveMsg(MSG.success)
                 // alertcontent.click();
                 setContact({

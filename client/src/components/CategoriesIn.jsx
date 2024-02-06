@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext} from 'react'
 import Reactlogo from '../assets/images/demo/react-logo.png'
 import vitelogo from '../assets/images/demo/vite-logo.png'
 import watchdemo from '../assets/images/demo/watch.png'
@@ -17,15 +17,15 @@ import categoriesimg4 from '../assets/images/categories-img4.webp'
 import categoriesimg5 from '../assets/images/categories-img5.webp'
 import categoriesimg6 from '../assets/images/categories-img6.webp'
 import { Link } from 'react-router-dom'
-
-
-
-
+import { userContext } from '../store/Store'
 
 
 
 
 export default function CategoriesIn() {
+
+  const [value, setValue] = useContext(userContext);
+
 
     return (
         <div>
@@ -189,7 +189,7 @@ export default function CategoriesIn() {
                                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
                                                 </div>
                                                 <div className='pt-2 '>
-                                                   <Link to={"/webdevelopment"} className='text-decoration-none'><button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button></Link> 
+                                                   <Link to={"/webdevelopment"}  onClick={() => setValue(true)} className='text-decoration-none'><button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button></Link> 
                                                 </div>
                                                 <div className='pt-2'>
                                                 <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-0 green-btn'><span className='d-block'>BuyNow</span> <i className="bi bi-arrow-right"></i></button></Link>
