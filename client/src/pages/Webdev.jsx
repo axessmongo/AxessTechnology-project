@@ -254,15 +254,8 @@ function Development() {
         </h3>
         <p className="col-md-8 primary-text mx-auto text-center text-white py-3">
         Browse our portfolio: See examples of the stunning websites we've created for our clients.
-
         </p>
-        <button
-          className="gold-btn mx-auto"
-         
-        >
-          <span className="d-block">Connect with us</span>{" "}
-          <i className="bi bi-arrow-right"></i>
-        </button>
+        <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn green-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
       </section>
 
       <Techsection />
