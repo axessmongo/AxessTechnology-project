@@ -1,20 +1,20 @@
-.footerhover:hover{
-    color: #ffce05 !important;    
+.footerhover:hover {
+  color: #ffce05 !important;
 }
 
 .zoom-effect {
-    transition: transform 0.3s ease;
-    &.zoom-effect:hover {
-        transform: scale(1.2); /* Adjust the scale factor as needed */
-      }
-  }
+  transition: transform 0.3s ease;
 
-  .concolor{
-    color: #f7851d;
+  &.zoom-effect:hover {
+    transform: scale(1.2);
+    /* Adjust the scale factor as needed */
   }
+}
 
-  .meta{
-    color: #b60843;
-  }
-  
-  
+.concolor {
+  color: #f7851d;
+}
+
+// .meta{
+//   color: #b60843;
+// }

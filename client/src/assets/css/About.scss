@@ -10,8 +10,6 @@
     height: auto;
 }
 
-
-
 .blur-img img {
     filter: blur(2px);
     width: 100%;
@@ -20,7 +18,6 @@
     background: #efefef;
     object-fit: cover;
 }
-
 
 .rounded-img img {
     border-radius: 50%;
@@ -51,7 +48,6 @@
     // text-align: center;
 }
 
-
 .aboutcards {
     display: flex;
     justify-content: center;
@@ -76,6 +72,4 @@
             align-items: center;
         }
     }
-
-
 }

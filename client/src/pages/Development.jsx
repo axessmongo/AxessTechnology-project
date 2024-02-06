@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
-import Technologies from "./Technologies";
+import Technologies from "../components/Technologies";
 import Software from "../assets/images/Our-Expertise1.jpg";
 import Process from "../assets/images/Process.jpg";
 
@@ -611,7 +611,7 @@ function Development() {
           </div>
         </div>
         <div className="justify-content-center d-flex">
-          <a href="#" className="order-btn">
+          <a href="/contact" className="order-btn">
             Order Now
           </a>
         </div>

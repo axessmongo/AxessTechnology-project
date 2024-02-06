@@ -54,7 +54,7 @@ function About() {
           </div>
           <div className="col-md-4 mt-5">
             <div className="row text-white text-center">
-                <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
+              <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
             </div>
           </div>
         </div>
@@ -218,10 +218,10 @@ function About() {
             <div className="text-center">
               <p className="secondary-text text-white"> Follow us on social media for digital insights and inspiration.</p>
               <div className=" d-flex justify-content-center align-items-center">
-                <Link>
+                <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target="_blank">
                   <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
                 </Link>
-                <Link>
+                <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target="_blank">
                   <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
                 </Link>
                 <Link>

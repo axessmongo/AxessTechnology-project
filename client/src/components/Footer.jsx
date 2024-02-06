@@ -191,48 +191,48 @@ function Footer() {
                                     <img src={frompng} alt="" />
                                 </div>
                             </div>
+
                             <div className="">
                                 <div className="row">
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Firstname *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.fname}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Lastname *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.lname}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="email" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='E-mail *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="phone" value={contact.phone} name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Phone-Number *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
-
                                     </div>
+
                                     <div className="col-md-12 mb-4">
                                         <input data-aos='zoom-out' type="text" value={contact.description} name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Description' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.description}</div>
-
                                     </div>
                                 </div>
+
                                 <div className="row">
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 73581 04213 </Link></p>
-                                        <p>Instagram: <a className='text-decoration-none meta' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==" target='_blank'>axess_technology</a></p>
+                                        <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==" target='_blank'>axess_technology</a></p>
                                     </div>
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p>
-                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
-
+                                        <p>Email : <a className='text-decoration-none concolor' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     </div>
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
-
                                     </div>
+
                                 </div>
                             </div>
                         </div>
