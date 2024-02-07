@@ -38,7 +38,7 @@ export default function CategoriesIn() {
                     <div className="container">
                         <div className="row mt-5 text-content ">
                             <div className="nav-div rounded-4 ">
-                                <ul className="nav nav-pills mb-3 text-center justofy-content-center" id="pills-tab" role="tablist" >
+                                <ul className="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist" >
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className=" ">
                                             <div
@@ -55,7 +55,6 @@ export default function CategoriesIn() {
                                             </div>
                                         </div>
                                     </li>
-
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className="  ">
                                             <div
@@ -67,29 +66,25 @@ export default function CategoriesIn() {
                                                 role="tab"
                                                 aria-controls="pills-profile"
                                                 aria-selected="true"
-
-
-
                                             >
                                                 <p className='secondary-text m-0'>Portfolio</p>
                                             </div>
                                         </div>
                                     </li>
-
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className="  ">
                                             <div
                                                 className="nav-link content"
-                                                id="pills-bussiness-tab"
+                                                id="pills-business-tab"
                                                 da ta-bs-toggle="pill"
-                                                data-bs-target="#pills-bussiness"
+                                                data-bs-target="#pills-business"
                                                 type="div"
                                                 role="tab"
-                                                aria-controls="pills-bussiness"
+                                                aria-controls="pills-business"
                                                 aria-selected="true"
 
                                             >
-                                                <p className='secondary-text m-0'>Bussiness</p>
+                                                <p className='secondary-text m-0'>Business</p>
                                             </div>
                                         </div>
                                     </li>
@@ -326,9 +321,9 @@ export default function CategoriesIn() {
                         </div>
                         <div
                             className="tab-pane fade"
-                            id="pills-bussiness"
+                            id="pills-business"
                             role="tabpanel"
-                            aria-labelledby="pills-bussiness-tab"
+                            aria-labelledby="pills-business-tab"
                             tabindex="0"
                         >
                             <div>
