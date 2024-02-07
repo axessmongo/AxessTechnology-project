@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext} from 'react'
 import Reactlogo from '../assets/images/demo/react-logo.png'
 import vitelogo from '../assets/images/demo/vite-logo.png'
 import watchdemo from '../assets/images/demo/watch.png'
@@ -17,15 +17,15 @@ import categoriesimg4 from '../assets/images/categories-img4.webp'
 import categoriesimg5 from '../assets/images/categories-img5.webp'
 import categoriesimg6 from '../assets/images/categories-img6.webp'
 import { Link } from 'react-router-dom'
-
-
-
-
+import { userContext } from '../store/Store'
 
 
 
 
 export default function CategoriesIn() {
+
+  const [value, setValue] = useContext(userContext);
+
 
     return (
         <div>
@@ -38,7 +38,7 @@ export default function CategoriesIn() {
                     <div className="container">
                         <div className="row mt-5 text-content ">
                             <div className="nav-div rounded-4 ">
-                                <ul className="nav nav-pills mb-3 text-center justofy-content-center" id="pills-tab" role="tablist" >
+                                <ul className="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist" >
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className=" ">
                                             <div
@@ -55,7 +55,6 @@ export default function CategoriesIn() {
                                             </div>
                                         </div>
                                     </li>
-
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className="  ">
                                             <div
@@ -67,29 +66,25 @@ export default function CategoriesIn() {
                                                 role="tab"
                                                 aria-controls="pills-profile"
                                                 aria-selected="true"
-
-
-
                                             >
                                                 <p className='secondary-text m-0'>Portfolio</p>
                                             </div>
                                         </div>
                                     </li>
-
                                     <li className="nav-item col-md-2" role="presentation">
                                         <div className="  ">
                                             <div
                                                 className="nav-link content"
-                                                id="pills-bussiness-tab"
+                                                id="pills-business-tab"
                                                 da ta-bs-toggle="pill"
-                                                data-bs-target="#pills-bussiness"
+                                                data-bs-target="#pills-business"
                                                 type="div"
                                                 role="tab"
-                                                aria-controls="pills-bussiness"
+                                                aria-controls="pills-business"
                                                 aria-selected="true"
 
                                             >
-                                                <p className='secondary-text m-0'>Bussiness</p>
+                                                <p className='secondary-text m-0'>Business</p>
                                             </div>
                                         </div>
                                     </li>
@@ -189,7 +184,7 @@ export default function CategoriesIn() {
                                                     <button className='gold-btn m-0 green-btn'><span className='d-block'>Demo Live</span> <i className="bi bi-arrow-right"></i></button>
                                                 </div>
                                                 <div className='pt-2 '>
-                                                   <Link to={"/webdevelopment"} className='text-decoration-none'><button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button></Link> 
+                                                   <Link to={"/webdevelopment"}  onClick={() => setValue(true)} className='text-decoration-none'><button className='gold-btn m-0 green-btn'><span className='d-block'>Pricing</span> <i className="bi bi-arrow-right"></i></button></Link> 
                                                 </div>
                                                 <div className='pt-2'>
                                                 <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-0 green-btn'><span className='d-block'>BuyNow</span> <i className="bi bi-arrow-right"></i></button></Link>
@@ -326,9 +321,9 @@ export default function CategoriesIn() {
                         </div>
                         <div
                             className="tab-pane fade"
-                            id="pills-bussiness"
+                            id="pills-business"
                             role="tabpanel"
-                            aria-labelledby="pills-bussiness-tab"
+                            aria-labelledby="pills-business-tab"
                             tabindex="0"
                         >
                             <div>
