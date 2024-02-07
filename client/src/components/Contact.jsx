@@ -5,7 +5,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
-import { toast, ToastContainer } from 'react-toastify';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css"
 
 
 
@@ -52,6 +53,11 @@ function Contact() {
         });
         validateField(name, value);
     };
+    const showToastMessage = () => {
+        toast.success("Success Notification !", {
+          position: "top-right",
+        });
+      };
     // console.log(contact)
     const validateField = (name, value) => {
 
@@ -118,13 +124,26 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('/api/contact', contact);
+            const response = await axios.post('http://localhost:5000/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
-                toast.success('Our team will connect you');
-                setReciveMsg(MSG.success)
-                // alertcontent.click();
+                console.log("201")
+                // showToastMessage()
+                Toastify({
+                    text: "This is a toast",
+                    duration: 3000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -140,20 +159,16 @@ function Contact() {
                     email: '',
                     phone: '',
                     address: ''
-
                     // serviceOption: '',
                 });
 
             } else {
-                console.log('Unexpected response:', response);
-                setReciveMsg(MSG.unexpectedResponse)
-                // alertcontent.click();
+                console.log('else Unexpected response:', response);
+                // toast.error(MSG.unexpectedResponse);
             }
         } catch (error) {
-            console.error('Error during login:', error.message);
-            toast.error('Unexpected error');
-            setReciveMsg(MSG.unexpectedError)
-            // alertcontent.click();
+            console.log("error",error);
+            // toast.error('Unexpected error');
         }
     }
 
@@ -264,7 +279,7 @@ function Contact() {
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
-                        <ToastContainer />
+                        {/* <ToastContainer /> */}
                     </form>
                 </div>
             </div>

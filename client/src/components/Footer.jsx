@@ -6,7 +6,6 @@ import frompng from '../assets/images/fromlogo.jpg'
 // import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
-import { toast, ToastContainer } from 'react-toastify';
 
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState()
@@ -120,13 +119,27 @@ function Footer() {
             return;
         }
         try {
-            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
+            const response = await axios.post('/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
-                toast.success('our team will connect with you');
-                setReciveMsg(MSG.success)
+                // toast.success('our team will connect with you');
+                // setReciveMsg(MSG.success)
                 // alertcontent.click();
+                // Toastify({
+                //     text: "Your form submitted successfully. Our ",
+                //     // duration: 3000,
+                //     destination: "https://github.com/apvarun/toastify-js",
+                //     newWindow: true,
+                //     close: true,
+                //     gravity: "top", // `top` or `bottom`
+                //     position: "left", // `left`, `center` or `right`
+                //     stopOnFocus: true, // Prevents dismissing of toast on hover
+                //     style: {
+                //       background: "linear-gradient(to right, #00b09b, #96c93d)",
+                //     },
+                //     onClick: function(){} // Callback after click
+                //   }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -148,13 +161,13 @@ function Footer() {
 
             } else {
                 console.log('Unexpected response:', response);
-                setReciveMsg(MSG.unexpectedResponse)
+                // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
-            toast.error('Unexpected error');
-            setReciveMsg(MSG.unexpectedError)
+            // toast.error('Unexpected error');
+            // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
         }
 
@@ -229,7 +242,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <ToastContainer />
+                    {/* <ToastContainer /> */}
                 </form>
             </div>
             <div className='bg-black text-white footercontent'>
