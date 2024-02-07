@@ -123,23 +123,24 @@ function Footer() {
 
             console.log("res", response)
             if (response.status === 201) {
-                // toast.success('our team will connect with you');
-                // setReciveMsg(MSG.success)
-                // alertcontent.click();
-                // Toastify({
-                //     text: "Your form submitted successfully. Our ",
-                //     // duration: 3000,
-                //     destination: "https://github.com/apvarun/toastify-js",
-                //     newWindow: true,
-                //     close: true,
-                //     gravity: "top", // `top` or `bottom`
-                //     position: "left", // `left`, `center` or `right`
-                //     stopOnFocus: true, // Prevents dismissing of toast on hover
-                //     style: {
-                //       background: "linear-gradient(to right, #00b09b, #96c93d)",
-                //     },
-                //     onClick: function(){} // Callback after click
-                //   }).showToast();
+                alert(" Our team will connect with you")
+                toast.success('our team will connect with you');
+                setReciveMsg(MSG.success)
+                alertcontent.click();
+                Toastify({
+                    text: "Your form submitted successfully. Our ",
+                    // duration: 3000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -163,12 +164,42 @@ function Footer() {
                 console.log('Unexpected response:', response);
                 // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
+                Toastify({
+                    text: "Internal server error",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border:"1px solid red"
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
             // toast.error('Unexpected error');
             // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
+            Toastify({
+                text: "Internal server error",
+                duration: 3000,
+                // destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                border:"1px solid red"
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
         }
 
     }

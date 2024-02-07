@@ -131,19 +131,20 @@ function Contact() {
                 console.log("201")
                 // showToastMessage()
                 Toastify({
-                    text: "This is a toast",
+                    text: "Our team will connect with you",
                     duration: 3000,
-                    destination: "https://github.com/apvarun/toastify-js",
+                    // destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
                     close: true,
                     gravity: "top", // `top` or `bottom`
-                    position: "left", // `left`, `center` or `right`
+                    position: "center", // `left`, `center` or `right`
                     stopOnFocus: true, // Prevents dismissing of toast on hover
                     style: {
                       background: "linear-gradient(to right, #00b09b, #96c93d)",
                     },
                     onClick: function(){} // Callback after click
                   }).showToast();
+                
                 setContact({
                     fname: "",
                     lname: "",
@@ -164,10 +165,41 @@ function Contact() {
 
             } else {
                 console.log('else Unexpected response:', response);
+                Toastify({
+                    text: "Internal server error",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border:"1px solid red"
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
                 // toast.error(MSG.unexpectedResponse);
             }
         } catch (error) {
             console.log("error",error);
+            Toastify({
+                text: "Unexpected error",
+                duration: 3000,
+                // destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    border:"1px solid red"
+                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+            
             // toast.error('Unexpected error');
         }
     }
