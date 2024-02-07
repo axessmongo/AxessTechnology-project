@@ -294,7 +294,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="row text-center text-md-start">
                             <div className="col-md-6" data-aos='zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
@@ -305,7 +305,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <hr className='m-0' />
                 <div className='text-center'>
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>
