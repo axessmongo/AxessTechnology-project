@@ -18,14 +18,15 @@ function About() {
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
       />
 
-      <div className="container-fluid bg-green-1">
-        <div className="row justify-content-around whyus-container">
-          <div className="col-md-5">
-            <div className="">
+      <div className="container-fluid ">
+        <p className="primary-header text-white text-center whyustext"> Why Us</p>
+        <div className="row d-flex ">
+          <div className="col-md-6 mt-5">
+            <div className="whyusimg">
               <img src={whyus2} alt="whyus2" />
             </div>
           </div>
-          <div className="col-md-1 text-center text-white">
+          {/* <div className="col-md-1 text-center text-white">
             <div className="">
               <p className="primary-header">W</p>
             </div>
@@ -41,24 +42,15 @@ function About() {
             <div>
               <p className="primary-header mb-1">S</p>
             </div>
-            {/* <div>
-              <p className="primary-header mb-1">e</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">s</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">s</p>
-            </div> */}
+          </div> */}
 
-          </div>
-          <div className="col-md-4">
+          <div className="col-md-6 mt-5">
             <div className="row justify-content-center align-items-center text-white text-center">
-              <div className="col-md-11">
-              <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
-           
+              <div className="col-md-11 mt-5 secondary-text mx-auto">
+                <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
+
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
