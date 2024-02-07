@@ -118,7 +118,7 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('https://axesstechnology.org/api/contact', contact);
+            const response = await axios.post('/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
