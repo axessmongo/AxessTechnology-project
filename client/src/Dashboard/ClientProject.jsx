@@ -13,9 +13,9 @@ export default function ClientProject() {
 
     const get_data = async () => {
         try {
-            let res = await axios.get('url', data);
-            console.log(res.data);
-            // setProjects(res.data)
+            let res = await axios.get('http://localhost:5000/api/dashboard/get');
+            console.log(res.data.data);
+            setProjects(res.data.data)
         } catch (error) {
             console.error(error);
         }
@@ -82,14 +82,14 @@ export default function ClientProject() {
                             {projects.map((project, index) => (
                                 <tr key={project.id}>
                                     <td>{index + 1}</td>
-                                    <td>{project.id}</td>
-                                    <td>{project.name}</td>
+                                    <td>{project.taskid }</td>
+                                    <td>{project.projectname}</td>
                                     <td>{project.description}</td>
                                     <td>{project.resource}</td>
                                     <td>{project.remarks}</td>
                                     <td>{project.status}</td>
                                     <td>{project.startdate}</td>
-                                    <td>{project.completedate}</td>
+                                    <td>{project.enddate}</td>
                                 </tr>
                             ))}
                         </thead>
