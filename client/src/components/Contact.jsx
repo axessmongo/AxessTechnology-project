@@ -5,7 +5,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import "../assets/css/index.scss";
 import "../assets/css/contact.scss";
-import { toast, ToastContainer } from 'react-toastify';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css"
 
 
 
@@ -52,6 +53,11 @@ function Contact() {
         });
         validateField(name, value);
     };
+    const showToastMessage = () => {
+        toast.success("Success Notification !", {
+          position: "top-right",
+        });
+      };
     // console.log(contact)
     const validateField = (name, value) => {
 
@@ -108,23 +114,37 @@ function Contact() {
         if (errors.fname || errors.lname || errors.email || errors.phone )return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'firstname is required.' : '',
-                lname: !contact.lname ? 'lastname is required.' : '',
+                fname: !contact.fname ? 'FirstName is required.' : '',
+                lname: !contact.lname ? 'LastName is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'phone no is required.' : '',
+                phone: !contact.phone ? 'Phone.No is required.' : '',
                 // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
         }
         try {
-            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
+            const response = await axios.post('/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
-                toast.success('our team will connect you');
-                setReciveMsg(MSG.success)
-                // alertcontent.click();
+                console.log("201")
+                // showToastMessage()
+                Toastify({
+                    text: "Our team will connect with you",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
+                
                 setContact({
                     fname: "",
                     lname: "",
@@ -140,20 +160,47 @@ function Contact() {
                     email: '',
                     phone: '',
                     address: ''
-
                     // serviceOption: '',
                 });
 
             } else {
-                console.log('Unexpected response:', response);
-                setReciveMsg(MSG.unexpectedResponse)
-                // alertcontent.click();
+                console.log('else Unexpected response:', response);
+                Toastify({
+                    text: "Internal server error",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border:"1px solid red"
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
+                // toast.error(MSG.unexpectedResponse);
             }
         } catch (error) {
-            console.error('Error during login:', error.message);
-            toast.error('Unexpected error');
-            setReciveMsg(MSG.unexpectedError)
-            // alertcontent.click();
+            console.log("error",error);
+            Toastify({
+                text: "Unexpected error",
+                duration: 3000,
+                // destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    border:"1px solid red"
+                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+            
+            // toast.error('Unexpected error');
         }
     }
 
@@ -264,7 +311,7 @@ function Contact() {
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
-                        <ToastContainer />
+                        {/* <ToastContainer /> */}
                     </form>
                 </div>
             </div>
