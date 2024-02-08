@@ -5,8 +5,7 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import About from './About';
-import Technologies from './pages/Technologies';
-import Homenew from './pages/Homenew';
+import Technologies from './components/Technologies';
 import Card from './components/Card';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
@@ -22,7 +21,7 @@ import SoftwareDev from './components/SoftwareDev';
 import ScrollTop from './components/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
-import Ai from './pages/Ai';
+// import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
@@ -59,7 +58,7 @@ function Routing() {
                     <Route path='/ourworks' element={<CategoriesIn />} />
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
-                    <Route path='/ai' element={<Ai />} />
+                    {/* <Route path='/ai' element={<Ai />} /> */}
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                     <Route path='/privacypolicy' element ={<Policy/>}/>
