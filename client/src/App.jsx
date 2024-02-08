@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Store from './store/Store';
 import Links from './components/Links';
+import ClientProject from './Dashboard/ClientProject';
 function App() {
 
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
         <Routing />
         <Links/>
       </Store>
+      
     </div>
   )
 }

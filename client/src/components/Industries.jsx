@@ -13,18 +13,12 @@ import realestate from '../assets/images/real-estate.webp'
 import socialmedia from '../assets/images/social-media.webp'
 
 
-
-
-
-
-
-
 export default function Industries() {
   return (
     <div>
         <div className="bg-green-1 text-white p-1">
                 <div className="container">
-                    <div className="row align-items-center g-5 py-5">
+                      <div className="row align-items-center g-5 py-5">
                         <div className="col-md-4">
                             <p className='bg-img-2' data-aos = 'fade-up'>Industries</p>
                             <h1 className='secondary-header' data-aos='fade-up'>Transforming Industries to Become Smarter and Safer</h1>
