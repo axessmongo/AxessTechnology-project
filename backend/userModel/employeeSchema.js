@@ -29,6 +29,14 @@ const EmployeeSchema = new Schema({
     price: {
         type: Number,
         required: true
+    },
+    resources:{
+        type: String,
+        required: true
+    },
+    status:{
+        type: String,
+        required: true
     }
 });
 
