@@ -3,7 +3,7 @@ import "../src/assets/css/About.scss";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 // import AboutImage from '../src/assets/images/About2.jpg';
-import success from "../src/assets/images/about/success.svg";
+import success from "../src/assets/images/about/success.png";
 import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";

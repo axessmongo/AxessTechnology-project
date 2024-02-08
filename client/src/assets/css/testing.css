@@ -120,3 +120,9 @@
     color: black;
     box-shadow: 2px 2px 2px;
 }
+.boxshadow1 {
+    border-radius: 20px;
+    background: #0000000e;
+    padding: 0;
+   
+  }
