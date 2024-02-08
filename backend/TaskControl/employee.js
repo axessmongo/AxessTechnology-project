@@ -9,6 +9,8 @@ const Employerpost = async (req, res) => {
     remarks,
     enddate,
     price,
+    resources,
+    status
   } = req.body;
 
   try {
@@ -20,6 +22,8 @@ const Employerpost = async (req, res) => {
       remarks,
       enddate,
       price,
+      status,
+      resources
     });
 
     res.status(201).json({
