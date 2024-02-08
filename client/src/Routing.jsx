@@ -27,16 +27,11 @@ import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 import Policy from './pages/Policy';
-<<<<<<< HEAD
-import Dashboard from './Dashboard';
-
-=======
 import Popup from './pages/Popup';
 import Dashboard from '../src/Dashboard/Dashboard'
 import Empproject from './Dashboard/Empproject'
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
->>>>>>> a67085eea5b41c39afbc47199b843bfe7da94e56
 
 
 function Routing() {
@@ -70,17 +65,11 @@ function Routing() {
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                     <Route path='/privacypolicy' element ={<Policy/>}/>
-<<<<<<< HEAD
-                    <Route path='/dashboard' element ={<Dashboard/>}/>
-
-
-=======
                     <Route path='/popup' element ={<Popup/>}/>
                     <Route path='/dashboard' element={<Dashboard/>}/>
                     <Route path='/empdashboard' element={<Empdashboard/>}/>
                     <Route path='/clientproject' element={<ClientProject/>}/>
                     <Route path='/empproject' element={<Empproject/>}/>
->>>>>>> a67085eea5b41c39afbc47199b843bfe7da94e56
                 </Routes>
             </BrowserRouter>
         </div>
