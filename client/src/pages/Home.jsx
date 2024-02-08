@@ -12,7 +12,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Development from './Development';
-import bannerimg from '../assets/images/banner_img_home.png'
+import bannerimg from '../assets/images/banner_img_home1.png'
 export default function Home() {
     let nav = useNavigate()
 
@@ -29,7 +29,6 @@ export default function Home() {
         <section>
             <Navbar/>
             <div className="home">
-
                 <div className="hero-banner">
                     <div className="px-xxl-5 mx-xxl-5 px-5 text-center text-lg-start">
                         <div className="row position-relative z-2 min-vh-100 jus justify-content-lg-between align-items-center text-white g-lg-5">

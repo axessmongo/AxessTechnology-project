@@ -28,6 +28,7 @@ import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 import Policy from './pages/Policy';
+import Popup from './pages/Popup';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -60,6 +61,8 @@ function Routing() {
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                     <Route path='/privacypolicy' element ={<Policy/>}/>
+                    <Route path='/popup' element ={<Popup/>}/>
+
 
                 </Routes>
             </BrowserRouter>

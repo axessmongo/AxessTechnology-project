@@ -17,7 +17,6 @@ import Profiledub from '../assets/images/testing/dub-img.png'
 function Testing() {
   return (
     <div className="">
-
       <div>
         <Navbar />
         <Banner
