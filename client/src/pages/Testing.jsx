@@ -12,6 +12,7 @@ import security from '../assets/images/testing/system-secure.png'
 import usability from '../assets/images/testing/usability.png'
 import testimgs from '../assets/images/testing/testing-img-2.png'
 import Profiledub from '../assets/images/testing/dub-img.png'
+import Process from "../assets/images/process.png";
 
 
 
@@ -164,8 +165,89 @@ function Testing() {
         </h5>
         <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
       </section>
-
+      <section className="container mt-5">
+        <div className="justify-content-center d-flex">
+          <h1 className="text-center bg-img-1">Our Process</h1>
+        </div>
+        <div className="row justify-content-evenly">
+          <p className="text-center secondary-text p-2">
+            We believe in a collaborative and agile approach to software
+            testing. Our process involves:
+          </p>
+          <div
+            className="col-lg-6  col-md-12 align-items-center d-flex"
+            data-aos="fade"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-back"
+          >
+            <div
+              className="pbg1  "
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div
+                className="boxshadow1 mt-4 "
+                data-aos="fade-right"
+                data-aos-duration="600"
+              >
+                <div className=" p-4">
+                  <ul>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="400"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="secondary-text">
+                        <span className="fw-bold">Requirement Analysis:</span>{" "}
+                        We engage with stakeholders to gather, comprehend, and document test requirements essential for shaping the testing strategy.
+                      </p>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="400"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="secondary-text">
+                        <span className="fw-bold">Testplan creation:</span>{" "}
+                        We outline the comprehensive strategy and approach for testing, including scope, objectives, resources, schedule, and deliverables.
+                      </p>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="secondary-text">
+                        <span className="fw-bold"> Environment setup:</span>{" "}
+                        We configure the necessary hardware, software, and network components to create a controlled testing environment that mirrors the production environment.
+                      </p>
+                    </li>
+                    <li
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                      data-aos-easing="ease-in-back"
+                    >
+                      <p className="secondary-text">
+                        <span className="fw-bold">
+                        Defect logging:
+                        </span>{" "}
+                        We document identified issues or discrepancies found during testing, including details such as severity, steps to reproduce, and relevant attachments, to facilitate resolution and tracking.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-5  col-sm-12 align-items-center d-flex mt-4">
+            <div className="" data-aos="fade-left" data-aos-duration="600">
+              <img src={Process} className="img-fluid w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
       <Techsection />
+   
 
       {/* Technology section */}
       <div className='tech-tools-section bg-green-1 py-5 '>
