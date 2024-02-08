@@ -30,7 +30,7 @@ export default function DigitalMarketing() {
               <div className="container overflow-hidden overflow-lg-visible">
                 <div className="position-relative">
                   <h6
-                    className="primary-header text-center mb-3 linear-gradient-text m-5 bg-img-1 mx-auto"
+                    className="secondary-header text-center mb-3 linear-gradient-text m-5 bg-img-1 mx-auto"
                     data-aos="fade-up"
                     data-aos-duration="400"
                   >

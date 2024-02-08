@@ -64,9 +64,9 @@ function Navbar() {
           <img src={logo} alt="" />
           <p>Technology</p>
         </NavLink>
-        <div className=' order-3 order-lg-3'>
+        <div className='order-3 order-lg-3'>
           <NavLink to={'/login'} className='gold-btn px-4'>
-            <span className='d-block'>Login</span>
+            <span className='d-block green-text-1'>Login</span>
           </NavLink>
         </div>
       </div>
