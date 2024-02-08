@@ -6,7 +6,6 @@ import frompng from '../assets/images/fromlogo.jpg'
 // import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
-import { toast, ToastContainer } from 'react-toastify';
 
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState()
@@ -110,23 +109,38 @@ function Footer() {
         if (errors.fname || errors.lname || errors.email || errors.phone) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'firstname is required.' : '',
-                lname: !contact.lname ? 'lastname is required.' : '',
+                fname: !contact.fname ? 'FirstName is required.' : '',
+                lname: !contact.lname ? 'LastName is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'phone no is required.' : '',
+                phone: !contact.phone ? 'Phone.No is required.' : '',
                 // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
         }
         try {
-            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
+            const response = await axios.post('/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
+                alert(" Our team will connect with you")
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
-                // alertcontent.click();
+                alertcontent.click();
+                Toastify({
+                    text: "Your form submitted successfully. Our ",
+                    // duration: 3000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -146,24 +160,46 @@ function Footer() {
                     // serviceOption: '',
                 });
 
-            } else if (response.status === 401) {
-                toast.error('Email or Password incorrect');
-                setReciveMsg(MSG.incorrectMail)
-                // alertcontent.click();
-            } else if (response.status === 400) {
-                toast.info('An email has been sent to your account. Please verify.');
-                setReciveMsg(MSG.mailSended)
-                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
-                setReciveMsg(MSG.unexpectedResponse)
+                // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
+                Toastify({
+                    text: "Internal server error",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border:"1px solid red"
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
-            toast.error('Unexpected error');
-            setReciveMsg(MSG.unexpectedError)
+            // toast.error('Unexpected error');
+            // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
+            Toastify({
+                text: "Internal server error",
+                duration: 3000,
+                // destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                border:"1px solid red"
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
         }
 
     }
@@ -237,7 +273,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <ToastContainer />
+                    {/* <ToastContainer /> */}
                 </form>
             </div>
             <div className='bg-black text-white footercontent'>
