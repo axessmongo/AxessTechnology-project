@@ -27,6 +27,12 @@ import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 import Policy from './pages/Policy';
+import Popup from './pages/Popup';
+import Dashboard from '../src/Dashboard/Dashboard'
+import Empdashboard from '../src/Dashboard/Empdashboard'
+import ClientProject from './Dashboard/ClientProject';
+import empproject from './Dashboard/empproject';
+import Empproject from './Dashboard/empproject';
 
 function Routing() {
     const user = localStorage.getItem("token");
@@ -59,7 +65,11 @@ function Routing() {
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
                     <Route path='/privacypolicy' element ={<Policy/>}/>
-
+                    <Route path='/popup' element ={<Popup/>}/>
+                    <Route path='/dashboard' element={<Dashboard/>}/>
+                    <Route path='/empdashboard' element={<Empdashboard/>}/>
+                    <Route path='/clientproject' element={<ClientProject/>}/>
+                    <Route path='/empproject' element={<Empproject/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
