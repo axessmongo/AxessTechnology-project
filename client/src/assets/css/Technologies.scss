@@ -1,0 +1,116 @@
+@import "./index.scss";
+
+.bg-img-1,
+.bg-img-2 {
+  padding: 25px 30px !important;
+  font-size: 25px;
+  font-weight: 500;
+  background-image: url("../images/headerbg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: fit-content;
+  color: black;
+}
+
+.bg-img-2 {
+  background-image: url("../images/headerbg1.webp");
+}
+.tech-tools-section {
+  .techtoolsimg{
+    img{
+      max-width: 400px;
+    }
+  }
+  .tech-tools{
+        background-color: black;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+        transition: all 0.4s;
+
+        &:hover{
+          box-shadow: 1px 1px 1px 1px var(--axess-gold);
+        }
+  }
+  .tech-tools ul{
+    //  list-style: none;
+     color:#cec2c2;
+     
+    }
+    ::marker{
+      color: var(--axess-gold);
+     }
+}
+.technology-section {
+  .tech-buttons {
+    button {
+      padding: 6px 10px;
+      margin: 5px;
+      border: none;
+      border: solid 2px var(--axess-secondary);
+      border-radius: 5px;
+      color: rgb(185, 141, 46);
+    }
+
+    button:hover {
+      border: solid 2px var(--axess-gold);
+      box-shadow: var(--axess-gold) 0px 2px 8px 0px;
+      color: var(--axess-secondary);
+    }
+
+    .tech-btn {
+      background-color: var(--axess-gold-2);
+      color: var(--axess-secondary);
+    }
+  }
+
+  .technology-list {
+    .tech-hide {
+      width: 0;
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s;
+      padding: 0 !important;
+      transform: scale(0);
+      // display: none;
+    }
+
+    img {
+      width: 100px;
+      height: 70px;
+    }
+
+    .tech-item {
+      // background-color: var(--axess-gold-2);
+      // border-radius: 10px;
+      // background-color: white;
+      filter: grayscale(0.9);
+      padding: 5px;
+    }
+
+    .tech-item:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+
+.contactbg{
+ position: relative;
+ top: 100px;
+}
+
+.footercontent i {
+  font-size: 16px;
+  padding: 15px !important;
+  margin: 0 10px;
+  display: block;
+}
+
+.footerhover {
+  &:hover {
+      color: #f7851d;
+  }
+}

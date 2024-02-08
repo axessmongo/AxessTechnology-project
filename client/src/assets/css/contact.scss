@@ -1,0 +1,178 @@
+.checkbox-animated {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:disabled~label .box {
+      border-color: #777;
+      background-color: #e6e6e6;
+    }
+
+    &:disabled~label .check {
+      border-color: #777;
+    }
+
+    &:checked~label .box {
+      opacity: 0;
+      -webkit-transform: scale(0) rotate(-180deg);
+      -moz-transform: scale(0) rotate(-180deg);
+      transform: scale(0) rotate(-180deg);
+    }
+
+    &:checked~label .check {
+      opacity: 1;
+      -webkit-transform: scale(1) rotate(45deg);
+      -moz-transform: scale(1) rotate(45deg);
+      transform: scale(1) rotate(45deg);
+    }
+  }
+
+  label {
+    cursor: pointer;
+    padding-left: 28px;
+    font-weight: normal;
+    margin-bottom: 0;
+
+    & span {
+      display: block;
+      position: absolute;
+      left: 0;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+
+    & .box {
+      // border: 2px solid #000;
+      height: 20px;
+      width: 20px;
+      z-index: 888;
+      -webkit-transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+
+    & .check {
+      top: -7px;
+      left: 6px;
+      width: 12px;
+      height: 24px;
+      border: 2px solid #bada55;
+      border-top: none;
+      border-left: none;
+      opacity: 0;
+      z-index: 888;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+      -webkit-transition-delay: 0.3s;
+      -moz-transition-delay: 0.3s;
+      transition-delay: 0.3s;
+    }
+  }
+
+}
+
+.checkbox-animated {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  input[type="checkbox"] {
+    // ... (rest of the styling for checkbox)
+  }
+
+  label {
+    // ... (rest of the styling for label)
+  }
+
+}
+
+.faq {
+  .accordion-button {
+    padding-right: 30px;
+  }
+
+  .accordion-item {
+    // border-top: 1px solid #ccc;
+    border-radius: 0;
+    border-bottom: 0px solid var(--axess-gold-3);
+    border: 1px solid var(--axess-gold-3);
+  }
+
+  .accordion-title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .accordion-title.active {
+    background-color: #dddddd;
+  }
+
+  .accordion-content {
+    padding: 10px;
+  }
+
+  .accordion-button,
+  .accordion-button:not(.collapsed) {
+    background-color: #05463c;
+    color: #f9f9f9;
+    box-shadow: none;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 15px;
+      background-color: var(--axess-gold-3);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: 0.5s;
+    }
+  }
+
+  .accordion-button::before {
+    content: "";
+    width: 16px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--axess-gold-3);
+    right: 12.5px;
+
+  }
+
+  .accordion-button:not(.collapsed)::before,
+  .accordion-button:not(.collapsed)::after {
+    background-color: var(--axess-gold-3);
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    transform: translate(-0%, -50%) rotate(-90deg);
+    color: white !important;
+  }
+
+
+}
+
+@mixin checkbox-animated-inline {
+  display: inline-block;
+
+  &+.checkbox-animated-inline {
+    margin-left: 10px;
+  }
+}
+
+.checkbox-animated-inline {
+  @include checkbox-animated-inline;
+}
+
+.faq .accordion-button:focus {
+  border: var(--axess-gold-3);
+  box-shadow: none;
+}

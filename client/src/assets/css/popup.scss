@@ -1,0 +1,22 @@
+.popup{
+  
+    input{
+        height: 40px;
+        width: 350px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+    textarea{
+        height: 40px;
+        width: 350px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+    table,tr,th,td{
+        border: 1.5px solid black;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+.text-content {
+    color: #00244877;
+    font-size: 20px;
+}
+
+.content:hover {
+    color: #b98d2e;
+}
+
+.content::before {
+    border-top: #b98d2e;
+
+}
+
+.card.custom-card2 {
+    border: none;
+    /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
+}
+
+.custom-card2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(185, 141, 46, 1);
+}
+
+/* Card.css */
+
+.custom-card2 {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+
+.card-li li {
+    padding-top: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img1 {
+    height: 100px;
+    width: 100%;
+}
+
+.play {
+    animation: moveRow 55s infinite linear;
+}
+
+.nav-pills .nav-link.active {
+    color: yellow;
+}
+
+
+
+@keyframes moveRow {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate3d(-60%, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-120%, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-180%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-240%, 0, 0);
+    }
+}
