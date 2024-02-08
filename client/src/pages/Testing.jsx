@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from '../components/Footer';
@@ -161,7 +162,7 @@ function Testing() {
           
           data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? Contact us today for a free consultation!.
         </h5>
-        <button className='gold-btn mx-auto '><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+        <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
       </section>
 
       <Techsection />
@@ -323,7 +324,7 @@ function Testing() {
           </div>
         </div>
         <div className="justify-content-center d-flex">
-          <a href="#" className="order-btn">Order Now</a>
+          <a href="/contact" className="order-btn">Order Now</a>
         </div>
       </section >
 

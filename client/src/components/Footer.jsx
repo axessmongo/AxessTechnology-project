@@ -6,7 +6,6 @@ import frompng from '../assets/images/fromlogo.jpg'
 // import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
-import { toast, ToastContainer } from 'react-toastify';
 
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState()
@@ -110,23 +109,38 @@ function Footer() {
         if (errors.fname || errors.lname || errors.email || errors.phone) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
-                fname: !contact.fname ? 'firstname is required.' : '',
-                lname: !contact.lname ? 'lastname is required.' : '',
+                fname: !contact.fname ? 'FirstName is required.' : '',
+                lname: !contact.lname ? 'LastName is required.' : '',
                 email: !contact.email ? 'Email is required.' : '',
-                phone: !contact.phone ? 'phone no is required.' : '',
+                phone: !contact.phone ? 'Phone.No is required.' : '',
                 // address: !contact.address ? 'Address is required.' : '',
                 // serviceOption: !contact.serviceOption ? 'serviceoption is required' : ''
             });
             return;
         }
         try {
-            const response = await axios.post('http://54.161.23.121:5000/api/contact', contact);
+            const response = await axios.post('/api/contact', contact);
 
             console.log("res", response)
             if (response.status === 201) {
+                alert(" Our team will connect with you")
                 toast.success('our team will connect with you');
                 setReciveMsg(MSG.success)
-                // alertcontent.click();
+                alertcontent.click();
+                Toastify({
+                    text: "Your form submitted successfully. Our ",
+                    // duration: 3000,
+                    destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "left", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -146,24 +160,46 @@ function Footer() {
                     // serviceOption: '',
                 });
 
-            } else if (response.status === 401) {
-                toast.error('Email or Password incorrect');
-                setReciveMsg(MSG.incorrectMail)
-                // alertcontent.click();
-            } else if (response.status === 400) {
-                toast.info('An email has been sent to your account. Please verify.');
-                setReciveMsg(MSG.mailSended)
-                // alertcontent.click();
             } else {
                 console.log('Unexpected response:', response);
-                setReciveMsg(MSG.unexpectedResponse)
+                // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
+                Toastify({
+                    text: "Internal server error",
+                    duration: 3000,
+                    // destination: "https://github.com/apvarun/toastify-js",
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "center", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border:"1px solid red"
+                    },
+                    onClick: function(){} // Callback after click
+                  }).showToast();
             }
         } catch (error) {
             console.error('Error during login:', error.message);
-            toast.error('Unexpected error');
-            setReciveMsg(MSG.unexpectedError)
+            // toast.error('Unexpected error');
+            // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
+            Toastify({
+                text: "Internal server error",
+                duration: 3000,
+                // destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                border:"1px solid red"
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
         }
 
     }
@@ -191,53 +227,53 @@ function Footer() {
                                     <img src={frompng} alt="" />
                                 </div>
                             </div>
+
                             <div className="">
                                 <div className="row">
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Firstname *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.fname}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Lastname *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.lname}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="email" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='E-mail *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
-
                                     </div>
                                     <div className="col-md-6 mb-4">
                                         <input data-aos='zoom-out' type="phone" value={contact.phone} name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Phone-Number *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
-
                                     </div>
+
                                     <div className="col-md-12 mb-4">
                                         <input data-aos='zoom-out' type="text" value={contact.description} name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Description' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.description}</div>
-
                                     </div>
                                 </div>
+
                                 <div className="row">
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 73581 04213 </Link></p>
-                                        <p>Instagram: <a className='text-decoration-none meta' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==">axess_technology</a></p>
+                                        <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==" target='_blank'>axess_technology</a></p>
                                     </div>
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p>
-                                        <p>Email : <a className='text-decoration-none' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
-
+                                        <p>Email : <a className='text-decoration-none concolor' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     </div>
+
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <button className='gold-btn m-0 green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
-
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <ToastContainer />
+                    {/* <ToastContainer /> */}
                 </form>
             </div>
             <div className='bg-black text-white footercontent'>
@@ -302,7 +338,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="row text-center text-md-start">
                             <div className="col-md-6" data-aos='zoom-in-right' data-aos-anchor-placement="top-bottom" data-aos-duration='700'>
@@ -313,7 +349,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <hr className='m-0' />
                 <div className='text-center'>
                     <p className='mb-0 py-3 primary-text text-decoration-none text-white last-child'>

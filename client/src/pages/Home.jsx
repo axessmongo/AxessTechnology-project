@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.scss'
 import Svg1 from '../components/Svg1';
@@ -38,7 +39,8 @@ export default function Home() {
                                 <div className="hero-banner-content">
                                     <h1 className='mb-5' data-aos='fade-up' data-aos-duration='500'>Forget fragmented services. Axess builds your digital ecosystem - seamless, powerful, designed to win.</h1>
                                     <p className='primary-text mb-5' data-aos='fade-up' data-aos-duration='600'>Software crafted to empower. Websites that captivate and convert. Marketing that ignites engagement. Testing that ensures flawless experiences.</p>
-                                    <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button>
+                                    {/* <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='fade-right' data-aos-duration='800'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button> */}
+                                    <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
                                 </div>
                             </div>
                             <div className="col-md-10 mx-auto col-lg-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
