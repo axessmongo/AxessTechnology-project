@@ -1,4 +1,4 @@
-const employeeusermodel = require("../userModel/employeeSchema.js");
+const employeeusermodel = require("../userModel/ProjectSchema.js");
 
 const Employerpost = async (req, res) => {
   const {
