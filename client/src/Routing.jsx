@@ -28,10 +28,10 @@ import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing' ;  
 import Policy from './pages/Policy';
 import Dashboard from '../src/Dashboard/Dashboard'
-import Empdashboard from '../src/Dashboard/Empdashboard'
-import ClientProject from './Dashboard/ClientProject';
-import empproject from './Dashboard/empproject';
-import Empproject from './Dashboard/empproject';
+import Empproject from './Dashboard/Empproject'
+import ClientProject from './Dashboard/ClientProject'
+import Empdashboard from './Dashboard/Empdashboard'
+
 
 function Routing() {
     const user = localStorage.getItem("token");
