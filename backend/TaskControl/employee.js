@@ -52,34 +52,26 @@ const employeegetting = async (req, res) => {
 };
 
 const employeeput = async (req, res) => {
-  const id = req.params.id;
-  const updateBody = req.body;
+    const id = req.params.id;
 
   try {
-    if (!mongoose.Types.ObjectId.isValid(id)) {
-      return res.status(400).json({ message: "Invalid employee ID" });
-    }
-
-    const employee = await employeeusermodel.findByIdAndUpdate(id, updateBody, {
-      new: true,
-    });
-
-    // Check if employee with given id exists
-    if (!employee) {
-      return res.status(404).json({ message: "Employee not found" });
-    }
+    const object = await employeeusermodel.findByIdAndUpdate(
+      id,
+      req.body, 
+      { new: true }
+    );
 
     res.status(200).json({
-      message: "Employee has been updated",
-      data: employee,
+      message: 'Success',
+      data: object,
     });
   } catch (error) {
-    console.error("Error updating employee:", error);
+    console.error(error);
     res.status(500).json({
-      message: "Internal server error",
+      message: 'Error updating object by ID',
       error: error.message,
     });
   }
-};
+}
 
 module.exports = { Employerpost, employeegetting, employeeput };
