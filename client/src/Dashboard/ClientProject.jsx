@@ -71,6 +71,7 @@ export default function ClientProject() {
                                 <th className='text-center'>Description</th>
                                 <th className='text-center'>Resources</th>
                                 <th className='text-center'>Remarks</th>
+                                <th className='text-center'>Pricing</th>
                                 <th className='text-center'>Status</th>
                                 <th className='text-center'>Start Date</th>
                                 <th className='text-center'>Complete Date</th>
@@ -85,8 +86,9 @@ export default function ClientProject() {
                                     <td>{project.taskid }</td>
                                     <td>{project.projectname}</td>
                                     <td>{project.description}</td>
-                                    <td>{project.resource}</td>
+                                    <td>{project.resources}</td>
                                     <td>{project.remarks}</td>
+                                    <td>{project.price}</td>
                                     <td>{project.status}</td>
                                     <td>{project.startdate}</td>
                                     <td>{project.enddate}</td>
