@@ -460,7 +460,7 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">I used to dread deployment day, fearing hidden bugs waiting to ambush my users. But since partnering with [Your Company Name], my worries have vanished! Their thorough testing ensures my software launches flawlessly, leaving me free to focus on innovation. Thanks to them, I finally have the peace of mind to code with confidence.{" "}</p>
+                              <p className="description heading5">I used to dread deployment day, fearing hidden bugs waiting to ambush my users. But since partnering with axess, my worries have vanished! Their thorough testing ensures my software launches flawlessly, leaving me free to focus on innovation. Thanks to them, I finally have the peace of mind to code with confidence.{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -569,7 +569,7 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Investing in [Your Company Name]'s testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. [Your Company Name] is more than just a testing provider; they're a strategic partner in our success."{" "}</p>
+                              <p className="description heading5">Investing in axess testing services was one of the best decisions I've made for our company. Not only did they catch critical bugs before launch, but their insights on user experience helped us refine our product into a market winner. We've seen a significant rise in user engagement and positive reviews, directly translating to increased revenue and customer loyalty. Axess is more than just a testing provider; they're a strategic partner in our success."{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -678,7 +678,7 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">As a user, I'm tired of buggy software that crashes and frustrates. But ever since my favorite app started using [Your Company Name] for testing, it's been a smooth ride! No more unexpected glitches or confusing interfaces. Everything works seamlessly and intuitively, making my life easier and more enjoyable. Thank you for prioritizing user experience and setting the bar high for software quality!{" "}</p>
+                              <p className="description heading5">As a user, I'm tired of buggy software that crashes and frustrates. But ever since my favorite app started using axess for testing, it's been a smooth ride! No more unexpected glitches or confusing interfaces. Everything works seamlessly and intuitively, making my life easier and more enjoyable. Thank you for prioritizing user experience and setting the bar high for software quality!{" "}</p>
                             </div>
                           </div>
                         </div>
@@ -787,7 +787,7 @@ function Testing() {
                               </div>
                               <div className="my-3 border"></div>
                               <div className="seperator"></div>
-                              <p className="description heading5">Managing a large software project can be a pressure cooker. But with [Your Company Name] by my side, I can finally sleep soundly at night. Their expertise and dedication helped us meet every deadline while delivering a defect-free product. Their clear communication and proactive approach kept the project on track and everyone informed. They're the dream team for anyone looking to avoid development headaches and ensure a successful launch!{" "}</p>
+                              <p className="description heading5">Managing a large software project can be a pressure cooker. But with axess by my side, I can finally sleep soundly at night. Their expertise and dedication helped us meet every deadline while delivering a defect-free product. Their clear communication and proactive approach kept the project on track and everyone informed. They're the dream team for anyone looking to avoid development headaches and ensure a successful launch!{" "}</p>
                             </div>
                           </div>
                         </div>

@@ -48,4 +48,4 @@ const sendEmail = async (email, subject, text) => {
 module.exports ={sendEmail}
 
 // Example usage:
- sendEmail('devbharath.kathirvel@axesstechnology.in', 'Test Email', 'This is a test email from AWS SES.');
+//  sendEmail('devbharath.kathirvel@axesstechnology.in', 'Test Email', 'This is a test email from AWS SES.');
