@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo/logo.png'
 import mandub from '../assets/images/man.png'
+import { Link } from 'react-router-dom';
 
 function Empdashboard() {
     const [menuDisplayed, setMenuDisplayed] = useState(false);
@@ -74,7 +75,7 @@ function Empdashboard() {
                             </div>
                         </div>
                       
-                         <div className=" container-fluid popup pt-4">
+                         {/* <div className=" container-fluid popup pt-4">
                                 <button
                                     type="button"
                                     class="gold-btn m-0 green-btn"
@@ -146,7 +147,7 @@ function Empdashboard() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="dashboard-container">
                                 <h1 className="bg-img-1 mx-auto">Employee Dashboard</h1>
@@ -176,88 +177,7 @@ function Empdashboard() {
 
                                                 <td>{project.status}</td>
                                                 <td>{project.completedate}</td>
-                                                <td>
-                                                {/* <div className="popup ">
-                                                    <button
-                                                        type="button"
-                                                        class="dash-td-bt green-btn"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"
-                                                    >
-                                                        Edit
-                                                    </button>
-                                                    <div
-                                                        class="modal fade"
-                                                        id="exampleModal"
-                                                        tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <div class="modal-dialog ">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header bg-green-1 text-light">
-                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                        Edit Details
-                                                                    </h1>
-                                                                    <button
-                                                                        type="button"
-                                                                        class="btn-close"
-                                                                        data-bs-dismiss="modal"
-                                                                        aria-label="Close"
-                                                                    ></button>
-                                                                </div>
-                                                                <div class="modal-body bg">
-                                                                    <div className="form text-center">
-                                                                        <label htmlFor="" className="fs-4 mb-2">
-                                                                            {" "}
-                                                                            Project Name
-                                                                        </label>{" "}
-                                                                        <br />
-                                                                        <input
-                                                                            type="text"
-                                                                            className="mb-4 text-center"
-                                                                            placeholder="Project Name"
-                                                                        />
-                                                                        <label className="fs-4 mb-2" htmlFor="">
-                                                                            Project Complete Date
-                                                                        </label>
-                                                                        <input type="date" className="mb-4 text-center" placeholder="Project Name" />
-                                                                        <br />
-                                                                        <label htmlFor="" className="fs-4 mb-2">
-                                                                            {" "}
-                                                                            Description
-                                                                        </label>{" "}
-                                                                        <br />
-                                                                        <textarea className="datemb-4 text-center"></textarea>
-                                                                        <br />
-                                                                        <label htmlFor="" className="fs-4 mb-2">
-                                                                            {" "}
-                                                                            Remarks
-                                                                        </label>{" "}
-                                                                        <br />
-                                                                        <textarea className="datemb-4 text-center"></textarea>
-                                                                        <br />
-                                                                        <label for="formFileMultiple" class="form-label fs-4 mb-2">Multiple files upload</label>
-                                                                        <input class="form-control" type="file" id="formFileMultiple" multiple />
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer bg-green-1 text-light">
-                                                                    <button
-                                                                        type="button"
-                                                                        class="btn btn-secondary"
-                                                                        data-bs-dismiss="modal"
-                                                                    >
-                                                                        Close
-                                                                    </button>
-                                                                    <button type="submit" class="btn btn-primary">
-                                                                        Submit
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
-                                                     <button className='dash-td-bt green-btn mt-2'>Edit</button></td>
+                                                <td><Link className='dash-td-bt green-btn mt-2' to='/empproject'>Edit</Link></td>
                                             </tr>
                                         ))}
                                     </thead>
