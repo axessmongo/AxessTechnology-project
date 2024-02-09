@@ -96,12 +96,12 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav align-items-center mx-auto mb-2 mb-lg-0" data-aos='fade-up'>
                 <li className="nav-item">
-                  <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
+                  <NavLink to={'/'} activeclassname="active" className="nav-link navhover" aria-current="page" >
                     Home
                   </NavLink>
                 </li>
                 <li className="nav-item position-relative">
-                  <Link className="nav-link" >
+                  <Link className="nav-link navhover" >
                     Services
                   </Link>
                   <div className="drop">
@@ -123,18 +123,18 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/ourworks"} activeclassname="active" className="nav-link navhover" >
                     Our works
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/about"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/about"} activeclassname="active" className="nav-link navhover" >
                     About
                   </NavLink>
                 </li>
 
                 <li className="nav-item position-relative">
-                  <Link className="nav-link" >
+                  <Link className="nav-link navhover" >
                     Pricing
                   </Link>
                   <div className="drop pricing">  
@@ -153,7 +153,7 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/contact"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/contact"} activeclassname="active" className="nav-link navhover" >
                     Contact
                   </NavLink>
                 </li>

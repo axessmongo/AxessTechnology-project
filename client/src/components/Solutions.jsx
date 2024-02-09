@@ -47,6 +47,7 @@ export default function Solutions() {
                       data-aos-duration="600"
                       data-aos-anchor-placement="bottom-bottom"
                     >
+                      
                       <p className="text-white mb-0">Customer Retention System</p>
                     </div>
                   </div>
