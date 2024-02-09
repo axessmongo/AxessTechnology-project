@@ -106,19 +106,19 @@ function Navbar() {
                   </Link>
                   <div className="drop">
                     <div className='nav-item'>
-                      <NavLink to={'/services'} activeclassname="active" className="nav-link" aria-current="page" >All Services</NavLink>
+                      <NavLink to={'/services'} activeclassname="active" className="nav-link navhover" aria-current="page" >All Services</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/development'} activeclassname="active" className="nav-link" aria-current="page" >Software Development</NavLink>
+                      <NavLink to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" >Software Development</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" >Software Testing</NavLink>
+                      <NavLink to={'/testing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Software Testing</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" >Web Development</NavLink>
+                      <NavLink to={'/webdevelopment'} activeclassname="active" className="nav-link navhover" aria-current="page" >Web Development</NavLink>
                     </div>
                     <div className='nav-item'>
-                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" >Digital Marketing</NavLink>
+                      <NavLink to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" >Digital Marketing</NavLink>
                     </div>
                   </div>
                 </li>
@@ -139,16 +139,16 @@ function Navbar() {
                   </Link>
                   <div className="drop pricing">  
                     <div className='nav-item'>
-                      <Link to={'/development'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Software Development Pricing</Link>
+                      <Link to={'/development'} activeclassname="active" className="nav-link navhover" aria-current="page" onClick={() => setValue(true)}>Software Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/testing'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Software Testing Pricing</Link>
+                      <Link to={'/testing'} activeclassname="active" className="nav-link navhover" aria-current="page" onClick={() => setValue(true)}>Software Testing Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Web Development Pricing</Link>
+                      <Link to={'/webdevelopment'} activeclassname="active" className="nav-link navhover" aria-current="page" onClick={() => setValue(true)}>Web Development Pricing</Link>
                     </div>
                     <div className='nav-item'>
-                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link" aria-current="page" onClick={() => setValue(true)}>Digital Marketing Pricing</Link>
+                      <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" onClick={() => setValue(true)}>Digital Marketing Pricing</Link>
                     </div>
                   </div>
                 </li>
