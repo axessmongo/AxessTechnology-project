@@ -332,7 +332,7 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-3'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
