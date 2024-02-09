@@ -37,7 +37,6 @@ import Empdashboard from './Dashboard/Empdashboard'
 function Routing() {
     const user = localStorage.getItem("token");
     return (
-// hgjh
         <div>
             <BrowserRouter>
                 {/* <Loader /> */}
