@@ -32,7 +32,7 @@ import Clientdashboard from './Dashboard/Clientdashboard';
 import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
-import Digitalcontact from './pages/Digitalcontact';
+import Digitalcontact from './components/Digitalcontact';
 
 
 
