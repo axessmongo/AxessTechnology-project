@@ -29,7 +29,7 @@ import DigitalMarketing from './pages/DigitalMarketing' ;
 import Policy from './pages/Policy';
 import Popup from './pages/Popup';
 import Dashboard from '../src/Dashboard/Dashboard'
-import Empproject from './Dashboard/Empproject'
+import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
 
