@@ -53,11 +53,19 @@ function Contact() {
         });
         validateField(name, value);
     };
-    const showToastMessage = () => {
-        toast.success("Success Notification !", {
-          position: "top-right",
-        });
-      };
+    const showToast = (text, options = {}) => {
+        Toastify({
+            text,
+            duration: options.duration || 3000,
+            newWindow: options.newWindow || true,
+            close: options.close || true,
+            gravity: options.gravity || "top",
+            position: options.position || "center",
+            stopOnFocus: options.stopOnFocus || true,
+            style: options.style || {},
+            onClick: options.onClick || function(){}
+        }).showToast();
+    };
     // console.log(contact)
     const validateField = (name, value) => {
 
@@ -129,21 +137,7 @@ function Contact() {
             console.log("res", response)
             if (response.status === 201) {
                 console.log("201")
-                // showToastMessage()
-                Toastify({
-                    text: "Our team will connect with you",
-                    duration: 3000,
-                    // destination: "https://github.com/apvarun/toastify-js",
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "center", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                      background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
+                showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
                 
                 setContact({
                     fname: "",
@@ -165,42 +159,11 @@ function Contact() {
 
             } else {
                 console.log('else Unexpected response:', response);
-                Toastify({
-                    text: "Internal server error",
-                    duration: 3000,
-                    // destination: "https://github.com/apvarun/toastify-js",
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "center", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    border:"1px solid red"
-                    },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
-                // toast.error(MSG.unexpectedResponse);
+                showToast("Internal server error", { style: { border: "1px solid red" } });
             }
         } catch (error) {
             console.log("error",error);
-            Toastify({
-                text: "Unexpected error",
-                duration: 3000,
-                // destination: "https://github.com/apvarun/toastify-js",
-                newWindow: true,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "center", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    border:"1px solid red"
-                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-                onClick: function(){} // Callback after click
-              }).showToast();
-            
-            // toast.error('Unexpected error');
+            showToast("Unexpected error", { style: { border: "1px solid red" } });
         }
     }
 
