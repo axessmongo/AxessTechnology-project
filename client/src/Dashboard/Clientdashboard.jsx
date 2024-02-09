@@ -3,7 +3,7 @@ import logo from '../assets/images/logo/logo.png'
 import mandub from '../assets/images/man.png'
 import { Link } from 'react-router-dom';
 
-function Dashboard() {
+function Clientdashboard() {
     const [menuDisplayed, setMenuDisplayed] = useState(false);
 
     const handleMenuToggle = () => {
@@ -124,4 +124,4 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default Clientdashboard
