@@ -51,9 +51,9 @@ export default function DigitalMarketing() {
                     from the shadows to the spotlight.
                   </p>
                   <div className="carding row gx-3 align-items-stretch mt-5">
-                    <div className="col-md-3">
-                      <div class="card-effect">
-                        <div class="card-content-effect">
+                    <div className="col-md-3 mt-4">
+                      <div class="card-effect ">
+                        <div class="card-content-effect mt-3">
                           <h2>A dazzling website</h2>
                           <p className="secondary-text">
                             That showcases your brand story and engages your
@@ -62,7 +62,7 @@ export default function DigitalMarketing() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h1>SEO strategies</h1>
@@ -74,7 +74,7 @@ export default function DigitalMarketing() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Targeted social media</h2>
@@ -85,7 +85,7 @@ export default function DigitalMarketing() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
                           <h2>Email Marketing</h2>

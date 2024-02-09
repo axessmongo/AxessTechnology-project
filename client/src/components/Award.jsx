@@ -19,7 +19,7 @@ function Award() {
                         <p className='secondary-text'>Axess, a premier software development firm, excels in crafting bespoke enterprise solutions tailored to your company's unique requirements. Beyond mere technical expertise, we embody visionary creativity, adept at turning potential into tangible achievements.</p>
                         <p className='secondary-text'>Our mission? To furnish groundbreaking, customized software solutions that surpass expectations, propelling our clients towards unparalleled success. We remain at the forefront of industry trends and standards, ensuring our clients maintain a competitive edge in their respective markets.</p>
                     </div>
-
+            
                     <div className='row g-3 mb-5'>
                         <div className='col-md-6'>
                             <div className='card h-100' data-aos='fade-up' data-aos-duration='400'>

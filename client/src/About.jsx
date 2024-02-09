@@ -21,7 +21,7 @@ function About() {
       <div className="container-fluid bg-green-1">
         <p className="primary-header text-white text-center whyustext" data-aos="fade-up" data-aos-duration="1000"> Why Us</p>
         <div className="row d-flex ">
-          <div className="col-md-6 mt-5" data-aos="fade-right" data-aos-duration="1000">
+          <div className="col-md-6 col-sm-5 justify-content-sm-center mt-5" data-aos="fade-right" data-aos-duration="1000">
             <div className="whyusimg">
               <img src={whyus2} alt="whyus2" />
             </div>
@@ -44,9 +44,9 @@ function About() {
             </div>
           </div> */}
 
-          <div className="col-md-6 mt-5" data-aos="fade-left" data-aos-duration="1000">
+          <div className="col-md-6 col-sm-6 mt-5" data-aos="fade-left" data-aos-duration="1000">
             <div className="row justify-content-center align-items-center text-white text-center">
-              <div className="col-md-11 mt-5 secondary-text mx-auto">
+              <div className="col-md-11 justify-content-center secondary-text mx-auto">
                 <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
 
               </div>
