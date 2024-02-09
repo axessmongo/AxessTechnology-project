@@ -32,6 +32,7 @@ import Clientdashboard from './Dashboard/Clientdashboard';
 import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
+import Digitalcontact from './pages/Digitalcontact';
 
 
 
@@ -70,6 +71,8 @@ function Routing() {
                     <Route path='/empdashboard' element={<Empdashboard/>}/>
                     <Route path='/clientproject' element={<ClientProject/>}/>
                     <Route path='/empproject' element={<Empproject/>}/>
+                    <Route path='/digitalcontact' element={<Digitalcontact/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>
