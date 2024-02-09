@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.scss'
 import Svg1 from '../components/Svg1';
 import pulse from '../assets/images/bubble.webp';
-import Card from '../components/Card';
+import Solutions from '../components/Solutions';
 import Award from '../components/Award';
 import Footer from '../components/Footer';
 import Industries from '../components/Industries';
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             
             <Award/>
-            <Card/>
+            <Solutions/>
             <Techsection/>
             <Industries/>
             {/* <Categories/> */}

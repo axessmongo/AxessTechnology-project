@@ -6,7 +6,7 @@ import Register from './pages/Register';
 import Services from './pages/Services';
 import About from './About';
 import Technologies from './components/Technologies';
-import Card from './components/Card';
+import Solutions from './components/Solutions';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
