@@ -1,51 +1,29 @@
-// Import necessary modules
-const { SESClient, SendEmailCommand } = require('@aws-sdk/client-ses');
+const nodemailer = require("nodemailer");
 
-// Function to send email
-const sendEmail = async (email, subject, text) => {
+module.exports = async (email, subject, text) => {
+    console.log("email")
     try {
-        // Create SES client
-        const ses = new SESClient({
-            credentials: {
-                accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+        const transporter = nodemailer.createTransport({
+            host: process.env.HOST,
+            service: process.env.SERVICE,
+            port: Number(process.env.EMAIL_PORT),
+            secure: Boolean(process.env.SECURE),
+            auth: {
+                user: process.env.USER,
+                pass: process.env.PASS,
             },
-            region: process.env.AWS_REGION
         });
 
-        // Construct email parameters
-        const params = {
-            Destination: {
-                ToAddresses: [email]
-            },
-            Message: {
-                Body: {
-                    Text: {
-                        Data: text
-                    }
-                },
-                Subject: {
-                    Data: subject
-                }
-            },
-            Source: process.env.USER
-        };
-
-        // Send email
-        const response = await ses.send(new SendEmailCommand(params));
-
-        // Log success message
-        console.log("Email sent successfully");
-        console.log("Message ID:", response.MessageId);
+        await transporter.sendMail({
+            from: process.env.USER,
+            to: email,
+            subject: subject,
+            text: text,
+        });
+        console.log("email sent successfully");
     } catch (error) {
-        // Log error message
-        console.error("Email not sent!");
-        console.error(error);
+        console.log("email not sent!");
+        console.log(error);
+        return error;
     }
 };
-
-
-module.exports ={sendEmail}
-
-// Example usage:
-//  sendEmail('devbharath.kathirvel@axesstechnology.in', 'Test Email', 'This is a test email from AWS SES.');

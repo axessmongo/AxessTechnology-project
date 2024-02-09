@@ -32,7 +32,7 @@ function Register() {
 	
 		try {
 			const response = await axios.post(
-			  'http://54.161.23.121:5000/api/register',
+			  '/api/register',
 			  formData
 			);
 	  

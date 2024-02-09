@@ -13,7 +13,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Development from './Development';
-import bannerimg from '../assets/images/banner_img_home1.png'
+import bannerimg from '../assets/images/homeimg.png'
 export default function Home() {
     let nav = useNavigate()
 
@@ -44,7 +44,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="col-md-10 mx-auto col-lg-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
-                                <img src={bannerimg}className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                                <img src={bannerimg}className='main-img animatedimg' alt="bannerimg" />
                             </div>
                         </div>
                     </div>
