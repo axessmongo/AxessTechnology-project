@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import footer from '../assets/images/footer.svg'
 import frompng from '../assets/images/fromlogo.jpg'
 // import contact  from '../assets/images/contact.jpg'
@@ -8,7 +9,8 @@ import "../assets/css/footer.scss"
 import axios from 'axios';
 
 function Footer() {
-    const [receiveMsg, setReciveMsg] = useState()
+    const [receiveMsg, setReciveMsg] = useState();
+    const  navigate = useNavigate();
     let MSG = {
         success: "Success",
         mailSended: "Mail sended successfully",
@@ -31,7 +33,7 @@ function Footer() {
         description: "",
 
     });
-
+    const handleRoute = ()=>{navigate('/about')}
     const handleChange = (e) => {
         let { name, value } = e.target;
         if (name === 'fname') {
@@ -303,6 +305,7 @@ function Footer() {
                             <p className='gold-text-2 fw-bolder'>Why Axess?</p>
                             <div className='d-flex justify-content-center'>
                                 <ul className='list-unstyled'>
+                                    {/* <button onClick={handleRoute}>home</button> */}
                                     {/* <li><Link to="/" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white' >Home</Link></li> */}
                                     <li><Link to="/about" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>About</Link></li>
                                     <li><Link to="/services" className=' primary-text text-decoration-none text-whitetext-decoration-none text-white footerhover'>Services</Link></li>

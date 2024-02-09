@@ -13,7 +13,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Development from './Development';
-import bannerimg from '../assets/images/banner_img_home1.png'
+import bannerimg from '../assets/images/homeimg.png'
 export default function Home() {
     let nav = useNavigate()
 
@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="hero-banner">
                     <div className="px-xxl-5 mx-xxl-5 px-5 text-center text-lg-start">
                         <div className="row position-relative z-2 min-vh-100 jus justify-content-lg-between align-items-center text-white g-lg-5">
-                            <div className="col-lg-6 order-2 order-lg-1">
+                            <div className="col-md-12 col-lg-6 order-2 order-lg-1">
                                 <img src={pulse} className='pulse' alt="pulse" />
                                 <Svg1/>
                                 <div className="hero-banner-content">
@@ -43,8 +43,8 @@ export default function Home() {
                                     <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn mb-5 mb-lg-0 mx-auto mx-lg-0' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
                                 </div>
                             </div>
-                            <div className="col-md-10 mx-auto col-lg-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
-                                <img src={bannerimg}className='main-img animatedimg' alt="https://maticz.com/assets/images/home/banner_img_home.webp" />
+                            <div className="col-md-12 mx-auto col-lg-6 order-lg-2" data-aos='flip-right' data-aos-duration='800' >
+                                <img src={bannerimg}className='main-img animatedimg' alt="bannerimg" />
                             </div>
                         </div>
                     </div>

@@ -131,7 +131,9 @@ function Development() {
                 >
                   <div className=" card boxshadow small-card text-center">
                     <div className="py-4 secondary-text">
-                      <p className="fw-bold">Cloud Platforms:</p>
+                      <p className="fw-bold">Backend/Cloud Platforms:</p>
+                      <p>Mongodb</p>
+                      <p>PL/sql</p>
                       <p>AWS</p>
                       <p>Azure</p>
                       <p> Google Cloud Platform</p>

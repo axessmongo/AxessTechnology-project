@@ -31,12 +31,12 @@ const ProjectSchema = new Schema({
         required: true
     },
     resources:{
-        type:String,
-        required:true
+        type: String,
+        required: true
     },
     status:{
-        type:String,
-        required:true
+        type: String,
+        required: true
     }
 });
 

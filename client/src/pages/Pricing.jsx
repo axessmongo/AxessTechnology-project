@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
-import american from '../assets/images/pricing/american.png'
-import master from '../assets/images/pricing/master.png'
-import visa from '../assets/images/pricing/visa.png'
-import cash from '../assets/images/pricing/cash.png'
-import secure from '../assets/images/pricing/secure.png'
+// import american from '../assets/images/pricing/american.png'
+// import master from '../assets/images/pricing/master.png'
+// import visa from '../assets/images/pricing/visa.png'
+// import cash from '../assets/images/pricing/cash.png'
+// import secure from '../assets/images/pricing/secure.png'
 import Footer from '../components/Footer'
 import '../assets/css/pricing.scss'
 
@@ -87,12 +87,12 @@ function Pricing() {
 						</ul>
 						<a href="#" className="order-btn">Order Now</a>
 					</div>
-					<div className='Pay'>
+					{/* <div className='Pay'>
 						<h5>ACCEPTED PAYMENT METHODS</h5>
 						<img src={visa} className='img-sizes' alt="visa" />
 						<img src={master} className='img-sizes' alt="master" />
 						<img src={american} className='img-sizes' alt="american" />
-					</div>
+					</div> */}
 				</div>
 
 			</section >
