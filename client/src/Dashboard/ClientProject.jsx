@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function ClientProject() {
     const [menuDisplayed, setMenuDisplayed] = useState(false);
-    const[projects,setProjects] = useState([])
+    const [projects, setProjects] = useState([])
 
     const handleMenuToggle = () => {
         setMenuDisplayed((prevMenuDisplayed) => !prevMenuDisplayed);
@@ -65,16 +65,18 @@ export default function ClientProject() {
                     <table className="dashboard-table">
                         <thead>
                             <tr>
-                                <th className='text-center'>S.No</th>
+                                
                                 <th className='text-center'>project Id</th>
                                 <th className='text-center'>Task Name</th>
                                 <th className='text-center'>Description</th>
-                                <th className='text-center'>Resources</th>
+                                <th className='text-center'>Send to Resources</th>
                                 <th className='text-center'>Remarks</th>
                                 <th className='text-center'>Pricing</th>
                                 <th className='text-center'>Status</th>
                                 <th className='text-center'>Start Date</th>
                                 <th className='text-center'>Complete Date</th>
+                                <th className='text-center'>Action</th>
+                                {/* <th className='text-center'>Options</th> */}
 
                             </tr>
                         </thead>
@@ -83,10 +85,10 @@ export default function ClientProject() {
                             {projects.map((project, index) => (
                                 <tr key={project.id}>
                                     <td>{index + 1}</td>
-                                    <td>{project.taskid }</td>
+                                    <td>{project.taskid}</td>
                                     <td>{project.projectname}</td>
                                     <td>{project.description}</td>
-                                    <td>{project.resources}</td>
+                                    <td><a href={project.resources} style={{ textDecoration: 'none' }}> {project.resources}</a></td>
                                     <td>{project.remarks}</td>
                                     <td>{project.price}</td>
                                     <td>{project.status}</td>
