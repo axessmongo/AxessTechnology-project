@@ -39,6 +39,9 @@ function Digitalcontact() {
       },
     }));
   };
+
+
+
   // console.log("state", state)
   const handleInputChange = (e) => {
     let { name, value } = e.target;
@@ -200,11 +203,13 @@ function Digitalcontact() {
 
   return (
     <div>
-      <section className="container box1" >
-        <form onSubmit={handleSubmit}>
+      <section className="container box1 secondary-text " >
+        <form onSubmit={handleSubmit}>  
           <div className="row mt-5" >
+          <h3 className="secondary-header text-center">Need a Successful Project</h3>
+
             <h5>I'M Interested In</h5>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-4 ">
               <input type="checkbox" name="Socialmedia" onChange={handleCheckboxChange} value={state.services.socialMedia} />
               <span className="fs-5"> Social Media Marketing</span>
               <br />
@@ -239,7 +244,7 @@ function Digitalcontact() {
               <span className="fs-5"> Content Writing</span>
               <br />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-4">
               <div className="col-md-6 ">
                 <input
                   type="checkbox"
@@ -317,7 +322,7 @@ function Digitalcontact() {
 
                 </div>
               </div>
-              <h4>Average Monthly Marketing Budget in INR* </h4>
+              <h4 className="secondary-header text-center m-3">Average Monthly Marketing Budget in INR* </h4>
               <div className="col-md-12 digitalcontact"  >
                 <select name="digitalmarketing" value={state.digitalmarketing}
                   onChange={handleInputChange}>
