@@ -95,7 +95,8 @@
         max-height: 0;
         width: 0;
     }
-    .card-cardish1:hover{
+
+    .card-cardish1:hover {
         box-shadow: 2px 2px 2px #ffe17c;
 
     }
@@ -272,8 +273,37 @@
 .rating i {
     color: #FFAB1A;
 }
-.digicontact{
-width: 90%;
-height: 40px;
 
-    }
+.digicontact {
+    width: 90%;
+    height: 45px;
+}
+
+.digitalcontact select {
+    width: 95%;
+    height: 45px;
+}
+
+.textarea1 textarea {
+    height: 70px;
+    width: 90%;
+    margin-top: 15px;
+    padding: 10px;
+    resize: none;
+
+}
+
+.banner-bts {
+    background-color: #fd562a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    height: 55px;
+    width: 300px;
+}
+
+.box1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
+}
