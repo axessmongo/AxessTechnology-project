@@ -3,8 +3,8 @@ import React from "react";
 function Digitalcontact() {
   return (
     <div>
-      <section className="container">
-        <div className="row " >
+      <section className="container box1" >
+        <div className="row mt-5" >
           <h5>I'M Interested In</h5>
           <div className="col-md-6">
             <input type="checkbox" id="Socialmedia" name="Socialmedia" />
@@ -81,7 +81,7 @@ function Digitalcontact() {
           </div>
         </div>
         <div>
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mt-3 g-3">
             <div className="col-md-6">
               <div className="" >
                 <input type="text" placeholder=" Enter Your Name*" className="digicontact mt-3" />
@@ -89,26 +89,27 @@ function Digitalcontact() {
             </div>
             <div className="col-md-6">
               <div>
-                <input type="text"placeholder=" Enter Your Mobile Number*" className="digicontact mt-3" />
+                <input type="text" placeholder=" Enter Your Mobile Number*" className="digicontact mt-3" />
               </div>
             </div>
             <div className="col-md-6">
               <div>
-                <input type="text" placeholder=" Enter Your Email" className="digicontact mt-3" />
+                <input type="text" placeholder=" Enter Your Email*" className="digicontact mt-3" />
               </div>
             </div>
+
             <div className="col-md-6">
               <div>
-                <input type="text" placeholder=" Enter Your Company Name" className="digicontact mt-3" />
+                <input type="text" placeholder=" Enter Your Company Name*" className="digicontact mt-3" />
               </div>
             </div>
             <h4>Average Monthly Marketing Budget in INR* </h4>
-            <div className="col-md-12">
-              <select style={{width:"100px"}}>
+            <div className="col-md-12 digitalcontact">
+              <select>
                 <option ></option>
-                <option value="Rs. 0 to Rs. 1 Lakh">Rs. 0 to Rs. 1 Lakh</option>  
+                <option value="Rs. 0 to Rs. 1 Lakh">Rs. 0 to Rs. 1 Lakh</option>
                 <option value="Rs. 1 Lakh to Rs. 5 Lakh">Rs. 1 Lakh to Rs. 5 Lakh</option>
-                <option value="Rs. 5 Lakh to Rs. 10 Lakh">Rs. 5 Lakh to Rs. 10 Lakh</option>  
+                <option value="Rs. 5 Lakh to Rs. 10 Lakh">Rs. 5 Lakh to Rs. 10 Lakh</option>
                 <option value="Rs. 10 Lakh to Rs. 25 Lakh">Rs. 10 Lakh to Rs. 25 Lakh</option>
                 <option value="Rs. 25 Lakh to Rs. 50 Lakh">Rs. 25 Lakh to Rs. 50 Lakh</option>
                 <option value="Rs. 50 Lakh to Rs. 1 Crore">Rs. 50 Lakh to Rs. 1 Crore</option>
@@ -119,14 +120,20 @@ function Digitalcontact() {
 
             <div className="col-md-6">
               <div>
-                <input type="text" placeholder=" Enter Your Website URL" className="digicontact mt-3" />
+                <input type="text" placeholder=" Enter Your Website URL*" className="digicontact mt-3" />
               </div>
             </div>
-            <div className="col-md-6">
-             <textarea>
+            <div className="col-md-6 textarea1">
 
-             </textarea>
+              <div>
+                <textarea id="myTextarea" name="myText" rows="4" placeholder="Comments*" className="digicontact"></textarea>
+              </div>
             </div>
+            <div class="py-4 my-4 text-center">
+              <button class="banner-bts fw-bold fs-5 heading5" target="_blank">SUBMIT DETAILS NOW</button>
+              </div>
+
+
           </div>
         </div>
       </section>
