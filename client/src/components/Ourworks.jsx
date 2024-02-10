@@ -1,7 +1,10 @@
 import React, { useState, useContext } from "react";
 import Reactlogo from "../assets/images/demo/react-logo.png";
 import vitelogo from "../assets/images/demo/vite-logo.png";
-import watchdemo from "../assets/images/demo/watch.png";
+import Ourworksimg from "../assets/images/demo/Ourworksimg.png"
+import Ourworksimg1 from "../assets/images/demo/Ourworksimg1.png"
+import Ourworksimg2 from "../assets/images/demo/Ourworksimg2.png"
+import Ourworksimg3 from "../assets/images/demo/Ourworksimg3.png"
 import photodemo from "../assets/images/demo/photography.png";
 import cateringdemo from "../assets/images/demo/catering.png";
 import gitfdemo from "../assets/images/demo/gift.png";
@@ -9,7 +12,7 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import portfolio1 from "../assets/images/demo/porfolio1.png";
-import portfolio2 from "../assets/images/demo/porfolio2.png";
+// import portfolio2 from "../assets/images/demo/porfolio2.png";
 import categoriesimg1 from "../assets/images/categories-img1.webp";
 import categoriesimg2 from "../assets/images/categories-img2.webp";
 import categoriesimg3 from "../assets/images/categories-img3.webp";
@@ -89,7 +92,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item col-md-2" role="presentation">
+                  {/* <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
                         className="nav-link content"
@@ -136,7 +139,7 @@ export default function CategoriesIn() {
                         <p className="secondary-text m-0">School</p>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -163,9 +166,8 @@ export default function CategoriesIn() {
                     <div className="col-md-6 mt-3">
                       <div
                         className=" p-1"
-                        style={{ backgroundColor: " #05463c" }}
                       >
-                        <img src={gitfdemo} alt="" className="img-fluid" />
+                        <img src={Ourworksimg3} alt="Ourworksimg3" className="img-fluid" />
                       </div>
                     </div>
                     <div className="col-md-6 mt-3">
@@ -179,7 +181,7 @@ export default function CategoriesIn() {
                         <div className="pt-2">
                           <h3>Gift Zone</h3>
                           <p className="pt-2">
-                            Welcome to [Your Gift Shop Name], where every gift
+                            Welcome to Gift Zone, where every gift
                             tells a story. At our shop, we believe in the power
                             of thoughtful gifting to brighten someone's day and
                             create lasting memories. With a carefully curated
@@ -291,8 +293,8 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                     <div className="col-md-6 mt-3">
-                      <div className="p-1" style={{ backgroundColor: "gray" }}>
-                        <img src={watchdemo} alt="" className="img-fluid" />
+                      <div className="p-1">
+                        <img src={Ourworksimg1} alt="Ourworksimg1" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -319,9 +321,9 @@ export default function CategoriesIn() {
                     <div className="col-md-6 mt-3">
                       <div
                         className=" p-1"
-                        style={{ backgroundColor: " #05463c" }}
+
                       >
-                        <img src={portfolio2} alt="" className="img-fluid" />
+                        <img src={Ourworksimg2} alt="Ourworksimg2" className="img-fluid" />
                       </div>
                     </div>
                     <div className="col-md-6 mt-3">
@@ -335,11 +337,13 @@ export default function CategoriesIn() {
                         <div className="pt-2">
                           <h3>Individual</h3>
                           <p className="pt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias, pariatur esse. Consectetur earum
-                            architecto impedit eveniet porro harum rerum id ab
-                            ratione repudiandae eum error, nostrum sed,
-                            dignissimos, aliquam quia?
+                            Welcome to Portfolio Showcase, where every item
+                            has a story to tell. In our gallery, we celebrate
+                            the significance of each piece in conveying
+                            memories and emotions. With a meticulously curated
+                            assortment of distinctive creations for various
+                            contexts, we aim to elevate your portfolio with
+                            seamless elegance and delight.
                           </p>
                           <div className="d-flex justify-content-evenly">
                             <div className="pt-2 demo-bts">
@@ -401,11 +405,13 @@ export default function CategoriesIn() {
                         <div className="pt-2">
                           <h3>Individual</h3>
                           <p className="pt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias, pariatur esse. Consectetur earum
-                            architecto impedit eveniet porro harum rerum id ab
-                            ratione repudiandae eum error, nostrum sed,
-                            dignissimos, aliquam quia?
+                            Welcome to our Portfolio Gallery, where every creation
+                            narrates a unique tale. Within our exhibits, we
+                            honor the essence of each work in encapsulating
+                            moments and sentiments. With an artfully curated
+                            array of exclusive compositions for diverse
+                            showcases, we endeavor to enrich your portfolio
+                            with effortless sophistication and charm.
                           </p>
 
                           <div className="d-flex justify-content-evenly">
@@ -444,8 +450,8 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                     <div className="col-md-6 mt-3">
-                      <div className="p-1" style={{ backgroundColor: "gray" }}>
-                        <img src={portfolio1} alt="" className="img-fluid" />
+                      <div className="p-1">
+                        <img src={Ourworksimg} alt="" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -489,11 +495,7 @@ export default function CategoriesIn() {
                           <div className="pt-2">
                             <h3>Photography</h3>
                             <p className="pt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Alias, pariatur esse. Consectetur earum
-                              architecto impedit eveniet porro harum rerum id ab
-                              ratione repudiandae eum error, nostrum sed,
-                              dignissimos, aliquam quia?
+                              Welcome to our Photography Portfolio, where every image tells a captivating story. Within our exhibits, we celebrate the essence of each moment captured, encapsulating emotions and narratives. With a carefully curated selection of exclusive compositions spanning various genres and themes, we aim to elevate your portfolio with timeless elegance and allure. Explore our gallery and immerse yourself in the art of visual storytelling.
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2 demo-bts">
@@ -555,11 +557,7 @@ export default function CategoriesIn() {
                           <div className="pt-2">
                             <h3>Catering</h3>
                             <p className="pt-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Alias, pariatur esse. Consectetur earum
-                              architecto impedit eveniet porro harum rerum id ab
-                              ratione repudiandae eum error, nostrum sed,
-                              dignissimos, aliquam quia?
+                            Welcome to our Culinary Gallery, where each dish tells a story of craftsmanship and flavor. At Catering, we believe in the power of gastronomy to create unforgettable moments. Our culinary artisans curate an unparalleled dining experience, combining creativity with a passion for perfection.
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2">

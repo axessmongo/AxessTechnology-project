@@ -234,11 +234,11 @@ function Footer({displayContact}) {
                             <div className="">
                                 <div className="row">
                                     <div className="col-md-6 mb-4">
-                                        <input data-aos='zoom-out' type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Firstname *' />
+                                        <input data-aos='zoom-out' type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='First Name *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.fname}</div>
                                     </div>
                                     <div className="col-md-6 mb-4">
-                                        <input data-aos='zoom-out' type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Lastname *' />
+                                        <input data-aos='zoom-out' type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Last Name *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.lname}</div>
                                     </div>
                                     <div className="col-md-6 mb-4">
