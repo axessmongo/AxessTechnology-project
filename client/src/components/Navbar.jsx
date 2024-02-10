@@ -55,7 +55,7 @@ function Navbar() {
       {/* Upper Navigation */}
       <div className='d-flex py-3 py-lg-0 justify-content-between bg-white justify-content-lg-around align-items-center upper-nav border-bottom container-fluid flex-wrap' data-aos='fade-down' data-aos-duration='500'>
         <div className='d-flex share order-2 order-lg-1 '>
-          <Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook text-primary fs-6"></i></Link>
+          <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook text-primary fs-6"></i></Link>
           <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram text-danger fs-6"></i></Link>
           <Link><i className="bi bi-whatsapp text-success fs-6"></i></Link>
         </div>
@@ -96,12 +96,12 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav align-items-center mx-auto mb-2 mb-lg-0" data-aos='fade-up'>
                 <li className="nav-item">
-                  <NavLink to={'/'} activeclassname="active" className="nav-link" aria-current="page" >
+                  <NavLink to={'/'} activeclassname="active" className="nav-link navhover" aria-current="page" >
                     Home
                   </NavLink>
                 </li>
                 <li className="nav-item position-relative">
-                  <Link className="nav-link" >
+                  <Link className="nav-link navhover" >
                     Services
                   </Link>
                   <div className="drop">
@@ -123,18 +123,18 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/ourworks"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/ourworks"} activeclassname="active" className="nav-link navhover" >
                     Our works
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/about"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/about"} activeclassname="active" className="nav-link navhover" >
                     About
                   </NavLink>
                 </li>
 
                 <li className="nav-item position-relative">
-                  <Link className="nav-link" >
+                  <Link className="nav-link navhover" >
                     Pricing
                   </Link>
                   <div className="drop pricing">  
@@ -153,7 +153,7 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={"/contact"} activeclassname="active" className="nav-link" >
+                  <NavLink to={"/contact"} activeclassname="active" className="nav-link navhover" >
                     Contact
                   </NavLink>
                 </li>

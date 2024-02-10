@@ -1,7 +1,7 @@
 import React from "react";
 import cardimg from "../assets/images/card img.webp";
 
-export default function Card() {
+export default function Solutions() {
   return (
     <div>
       <div className="bg-green-1">
@@ -40,14 +40,15 @@ export default function Card() {
               </p>
               <div className="my-5">
                 <div className="row g-4">
-                  <div className="col-md-6 col-lg-4">
+                <div className="col-md-6 col-lg-4">
                     <div
                       className="small-card"
                       data-aos="fade-up"
                       data-aos-duration="600"
                       data-aos-anchor-placement="bottom-bottom"
                     >
-                      <p className="text-white mb-0">ERP</p>
+                      
+                      <p className="text-white mb-0">Customer Retention System</p>
                     </div>
                   </div>
                   <div className="col-md-6 col-lg-4">
@@ -57,7 +58,17 @@ export default function Card() {
                       data-aos-duration="600"
                       data-aos-anchor-placement="bottom-bottom"
                     >
-                      <p className="text-white mb-0">CRM</p>
+                      <p className="text-white mb-0">Enterprise Resource Planning </p>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-lg-4">
+                    <div
+                      className="small-card"
+                      data-aos="fade-up"
+                      data-aos-duration="600"
+                      data-aos-anchor-placement="bottom-bottom"
+                    >
+                      <p className="text-white mb-0">Customer Relationship Management</p>
                     </div>
                   </div>
                   <div className="col-md-6 col-lg-4">
@@ -70,7 +81,7 @@ export default function Card() {
                       <p className="text-white mb-0">HR Software</p>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-4">
+                  {/* <div className="col-md-6 col-lg-4">
                     <div
                       className="small-card"
                       data-aos="fade-up"
@@ -79,7 +90,7 @@ export default function Card() {
                     >
                       <p className="text-white mb-0">Enterprise Applications</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="col-md-6 col-lg-4">
                     <div
                       className="small-card"

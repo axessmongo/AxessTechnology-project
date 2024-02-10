@@ -36,7 +36,7 @@ export default function Links() {
         </a>
       </div>
       <div className="col-3">
-        <a href='https://www.facebook.com/axesstechnology?mibextid=ZbWKwL' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
+        <a href='https://www.facebook.com/profile.php?id=61556380648787' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={(color) => setcolorfunctoin('facebookcolor')}
           onMouseLeave={() => setHover('')}>
           <div className="position-relative">

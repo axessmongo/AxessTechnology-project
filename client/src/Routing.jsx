@@ -6,7 +6,7 @@ import Register from './pages/Register';
 import Services from './pages/Services';
 import About from './About';
 import Technologies from './components/Technologies';
-import Card from './components/Card';
+import Solutions from './components/Solutions';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
@@ -32,6 +32,7 @@ import Clientdashboard from './Dashboard/Clientdashboard';
 import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
+import Digitalcontact from './components/Digitalcontact';
 
 
 
@@ -70,6 +71,8 @@ function Routing() {
                     <Route path='/empdashboard' element={<Empdashboard/>}/>
                     <Route path='/clientproject' element={<ClientProject/>}/>
                     <Route path='/empproject' element={<Empproject/>}/>
+                    <Route path='/digitalcontact' element={<Digitalcontact/>}/>
+
                 </Routes>
             </BrowserRouter>
         </div>
