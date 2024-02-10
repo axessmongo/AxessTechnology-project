@@ -242,11 +242,11 @@ export default function DigitalMarketing() {
                   <div className="carding row gx-3 align-items-stretch mt-5">
                     <div className="col-md-3 mt-4">
                       <div class="card-effect ">
-                        <div class="card-content-effect mt-3">
-                          <h2>A dazzling website</h2>
+                        <div class="card-content-effect">
+                          <h3>A dazzling website</h3>
                           <p className="secondary-text">
                             That showcases your brand story and engages your
-                            audience like never before.
+                            audience like never before..
                           </p>
                         </div>
                       </div>
@@ -254,9 +254,9 @@ export default function DigitalMarketing() {
                     <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
-                          <h1>SEO strategies</h1>
+                          <h3>SEO strategies</h3>
                           <p className="secondary-text">
-                          That propel your website to the top of search engine
+                            That propel your website to the top of search engine
                             results, putting you directly in front of your ideal
                             customers.
                           </p>
@@ -266,7 +266,7 @@ export default function DigitalMarketing() {
                     <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
-                          <h2>Targeted social media</h2>
+                          <h3>Targeted social media</h3>
                           <p className="secondary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
@@ -277,7 +277,7 @@ export default function DigitalMarketing() {
                     <div className="col-md-3 mt-4">
                       <div class="card-effect">
                         <div class="card-content-effect">
-                          <h2>Email Marketing</h2>
+                          <h3>Email Marketing</h3>
                           <p className="secondary-text">
                             Campaigns that spark conversations, build
                             communities, and drive traffic to your doorstep.
@@ -295,7 +295,7 @@ export default function DigitalMarketing() {
                     tick boxes; we craft data-driven strategies that deliver
                     tangible results. We're your partners in digital disruption,
                     constantly pushing boundaries and exploring new avenues to
-                    amplify your brand's voice
+                    amplify your brand voice
                   </p>
                 </div>
               </div>
