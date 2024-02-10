@@ -10,7 +10,7 @@ function Policy() {
         <Navbar />
         <Banner
           h1="Privacy Policy"
-          h2="Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions."
+          h2="Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meaning as in our Terms and Conditions."
           h3="Our Terms and Conditions (“Terms”) govern all use of our Service and together with the Privacy Policy constitute your agreement with us (“Agreement”)"
         />
 <div className=" bg-green-1 ">
@@ -29,7 +29,7 @@ function Policy() {
                 By using the Service, you agree to the collection and use of
                 information in accordance with this policy. Unless otherwise
                 defined in this Privacy Policy, the terms used in this Privacy
-                Policy have the same meanings as in our Terms and Conditions.
+                Policy have the same meaning as in our Terms and Conditions.
                 Our Terms and Conditions (“Terms”) govern all use of our Service
                 and together with the Privacy Policy constitute your agreement
                 with us (“Agreement”).
