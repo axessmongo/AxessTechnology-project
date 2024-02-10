@@ -199,7 +199,7 @@ function Contact() {
 
 
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />
+                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone Number *' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
 
                             </div>
