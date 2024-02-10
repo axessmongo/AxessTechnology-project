@@ -25,13 +25,14 @@ import Testing from './pages/Testing';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
-import DigitalMarketing from './pages/DigitalMarketing' ;  
+import DigitalMarketing from './pages/DigitalMarketing';
 import Policy from './pages/Policy';
 import Popup from './pages/Popup';
 import Clientdashboard from './Dashboard/Clientdashboard';
 import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
+import Empreg from './Dashboard/Empreg';
 import Digitalcontact from './components/Digitalcontact';
 
 
@@ -54,7 +55,7 @@ function Routing() {
                     <Route path="/PasswordReset/:id/:token" element={<PasswordReset />} />
                     <Route path='/software' element={<SoftwareDev />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path='/services' element={<Services />} /> 
+                    <Route path='/services' element={<Services />} />
                     <Route path='/about' element={<About />} />
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
@@ -64,15 +65,15 @@ function Routing() {
                     <Route path='/testing' element={<Testing />} />
                     {/* <Route path='/ai' element={<Ai />} /> */}
                     <Route path='/webdevelopment' element={<Webdev />} />
-                    <Route path='/digitalmarketing' element ={<DigitalMarketing/>}/>
-                    <Route path='/privacypolicy' element ={<Policy/>}/>
-                    <Route path='/popup' element ={<Popup/>}/>
-                    <Route path='/clientdashboard' element={<Clientdashboard/>}/>
-                    <Route path='/empdashboard' element={<Empdashboard/>}/>
-                    <Route path='/clientproject' element={<ClientProject/>}/>
-                    <Route path='/empproject' element={<Empproject/>}/>
+                    <Route path='/digitalmarketing' element={<DigitalMarketing />} />
+                    <Route path='/privacypolicy' element={<Policy />} />
+                    <Route path='/popup' element={<Popup />} />
+                    <Route path='/clientdashboard' element={<Clientdashboard />} />
+                    <Route path='/empdashboard' element={<Empdashboard />} />
+                    <Route path='/clientproject' element={<ClientProject />} />
+                    <Route path='/empproject' element={<Empproject />} />
+                    <Route path='/empreg' element={<Empreg />} />
                     <Route path='/digitalcontact' element={<Digitalcontact/>}/>
-
                 </Routes>
             </BrowserRouter>
         </div>

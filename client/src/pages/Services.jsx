@@ -196,7 +196,7 @@ function Services() {
                                     <div className='col-md-8 mx-auto mb-3' data-aos='zoom-in' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
                                         <img src={service} className='w-100 animatedimg' alt="service" />
                                     </div>
-                                    <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Become a Software Symphony Conductor:</h4>
+                                    <h4 className=' mb-4 pt-5' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">Become a Software Symphony Conductor:</h4>
                                     <p className='primary-text mb-3 text-white mb-5' data-aos='fade-up' data-aos-duration='600'>
                                         Instead of juggling multiple agencies for design, development, and deployment, harmonize your project with our all-encompassing approach. We're your one-stop shop, conducting every stage from conception to launch, ensuring your software sings in perfect pitch.
                                     </p>
