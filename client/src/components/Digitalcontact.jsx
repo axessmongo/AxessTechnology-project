@@ -10,9 +10,7 @@ function Digitalcontact() {
     company: "",
     website: "",
     comments: "",
-    services: {
-      // socialMedia : false
-    },
+    services: {},
     digitalmarketing: ""
   });
   const [state, setState] = useState({
