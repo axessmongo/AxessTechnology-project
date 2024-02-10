@@ -230,7 +230,7 @@ export default function DigitalMarketing() {
         </div>
 
          {/* Price section */}
-         <section className='pricing mt-5' id="pricing-section">
+         {/* <section className='pricing mt-5' id="pricing-section">
         <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
@@ -302,7 +302,7 @@ export default function DigitalMarketing() {
         <div className="justify-content-center d-flex">
           <a href="/contact" className="order-btn">Order Now</a>
         </div>
-      </section >
+      </section > */}
 
         <div>
         <section className='nav-banner testimonal' id="testimonial">
