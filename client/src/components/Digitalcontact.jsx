@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 
@@ -11,7 +12,7 @@ function Digitalcontact() {
     website: "",
     comments: "",
     services: {},
-    digitalmarketing: ""
+    digitalmarketBudget: ""
   });
   const [state, setState] = useState({
     name: "",
@@ -20,17 +21,15 @@ function Digitalcontact() {
     company: "",
     website: "",
     comments: "",
-    services: {
-      // socialMedia : false
-    },
-    digitalmarketing: ""
+    services: {},
+    digitalmarketBudget: ""
 
 
 
   })
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
-    console.log(name, checked)
+    // console.log(name, checked)
     setState((prevFormData) => ({
       ...prevFormData,
       services: {
@@ -121,10 +120,7 @@ function Digitalcontact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(state);
-
-
-
+  
     if (errors.name || errors.email || errors.phone || errors.comments) return
     if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.comments.trim()) {
       setErrors({
@@ -138,14 +134,12 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post();
-
-      // console.log("res", response)
+      const response = await axios.post("http://localhost:5000/api/contact", state);
       if (response.status === 201) {
         console.log("201")
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
 
-        setContact({
+        setState({
           name: "",
           phone: "",
           email: "",
@@ -155,7 +149,7 @@ function Digitalcontact() {
           services: {
             // socialMedia : false
           },
-          digitalmarketing: ""
+          digitalmarketBudget: ""
 
         })
         setErrors({
@@ -168,7 +162,7 @@ function Digitalcontact() {
           services: {
             // socialMedia : false
           },
-          digitalmarketing: ""
+          digitalmarketBudget: ""
         });
 
       } else {
@@ -324,9 +318,9 @@ function Digitalcontact() {
               </div>
               <h4 className="secondary-header text-center m-3">Average Monthly Marketing Budget in INR* </h4>
               <div className="col-md-12 digitalcontact"  >
-                <select name="digitalmarketing" value={state.digitalmarketing}
+                <select name="digitalmarketBudget" value={state.digitalmarketBudget}
                   onChange={handleInputChange}>
-                  <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.digitalmarketing}</div>
+                  <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.digitalmarketBudget}</div>
 
                   <option ></option>
                   <option value="Rs. 0 to Rs. 1 Lakh">Rs. 0 to Rs. 1 Lakh</option>

@@ -26,14 +26,14 @@ function Footer({displayContact}) {
         lname: "",
         email: "",
         phone: "",
-        description: "",
+        comments: "",
     });
     const [contact, setContact] = useState({
         fname: "",
         lname: "",
         email: "",
         phone: "",
-        description: "",
+        comments: "",
 
     });
     const handleRoute = ()=>{navigate('/about')}
@@ -251,8 +251,8 @@ function Footer({displayContact}) {
                                     </div>
 
                                     <div className="col-md-12 mb-4">
-                                        <input data-aos='zoom-out' type="text" value={contact.description} name="description" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Description' />
-                                        <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.description}</div>
+                                        <input data-aos='zoom-out' type="text" value={contact.comments} name="comments" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Description' />
+                                        <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.comments}</div>
                                     </div>
                                 </div>
 
