@@ -14,7 +14,7 @@ import { Navigate } from "react-router-dom";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Categories from './components/Categories';
-import CategoriesIn from './components/CategoriesIn'
+import Ourworks from './components/Ourworks'
 import Demo from './components/Demo';
 import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
@@ -59,7 +59,7 @@ function Routing() {
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/ourworks' element={<CategoriesIn />} />
+                    <Route path='/ourworks' element={<Ourworks />} />
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
                     {/* <Route path='/ai' element={<Ai />} /> */}
