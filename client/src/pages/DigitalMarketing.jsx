@@ -1092,7 +1092,7 @@ export default function DigitalMarketing() {
           </section>
         </div>
 
-        <Footer />
+        <Footer displayContact= {true}/>
       </div>
     </div>
   );

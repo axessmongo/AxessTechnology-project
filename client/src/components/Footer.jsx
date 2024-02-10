@@ -10,7 +10,8 @@ import axios from 'axios';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 
-function Footer() {
+function Footer({displayContact}) {
+    console.log("displayContact",displayContact)
     const [receiveMsg, setReciveMsg] = useState();
     const  navigate = useNavigate();
     let MSG = {
@@ -216,7 +217,7 @@ function Footer() {
 
     return (
         <div>
-            <div className="container mt-4 contactbg">
+            <div className={`container mt-4 contactbg ${displayContact?"d-none":""}`}>
                 <form onSubmit={handleSubmit}>
                     <div className="card">
                         <div className="card-body position-relative">
