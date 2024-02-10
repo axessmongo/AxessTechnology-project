@@ -16,7 +16,7 @@ import Digitalcontact from "../components/Digitalcontact";
 // import axios from "axios";
 
 export default function DigitalMarketing() {
- 
+
 
   return (
     <div>
@@ -233,9 +233,6 @@ export default function DigitalMarketing() {
             </p>
           </section>
         </div>
-
-<Digitalcontact/>
-       
 
         <div>
           <section className='nav-banner testimonal' id="testimonial">
@@ -736,8 +733,9 @@ export default function DigitalMarketing() {
 
           </section>
         </div>
-
-        <Footer displayContact= {true}/>
+    
+        <Digitalcontact />
+        <Footer displayContact={true} />
       </div>
     </div>
   );
