@@ -60,14 +60,14 @@ function Navbar() {
           <Link><i className="bi bi-whatsapp text-success fs-6"></i></Link>
         </div>
         <NavLink to='/' className='d-none d-lg-flex justify-content-center col-12 col-lg-4  order-1 order-lg-2'>
-          <p>Axess</p>
+          <p> Axess</p>
           <img src={logo} alt="" />
           <p>Technology</p>
         </NavLink>
         <div className='order-3 order-lg-3'>
-          <NavLink to={'/login'} className='gold-btn px-4'>
+          {/* <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
 
@@ -79,7 +79,7 @@ function Navbar() {
               <Link to='/' className="navbar-brand col-1">
                 <img src={logo} alt="" />
               </Link>
-              <p className="secondary-text m-0 text-center">Axess Technology</p>
+              <p className="secondary-text m-0 text-center" onClick={()=>navigation("/")}>Axess Technology</p>
               <button
                 className={`navbar-toggler shadow-none border-0 hamburger hamburger--spring-r ${nav && 'is-active'}`}
                 type="button"

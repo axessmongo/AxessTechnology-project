@@ -4,39 +4,39 @@ const { Schema } = mongoose;
 const ProjectSchema = new Schema({
     projectname: {
         type: String,
-        required: true
+        // required: true
     },
     taskid: {
         type: String,
-        required: true
+        // required: true
     },
     description: {
         type: String,
-        required: true
+        // required: true
     },
     startdate: {
         type: Date,
-        required: true
+        // required: true
     },
     remarks: {
         type: String,
-        required: true
+        // required: true
     },
     enddate: {
         type: Date,
-        required: true
+        // required: true
     },
     price: {
         type: Number,
-        required: true
+        // required: true
     },
     resources:{
         type: String,
-        required: true
+        // required: true
     },
     status:{
         type: String,
-        required: true
+        // required: true
     }
 });
 

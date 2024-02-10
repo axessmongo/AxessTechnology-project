@@ -62,7 +62,7 @@ export default function DigitalMarketing() {
                           <h2>A dazzling website</h2>
                           <p className="secondary-text">
                             That showcases your brand story and engages your
-                            audience like never before..
+                            audience like never before.
                           </p>
                         </div>
                       </div>
@@ -72,7 +72,7 @@ export default function DigitalMarketing() {
                         <div class="card-content-effect">
                           <h1>SEO strategies</h1>
                           <p className="secondary-text">
-                            that propel your website to the top of search engine
+                          That propel your website to the top of search engine
                             results, putting you directly in front of your ideal
                             customers.
                           </p>
@@ -111,7 +111,7 @@ export default function DigitalMarketing() {
                     tick boxes; we craft data-driven strategies that deliver
                     tangible results. We're your partners in digital disruption,
                     constantly pushing boundaries and exploring new avenues to
-                    amplify your brand voice
+                    amplify your brand's voice
                   </p>
                 </div>
               </div>
