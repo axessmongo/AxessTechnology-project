@@ -267,6 +267,10 @@ img {
     position: fixed !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
+
+  .navhover:hover {
+    color: #f7851d;
+  }
 }
 
 .upper-nav {
@@ -1107,7 +1111,7 @@ img {
 .footercontent {
   padding-top: 100px;
 
-  .last-child{
+  .last-child {
     padding-bottom: 70px !important;
   }
 }
@@ -1304,7 +1308,7 @@ img {
   margin-bottom: 25px;
 }
 
-.cat { 
+.cat {
   .nav-pills {
     .nav-link {
       cursor: pointer;
@@ -1336,12 +1340,13 @@ img {
 
 
 @media(max-width:992px) {
-  .navbar  {
+  .navbar {
     .nav-link {
       background: transparent;
       text-align: center;
     }
-    .nav-item{
+
+    .nav-item {
       .drop {
         position: relative;
         z-index: 12;
@@ -1362,11 +1367,13 @@ img {
     img {
       width: 30px;
     }
-   
+
   }
-  .fixed-2 .upper-nav p{
+
+  .fixed-2 .upper-nav p {
     display: none;
   }
+
   .technstack_wrapper {
 
     &::before,

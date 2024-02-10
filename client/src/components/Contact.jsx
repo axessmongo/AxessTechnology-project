@@ -183,17 +183,14 @@ function Contact() {
                             <div className="col-md-6 mb-4">
                                 <input type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Firstname * ' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.fname}</div>
-
                             </div>
                             <div className="col-md-6 mb-4">
                                 <input type="text" name="lname" value={contact.lname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Lastname *' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.lname}</div>
-
                             </div>
                             <div className="col-md-6 mb-4">
                                 <input type="text" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='E-mail *' />
                                 <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
-
                             </div>
                             {/* <div className="col-md-6 mb-4">
                                 <input type="text" name="countrycode" value={contact.countryCode} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='Phone *' />

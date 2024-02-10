@@ -7,6 +7,8 @@ import frompng from '../assets/images/fromlogo.jpg'
 // import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css"
 
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState();
@@ -122,17 +124,16 @@ function Footer() {
         }
         try {
             const response = await axios.post('/api/contact', contact);
-
             console.log("res", response)
             if (response.status === 201) {
                 alert(" Our team will connect with you")
-                toast.success('our team will connect with you');
-                setReciveMsg(MSG.success)
-                alertcontent.click();
+                // toast.success('our team will connect with you');
+                // setReciveMsg(MSG.success)
+                // alertcontent.click();
                 Toastify({
-                    text: "Your form submitted successfully. Our ",
+                    text: "Your form submitted successfully. ",
                     // duration: 3000,
-                    destination: "https://github.com/apvarun/toastify-js",
+                    // destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
                     close: true,
                     gravity: "top", // `top` or `bottom`
@@ -166,29 +167,28 @@ function Footer() {
                 console.log('Unexpected response:', response);
                 // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
-                Toastify({
-                    text: "Internal server error",
-                    duration: 3000,
-                    // destination: "https://github.com/apvarun/toastify-js",
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "center", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    border:"1px solid red"
-                    },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
+                // Toastify({
+                //     text: "Internal server error",
+                //     duration: 3000,
+                //     // destination: "https://github.com/apvarun/toastify-js",
+                //     newWindow: true,
+                //     close: true,
+                //     gravity: "top", // `top` or `bottom`
+                //     position: "center", // `left`, `center` or `right`
+                //     stopOnFocus: true, // Prevents dismissing of toast on hover
+                //     style: {
+                //     //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                //     border:"1px solid red"
+                //     },
+                //     onClick: function(){} // Callback after click
+                //   }).showToast();
             }
         } catch (error) {
-            console.error('Error during login:', error.message);
-            // toast.error('Unexpected error');
+            console.error('Error during login:', error);
             // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
             Toastify({
-                text: "Internal server error",
+                text: "Unexpected server error",
                 duration: 3000,
                 // destination: "https://github.com/apvarun/toastify-js",
                 newWindow: true,
@@ -332,7 +332,7 @@ function Footer() {
                                 <p className='gold-text-2 fw-bolder text-center mb-3'>Social media</p>
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
-                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/axesstechnology?mibextid=ZbWKwL'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank'><i className="bi bi-facebook bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target='_blank'><i className="bi bi-instagram bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-linkedin bg-img-1"></i></Link></li>
