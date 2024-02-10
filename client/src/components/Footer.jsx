@@ -246,7 +246,7 @@ function Footer({displayContact}) {
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
                                     </div>
                                     <div className="col-md-6 mb-4">
-                                        <input data-aos='zoom-out' type="phone" value={contact.phone} name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Phone-Number *' />
+                                        <input data-aos='zoom-out' type="phone" value={contact.phone} name="phone" className='form-control shadow-none border-0 rounded-0 border-bottom text-black;' onChange={handleChange} placeholder='Phone Number *' />
                                         <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
                                     </div>
 
