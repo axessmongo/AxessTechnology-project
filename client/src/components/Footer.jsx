@@ -7,6 +7,8 @@ import frompng from '../assets/images/fromlogo.jpg'
 // import "../assets/css/index.scss"
 import "../assets/css/footer.scss"
 import axios from 'axios';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css"
 
 function Footer() {
     const [receiveMsg, setReciveMsg] = useState();
@@ -122,17 +124,16 @@ function Footer() {
         }
         try {
             const response = await axios.post('/api/contact', contact);
-
             console.log("res", response)
             if (response.status === 201) {
                 alert(" Our team will connect with you")
-                toast.success('our team will connect with you');
-                setReciveMsg(MSG.success)
-                alertcontent.click();
+                // toast.success('our team will connect with you');
+                // setReciveMsg(MSG.success)
+                // alertcontent.click();
                 Toastify({
-                    text: "Your form submitted successfully. Our ",
+                    text: "Your form submitted successfully. ",
                     // duration: 3000,
-                    destination: "https://github.com/apvarun/toastify-js",
+                    // destination: "https://github.com/apvarun/toastify-js",
                     newWindow: true,
                     close: true,
                     gravity: "top", // `top` or `bottom`
@@ -166,29 +167,28 @@ function Footer() {
                 console.log('Unexpected response:', response);
                 // setReciveMsg(MSG.unexpectedResponse)
                 // alertcontent.click();
-                Toastify({
-                    text: "Internal server error",
-                    duration: 3000,
-                    // destination: "https://github.com/apvarun/toastify-js",
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "center", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    border:"1px solid red"
-                    },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
+                // Toastify({
+                //     text: "Internal server error",
+                //     duration: 3000,
+                //     // destination: "https://github.com/apvarun/toastify-js",
+                //     newWindow: true,
+                //     close: true,
+                //     gravity: "top", // `top` or `bottom`
+                //     position: "center", // `left`, `center` or `right`
+                //     stopOnFocus: true, // Prevents dismissing of toast on hover
+                //     style: {
+                //     //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                //     border:"1px solid red"
+                //     },
+                //     onClick: function(){} // Callback after click
+                //   }).showToast();
             }
         } catch (error) {
-            console.error('Error during login:', error.message);
-            // toast.error('Unexpected error');
+            console.error('Error during login:', error);
             // setReciveMsg(MSG.unexpectedError)
             // alertcontent.click();
             Toastify({
-                text: "Internal server error",
+                text: "Unexpected server error",
                 duration: 3000,
                 // destination: "https://github.com/apvarun/toastify-js",
                 newWindow: true,
