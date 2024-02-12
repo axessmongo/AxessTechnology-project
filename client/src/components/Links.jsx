@@ -16,10 +16,10 @@ export default function Links() {
     }
   }
 
-  useEffect(() => {
+  // useEffect(() => {
       
-    console.log(hover);
-  }, [hover])
+  //   console.log(hover);
+  // }, [hover])
 
   return (
     <div className={`links-container row align-items-center text-white ${hover}`}>

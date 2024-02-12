@@ -65,9 +65,9 @@ function Navbar() {
           <p>Technology</p>
         </NavLink>
         <div className='order-3 order-lg-3'>
-          {/* <NavLink to={'/login'} className='gold-btn px-4'>
+          <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>
-          </NavLink> */}
+          </NavLink>
         </div>
       </div>
 
@@ -88,8 +88,8 @@ function Navbar() {
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation" onClick={() => setNav(!nav)}>
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                <span className="hamburger-box">
+                  <span className="hamburger-inner"></span>
                 </span>
               </button>
             </div>

@@ -11,7 +11,7 @@ import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 
 function Footer({displayContact}) {
-    console.log("displayContact",displayContact)
+    // console.log("displayContact",displayContact)
     const [receiveMsg, setReciveMsg] = useState();
     const  navigate = useNavigate();
     let MSG = {

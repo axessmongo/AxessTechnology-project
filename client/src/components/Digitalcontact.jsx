@@ -320,8 +320,6 @@ function Digitalcontact() {
               <div className="col-md-12 digitalcontact"  >
                 <select name="digitalmarketBudget" value={state.digitalmarketBudget}
                   onChange={handleInputChange}>
-                  <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.digitalmarketBudget}</div>
-
                   <option ></option>
                   <option value="Rs. 0 to Rs. 1 Lakh">Rs. 0 to Rs. 1 Lakh</option>
                   <option value="Rs. 1 Lakh to Rs. 5 Lakh">Rs. 1 Lakh to Rs. 5 Lakh</option>
@@ -331,6 +329,8 @@ function Digitalcontact() {
                   <option value="Rs. 50 Lakh to Rs. 1 Crore">Rs. 50 Lakh to Rs. 1 Crore</option>
                   <option value="More than Rs. 1 Crore">More than Rs. 1 Crore</option>
                 </select>
+                <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.digitalmarketBudget}</div>
+
               </div>
 
 
@@ -363,13 +363,11 @@ function Digitalcontact() {
                   <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.comments}</div>
                 </div>
               </div>
-              {/* <div class="py-4 my-4 text-center">
-                <button class="gold-btn green-btn m-5 mx-auto heading5" target="_blank">Submit Details Now</button>
+              {/* <div className="py-4 my-4 text-center">
+                <button className="gold-btn green-btn m-5 mx-auto heading5" target="_blank">Submit Details Now</button>
               </div> */}
-              <div class="py-4 my-4 demo-bts text-center">
-                <button class="gold-btn m-3 green-btn mx-auto heading5"><span class="d-block">Submit Details Now</span> <i class="bi bi-arrow-right"></i></button></div>
-
-
+              <div className="py-4 my-4 demo-bts text-center">
+                <button className="gold-btn m-3 green-btn mx-auto heading5"><span className="d-block">Submit Details Now</span> <i className="bi bi-arrow-right"></i></button></div>
             </div>
           </div>
         </form>

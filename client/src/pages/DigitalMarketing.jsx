@@ -57,8 +57,8 @@ export default function DigitalMarketing() {
                   </p>
                   <div className="carding row gx-3 align-items-stretch mt-5">
                     <div className="col-md-3 mt-4">
-                      <div class="card-effect ">
-                        <div class="card-content-effect">
+                      <div className="card-effect ">
+                        <div className="card-content-effect">
                           <h3>A dazzling website</h3>
                           <p className="secondary-text">
                             That showcases your brand story and engages your
@@ -68,8 +68,8 @@ export default function DigitalMarketing() {
                       </div>
                     </div>
                     <div className="col-md-3 mt-4">
-                      <div class="card-effect">
-                        <div class="card-content-effect">
+                      <div className="card-effect">
+                        <div className="card-content-effect">
                           <h3>SEO strategies</h3>
                           <p className="secondary-text">
                             That propel your website to the top of search engine
@@ -80,8 +80,8 @@ export default function DigitalMarketing() {
                       </div>
                     </div>
                     <div className="col-md-3 mt-4">
-                      <div class="card-effect">
-                        <div class="card-content-effect">
+                      <div className="card-effect">
+                        <div className="card-content-effect">
                           <h3>Targeted social media</h3>
                           <p className="secondary-text">
                             Campaigns that spark conversations, build
@@ -91,8 +91,8 @@ export default function DigitalMarketing() {
                       </div>
                     </div>
                     <div className="col-md-3 mt-4">
-                      <div class="card-effect">
-                        <div class="card-content-effect">
+                      <div className="card-effect">
+                        <div className="card-content-effect">
                           <h3>Email Marketing</h3>
                           <p className="secondary-text">
                             Campaigns that spark conversations, build
@@ -134,17 +134,17 @@ export default function DigitalMarketing() {
         </section>
 
         <div>
-          <section class="container cardish">
+          <section className="container cardish">
             <div className="row gy-4 w-100 ">
               <h2 className="secondary-header mx-auto text-center m-5">
                 Our digital marketing toolbox is stocked with proven-effective
                 tactics.
               </h2>
-              <div class="col-lg-4">
+              <div className="col-lg-4">
                 <div className="card-cardish1">
-                  <div class="content">
+                  <div className="content">
                     <h6>Web Design and Development</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         We create stunning, user-friendly websites that are
                         optimized for conversions and search engines.
@@ -154,10 +154,10 @@ export default function DigitalMarketing() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="card-cardish1 ">
-                  <div class="content">
+                <div className="card-cardish1 ">
+                  <div className="content">
                     <h6>Content Marketing</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         We craft compelling blog posts, articles, and social
                         media content that resonates with your target audience
@@ -168,10 +168,10 @@ export default function DigitalMarketing() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="card-cardish1">
-                  <div class="content">
+                <div className="card-cardish1">
+                  <div className="content">
                     <h6>Social Media Marketing</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         We manage your social media channels with engaging
                         content, strategic advertising, and community building
@@ -182,10 +182,10 @@ export default function DigitalMarketing() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="card-cardish1">
-                  <div class="content">
+                <div className="card-cardish1">
+                  <div className="content">
                     <h6>Search Engine Optimization</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         We leverage the power of SEO to ensure your website
                         ranks high in search results, putting you front and
@@ -196,10 +196,10 @@ export default function DigitalMarketing() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="card-cardish1">
-                  <div class="content">
+                <div className="card-cardish1">
+                  <div className="content">
                     <h6>Paid Advertising</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         {" "}
                         We design and execute targeted pay-per-click (PPC)
@@ -211,10 +211,10 @@ export default function DigitalMarketing() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div class="card-cardish1">
-                  <div class="content">
+                <div className="card-cardish1">
+                  <div className="content">
                     <h6>Email Marketing</h6>
-                    <div class="hover_content">
+                    <div className="hover_content">
                       <p className="secondary-text">
                         {" "}
                         We create personalized email campaigns that nurture
