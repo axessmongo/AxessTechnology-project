@@ -193,10 +193,10 @@ export default function CategoriesIn() {
                       </div>
                       <div className="d-flex justify-content-evenly">
                         <div className="pt-2 demo-bts">
-                          <button className="gold-btn m-0 green-btn">
+                          <Link to={'http://axesstechnology-ecommerce-2.xyz/'} className="text-decoration-none" target="_blank"><button className="gold-btn m-0 green-btn">
                             <span className="d-block">Demo Live</span>{" "}
                             <i className="bi bi-arrow-right"></i>
-                          </button>
+                          </button></Link>
                         </div>
                         <div className="pt-2 ">
                           <Link
