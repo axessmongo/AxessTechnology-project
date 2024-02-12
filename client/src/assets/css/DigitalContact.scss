@@ -1,4 +1,7 @@
 .digital {
+    input{
+        padding: 0 10px;
+    }
     .whatwedo .card:hover .card-title {
         color: #fff;
     }
@@ -285,10 +288,10 @@
 }
 
 .textarea1 textarea {
-    height: 70px;
+    // height: 70px;
     width: 90%;
     margin-top: 15px;
-    padding: 10px;
+    padding: 5px;
     resize: none;
 
 }
