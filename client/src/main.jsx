@@ -10,7 +10,7 @@ import './assets/css/testimonal.scss'
 import './assets/css/loader.scss'
 import './assets/css/index.scss';
 import './assets/css/testing.css'
-import './assets/css/Digital.scss'
+import './assets/css/DigitalContact.scss'
 import './assets/css/dashboard.scss'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";

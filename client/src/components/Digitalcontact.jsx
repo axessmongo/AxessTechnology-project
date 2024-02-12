@@ -76,20 +76,20 @@ function Digitalcontact() {
       case 'name':
         setErrors({
           ...errors,
-          name: value.length === 0 ? 'name is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid name, only letters allowed' : '',
+          name: value.length === 0 ? 'Name is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid name, only letters allowed' : '',
         });
         break;
       case 'company Name':
         setErrors({
           ...errors,
-          name: value.length === 0 ? 'company  is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid name, only letters allowed' : '',
+          name: value.length === 0 ? 'Company  is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid name, only letters allowed' : '',
         });
         break;
 
       case 'website url':
         setErrors({
           ...errors,
-          name: value.length === 0 ? 'website url is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid website url, only letters allowed' : '',
+          name: value.length === 0 ? 'Website url is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid website url, only letters allowed' : '',
         });
         break;
       case 'email':
@@ -128,8 +128,8 @@ function Digitalcontact() {
         email: !state.email ? 'Email is required.' : '',
         phone: !state.phone ? 'Phone No is required.' : '',
         website: !state.website ? 'website url is required.' : '',
-        comments: !state.comments ? 'comments is required' : '',
-        company: !state.company ? 'companyName is required' : ''
+        comments: !state.comments ? 'Comments is required' : '',
+        company: !state.company ? 'CompanyName is required' : ''
       });
       return;
     }
