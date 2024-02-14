@@ -14,7 +14,7 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
 .links-container {
     position: fixed;
-    bottom: 20px;
+    bottom: -40px;
     max-width: 70%;
     width: 100%;
     left: 50%;
@@ -23,6 +23,11 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     height: 30px;
     border-radius: 12px;
     z-index: 99999;
+    transition: .3s;
+
+    &.active {
+        bottom: 20px;
+    }
 
     &::before {
         content: "";
@@ -163,11 +168,13 @@ $globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 @media(max-width:992px) {
     .links-container {
         height: 15px;
+
         .icons {
             transform: translate(-50%, -23px);
             height: 40px;
             width: 40px;
-            i{
+
+            i {
                 font-size: 16px;
             }
         }

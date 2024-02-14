@@ -1235,8 +1235,11 @@ img {
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   z-index: 5;
+  cursor: default !important;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 
