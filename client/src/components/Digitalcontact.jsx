@@ -197,7 +197,8 @@ function Digitalcontact() {
 
   return (
     <div>
-      <section className="container box1 secondary-text " >
+      <section className="container" >
+        <div className="box1 secondary-text ">
         <form onSubmit={handleSubmit}>  
           <div className="row mt-5" >
           <h3 className="secondary-header text-center">Need a Successful Project</h3>
@@ -371,6 +372,8 @@ function Digitalcontact() {
             </div>
           </div>
         </form>
+        </div>
+        
       </section>
     </div>
   );

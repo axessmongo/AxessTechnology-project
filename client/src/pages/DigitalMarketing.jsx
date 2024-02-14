@@ -733,8 +733,9 @@ export default function DigitalMarketing() {
 
           </section>
         </div>
-    
-        <Digitalcontact />
+        <div id="pricing-section" className="mt-5 py-5">
+          <Digitalcontact />
+        </div>
         <Footer displayContact={true} />
       </div>
     </div>
