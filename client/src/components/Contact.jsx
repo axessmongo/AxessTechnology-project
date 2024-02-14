@@ -63,7 +63,7 @@ function Contact() {
             position: options.position || "center",
             stopOnFocus: options.stopOnFocus || true,
             style: options.style || {},
-            onClick: options.onClick || function(){}
+            onClick: options.onClick || function () { }
         }).showToast();
     };
     // console.log(contact)
@@ -119,7 +119,7 @@ function Contact() {
 
         // console.log("error", errors, errors.fname || errors.lname || errors.email || errors.phone || errors.address)
 
-        if (errors.fname || errors.lname || errors.email || errors.phone )return
+        if (errors.fname || errors.lname || errors.email || errors.phone) return
         if (!contact.fname.trim() || !contact.lname.trim() || !contact.email.trim() || !contact.phone.trim()) {
             setErrors({
                 fname: !contact.fname ? 'FirstName is required.' : '',
@@ -132,12 +132,15 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('/api/contact', contact); 
+            const response = await axios.post('/api/contact', contact);
             console.log("res", response)
             if (response.status === 201) {
                 console.log("201")
                 showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
-                
+                var serviceOptions = document.getElementsByName("serviceOption");
+                for (var i = 0; i < serviceOptions.length; i++) {
+                    serviceOptions[i].checked = false;
+                }
                 setContact({
                     fname: "",
                     lname: "",
@@ -161,7 +164,7 @@ function Contact() {
                 showToast("Internal server error", { style: { border: "1px solid red" } });
             }
         } catch (error) {
-            console.log("error",error);
+            console.log("error", error);
             showToast("Unexpected error", { style: { border: "1px solid red" } });
         }
     }
@@ -254,7 +257,7 @@ function Contact() {
                                 </div>
                                 <div className="col-md-4 checkbox-label">
                                     <div className="checkbox-animated">
-                                        <input id="checkbox_animated_5" onChange={handleChange} value={"Others"} type="radio" name='serviceOption' />
+                                        <input id="checkbox_animated_5" onChange={handleChange} checked value={"Others"} type="radio" name='serviceOption' />
                                         <label htmlFor="checkbox_animated_5">
                                             <span className="check"></span>
                                             <span className="box"></span>
@@ -355,7 +358,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
-                                   Q2: What technologies do you use?
+                                    Q2: What technologies do you use?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseSix" className="accordion-collapse collapse ">
@@ -406,7 +409,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="true" aria-controls="panelsStayOpen-collapseTen">
-                                   Q3: Do you offer automated testing solutions?
+                                    Q3: Do you offer automated testing solutions?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTen" className="accordion-collapse collapse ">
@@ -425,7 +428,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="true" aria-controls="panelsStayOpen-collapseEleven">
-                                   Q1: Do you design and develop custom websites?
+                                    Q1: Do you design and develop custom websites?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseEleven" className="accordion-collapse collapse show">
@@ -437,7 +440,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTweleve" aria-expanded="true" aria-controls="panelsStayOpen-collapseTweleve">
-                                   Q2: What platforms do you use for website development?
+                                    Q2: What platforms do you use for website development?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseTweleve" className="accordion-collapse collapse ">
@@ -466,7 +469,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseFourteen">
-                                 Q1:  What digital marketing services do you offer?
+                                    Q1:  What digital marketing services do you offer?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFourteen" className="accordion-collapse collapse show">
@@ -477,7 +480,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseFifteen">
-                                   Q2: How can your digital marketing services help me reach my target audience?
+                                    Q2: How can your digital marketing services help me reach my target audience?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFifteen" className="accordion-collapse collapse">
@@ -488,7 +491,7 @@ function Contact() {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="true" aria-controls="panelsStayOpen-collapseSixteen">
-                                  Q3:  Do you track and report on the results of your campaigns?
+                                    Q3:  Do you track and report on the results of your campaigns?
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseSixteen" className="accordion-collapse collapse ">
@@ -497,11 +500,11 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <Footer />
-          
+
         </div>
     );
 }

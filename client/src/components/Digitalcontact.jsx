@@ -139,6 +139,10 @@ function Digitalcontact() {
         console.log("201")
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
 
+        var digitalServiceList = document.getElementsByName("DigitalserviceList");
+        for (var i = 0; i < digitalServiceList.length; i++) {
+            digitalServiceList[i].checked = false;
+        }
         setState({
           name: "",
           phone: "",
@@ -205,13 +209,13 @@ function Digitalcontact() {
 
             <h5>I'M Interested In</h5>
             <div className="col-md-6 mt-4 ">
-              <input type="checkbox" name="Socialmedia" onChange={handleCheckboxChange} value={state.services.socialMedia} />
+              <input type="checkbox" name="DigitalserviceList" onChange={handleCheckboxChange} value={state.services.socialMedia} />
               <span className="fs-5"> Social Media Marketing</span>
               <br />
               <input
                 type="checkbox"
                 id="websidedevelopment"
-                name="websidedevelopment"
+                name="DigitalserviceList"
                 onChange={handleCheckboxChange} value={state.services.websidedevelopment}
               />
               <span className="fs-5"> Website Development</span>
@@ -219,7 +223,7 @@ function Digitalcontact() {
               <input
                 type="checkbox"
                 id="influencermarketing"
-                name="influencermarketing"
+                name="DigitalserviceList"
                 onChange={handleCheckboxChange} value={state.services.influencermarketing}
               />
               <span className="fs-5"> Influencer Marketing</span>
@@ -227,15 +231,15 @@ function Digitalcontact() {
               <input
                 type="checkbox"
                 id="brandindsolution"
-                name="brandindsolution"
+                name="DigitalserviceList"
                 onChange={handleCheckboxChange} value={state.services.brandindsolution}
               />
               <span className="fs-5"> Branding Solution</span>
               <br />
-              <input type="checkbox" id="seo" name="seo" />{" "}
+              <input type="checkbox" id="seo" name="DigitalserviceList" />{" "}
               <span className="fs-5"> Search Engine Optimization</span>
               <br />
-              <input type="checkbox" id="contentwriting" name="contentwriting" onChange={handleCheckboxChange} value={state.services.contentwriting} />
+              <input type="checkbox" id="contentwriting" name="DigitalserviceList" onChange={handleCheckboxChange} value={state.services.contentwriting} />
               <span className="fs-5"> Content Writing</span>
               <br />
             </div>
@@ -244,14 +248,14 @@ function Digitalcontact() {
                 <input
                   type="checkbox"
                   id="performancemarketing"
-                  name="performancemarketing"
+                  name="DigitalserviceList"
                   onChange={handleCheckboxChange} value={state.services.performancemarketing}
                 />
                 <span className="fs-5"> Performance Marketing</span> <br />
                 <input
                   type="checkbox"
                   id="eventmarketing"
-                  name="eventmarketing"
+                  name="DigitalserviceList"
                   onChange={handleCheckboxChange} value={state.services.eventmarketing}
                 />
                 <span className="fs-5"> Event Marketing</span>
@@ -259,18 +263,18 @@ function Digitalcontact() {
                 <input
                   type="checkbox"
                   id="videoproduction"
-                  name="videoproduction"
+                  name="DigitalserviceList"
                   onChange={handleCheckboxChange} value={state.services.videoproduction}
                 />
                 <span className="fs-5"> Video Production</span>
                 <br />
-                <input type="checkbox" id="consultancy" name="consultancy" onChange={handleCheckboxChange} value={state.services.consultancy} />
+                <input type="checkbox" id="consultancy" name="DigitalserviceList" onChange={handleCheckboxChange} value={state.services.consultancy} />
                 <span className="fs-5"> Consultancy</span>
                 <br />
                 <input
                   type="checkbox"
                   id="instagrammarketing"
-                  name="instagrammarketing"
+                  name="DigitalserviceList"
                   onChange={handleCheckboxChange} value={state.services.instagrammarketing}
                 />
                 <span className="fs-5"> Instagram Marketing</span>
@@ -278,7 +282,7 @@ function Digitalcontact() {
                 <input
                   type="checkbox"
                   id="shopifydevelopment"
-                  name="shopifydevelopment"
+                  name="DigitalserviceList"
                   onChange={handleCheckboxChange} value={state.services.shopifydevelopment}
                 />
                 <span className="fs-5"> Shopify Development</span>
