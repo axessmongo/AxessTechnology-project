@@ -209,6 +209,7 @@ img {
       {
       transform: translate(-50%, 0%);
       max-height: max-content;
+      z-index: 12;
     }
   }
 
@@ -1349,7 +1350,7 @@ img {
     .nav-item {
       .drop {
         position: relative;
-        z-index: 12;
+        z-index: -3;  
       }
     }
   }
