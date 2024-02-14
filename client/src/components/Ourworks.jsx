@@ -107,7 +107,7 @@ export default function CategoriesIn() {
                         <p className="secondary-text m-0">Insurance</p>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                   <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
@@ -124,7 +124,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item col-md-2" role="presentation">
+                  {/* <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
                         className="nav-link content"
@@ -193,10 +193,10 @@ export default function CategoriesIn() {
                       </div>
                       <div className="d-flex justify-content-evenly">
                         <div className="pt-2 demo-bts">
-                          <button className="gold-btn m-0 green-btn">
+                          <Link to={'http://axesstechnology-ecommerce-2.xyz/'} className="text-decoration-none" target="_blank"><button className="gold-btn m-0 green-btn">
                             <span className="d-block">Demo Live</span>{" "}
                             <i className="bi bi-arrow-right"></i>
-                          </button>
+                          </button></Link>
                         </div>
                         <div className="pt-2 ">
                           <Link
@@ -261,10 +261,11 @@ export default function CategoriesIn() {
                       </div>
                       <div className="d-flex justify-content-evenly">
                         <div className="pt-2">
-                          <button className="gold-btn m-0">
+                          <Link to={'https://axesstechnology-ecommerce-1.xyz'} target="_blank" className="text-decoration-none"><button className="gold-btn m-0">
                             <span className="d-block">Demo Live</span>{" "}
                             <i className="bi bi-arrow-right"></i>
                           </button>
+                          </Link>
                         </div>
                         <div className="pt-2 ">
                           <Link
@@ -347,10 +348,10 @@ export default function CategoriesIn() {
                           </p>
                           <div className="d-flex justify-content-evenly">
                             <div className="pt-2 demo-bts">
-                              <button className="gold-btn m-0 green-btn">
+                              <Link to={'https://axesstechnology-portfolio.xyz'} target="_blank" className="text-decoration-none"> <button className="gold-btn m-0 green-btn">
                                 <span className="d-block">Demo Live</span>{" "}
                                 <i className="bi bi-arrow-right"></i>
-                              </button>
+                              </button></Link>
                             </div>
                             <div className="pt-2 ">
                               <Link
@@ -557,7 +558,7 @@ export default function CategoriesIn() {
                           <div className="pt-2">
                             <h3>Catering</h3>
                             <p className="pt-2">
-                            Welcome to our Culinary Gallery, where each dish tells a story of craftsmanship and flavor. At Catering, we believe in the power of gastronomy to create unforgettable moments. Our culinary artisans curate an unparalleled dining experience, combining creativity with a passion for perfection.
+                              Welcome to our Culinary Gallery, where each dish tells a story of craftsmanship and flavor. At Catering, we believe in the power of gastronomy to create unforgettable moments. Our culinary artisans curate an unparalleled dining experience, combining creativity with a passion for perfection.
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2">
@@ -802,7 +803,7 @@ export default function CategoriesIn() {
                             </p>
                           </div>
                           <div className="pt-2">
-                            <h3>Time Zone (Watch)</h3>
+                            <h3>Hospital</h3>
                             <p className="pt-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                               elit. Alias, pariatur esse. Consectetur earum
@@ -812,10 +813,10 @@ export default function CategoriesIn() {
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2 demo-bts">
-                                <button className="gold-btn m-0 green-btn">
+                                <Link to={'https://axesstechnology-hospital-1.xyz'} target="_blank" className="text-decoration-none"><button className="gold-btn m-0 green-btn">
                                   <span className="d-block">Demo Live</span>{" "}
                                   <i className="bi bi-arrow-right"></i>
-                                </button>
+                                </button></Link>
                               </div>
                               <div className="pt-2 ">
                                 <Link

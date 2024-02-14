@@ -214,7 +214,7 @@ function Digitalcontact() {
                 name="websidedevelopment"
                 onChange={handleCheckboxChange} value={state.services.websidedevelopment}
               />
-              <span className="fs-5"> Webside Development</span>
+              <span className="fs-5"> Website Development</span>
               <br />
               <input
                 type="checkbox"

@@ -9,7 +9,7 @@ import pmodel from '../assets/images/services/p-model.png';
 import hmodel from '../assets/images/services/h-model.png';
 import ai from '../assets/images/services/robot.gif';
 import digi from '../assets/images/services/digi.png';
-import AOS from 'aos';  
+import AOS from 'aos';
 function Services() {
     const [nav, setNav] = useState(false)
     const [popup, setPopup] = useState(true)
@@ -252,7 +252,7 @@ function Services() {
                                             </div>
                                         </div>
                                     </div> */}
-                                      <Link to={"/development"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                                    <Link to={"/development"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                                 </div>
                             </div>
 
@@ -314,10 +314,10 @@ function Services() {
                                   
                                 </div>
                             </div> */}
-                            
+
                         </div>
-                        <div className="p-5 text-white softtest mb-5" id='softtest'>
-                            <div className="">
+                        <div className="my-5 text-white softtest mb-5" id='softtest'>
+                            <div className="p-5">
                                 <div className=" position-relative z-3">
                                     <h1 className='light-header'>
                                         Reliability
@@ -449,54 +449,58 @@ function Services() {
                                 </div>
                             </div>
                         </div>
-                        <div className="p-5 roller-container text-white min-vh-100 webdev" id='webdev'>
-                            <div className=" position-relative z-3">
-                                <h1 className='light-header'>
-                                    intelligent
-                                </h1>
-                                <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                    Web Development
-                                </h1>
-                                <div className="row align-items-center">
-                                    <div className="col-md-8">
-                                        <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                            Crafting Websites that Captivate and Convert</h4>
-                                        <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                            In today's digital world, your website is the first impression you make on potential customers. It's your virtual storefront, your digital ambassador, and the key to unlocking online success. At Axess Technology, we don't just build websites; we craft online experiences that captivate visitors, fuel engagement, and seamlessly convert them into loyal customers.
-                                        </p>
+                        <div className="my-5 roller-container text-white webdev" id='webdev'>
+                            <div className="min-vh-100 p-5">
+                                <div className=" position-relative z-3">
+                                    <h1 className='light-header'>
+                                        intelligent
+                                    </h1>
+                                    <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                        Web Development
+                                    </h1>
+                                    <div className="row align-items-center">
+                                        <div className="col-md-8">
+                                            <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                                Crafting Websites that Captivate and Convert</h4>
+                                            <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                                In today's digital world, your website is the first impression you make on potential customers. It's your virtual storefront, your digital ambassador, and the key to unlocking online success. At Axess Technology, we don't just build websites; we craft online experiences that captivate visitors, fuel engagement, and seamlessly convert them into loyal customers.
+                                            </p>
+                                        </div>
+                                        <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                            <img src={ai} className='w-100 animatedimg' alt="service" />
+                                        </div>
                                     </div>
-                                    <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                        <img src={ai} className='w-100 animatedimg' alt="service" />
-                                    </div>
+                                    <br></br>
+                                    <Link to={"/webdevelopment"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
                                 </div>
-                                <br></br>
-                                <Link to={"/webdevelopment"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
 
                             </div>
                         </div>
-                        <div className="roller-container text-white min-vh-100 digi" id='digi'>
-                            <div className="position-relative z-3 p-5">
-                                <h1 className='light-header'>
-                                    Socializing
-                                </h1>
-                                <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                    Digital Marketing
-                                </h1>
-                                <div className="row align-items-center">
-                                    <div className="col-md-8">
-                                        <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
-                                            Ignite Your Brand and Dominate the Digital Landscape
-                                        </h4>
-                                        <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                            In today's digital age, a captivating online presence is no longer a luxury, it's a necessity. At Axess Technology, we believe in the power of digital marketing to fuel brand awareness, ignite engagement, and propel conversions. Our team of expert strategists, content creators, and data-driven wizards weave the magic that takes your brand from the shadows to the spotlight.
-                                        </p>
+                        <div className="mt-5 roller-container text-white digi" id='digi'>
+                            <div className="min-vh-100 p-5">
+                                <div className="position-relative">
+                                    <h1 className='light-header'>
+                                        Socializing
+                                    </h1>
+                                    <h1 className='primary-header mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                        Digital Marketing
+                                    </h1>
+                                    <div className="row align-items-center">
+                                        <div className="col-md-8">
+                                            <h4 className=' mb-4' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom" >
+                                                Ignite Your Brand and Dominate the Digital Landscape
+                                            </h4>
+                                            <p className='primary-text mb-0' data-aos='fade-up' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                                In today's digital age, a captivating online presence is no longer a luxury, it's a necessity. At Axess Technology, we believe in the power of digital marketing to fuel brand awareness, ignite engagement, and propel conversions. Our team of expert strategists, content creators, and data-driven wizards weave the magic that takes your brand from the shadows to the spotlight.
+                                            </p>
+                                        </div>
+                                        <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
+                                            <img src={digi} className='w-100 animatedimg' alt="service" />
+                                        </div>
                                     </div>
-                                    <div className='col-md-4' data-aos='zoom-out' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom">
-                                        <img src={digi} className='w-100 animatedimg' alt="service" />
-                                    </div>
-                                </div>
                                     <br></br>
-                                <Link to={"/digitalmarketing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                                    <Link to={"/digitalmarketing"} className='gold-btn' data-aos='fade' data-aos-duration='600' data-aos-anchor-placement="bottom-bottom"><span className='d-block'>Know More</span> <i className="bi bi-arrow-right"></i></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

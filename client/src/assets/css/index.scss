@@ -209,6 +209,7 @@ img {
       {
       transform: translate(-50%, 0%);
       max-height: max-content;
+      z-index: 12;
     }
   }
 
@@ -1234,8 +1235,11 @@ img {
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
   z-index: 5;
+  cursor: default !important;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
 
@@ -1349,7 +1353,7 @@ img {
     .nav-item {
       .drop {
         position: relative;
-        z-index: 12;
+        z-index: -3;  
       }
     }
   }

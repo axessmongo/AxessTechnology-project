@@ -8,6 +8,7 @@ import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
+// import Ceo from "../src/assets/images/Ceo.png"
 
 function About() {
   return (
@@ -85,8 +86,8 @@ function About() {
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
               <div class="blur-img aboutMdimg">
                 <img
-                  src={
-                    "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                  src={  "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                    // Ceo
                   }
                   alt="Venkatesanj"
                 />
@@ -95,6 +96,7 @@ function About() {
                 <img
                   src={
                     "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                    // Ceo
                   }
                   alt="Venkatesanj"
                 />
@@ -216,7 +218,7 @@ function About() {
                 <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target="_blank">
                   <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
                 </Link>
-                <Link to={'https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw=='} target="_blank">
+                <Link to={'https://www.instagram.com/axess_technology/'} target="_blank">
                   <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
                 </Link>
                 <Link>

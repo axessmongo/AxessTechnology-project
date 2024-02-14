@@ -16,13 +16,33 @@ export default function Links() {
     }
   }
 
-  // useEffect(() => {
-      
-  //   console.log(hover);
-  // }, [hover])
+  const [scrollClass, setScrollClass] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // Check if the scroll position is greater than 50
+      if (scrollPosition > 100) {
+        // Add a class when scroll is greater than 50
+        setScrollClass('active');
+      } else {
+        // Remove the class when scroll is 50 or less
+        setScrollClass('');
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className={`links-container row align-items-center text-white ${hover}`}>
+    <div className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
       <div className="col-3">
         <a href='/' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={(color) => setcolorfunctoin('whatsappcolor')}
@@ -48,7 +68,7 @@ export default function Links() {
         </a>
       </div>
       <div className="col-3">
-        <a href='https://www.instagram.com/axess_technology?igsh=MXQ2MXdpZzJnaHo2aw==' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
+        <a href='https://www.instagram.com/axess_technology/' target='_blank' className="d-flex justify-content-center text-decoration-none text-white"
           onMouseEnter={(color) => setcolorfunctoin('instagramcolor')}
           onMouseLeave={() => setHover('')}>
           <div className="position-relative">
