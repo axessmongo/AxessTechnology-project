@@ -65,9 +65,9 @@ function Navbar() {
           <p>Technology</p>
         </NavLink>
         <div className='order-3 order-lg-3'>
-          <NavLink to={'/login'} className='gold-btn px-4'>
+          {/* <NavLink to={'/login'} className='gold-btn px-4'>
             <span className='d-block green-text-1'>Login</span>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
 
