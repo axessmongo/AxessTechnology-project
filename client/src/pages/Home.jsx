@@ -11,7 +11,6 @@ import Industries from '../components/Industries';
 import Techsection from '../components/Techsection';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
-import Categories from '../components/Categories';
 import Development from './Development';
 import bannerimg from '../assets/images/homeimg.png'
 export default function Home() {
@@ -55,7 +54,6 @@ export default function Home() {
             <Solutions/>
             <Techsection/>
             <Industries/>
-            {/* <Categories/> */}
             <Carousel/>
             <Footer/>
             

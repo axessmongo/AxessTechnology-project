@@ -13,9 +13,7 @@ import EmailVerify from './pages/EmailVerify';
 import { Navigate } from "react-router-dom";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Categories from './components/Categories';
 import Ourworks from './components/Ourworks'
-import Demo from './components/Demo';
 import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
 import ScrollTop from './components/ScrollTop';

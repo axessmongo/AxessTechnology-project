@@ -8,7 +8,6 @@ import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
-// import Ceo from "../src/assets/images/Ceo.png"
 
 function About() {
   return (
@@ -49,7 +48,6 @@ function About() {
                 <img
                   src={
                     "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
-                    // Ceo
                   }
                   alt="Venkatesanj"
                 />
@@ -80,7 +78,6 @@ function About() {
               <div class="blur-img aboutMdimg d-none d-lg-block">
                 <img
                   src={"https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
-                    // Ceo
                   }
                   alt="Venkatesanj"
                 />
@@ -89,7 +86,6 @@ function About() {
                 <img
                   src={
                     "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
-                    // Ceo
                   }
                   alt="Venkatesanj"
                 />
