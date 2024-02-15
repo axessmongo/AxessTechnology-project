@@ -1401,6 +1401,19 @@ img {
   .yellow-card .border-dark {
     border: none !important;
   }
+
+  .rounded-img img{
+    position: unset;
+    transform: none;
+    width: 200px;
+    height: 200px;
+    object-position: 16px -40px;
+    margin: auto;
+  }
+
+  .hero-2{
+    background-size: 200%;
+  }
 }
 
 @media(max-width:768px) {

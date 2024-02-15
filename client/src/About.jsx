@@ -19,38 +19,21 @@ function About() {
         h2={"Axess Technology: Weaving Digital Successes for 8 Years"}
       />
 
-      <div className="container-fluid bg-green-1">
-        <p className="primary-header text-white text-center whyustext" data-aos="fade-up" data-aos-duration="1000"> Why Us</p>
-        <div className="row d-flex ">
-          <div className="col-md-6 col-sm-5 justify-content-sm-center mt-5" data-aos="fade-right" data-aos-duration="1000">
-            <div className="whyusimg">
-              <img src={whyus2} alt="whyus2" />
+
+
+      <div className="">
+        <div className="row">
+          <div className="col-md-5 bg-axess-gold-2 d-none d-md-block"  data-aos="fade-right" data-aos-duration="600">
+            <div className="container">
+              <div className="col-lg-6 mx-auto pt-5">
+              <img src={whyus2} className="" alt="whyus2" />
+              </div>
             </div>
           </div>
-          {/* <div className="col-md-1 text-center text-white">
-            <div className="">
-              <p className="primary-header">W</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">h</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">y</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">U</p>
-            </div>
-            <div>
-              <p className="primary-header mb-1">S</p>
-            </div>
-          </div> */}
-
-          <div className="col-md-6 col-sm-6 mt-5" data-aos="fade-left" data-aos-duration="1000">
-            <div className="row justify-content-center align-items-center text-white text-center">
-              <div className="col-md-11 justify-content-center secondary-text mx-auto">
-                <p>Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
-
-              </div>
+          <div className="col-md-7 bg-green-1"  data-aos="fade-left" data-aos-duration="600">
+            <div className="container d-flex flex-column align-items-center justify-content-center h-100 py-5">
+              <p className="bg-img-2 mx-auto"> Why Us</p>
+              <p className="secondary-text text-white">Axess isn't just a tech company, it's your digital ecosystem architect. We weave the code that empowers your business, test the limits to ensure flawless experiences, craft websites that captivate and convert, and ignite your online presence with data-driven marketing magic. With 8 years of experience and a passionate team, we don't just deliver services, we build long-term partnerships, tailoring solutions that unlock your digital potential across software development, testing, website development, and digital marketing. Let's write your digital success story together.</p>
             </div>
           </div>
         </div>
@@ -58,9 +41,19 @@ function About() {
 
       <div className="container">
         <div className=" pt-3 row justify-content-end">
-          <div className="col-md-8">
+          <div className="col-lg-8 order-2 order-lg-1">
             <div className="p-3 mx-2" data-aos="fade-right" data-aos-duration="1000">
               <h1 className="mt-5 text-center bg-img-1 mx-auto">Our CEO</h1>
+              
+              <div class="rounded-img d-lg-none">
+                <img
+                  src={
+                    "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                    // Ceo
+                  }
+                  alt="Venkatesanj"
+                />
+              </div>
               <p className="mt-3 ceo-content">
                 Founded by a passionate entrepreneur, Mr. Venkteshan, Axess
                 Technology has been igniting digital dreams for the past eight
@@ -82,11 +75,11 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 order-1 order-lg-2 d-none d-lg-block">
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
-              <div class="blur-img aboutMdimg">
+              <div class="blur-img aboutMdimg d-none d-lg-block">
                 <img
-                  src={  "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                  src={"https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
                     // Ceo
                   }
                   alt="Venkatesanj"
