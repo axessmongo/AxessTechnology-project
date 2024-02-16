@@ -153,28 +153,28 @@ function Development() {
           </div>
 
           <div>
-            <div className="row d-flex justify-content-evenly pt-4">
+            <div className="row justify-content-evenly pt-4">
               <div
-                className="col-md-3 "
+                className="col-md-5 col-lg-4 col-xl-3 py-1"
                 data-aos="zoom-out-right"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card">
                   <h4>Experienced Team</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     Our team has a proven track record of delivering successful
                     software projects for clients across diverse industries.
                   </p>
                 </div>
               </div>
               <div
-                className="col-md-3"
+                className="col-md-5 col-lg-4 col-xl-3 py-1"
                 data-aos="zoom-out-left"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card">
                   <h4>Custom Solutions</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     We don't offer one-size- fits-all solutions. We build
                     software that is uniquely tailored to your specific
                     requirements.
@@ -187,36 +187,36 @@ function Development() {
           <div>
             <div className="row justify-content-evenly">
               <div
-                className="col-md-3 d-flex justify-content-center align-items-center"
+                className="col-md-4 col-xl-3 d-flex justify-content-center align-items-center py-1"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card h-auto">
                   <h4>Data-Driven Approach</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     We leverage data and analytics to optimize your software and
                     measure its impact on your business.
                   </p>
                 </div>
               </div>
               <div
-                className="col-md-4 col-sm-6 col-9"
+                className="col-md-3 col-sm-6 col-9"
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1500"
               >
                 <div>
-                  <img src={whychooseimg} className="img-fluid" alt="" />
+                  <img src={whychooseimg} className="img-fluid" alt={whychooseimg} />
                 </div>
               </div>
               <div
-                className="col-md-3 d-flex justify-content-center align-items-center"
+                className="col-md-4 col-xl-3 d-flex justify-content-center align-items-center py-1"
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card h-auto">
                   <h4>Transparent Communication</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     We keep you informed throughout the development process and
                     value your feedback.
                   </p>
@@ -228,26 +228,26 @@ function Development() {
           <div>
             <div className="row d-flex justify-content-evenly pb-4">
               <div
-                className="col-md-3"
+                className="col-md-5 col-lg-4 col-xl-3 py-1"
                 data-aos="zoom-in-right"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card">
                   <h4>Agile Methodology</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     We embrace agile development practices to ensure
                     flexibility, quick iterations, and continuous improvement.
                   </p>
                 </div>
               </div>
               <div
-                className="col-md-3"
+                className="col-md-5 col-lg-4 col-xl-3 py-1"
                 data-aos="zoom-in-left"
                 data-aos-duration="1000"
               >
-                <div className="small-card mt-3">
+                <div className="small-card">
                   <h4>Experienced Team</h4>
-                  <p className="primary-text">
+                  <p className="primary-text mb-0">
                     Our team has a proven track record of delivering successful
                     software projects for clients across diverse industries.
                   </p>
@@ -336,8 +336,8 @@ function Development() {
             </div>
           </div>
           <div className="col-md-5  col-sm-12 align-items-center d-flex mt-4">
-            <div className="" data-aos="fade-left" data-aos-duration="600">
-              <img src={Process} className="img-fluid w-100" alt="" />
+            <div className="mx-auto" data-aos="fade-left" data-aos-duration="600">
+              <img src={Process} className="img-fluid w-100" alt="" style={{height:'400px'}}/>
             </div>
           </div>
         </div>
@@ -359,7 +359,7 @@ function Development() {
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-anchor-placement="bottom-bottom"
-              className="primary-text fw-medium"
+              className="primary-text mb-0 fw-medium"
             >
               As a full-stack software development agency, We make some
               extraordinary things that engage your users.
@@ -659,7 +659,7 @@ function Development() {
                         data-bs-interval="3000"
                       >
                         <div className="row p-3">
-                          <div className="col-md-4 mb-5">
+                          <div className="col-md-4">
                             <div
                               className="text-center pt-3 mt-3"
                               data-aos="zoom-in"
@@ -791,7 +791,7 @@ function Development() {
                       </div>
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
-                          <div className="col-md-4 mb-5">
+                          <div className="col-md-4">
                             <div
                               className="text-center pt-3 mt-3"
                               data-aos="zoom-in"
@@ -922,7 +922,7 @@ function Development() {
                       </div>
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
-                          <div className="col-md-4 mb-5">
+                          <div className="col-md-4">
                             <div
                               className="text-center pt-3 mt-3"
                               data-aos="zoom-in"
@@ -1053,7 +1053,7 @@ function Development() {
                       </div>
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
-                          <div className="col-md-4 mb-5">
+                          <div className="col-md-4">
                             <div
                               className="text-center pt-3 mt-3"
                               data-aos="zoom-in"
@@ -1186,7 +1186,7 @@ function Development() {
                       </div>
                       <div className="carousel-item" data-bs-interval="3000">
                         <div className="row p-3">
-                          <div className="col-md-4 mb-5">
+                          <div className="col-md-4">
                             <div
                               className="text-center pt-3 mt-3"
                               data-aos="zoom-in"

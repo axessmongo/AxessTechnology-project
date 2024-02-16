@@ -85,5 +85,33 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon{
     background-color:var(--axess-gold-3);
-    
+    // padding: 10px;
+    background-image: unset !important;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1;
+        font-size: 20px;
+    }
+}
+
+.carousel-control-next-icon::after{
+    content: "\203A";
+}
+
+
+.carousel-control-prev-icon::after{
+    content: '\2039';
+}
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: .8 !important;
 }
