@@ -26,12 +26,15 @@ import ForgotPassword from './pages/Forgotpassword';
 import DigitalMarketing from './pages/DigitalMarketing';
 import Policy from './pages/Policy';
 import Popup from './pages/Popup';
+import Admindashboard from './Dashboard/Admindashboard';
+import Adminproject from "./Dashboard/Adminproject"
 import Clientdashboard from './Dashboard/Clientdashboard';
 import Empproject from "./Dashboard/Empproject"
 import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
 import Empreg from './Dashboard/Empreg';
 import Digitalcontact from './components/Digitalcontact';
+
 
 
 
@@ -66,6 +69,8 @@ function Routing() {
                     <Route path='/digitalmarketing' element={<DigitalMarketing />} />
                     <Route path='/privacypolicy' element={<Policy />} />
                     <Route path='/popup' element={<Popup />} />
+                    <Route path='/admindashboard' element={<Admindashboard />} />
+                    <Route path='/adminproject' element={<Adminproject />} />
                     <Route path='/clientdashboard' element={<Clientdashboard />} />
                     <Route path='/empdashboard' element={<Empdashboard />} />
                     <Route path='/clientproject' element={<ClientProject />} />

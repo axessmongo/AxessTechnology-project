@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../assets/images/logo/logo.png'
 import mandub from '../assets/images/man.png'
 import axios from 'axios';
-
-export default function ClientProject() {
+function Adminproject() {
     const [menuDisplayed, setMenuDisplayed] = useState(false);
     const [projects, setProjects] = useState([])
 
@@ -23,7 +22,6 @@ export default function ClientProject() {
     useEffect(() => {
         get_data();
     }, [])
-
     return (
         <div id="wrapper" className={menuDisplayed ? 'menuDisplayed' : ''}>
             <div id="sidebar-wrapper" className='position-fixed'>
@@ -75,6 +73,7 @@ export default function ClientProject() {
                                 <th className='text-center'>Status</th>
                                 <th className='text-center'>Start Date</th>
                                 <th className='text-center'>Complete Date</th>
+                                <th className='text-center'>Resource</th>
                                 <th className='text-center'>Action</th>
                                 {/* <th className='text-center'>Options</th> */}
 
@@ -94,6 +93,7 @@ export default function ClientProject() {
                                     <td>{project.status}</td>
                                     <td>{project.startdate}</td>
                                     <td>{project.enddate}</td>
+                                    <td>{project.resource}</td>
                                 </tr>
                             ))}
                         </thead>
@@ -105,3 +105,5 @@ export default function ClientProject() {
         </div>
     )
 }
+
+export default Adminproject
