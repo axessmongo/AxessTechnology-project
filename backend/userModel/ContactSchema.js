@@ -5,12 +5,18 @@ const contactSchema = new Schema({
   fname: {
     type: "string",
   },
+  name:{
+    type:"string"
+  },
   lname: {
     type: "string",
   },
   email: {
     type: "string",
     unquie: true,
+  },
+  phone:{
+    type:number
   },
   address: {
     type: "string",
