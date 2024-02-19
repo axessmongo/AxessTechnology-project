@@ -4,12 +4,10 @@ const AxessTechnology = require("../TaskControl/Control.js");
 const HomepageContact = require("../TaskControl/HomepageControl.js");
 const AxessRestPassword = require("../TaskControl/Reset-password.js");
 const DashBoardAxess = require("../TaskControl/employee.js");
-const DigitalMarketing =require("../TaskControl/DigitialControl.js");
+
 
 //homepage contact form:
 router.post("/api/contact", HomepageContact.Contactpostmethod);
-//DigitalmarketingService.
-router.post("/api/digital", DigitalMarketing.DigitalMarketing);
 //login and register form
 router.post("/api/register", AxessTechnology.Register);
 router.post("/api/login", AxessTechnology.loginpost);
