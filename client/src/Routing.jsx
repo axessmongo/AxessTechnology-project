@@ -1,25 +1,21 @@
 import React, { useState, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import About from './About';
 import Technologies from './components/Technologies';
-import Solutions from './components/Solutions';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import EmailVerify from './pages/EmailVerify';
 import { Navigate } from "react-router-dom";
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Ourworks from './components/Ourworks'
 import Development from './pages/Development';
 import SoftwareDev from './components/SoftwareDev';
 import ScrollTop from './components/ScrollTop';
 import Loader from './components/Loader';
 import Testing from './pages/Testing';
-// import Ai from './pages/Ai';
 import Webdev from './pages/Webdev';
 import PasswordReset from './pages/PasswordReset';
 import ForgotPassword from './pages/Forgotpassword';
@@ -61,7 +57,6 @@ function Routing() {
                     <Route path='/ourworks' element={<Ourworks />} />
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
-                    {/* <Route path='/ai' element={<Ai />} /> */}
                     <Route path='/webdevelopment' element={<Webdev />} />
                     <Route path='/digitalmarketing' element={<DigitalMarketing />} />
                     <Route path='/privacypolicy' element={<Policy />} />
