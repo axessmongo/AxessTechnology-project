@@ -7,6 +7,7 @@ import Ourworksimg2 from "../assets/images/demo/Ourworksimg2.png"
 import Ourworksimg3 from "../assets/images/demo/Ourworksimg3.png"
 import photodemo from "../assets/images/demo/photography.png";
 import cateringdemo from "../assets/images/demo/catering.png";
+import Real from "../assets/images/demo/Real.png"
 import gitfdemo from "../assets/images/demo/gift.png";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
@@ -625,9 +626,9 @@ export default function CategoriesIn() {
                       <div className="col-md-6 mt-3">
                         <div
                           className=" p-1"
-                          style={{ backgroundColor: " #05463c" }}
+                          // style={{ backgroundColor: " #05463c" }}
                         >
-                          <img src={photodemo} alt="" className="img-fluid" />
+                          <img src={Real} alt="" className="img-fluid" />
                         </div>
                       </div>
                       <div className="col-md-6 mt-3">
