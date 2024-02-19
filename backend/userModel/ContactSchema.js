@@ -16,7 +16,7 @@ const contactSchema = new Schema({
     unquie: true,
   },
   phone:{
-    type:number
+    type:Number
   },
   address: {
     type: "string",
