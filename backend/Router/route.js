@@ -4,6 +4,7 @@ const AxessTechnology = require("../TaskControl/Control.js");
 const HomepageContact = require("../TaskControl/HomepageControl.js");
 const AxessRestPassword = require("../TaskControl/Reset-password.js");
 const DashBoardAxess = require("../TaskControl/employee.js");
+const DigitalMarketing =require("../TaskControl/DigitialControl.js");
 
 //homepage contact form:
 router.post("/api/contact", HomepageContact.Contactpostmethod);
@@ -19,5 +20,7 @@ router.get("/:id/:token", AxessRestPassword.verifyPassword);
 router.post("/api/dashboard/post", DashBoardAxess.Employerpost);
 router.get("/api/dashboard/get", DashBoardAxess.employeegetting);
 router.put("/api/:id", DashBoardAxess.employeeput);
+//DigitalmarketingService.
+router.post("/api/digital", DigitalMarketing.DigitalMarketing);
 
 module.exports = router;
