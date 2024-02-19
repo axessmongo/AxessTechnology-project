@@ -8,6 +8,9 @@ const DigitalMarketing =require("../TaskControl/DigitialControl.js");
 
 //homepage contact form:
 router.post("/api/contact", HomepageContact.Contactpostmethod);
+
+//DigitalmarketingService.
+router.post("/api/digital", DigitalMarketing.DigitalMarketing);
 //login and register form
 router.post("/api/register", AxessTechnology.Register);
 router.post("/api/login", AxessTechnology.loginpost);
@@ -20,7 +23,5 @@ router.get("/:id/:token", AxessRestPassword.verifyPassword);
 router.post("/api/dashboard/post", DashBoardAxess.Employerpost);
 router.get("/api/dashboard/get", DashBoardAxess.employeegetting);
 router.put("/api/:id", DashBoardAxess.employeeput);
-//DigitalmarketingService.
-router.post("/api/digital", DigitalMarketing.DigitalMarketing);
 
 module.exports = router;
