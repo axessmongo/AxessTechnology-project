@@ -1,22 +1,13 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const contactSchema = new Schema({
-  fname: {
-    type: "string",
-  },
-  name:{
-    type:"string"
-  },
-  lname: {
+const Digital = new Schema({
+  name: {
     type: "string",
   },
   email: {
     type: "string",
     unquie: true,
-  },
-  phone:{
-    type:Number
   },
   address: {
     type: "string",
@@ -24,10 +15,16 @@ const contactSchema = new Schema({
   serviceOption: {
     type: "string",
   },
+  phone: {
+    type: Number,
+  },
+  address: {
+    type: "string",
+  },
   website: {
     type: "string",
   },
-  company: {
+  company :{
     type: "string",
   },
   services: {
@@ -41,6 +38,6 @@ const contactSchema = new Schema({
   },
 });
 
-const contact = mongoose.model("contact", contactSchema);
+const DigitalMarket = mongoose.model("DigitalMarket", Digital);
 
-module.exports = contact;
+module.exports = DigitalMarket;
