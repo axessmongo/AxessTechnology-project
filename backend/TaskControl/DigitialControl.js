@@ -2,6 +2,7 @@ const DigitalService = require("../userModel/DigitalMarketing.js");
 
 const DigitalMarketing = async (req, res) => {
   
+  console.log("req.body", req.body);
   const {
     name,
     email,

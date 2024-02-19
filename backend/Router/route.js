@@ -6,7 +6,7 @@ const AxessRestPassword = require("../TaskControl/Reset-password.js");
 const DashBoardAxess = require("../TaskControl/employee.js");
 
 
-//homepage contact form:
+//homepage contact form
 router.post("/api/contact", HomepageContact.Contactpostmethod);
 //login and register form
 router.post("/api/register", AxessTechnology.Register);

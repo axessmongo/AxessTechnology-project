@@ -7,6 +7,6 @@ const DigitalMarketing =require("../TaskControl/DigitialControl.js");
 
 router.post("/contact/digital", DigitalMarketing.DigitalMarketing);
 
-
+console.log("dig route")
 
 module.exports = router;
