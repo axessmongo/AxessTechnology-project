@@ -9,7 +9,7 @@ const DigitalMarketing =require("../TaskControl/DigitialControl.js");
 //homepage contact form:
 router.post("/api/contact", HomepageContact.Contactpostmethod);
 //DigitalmarketingService.
-router.post("/api/digital", DigitalMarketing.DigitalMarketing);
+router.post("/digital/Contact", DigitalMarketing.DigitalMarketing);
 //login and register form
 router.post("/api/register", AxessTechnology.Register);
 router.post("/api/login", AxessTechnology.loginpost);
