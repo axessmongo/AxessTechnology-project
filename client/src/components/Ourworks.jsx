@@ -92,7 +92,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </li>
-                  {/* <li className="nav-item col-md-2" role="presentation">
+                  <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
                         className="nav-link content"
@@ -107,7 +107,7 @@ export default function CategoriesIn() {
                         <p className="secondary-text m-0">Insurance</p>
                       </div>
                     </div>
-                  </li> */}
+                  </li>
                   <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
@@ -124,7 +124,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </li>
-                  {/* <li className="nav-item col-md-2" role="presentation">
+                  <li className="nav-item col-md-2" role="presentation">
                     <div className="  ">
                       <div
                         className="nav-link content"
@@ -139,7 +139,7 @@ export default function CategoriesIn() {
                         <p className="secondary-text m-0">School</p>
                       </div>
                     </div>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -417,10 +417,10 @@ export default function CategoriesIn() {
 
                           <div className="d-flex justify-content-evenly">
                             <div className="pt-2">
-                              <button className="gold-btn m-0">
+                             <Link to={'https://axesstechnology-portfolio-1.xyz/'} target="_blank" className="text-decoration-none"> <button className="gold-btn m-0">
                                 <span className="d-block">Demo Live</span>{" "}
                                 <i className="bi bi-arrow-right"></i>
-                              </button>
+                              </button></Link>
                             </div>
                             <div className="pt-2 ">
                               <Link
@@ -608,6 +608,77 @@ export default function CategoriesIn() {
                         </div>
                       </div>
                     </div>
+                    
+                  </div>
+                </section>
+
+                <section>
+                  <div className="container py-4 my-3">
+                    <div className="text-center pb-2">
+                      <h3>We Create Products That Users Love</h3>
+                      <p>
+                        Explore Our Award-winning Products Used by Millions
+                        Around the World.
+                      </p>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-6 mt-3">
+                        <div
+                          className=" p-1"
+                          style={{ backgroundColor: " #05463c" }}
+                        >
+                          <img src={photodemo} alt="" className="img-fluid" />
+                        </div>
+                      </div>
+                      <div className="col-md-6 mt-3">
+                        <div className="py-3">
+                          <h3>Business</h3>
+                          <div className="py-3">
+                            <p className="fw-bold text-warning">
+                              Id.No : AT-BN-03
+                            </p>
+                          </div>
+                          <div className="pt-2">
+                            <h3>Real Estate</h3>
+                            <p className="pt-2">
+                              Welcome to our Photography Portfolio, where every image tells a captivating story. Within our exhibits, we celebrate the essence of each moment captured, encapsulating emotions and narratives. With a carefully curated selection of exclusive compositions spanning various genres and themes, we aim to elevate your portfolio with timeless elegance and allure. Explore our gallery and immerse yourself in the art of visual storytelling.
+                            </p>
+                            <div className="d-flex justify-content-evenly">
+                              <div className="pt-2 demo-bts">
+                               <Link to={'https://axesstechnology-bussiness-1.in/'} target="_blank" className="text-decoration-none"> <button className="gold-btn m-0 green-btn">
+                                  <span className="d-block">Demo Live</span>{" "}
+                                  <i className="bi bi-arrow-right"></i>
+                                </button></Link>
+                              </div>
+                              <div className="pt-2 ">
+                                <Link
+                                  to={"/webdevelopment"}
+                                  onClick={() => setValue(true)}
+                                  className="text-decoration-none"
+                                >
+                                  <button className="gold-btn m-0 green-btn">
+                                    <span className="d-block">Pricing</span>{" "}
+                                    <i className="bi bi-arrow-right"></i>
+                                  </button>
+                                </Link>
+                              </div>
+                              <div className="pt-2">
+                                <Link
+                                  to={"/contact"}
+                                  className="text-decoration-none"
+                                >
+                                  {" "}
+                                  <button className="gold-btn m-0 green-btn">
+                                    <span className="d-block">BuyNow</span>{" "}
+                                    <i className="bi bi-arrow-right"></i>
+                                  </button>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -646,7 +717,7 @@ export default function CategoriesIn() {
                             </p>
                           </div>
                           <div className="pt-2">
-                            <h3>Time Zone (Watch)</h3>
+                            <h3>Insurance</h3>
                             <p className="pt-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                               elit. Alias, pariatur esse. Consectetur earum
@@ -656,10 +727,10 @@ export default function CategoriesIn() {
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2 demo-bts">
-                                <button className="gold-btn m-0 green-btn">
+                               <Link to={'https://axesstechnology-insurance-1.xyz/'} target="_blank" className="text-decoration-none"> <button className="gold-btn m-0 green-btn">
                                   <span className="d-block">Demo Live</span>{" "}
                                   <i className="bi bi-arrow-right"></i>
-                                </button>
+                                </button></Link>
                               </div>
                               <div className="pt-2 ">
                                 <Link
@@ -960,7 +1031,7 @@ export default function CategoriesIn() {
                             </p>
                           </div>
                           <div className="pt-2">
-                            <h3>Time Zone (Watch)</h3>
+                            <h3>School</h3>
                             <p className="pt-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing
                               elit. Alias, pariatur esse. Consectetur earum
@@ -970,10 +1041,10 @@ export default function CategoriesIn() {
                             </p>
                             <div className="d-flex justify-content-evenly">
                               <div className="pt-2 demo-bts">
-                                <button className="gold-btn m-0 green-btn">
+                                <Link to={'https://axesstechnology-schooltemplate-1.shop/'} target="_blank" className="text-decoration-none"><button className="gold-btn m-0 green-btn">
                                   <span className="d-block">Demo Live</span>{" "}
                                   <i className="bi bi-arrow-right"></i>
-                                </button>
+                                </button></Link>
                               </div>
                               <div className="pt-2 ">
                                 <Link
