@@ -218,7 +218,7 @@ export default function CategoriesIn() {
                           >
                             {" "}
                             <button className="gold-btn m-0 green-btn">
-                              <span className="d-block">BuyNow</span>{" "}
+                              <span className="d-block">Order Now</span>{" "}
                               <i className="bi bi-arrow-right"></i>
                             </button>
                           </Link>
@@ -287,7 +287,7 @@ export default function CategoriesIn() {
                           >
                             {" "}
                             <button className="gold-btn m-0">
-                              <span className="d-block">Buy Now</span>{" "}
+                              <span className="d-block">Order Now</span>{" "}
                               <i className="bi bi-arrow-right"></i>
                             </button>
                           </Link>
@@ -373,7 +373,7 @@ export default function CategoriesIn() {
                               >
                                 {" "}
                                 <button className="gold-btn m-0 green-btn">
-                                  <span className="d-block">BuyNow</span>{" "}
+                                  <span className="d-block">Order Now</span>{" "}
                                   <i className="bi bi-arrow-right"></i>
                                 </button>
                               </Link>
@@ -442,7 +442,7 @@ export default function CategoriesIn() {
                               >
                                 {" "}
                                 <button className="gold-btn m-0">
-                                  <span className="d-block">Buy Now</span>{" "}
+                                  <span className="d-block">Order Now</span>{" "}
                                   <i className="bi bi-arrow-right"></i>
                                 </button>
                               </Link>
@@ -468,7 +468,7 @@ export default function CategoriesIn() {
               tabindex="0"
             >
               <div>
-                <section>
+                {/* <section>
                   <div className="container py-4 my-3">
                     <div className="text-center pb-2">
                       <h3>We Create Products That Users Love</h3>
@@ -525,7 +525,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0 green-btn">
-                                    <span className="d-block">BuyNow</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -536,7 +536,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </div>
-                </section>
+                </section> */}
 
                 <section className="bg-green-1">
                   <div className="container text-light py-4 my-3">
@@ -562,12 +562,13 @@ export default function CategoriesIn() {
                               Welcome to our Culinary Gallery, where each dish tells a story of craftsmanship and flavor. At Catering, we believe in the power of gastronomy to create unforgettable moments. Our culinary artisans curate an unparalleled dining experience, combining creativity with a passion for perfection.
                             </p>
                             <div className="d-flex justify-content-evenly">
+                             
                               <div className="pt-2">
-                                <button className="gold-btn m-0">
-                                  <span className="d-block">Demo Live</span>{" "}
-                                  <i className="bi bi-arrow-right"></i>
-                                </button>
-                              </div>
+                             <Link to={'https://axesstechnology-insurance-2.xyz/'} target="_blank" className="text-decoration-none"> <button className="gold-btn m-0">
+                                <span className="d-block">Demo Live</span>{" "}
+                                <i className="bi bi-arrow-right"></i>
+                              </button></Link>
+                            </div>
                               <div className="pt-2 ">
                                 <Link
                                   to={"/webdevelopment"}
@@ -587,7 +588,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0">
-                                    <span className="d-block">Buy Now</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -670,7 +671,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0 green-btn">
-                                    <span className="d-block">BuyNow</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -752,7 +753,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0 green-btn">
-                                    <span className="d-block">BuyNow</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -765,7 +766,7 @@ export default function CategoriesIn() {
                   </div>
                 </section>
 
-                <section className="bg-green-1">
+                {/* <section className="bg-green-1">
                   <div className="container text-light py-4 my-3">
                     <div className="text-center">
                       <h3>We Create Products That Users Love</h3>
@@ -818,7 +819,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0">
-                                    <span className="d-block">Buy Now</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -838,7 +839,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </div>
-                </section>
+                </section> */}
               </div>
             </div>
             <div
@@ -909,7 +910,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0 green-btn">
-                                    <span className="d-block">BuyNow</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -975,7 +976,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0">
-                                    <span className="d-block">Buy Now</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -1066,7 +1067,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0 green-btn">
-                                    <span className="d-block">BuyNow</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -1079,7 +1080,7 @@ export default function CategoriesIn() {
                   </div>
                 </section>
 
-                <section className="bg-green-1">
+                {/* <section className="bg-green-1">
                   <div className="container text-light py-4 my-3">
                     <div className="text-center">
                       <h3>We Create Products That Users Love</h3>
@@ -1132,7 +1133,7 @@ export default function CategoriesIn() {
                                 >
                                   {" "}
                                   <button className="gold-btn m-0">
-                                    <span className="d-block">Buy Now</span>{" "}
+                                    <span className="d-block">Order Now</span>{" "}
                                     <i className="bi bi-arrow-right"></i>
                                   </button>
                                 </Link>
@@ -1152,7 +1153,7 @@ export default function CategoriesIn() {
                       </div>
                     </div>
                   </div>
-                </section>
+                </section> */}
               </div>
             </div>
           </div>

@@ -13,7 +13,14 @@
 
 .concolor {
   color: #f7851d;
+  cursor: pointer;
 }
+
+// @media (min-width: 768px) {
+//   .concolor {
+//       cursor: auto;
+//   }
+// }
 
 // .meta{
 //   color: #b60843;

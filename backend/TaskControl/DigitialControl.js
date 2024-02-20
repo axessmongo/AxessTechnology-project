@@ -17,6 +17,25 @@ const DigitalMarketing = async (req, res) => {
   } = req.body;
 
   try {
+    const {
+      name,
+      email,
+      address,
+      serviceOption,
+      phone,
+      website,
+      company,
+      services,
+      digitalmarketBudget,
+      comments,
+    } = req.body;
+
+    // Check if required fields are present
+    if (!name || !email || !serviceOption) {
+      return res.status(400).json({ error: "Missing required fields" });
+    }
+      console.log("digi control")
+    // Create a new digital service
     const contact = await DigitalService.create({
       name,
       email,
@@ -29,6 +48,7 @@ const DigitalMarketing = async (req, res) => {
       digitalmarketBudget,
       comments,
     });
+
     res.status(201).json(contact);
   } catch (error) {
     // Handle errors
@@ -37,4 +57,4 @@ const DigitalMarketing = async (req, res) => {
   }
 };
 
-module.exports = {DigitalMarketing};
+module.exports = { DigitalMarketing };

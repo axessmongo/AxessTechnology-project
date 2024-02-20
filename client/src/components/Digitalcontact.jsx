@@ -26,7 +26,6 @@ function Digitalcontact() {
   // const [checkbox , setCheckbox]  = useState(false)
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
-    // console.log(name, checked)
     setState((prevFormData) => ({
       ...prevFormData,
       services: {
@@ -88,9 +87,10 @@ function Digitalcontact() {
       case 'website':
         setErrors({
           ...errors,
-          name: value.length === 0 ? 'Website url is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid website url, only letters allowed' : '',
+          name: value.length === 0 ? 'Website URL is required' : !/^(https?:\/\/)?([\w-]+\.)*[\w-]+(\.[a-z]{2,})(:\d{1,5})?(\/\S*)?$/.test(value) ? 'Invalid website URL' : '',
         });
         break;
+
       case 'email':
         setErrors({
           ...errors,

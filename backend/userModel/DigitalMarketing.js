@@ -1,43 +1,42 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-
-const Digital = new Schema({
+const DigitalSchema = new Schema({
   name: {
-    type: "string",
+    type: String,
+    
   },
   email: {
-    type: "string",
-    unquie: true,
+    type: String,
+    unique: true,
+   
   },
   address: {
-    type: "string",
+    type: String
   },
   serviceOption: {
-    type: "string",
+    type: String,
+    
   },
   phone: {
-    type: Number,
-  },
-  address: {
-    type: "string",
+    type: String // Assuming phone number can be stored as a string
   },
   website: {
-    type: "string",
+    type: String
   },
-  company :{
-    type: "string",
+  company: {
+    type: String
   },
   services: {
-    type: "object",
+    type: Object // You might want to define a specific schema for services
   },
   digitalmarketBudget: {
-    type: "string",
+    type: String
   },
   comments: {
-    type: "string",
-  },
-});
+    type: String
+  }
+}, { timestamps: true });
 
-const DigitalMarket = mongoose.model("DigitalMarket", Digital);
+const DigitalMarket = mongoose.model("DigitalMarket", DigitalSchema);
 
 module.exports = DigitalMarket;
