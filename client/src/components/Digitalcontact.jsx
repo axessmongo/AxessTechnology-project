@@ -23,9 +23,6 @@ function Digitalcontact() {
     comments: "",
     services: {},
     digitalmarketBudget: ""
-
-
-
   })
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
@@ -50,7 +47,6 @@ function Digitalcontact() {
     if (name === 'name') {
       value = value.replace(/[^a-zA-Z\s]/g, '');
     }
-
     setState({
       ...state,
       [name]: value,
@@ -109,7 +105,7 @@ function Digitalcontact() {
           phone:
             value.length === 0
               ? 'Phone is required'
-              : value.length !== 10 || !/^[6-9]\d+$/.test(value) ? 'Invalid phone' : '',
+              : value.length !== 10 || !/^[5-9]\d+$/.test(value) ? 'Invalid phone' : '',
         });
         break;
 
@@ -127,9 +123,9 @@ function Digitalcontact() {
         name: !state.name ? 'Name is required.' : '',
         email: !state.email ? 'Email is required.' : '',
         phone: !state.phone ? 'Phone No is required.' : '',
-        website: !state.website ? 'website url is required.' : '',
-        comments: !state.comments ? 'Comments is required' : '',
-        company: !state.company ? 'CompanyName is required' : ''
+        website: !state.website ? 'Website url is required.' : '',
+        // comments: !state.comments ? 'Comments is required' : '',
+        company: !state.company ? 'Company Name is required' : ''
       });
       return;
     }
