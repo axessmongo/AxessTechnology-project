@@ -10,10 +10,10 @@ import axios from 'axios';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 
-function Footer({displayContact}) {
+function Footer({ displayContact }) {
     // console.log("displayContact",displayContact)
     const [receiveMsg, setReciveMsg] = useState();
-    const  navigate = useNavigate();
+    const navigate = useNavigate();
     let MSG = {
         success: "Success",
         mailSended: "Mail sended successfully",
@@ -36,7 +36,7 @@ function Footer({displayContact}) {
         comments: "",
 
     });
-    const handleRoute = ()=>{navigate('/about')}
+    const handleRoute = () => { navigate('/about') }
     const handleChange = (e) => {
         let { name, value } = e.target;
         if (name === 'fname') {
@@ -141,10 +141,10 @@ function Footer({displayContact}) {
                     position: "left", // `left`, `center` or `right`
                     stopOnFocus: true, // Prevents dismissing of toast on hover
                     style: {
-                      background: "linear-gradient(to right, #00b09b, #96c93d)",
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
                     },
-                    onClick: function(){} // Callback after click
-                  }).showToast();
+                    onClick: function () { } // Callback after click
+                }).showToast();
                 setContact({
                     fname: "",
                     lname: "",
@@ -198,11 +198,11 @@ function Footer({displayContact}) {
                 position: "center", // `left`, `center` or `right`
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
-                //   background: "linear-gradient(to right, #00b09b, #96c93d)",
-                border:"1px solid red"
+                    //   background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    border: "1px solid red"
                 },
-                onClick: function(){} // Callback after click
-              }).showToast();
+                onClick: function () { } // Callback after click
+            }).showToast();
         }
 
     }
@@ -213,11 +213,15 @@ function Footer({displayContact}) {
     // } else {
     //     console.log('false')
     // }
-
+    // const handlePhoneCall = (phoneNumber) => {
+    //     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //         window.location.href = `tel:${phoneNumber}`;
+    //     }
+    // };
 
     return (
         <div>
-            <div className={`container mt-4 contactbg ${displayContact?"d-none":""}`}>
+            <div className={`container mt-4 contactbg ${displayContact ? "d-none" : ""}`}>
                 <form onSubmit={handleSubmit}>
                     <div className="card">
                         <div className="card-body position-relative">
@@ -264,8 +268,11 @@ function Footer({displayContact}) {
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p>
-                                        <p>Email : <a className='text-decoration-none concolor' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                        {/* <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p> */}
+                                        {/* <p>Phone: <span className='text-decoration-none concolor' onClick={() => handlePhoneCall('+919042577261')}> +91 9042577261</span></p> */}
+                                        <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 90425 77261</span></div>
+                                        <div className='d-lg-none'>Phone:<Link to="tel:7845721438" className='concolor text-decoration-none'> +91 90425 77261</Link></div>
+                                        <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>
