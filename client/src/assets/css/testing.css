@@ -110,9 +110,6 @@
     position: relative;
 }
 .test-head{
-    position: absolute;
-    top: 8%;
-    right: 0%;
     padding: 10px;
 }
 .bug-card{

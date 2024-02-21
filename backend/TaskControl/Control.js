@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 
 const Register = async (req, res) => {
+  console.log("reg", req.body)
   const { fname, lname, email, phone, password } = req.body;
   try {
     const existingUser = await userModel.findOne({ email });

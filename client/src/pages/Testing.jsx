@@ -13,7 +13,7 @@ import usability from '../assets/images/testing/usability.png'
 import testimgs from '../assets/images/testing/testing-img-2.png'
 import Profiledub from '../assets/images/testing/dub-img.png'
 import Process from "../assets/images/STLC.png";
-
+import TestingTools from '../components/TestingTools';
 
 
 
@@ -37,13 +37,13 @@ function Testing() {
             <p className='secondary-text'>We go beyond basic functionality checks. Our testing dives deep, encompassing:</p>
           </div>
           <div className='row pb-3'>
-            <div className='col-md-7 py-1 mt-3'>
+            <div className='col py-1 mt-3'>
 
               <div>
                 <div className='row'>
-                  <div className='col-md-6  pt-3' data-aos="zoom-out-right" data-aos-duration="1000">
+                  <div className='col-md-6 col-xl-3  pt-3' data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="400">
                     <div className='small-card bug-card'>
-                      <div className="row">
+                      <div className="row justify-content-center">
                       <div className='test-order col-4 '>
                         <img src={performicon} alt="" className='w-75' />
                       </div>
@@ -51,12 +51,12 @@ function Testing() {
                         <h3>Performance</h3>
                       </div>
                       </div>
-                      <p className='pt-3 secondary-text'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
+                      <p className='secondary-text'>Load testing, stress testing, and scalability analysis ensure your software handles real-world usage.</p>
                     </div>
                   </div>
-                  <div className='col-md-6  pt-3' data-aos="zoom-out-left" data-aos-duration="1000">
+                  <div className='col-md-6 col-xl-3  pt-3' data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="500">
                     <div className='small-card bug-card'>
-                      <div className="row">
+                      <div className="row justify-content-center">
                       <div className='test-order col-4'>
                         <img src={security} alt="" className='w-75' />
                       </div>
@@ -64,17 +64,13 @@ function Testing() {
                         <h3>Security</h3>
                       </div>
                       </div>
-                      <p className='pt-3 secondary-text'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
+                      <p className='secondary-text'> Penetration testing, vulnerability assessments, and secure coding practices safeguard your users' data.</p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div>
-                <div className='row pt-2'>
-                  <div className='col-md-6  pt-3' data-aos="zoom-in-right" data-aos-duration="900">
+                  
+                  <div className='col-md-6 col-xl-3  pt-3' data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="600">
                     <div className='small-card bug-card'>
-                     <div className="row">
+                     <div className="row justify-content-center">
                      <div className='test-order col-4'>
                         <img src={usability} alt="" className='w-75' />
                       </div>
@@ -82,12 +78,12 @@ function Testing() {
                         <h3>Usability</h3>
                       </div>
                      </div>
-                      <p className='pt-3 secondary-text'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
+                      <p className='secondary-text'>A/B testing, user interface reviews, and accessibility evaluations guarantee a smooth and intuitive user experience.</p>
                     </div>
                   </div>
-                  <div className='col-md-6  pt-3' data-aos="zoom-in-left" data-aos-duration="900">
+                  <div className='col-md-6 col-xl-3  pt-3' data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="700">
                     <div className='small-card bug-card'>
-                      <div className="row">
+                      <div className="row justify-content-center">
                       <div className='test-order col-4'>
                         <img src={compatibility} alt="" className='w-75' />
                       </div>
@@ -95,7 +91,7 @@ function Testing() {
                         <h3>Compatibility</h3>
                       </div>
                       </div>
-                      <p className='pt-3 secondary-text'>We test across browsers, devices, and operating systems for seamless performance on a any platform.</p>
+                      <p className='secondary-text'>We test across browsers, devices, and operating systems for seamless performance on a any platform.</p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +99,7 @@ function Testing() {
 
             </div>
 
-            <div className='col-md-5 mt-3 d-flex justify-content-center align-items-center'>
+            <div className='col-md-5 mt-3 d-flex justify-content-center align-items-center d-none'>
 
               <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
@@ -124,14 +120,14 @@ function Testing() {
                 <p className='secondary-text'>With our multi-layered approach, you get:</p>
               </div>
           <div className='row'>
-            <div className='col-md-5'>
+            {/* <div className='col-md-5'>
               <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1800">
                 <img src={testimgs} alt="" className='img-fluid' />
               </div>
-            </div>
-            <div className='col-md-7'>
+            </div> */}
+            <div className='col text-center mb-5'>
               
               <div className='pt-5'>
                 <div data-aos="fade-up"
@@ -162,9 +158,9 @@ function Testing() {
         <h5 className=' mx-auto text-center text-white mb-2'
           data-aos="fade-up"
           
-          data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? Contact us today for a free consultation!.
+          data-aos-anchor-placement="bottom-bottom">Ready to shield your software and delight your users? <span className='d-block'></span> Contact us today for a free consultation!.
         </h5>
-        <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn m-5 mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
+        <Link to={"/contact"} className='text-decoration-none'> <button className='gold-btn mx-auto' data-aos='zoom-out' data-aos-duration='600'><span className='d-block'>Connect with us</span> <i className="bi bi-arrow-right"></i></button></Link>
       </section>
       <section className="container mt-5">
         <div className="justify-content-center d-flex">
@@ -248,6 +244,8 @@ function Testing() {
         </div>
       </section>
       <Techsection />
+
+      <TestingTools/>
    
 
       {/* Technology section */}
