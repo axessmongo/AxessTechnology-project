@@ -133,7 +133,7 @@ function Navbar() {
                   </NavLink>
                 </li>
 
-                <li className="nav-item position-relative">
+                {/* <li className="nav-item position-relative">
                   <Link className="nav-link navhover" >
                     Pricing
                   </Link>
@@ -151,7 +151,7 @@ function Navbar() {
                       <Link to={'/digitalmarketing'} activeclassname="active" className="nav-link navhover" aria-current="page" onClick={() => setValue(true)}>Digital Marketing Pricing</Link>
                     </div>
                   </div>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <NavLink to={"/contact"} activeclassname="active" className="nav-link navhover" >
                     Contact

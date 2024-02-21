@@ -64,7 +64,7 @@ export default function Links() {
               <i className="bi bi-facebook"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>@Axess</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess technology</p>
         </a>
       </div>
       <div className="col-3">
@@ -88,7 +88,7 @@ export default function Links() {
               <i className="bi bi-linkedin"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess_official</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess-tech-official</p>
         </a>
       </div>
     </div>

@@ -272,7 +272,7 @@ function Footer({ displayContact }) {
                                         {/* <p>Phone: <span className='text-decoration-none concolor' onClick={() => handlePhoneCall('+919042577261')}> +91 9042577261</span></p> */}
                                         <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 90425 77261</span></div>
                                         <div className='d-lg-none'>Phone:<Link to="tel:7845721438" className='concolor text-decoration-none'> +91 90425 77261</Link></div>
-                                        <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto:info@axesstechnology.in">info@axesstechnology.in</a></p>
+                                        <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto: info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>

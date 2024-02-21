@@ -12,7 +12,8 @@ import security from '../assets/images/testing/system-secure.png'
 import usability from '../assets/images/testing/usability.png'
 import testimgs from '../assets/images/testing/testing-img-2.png'
 import Profiledub from '../assets/images/testing/dub-img.png'
-import Process from "../assets/images/process.png";
+import Process from "../assets/images/STLC.png";
+
 
 
 

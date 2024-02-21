@@ -391,7 +391,7 @@ function Policy() {
               <h4 className="gold-text-2">21. Contact Us</h4>
               <p className="secondary-text">
                 If you have any questions about this Privacy Policy, please
-                contact us by email: <Link to={'mailto:info@axesstechnology.in'} className="text-decoration-none concolor"> info@axesstechnology.in</Link>
+                contact us by email: <Link to={'mailto: info@axesstechnology.in'} className="text-decoration-none concolor"> info@axesstechnology.in</Link>
               </p>
             </div>
           </div>
