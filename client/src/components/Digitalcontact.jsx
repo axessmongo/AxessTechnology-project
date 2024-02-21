@@ -10,9 +10,9 @@ function Digitalcontact() {
     email: "",
     company: "",
     website: "",
-    serviceOption: "",
     digitalmarketBudget: ""
   });
+  const [checkboxError,setCheckboxError] = useState("")
   const [state, setState] = useState({
     name: "",
     phone: "",
@@ -36,9 +36,6 @@ function Digitalcontact() {
     
   };
 
-
-
-  // console.log("state", state)
   const handleInputChange = (e) => {
     let { name, value } = e.target;
     if (name === 'phone') {
@@ -112,9 +109,7 @@ function Digitalcontact() {
         });
         break;
       case 'serviceOption':
-
         let isChecked = false;
-
         for (var i = 0; i < digitalServiceList.length; i++) {
           if (digitalServiceList[i].checked) {
             isChecked = true;
@@ -123,11 +118,7 @@ function Digitalcontact() {
         }
 
         if (!isChecked) {
-          console.log("seterror checkbox")
-          setErrors({
-            ...errors,
-            serviceOption: "Choose any one of the services"
-          });
+          setCheckboxError("Choose atleast one option")
         }
         break;
 
@@ -145,11 +136,10 @@ function Digitalcontact() {
         name: !state.name ? 'Name is required.' : '',
         email: !state.email ? 'Email is required.' : '',
         phone: !state.phone ? 'Phone No is required.' : '',
-        website: !state.website ? 'Website url is required.' : '',
-        // comments: !state.comments ? 'Comments is required' : '',
-        company: !state.company ? 'Company Name is required' : ''
+        website: !state.website ? 'Website URL is required.' : '',
+        company: !state.company ? 'Company name is required' : ''
       });
-      // validateField("serviceOption", "")
+      validateField("serviceOption", "")
       return;
     }
 
@@ -203,11 +193,11 @@ function Digitalcontact() {
         <div className="box1 secondary-text ">
           <form onSubmit={handleSubmit}>
             <div className="row mt-5" >
-              <h3 className="secondary-header text-center">Need a Successful Project</h3>
+              <h3 className="secondary-header text-center pb-3">Need a Successful Project</h3>
 
-              <h5>I'M Interested In</h5>
-              <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.serviceOption}</div>
-              <div className="col-md-6 mt-4 ">
+              <h5 className="pb-3">I'M Interested In</h5>
+              <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{checkboxError}</div>
+              <div className="col-md-6">
                 <input type="checkbox" name="DigitalserviceList" onChange={handleCheckboxChange} value={state.services.socialMedia} />
                 <span className="fs-5"> Social Media Marketing</span>
                 <br />
@@ -242,7 +232,7 @@ function Digitalcontact() {
                 <span className="fs-5"> Content Writing</span>
                 <br />
               </div>
-              <div className="col-md-6 mt-4">
+              <div className="col-md-6">
                 <div className="col-md-6 ">
                   <input
                     type="checkbox"
