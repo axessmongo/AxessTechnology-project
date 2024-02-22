@@ -75,7 +75,7 @@ function Digitalcontact() {
       case 'company':
         setErrors({
           ...errors,
-          company: value.length === 0 ? 'Company  is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid company name, only letters allowed' : '',
+          company: value.length === 0 ? 'Company  is required' : /[^A-Za-z0-9\s]/.test(value) ? 'Invalid company name, only letters allowed' : '',
         });
         break;
 
@@ -142,7 +142,7 @@ function Digitalcontact() {
     }
 
     try {
-      const response = await axios.post("/contact/digital", state);
+      const response = await axios.post("http://localhost:5000/contact/digital", state);
       if (response.status === 201) {
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
 
@@ -179,7 +179,6 @@ function Digitalcontact() {
           <form onSubmit={handleSubmit}>
             <div className="row mt-5" >
               <h3 className="secondary-header text-center pb-3">Need a Successful Project</h3>
-
               <h5 className="pb-3">I'M Interested In</h5>
               <div style={{ color: 'red', fontSize: "12px" }}>{checkboxError}</div>
               <div className="col-md-6">
@@ -217,7 +216,7 @@ function Digitalcontact() {
                 <span className="fs-5"> Content Writing</span>
                 <br />
               </div>
-              <div className="col-md-6">
+            
                 <div className="col-md-6 ">
                   <input
                     type="checkbox"
@@ -262,41 +261,41 @@ function Digitalcontact() {
                   <span className="fs-5"> Shopify Development</span>
                   <br />
                 </div>
-              </div>
+            
             </div>
             <div>
               <div className="row justify-content-center mt-3 g-3">
                 <div className="col-md-6">
-                  <div className="" >
-                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mt-3" name="name" value={state.name} onChange={handleInputChange} />
-                    <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.name}</div>
+                  <div className="position-relative">
+                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mb-4" name="name" value={state.name} onChange={handleInputChange} />
+                    <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.name}</div>
 
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div>
-                    <input type="text" placeholder=" Enter Your Mobile Number*" className="digicontact mt-3" name="phone" value={state.phone} onChange={handleInputChange} />
-                    <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.phone}</div>
+                  <div className="position-relative">
+                    <input type="text" placeholder=" Enter Your Mobile Number*" className="digicontact mb-4" name="phone" value={state.phone} onChange={handleInputChange} />
+                    <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.phone}</div>
 
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div>
-                    <input type="text" placeholder=" Enter Your Email*" className="digicontact mt-3" name="email" value={state.email} onChange={handleInputChange} />
-                    <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.email}</div>
+                  <div className="position-relative">
+                    <input type="text" placeholder=" Enter Your Email*" className="digicontact mb-4" name="email" value={state.email} onChange={handleInputChange} />
+                    <div className="position-absolute bottom-0"  style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.email}</div>
 
                   </div>
                 </div>
 
                 <div className="col-md-6">
-                  <div>
-                    <input type="text" placeholder=" Enter Your Company Name*" className="digicontact mt-3" name="company" value={state.company} onChange={handleInputChange} />
-                    <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.company}</div>
+                  <div className="position-relative">
+                    <input type="text" placeholder=" Enter Your Company Name*" className="digicontact mb-4" name="company" value={state.company} onChange={handleInputChange} />
+                    <div className="position-absolute bottom-0"  style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.company}</div>
 
                   </div>
                 </div>
                 <h4 className="secondary-header text-center m-3">Average Monthly Marketing Budget in INR* </h4>
-                <div className="col-md-12 digitalcontact"  >
+                <div className="col-md-12 digitalcontact position-relative"  >
                   <select name="digitalmarketBudget" value={state.digitalmarketBudget}
                     onChange={handleInputChange}>
                     <option ></option>
@@ -308,23 +307,21 @@ function Digitalcontact() {
                     <option value="Rs. 50 Lakh to Rs. 1 Crore">Rs. 50 Lakh to Rs. 1 Crore</option>
                     <option value="More than Rs. 1 Crore">More than Rs. 1 Crore</option>
                   </select>
-                  <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.digitalmarketBudget}</div>
-
                 </div>
 
 
                 <div className="col-md-6">
-                  <div>
+                  <div className="position-relative">
                     <input
                       type="text"
                       placeholder=" Enter Your Website URL*"
-                      className="digicontact mt-3"
+                      className="digicontact mb-4"
                       name="website"
                       value={state.website}
                       onChange={handleInputChange} // Add this line for handling changes
                     />
                   </div>
-                  <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.website}</div>
+                  <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.website}</div>
 
                 </div>
 
@@ -339,12 +336,8 @@ function Digitalcontact() {
                       value={state.comments}
                       onChange={handleInputChange}
                     ></textarea>
-                    <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.comments}</div>
                   </div>
                 </div>
-                {/* <div className="py-4 my-4 text-center">
-                <button className="gold-btn green-btn m-5 mx-auto heading5" target="_blank">Submit Details Now</button>
-              </div> */}
                 <div className="py-4 my-4 demo-bts text-center">
                   <button className="gold-btn m-3 green-btn mx-auto heading5"><span className="d-block">Submit Details Now</span> <i className="bi bi-arrow-right"></i></button></div>
               </div>

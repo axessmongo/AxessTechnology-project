@@ -93,7 +93,7 @@ function Footer({ displayContact }) {
                     phone:
                         value.length === 0
                             ? 'Phone is required'
-                            : value.length !== 10 || !/^[6-9]\d+$/.test(value) ? 'Invalid phone' : '',
+                            : value.length !== 10 || !/^[5-9]\d+$/.test(value) ? 'Invalid phone' : '',
                 });
                 break;
             // case 'serviceOption':
