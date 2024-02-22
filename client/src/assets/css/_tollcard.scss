@@ -113,4 +113,13 @@
             margin-right: 10px;
         }
     }
+
+    .offcanvas.offcanvas-start{
+        width: 100%;
+
+        pre{
+            text-wrap: balance;
+            width: 100%;
+        }
+    }
 }

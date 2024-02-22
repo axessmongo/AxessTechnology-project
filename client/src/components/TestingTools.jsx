@@ -13,7 +13,44 @@ export default function TestingTools() {
             playWrightName: 'Java Playwright',
             playWrightImg: java,
             description: "Java Playwright is a browser automation library that enables developers to write reliable and efficient end-to-end tests for web applications in Java.",
-            playWrightOffcanvaId: 'Javaplaywright'
+            playWrightOffcanvaId: 'Javaplaywright',
+            structure: `
+> src
+   > main
+      > java
+        > Dominos
+          > Base
+            > Base_class ---->  
+                Usage Tips:
+				 --> This utility class helps in maintaining a clean and organized test code by encapsulating common functionalities.
+				 --> It promotes code reusability by centralizing common WebDriver-related operations.
+				 --> The methods in this class enhance the readability and maintainability of your test scripts.
+     				 --> Utility classes like Base_Class are valuable in test automation, providing a foundation for building robust and maintainable test scripts.
+	   > POM 
+              > Pages 
+                    ---> The Page Object Model is a design pattern that represents the pages of a web application as objects in your test automation code.
+				    -->  Each page in the application has a corresponding Page Object that encapsulates the behavior and elements of that page.
+                                   -->  The Page Object Model is a powerful pattern for enhancing the structure and maintainability of your test automation code,
+                                        especially in the context of web applications.
+				  --> Page Objects can be reused across different test scripts, reducing duplication of code.
+    > test
+	> java
+	   > Dominos
+	      > Dominos.feature
+		    > Feature_file  
+                        --> A feature file is a file format used in the behavior-driven development (BDD) methodology, commonly associated with tools like Cucumber.
+                        It serves as a readable documentation and a functional acceptance criteria for a particular feature or user story.
+                        Feature files are written in a plain-text format, often using the Gherkin language syntax.
+	        > Stedefinition
+                   > Step_file     
+                        --> In the context of behavior-driven development (BDD) and tools like Cucumber, a step definition is the implementation of the steps defined in a feature file.
+                    Step definitions are written in a programming language such as Java, Python, or Ruby, and they provide the executable code that corresponds to each step in the Gherkin syntax within a feature file.
+                    > Dominos_runner    
+                            --> In the context of Cucumber and behavior-driven development (BDD), a runner file is a class that serves as the entry point for executing Cucumber tests.
+                            It is responsible for configuring Cucumber and specifying the location of feature files, step definitions, and other relevant settings.	
+                            --> Ensure that the Cucumber and JUnit dependencies are included in your project's build configuration (e.g., in your pom.xml for Maven or build.gradle for Gradle).
+
+            `
         }, {
             playWrightName: 'Python Playwright',
             playWrightImg: Python,
@@ -92,7 +129,12 @@ export default function TestingTools() {
                     <div className="offcanvas-body">
                         <div>
                             <div className='col-2 mx-auto mb-3'><img src={key.playWrightImg} alt={key.playWrightImg} /></div>
-                            {key.description}
+                            <pre>
+                                <div className="container">
+                                    <p className='text-center secondary-text'>{key.description}</p>
+                                {key.structure}
+                                </div>
+                            </pre>
                         </div>
                     </div>
                 </div>
