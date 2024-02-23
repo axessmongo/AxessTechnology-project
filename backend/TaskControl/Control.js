@@ -9,14 +9,14 @@ const Register = async (req, res) => {
   const { fname, lname, email, phone, password } = req.body;
   try {
     const existingUser = await userModel.findOne({ email });
-
+console.log("e",existingUser)
     if (existingUser) {
-      return res.status(301).json({
-        status: 301,
+      return res.status(409).json({
+        status: 409,
         message: "User already exists",
       });
     }
-
+console.log("kkkk")
     const hashingpassword = await bcrypt.hash(password, 10);
 
     const newUser = new userModel({

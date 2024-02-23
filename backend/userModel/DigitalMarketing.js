@@ -27,7 +27,8 @@ const DigitalSchema = new Schema({
     type: String
   },
   services: {
-    type: Object // You might want to define a specific schema for services
+    type: Object,
+   // You might want to define a specific schema for services
   },
   digitalmarketBudget: {
     type: String

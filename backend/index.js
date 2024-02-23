@@ -8,7 +8,6 @@ const route = require("./Router/route.js");
 const routes =require("./Router/Digroute.js");
 
 
-
 app.use(express.json());
 app.use(cors());
 app.use(route)
