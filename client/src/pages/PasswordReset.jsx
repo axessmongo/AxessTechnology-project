@@ -6,7 +6,7 @@ import '../assets/css/passwordReset.scss';
 function PasswordReset() {
   const param = useParams();
   const Navigate = useNavigate();
-  const url = `http://54.161.23.121:5000/${param.id}/${param.token}`;
+  const url = `http://54.161.23.121:5000/passwordReset/${param.id}/${param.token}`;
   
   // State variables
   const [password, setPassword] = useState('');

@@ -11,7 +11,7 @@ const EmailVerify = () => {
 	useEffect(() => {
 		const verifyEmailUrl = async () => {
 			try {
-				const url = `https://axesstechnology.in/${id}/verify/${token}`;
+				const url = `https://axesstechnology.in/email/${id}/verify/${token}`;
 				const { data } = await axios.get(url);
 				console.log(data);
 				setVerificationStatus('success');

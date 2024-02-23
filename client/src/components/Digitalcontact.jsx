@@ -142,13 +142,13 @@ function Digitalcontact() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/contact/digital", state);
+      const response = await axios.post("http://localhost:5000/digital/contact", state);
       if (response.status === 201) {
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
 
         var digitalServiceList = document.getElementsByName("DigitalserviceList");
         for (var i = 0; i < digitalServiceList.length; i++) {
-          digitalServiceList[i].checked = false;
+          digitalServiceList[i].value = false;
         }
         setState({
           name: "",
@@ -320,9 +320,9 @@ function Digitalcontact() {
                       value={state.website}
                       onChange={handleInputChange} // Add this line for handling changes
                     />
-                  </div>
-                  <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.website}</div>
+                     <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.website}</div>
 
+                  </div>
                 </div>
 
                 <div className="col-md-6 textarea1">

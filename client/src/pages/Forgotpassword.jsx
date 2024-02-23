@@ -10,7 +10,7 @@ function ForgotPassword() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const url = 'http://54.161.23.121:5000/api/resetPassword';
+          const url = 'https://axesstechnology.in/api/resetPassword';
           const response = await axios.post(url, { email });
 
           if (response.status === 200 && response.data.data.success) {

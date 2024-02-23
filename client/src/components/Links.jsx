@@ -52,7 +52,7 @@ export default function Links() {
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'> 73581 04213</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'> 63806 65710</p>
         </a>
       </div>
       <div className="col-3">

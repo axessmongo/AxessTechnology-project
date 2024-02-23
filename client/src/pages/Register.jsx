@@ -20,9 +20,6 @@ function Register() {
 		password: "",
 	});
 
-	// const [error, setError] = useState("");
-	// const navigate = useNavigate();
-
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
@@ -32,20 +29,23 @@ function Register() {
 	
 		try {
 			const response = await axios.post(
-			  '/api/register',
+			  'http://localhost:5000/api/register',
 			  formData
-			);
-	  
+			);  
+			console.log("res",response)
 			if (response.status === 201) {
 				console.log("reg",response)
 			  toast.success('Registration successful. Verification email sent.');
-			} else if (response.status === 200) {
+			}else if (response.status === 409){
+				console.log("LLLLL")
 			  toast.error('User already exists.');
 			} else {
-			  console.log('Unexpected response:', response);
+			  console.log('Unexpected response:', response.status);
+			  
 			}
-		  } catch (error) {
-			console.error('Error during registration:', error.message);
+		  }catch(error) {
+			console.log("err",error)
+			console.error('Error during registration:', error);
 			toast.error('Internal Server Error');
 		  }
 	  };
