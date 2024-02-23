@@ -5,6 +5,7 @@ import js from '../assets/images/testingtools/js.png';
 import ts from '../assets/images/testingtools/ts.png';
 import c from '../assets/images/testingtools/c.png';
 import ruby from '../assets/images/testingtools/ruby.png';
+import javastructure from '../assets/images/testingtools/javastructure.png';
 
 export default function TestingTools() {
 
@@ -14,43 +15,57 @@ export default function TestingTools() {
             playWrightImg: java,
             description: "Java Playwright is a browser automation library that enables developers to write reliable and efficient end-to-end tests for web applications in Java.",
             playWrightOffcanvaId: 'Javaplaywright',
-            structure: `
-> src
-   > main
-      > java
-        > Dominos
-          > Base
-            > Base_class ---->  
-                Usage Tips:
-				 --> This utility class helps in maintaining a clean and organized test code by encapsulating common functionalities.
-				 --> It promotes code reusability by centralizing common WebDriver-related operations.
-				 --> The methods in this class enhance the readability and maintainability of your test scripts.
-     				 --> Utility classes like Base_Class are valuable in test automation, providing a foundation for building robust and maintainable test scripts.
-	   > POM 
-              > Pages 
-                    ---> The Page Object Model is a design pattern that represents the pages of a web application as objects in your test automation code.
-				    -->  Each page in the application has a corresponding Page Object that encapsulates the behavior and elements of that page.
-                                   -->  The Page Object Model is a powerful pattern for enhancing the structure and maintainability of your test automation code,
-                                        especially in the context of web applications.
-				  --> Page Objects can be reused across different test scripts, reducing duplication of code.
-    > test
-	> java
-	   > Dominos
-	      > Dominos.feature
-		    > Feature_file  
-                        --> A feature file is a file format used in the behavior-driven development (BDD) methodology, commonly associated with tools like Cucumber.
-                        It serves as a readable documentation and a functional acceptance criteria for a particular feature or user story.
-                        Feature files are written in a plain-text format, often using the Gherkin language syntax.
-	        > Stedefinition
-                   > Step_file     
-                        --> In the context of behavior-driven development (BDD) and tools like Cucumber, a step definition is the implementation of the steps defined in a feature file.
-                    Step definitions are written in a programming language such as Java, Python, or Ruby, and they provide the executable code that corresponds to each step in the Gherkin syntax within a feature file.
-                    > Dominos_runner    
-                            --> In the context of Cucumber and behavior-driven development (BDD), a runner file is a class that serves as the entry point for executing Cucumber tests.
-                            It is responsible for configuring Cucumber and specifying the location of feature files, step definitions, and other relevant settings.	
-                            --> Ensure that the Cucumber and JUnit dependencies are included in your project's build configuration (e.g., in your pom.xml for Maven or build.gradle for Gradle).
+            structureimg: javastructure,
+            structurepoints: [
+                {
+                    "pointheader": "Base Class in Dominos > Base",
+                    "points": [
+                        "Utility class for clean and organized test code.",
+                        "Encapsulates common WebDriver operations.",
+                        "Promotes code reusability and enhances readability."
+                    ]
+                },
+                {
+                    "pointheader": "Page Object Model in Dominos > POM > Pages",
+                    "points": [
+                        "Design pattern representing web application pages as objects.",
+                        "Each page has a corresponding Page Object.",
+                        "Enhances structure and maintainability of test automation code.",
+                        "Enables reuse of Page Objects across different test scripts."
+                    ]
+                },
+                {
+                    "pointheader": "Feature Files in Dominos > test > java > Dominos > Dominos.feature",
+                    "points": [
+                        "File format used in behavior-driven development (BDD).",
+                        "Written in plain text using Gherkin language syntax.",
+                        "Serves as readable documentation and functional acceptance criteria."
+                    ]
+                },
+                {
+                    "pointheader": "Step Definitions in Dominos > test > java > Dominos > Stedefinition > Step_file",
+                    "points": [
+                        "Implementation of steps defined in a feature file.",
+                        "Written in a programming language (Java, Python, Ruby).",
+                        "Provides executable code corresponding to Gherkin syntax."
+                    ]
+                },
+                {
+                    "pointheader": "Cucumber Runner in Dominos > test > java > Dominos > Stedefinition > Dominos_runner",
+                    "points": [
+                        "Class serving as entry point for executing Cucumber tests.",
+                        "Configures Cucumber and specifies location of feature files.",
+                        "Requires inclusion of Cucumber and JUnit dependencies in project's build configuration."
+                    ]
+                },
+                {
+                    "pointheader": "Overall",
+                    "points": [
+                        "These components collectively contribute to a robust and maintainable test automation framework for Dominos."
+                    ]
+                }
+            ]
 
-            `
         }, {
             playWrightName: 'Python Playwright',
             playWrightImg: Python,
@@ -116,9 +131,10 @@ export default function TestingTools() {
                     key={index}
                 >
                     <div className="offcanvas-header">
-                        <h5 className="offcanvas-title" id={key.playWrightOffcanvaId}>
-                            {key.playWrightName}
-                        </h5>
+                        <div className="d-flex align-items-center" id={key.playWrightOffcanvaId}>
+                            <img src={key.playWrightImg} alt={key.playWrightImg} style={{ height: '40px' }} />
+                            <h5 className='d-block offcanvas-title text-nowrap ps-3'>{key.playWrightName}</h5>
+                        </div>
                         <button
                             type="button"
                             className="btn-close"
@@ -127,14 +143,34 @@ export default function TestingTools() {
                         />
                     </div>
                     <div className="offcanvas-body">
-                        <div>
-                            <div className='col-2 mx-auto mb-3'><img src={key.playWrightImg} alt={key.playWrightImg} /></div>
-                            <pre>
-                                <div className="container">
-                                    <p className='text-center secondary-text'>{key.description}</p>
-                                {key.structure}
+                        <div className='container'>
+                            <div className="row mb-5 align-items-lg-center">
+                                <div className='col-md-5 col-xl-3 mx-auto mb-3'>
+                                    <div className="">
+                                        <img src={key.structureimg} alt={key.structureimg} className='rounded-4' />
+                                    </div>
                                 </div>
-                            </pre>
+                                <div className="col-md-7 col-xl-8 col-xxl-7">
+                                    <ol>
+                                        {key.structurepoints && key.structurepoints.map((point, pointVal) => (
+                                            <li className='mb-3'>
+                                                <span className='fw-semibold'>{point.pointheader}</span>
+                                                <ul>
+                                                   {point.points.map((innerPoints, innerPointsIndex)=>(
+                                                     <li>{innerPoints}</li>
+                                                   ))}
+                                                </ul>
+                                            </li>
+                                        ))
+                                        }
+                                    </ol>
+
+                                </div>
+
+                                <div className="col-12">
+                                    <p className='text-center secondary-text'>{key.description}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
