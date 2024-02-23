@@ -13,7 +13,7 @@ export default function Empdashboard() {
 
     const get_data = async () => {
         try {
-            let res = await axios.get('http://localhost:5000/api/dashboard/get');
+            let res = await axios.get('/api/dashboard/get');
             console.log(res.data.data);
             setProjects(res.data.data)
         } catch (error) {
