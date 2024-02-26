@@ -1,35 +1,34 @@
-const mongoose = require('mongoose');
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
-const PORT = process.env.PORT ;
-const mongoURL = process.env.mongoURL;
-
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
 const app = express();
-const userRoutes = require("./routes/users");
-const authRoutes = require("./routes/auth");
+require("dotenv").config();
+const PORT = process.env.PORT;
+const route = require("./Router/route.js");
+const routes =require("./Router/Digroute.js");
+
 
 app.use(express.json());
 app.use(cors());
+app.use(route)
+app.use(routes)
 
-// Routes
-app.use("/api/users", userRoutes);
-app.use("/api/auth", authRoutes);
 
-// Database Connection
-mongoose.connect(mongoURL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+app.get("/", (req, res) => {
+  console.log('Request received at root path');
+  res.send('Welcome to Node.js');
+});
+
+
+mongoose
+  .connect(process.env.mongoURL, {
+  })
   .then(() => {
     console.log('Connected to MongoDB');
-    // Start the server
     app.listen(PORT, () => {
       console.log('Server is listening on port ' + PORT);
     });
   })
-  .catch(error => {
-    console.error("Failed to connect to MongoDB:", error);
-    // Terminate the application on database connection error
-    process.exit(1);
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
   });
