@@ -1,10 +1,8 @@
-const express = require( 'express' );
+const express = require('express');
 const router = express.Router();
-const HomepageContact = require("../TaskControl/HomepageControl.js");
+const HomepageContact = require('../TaskControl/HomepageControl.js');
 
-
-//homepage contact form
-router.post("/api/contact", HomepageContact.Contactpostmethod);
-
+// Define route for homepage contact form submission
+router.post('/api/contact', HomepageContact.Contactpostmethod);
 
 module.exports = router;
