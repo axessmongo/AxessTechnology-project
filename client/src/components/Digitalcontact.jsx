@@ -166,7 +166,7 @@ function Digitalcontact() {
         console.log('Unexpected response:', response);
         showToast("Internal server error", { style: { border: "1px solid red" } });
       }
-    } catch (error) {
+    } catch(error) {
       console.log("error", error);
       showToast("Unexpected error", { style: { border: "1px solid red" } });
     }
