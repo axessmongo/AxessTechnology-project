@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-
 module.exports = async (email, subject, text) => {
     console.log("email")
     try {
