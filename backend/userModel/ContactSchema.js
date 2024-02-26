@@ -5,9 +5,6 @@ const contactSchema = new Schema({
   fname: {
     type: "string",
   },
-  name:{
-    type:"string"
-  },
   lname: {
     type: "string",
   },
@@ -22,18 +19,6 @@ const contactSchema = new Schema({
     type: "string",
   },
   serviceOption: {
-    type: "string",
-  },
-  website: {
-    type: "string",
-  },
-  company: {
-    type: "string",
-  },
-  services: {
-    type: "object",
-  },
-  digitalmarketBudget: {
     type: "string",
   },
   comments: {
