@@ -1,0 +1,16 @@
+.webdev{
+    .web-bg{
+        background-image: url(../images/web-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 2px;
+        height: 100vh;
+    }
+    .boxshadow {
+      //  border: 6px solid #ffce05;
+      border-radius: 20px;
+      background: #0000000e;
+      padding: 0;
+    }
+}

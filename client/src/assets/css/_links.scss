@@ -1,0 +1,182 @@
+$whatsappcolor : #33bc4a;
+$facebookcolor : #3b5998;
+$instagramcolor : #e1306c;
+$linkedincolor : #0077b5;
+
+
+$whatsappcolorhover : #006f13;
+$facebookcolorhover : #0b3ea9;
+$instagramcolorhover : #b60843;
+$linkedincolorhover : #00a5fd;
+
+
+$globalshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+.links-container {
+    position: fixed;
+    bottom: -40px;
+    max-width: 70%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(#4a4643 30%, #423e3b 50%, #403f3b 70%);
+    height: 30px;
+    border-radius: 12px;
+    z-index: 99999;
+    transition: .3s;
+
+    &.active {
+        bottom: 20px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        z-index: -1;
+        transition: .5s ease-in;
+        border-radius: 12px;
+    }
+
+    &.whatsappcolor::before {
+        background-color: $whatsappcolorhover;
+    }
+
+    &.facebookcolor::before {
+        background-color: $facebookcolorhover;
+    }
+
+    &.instagramcolor::before {
+        background-color: $instagramcolorhover;
+    }
+
+    &.linkedincolor::before {
+        background-color: $linkedincolor;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .icons {
+        height: 45px;
+        width: 45px;
+        background: #000d18;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0, -15px);
+        position: absolute;
+
+        &.whatsapp {
+            background: $whatsappcolor;
+            // box-shadow: $whatsappcolor 0px 22px 70px 4px;
+            animation: whatsapp-shadow 2s 0s infinite;
+        }
+
+        &.facebook {
+            background: $facebookcolor;
+            // box-shadow: $facebookcolor 0px 22px 70px 4px;
+            animation: facebook-shadow 2s 0s infinite;
+        }
+
+        &.instagram {
+            background: $instagramcolor;
+            // box-shadow: $instagramcolor 0px 22px 70px 4px;
+            animation: instagram-shadow 2s 0s infinite;
+        }
+
+        &.linkedin {
+            background: $linkedincolor;
+            // box-shadow: $linkedincolor 0px 22px 70px 4px;
+            animation: linkedin-shadow 2s 0s infinite;
+        }
+
+        i {
+            font-size: 20px;
+            line-height: 1;
+            margin-top: 2px;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1;
+        font-weight: 500;
+    }
+}
+
+
+@keyframes whatsapp-shadow {
+
+    0%,
+    100% {
+        background-color: $whatsappcolor;
+    }
+
+    50% {
+        background-color: $whatsappcolorhover;
+
+    }
+}
+
+@keyframes facebook-shadow {
+
+    0%,
+    100% {
+        background-color: $facebookcolor;
+    }
+
+    50% {
+        background-color: $facebookcolorhover;
+
+    }
+}
+
+@keyframes instagram-shadow {
+
+    0%,
+    100% {
+        background-color: $instagramcolor;
+    }
+
+    50% {
+        background-color: $instagramcolorhover;
+
+    }
+}
+
+@keyframes linkedin-shadow {
+
+    0%,
+    100% {
+        background-color: $linkedincolor;
+    }
+
+    50% {
+        background-color: $linkedincolorhover;
+
+    }
+}
+
+@media(max-width:992px) {
+    .links-container {
+        height: 15px;
+
+        .icons {
+            transform: translate(-50%, -23px);
+            height: 40px;
+            width: 40px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}

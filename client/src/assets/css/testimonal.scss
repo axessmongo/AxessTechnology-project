@@ -1,0 +1,117 @@
+.testimonal {
+    display: grid;
+    place-items: center;
+    // height: 100vh;
+    background-color:#05463c;
+}
+
+.section-header {
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+.section-header::after {
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(52% - 100px);
+    background: white;
+    display: block;
+  
+}
+
+.section-header span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+}
+.testimonals{
+    max-width: 1000px;
+    padding: 0px 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 50px 15px;
+
+}
+.profile{
+    margin-bottom:40px;
+   
+    
+}   
+.img-area{
+    margin: 0 15px 15px 65px;
+}
+.img-area img{
+    height: 200px;
+    width: 200px;
+    border-radius:60%;
+    border: 7px solid var(--axess-gold-3);
+    overflow: hidden;
+}
+.content1{
+    font-size: 20px;
+
+}
+
+
+.content1 p{
+    text-align: justify;
+}
+.content1  p span{
+    font-size: 46px;
+    margin-right:16px;
+    color:var(--axess-gold-3);
+}
+
+.socials i{
+    margin-right: 25px;
+    cursor: pointer;
+
+}
+.bio h4{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color:var(--axess-gold-3);
+    // padding: 10px;
+    background-image: unset !important;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1;
+        font-size: 20px;
+    }
+}
+
+.carousel-control-next-icon::after{
+    content: "\203A";
+}
+
+
+.carousel-control-prev-icon::after{
+    content: '\2039';
+}
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: .8 !important;
+}

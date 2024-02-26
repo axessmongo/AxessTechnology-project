@@ -1,0 +1,15 @@
+.experience {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color:#05463c;
+    color: white;
+
+}
+
+.quotation{
+    /* color:#cf9a27; */
+    font-size: 40px;
+    
+}
+.linkhight{
+    height: 30px;
+}

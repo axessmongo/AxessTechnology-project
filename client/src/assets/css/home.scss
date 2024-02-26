@@ -1,0 +1,50 @@
+.hero-banner {
+    background: linear-gradient(77deg, rgb(5, 74, 64) 0%, rgb(5, 37, 32) 100%);
+
+    .main-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .svg1 {
+        z-index: -1;
+        top: 0;
+        width: 50%;
+        left: 0%;
+        transform: rotate(180deg);
+    }
+
+    .pulse {
+        transform: scale(1);
+        position: absolute;
+        content: "";
+        top: 20%;
+        left: 0;
+        z-index: -1;
+        width: 50px !important;
+        display: block;
+        animation: 2s infinite pulse;
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(.75)
+        }
+
+        70% {
+            transform: scale(1)
+        }
+    }
+
+}
+
+.hero-2 {
+    background-image: url(/src/assets/images/mountain.webp);
+    background-color: var(--axess-gold-3);
+    padding: 50px 0 150px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
