@@ -1523,3 +1523,22 @@ img {
     }
   }
 }
+
+@keyframes glowing-border {
+  0% {
+      box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
+  }
+  50% {
+      box-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
+  }
+  100% {
+      box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
+  }
+}
+
+.glowing-border {
+  border: 2px solid rgba(0, 128, 255, 0.8);
+  border-radius: 8px;
+  text-align: center;
+  animation: glowing-border 2s infinite;
+}

@@ -1,4 +1,8 @@
 .tool-card-container {
+    .offcanvas {
+        background: url('../images/canvas/blob.svg') fixed center no-repeat;
+        background-size: cover;
+    }
     .cardish {
         height: 100%;
         display: flex;
