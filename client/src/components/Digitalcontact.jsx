@@ -12,7 +12,7 @@ function Digitalcontact() {
     website: "",
     digitalmarketBudget: ""
   });
-  const [checkboxError,setCheckboxError] = useState("")
+  const [checkboxError, setCheckboxError] = useState("")
   const [state, setState] = useState({
     name: "",
     phone: "",
@@ -52,7 +52,7 @@ function Digitalcontact() {
   const showToast = (text, options = {}) => {
     Toastify({
       text,
-      duration: options.duration || 3000,
+      duration: options.duration || 5000,
       newWindow: options.newWindow || true,
       close: options.close || true,
       gravity: options.gravity || "top",
@@ -117,7 +117,7 @@ function Digitalcontact() {
         if (!isChecked) {
           setCheckboxError("Choose atleast one option")
         }
-        if(value) setCheckboxError("")
+        if (value) setCheckboxError("")
         break;
       default:
         break;
@@ -125,9 +125,9 @@ function Digitalcontact() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (errors.name || errors.email || errors.phone ||errors.company || errors.website || checkboxError ) return;
+    if (errors.name || errors.email || errors.phone || errors.company || errors.website || checkboxError) return;
 
-    if (!state.name.trim() || !state.email.trim() || !state.phone.trim() ||  !state.company.trim() ||  !state.website.trim()) {
+    if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.company.trim() || !state.website.trim()) {
 
       setErrors({
         name: !state.name ? 'Name is required.' : '',
@@ -140,16 +140,16 @@ function Digitalcontact() {
 
       return;
     }
-
+    console.log("before try")
     try {
-      const response = await axios.post("/digital/contact", state);
+      const response = await axios.post("http://localhost:5000/digital/contact", state);
+
       if (response.status === 201) {
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
-
-        var digitalServiceList = document.getElementsByClassName("digiCheckBox");
-        console.log("digitalServiceList",digitalServiceList)
-        for (var i = 0; i < digitalServiceList.length; i++) {
-          digitalServiceList[i].value = false;
+        // Reset form fields
+        const checkboxes = document.getElementsByClassName("digiCheckBox");
+        for (let checkbox of checkboxes) {
+          checkbox.checked = false;
         }
         setState({
           name: "",
@@ -160,16 +160,35 @@ function Digitalcontact() {
           comments: "",
           services: {},
           digitalmarketBudget: ""
-        })
-
+        });
       } else {
         console.log('Unexpected response:', response);
         showToast("Internal server error", { style: { border: "1px solid red" } });
       }
-    } catch(error) {
+    } catch (error) {
       console.log("error", error);
-      showToast("Unexpected error", { style: { border: "1px solid red" } });
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        if (error.response.status === 400) {
+          console.log("er111", error)
+          showToast("Email already exists", { style: { border: "1px solid red" } });
+        } else if (error.response.status === 401) {
+          // Handle unauthorized access
+        } else if (error.response.status === 500) {
+
+          showToast("Internal server error", { style: { border: "1px solid red" } });
+        } else {
+          showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
+        }
+      } else if (error.request) {
+        // The request was made but no response was received
+        showToast("No response from server", { style: { border: "1px solid red" } });
+      } else {
+        // Something happened in setting up the request that triggered an error
+        showToast("Error processing request", { style: { border: "1px solid red" } });
+      }
     }
+
   }
 
 
@@ -220,57 +239,57 @@ function Digitalcontact() {
                 <span className="fs-5"> Content Writing</span>
                 <br />
               </div>
-            
-                <div className="col-md-6 ">
-                  <input
-                    type="checkbox"
-                    className="digiCheckBox"
-                    id="performanceMarketing"
-                    name="performanceMarketing"
-                    onChange={handleCheckboxChange} value={state.services.performanceMarketing}
-                  />
-                  <span className="fs-5"> Performance Marketing</span> <br />
-                  <input
-                    type="checkbox"
-                    className="digiCheckBox"
-                    id="eventMarketing"
-                    name="eventMarketing"
-                    onChange={handleCheckboxChange} value={state.services.eventMarketing}
-                  />
-                  <span className="fs-5"> Event Marketing</span>
-                  <br />
-                  <input
-                    type="checkbox"
-                    className="digiCheckBox"
-                    id="videoProduction"
-                    name="videoProduction"
-                    onChange={handleCheckboxChange} value={state.services.videoProduction}
-                  />
-                  <span className="fs-5"> Video Production</span>
-                  <br />
-                  <input type="checkbox" className="digiCheckBox" id="consultancy" name="consultancy" onChange={handleCheckboxChange} value={state.services.consultancy} />
-                  <span className="fs-5"> Consultancy</span>
-                  <br />
-                  <input
-                    type="checkbox"
-                    className="digiCheckBox"
-                    id="instagramMarketing"
-                    name="instagramMarketing"
-                    onChange={handleCheckboxChange} value={state.services.instagramMarketing}
-                  />
-                  <span className="fs-5"> Instagram Marketing</span>
-                  <br />
-                  <input
-                    type="checkbox"
-                    className="digiCheckBox"
-                    id="shopifyDevelopment"
-                    name="shopifyDevelopment"
-                    onChange={handleCheckboxChange} value={state.services.shopifyDevelopment}
-                  />
-                  <span className="fs-5"> Shopify Development</span>
-                  <br />
-                </div>
-            
+
+              <div className="col-md-6 ">
+                <input
+                  type="checkbox"
+                  className="digiCheckBox"
+                  id="performanceMarketing"
+                  name="performanceMarketing"
+                  onChange={handleCheckboxChange} value={state.services.performanceMarketing}
+                />
+                <span className="fs-5"> Performance Marketing</span> <br />
+                <input
+                  type="checkbox"
+                  className="digiCheckBox"
+                  id="eventMarketing"
+                  name="eventMarketing"
+                  onChange={handleCheckboxChange} value={state.services.eventMarketing}
+                />
+                <span className="fs-5"> Event Marketing</span>
+                <br />
+                <input
+                  type="checkbox"
+                  className="digiCheckBox"
+                  id="videoProduction"
+                  name="videoProduction"
+                  onChange={handleCheckboxChange} value={state.services.videoProduction}
+                />
+                <span className="fs-5"> Video Production</span>
+                <br />
+                <input type="checkbox" className="digiCheckBox" id="consultancy" name="consultancy" onChange={handleCheckboxChange} value={state.services.consultancy} />
+                <span className="fs-5"> Consultancy</span>
+                <br />
+                <input
+                  type="checkbox"
+                  className="digiCheckBox"
+                  id="instagramMarketing"
+                  name="instagramMarketing"
+                  onChange={handleCheckboxChange} value={state.services.instagramMarketing}
+                />
+                <span className="fs-5"> Instagram Marketing</span>
+                <br />
+                <input
+                  type="checkbox"
+                  className="digiCheckBox"
+                  id="shopifyDevelopment"
+                  name="shopifyDevelopment"
+                  onChange={handleCheckboxChange} value={state.services.shopifyDevelopment}
+                />
+                <span className="fs-5"> Shopify Development</span>
+                <br />
+              </div>
+
             </div>
             <div>
               <div className="row justify-content-center mt-3 g-3">
@@ -291,7 +310,7 @@ function Digitalcontact() {
                 <div className="col-md-6">
                   <div className="position-relative">
                     <input type="text" placeholder=" Enter Your Email*" className="digicontact mb-4" name="email" value={state.email} onChange={handleInputChange} />
-                    <div className="position-absolute bottom-0"  style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.email}</div>
+                    <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.email}</div>
 
                   </div>
                 </div>
@@ -299,7 +318,7 @@ function Digitalcontact() {
                 <div className="col-md-6">
                   <div className="position-relative">
                     <input type="text" placeholder=" Enter Your Company Name*" className="digicontact mb-4" name="company" value={state.company} onChange={handleInputChange} />
-                    <div className="position-absolute bottom-0"  style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.company}</div>
+                    <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.company}</div>
 
                   </div>
                 </div>
@@ -329,7 +348,7 @@ function Digitalcontact() {
                       value={state.website}
                       onChange={handleInputChange} // Add this line for handling changes
                     />
-                     <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.website}</div>
+                    <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.website}</div>
 
                   </div>
                 </div>

@@ -21,6 +21,13 @@ const DigitalMarketing = async (req, res) => {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
+    // Check if email already exists
+    const existingContact = await DigitalService.findOne({ email });
+    if (existingContact) {
+      console.log("Email already exists");
+      return res.status(400).json({ error: "Email already exists" });
+    }
+
     console.log("digi control");
 
     // Create a new digital service
