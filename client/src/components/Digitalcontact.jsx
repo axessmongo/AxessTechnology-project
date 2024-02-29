@@ -32,7 +32,7 @@ function Digitalcontact() {
         [name]: checked
       },
     }));
-    validateField("serviceOption", checked)
+    // validateField("serviceOption", checked)
   };
 
   const handleInputChange = (e) => {
@@ -47,7 +47,7 @@ function Digitalcontact() {
       ...state,
       [name]: value,
     });
-    validateField(name, value);
+    // validateField(name, value);
   };
   const showToast = (text, options = {}) => {
     Toastify({
@@ -125,27 +125,27 @@ function Digitalcontact() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (errors.name || errors.email || errors.phone || errors.company || errors.website || checkboxError) return;
+    // if (errors.name || errors.email || errors.phone || errors.company || errors.website || checkboxError) return;
 
-    if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.company.trim() || !state.website.trim()) {
+    // if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.company.trim() || !state.website.trim()) {
 
-      setErrors({
-        name: !state.name ? 'Name is required.' : '',
-        email: !state.email ? 'Email is required.' : '',
-        phone: !state.phone ? 'Phone No is required.' : '',
-        website: !state.website ? 'Website URL is required.' : '',
-        company: !state.company ? 'Company name is required' : ''
-      });
-      validateField("serviceOption", "")
+    //   setErrors({
+    //     name: !state.name ? 'Name is required.' : '',
+    //     email: !state.email ? 'Email is required.' : '',
+    //     phone: !state.phone ? 'Phone No is required.' : '',
+    //     website: !state.website ? 'Website URL is required.' : '',
+    //     company: !state.company ? 'Company name is required' : ''
+    //   });
+    //   // validateField("serviceOption", "")
 
-      return;
-    }
+    //   return;
+    // }
     console.log("before try")
     try {
       const response = await axios.post("/digital/contact", state);
 
       if (response.status === 201) {
-        showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+        // showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
         // Reset form fields
         const checkboxes = document.getElementsByClassName("digiCheckBox");
         for (let checkbox of checkboxes) {
@@ -163,30 +163,30 @@ function Digitalcontact() {
         });
       } else {
         console.log('Unexpected response:', response);
-        showToast("Internal server error", { style: { border: "1px solid red" } });
+        // showToast("Internal server error", { style: { border: "1px solid red" } });
       }
     } catch (error) {
       console.log("error", error);
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        if (error.response.status === 400) {
-          console.log("er111", error)
-          showToast("Email already exists", { style: { border: "1px solid red" } });
-        } else if (error.response.status === 401) {
-          // Handle unauthorized access
-        } else if (error.response.status === 500) {
+      // if (error.response) {
+      //   // The request was made and the server responded with a status code
+      //   if (error.response.status === 400) {
+      //     console.log("er111", error)
+      //     showToast("Email already exists", { style: { border: "1px solid red" } });
+      //   } else if (error.response.status === 401) {
+      //     // Handle unauthorized access
+      //   } else if (error.response.status === 500) {
 
-          showToast("Internal server error", { style: { border: "1px solid red" } });
-        } else {
-          showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
-        }
-      } else if (error.request) {
-        // The request was made but no response was received
-        showToast("No response from server", { style: { border: "1px solid red" } });
-      } else {
-        // Something happened in setting up the request that triggered an error
-        showToast("Error processing request", { style: { border: "1px solid red" } });
-      }
+      //     showToast("Internal server error", { style: { border: "1px solid red" } });
+      //   } else {
+      //     showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
+      //   }
+      // } else if (error.request) {
+      //   // The request was made but no response was received
+      //   showToast("No response from server", { style: { border: "1px solid red" } });
+      // } else {
+      //   // Something happened in setting up the request that triggered an error
+      //   showToast("Error processing request", { style: { border: "1px solid red" } });
+      // }
     }
 
   }
