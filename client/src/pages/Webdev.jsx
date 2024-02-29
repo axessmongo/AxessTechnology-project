@@ -22,6 +22,7 @@ import kvrprofile from '../assets/images/kvr profile.png'
 import imagine1 from '../assets/images/imagine1.png'
 import Carousel from "../components/Carousel";
 import Profiledub from '../assets/images/testing/dub-img.png'
+import Price from "../components/Price";
 
 
 function Development() {
@@ -272,7 +273,7 @@ function Development() {
 
       <Techsection />
 
-      <section className='pricing mt-5' id="pricing-section">
+      {/* <section className='pricing mt-5' id="pricing-section">
         <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
@@ -344,7 +345,8 @@ function Development() {
         <div className="justify-content-center d-flex">
           <a href="/contact" className="order-btn">Order Now</a>
         </div>
-      </section >
+      </section > */}
+      <Price/>
 
       {/* Testimonal section */}
       <div>

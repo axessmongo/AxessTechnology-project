@@ -13,6 +13,7 @@ import Footer from "../components/Footer";
 // import step7 from '../assets/images/DigitalMarketing/step7.jpg'
 import Profiledub from '../assets/images/testing/dub-img.png'
 import Digitalcontact from "../components/Digitalcontact";
+import Price from "../components/Price";
 // import axios from "axios";
 
 export default function DigitalMarketing() {
@@ -233,7 +234,7 @@ export default function DigitalMarketing() {
             </p>
           </section>
         </div>
-
+        <Price/>
         <div>
           <section className='nav-banner testimonal' id="testimonial">
             <div>

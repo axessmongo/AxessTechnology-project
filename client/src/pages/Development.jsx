@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import Techsection from "../components/Techsection";
 import whychooseimg from "../assets/images/whychoose-img.png";
 import Profiledub from "../assets/images/testing/dub-img.png";
+import Price from "../components/Price";
 
 function Development() {
   return (
@@ -463,7 +464,7 @@ function Development() {
       </section>
 
       <Techsection />
-      <section className="pricing mt-5" id="pricing-section">
+      {/* <section className="pricing mt-5" id="pricing-section">
         <h1 className="primary-header text-center">Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
@@ -617,7 +618,9 @@ function Development() {
             Order Now
           </a>
         </div>
-      </section>
+      </section> */}
+
+      <Price/>
       <div>
         {/* Testimonal section */}
         <div>

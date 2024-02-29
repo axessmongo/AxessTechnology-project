@@ -14,6 +14,7 @@ import testimgs from '../assets/images/testing/testing-img-2.png'
 import Profiledub from '../assets/images/testing/dub-img.png'
 import Process from "../assets/images/STLC.png";
 import TestingTools from '../components/TestingTools';
+import Price from '../components/Price';
 
 
 
@@ -245,7 +246,6 @@ function Testing() {
       </section>
       <Techsection />
 
-      <TestingTools/>
    
 
       {/* Technology section */}
@@ -334,8 +334,10 @@ function Testing() {
         </div>
       </div>
 
+
+      <TestingTools/>
       {/* Price section */}
-      <section className='pricing mt-5' id="pricing-section">
+      {/* <section className='pricing mt-5' id="pricing-section">
         <h1 className='primary-header text-center'>Unlock Our New Features</h1>
         <div className="container pricing-table">
           <div className="pricing-card ">
@@ -407,7 +409,8 @@ function Testing() {
         <div className="justify-content-center d-flex">
           <a href="/contact" className="order-btn">Order Now</a>
         </div>
-      </section >
+      </section > */}
+      <Price/>
 
       {/* Testimonal section */}
       <div>
