@@ -64,36 +64,36 @@ export default function Price() {
     let showingObj = priceContainer[trimpathname]
 
 
-    return (
-        <div>
-            <div className="price bg">
-                <div className="row">
-                    <div className="col-md-3 bg-axess-gold-3 sec-1">
-                        <div className="h-100 d-flex align-items-center justify-content-center flex-column">
-                            <h1 className='mb-4'>Limited</h1>
-                            <p className='secondary-text mb-0'>Yearly Plan</p>
-                        </div>
-                    </div>
-                    <div className="col-md-7 bg-axess-gold-2 mid-sec py-5">
-                        <h1 className="primary-header text-center mb-5">Unlock Our New Features</h1>
-                        <div className="row justify-content-center align-items-center gy-3">
+    // return (
+    //     <div>
+    //         <div className="price bg">
+    //             <div className="row">
+    //                 <div className="col-md-3 bg-axess-gold-3 sec-1">
+    //                     <div className="h-100 d-flex align-items-center justify-content-center flex-column">
+    //                         <h1 className='mb-4'>Limited</h1>
+    //                         <p className='secondary-text mb-0'>Yearly Plan</p>
+    //                     </div>
+    //                 </div>
+    //                 <div className="col-md-7 bg-axess-gold-2 mid-sec py-5">
+    //                     <h1 className="primary-header text-center mb-5">Unlock Our New Features</h1>
+    //                     <div className="row justify-content-center align-items-center gy-3">
 
-                            {showingObj.plans.map((val) => (
-                                <div className="col-md-5">
-                                    <li className='secondary-text mb-0'>{val}</li>
-                                </div>
-                            ))}
-                        </div>
+    //                         {showingObj.plans.map((val) => (
+    //                             <div className="col-md-5">
+    //                                 <li className='secondary-text mb-0'>{val}</li>
+    //                             </div>
+    //                         ))}
+    //                     </div>
 
-                    </div>
-                    <div className="col-md-2 bg-axess-gold-3">
-                        <div className="h-100 d-flex align-items-center justify-content-center flex-column">
-                            <h1 className='mb-4'>{showingObj.planPrice} ₹</h1>
-                            <button className="gold-btn m-0 green-btn"><span className="d-block">Purchase</span> <i className="bi bi-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+    //                 </div>
+    //                 <div className="col-md-2 bg-axess-gold-3">
+    //                     <div className="h-100 d-flex align-items-center justify-content-center flex-column">
+    //                         <h1 className='mb-4'>{showingObj.planPrice} ₹</h1>
+    //                         <button className="gold-btn m-0 green-btn"><span className="d-block">Purchase</span> <i className="bi bi-arrow-right"></i></button>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    // )
 }

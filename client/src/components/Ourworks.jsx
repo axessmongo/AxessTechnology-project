@@ -201,7 +201,7 @@ export default function CategoriesIn() {
                         </div>
                         <div className="pt-2 ">
                           <Link
-                            to={"/webdevelopment"}
+                            to={"/contact"}
                             onClick={() => setValue(true)}
                             className="text-decoration-none"
                           >
@@ -270,7 +270,7 @@ export default function CategoriesIn() {
                         </div>
                         <div className="pt-2 ">
                           <Link
-                            to={"/webdevelopment"}
+                            to={"/contact"}
                             onClick={() => setValue(true)}
                             className="text-decoration-none"
                           >
@@ -356,7 +356,7 @@ export default function CategoriesIn() {
                             </div>
                             <div className="pt-2 ">
                               <Link
-                                to={"/webdevelopment"}
+                                to={"/contact"}
                                 onClick={() => setValue(true)}
                                 className="text-decoration-none"
                               >
@@ -425,7 +425,7 @@ export default function CategoriesIn() {
                             </div>
                             <div className="pt-2 ">
                               <Link
-                                to={"/webdevelopment"}
+                                to={"/contact"}
                                 onClick={() => setValue(true)}
                                 className="text-decoration-none"
                               >
@@ -571,7 +571,7 @@ export default function CategoriesIn() {
                             </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
@@ -654,7 +654,7 @@ export default function CategoriesIn() {
                               </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
@@ -736,7 +736,7 @@ export default function CategoriesIn() {
                               </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
@@ -893,7 +893,7 @@ export default function CategoriesIn() {
                               </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
@@ -959,7 +959,7 @@ export default function CategoriesIn() {
                               </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
@@ -1050,7 +1050,7 @@ export default function CategoriesIn() {
                               </div>
                               <div className="pt-2 ">
                                 <Link
-                                  to={"/webdevelopment"}
+                                  to={"/contact"}
                                   onClick={() => setValue(true)}
                                   className="text-decoration-none"
                                 >
