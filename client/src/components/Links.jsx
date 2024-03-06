@@ -76,7 +76,7 @@ export default function Links() {
               <i className="bi bi-instagram"></i>
             </div>
           </div>
-          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axess_technology</p>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>axesstech</p>
         </a>
       </div>
       <div className="col-3">
