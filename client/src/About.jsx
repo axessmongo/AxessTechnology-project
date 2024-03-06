@@ -207,7 +207,7 @@ function About() {
                 <Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target="_blank">
                   <i className="bi bi-facebook text-primary fs-4 mx-3"></i>
                 </Link>
-                <Link to={'https://www.instagram.com/axess_technology/'} target="_blank">
+                <Link to={'https://www.instagram.com/axesstech/'} target="_blank">
                   <i className="bi bi-instagram text-danger fs-4 mx-3"></i>
                 </Link>
                 <Link>

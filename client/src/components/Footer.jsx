@@ -240,7 +240,7 @@ function Footer({ displayContact }) {
 
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 63806 65710 </Link></p>
-                                        <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axess_technology/" target='_blank'>axess_technology</a></p>
+                                        <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axesstech/" target='_blank'>axess_technology</a></p>
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>
@@ -317,7 +317,7 @@ function Footer({ displayContact }) {
                                 <p className='text-center primary-text mb-3'>Follow Us on Social Media.</p>
                                 <ul className='list-unstyled d-flex justify-content-center'>
                                     <li className='zoom-effect'><Link to={'https://www.facebook.com/profile.php?id=61556380648787'} target='_blank' className='text-decoration-none'><i className="bi bi-facebook bg-img-1"></i></Link></li>
-                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axess_technology/'} target='_blank' className='text-decoration-none'><i className="bi bi-instagram bg-img-1"></i></Link></li>
+                                    <li className='zoom-effect'><Link to={'https://www.instagram.com/axesstech/'} target='_blank' className='text-decoration-none'><i className="bi bi-instagram bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link><i className="bi bi-whatsapp  bg-img-1"></i></Link></li>
                                     <li className='zoom-effect'><Link to={'https://www.linkedin.com/company/axess-technology-official'} target='_blank' className='text-decoration-none'><i className="bi bi-linkedin bg-img-1"></i></Link></li>
                                 </ul>

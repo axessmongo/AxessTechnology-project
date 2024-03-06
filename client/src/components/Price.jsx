@@ -40,7 +40,7 @@ export default function Price() {
                 'content management system',
                 'SEO optimization',
                 'maintenance and updates',
-                '1 month free tech support'
+                '1 month free tech support' 
             ],
             planPrice: '24999'
         },
