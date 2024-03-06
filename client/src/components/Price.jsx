@@ -4,33 +4,33 @@ import { useLocation } from 'react-router-dom';
 export default function Price() {
 
     const priceContainer = {
-        development: {
-            plans: [
-                'domain - additional charges',
-                'hosting - 1 year free',
-                'single page application (5 Pages)',
-                'SSL certificate',
-                'whatsapp chat - additional charges',
-                'social media integration',
-                'static website',
-                'premade website',
-                'month free tech support'
-            ],
-            planPrice: '14999'
-        },
-        testing: {
-            plans: [
-                'basic testing environment',
-                'automated testing suite',
-                'performance testing',
-                'security testing',
-                'compatibility testing',
-                'bug tracking system',
-                'report generation',
-                '2 weeks free support'
-            ],
-            planPrice: '9999'
-        },
+        // development: {
+        //     plans: [
+        //         'domain - additional charges',
+        //         'hosting - 1 year free',
+        //         'single page application (5 Pages)',
+        //         'SSL certificate',
+        //         'whatsapp chat - additional charges',
+        //         'social media integration',
+        //         'static website',
+        //         'premade website',
+        //         'month free tech support'
+        //     ],
+        //     planPrice: '14999'
+        // },
+        // testing: {
+        //     plans: [
+        //         'basic testing environment',
+        //         'automated testing suite',
+        //         'performance testing',
+        //         'security testing',
+        //         'compatibility testing',
+        //         'bug tracking system',
+        //         'report generation',
+        //         '2 weeks free support'
+        //     ],
+        //     planPrice: '9999'
+        // },
         webdevelopment: {
             plans: [
                 'custom web application',
@@ -40,23 +40,23 @@ export default function Price() {
                 'content management system',
                 'SEO optimization',
                 'maintenance and updates',
-                '1 month free tech support' 
+                '3 month free tech support' 
             ],
-            planPrice: '24999'
+            planPrice: '14999'
         },
-        digitalmarketing: {
-            plans: [
-                'social media marketing',
-                'search engine optimization (SEO)',
-                'content marketing',
-                'email marketing',
-                'online advertising',
-                'analytics and reporting',
-                'monthly progress review',
-                'dedicated account manager'
-            ],
-            planPrice: '19999'
-        }
+        // digitalmarketing: {
+        //     plans: [
+        //         'social media marketing',
+        //         'search engine optimization (SEO)',
+        //         'content marketing',
+        //         'email marketing',
+        //         'online advertising',
+        //         'analytics and reporting',
+        //         'monthly progress review',
+        //         'dedicated account manager'
+        //     ],
+        //     planPrice: '19999'
+        // }
     };
 
     let pathname = useLocation().pathname;
