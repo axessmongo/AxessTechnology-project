@@ -239,14 +239,14 @@ function Footer({ displayContact }) {
                                 <div className="row">
 
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>WhatsApp: <Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 63806 65710 </Link></p>
+                                        <p>WhatsApp: <Link to={"+91 6379532366"} className='text-decoration-none concolor'> +91 6379532366 </Link></p>
                                         <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axesstech/" target='_blank'>axesstech</a></p>
                                     </div>
 
                                     <div className="col-md-4" data-aos='zoom-out'>
                                         {/* <p>Phone:<Link to={"+91 90425 77261"} className='text-decoration-none concolor'> +91 90425 77261</Link></p> */}
                                         {/* <p>Phone: <span className='text-decoration-none concolor' onClick={() => handlePhoneCall('+919042577261')}> +91 9042577261</span></p> */}
-                                        <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 90425 77261</span></div>
+                                        <div className='d-none d-lg-block'>Phone: <span className='concolor text-decoration-none'>+91 6380665710</span></div>
                                         <div className='d-lg-none'>Phone:<Link to="tel:7845721438" className='concolor text-decoration-none'> +91 90425 77261</Link></div>
                                         <p className='mt-3'>Email : <a className='text-decoration-none concolor' href="mailto: info@axesstechnology.in">info@axesstechnology.in</a></p>
                                     </div>
