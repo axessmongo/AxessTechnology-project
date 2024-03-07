@@ -116,7 +116,7 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("/contact", state);
+      const response = await axios.post("/jaykumar", state);
       if (response.status === 201) {
         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
         // Reset form fields
