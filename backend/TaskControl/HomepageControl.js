@@ -1,29 +1,42 @@
 const contactSchema = require("../userModel/ContactSchema.js");
 
 const Contactpostmethod = async (req, res) => {
-  const { fname, lname, email, address, serviceOption } = req.body;
-  console.log("contact", req.body);
+  const { fname, email, phone, website, company, digitalmarketBudget, comments, services } = req.body;
   try {
-    // Create a new contact using the data from the request body
     const contact = await contactSchema.create({
       fname,
-      lname,
       email,
-      address,
-      serviceOption
+      phone,
+      website,
+      company,
+      digitalmarketBudget,
+      comments,
+      services,
     });
-
-    // Respond with a success message and the created contact data
     res.status(201).json({
       status: 201,
-      msg: "Created contact",
+      msg: "Digital contact",
       data: contact,
     });
   } catch (error) {
-    // Handle errors
     console.error(error);
     res.status(500).json({ message: error.message });
   }
 };
 
-module.exports = { Contactpostmethod };
+
+const contactgetmethod = async (req, res) => {
+  try {
+    const contacts = await contactSchema.find({});
+    res.status(200).json({
+      status: 200,
+      msg: "Digital contacts retrieved successfully",
+      data: contacts,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+
+module.exports = { Contactpostmethod, contactgetmethod };

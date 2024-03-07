@@ -1,31 +1,38 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const contactSchema = new Schema({
-  fname: {
-    type: "string",
+const contactSchema = new Schema(
+  {
+    fname: {
+      type: String,
+    },
+    email: {
+      type: String,
+      unique: true,
+    },
+    phone: {
+      type: String,
+    },
+    website: {
+      type: String,
+    },
+    company: {
+      type: String,
+    },
+    services: {
+      type: Object,
+      // You might want to define a specific schema for services
+    },
+    digitalmarketBudget: {
+      type: String,
+    },
+    comments: {
+      type: String,
+    },
   },
-  lname: {
-    type: "string",
-  },
-  email: {
-    type: "string",
-    unquie: true,
-  },
-  phone:{
-    type:Number
-  },
-  address: {
-    type: "string",
-  },
-  serviceOption: {
-    type: "string",
-  },
-  comments: {
-    type: "string",
-  },
-});
+  { timestamps: true }
+);
 
-const contact = mongoose.model("contact", contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
-module.exports = contact;
+module.exports = Contact;

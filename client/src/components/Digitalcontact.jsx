@@ -5,49 +5,45 @@ import "toastify-js/src/toastify.css"
 
 function Digitalcontact() {
   const [errors, setErrors] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    company: "",
-    website: "",
-    digitalmarketBudget: ""
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    website: '',
+    serviceOption: '',
   });
-  const [checkboxError, setCheckboxError] = useState("")
+  const [checkboxError, setCheckboxError] = useState("");
   const [state, setState] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    company: "",
-    website: "",
-    comments: "",
+    fname: '',
+    email: '',
+    phone: '',
+    website: '',
+    company: '',
+    digitalmarketBudget: '',
+    comments: '',
     services: {},
-    digitalmarketBudget: ""
-  })
+  });
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
-    setState((prevFormData) => ({
-      ...prevFormData,
+    setState((prevState) => ({
+      ...prevState,
       services: {
-        ...state.services,
-        [name]: checked
+        ...prevState.services,
+        [name]: checked,
       },
     }));
-    // validateField("serviceOption", checked)
+    validateField("serviceOption", checked);
   };
-
   const handleInputChange = (e) => {
     let { name, value } = e.target;
     if (name === 'phone') {
       value = value.replace(/\D/g, '').slice(0, 10);
     }
-    if (name === 'name') {
-      value = value.replace(/[^a-zA-Z\s]/g, '');
-    }
     setState({
       ...state,
       [name]: value,
     });
-    // validateField(name, value);
+    validateField(name, value);
   };
   const showToast = (text, options = {}) => {
     Toastify({
@@ -59,65 +55,54 @@ function Digitalcontact() {
       position: options.position || "center",
       stopOnFocus: options.stopOnFocus || true,
       style: options.style || {},
-      onClick: options.onClick || function () { }
+      onClick: options.onClick || function () { },
     }).showToast();
   };
-  var digitalServiceList = document.getElementsByName("DigitalserviceList");
-
   const validateField = (name, value) => {
     switch (name) {
       case 'name':
-        setErrors({
-          ...errors,
+        setErrors((prevErrors) => ({
+          ...prevErrors,
           name: value.length === 0 ? 'Name is required' : /[^A-Za-z\s]/.test(value) ? 'Invalid name, only letters allowed' : '',
-        });
+        }));
         break;
       case 'company':
-        setErrors({
-          ...errors,
-          company: value.length === 0 ? 'Company  is required' : /[^A-Za-z0-9\s]/.test(value) ? 'Invalid company name, only letters allowed' : '',
-        });
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          company: value.length === 0 ? 'Company is required' : /[^A-Za-z0-9\s]/.test(value) ? 'Invalid company name, only letters allowed' : '',
+        }));
         break;
-
       case 'website':
-        setErrors({
-          ...errors,
+        setErrors((prevErrors) => ({
+          ...prevErrors,
           website: value.length === 0 ? 'Website URL is required' : !/^(https?:\/\/)?([\w-]+\.)*[\w-]+(\.[a-z]{2,})(:\d{1,5})?(\/\S*)?$/.test(value) ? 'Invalid website URL' : '',
-        });
+        }));
         break;
-
       case 'email':
-        setErrors({
-          ...errors,
-          email:
-            value.length === 0 ? 'Email is required' :
-              !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(value)
-                ? 'Invalid email'
-                : '',
-        });
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          email: value.length === 0 ? 'Email is required' : !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(value) ? 'Invalid email' : '',
+        }));
         break;
-
       case 'phone':
-        setErrors({
-          ...errors,
-          phone:
-            value.length === 0
-              ? 'Phone is required'
-              : value.length !== 10 || !/^[5-9]\d+$/.test(value) ? 'Invalid phone' : '',
-        });
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          phone: value.length === 0 ? 'Phone is required' : (value.length !== 10 || !/^[5-9]\d+$/.test(value)) ? 'Invalid phone' : '',
+        }));
         break;
       case 'serviceOption':
         let isChecked = false;
-        for (var i = 0; i < digitalServiceList.length; i++) {
-          if (digitalServiceList[i].checked) {
+        for (let serviceName in state.services) {
+          if (state.services[serviceName]) {
             isChecked = true;
             break; // If one is checked, no need to continue checking
           }
         }
         if (!isChecked) {
-          setCheckboxError("Choose atleast one option")
+          setCheckboxError("Choose at least one option");
+        } else {
+          setCheckboxError("");
         }
-        if (value) setCheckboxError("")
         break;
       default:
         break;
@@ -125,34 +110,18 @@ function Digitalcontact() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (errors.name || errors.email || errors.phone || errors.company || errors.website || checkboxError) return;
-
-    // if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.company.trim() || !state.website.trim()) {
-
-    //   setErrors({
-    //     name: !state.name ? 'Name is required.' : '',
-    //     email: !state.email ? 'Email is required.' : '',
-    //     phone: !state.phone ? 'Phone No is required.' : '',
-    //     website: !state.website ? 'Website URL is required.' : '',
-    //     company: !state.company ? 'Company name is required' : ''
-    //   });
-    //   // validateField("serviceOption", "")
-
-    //   return;
-    // }
-    console.log("before try")
+    // Check if there are any errors before submitting
+    if (Object.values(errors).some((error) => error !== '') || checkboxError !== '') {
+      showToast("Please fill in all required fields and correct any errors", { style: { border: "1px solid red" } });
+      return;
+    }
     try {
-      const response = await axios.post("/digital/contact", state);
-
+      const response = await axios.post("/contact", state);
       if (response.status === 201) {
-        // showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+        showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
         // Reset form fields
-        const checkboxes = document.getElementsByClassName("digiCheckBox");
-        for (let checkbox of checkboxes) {
-          checkbox.checked = false;
-        }
         setState({
-          name: "",
+          fname: "",
           phone: "",
           email: "",
           company: "",
@@ -163,34 +132,27 @@ function Digitalcontact() {
         });
       } else {
         console.log('Unexpected response:', response);
-        // showToast("Internal server error", { style: { border: "1px solid red" } });
+        showToast("Internal server error", { style: { border: "1px solid red" } });
       }
     } catch (error) {
       console.log("error", error);
-      // if (error.response) {
-      //   // The request was made and the server responded with a status code
-      //   if (error.response.status === 400) {
-      //     console.log("er111", error)
-      //     showToast("Email already exists", { style: { border: "1px solid red" } });
-      //   } else if (error.response.status === 401) {
-      //     // Handle unauthorized access
-      //   } else if (error.response.status === 500) {
-
-      //     showToast("Internal server error", { style: { border: "1px solid red" } });
-      //   } else {
-      //     showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
-      //   }
-      // } else if (error.request) {
-      //   // The request was made but no response was received
-      //   showToast("No response from server", { style: { border: "1px solid red" } });
-      // } else {
-      //   // Something happened in setting up the request that triggered an error
-      //   showToast("Error processing request", { style: { border: "1px solid red" } });
-      // }
+      if (error.response) {
+        if (error.response.status === 400) {
+          showToast("Email already exists", { style: { border: "1px solid red" } });
+        } else if (error.response.status === 401) {
+          // Handle unauthorized access
+        } else if (error.response.status === 500) {
+          showToast("Internal server error", { style: { border: "1px solid red" } });
+        } else {
+          showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
+        }
+      } else if (error.request) {
+        showToast("No response from server", { style: { border: "1px solid red" } });
+      } else {
+        showToast("Error processing request", { style: { border: "1px solid red" } });
+      }
     }
-
-  }
-
+  };
 
   return (
     <div>
@@ -295,7 +257,7 @@ function Digitalcontact() {
               <div className="row justify-content-center mt-3 g-3">
                 <div className="col-md-6">
                   <div className="position-relative">
-                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mb-4" name="name" value={state.name} onChange={handleInputChange} />
+                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mb-4" name="fname" value={state.fname} onChange={handleInputChange} />
                     <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.name}</div>
 
                   </div>
