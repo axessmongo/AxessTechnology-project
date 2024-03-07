@@ -45,15 +45,15 @@ export default function Links() {
   return (
     <div className={`${scrollClass} links-container row align-items-center text-white ${hover}`}>
       <div className="col-3">
-        <a href='href="https://wa.me/6379532366' className="d-flex justify-content-center text-decoration-none text-white"
-          onMouseEnter={(color) => setcolorfunctoin('whatsappcolor')}
+        <a href='https://wa.me/6379532366' className="d-flex justify-content-center text-decoration-none text-white"
+          onMouseEnter={() => setcolorfunctoin('whatsappcolor')}
           onMouseLeave={() => setHover('')}>
           <div className="position-relative">
             <div className="icons whatsapp">
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <a className='mb-0 ms-5 d-none d-lg-block px-2 text-white text-decoration-none' target='_blank' href="https://wa.me/6379532366">6379532366</a>
+          <p className='mb-0 ms-5 d-none d-lg-block px-2'>6379532366</p>
         </a>
       </div>
       <div className="col-3">
