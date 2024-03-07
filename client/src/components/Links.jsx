@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+// import { Link } from 'react-router-dom';
 
 export default function Links() {
 
@@ -52,16 +53,7 @@ export default function Links() {
               <i className="bi bi-whatsapp"></i>
             </div>
           </div>
-          <div>
-            <p className="mb-0 text-decoration-none text-white">
-              <a href="https://web.whatsapp.com/send?phone=6379532366" target='_blank' className="text-decoration-none text-white"></a>
-            </p>
-            <p className="mb-0 text-decoration-none text-white">
-              <a href="whatsapp://send?phone=6379532366" target='_blank' className="text-decoration-none text-white mx-5">6379532366</a>
-              {/* <p>6379532366</p> */}
-            </p>
-          </div>
-
+          <a className='mb-0 ms-5 d-none d-lg-block px-2 text-white text-decoration-none' target='_blank' href="https://wa.me/6379532366">6379532366</a>
         </a>
       </div>
       <div className="col-3">
