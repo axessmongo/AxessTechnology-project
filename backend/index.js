@@ -11,7 +11,7 @@ app.use(express.json());
 
 // CORS setup
 app.use(cors({
-  origin: 'axesstechnology.in' // Change to your specific origin
+  origin: 'https://axesstechnology.in/' // Change to your specific origin
 }));
 
 // Route setup
