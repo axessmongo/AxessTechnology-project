@@ -116,12 +116,17 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("/jaykumar", state);
+      const response = await axios.post("https://axesstechnology.in/jaykumar", state);
+
       if (response.status === 201) {
-        showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+        // Handle success
         // Reset form fields
+        const checkboxes = document.getElementsByClassName("digiCheckBox");
+        for (let checkbox of checkboxes) {
+          checkbox.checked = false;
+        }
         setState({
-          fname: "",
+          name: "",
           phone: "",
           email: "",
           company: "",
@@ -130,27 +135,20 @@ function Digitalcontact() {
           services: {},
           digitalmarketBudget: ""
         });
+        // Show success message
+         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
       } else {
+        // Handle unexpected response status
+        alert("Unable to connect")
         console.log('Unexpected response:', response);
-        showToast("Internal server error", { style: { border: "1px solid red" } });
+        // Show error message
+        // showToast("Internal server error", { style: { border: "1px solid red" } });
       }
     } catch (error) {
-      console.log("error", error);
-      if (error.response) {
-        if (error.response.status === 400) {
-          showToast("Email already exists", { style: { border: "1px solid red" } });
-        } else if (error.response.status === 401) {
-          // Handle unauthorized access
-        } else if (error.response.status === 500) {
-          showToast("Internal server error", { style: { border: "1px solid red" } });
-        } else {
-          showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
-        }
-      } else if (error.request) {
-        showToast("No response from server", { style: { border: "1px solid red" } });
-      } else {
-        showToast("Error processing request", { style: { border: "1px solid red" } });
-      }
+      // Handle request error
+      console.log("Error occurred:", error);
+      // Show error message
+      // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
     }
   };
 

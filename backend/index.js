@@ -7,14 +7,14 @@ const PORT = process.env.PORT;
 const route = require("./Router/route.js");
 
 
-// const corsOptions = {
-//   origin: 'https://axesstechnology.in/',
-// };
+const corsOptions = {
+  origin: 'https://axesstechnology.in/',
+};
 
-
+   
 app.use(express.json());
 app.use(cors());
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(route)
 
 
