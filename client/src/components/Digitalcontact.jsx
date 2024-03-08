@@ -116,7 +116,7 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:5000/jaykumar", state);
+      const response = await axios.post("api/digital", state);
 
       if (response.status === 201) {
         // Handle success

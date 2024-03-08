@@ -10,11 +10,9 @@ const route = require("./Router/route.js");
 app.use(express.json());
 
 // CORS setup
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// app.use(cors({
+//     origin: 'http://localhost:3000',
+// }));
 
 // Route setup
 app.use(route);

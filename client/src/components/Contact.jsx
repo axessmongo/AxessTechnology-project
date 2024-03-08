@@ -132,7 +132,7 @@ function Contact() {
             return;
         }
         try {
-            const response = await axios.post('/api/contacts', contact);
+            const response = await axios.post('api/contact', contact);
             console.log("res", response)
             if (response.status === 201) {
                 console.log("201")
