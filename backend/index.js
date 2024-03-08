@@ -5,7 +5,7 @@ const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT;
 const route = require("./Router/route.js");
-const routes =require("./Router/Digroute.js");
+
 
 const corsOptions = {
   origin: 'https://axesstechnology.in/',
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 app.use(cors(corsOptions));
 app.use(route)
-app.use(routes)
+
 
 
 app.get("/", (req, res) => {
