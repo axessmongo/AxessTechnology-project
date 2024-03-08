@@ -11,7 +11,9 @@ app.use(express.json());
 
 // CORS setup
 app.use(cors({
-  origin: 'https://axesstechnology.in/' // Change to your specific origin
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Route setup
