@@ -33,6 +33,6 @@ const contactSchema = new Schema(
   { timestamps: true }
 );
 
-const Contact = mongoose.model("Contact", contactSchema);
+const Contact = mongoose.model("DigitalContacts", contactSchema);
 
 module.exports = Contact;

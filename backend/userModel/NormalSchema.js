@@ -10,8 +10,10 @@ const NormalSchema = new Schema({
   },
   email: {
     type: "string",
-    unique: true,
     required: true,
+  },
+  phone:{
+    type: "Number",
   },
   address: {
     type: "string",
@@ -21,6 +23,6 @@ const NormalSchema = new Schema({
   },
 });
 
-const Contact = mongoose.model("Usercontact", NormalSchema);
+const Contact = mongoose.model("contacts", NormalSchema);
 
 module.exports = Contact;
