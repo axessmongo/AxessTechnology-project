@@ -6,21 +6,24 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 const route = require("./Router/route.js");
 
-
-
-   
+// Middleware setup
 app.use(express.json());
-app.use(cors());
-app.use(route)
 
+// CORS setup
+app.use(cors({
+  origin: 'axesstechnology.in' // Change to your specific origin
+}));
 
+// Route setup
+app.use(route);
 
+// Root path route
 app.get("/", (req, res) => {
   console.log('Request received at root path');
   res.send('Welcome to Node.js');
 });
 
-
+// MongoDB connection
 mongoose
   .connect(process.env.mongoURL, {
   })
