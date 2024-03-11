@@ -20,10 +20,7 @@ const contactSchema = new Schema(
     company: {
       type: String,
     },
-    services: {
-       type: Object,
-    //   // You might want to define a specific schema for services
-     },
+    services: [{ type: String }], // Array of strings
     digitalmarketBudget: {
       type: String,
     },

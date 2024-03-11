@@ -1,9 +1,9 @@
-const contactSchema = require("../userModel/ContactSchema");
+const Contact = require("../userModel/ContactSchema.js");
 
 const Contactpostmethod = async (req, res) => {
   const { fname, email, phone, website, company, digitalmarketBudget, comments, services } = req.body;
   try {
-    const contact = await contactSchema.create({
+    const contact = await Contact.create({
       fname,
       email,
       phone,
@@ -11,7 +11,7 @@ const Contactpostmethod = async (req, res) => {
       company,
       digitalmarketBudget,
       comments,
-      services,
+      services: Array.isArray(services) ? services : [services], // Ensure services is an array
     });
     res.status(201).json({
       status: 201,
@@ -24,6 +24,4 @@ const Contactpostmethod = async (req, res) => {
   }
 };
 
-
-
-module.exports = {Contactpostmethod,}
+module.exports = { Contactpostmethod };
