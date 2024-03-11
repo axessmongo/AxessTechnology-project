@@ -1,44 +1,39 @@
-// Importing mongoose library
 const mongoose = require("mongoose");
 
-// Destructuring Schema from mongoose
 const { Schema } = mongoose;
 
 const contactSchema = new Schema(
   {
     fname: {
-      type: String, // Field for first name, expects a string
-      required: true // Making first name required
+      type: String,
     },
     email: {
-      type: String, // Field for email, expects a string, and should be unique
+      type: String,
       unique: true,
-      required: true // Making email required
     },
     phone: {
-      type: String, // Field for phone number, expects a string
-      required: true // Making phone number required
+      type: String,
     },
     website: {
-      type: String // Field for website, expects a string
+      type: String,
     },
     company: {
-      type: String // Field for company, expects a string
+      type: String,
     },
-    services: {
-      type: Schema.Types.Mixed 
-    },
+     services: {
+       type: Object,
+    //   // You might want to define a specific schema for services
+     },
     digitalmarketBudget: {
-      type: String // Field for digital market budget, expects a string
+      type: String,
     },
     comments: {
-      type: String // Field for comments, expects a string
+      type: String,
     },
   },
-  { timestamps: true } // Adding timestamps for createdAt and updatedAt
+  { timestamps: true }
 );
-// Creating a model named "DigitalWorld" using the contact schema
-const Contact = mongoose.model("DigitalWorld", contactSchema);
 
-// Exporting the Contact model
+const Contact = mongoose.model("Contact", contactSchema);
+
 module.exports = Contact;
