@@ -1,6 +1,5 @@
 const contactSchema = require("../userModel/ContactSchema.js");
 
-// Define Contactpostmethod to handle POST requests for adding contacts
 const Contactpostmethod = async (req, res) => {
   const { fname, email, phone, website, company, digitalmarketBudget, comments, services } = req.body;
   try {
@@ -24,6 +23,9 @@ const Contactpostmethod = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+module.exports = { Contactpostmethod };
+
 
 
 // Define contactgetmethod to handle GET requests for retrieving contacts

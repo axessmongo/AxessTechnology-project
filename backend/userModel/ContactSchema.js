@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const { Schema } = mongoose;
 
 const contactSchema = new Schema(
@@ -33,6 +34,6 @@ const contactSchema = new Schema(
   { timestamps: true }
 );
 
-const Contact = mongoose.model("DigitalContacts", contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
 module.exports = Contact;

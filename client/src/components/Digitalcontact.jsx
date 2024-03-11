@@ -21,7 +21,7 @@ function Digitalcontact() {
     company: '',
     digitalmarketBudget: '',
     comments: '',
-    services: {},
+    // services: {},
   });
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
@@ -117,14 +117,10 @@ function Digitalcontact() {
     }
     try {
       const response = await axios.post("/api/digital", state);
-
+  
       if (response.status === 201) {
         // Handle success
         // Reset form fields
-        const checkboxes = document.getElementsByClassName("digiCheckBox");
-        for (let checkbox of checkboxes) {
-          checkbox.checked = false;
-        }
         setState({
           name: "",
           phone: "",
@@ -136,7 +132,7 @@ function Digitalcontact() {
           digitalmarketBudget: ""
         });
         // Show success message
-         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+        showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
       } else {
         // Handle unexpected response status
         alert("Unable to connect")
@@ -151,6 +147,7 @@ function Digitalcontact() {
       // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
     }
   };
+  
 
   return (
     <div>
