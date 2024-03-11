@@ -5,7 +5,7 @@ import "toastify-js/src/toastify.css"
 
 function Digitalcontact() {
   const [errors, setErrors] = useState({
-    name: '',
+    fname: '',
     email: '',
     phone: '',
     company: '',
@@ -128,7 +128,7 @@ function Digitalcontact() {
           company: "",
           website: "",
           comments: "",
-          services: {},
+          // services: {},
           digitalmarketBudget: ""
         });
         // Show success message
@@ -143,6 +143,7 @@ function Digitalcontact() {
     } catch (error) {
       // Handle request error
       console.log("Error occurred:", error);
+      alert("Error occurred:", error)
       // Show error message
       // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
     }
