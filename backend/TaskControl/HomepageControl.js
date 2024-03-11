@@ -25,6 +25,7 @@ const Contactpostmethod = async (req, res) => {
   }
 };
 
+
 // Define contactgetmethod to handle GET requests for retrieving contacts
 const contactgetmethod = async (req, res) => {
   try {
