@@ -11,7 +11,6 @@ function Digitalcontact() {
     company: '',
     website: '',
     serviceOption: '',
-    services: {},
   });
   const [checkboxError, setCheckboxError] = useState("");
   const [state, setState] = useState({
