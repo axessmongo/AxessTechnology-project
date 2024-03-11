@@ -11,6 +11,7 @@ function Digitalcontact() {
     company: '',
     website: '',
     serviceOption: '',
+    services: {},
   });
   const [checkboxError, setCheckboxError] = useState("");
   const [state, setState] = useState({
@@ -116,7 +117,7 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("/api/digital", state);
+      const response = await axios.post("/nivetha", state);
 
       if (response.status === 201) {
         // Handle success

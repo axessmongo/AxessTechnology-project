@@ -5,7 +5,7 @@ const NormalSchema =require("../TaskControl/NormalControl.js")
 
 
 // Define route for homepage contact form submission
-router.post("/api/digital", HomepageContact.Contactpostmethod)
+router.post("/nivetha", HomepageContact.Contactpostmethod)
 router.post("/api/contact",NormalSchema.postmethod )
 
 module.exports = router;
