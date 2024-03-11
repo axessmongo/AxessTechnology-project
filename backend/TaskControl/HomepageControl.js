@@ -11,7 +11,7 @@ const Contactpostmethod = async (req, res) => {
       company,
       digitalmarketBudget,
       comments,
-      services: Array.isArray(services) ? services : [services], // Ensure services is an array
+      services,
     });
     res.status(201).json({
       status: 201,
