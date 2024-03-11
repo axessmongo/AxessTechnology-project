@@ -20,10 +20,10 @@ const contactSchema = new Schema(
     company: {
       type: String,
     },
-    // services: {
-    //   type: Object,
+    services: {
+       type: Object,
     //   // You might want to define a specific schema for services
-    // },
+     },
     digitalmarketBudget: {
       type: String,
     },
@@ -34,6 +34,6 @@ const contactSchema = new Schema(
   { timestamps: true }
 );
 
-const Contact = mongoose.model("Contact", contactSchema);
+const Contact = mongoose.model("DigitalWorld", contactSchema);
 
 module.exports = Contact;
