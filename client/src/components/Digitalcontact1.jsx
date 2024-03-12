@@ -6,17 +6,53 @@ function Digitalcontact1() {
         lname: '',
         email: '',
         phone: '',
-        address: '',
+        company: '',
+        website: '',
+        commands: '',
         serviceOption: ''
     });
     const [errors, setErrors] = useState({
-        others: ''
+        fname: '',
+        lname: '',
+        email: '',
+        phone: '',
+        company: '',
+        website: '',
+        commands: '',
+        serviceOption: ''
     });
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Placeholder for form submission logic
-        console.log('Form submitted:', contact);
+        axios.post("http://localhost:5000/api/post", contact)
+            .then((res) => {
+                console.log('Form submitted:', contact);
+                // Optionally, you can reset the form after submission
+                setContact({
+                    fname: '',
+                    lname: '',
+                    email: '',
+                    phone: '',
+                    company: '',
+                    website: '',
+                    commands: '',
+                    serviceOption: ''
+                });
+                setErrors({
+                    fname: '',
+                    lname: '',
+                    email: '',
+                    phone: '',
+                    company: '',
+                    website: '',
+                    commands: '',
+                    serviceOption: ''
+                });
+            })
+            .catch((err) => {
+                console.log('error:', err);
+                // Handle errors if necessary
+            });
     };
 
     const handleChange = (event) => {
@@ -26,7 +62,6 @@ function Digitalcontact1() {
             [name]: value
         }));
     };
-
     return (
         <div className="container mt-3">
 

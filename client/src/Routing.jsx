@@ -30,7 +30,7 @@ import ClientProject from './Dashboard/ClientProject'
 import Empdashboard from './Dashboard/Empdashboard'
 import Empreg from './Dashboard/Empreg';
 import Digitalcontact from './components/Digitalcontact';
-// import Digitalcontact1 from './components/Digitalcontact1';
+import Digitalcontact1 from './components/Digitalcontact1';
 
 
 
@@ -73,7 +73,7 @@ function Routing() {
                     <Route path='/empproject' element={<Empproject />} />
                     <Route path='/empreg' element={<Empreg />} />
                     <Route path='/digitalcontact' element={<Digitalcontact/>}/>
-                    {/* <Route path='/Digitalcontact1' element={<Digitalcontact1/>} /> */}
+                    <Route path='/Digitalcontact1' element={<Digitalcontact1/>} />
                 </Routes>
             </BrowserRouter>
         </div>
