@@ -1,11 +1,9 @@
-const ContactSchema =require("../userModel/TestingSchema.js");
-
+const ContactSchema = require("../userModel/TestingSchema.js");
 
 const postmethod = async (req, res) => {
   const {
     fname,
     email,
-    lname,
     company,
     website,
     commands,
@@ -16,7 +14,7 @@ const postmethod = async (req, res) => {
     const contact = await ContactSchema.create({
       fname,
       email,
-      lname,
+
       company,
       website,
       commands,
@@ -34,5 +32,4 @@ const postmethod = async (req, res) => {
   }
 };
 
-
-module.exports ={postmethod}
+module.exports = { postmethod };

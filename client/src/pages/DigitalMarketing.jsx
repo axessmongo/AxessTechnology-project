@@ -12,7 +12,8 @@ import Footer from "../components/Footer";
 // import step6 from '../assets/images/DigitalMarketing/step6.jpg'
 // import step7 from '../assets/images/DigitalMarketing/step7.jpg'
 import Profiledub from '../assets/images/testing/dub-img.png'
-import Digitalcontact from "../components/Digitalcontact";
+// import Digitalcontact from "../components/Digitalcontact";
+import Digitalcontact1 from "../components/Digitalcontact1";
 import Price from "../components/Price";
 // import axios from "axios";
 
@@ -735,7 +736,7 @@ export default function DigitalMarketing() {
           </section>
         </div>
         <div id="pricing-section" className="mt-5 py-5">
-          <Digitalcontact />
+          <Digitalcontact1 />
         </div>
         <Footer displayContact={true} />
       </div>

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import axios from "axios";
 
 function Digitalcontact1() {
     const [contact, setContact] = useState({
         fname: '',
-        lname: '',
         email: '',
         phone: '',
         company: '',
@@ -13,7 +13,6 @@ function Digitalcontact1() {
     });
     const [errors, setErrors] = useState({
         fname: '',
-        lname: '',
         email: '',
         phone: '',
         company: '',
@@ -24,7 +23,7 @@ function Digitalcontact1() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post("http://localhost:5000/api/post", contact)
+        axios.post("api/post", contact)
             .then((res) => {
                 console.log('Form submitted:', contact);
                 // Optionally, you can reset the form after submission
@@ -49,6 +48,7 @@ function Digitalcontact1() {
                     serviceOption: ''
                 });
             })
+        alert("successfully created")
             .catch((err) => {
                 console.log('error:', err);
                 // Handle errors if necessary
@@ -88,10 +88,10 @@ function Digitalcontact1() {
                                 <input type="text" name="company" value={contact.company} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='company *' />
                             </div>
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="company" value={contact.website} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='website *' />
+                                <input type="text" name="website" value={contact.website} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='website *' />
                             </div>
                             <div className="col-md-6 mb-4">
-                                <input type="text" name="commands" value={contact.website} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='commands *' />
+                                <input type="text" name="commands" value={contact.commands} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='commands *' />
                             </div>
                         </div>
                         <div className=' container mb-3 mt-3'>
