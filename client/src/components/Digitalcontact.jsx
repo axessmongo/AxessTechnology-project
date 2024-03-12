@@ -69,42 +69,42 @@ function Digitalcontact() {
       showToast("Please fill in all required fields and correct any errors", { style: { border: "1px solid red" } });
       return;
     }
-    // try {
-    //   const response = await axios.post("/api/digital", state);
+    try {
+      const response = await axios.post("http://localhost:5000/api/data", state);
 
-    //   if (response.status === 201) {
-    //     // Handle success
-    //     // Reset form fields
-    //     const checkboxes = document.getElementsByClassName("digiCheckBox");
-    //     for (let checkbox of checkboxes) {
-    //       checkbox.checked = false;
-    //     }
-    //     setState({
-    //       name: "",
-    //       phone: "",
-    //       email: "",
-    //       company: "",
-    //       website: "",
-    //       comments: "",
-    //       services: {},
-    //       digitalmarketBudget: ""
-    //     });
-    //     // Show success message
-    //      showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
-    //   } else {
-    //     // Handle unexpected response status
-    //     alert("Unable to connect")
-    //     console.log('Unexpected response:', response);
-    //     // Show error message
-    //     // showToast("Internal server error", { style: { border: "1px solid red" } });
-    //   }
-    // } catch (error) {
-    //   // Handle request error
-    //   console.log("Error occurred:", error);
-    //   // Show error message
-    //   // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
-    // }
-    console.log(state);
+      if (response.status === 201) {
+        // Handle success
+        // Reset form fields
+        const checkboxes = document.getElementsByClassName("digiCheckBox");
+        for (let checkbox of checkboxes) {
+          checkbox.checked = false;
+        }
+        setState({
+          name: "",
+          phone: "",
+          email: "",
+          company: "",
+          website: "",
+          comments: "",
+          services: {},
+          digitalmarketBudget: ""
+        });
+        // Show success message
+         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+      } else {
+        // Handle unexpected response status
+        alert("Unable to connect")
+        console.log('Unexpected response:', response);
+        // Show error message
+        // showToast("Internal server error", { style: { border: "1px solid red" } });
+      }
+    } catch (error) {
+      // Handle request error
+      console.log("Error occurred:", error);
+      // Show error message
+      // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
+    }
+    // console.log(state);
 
   };
 
