@@ -24,4 +24,7 @@ const Contactpostmethod = async (req, res) => {
   }
 };
 
-module.exports = { Contactpostmethod };
+
+
+
+module.exports = { Contactpostmethod,  };

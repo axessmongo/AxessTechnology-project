@@ -3,16 +3,9 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-
-// import step1 from '../assets/images/DigitalMarketing/step1.jpg'
-// import step2 from '../assets/images/DigitalMarketing/step2.jpg'
-// import step3 from '../assets/images/DigitalMarketing/step3.jpg'
-// import step4 from '../assets/images/DigitalMarketing/step4.jpg'
-// import step5 from '../assets/images/DigitalMarketing/step5.jpg'
-// import step6 from '../assets/images/DigitalMarketing/step6.jpg'
-// import step7 from '../assets/images/DigitalMarketing/step7.jpg'
 import Profiledub from '../assets/images/testing/dub-img.png'
-import Digitalcontact from "../components/Digitalcontact";
+// import Digitalcontact from "../components/Digitalcontact";
+import Digitalcontact1 from "../components/Digitalcontact1";
 import Price from "../components/Price";
 // import axios from "axios";
 
@@ -735,7 +728,7 @@ export default function DigitalMarketing() {
           </section>
         </div>
         <div id="pricing-section" className="mt-5 py-5">
-          <Digitalcontact />
+          <Digitalcontact1 />
         </div>
         <Footer displayContact={true} />
       </div>
