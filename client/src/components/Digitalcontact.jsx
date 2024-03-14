@@ -372,7 +372,6 @@ function Digitalcontact() {
             </div>
           </form>
         </div>
-
       </section>
     </div>
   );
