@@ -7,7 +7,6 @@ function Digitalcontact() {
   const [errors, setErrors] = useState({
     name: '',
     email: '',
-    phone: '',
     company: '',
     website: '',
     serviceOption: '',
@@ -16,7 +15,6 @@ function Digitalcontact() {
   const [state, setState] = useState({
     fname: '',
     email: '',
-    phone: '',
     website: '',
     company: '',
     digitalmarketBudget: '',
@@ -70,7 +68,7 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("api/data", state);
+      const response = await axios.post("http://localhost:5000/api/data", state);
 
       if (response.status === 201) {
         // Handle success
@@ -86,7 +84,7 @@ function Digitalcontact() {
           company: "",
           website: "",
           comments: "",
-          services: {},
+          services: [],
           digitalmarketBudget: ""
         });
         // Show success message

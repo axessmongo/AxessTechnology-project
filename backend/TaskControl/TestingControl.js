@@ -7,10 +7,15 @@ const postmethod = async (req, res) => {
     company,
     website,
     commands,
-    serviceOption,
-    phone,
-    digitalmarketBudget,
+    SocialMediaMarketing,
+    PerformanceMarketing,
+    WebsiteDevelopment,
+    InfluencerMarketing,
+    BrandingSolution,
+    SearchEngineOptimization,
+    phone
   } = req.body;
+
   try {
     const contact = await ContactSchema.create({
       fname,
@@ -18,9 +23,13 @@ const postmethod = async (req, res) => {
       company,
       website,
       commands,
-      serviceOption,
-      phone,
-      digitalmarketBudget
+      SocialMediaMarketing,
+      PerformanceMarketing,
+      WebsiteDevelopment,
+      InfluencerMarketing,
+      BrandingSolution,
+      SearchEngineOptimization,
+      phone
     });
     res.status(201).json({
       status: 201,

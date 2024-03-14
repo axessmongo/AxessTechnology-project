@@ -3,32 +3,54 @@ import axios from "axios";
 
 function Digitalcontact1() {
     const [contact, setContact] = useState({
-        fname: '',
-        email: '',
+        fname: "",
+        email: "",
+        company: "",
+        website: "",
+        commands: "",
+        SocialMediaMarketing: "",
+        WebsiteDevelopment: "",
+        InfluencerMarketing: "",
+        BrandingSolution: '',
+        SearchEngineOptimization: '',
+        ContentWriting: '',
         phone: '',
-        company: '',
-        website: '',
-        commands: '',
-        serviceOption: [],
-        digitalmarketBudget: '', // Added state for dropdown menu
+        PerformanceMarketing: '',
+        EventMarketing: '',
+        VideoProduction: '',
+        Consultancy: '',
+        InstagramMarketing: '',
+        ShopifyDevelopment: '',
+        digitalmarketBudget: "" // Added state for dropdown menu
     });
 
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(contact);
-        axios.post("/api/post", contact)
+        axios.post("http://localhost:5000/api/post", contact)
             .then((res) => {
                 console.log('Form submitted:', contact);
                 // Optionally, you can reset the form after submission
                 setContact({
-                    fname: '',
-                    email: '',
-                    phone: '',
-                    company: '',
-                    website: '',
-                    commands: '',
-                    digitalmarketBudget: '',
-                    serviceOption: [''] // Reset dropdown menu state after submission
+                    fname: "",
+                    email: "",
+                    company: "",
+                    website: "",
+                    commands: "",
+                    SocialMediaMarketing: "",
+                    WebsiteDevelopment: "",
+                    InfluencerMarketing: "",
+                    BrandingSolution: '',
+                    SearchEngineOptimization: '',
+                    ContentWriting: '',
+                    phone: "",
+                    PerformanceMarketing: '',
+                    EventMarketing: '',
+                    VideoProduction: '',
+                    Consultancy: '',
+                    InstagramMarketing: '',
+                    ShopifyDevelopment: '',
+                    digitalmarketBudget: ""
                 });
                 alert("successfully created");
             })
@@ -44,7 +66,7 @@ function Digitalcontact1() {
         if (type === 'checkbox') {
             setContact(prevState => ({
                 ...prevState,
-                serviceOption: checked ? [...prevState.serviceOption, name] : prevState.serviceOption.filter(option => option !== name)
+                [name]: checked
             }));
         } else {
             setContact(prevState => ({
@@ -108,50 +130,75 @@ function Digitalcontact1() {
                             <div className="row mt-3 mx-5">
                                 <div className="col-md-6">
                                     <input type="checkbox" className="digiCheckBox"
-                                        name="socialMediaMarketing" onChange={handleChange} value={contact.serviceOption.includes('socialMediaMarketing')} />
+                                        name="Social Media Marketing" onChange={handleChange} checked={contact["Social Media Marketing"]} />
                                     <span className="fs-5"> Social Media Marketing</span>
                                     <br />
                                     <input
                                         type="checkbox"
                                         className="digiCheckBox"
-                                        id="websidedevelopment"
-                                        name="websiteDevelopment"
-                                        onChange={handleChange} value={contact.serviceOption.includes('websiteDevelopment')}
+                                        id="WebsiteDevelopment"
+                                        name="Website Development"
+                                        onChange={handleChange} checked={contact["Website Development"]}
                                     />
                                     <span className="fs-5"> Website Development</span>
                                     <br />
                                     <input
                                         type="checkbox"
                                         className="digiCheckBox"
-                                        id="influencerMarketing"
-                                        name="influencerMarketing"
-                                        onChange={handleChange} value={contact.serviceOption.includes('influencerMarketing')}
+                                        id="InfluencerMarketing"
+                                        name="Influencer Marketing"
+                                        onChange={handleChange} checked={contact["Influencer Marketing"]}
                                     />
                                     <span className="fs-5"> Influencer Marketing</span>
                                     <br />
                                     <input
                                         type="checkbox"
                                         className="digiCheckBox"
-                                        id="brandingSolution"
-                                        name="brandingSolution"
-                                        onChange={handleChange} value={contact.serviceOption.includes('brandingSolution')}
+                                        id="BrandingSolution"
+                                        name="Branding Solution"
+                                        onChange={handleChange} checked={contact["Branding Solution"]}
                                     />
                                     <span className="fs-5"> Branding Solution</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="seo" name="searchEngineOptimization"
-                                        onChange={handleChange} value={contact.serviceOption.includes('searchEngineOptimization')} />{" "}
+                                    <input type="checkbox" className="digiCheckBox" id="seo" name="Search Engine Optimization"
+                                        onChange={handleChange} checked={contact["Search Engine Optimization"]} />{" "}
                                     <span className="fs-5"> Search Engine Optimization</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="contentWriting" onChange={handleChange}
-                                        value={contact.serviceOption.includes('contentWriting')} />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["Content Writing"]} />
                                     <span className="fs-5"> Content Writing</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["PerformanceMarketing"]} />
+                                    <span className="fs-5"> PerformanceMarketing</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["VideoProduction"]} />
+                                    <span className="fs-5">VideoProduction</span>
+                                    <br />
+                                </div>
+                                <div className="col-md-6">
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["Consultancy"]} />
+                                    <span className="fs-5">Consultancy</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["InstagramMarketing"]} />
+                                    <span className="fs-5">InstagramMarketing</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["ShopifyDevelopment"]} />
+                                    <span className="fs-5">ShopifyDevelopment</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                        checked={contact["EventMarketing"]} />
+                                    <span className="fs-5">Event Marketing</span>
                                     <br />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-3 text-center mb-3" data-aos='zoom-out
-                        ' data-aos-anchor-placement="bottom-bottom">
+                        <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button type="submit" className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
                     </form>
