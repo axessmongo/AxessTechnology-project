@@ -28,7 +28,7 @@ function Digitalcontact1() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(contact);
-        axios.post("http://localhost:5000/api/post", contact)
+        axios.post("api/post", contact)
             .then((res) => {
                 console.log('Form submitted:', contact);
                 // Optionally, you can reset the form after submission
