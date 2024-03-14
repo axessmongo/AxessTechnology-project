@@ -21,7 +21,7 @@ const contactSchema = new Schema(
       type: String,
     },
     services: {
-      type: [],
+      type: Array,
     },
     digitalmarketBudget: {
       type: String,
