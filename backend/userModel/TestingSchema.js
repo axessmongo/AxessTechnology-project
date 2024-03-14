@@ -1,4 +1,3 @@
-// Import mongoose
 const mongoose = require("mongoose");
 
 // Create a schema for contact
@@ -27,9 +26,6 @@ const contactSchema = new mongoose.Schema({
   SocialMediaMarketing: {
     type: String,
   },
-  PerformanceMarketing: {
-    type: String,
-  },
   WebsiteDevelopment: {
     type: String,
   },
@@ -45,10 +41,29 @@ const contactSchema = new mongoose.Schema({
   ContentWriting: {
     type: String,
   },
+  PerformanceMarketing: {
+    type: String,
+  },
+  EventMarketing: {
+    type: String,
+  },
+  VideoProduction: {
+    type: String,
+  },
+  Consultancy: {
+    type: String,
+  },
+  InstagramMarketing: {
+    type: String,
+  },
+  ShopifyDevelopment: {
+    type: String,
+    
+  }
 });
 
 // Create a mongoose model using the schema
-const Contact = mongoose.model("testing", contactSchema);
+const Contact = mongoose.model("Testing", contactSchema);
 
 // Export the model
 module.exports = Contact;

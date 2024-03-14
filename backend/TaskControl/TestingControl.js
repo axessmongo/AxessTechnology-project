@@ -2,18 +2,25 @@ const ContactSchema = require("../userModel/TestingSchema.js");
 
 const postmethod = async (req, res) => {
   const {
-    fname,
-    email,
-    company,
-    website,
-    commands,
+    fname = '',
+    email = '',
+    company = '',
+    website = '',
+    commands = '',
+    phone = '',
+    digitalmarketBudget = '',
     SocialMediaMarketing,
-    PerformanceMarketing,
     WebsiteDevelopment,
     InfluencerMarketing,
     BrandingSolution,
     SearchEngineOptimization,
-    phone
+    ContentWriting,
+    PerformanceMarketing,
+    EventMarketing,
+    VideoProduction,
+    Consultancy,
+    InstagramMarketing,
+    ShopifyDevelopment,
   } = req.body;
 
   try {
@@ -23,13 +30,20 @@ const postmethod = async (req, res) => {
       company,
       website,
       commands,
+      phone,
+      digitalmarketBudget,
       SocialMediaMarketing,
-      PerformanceMarketing,
       WebsiteDevelopment,
       InfluencerMarketing,
       BrandingSolution,
       SearchEngineOptimization,
-      phone
+      ContentWriting,
+      PerformanceMarketing,
+      EventMarketing,
+      VideoProduction,
+      Consultancy,
+      InstagramMarketing,
+      ShopifyDevelopment,
     });
     res.status(201).json({
       status: 201,

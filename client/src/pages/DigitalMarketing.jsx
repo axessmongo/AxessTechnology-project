@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Profiledub from '../assets/images/testing/dub-img.png'
-import Digitalcontact from "../components/Digitalcontact";
-// import Digitalcontact1 from "../components/Digitalcontact1";
+// import Digitalcontact from "../components/Digitalcontact";
+import Digitalcontact1 from "../components/Digitalcontact1";
 import Price from "../components/Price";
 // import axios from "axios";
 
@@ -728,7 +728,7 @@ export default function DigitalMarketing() {
           </section>
         </div>
         <div id="pricing-section" className="mt-5 py-5">
-          <Digitalcontact />
+          <Digitalcontact1 />
         </div>
         <Footer displayContact={true} />
       </div>

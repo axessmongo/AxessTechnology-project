@@ -8,20 +8,21 @@ function Digitalcontact1() {
         company: '',
         website: '',
         commands: '',
+        phone: '',
+        digitalmarketBudget: '',
         SocialMediaMarketing: false,
         WebsiteDevelopment: false,
         InfluencerMarketing: false,
         BrandingSolution: false,
         SearchEngineOptimization: false,
         ContentWriting: false,
-        phone: '',
         PerformanceMarketing: false,
         EventMarketing: false,
         VideoProduction: false,
         Consultancy: false,
         InstagramMarketing: false,
         ShopifyDevelopment: false,
-        digitalmarketBudget: ''
+        
     });
 
     const handleSubmit = (event) => {
@@ -37,20 +38,20 @@ function Digitalcontact1() {
                     company: '',
                     website: '',
                     commands: '',
+                    phone: '',
+                    digitalmarketBudget: '',
                     SocialMediaMarketing: false,
                     WebsiteDevelopment: false,
                     InfluencerMarketing: false,
                     BrandingSolution: false,
                     SearchEngineOptimization: false,
                     ContentWriting: false,
-                    phone: '',
                     PerformanceMarketing: false,
                     EventMarketing: false,
                     VideoProduction: false,
                     Consultancy: false,
                     InstagramMarketing: false,
-                    ShopifyDevelopment: false,
-                    digitalmarketBudget: ''
+                    ShopifyDevelopment: false, 
                 });
                 alert("successfully created");
             })
