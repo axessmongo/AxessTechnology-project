@@ -30,7 +30,7 @@ const contactSchema = new mongoose.Schema({
         
     },
     serviceOption: {
-        type: String,
+        type: [String]
         
     }
 });

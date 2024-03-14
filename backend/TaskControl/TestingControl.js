@@ -9,17 +9,18 @@ const postmethod = async (req, res) => {
     commands,
     serviceOption,
     phone,
+    digitalmarketBudget,
   } = req.body;
   try {
     const contact = await ContactSchema.create({
       fname,
       email,
-
       company,
       website,
       commands,
       serviceOption,
       phone,
+      digitalmarketBudget
     });
     res.status(201).json({
       status: 201,

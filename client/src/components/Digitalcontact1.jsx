@@ -9,46 +9,29 @@ function Digitalcontact1() {
         company: '',
         website: '',
         commands: '',
-        serviceOption: ''
-    });
-    const [errors, setErrors] = useState({
-        fname: '',
-        email: '',
-        phone: '',
-        company: '',
-        website: '',
-        commands: '',
-        serviceOption: ''
+        serviceOption: [],
+        digitalmarketBudget: '', // Added state for dropdown menu
     });
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post("api/post", contact)
+        console.log(contact);
+        axios.post("http://localhost:5000/api/post", contact)
             .then((res) => {
                 console.log('Form submitted:', contact);
                 // Optionally, you can reset the form after submission
                 setContact({
                     fname: '',
-                    lname: '',
                     email: '',
                     phone: '',
                     company: '',
                     website: '',
                     commands: '',
-                    serviceOption: ''
+                    digitalmarketBudget: '',
+                    serviceOption: [''] // Reset dropdown menu state after submission
                 });
-                setErrors({
-                    fname: '',
-                    lname: '',
-                    email: '',
-                    phone: '',
-                    company: '',
-                    website: '',
-                    commands: '',
-                    serviceOption: ''
-                });
+                alert("successfully created");
             })
-        alert("successfully created")
             .catch((err) => {
                 console.log('error:', err);
                 // Handle errors if necessary
@@ -56,16 +39,24 @@ function Digitalcontact1() {
     };
 
     const handleChange = (event) => {
-        const { name, value } = event.target;
-        setContact(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
+        const { name, value, type, checked } = event.target;
+
+        if (type === 'checkbox') {
+            setContact(prevState => ({
+                ...prevState,
+                serviceOption: checked ? [...prevState.serviceOption, name] : prevState.serviceOption.filter(option => option !== name)
+            }));
+        } else {
+            setContact(prevState => ({
+                ...prevState,
+                [name]: value
+            }));
+        }
     };
+
+
     return (
         <div className="container mt-3">
-
-
             <div className="container">
                 <div className="card mt-4">
                     <form onSubmit={handleSubmit}>
@@ -94,105 +85,79 @@ function Digitalcontact1() {
                                 <input type="text" name="commands" value={contact.commands} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='commands *' />
                             </div>
                         </div>
-                        <div className=' container mb-3 mt-3'>
-                            <p className='bg-img-1 d-flex text-center'>Select service & it's customizabilty</p>
-                            <p></p>
-                            <div className="row">
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_1" onChange={handleChange} value={"Social Media Marketing"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_1">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Social Media Marketing</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_2" onChange={handleChange} value={"Performance Marketing"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_2">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Performance Marketing</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_3" onChange={handleChange} value={"Website Development"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_3">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Website Development & Event Marketing</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_4" onChange={handleChange} value={"Influencer Marketing"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_4">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Influencer Marketing & Video Production</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_5" onChange={handleChange} value={"Content Writing &  Shopify Development"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_5">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Content Writing &  Shopify Development</p>
-                                            <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.others}</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_6" onChange={handleChange} value={"Instagram Marketing & Consultancy"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_6">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Instagram Marketing & Consultancy</p>
-                                            <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.others}</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_7" onChange={handleChange} value={"Search Engine Optimization"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_7">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'>Search Engine Optimization</p>
-                                            <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.others}</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 checkbox-label">
-                                    <div className="checkbox-animated">
-                                        <input id="checkbox_animated_8" onChange={handleChange} value={"Branding Solution"} type="radio" name='serviceOption' />
-                                        <label htmlFor="checkbox_animated_8">
-                                            <span className="check"></span>
-                                            <span className="box"></span>
-                                            <p className='secondary-text'> Branding Solution & Shopify Development</p>
-                                            <div style={{ color: 'red', textAlign: "center", fontSize: "12px" }}>{errors.others}</div>
-                                        </label>
-                                    </div>
+                        <h4 className="secondary-header text-center m-3">Average Monthly Marketing Budget in INR* </h4>
+                        <div className="col-md-12 digitalcontact position-relative"  >
+                            <select
+                                name="digitalmarketBudget"
+                                value={contact.digitalmarketBudget} // Assigning the value from state
+                                onChange={handleChange}
+                                className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                            >
+                                <option value="">Select any one option</option>
+                                <option value="Rs. 0 to Rs. 1 Lakh">Rs. 0 to Rs. 1 Lakh</option>
+                                <option value="Rs. 1 Lakh to Rs. 5 Lakh">Rs. 1 Lakh to Rs. 5 Lakh</option>
+                                <option value="Rs. 5 Lakh to Rs. 10 Lakh">Rs. 5 Lakh to Rs. 10 Lakh</option>
+                                <option value="Rs. 10 Lakh to Rs. 25 Lakh">Rs. 10 Lakh to Rs. 25 Lakh</option>
+                                <option value="Rs. 25 Lakh to Rs. 50 Lakh">Rs. 25 Lakh to Rs. 50 Lakh</option>
+                                <option value="Rs. 50 Lakh to Rs. 1 Crore">Rs. 50 Lakh to Rs. 1 Crore</option>
+                                <option value="More than Rs. 1 Crore">More than Rs. 1 Crore</option>
+                            </select>
+                        </div>
+                        <div className="">
+                            <h3 className="secondary-header text-center pb-3 mt-3">Need a Successful Project</h3>
+                            <div className="row mt-3 mx-5">
+                                <div className="col-md-6">
+                                    <input type="checkbox" className="digiCheckBox"
+                                        name="socialMediaMarketing" onChange={handleChange} value={contact.serviceOption.includes('socialMediaMarketing')} />
+                                    <span className="fs-5"> Social Media Marketing</span>
+                                    <br />
+                                    <input
+                                        type="checkbox"
+                                        className="digiCheckBox"
+                                        id="websidedevelopment"
+                                        name="websiteDevelopment"
+                                        onChange={handleChange} value={contact.serviceOption.includes('websiteDevelopment')}
+                                    />
+                                    <span className="fs-5"> Website Development</span>
+                                    <br />
+                                    <input
+                                        type="checkbox"
+                                        className="digiCheckBox"
+                                        id="influencerMarketing"
+                                        name="influencerMarketing"
+                                        onChange={handleChange} value={contact.serviceOption.includes('influencerMarketing')}
+                                    />
+                                    <span className="fs-5"> Influencer Marketing</span>
+                                    <br />
+                                    <input
+                                        type="checkbox"
+                                        className="digiCheckBox"
+                                        id="brandingSolution"
+                                        name="brandingSolution"
+                                        onChange={handleChange} value={contact.serviceOption.includes('brandingSolution')}
+                                    />
+                                    <span className="fs-5"> Branding Solution</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="seo" name="searchEngineOptimization"
+                                        onChange={handleChange} value={contact.serviceOption.includes('searchEngineOptimization')} />{" "}
+                                    <span className="fs-5"> Search Engine Optimization</span>
+                                    <br />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="contentWriting" onChange={handleChange}
+                                        value={contact.serviceOption.includes('contentWriting')} />
+                                    <span className="fs-5"> Content Writing</span>
+                                    <br />
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
-                            <button className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
+
+                        <div className="mt-3 text-center mb-3" data-aos='zoom-out
+                        ' data-aos-anchor-placement="bottom-bottom">
+                            <button type="submit" className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
-
     );
 }
 
