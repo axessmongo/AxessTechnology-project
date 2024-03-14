@@ -3,25 +3,25 @@ import axios from "axios";
 
 function Digitalcontact1() {
     const [contact, setContact] = useState({
-        fname: "",
-        email: "",
-        company: "",
-        website: "",
-        commands: "",
-        SocialMediaMarketing: "",
-        WebsiteDevelopment: "",
-        InfluencerMarketing: "",
-        BrandingSolution: '',
-        SearchEngineOptimization: '',
-        ContentWriting: '',
+        fname: '',
+        email: '',
+        company: '',
+        website: '',
+        commands: '',
+        SocialMediaMarketing: false,
+        WebsiteDevelopment: false,
+        InfluencerMarketing: false,
+        BrandingSolution: false,
+        SearchEngineOptimization: false,
+        ContentWriting: false,
         phone: '',
-        PerformanceMarketing: '',
-        EventMarketing: '',
-        VideoProduction: '',
-        Consultancy: '',
-        InstagramMarketing: '',
-        ShopifyDevelopment: '',
-        digitalmarketBudget: "" // Added state for dropdown menu
+        PerformanceMarketing: false,
+        EventMarketing: false,
+        VideoProduction: false,
+        Consultancy: false,
+        InstagramMarketing: false,
+        ShopifyDevelopment: false,
+        digitalmarketBudget: ''
     });
 
     const handleSubmit = (event) => {
@@ -32,25 +32,25 @@ function Digitalcontact1() {
                 console.log('Form submitted:', contact);
                 // Optionally, you can reset the form after submission
                 setContact({
-                    fname: "",
-                    email: "",
-                    company: "",
-                    website: "",
-                    commands: "",
-                    SocialMediaMarketing: "",
-                    WebsiteDevelopment: "",
-                    InfluencerMarketing: "",
-                    BrandingSolution: '',
-                    SearchEngineOptimization: '',
-                    ContentWriting: '',
-                    phone: "",
-                    PerformanceMarketing: '',
-                    EventMarketing: '',
-                    VideoProduction: '',
-                    Consultancy: '',
-                    InstagramMarketing: '',
-                    ShopifyDevelopment: '',
-                    digitalmarketBudget: ""
+                    fname: '',
+                    email: '',
+                    company: '',
+                    website: '',
+                    commands: '',
+                    SocialMediaMarketing: false,
+                    WebsiteDevelopment: false,
+                    InfluencerMarketing: false,
+                    BrandingSolution: false,
+                    SearchEngineOptimization: false,
+                    ContentWriting: false,
+                    phone: '',
+                    PerformanceMarketing: false,
+                    EventMarketing: false,
+                    VideoProduction: false,
+                    Consultancy: false,
+                    InstagramMarketing: false,
+                    ShopifyDevelopment: false,
+                    digitalmarketBudget: ''
                 });
                 alert("successfully created");
             })
@@ -66,7 +66,7 @@ function Digitalcontact1() {
         if (type === 'checkbox') {
             setContact(prevState => ({
                 ...prevState,
-                [name]: checked
+                [name]: checked // Assigning boolean value directly
             }));
         } else {
             setContact(prevState => ({
@@ -130,15 +130,15 @@ function Digitalcontact1() {
                             <div className="row mt-3 mx-5">
                                 <div className="col-md-6">
                                     <input type="checkbox" className="digiCheckBox"
-                                        name="Social Media Marketing" onChange={handleChange} checked={contact["Social Media Marketing"]} />
+                                        name="SocialMediaMarketing" onChange={handleChange} checked={contact["SocialMediaMarketing"]} />
                                     <span className="fs-5"> Social Media Marketing</span>
                                     <br />
                                     <input
                                         type="checkbox"
                                         className="digiCheckBox"
                                         id="WebsiteDevelopment"
-                                        name="Website Development"
-                                        onChange={handleChange} checked={contact["Website Development"]}
+                                        name="WebsiteDevelopment"
+                                        onChange={handleChange} checked={contact["WebsiteDevelopment"]}
                                     />
                                     <span className="fs-5"> Website Development</span>
                                     <br />
@@ -146,8 +146,8 @@ function Digitalcontact1() {
                                         type="checkbox"
                                         className="digiCheckBox"
                                         id="InfluencerMarketing"
-                                        name="Influencer Marketing"
-                                        onChange={handleChange} checked={contact["Influencer Marketing"]}
+                                        name="InfluencerMarketing"
+                                        onChange={handleChange} checked={contact["InfluencerMarketing"]}
                                     />
                                     <span className="fs-5"> Influencer Marketing</span>
                                     <br />
@@ -155,42 +155,42 @@ function Digitalcontact1() {
                                         type="checkbox"
                                         className="digiCheckBox"
                                         id="BrandingSolution"
-                                        name="Branding Solution"
-                                        onChange={handleChange} checked={contact["Branding Solution"]}
+                                        name="BrandingSolution"
+                                        onChange={handleChange} checked={contact["BrandingSolution"]}
                                     />
                                     <span className="fs-5"> Branding Solution</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="seo" name="Search Engine Optimization"
-                                        onChange={handleChange} checked={contact["Search Engine Optimization"]} />{" "}
+                                    <input type="checkbox" className="digiCheckBox" id="seo" name="SearchEngineOptimization"
+                                        onChange={handleChange} checked={contact["SearchEngineOptimization"]} />{" "}
                                     <span className="fs-5"> Search Engine Optimization</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
-                                        checked={contact["Content Writing"]} />
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="ContentWriting" onChange={handleChange}
+                                        checked={contact["ContentWriting"]} />
                                     <span className="fs-5"> Content Writing</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="PerformanceMarketing" onChange={handleChange}
                                         checked={contact["PerformanceMarketing"]} />
                                     <span className="fs-5"> PerformanceMarketing</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="VideoProduction" name="VideoProduction" onChange={handleChange}
                                         checked={contact["VideoProduction"]} />
                                     <span className="fs-5">VideoProduction</span>
                                     <br />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="Consultancy" name="Consultancy" onChange={handleChange}
                                         checked={contact["Consultancy"]} />
                                     <span className="fs-5">Consultancy</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="InstagramMarketing" name="InstagramMarketing" onChange={handleChange}
                                         checked={contact["InstagramMarketing"]} />
                                     <span className="fs-5">InstagramMarketing</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="ShopifyDevelopment" name="ShopifyDevelopment" onChange={handleChange}
                                         checked={contact["ShopifyDevelopment"]} />
                                     <span className="fs-5">ShopifyDevelopment</span>
                                     <br />
-                                    <input type="checkbox" className="digiCheckBox" id="contentwriting" name="Content Writing" onChange={handleChange}
+                                    <input type="checkbox" className="digiCheckBox" id="EventMarketing" name="EventMarketing" onChange={handleChange}
                                         checked={contact["EventMarketing"]} />
                                     <span className="fs-5">Event Marketing</span>
                                     <br />
