@@ -68,7 +68,7 @@ function Digitalcontact() {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:5000/api/data", state);
+      const response = await axios.post("api/data", state);
 
       if (response.status === 201) {
         // Handle success
