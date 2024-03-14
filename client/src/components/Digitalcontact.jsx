@@ -6,7 +6,7 @@ import "toastify-js/src/toastify.css"
 function Digitalcontact() {
   const [errors, setErrors] = useState({
     name: "",
-    phone: "",
+    phone: "",   
     email: "",
     company: "",
     website: "",
