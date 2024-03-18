@@ -22,7 +22,7 @@ function Digitalcontact1() {
         Consultancy: false,
         InstagramMarketing: false,
         ShopifyDevelopment: false,
-        
+
     });
 
     const handleSubmit = (event) => {
@@ -51,7 +51,7 @@ function Digitalcontact1() {
                     VideoProduction: false,
                     Consultancy: false,
                     InstagramMarketing: false,
-                    ShopifyDevelopment: false, 
+                    ShopifyDevelopment: false,
                 });
                 alert("successfully created");
             })
@@ -126,7 +126,7 @@ function Digitalcontact1() {
                                 <option value="More than Rs. 1 Crore">More than Rs. 1 Crore</option>
                             </select>
                         </div>
-                        <div className="">
+                        {/* <div className="">
                             <h3 className="secondary-header text-center pb-3 mt-3">Need a Successful Project</h3>
                             <div className="row mt-3 mx-5">
                                 <div className="col-md-6">
@@ -195,6 +195,44 @@ function Digitalcontact1() {
                                         checked={contact["EventMarketing"]} />
                                     <span className="fs-5">Event Marketing</span>
                                     <br />
+                                </div>
+                            </div>
+                        </div> */}
+
+                        <div className="">
+                            <h3 className="secondary-header text-center pb-3 mt-3">Need a Successful Project</h3>
+                            <div className="row mt-3 mx-2">
+                                <div className="col-md-6">
+                                    <input type="radio" id="SocialMediaMarketing" name="SocialMediaMarketing" />
+                                    <span className="fs-5 mx-2">Social Media Marketing & Website Development</span>
+                                    <br />
+
+                                    <input type="radio" id="InfluencerMarketing" name="InfluencerMarketing" />
+                                    <span className="fs-5 mx-2">Influencer Marketing & Branding Solution</span>
+                                    <br />
+
+                                    <input type="radio" id="SearchEngineOptimization" name="SearchEngineOptimization" />
+                                    <span className="fs-5 mx-2">Search Engine Optimization & Content Writing</span>
+                                    <br />
+
+                                    <input type="radio" id="PerformanceMarketing" name="PerformanceMarketing" />
+                                    <span className="fs-5 mx-2">Performance Marketing & Video Production</span>
+                                    <br />
+
+                                </div>
+                                <div className="col-md-6">
+                                    <input type="radio" id="Consultancy" name="Consultancy" />
+                                    <span className="fs-5 mx-2">Consultancy & Instagram Marketing</span>
+                                    <br />
+
+                                    <input type="radio" id="ShopifyDevelopment" name="ShopifyDevelopment" />
+                                    <span className="fs-5 mx-2">Shopify Development & Instagram Marketing</span>
+                                    <br />
+
+                                    <input type="radio" id="EventMarketing" name="EventMarketing" />
+                                    <span className="fs-5 mx-2">Event Marketing</span>
+                                    <br />
+
                                 </div>
                             </div>
                         </div>
