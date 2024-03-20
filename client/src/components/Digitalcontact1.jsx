@@ -9,29 +9,22 @@ function Digitalcontact1() {
         website: '',
         commands: '',
         phone: '',
-        digitalmarketBudget: '',
-        SocialMediaMarketing: false,
-        WebsiteDevelopment: false,
-        InfluencerMarketing: false,
-        BrandingSolution: false,
-        SearchEngineOptimization: false,
-        ContentWriting: false,
-        PerformanceMarketing: false,
-        EventMarketing: false,
-        VideoProduction: false,
-        Consultancy: false,
-        InstagramMarketing: false,
-        ShopifyDevelopment: false,
-
+        digitalmarketBudget: ''
     });
+
+    const [selectedService, setSelectedService] = useState('');
+    const [errors, setErrors] = useState({});
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(contact);
-        axios.post("api/post", contact)
+
+        if (!validateForm()) {
+            return;
+        }
+
+        axios.post("http://localhost:5000/api/post", contact)
             .then((res) => {
                 console.log('Form submitted:', contact);
-                // Optionally, you can reset the form after submission
                 setContact({
                     fname: '',
                     email: '',
@@ -39,42 +32,70 @@ function Digitalcontact1() {
                     website: '',
                     commands: '',
                     phone: '',
-                    digitalmarketBudget: '',
-                    SocialMediaMarketing: false,
-                    WebsiteDevelopment: false,
-                    InfluencerMarketing: false,
-                    BrandingSolution: false,
-                    SearchEngineOptimization: false,
-                    ContentWriting: false,
-                    PerformanceMarketing: false,
-                    EventMarketing: false,
-                    VideoProduction: false,
-                    Consultancy: false,
-                    InstagramMarketing: false,
-                    ShopifyDevelopment: false,
+                    digitalmarketBudget: ''
                 });
-                alert("successfully created");
+                setSelectedService('');
+                alert("Form submitted successfully!");
             })
             .catch((err) => {
-                console.log('error:', err);
-                // Handle errors if necessary
+                console.log('Error:', err);
             });
     };
 
     const handleChange = (event) => {
         const { name, value, type, checked } = event.target;
+        setSelectedService(value);
 
-        if (type === 'checkbox') {
-            setContact(prevState => ({
-                ...prevState,
-                [name]: checked // Assigning boolean value directly
-            }));
-        } else {
-            setContact(prevState => ({
-                ...prevState,
-                [name]: value
-            }));
+        setContact(prevState => ({
+            ...prevState,
+            [name]: type === 'checkbox' ? checked : value
+        }));
+    };
+
+    const validateForm = () => {
+        let isValid = true;
+        const nameRegex = /^[A-Za-z]+$/;
+        const phoneRegex = /^\d{10}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+
+        const newErrors = {};
+
+        if (!contact.fname.match(nameRegex)) {
+            newErrors.fname = 'Please enter a valid name (only alphabets).';
+            isValid = false;
         }
+
+        if (!contact.phone.match(phoneRegex)) {
+            newErrors.phone = 'Please enter a valid phone number (10 digits).';
+            isValid = false;
+        }
+
+        if (!contact.email.match(emailRegex)) {
+            newErrors.email = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        if (!contact.website.match(urlRegex)) {
+            newErrors.website = 'Please enter a valid website URL.';
+            isValid = false;
+        }
+
+        setErrors(newErrors);
+        return isValid;
+    };
+
+    const resetForm = () => {
+        setContact({
+            fname: '',
+            email: '',
+            company: '',
+            website: '',
+            commands: '',
+            phone: '',
+            digitalmarketBudget: ''
+        });
+        setSelectedService('');
     };
 
 
@@ -84,30 +105,190 @@ function Digitalcontact1() {
                 <div className="card mt-4">
                     <form onSubmit={handleSubmit}>
                         <div className="card-body">
+                            {/* {Object.keys(errors).map((key, index) => (
+                                <p key={index} className="text-danger">{errors[key]}</p>
+                            ))} */}
                             <p className='text-center text-capitalize bg-img-1'>Request for quote</p>
                             <p className='text-center text-capitalize fw-semibold primary-text'>discuss your project with us. We are waiting to serve you better.</p>
                         </div>
 
-                        <div className="row container text-capitalize">
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="fname" value={contact.fname} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='First Name * ' />
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="phone" value={contact.phone} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='phone *' />
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="email" value={contact.email} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='E-mail *' />
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="company" value={contact.company} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='company *' />
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="website" value={contact.website} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='website *' />
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <input type="text" name="commands" value={contact.commands} className='form-control shadow-none border-0 rounded-0 border-bottom text-black' onChange={handleChange} placeholder='commands *' />
+                        <div className="mb-5">
+                            <h3 className="secondary-header text-center pb-3 mt-3">Need a Successful Project</h3>
+                            <div className="row mt-3 mx-2">
+                                <div className="col-md-6">
+                                    <input
+                                        type="radio"
+                                        id="SocialMediaMarketing"
+                                        name="ServicesProject"
+                                        value="Social Media Marketing & Website Development"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Social Media Marketing & Website Development"}
+                                    />
+                                    <span className="fs-5 mx-2">Social Media Marketing & Website Development</span>
+                                    <br />
+
+                                    {/* <input type="radio" id="InfluencerMarketing" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Influencer Marketing & Branding Solution</span>
+                                    <br /> */}
+                                    <input
+                                        type="radio"
+                                        id="InfluencerMarketing"
+                                        name="ServicesProject"
+                                        value="Influencer Marketing & Branding Solution"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Influencer Marketing & Branding Solution"}
+                                    />
+                                    <span className="fs-5 mx-2">Influencer Marketing & Branding Solution</span>
+                                    <br />
+
+                                    {/* <input type="radio" id="SearchEngineOptimization" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Search Engine Optimization & Content Writing</span>
+                                    <br /> */}
+
+                                    <input
+                                        type="radio"
+                                        id="SearchEngineOptimization"
+                                        name="ServicesProject"
+                                        value="Search Engine Optimization & Content Writing"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Search Engine Optimization & Content Writing"}
+                                    />
+                                    <span className="fs-5 mx-2">Search Engine Optimization & Content Writing</span>
+                                    <br />
+
+                                    {/* <input type="radio" id="PerformanceMarketing" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Performance Marketing & Video Production</span>
+                                    <br /> */}
+
+                                    <input
+                                        type="radio"
+                                        id="PerformanceMarketing"
+                                        name="ServicesProject"
+                                        value="Performance Marketing & Video Production"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Performance Marketing & Video Production"}
+                                    />
+                                    <span className="fs-5 mx-2">Performance Marketing & Video Production</span>
+                                    <br />
+
+                                </div>
+                                <div className="col-md-6">
+                                    {/* <input type="radio" id="Consultancy" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Consultancy & Instagram Marketing</span>
+                                    <br /> */}
+                                    <input
+                                        type="radio"
+                                        id="Consultancy"
+                                        name="ServicesProject"
+                                        value="Consultancy & Instagram Marketing"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Consultancy & Instagram Marketing"}
+                                    />
+                                    <span className="fs-5 mx-2">Consultancy & Instagram Marketing</span>
+                                    <br />
+
+                                    {/* <input type="radio" id="ShopifyDevelopment" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Shopify Development & Instagram Marketing</span>
+                                    <br /> */}
+
+                                    <input
+                                        type="radio"
+                                        id="ShopifyDevelopment"
+                                        name="ServicesProject"
+                                        value="Shopify Development & Instagram Marketing"
+                                        onChange={handleChange}
+                                        checked={selectedService === "Shopify Development & Instagram Marketing"}
+                                    />
+                                    <span className="fs-5 mx-2">Shopify Development & Instagram Marketing</span>
+                                    <br />
+
+                                    {/* <input type="radio" id="EventMarketing" name="ServicesProject" />
+                                    <span className="fs-5 mx-2">Event Marketing</span>
+                                    <br /> */}
+
+                                    <input
+                                        type="radio"
+                                        id="EventMarketing"
+                                        name="ServicesProject"
+                                        value="EventMarketing"
+                                        onChange={handleChange}
+                                        checked={selectedService === "EventMarketing"}
+                                    />
+                                    <span className="fs-5 mx-2">EventMarketing</span>
+                                    <br />
+
+                                </div>
                             </div>
                         </div>
+
+
+                        <div className="row container text-capitalize">
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="fname"
+                                    value={contact.fname}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='First Name *'
+                                />
+                                <p className="text-danger">{errors.fname}</p>
+                            </div>
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    value={contact.phone}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='Phone *'
+                                />
+                                <p className="text-danger">{errors.phone}</p>
+                            </div>
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="email"
+                                    value={contact.email}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='E-mail *'
+                                />
+                                <p className="text-danger">{errors.email}</p>
+                            </div>
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="company"
+                                    value={contact.company}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='Company *'
+                                />
+                            </div>
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="website"
+                                    value={contact.website}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='Website *'
+                                />
+                                <p className="text-danger">{errors.website}</p>
+                            </div>
+                            <div className="col-md-6 mb-4">
+                                <input
+                                    type="text"
+                                    name="commands"
+                                    value={contact.commands}
+                                    className='form-control shadow-none border-0 rounded-0 border-bottom text-black'
+                                    onChange={handleChange}
+                                    placeholder='Commands '
+                                />
+                            </div>
+                        </div>
+
                         <h4 className="secondary-header text-center m-3">Average Monthly Marketing Budget in INR* </h4>
                         <div className="col-md-12 digitalcontact position-relative"  >
                             <select
@@ -198,44 +379,6 @@ function Digitalcontact1() {
                                 </div>
                             </div>
                         </div> */}
-
-                        <div className="">
-                            <h3 className="secondary-header text-center pb-3 mt-3">Need a Successful Project</h3>
-                            <div className="row mt-3 mx-2">
-                                <div className="col-md-6">
-                                    <input type="radio" id="SocialMediaMarketing" name="SocialMediaMarketing" />
-                                    <span className="fs-5 mx-2">Social Media Marketing & Website Development</span>
-                                    <br />
-
-                                    <input type="radio" id="InfluencerMarketing" name="InfluencerMarketing" />
-                                    <span className="fs-5 mx-2">Influencer Marketing & Branding Solution</span>
-                                    <br />
-
-                                    <input type="radio" id="SearchEngineOptimization" name="SearchEngineOptimization" />
-                                    <span className="fs-5 mx-2">Search Engine Optimization & Content Writing</span>
-                                    <br />
-
-                                    <input type="radio" id="PerformanceMarketing" name="PerformanceMarketing" />
-                                    <span className="fs-5 mx-2">Performance Marketing & Video Production</span>
-                                    <br />
-
-                                </div>
-                                <div className="col-md-6">
-                                    <input type="radio" id="Consultancy" name="Consultancy" />
-                                    <span className="fs-5 mx-2">Consultancy & Instagram Marketing</span>
-                                    <br />
-
-                                    <input type="radio" id="ShopifyDevelopment" name="ShopifyDevelopment" />
-                                    <span className="fs-5 mx-2">Shopify Development & Instagram Marketing</span>
-                                    <br />
-
-                                    <input type="radio" id="EventMarketing" name="EventMarketing" />
-                                    <span className="fs-5 mx-2">Event Marketing</span>
-                                    <br />
-
-                                </div>
-                            </div>
-                        </div>
 
                         <div className="mt-3 text-center mb-3" data-aos='zoom-out' data-aos-anchor-placement="bottom-bottom">
                             <button type="submit" className='gold-btn green-btn'><span className='d-block'>Submit</span> <i className="bi bi-arrow-right"></i></button>
