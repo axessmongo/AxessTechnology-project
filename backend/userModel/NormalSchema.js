@@ -1,28 +1,30 @@
-const mongoose = require("mongoose");
-const { Schema } = mongoose;
+// NormalSchema.js
+const mongoose = require('mongoose');
 
-const NormalSchema = new Schema({
+const NormalSchema = new mongoose.Schema({
   fname: {
-    type: "string",
+    type: String,
+    
   },
   lname: {
-    type: "string",
+    type: String,
+    
   },
   email: {
-    type: "string",
+    type: String,
     required: true,
-  },
-  phone:{
-    type: "Number",
+    unique: true
   },
   address: {
-    type: "string",
+    type: String,
+    
   },
   serviceOption: {
-    type: "string",
-  },
+    type: String,
+   
+  }
 });
 
-const Contact = mongoose.model("contacts", NormalSchema);
+const NormalContact = mongoose.model('NormalContact', NormalSchema);
 
-module.exports = Contact;
+module.exports = NormalContact;

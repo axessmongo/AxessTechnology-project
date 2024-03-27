@@ -1,10 +1,10 @@
-const ContactSchema = require("../userModel/NormalSchema.js");
+const NormalSchema = require("../userModel/NormalSchema.js");
+const DigitalSchema = require("../userModel/ContactSchema.js");
 
-
-const postmethod = async (req, res) => {
+const postNormalContact = async (req, res) => {
   const { fname, email, lname, address, serviceOption } = req.body;
   try {
-    const contact = await ContactSchema.create({
+    const contact = await NormalSchema.create({
       fname,
       email,
       lname,
@@ -13,7 +13,7 @@ const postmethod = async (req, res) => {
     });
     res.status(201).json({
       status: 201,
-      msg: "Normal contact",
+      msg: "Normal contact added successfully",
       data: contact,
     });
   } catch (error) {
@@ -22,6 +22,4 @@ const postmethod = async (req, res) => {
   }
 };
 
-
-
-module.exports = {postmethod}
+module.exports = { postNormalContact };

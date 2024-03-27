@@ -10,19 +10,6 @@ function Digitalcontact1() {
         commands: '',
         phone: '',
         digitalmarketBudget: '',
-        SocialMediaMarketing: false,
-        WebsiteDevelopment: false,
-        InfluencerMarketing: false,
-        BrandingSolution: false,
-        SearchEngineOptimization: false,
-        ContentWriting: false,
-        PerformanceMarketing: false,
-        EventMarketing: false,
-        VideoProduction: false,
-        Consultancy: false,
-        InstagramMarketing: false,
-        ShopifyDevelopment: false,
-        
     });
 
     const handleSubmit = (event) => {
@@ -40,18 +27,7 @@ function Digitalcontact1() {
                     commands: '',
                     phone: '',
                     digitalmarketBudget: '',
-                    SocialMediaMarketing: false,
-                    WebsiteDevelopment: false,
-                    InfluencerMarketing: false,
-                    BrandingSolution: false,
-                    SearchEngineOptimization: false,
-                    ContentWriting: false,
-                    PerformanceMarketing: false,
-                    EventMarketing: false,
-                    VideoProduction: false,
-                    Consultancy: false,
-                    InstagramMarketing: false,
-                    ShopifyDevelopment: false, 
+                   
                 });
                 alert("successfully created");
             })

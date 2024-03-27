@@ -9,18 +9,14 @@ const route = require("./Router/route.js");
 // Middleware setup
 app.use(express.json());
 app.use(cors());
-
-
-// Route setup
 app.use(route);
 
-// Root path route
 app.get("/", (req, res) => {
   console.log('Request received at root path');
-  res.send('Welcome to Node.js');
+  res.send('Welcome to AxessTechnology');
 });
 
-// MongoDB connection
+// MongoDB connection:)
 mongoose
   .connect(process.env.mongoURL, {
   })
