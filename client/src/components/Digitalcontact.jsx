@@ -11,7 +11,7 @@ function Digitalcontact() {
     website: '',
     serviceOption: '',
   });
-  const [checkboxError, setCheckboxError] = useState("");
+  const [checkboxError, setCheckboxError] = useState("")
   const [state, setState] = useState({
     fname: '',
     email: '',
@@ -36,16 +36,20 @@ function Digitalcontact() {
     }
     validateField("serviceOption", checked);
   };
+
   const handleInputChange = (e) => {
     let { name, value } = e.target;
     if (name === 'phone') {
       value = value.replace(/\D/g, '').slice(0, 10);
     }
+    if (name === 'name') {
+      value = value.replace(/[^a-zA-Z\s]/g, '');
+    }
     setState({
       ...state,
       [name]: value,
     });
-    validateField(name, value);
+    // validateField(name, value);
   };
   const showToast = (text, options = {}) => {
     Toastify({
@@ -57,21 +61,32 @@ function Digitalcontact() {
       position: options.position || "center",
       stopOnFocus: options.stopOnFocus || true,
       style: options.style || {},
-      onClick: options.onClick || function () { },
+      onClick: options.onClick || function () { }
     }).showToast();
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Check if there are any errors before submitting
-    if (Object.values(errors).some((error) => error !== '') || checkboxError !== '') {
-      showToast("Please fill in all required fields and correct any errors", { style: { border: "1px solid red" } });
-      return;
-    }
+    // if (errors.name || errors.email || errors.phone || errors.company || errors.website || checkboxError) return;
+
+    // if (!state.name.trim() || !state.email.trim() || !state.phone.trim() || !state.company.trim() || !state.website.trim()) {
+
+    //   setErrors({
+    //     name: !state.name ? 'Name is required.' : '',
+    //     email: !state.email ? 'Email is required.' : '',
+    //     phone: !state.phone ? 'Phone No is required.' : '',
+    //     website: !state.website ? 'Website URL is required.' : '',
+    //     company: !state.company ? 'Company name is required' : ''
+    //   });
+    //   // validateField("serviceOption", "")
+
+    //   return;
+    // }
+    console.log("before try")
     try {
       const response = await axios.post("api/data", state);
 
       if (response.status === 201) {
-        // Handle success
+        // showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
         // Reset form fields
         const checkboxes = document.getElementsByClassName("digiCheckBox");
         for (let checkbox of checkboxes) {
@@ -87,20 +102,32 @@ function Digitalcontact() {
           services: [],
           digitalmarketBudget: ""
         });
-        // Show success message
-         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
       } else {
-        // Handle unexpected response status
-        alert("Unable to connect")
         console.log('Unexpected response:', response);
-        // Show error message
         // showToast("Internal server error", { style: { border: "1px solid red" } });
       }
     } catch (error) {
-      // Handle request error
-      console.log("Error occurred:", error);
-      // Show error message
-      // showToast("Error occurred while submitting form", { style: { border: "1px solid red" } });
+      console.log("error", error);
+      // if (error.response) {
+      //   // The request was made and the server responded with a status code
+      //   if (error.response.status === 400) {
+      //     console.log("er111", error)
+      //     showToast("Email already exists", { style: { border: "1px solid red" } });
+      //   } else if (error.response.status === 401) {
+      //     // Handle unauthorized access
+      //   } else if (error.response.status === 500) {
+
+      //     showToast("Internal server error", { style: { border: "1px solid red" } });
+      //   } else {
+      //     showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
+      //   }
+      // } else if (error.request) {
+      //   // The request was made but no response was received
+      //   showToast("No response from server", { style: { border: "1px solid red" } });
+      // } else {
+      //   // Something happened in setting up the request that triggered an error
+      //   showToast("Error processing request", { style: { border: "1px solid red" } });
+      // }
     }
     // console.log(state);
 
@@ -213,7 +240,7 @@ function Digitalcontact() {
               <div className="row justify-content-center mt-3 g-3">
                 <div className="col-md-6">
                   <div className="position-relative">
-                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mb-4" name="fname" value={state.fname} onChange={handleInputChange} />
+                    <input type="text" placeholder=" Enter Your Name*" className="digicontact mb-4" name="name" value={state.name} onChange={handleInputChange} />
                     <div className="position-absolute bottom-0" style={{ color: 'red', textAlign: "center", fontSize: "14px" }}>{errors.name}</div>
 
                   </div>
