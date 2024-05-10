@@ -8,6 +8,7 @@ import whyus2 from '../src/assets/images/about/whyus2.png'
 // import rightway from '../src/assets/images/about/rightway.jpg'
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
+import md from "../src/assets/images/md/md.png"
 
 function About() {
   return (
@@ -47,7 +48,7 @@ function About() {
               <div class="rounded-img d-lg-none">
                 <img
                   src={
-                    "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                    md
                   }
                   alt="Venkatesanj"
                 />
@@ -77,7 +78,7 @@ function About() {
             <div className="aboutusimg position-relative" data-aos="fade-left" data-aos-duration="1000">
               <div class="blur-img aboutMdimg d-none d-lg-block">
                 <img
-                  src={"https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                  src={md
                   }
                   alt="Venkatesanj"
                 />
@@ -85,7 +86,7 @@ function About() {
               <div class="rounded-img">
                 <img
                   src={
-                    "https://venkatesanj.com/static/media/md-img.d3695a0cdf566e1eea34.png"
+                    md
                   }
                   alt="Venkatesanj"
                 />
