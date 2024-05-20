@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const AxessTechnology =require("../TaskControl/NormalControl.js");
-const DigitalContact =require("../TaskControl/HomepageControl.js");
+const contactDetails =require("../controllers/contactControl.js");
+const DigitalMarkingDetails =require("../controllers/digitalMarkingControl.js");
 
-router.post("/api/call", AxessTechnology.postNormalContact);
-router.post("/api/digital", DigitalContact.Contactpostmethod);
+router.post("/api/contact", contactDetails.postContactDetails);
+router.post("/api/digital", DigitalMarkingDetails.postMarketingDetails);
 
 
 module.exports = router;

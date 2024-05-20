@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT;
-const route = require("./Router/route.js");
+const route = require("./Router/route");
 
 // Middleware setup
 app.use(express.json());

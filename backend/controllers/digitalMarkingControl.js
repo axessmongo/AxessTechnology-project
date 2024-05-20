@@ -1,9 +1,9 @@
-const Contact = require("../userModel/ContactSchema.js");
+const digitalMarketing = require("../Model/digitalMarket.schema");
 
-const Contactpostmethod = async (req, res) => {
+const postMarketingDetails = async (req, res) => {
   const { fname, email, phone, website, company, digitalmarketBudget, comments, services } = req.body;
   try {
-    const contact = await Contact.create({
+    const contact = await digitalMarketing.create({
       fname,
       email,
       phone,
@@ -27,4 +27,4 @@ const Contactpostmethod = async (req, res) => {
 
 
 
-module.exports = { Contactpostmethod,  };
+module.exports = { postMarketingDetails  };

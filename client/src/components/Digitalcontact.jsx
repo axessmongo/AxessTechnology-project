@@ -83,53 +83,54 @@ function Digitalcontact() {
     // }
     console.log("before try")
     try {
-      const response = await axios.post("api/data", state);
+      const response = await axios.post("/api/digital", state);
 
       if (response.status === 201) {
-        // showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
+         showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
         // Reset form fields
+        
         const checkboxes = document.getElementsByClassName("digiCheckBox");
         for (let checkbox of checkboxes) {
           checkbox.checked = false;
         }
         setState({
-          name: "",
-          phone: "",
-          email: "",
-          company: "",
-          website: "",
-          comments: "",
-          services: [],
-          digitalmarketBudget: ""
+          fname:"",
+          email:"",
+          phone:"",
+          website:"",
+          company:"",
+          digitalmarketBudget:"",
+          comments:"",
+          services:[] 
         });
       } else {
         console.log('Unexpected response:', response);
-        // showToast("Internal server error", { style: { border: "1px solid red" } });
+        showToast("Internal server error", { style: { border: "1px solid red" } });
       }
     } catch (error) {
       console.log("error", error);
-      // if (error.response) {
-      //   // The request was made and the server responded with a status code
-      //   if (error.response.status === 400) {
-      //     console.log("er111", error)
-      //     showToast("Email already exists", { style: { border: "1px solid red" } });
-      //   } else if (error.response.status === 401) {
-      //     // Handle unauthorized access
-      //   } else if (error.response.status === 500) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        if (error.response.status === 400) {
+          console.log("er111", error)
+          showToast("Email already exists", { style: { border: "1px solid red" } });
+        } else if (error.response.status === 401) {
+          // Handle unauthorized access
+        } else if (error.response.status === 500) {
 
-      //     showToast("Internal server error", { style: { border: "1px solid red" } });
-      //   } else {
-      //     showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
-      //   }
-      // } else if (error.request) {
-      //   // The request was made but no response was received
-      //   showToast("No response from server", { style: { border: "1px solid red" } });
-      // } else {
-      //   // Something happened in setting up the request that triggered an error
-      //   showToast("Error processing request", { style: { border: "1px solid red" } });
-      // }
+          showToast("Internal server error", { style: { border: "1px solid red" } });
+        } else {
+          showToast("An unexpected error occurred", { style: { border: "1px solid red" } });
+        }
+      } else if (error.request) {
+        // The request was made but no response was received
+        showToast("No response from server", { style: { border: "1px solid red" } });
+      } else {
+        // Something happened in setting up the request that triggered an error
+        showToast("Error processing request", { style: { border: "1px solid red" } });
+      }
     }
-    // console.log(state);
+     console.log(state);
 
   };
 

@@ -1,10 +1,9 @@
-const NormalSchema = require("../userModel/NormalSchema.js");
-const DigitalSchema = require("../userModel/ContactSchema.js");
+const ContactSchema = require("../Model/contact.schema");
 
-const postNormalContact = async (req, res) => {
+const postContactDetails = async (req, res) => {
   const { fname, email, lname, address, serviceOption } = req.body;
   try {
-    const contact = await NormalSchema.create({
+    const contact = await ContactSchema.create({
       fname,
       email,
       lname,
@@ -22,4 +21,4 @@ const postNormalContact = async (req, res) => {
   }
 };
 
-module.exports = { postNormalContact };
+module.exports = { postContactDetails };
