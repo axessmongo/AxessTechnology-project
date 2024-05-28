@@ -83,7 +83,7 @@ function Digitalcontact() {
     // }
     console.log("before try")
     try {
-      const response = await axios.post("/api/digital", state);
+      const response = await axios.post("http://localhost:5000/api/digital", state);
 
       if (response.status === 201) {
          showToast("Our team will connect with you", { style: { background: "linear-gradient(to right, #00b09b, #96c93d)" } });
