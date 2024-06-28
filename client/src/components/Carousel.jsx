@@ -8,8 +8,9 @@ import project4 from '../assets/images/demo/porfolio2.png'
 import project5 from '../assets/images/demo/porfolio1.png'
 import project6 from '../assets/images/demo/watch.png'
 import { Link } from "react-router-dom";
+import { OurWorksData } from "../store/OurWorksData";
 
-export default function Carousel() {
+export default function Carousel({head}) {
 
   const settings = {
     infinite: true,
@@ -21,7 +22,7 @@ export default function Carousel() {
     slidesToScroll: 1,
     pauseOnHover: false,
     centerPadding: "20px",
-    swipeToSlide: false, 
+    swipeToSlide: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,31 +39,18 @@ export default function Carousel() {
     ]
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.refresh();
   })
   return (
     <div className="container my-5 py-5">
-      <h1 className="bg-img-1 mx-auto" data-aos='fade-up'>Our works</h1>
-      <Slider {...settings} data-aos = 'fade'>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project1} alt="project1" />
-        </Link>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project2} alt="project1" />
-        </Link>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project3} alt="project1" />
-        </Link>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project4} alt="project1" />
-        </Link>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project5} alt="project1" />
-        </Link>
-        <Link to={'/ourworks'} className="proiect-card">
-          <img src={project6} alt="project1" />
-        </Link>
+      <h1 className="bg-img-1 mx-auto" data-aos='fade-up'>{head}</h1>
+      <Slider {...settings} data-aos='fade'>
+        {OurWorksData?.map((value, key) => (
+          <Link to={'/ourworks'} className="proiect-card">
+            <img src={value.screenShotaddress} alt={value.screenShotaddress} />
+          </Link>
+        ))}
       </Slider>
     </div>
   )

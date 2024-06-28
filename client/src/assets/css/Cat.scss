@@ -1,6 +1,13 @@
 .cat {
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+    .tab-content>.active {
+        background: url('../images/bg/bg1.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .text-content {
         color: #00244877;
         font-size: 20px;

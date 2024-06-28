@@ -31,6 +31,7 @@ import Empdashboard from './Dashboard/Empdashboard'
 import Empreg from './Dashboard/Empreg';
 import Digitalcontact from './components/Digitalcontact';
 import Digitalcontact1 from './components/Digitalcontact1';
+import Ourworknew from './components/Ourworknew';
 
 
 
@@ -59,6 +60,7 @@ function Routing() {
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/ourworks' element={<Ourworks />} />
+                    <Route path='/ourworks2' element={<Ourworknew />} />
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/webdevelopment' element={<Webdev />} />
