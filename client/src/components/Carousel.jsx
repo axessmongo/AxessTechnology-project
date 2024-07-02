@@ -47,7 +47,7 @@ export default function Carousel({head}) {
       <h1 className="bg-img-1 mx-auto" data-aos='fade-up'>{head}</h1>
       <Slider {...settings} data-aos='fade'>
         {OurWorksData?.map((value, key) => (
-          <Link to={'/ourworks'} className="proiect-card">
+          <Link to={'/ourworks'} key={key} className="proiect-card">
             <img src={value.screenShotaddress} alt={value.screenShotaddress} />
           </Link>
         ))}

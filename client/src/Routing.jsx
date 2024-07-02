@@ -59,8 +59,9 @@ function Routing() {
                     <Route path="/technologies" element={<Technologies />} />
                     <Route path="/pricing" element={<Pricing />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/ourworks' element={<Ourworks />} />
-                    <Route path='/ourworks2' element={<Ourworknew />} />
+                    {/* <Route path='/ourworks' element={<Ourworks />} /> */}
+                    <Route path='/ourworks' element={<Ourworknew />} />
+                    {/* <Route path='/ourworks2' element={<Ourworknew />} /> */}
                     <Route path='/development' element={<Development />} />
                     <Route path='/testing' element={<Testing />} />
                     <Route path='/webdevelopment' element={<Webdev />} />

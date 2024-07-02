@@ -73,7 +73,7 @@ function Navbar() {
 
       {/* Main Navigation */}
       <div>
-        <nav className={`navbar navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
+        <nav className={`navbar position-absolute w-100 navbar-expand-lg bg-body-tertiary p-0 position-relative z-3 ${fixed === 'fixed-1' ? 'fixed-1' : ''} ${fixed === 'fixed-2' ? 'fixed-1 fixed-2' : ''}`}>
           <div className="container-fluid">
             <div className="d-lg-none d-flex justify-content-between align-items-center w-100 py-2 align-items-end upper-nav">
               <Link to='/' className="navbar-brand col-1">

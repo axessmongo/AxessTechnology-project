@@ -26,7 +26,7 @@
         const isContactPage = location.pathname === '/contact';
 
         return (
-            <div className='hero-banner hero-2' data-aos='fade'>
+            <div className='hero-banner hero-2 mt-5' data-aos='fade'>
                 <div className='container text-center green-text'>
                     <p className="bg-img-2 mb-5 mx-auto" data-aos='fade-up' data-aos-duration='400'>{h1}</p>
                     <h1 className={`secondary-header mb-3 ${isContactPage?'mb-5 pb-5':''}`} data-aos='fade-up' data-aos-duration='600'>{h2}</h1>

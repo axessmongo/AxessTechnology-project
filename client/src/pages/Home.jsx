@@ -29,7 +29,7 @@ export default function Home() {
         <section>
             <Navbar/>
             <div className="home">
-                <div className="hero-banner">
+                <div className="hero-banner mt-5 pt-5">
                     <div className="px-xxl-5 mx-xxl-5 px-5 text-center text-lg-start">
                         <div className="row position-relative z-2 min-vh-100 jus justify-content-lg-between align-items-center text-white g-lg-5">
                             <div className="col-md-12 col-lg-6 order-2 order-lg-1">

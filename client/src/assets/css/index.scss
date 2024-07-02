@@ -56,7 +56,7 @@ img {
 }
 
 .secondary-text {
-  font-size: 16px;
+  font-size: 16px !important;
   letter-spacing: .5px;
   font-weight: 400;
 }
@@ -1315,6 +1315,16 @@ img {
 
 .cat {
   .nav-pills {
+    .dropdown-toggle {
+
+      &:hover,
+      &:active, &:focus-visible {
+        background: #ffce05;
+        color: black !important;
+        box-shadow: none;
+      }
+    }
+
     .nav-link {
       cursor: pointer;
 
@@ -1323,10 +1333,11 @@ img {
         font-weight: 500;
       }
 
-      &.active {
-        background: var(--axess-gold-3);
-        color: black;
-        box-shadow: var(--axess-gold) 0px 2px 8px 0px;
+      &.active,
+      &.myactive {
+        background: var(--axess-gold-3) !important;
+        color: black !important;
+        box-shadow: var(--axess-gold) 0px 2px 8px 0px !important;
       }
     }
   }
@@ -1342,14 +1353,14 @@ img {
   }
 }
 
-.testimonal{
-  .carousel-control-next{
-    transform: translate(100%,0);
+.testimonal {
+  .carousel-control-next {
+    transform: translate(100%, 0);
     width: auto !important;
   }
-  
-  .carousel-control-prev{
-    transform: translate(-100%,0);
+
+  .carousel-control-prev {
+    transform: translate(-100%, 0);
     width: auto !important;
   }
 }
@@ -1365,7 +1376,7 @@ img {
     .nav-item {
       .drop {
         position: relative;
-        z-index: -3;  
+        z-index: -3;
       }
     }
   }
@@ -1414,7 +1425,7 @@ img {
     border: none !important;
   }
 
-  .rounded-img img{
+  .rounded-img img {
     position: unset;
     transform: none;
     width: 200px;
@@ -1423,7 +1434,7 @@ img {
     margin: auto;
   }
 
-  .hero-2{
+  .hero-2 {
     background-size: 200%;
   }
 }
@@ -1476,14 +1487,14 @@ img {
     }
   }
 
-  .testimonal{
-    .carousel-control-next{
-      transform: translate(-50%,-10%);
+  .testimonal {
+    .carousel-control-next {
+      transform: translate(-50%, -10%);
       width: auto !important;
     }
-    
-    .carousel-control-prev{
-      transform: translate(50%,-10%);
+
+    .carousel-control-prev {
+      transform: translate(50%, -10%);
       width: auto !important;
     }
   }
@@ -1527,13 +1538,15 @@ img {
 
 @keyframes glowing-border {
   0% {
-      box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
+    box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
   }
+
   50% {
-      box-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
   }
+
   100% {
-      box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
+    box-shadow: 0 0 0px rgba(0, 128, 255, 0.8);
   }
 }
 
