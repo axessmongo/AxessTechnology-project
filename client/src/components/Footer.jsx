@@ -239,7 +239,7 @@ function Footer({ displayContact }) {
                                 <div className="row">
 
                                     <div className="col-md-4" data-aos='zoom-out'>
-                                        <p>WhatsApp: <Link to={"+91 6379532366"} className='text-decoration-none concolor'> +91 6379532366 </Link></p>
+                                        <p>WhatsApp: <Link to={"+91 6379532366"} className='text-decoration-none concolor'> +91 63795 32366 </Link></p>
                                         <p>Instagram: <a className='text-decoration-none concolor' href="https://www.instagram.com/axesstech/" target='_blank'>axesstech</a></p>
                                     </div>
 

@@ -101,8 +101,8 @@ export default function Ourworknew() {
                                             <div className="py-3">
                                                 <h3>{value.Category}</h3>
                                                 <div className="py-3">
-                                                    <p className="fw-bold text-warning">
-                                                        {value.siteId}
+                                                    <p className="secondary-text">
+                                                        Site ID: {value.siteId}
                                                     </p>
                                                 </div>
                                                 <div className="pt-2">
